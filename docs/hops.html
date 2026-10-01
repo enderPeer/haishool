@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haishool Hops</title>
+<meta name="description" content="Haishool version 4b: a small fact model where every thing is linked to every other in a few hops. Disputed links say who holds them; every step the model writes is checked.">
+<style>
+:root{--bg:#f6f5f0;--fg:#1f2622;--muted:#647069;--card:#fffefa;--line:#dcd9cf;--accent:#2f6b4f;--accent-fg:#fff;--soft:#e8efe9;
+--ok:#2f6b4f;--bad:#a33a2c;--view:#8a6410;--viewbg:#f4ecd6;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141816;--fg:#e6eae5;--muted:#9aa49d;--card:#1c211e;--line:#2f3632;--accent:#7cc4a0;--accent-fg:#0f1411;--soft:#1f2a24;--ok:#8fd3ae;--bad:#f0a093;--view:#e3c27a;--viewbg:#352c17}}
+:root[data-theme="dark"]{--bg:#141816;--fg:#e6eae5;--muted:#9aa49d;--card:#1c211e;--line:#2f3632;--accent:#7cc4a0;--accent-fg:#0f1411;--soft:#1f2a24;--ok:#8fd3ae;--bad:#f0a093;--view:#e3c27a;--viewbg:#352c17}
+*{box-sizing:border-box}html,body{margin:0}body{background:var(--bg);color:var(--fg);font:17px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}header{padding:56px 0 24px}
+.eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(34px,6vw,52px);line-height:1.05;margin:8px 0 16px;letter-spacing:-.02em}
+.lead{font-size:19px;max-width:660px;margin:0}.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+a.btn{display:inline-block;padding:11px 18px;border-radius:10px;text-decoration:none;font-weight:600;font-size:15px}
+a.primary{background:var(--accent);color:var(--accent-fg)}a.ghost{border:1px solid var(--line);color:var(--fg)}
+section{padding:28px 0}h2{font-size:22px;margin:0 0 12px}p{max-width:700px}
+.path{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.node{padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--bg);font-weight:600;font-size:15px}
+.rel{font:12.5px var(--mono);color:var(--ok);padding:2px 4px}.rel.view{color:var(--view);background:var(--viewbg);border-radius:6px}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}.fact .n{font-size:26px;font-weight:700}
+.fact .l{font-size:14px;color:var(--muted)}@media (max-width:700px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:600;font-size:13px}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}tr.new td{font-weight:600}
+.chat{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+#log{padding:16px;min-height:160px;max-height:520px;overflow-y:auto}
+.msg{margin:0 0 14px}.msg .who{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.msg.you .text{background:var(--soft);display:inline-block;padding:8px 12px;border-radius:10px}
+.steps{list-style:none;padding:0;margin:6px 0 0}.steps li{display:flex;gap:8px;margin:3px 0;font-size:15px}
+.mark{width:1.1em;flex:none;font-weight:700}.ok{color:var(--ok)}.bad{color:var(--bad)}.vw{color:var(--view)}
+.tag{font-size:12px;background:var(--viewbg);color:var(--view);border-radius:6px;padding:1px 6px;margin-left:6px}
+.verdict{font-size:14px;font-weight:600;margin-top:4px}
+.dense{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-top:4px;white-space:pre-wrap;word-break:break-word}
+form{display:flex;gap:8px;border-top:1px solid var(--line);padding:12px}
+input{flex:1;min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--fg);font-size:16px}
+button{padding:10px 16px;border:0;border-radius:10px;background:var(--accent);color:var(--accent-fg);font-size:16px;font-weight:600}
+button:disabled{opacity:.5}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 14px}.chip{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:4px 10px;background:none;color:var(--fg);cursor:pointer;font-weight:400}
+.status{font-size:13px;color:var(--muted);padding:10px 16px 0}
+ul{padding-left:20px}li{margin:4px 0}footer{padding:32px 0 48px;color:var(--muted);font-size:14px}a{color:var(--accent)}
+code{font-family:var(--mono);font-size:14px}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="eyebrow">Haishool version 4b · Hops · runs locally in Berlin</div>
+  <h1>Everything is linked<br>to everything.</h1>
+  <p class="lead">Until now Haishool knew its facts as separate cards. Version 4b links all 3,081 of them into one graph: Turkey reaches Led Zeppelin, a spoon reaches the Beatles, in a few hops. Where people disagree, the link says who holds it. The model writes every path itself, and every step is checked against the real links.</p>
+  <div class="links"><a class="btn primary" href="#try">Try it</a><a class="btn ghost" href="index.html">Haishool home</a><a class="btn ghost" href="https://github.com/enderPeer/haishool">Source on GitHub</a></div>
+</header>
+
+<section class="wrap">
+  <h2>One hop path, written by the model</h2>
+  <div class="path" aria-label="Turkey lies on the Mediterranean, which washes the coast of Morocco, visited by Robert Plant, a member of Led Zeppelin">
+    <span class="node">Turkey</span><span class="rel">coast on</span><span class="node">Mediterranean</span><span class="rel">coast of</span>
+    <span class="node">Morocco</span><span class="rel">visited by</span><span class="node">Robert Plant</span><span class="rel">member of</span><span class="node">Led Zeppelin</span>
+  </div>
+  <p>Dense form, as the model learned it: <code>q turkey hop led_zeppelin. a turkey coast_on mediterranean_sea coast_of morocco visited_by robert_plant member_of led_zeppelin.</code></p>
+  <div class="path" aria-label="Jerusalem is the capital of Israel according to Israel, and of Palestine according to Palestine">
+    <span class="node">Jerusalem</span><span class="rel view">capital of · according to Israel</span><span class="node">Israel</span>
+    <span class="rel view">capital of · according to Palestine</span><span class="node">Palestine</span>
+  </div>
+  <p>A model is a mirror of the culture that describes the world. Contested things are not flattened into one "truth": the model learns <code>q jerusalem capital_of. a israel palestine contested.</code> and, for each side, what that side holds.</p>
+</section>
+
+<section class="wrap">
+  <h2>The graph</h2>
+  <div class="facts">
+    <div class="fact"><div class="n">3,840</div><div class="l">things, all reachable from each other</div></div>
+    <div class="fact"><div class="n">14,502</div><div class="l">links, 26 of them held by one side</div></div>
+    <div class="fact"><div class="n">≤ 9</div><div class="l">hops between any two sampled things</div></div>
+    <div class="fact"><div class="n">66,357</div><div class="l">new training lines</div></div>
+  </div>
+  <p>The links come from four places: 122 written by hand with sources and views; 5,075 where a record names another record (<code>spoon made_of metal</code>); shared values such as <code>europe</code>, <code>1970s</code> or <code>kitchen</code>; and a few rules (<code>located_in</code>, <code>shares_food</code>) that follow from the others. The model also learns to say <em>no</em>: <code>q turkey borders colombia. a no.</code></p>
+</section>
+
+<section class="wrap">
+  <h2>Results</h2>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Version</th><th class="num">Trained facts recalled</th><th class="num">Unseen facts guessed</th><th class="num">Unseen paths: real links</th><th class="num">Unseen paths: shortest</th></tr></thead>
+    <tbody>
+      <tr><td>v3 · separate cards</td><td class="num">100 %</td><td class="num">21.8 %</td><td class="num">–</td><td class="num">–</td></tr>
+      <tr><td>v4 · 52 linked things</td><td class="num">100 %</td><td class="num">21.3 %</td><td class="num">99 %</td><td class="num">96 %</td></tr>
+      <tr class="new"><td>v4b · everything linked</td><td class="num">99.5 %</td><td class="num">35.0 %</td><td class="num">89 %</td><td class="num">66 %</td></tr>
+    </tbody>
+  </table></div>
+  <p>Same model size (15.8 million parameters), 24,000 training steps on one RTX 4090. "Unseen" means held back from training in a separate run. Linking the facts raised the share of unseen facts the model guesses exactly from 22 % to 35 %.</p>
+</section>
+
+<section class="wrap" id="try">
+  <h2>Try it</h2>
+  <div class="chat">
+    <div class="status" id="status">connecting…</div>
+    <div id="log"></div>
+    <div class="chips" id="chips"></div>
+    <form id="f"><input id="q" autocomplete="off" placeholder="How is Turkey connected to Led Zeppelin?"><button id="send">Ask</button></form>
+  </div>
+  <p style="font-size:14px;color:var(--muted)"><span class="ok">✓</span> the link exists · <span class="bad">✗</span> the model made it up · <span class="vw">◐</span> held by one side. Questions that are not about links go to the normal Haishool chat.</p>
+</section>
+
+<section class="wrap">
+  <h2>What it gets wrong</h2>
+  <ul>
+    <li><b>Near misses.</b> Its "no" examples used far-away partners, so it says yes to "does Turkey border Israel?". The chat marks this wrong against the data.</li>
+    <li><b>True but pointless paths.</b> Every link comes from the teacher's records, unchecked by a person; "spoon → ring → Nuremberg Trials" is made of real links built on a wrong record.</li>
+    <li><b>Only what is in its graph.</b> It cannot link things it has never seen, and it does not chat.</li>
+  </ul>
+</section>
+
+<footer class="wrap">Haishool · code MIT, model and data CC BY 4.0 · facts generated with Qwen2.5-14B-Instruct and partly written by hand · <a href="index.html">home</a></footer>
+
+<script>
+const HINTS=["How is Turkey connected to Led Zeppelin?","What links Israel and Turkey?","Does Turkey border Greece?","According to Palestine, what is Jerusalem the capital of?","Who claims baklava?","What is Hagia Sophia linked to?","How is a spoon connected to the Beatles?","How is Albert Einstein connected to coffee?"];
+const log=document.getElementById("log"),f=document.getElementById("f"),q=document.getElementById("q"),send=document.getElementById("send"),statusEl=document.getElementById("status");
+let api=null,busy=false;
+function el(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e}
+for(const h of HINTS){const b=el("button","chip",h);b.type="button";b.onclick=()=>{q.value=h;f.requestSubmit()};document.getElementById("chips").append(b)}
+function add(who,j,cls){const d=el("div","msg "+cls);d.append(el("div","who",who));d.append(el("div","text",j.answer));
+if(j.steps&&j.steps.length){const ul=el("ul","steps");for(const s of j.steps){const li=el("li");
+const k=s.ok===false?"bad":(s.view&&s.view!=="fact"?"vw":"ok");li.append(el("span","mark "+k,k==="bad"?"✗":k==="vw"?"◐":"✓"));
+const t=el("span",null,s.text);if(s.view&&s.view!=="fact")t.append(el("span","tag","according to "+s.view.replace(/_/g," ")));li.append(t);ul.append(li)}d.append(ul)}
+if(j.verdict)d.append(el("div","verdict "+(j.good?"ok":"bad"),j.verdict));
+if(j.dense)d.append(el("div","dense",(j.query?"query: "+j.query+"\n":"")+"model: "+j.dense));
+log.append(d);log.scrollTop=log.scrollHeight}
+f.addEventListener("submit",async e=>{e.preventDefault();const text=q.value.trim();if(!text||busy)return;
+if(api===null){add("Haishool",{answer:"The model is offline right now; the machine it runs on may be asleep."},"bot");return}
+q.value="";busy=true;send.disabled=true;add("You",{answer:text},"you");
+try{const r=await fetch(api+"/api/ask",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({question:text})});
+if(!r.ok)throw new Error("HTTP "+r.status);add("Haishool",await r.json(),"bot")}
+catch(err){add("Haishool",{answer:"No answer: "+err.message},"bot")}finally{busy=false;send.disabled=false;q.focus()}});
+(async()=>{let base="";try{const e=await fetch("endpoint-hops.json",{cache:"no-store"});if(e.ok)base=((await e.json()).api_url||"").replace(/\/$/,"")}catch(e){}
+if(!base){statusEl.textContent="offline right now · the machine it runs on may be asleep";return}
+try{const i=await fetch(base+"/api/info",{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json()});api=base;
+statusEl.textContent=`online · ${(i.params/1e6).toFixed(1)} million parameters · ${i.records.toLocaleString()} records · ${i.nodes.toLocaleString()} linked things`}
+catch(e){statusEl.textContent="offline right now · the machine it runs on may be asleep"}})();
+</script>
+</body>
+</html>
