@@ -101,10 +101,15 @@ def _hop_kind(line: str) -> str:
 
 
 def extra_kind(line: str) -> str:
-    """Report bucket of an extra query line: hop, hops, view, relation (``""`` for plain lines)."""
+    """Report bucket of an extra query line: hop, hops, yesno, view, relation (``""`` for plain lines)."""
     if not line.startswith("q "):
         return ""
-    return _hop_kind(line) or ("view" if " according_to " in line.split(". a ")[0] else "relation")
+    prompt = line.split(". a ")[0]
+    if _hop_kind(line):
+        return _hop_kind(line)
+    if len(prompt.split()) == 4:
+        return "yesno"  # q turkey borders greece. a yes.
+    return "view" if " according_to " in prompt else "relation"
 
 
 def corpus(records: list[Record], passes: int, seed: int, extra: list[str] | None = None) -> list[str]:
@@ -200,7 +205,7 @@ def train(records_path: Path, out: Path, holdout: float, seed: int, steps: int, 
     if extra:
         def acc_lines(lines: list[str], limit: int) -> dict:
             out_: dict[str, dict] = {}
-            for kind in ("relation", "view", "hop", "hops"):
+            for kind in ("relation", "view", "yesno", "hop", "hops"):
                 some = [ln for ln in lines if extra_kind(ln) == kind]
                 some = random.Random(seed + 2).sample(some, min(limit, len(some)))
                 exact = 0

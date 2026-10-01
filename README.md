@@ -54,6 +54,28 @@ What it cannot do: answer about things outside its table (it says so), hold a co
 know more than the keys of each record. The facts come from the teacher model and have not been
 checked by a person; some are wrong or oddly worded, and they show up exactly that way.
 
+## Version 5: everything linked (round 4b)
+
+Round 4b (same parallel session) links all 3,081 records into one graph: 3,840 things and 14,502
+links (from the hand-written seed, from record values that name another record, from rules, and
+through shared hubs such as Europe, kitchen or "person"), plus yes/no lines (`q turkey borders
+greece. a yes.`). The chat (`haishool/links.py`) adds:
+
+- yes/no questions ("does Turkey border Greece"). The answer follows the edge list the model was
+  trained on; when the model's own yes/no disagrees, the answer says so (its "no" examples used
+  random partners, so it says yes to near misses such as Turkey and Israel);
+- paths between any two records, also by partial name ("how is Einstein connected to Newton");
+  when two things only share a kind, it says that instead of a path through the hub.
+
+| | Version 5 | Version 4 | Version 3 |
+|---|---|---|---|
+| Trained facts recalled exactly | 99.6 % | 100 % | 100 % |
+| Held-out facts guessed exactly (1,877) | **35 %** | 21 % | 22 % |
+| Relations recalled exactly | 99 % of 500 | 98 % of 213 | n/a |
+| Yes/no lines recalled | 100 % of 500 | n/a | n/a |
+| Paths it never saw, exactly | 66 % of 500 (bigger graph) | 96 % of 279 | n/a |
+| Parameters | 15.8 million | 15.8 million | 15.7 million |
+
 ## Version 4: links between things
 
 Round 4 (built in a parallel session) adds a small graph of 52 things and 135 hand-checked links
@@ -73,7 +95,7 @@ In the chat: "what borders Turkey", "what is the capital of Israel" (contested, 
 descriptions of linked things combine their facts with their links (`haishool/links.py`).
 
 The round-4 data (`data/hops-v4/`) and its build and training code (`haishool/relations.py`,
-`student.py --extra-lines`) come with the round-4 commit from that session.
+`student.py --extra-lines`) are in the repository; rebuilding the data reproduces it byte for byte.
 
 | | Version 4 | Version 3 |
 |---|---|---|
@@ -83,6 +105,34 @@ The round-4 data (`data/hops-v4/`) and its build and training code (`haishool/re
 | Views ("according to") recalled exactly | 19 of 19 | n/a |
 | Paths between linked things it never saw, exactly | 96 % of 279 (path length 97 %) | n/a |
 | Parameters | 15.8 million | 15.7 million |
+
+## Version 4b: everything linked
+
+Version 4b links all 3,081 records into one graph instead of 52 hand-picked things: 3,840 things
+and 14,502 links, every thing reachable from every other (at most 9 hops between sampled pairs).
+The links come from the hand-written seed (122, with views and reasons), from record values that
+name another record (5,075, e.g. `spoon made_of metal`; only harmless spelling slips such as
+`fire_station` / `firestation` are resolved), from shared values (`europe`, `1970s`, `kitchen`)
+and from a few rules that follow from the others (`located_in`, `shares_food`, `bandmate`). A link
+the seed holds under a view is never added again as a plain fact from the teacher. The model also
+learns to say no (`q turkey borders colombia. a no.`) and each thing's links
+(`hagia_sophia links. built_by byzantine_empire. ...`).
+
+| | Version 4b | Version 4 | Version 3 |
+|---|---|---|---|
+| Trained facts recalled exactly | 995 of 1,000 | 1,000 of 1,000 | 1,000 of 1,000 |
+| Held-out facts guessed exactly | **35 % of 1,877** | 21 % | 22 % |
+| Relations / views / yes-no recalled | 99 % / 19 of 19 / 100 % | 98 % / 19 of 19 / n/a | n/a |
+| Unseen paths: exact / only real links / reach the target | 66 % / 89 % / 99 % (600 checked) | 96 % / 99 % / 100 % | n/a |
+| Training lines added to the facts | 66,357 (1.07 M tokens per pass) | 5,588 | n/a |
+| Steps (one RTX 4090) | 24,000, about 37 minutes | 14,000 | 14,000 |
+
+Linking the facts raised the share of unseen facts the model guesses exactly from 22 % to 35 %.
+Known weaknesses: its "no" examples use random partners, so it answers yes to near misses ("does
+Turkey border Israel?"); the test chat (`haishool/hops_app.py`) checks every step and every yes or
+no against the links and marks the model's mistakes. Paths can be real but pointless where a
+teacher record is wrong, and `usa` is still a separate hub from `united_states` in this build.
+Data: `data/hops-v4b/` (`hops-train-r4.txt` sha256 12013c56...), model: `model/haishool-v4b.pt`.
 
 ## How it answers every question
 
@@ -121,8 +171,10 @@ must have seen).
 
 ```bash
 pip install torch fastapi uvicorn
-python -m haishool.app --model model/haishool-v4.pt --records data/records-r3-all.jsonl --hops data/hops-v4 --port 8650
-# version 3 without links: --model model/haishool-v3.pt and no --hops
+python -m haishool.app --model model/haishool-v5.pt --records data/records-r3-all.jsonl --hops data/hops-v5 --port 8650
+# version 4: --model model/haishool-v4.pt --hops data/hops-v4; version 3 without links: model/haishool-v3.pt, no --hops
+python -m haishool.hops_app --model model/haishool-v4b.pt --records data/records-r3-all.jsonl --port 8651
+# version 4b test chat: paths, yes/no and views, every step checked against the links
 ```
 
 Train your own (the teacher needs [ollama](https://ollama.com) with `qwen2.5:14b-instruct-q4_K_M`):
@@ -134,6 +186,8 @@ python -m haishool.teacher3 entities --out data/entities-r3.txt                 
 python -m haishool.teacher3 records --entities data/entities-r3.txt --out data/records-r3.jsonl
 python -m haishool.combine data/all.jsonl data/records.jsonl data/records-r3.jsonl data/manual.jsonl data/identity.jsonl
 python -m haishool.student train --records data/all.jsonl --out runs/full --steps 14000
+python -m haishool.relations build --seed data/hops-seed-r4.jsonl --records data/records-r3-all.jsonl --out data/hops-v4b   # round 4b: links
+python -m haishool.student train --records data/records-r3-all.jsonl --extra-lines data/hops-v4b/hops-train-r4.txt --out runs/r4b-full --steps 24000
 python -m pytest tests                                                          # parser and translator rules
 ```
 
@@ -142,7 +196,7 @@ python -m pytest tests                                                          
 | Path | Content |
 |---|---|
 | `haishool/` | schema, teachers, merge, model, student training, parser and translator, chat app |
-| `model/` | weights of versions 1 to 4 (half precision) and their training and evaluation reports |
+| `model/` | weights of versions 1 to 5 (half precision) and their training and evaluation reports |
 | `data/` | the training facts, one JSON line per record: `records-r1/r2/r3.jsonl` per round, `manual.jsonl` and `identity.jsonl` by hand, `records-r3-all.jsonl` merged (what v3 was trained on) |
 | `docs/` | the website (landing page with chat, data browser) |
 | `tests/` | rule tests for parser, translator and merge |
