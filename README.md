@@ -17,7 +17,7 @@ your question ──► parser (rules) ──► dense query ──► model ─
    ```
    spoon. kind utensil. color silver. shape curved. size hand. made metal plastic. parts handle bowl. use eating_soups. place kitchen_dining_room. alive no.
    ```
-2. **Model.** A 12-million-parameter GPT (6 layers, width 384, word-level vocabulary) learns only
+2. **Model.** A 13-million-parameter GPT (6 layers, width 384, word-level vocabulary) learns only
    these lines and the matching questions (`q spoon color. a silver.`). It never sees an English
    sentence.
 3. **Translator.** Rules turn the dense answer into a sentence. They add no facts: if the model is
@@ -25,14 +25,15 @@ your question ──► parser (rules) ──► dense query ──► model ─
    every answer.
 4. **Identity.** One record says who it is: it is called Homunculi and runs locally in Berlin.
 
-## Results (version 1)
+## Results (version 2)
 
 | | |
 |---|---|
-| Objects | 858 (first round), plus the identity record |
+| Objects | 1,634 (858 in round 1, 776 in round 2), plus the identity record |
 | Facts recalled exactly | 1,000 of 1,000 sampled trained facts |
-| Held-out facts guessed exactly | 27 % (667 facts held back from a separate run; 33 % of their words right) |
-| Training | 6,000 steps, about 4 minutes on one RTX 4090 |
+| Held-out facts guessed exactly | 25 % (1,253 facts held back in a separate run; 30 % of their words right). Version 1: 27 % of 667 |
+| Model | 13.2 million parameters, word vocabulary of 6,570 |
+| Training | 9,000 steps, about 5 minutes on one RTX 4090 |
 
 What it cannot do: answer about objects outside its table (it says so), hold a conversation, or
 know anything beyond the nine attributes. The facts come from the teacher model and have not been
@@ -42,7 +43,8 @@ checked by a person.
 
 ```bash
 pip install torch fastapi uvicorn
-python -m haishool.app --model model/haishool-objects-v1.pt --records data/records-r1.jsonl --port 8650
+cat data/records-r1.jsonl data/records-r2.jsonl > data/all.jsonl
+python -m haishool.app --model model/haishool-objects-v2.pt --records data/all.jsonl --port 8650
 ```
 
 Train your own (the teacher needs [ollama](https://ollama.com) with `qwen2.5:14b-instruct-q4_K_M`):
@@ -59,8 +61,8 @@ python -m haishool.student train --records data/all.jsonl --out runs/full
 | Path | Content |
 |---|---|
 | `haishool/` | schema, teacher, model, student training, translator, chat app |
-| `model/` | weights of version 1 (half precision) and its training and evaluation reports |
-| `data/` | the training facts, one JSON line per object |
+| `model/` | weights of versions 1 and 2 (half precision) and their training and evaluation reports |
+| `data/` | the training facts, one JSON line per object, per data round |
 | `docs/` | the website (landing page with chat, data browser) |
 | `LESSONS.md` | what we learned before this, and why it is built this way |
 

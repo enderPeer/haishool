@@ -46,12 +46,12 @@ let rows=[];
 function render(){const s=document.getElementById("search").value.trim().toLowerCase(),a=document.getElementById("attr").value;
 const body=document.getElementById("body");body.replaceChildren();let n=0;
 for(const r of rows){const hay=a?(r.values[a]||""):Object.values(r.values).join(" ");if(s&&!(r.obj.includes(s.replace(/ /g,"_"))||pretty(hay).toLowerCase().includes(s)))continue;
-n++;if(n>1500)continue;const tr=document.createElement("tr");const td=document.createElement("td");td.className="obj";td.textContent=pretty(r.obj);tr.append(td);
+n++;if(n>1500)continue;const tr=document.createElement("tr");const td=document.createElement("td");td.className="obj";td.textContent=pretty(r.obj);tr.append(td);const rd=document.createElement("td");rd.textContent=r.round||1;tr.append(rd);
 for(const k of KEYS){const c=document.createElement("td");c.textContent=pretty(r.values[k]);tr.append(c)}body.append(tr)}
 document.getElementById("count").textContent=n+" of "+rows.length+" objects"+(n>1500?" (first 1500 shown)":"")}
 fetch("data/records.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{rows=d.records.sort((x,y)=>x.obj.localeCompare(y.obj));
 document.getElementById("stats").innerHTML="";[["objects",d.objects],["facts",d.facts],["data round",d.round]].forEach(([l,v])=>{const s=document.createElement("div");s.className="stat";const b=document.createElement("b");b.textContent=v;s.append(b,document.createTextNode(l));document.getElementById("stats").append(s)});
-const head=document.getElementById("head");["object",...KEYS].forEach(k=>{const th=document.createElement("th");th.textContent=k;head.append(th)});
+const head=document.getElementById("head");["object","round",...KEYS].forEach(k=>{const th=document.createElement("th");th.textContent=k;head.append(th)});
 const sel=document.getElementById("attr");KEYS.forEach(k=>{const o=document.createElement("option");o.value=k;o.textContent=k;sel.append(o)});render()});
 document.getElementById("search").addEventListener("input",render);document.getElementById("attr").addEventListener("change",render);
 </script>
