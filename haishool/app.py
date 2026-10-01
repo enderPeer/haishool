@@ -20,9 +20,10 @@ from fastapi.responses import HTMLResponse
 from pydantic import BaseModel, Field
 
 from haishool.student import answer, describe, generate, load
-from haishool.links import Graph, load_graph, node_in, path_text, relation_for, relation_sentence, two_nodes, view_for
+from haishool.links import (Graph, edge_truth, load_graph, node_in, path_text, relation_for, relation_sentence, two_nodes,
+                            view_for, yes_no, yes_no_sentence)
 from haishool.search import Index, resolve
-from haishool.translate import SELF, alias_index, record_text, sentence, subject
+from haishool.translate import SELF, alias_index, record_text, sentence, subject, wanted_keys
 
 PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Haishool</title>
@@ -97,6 +98,15 @@ def build(model_path: Path, records_path: Path, device: str, hops: Path | None =
         """Round-4 routes: a path between two linked things, or one relation (optionally in one view)."""
         if graph is None:
             return None
+        triple = yes_no(question, graph, aliases)
+        if triple:
+            a, rel, b = triple
+            truth = edge_truth(graph, a, rel, b)
+            if not truth and any(wanted_keys(question) & set(values.get(x, {})) for x in (a, b)):
+                return None  # no link, but a record fact answers it ("is paris the capital of france")
+            said = generate(model, vocab, f"q {a} {rel} {b}. a", device=device)
+            return {"answer": yes_no_sentence(a, rel, b, truth, said), "query": f"q {a} {rel} {b}. a",
+                    "dense": f"{said} | links data: {', '.join(truth) or 'no such link'}"}
         pair = two_nodes(question, graph, aliases)
         if pair:
             a, b = pair
@@ -109,6 +119,10 @@ def build(model_path: Path, records_path: Path, device: str, hops: Path | None =
             return None
         rel = relation_for(question, obj, graph)
         if rel is None:
+            return None
+        own = set(values.get(obj, {}))
+        # a round-3 fact answers it (language, continent, capital ...) unless the link is disputed
+        if (rel in own or wanted_keys(question) & own) and (obj, rel) not in graph.views:
             return None
         view = view_for(question, graph)
         prompt = f"q {obj} {rel}" + (f" according_to {view}" if view else "") + ". a"
@@ -128,7 +142,8 @@ def build(model_path: Path, records_path: Path, device: str, hops: Path | None =
             line = f"{obj}. " + " ".join(f"{k} {d}." for k, d in got)
             parts += record_text(line, etype if etype not in ("self", "node") else None)
             dense_parts.append(line)
-        for rel in graph.rels.get(obj, [])[:6]:
+        skip = {"of_type", "is_a"} | set(own)
+        for rel in [r for r in graph.rels.get(obj, []) if r not in skip][:5]:
             d = generate(model, vocab, f"q {obj} {rel}. a", device=device)
             parts.append(relation_sentence(obj, rel, d, graph))
             dense_parts.append(f"{rel} {d}.")

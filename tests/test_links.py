@@ -30,3 +30,16 @@ def test_sentences():
         "Abraham founded Judaism (according to Judaism)."
     assert path_text("abraham father_figure_of judaism according_to judaism", "1", G) == \
         "Abraham → father figure of → Judaism (according to Judaism). That is 1 hop."
+
+
+def test_yes_no_follows_the_links():
+    from haishool.links import edge_truth, yes_no, yes_no_sentence
+    g = Graph(rels={"turkey": ["borders"], "greece": ["borders"], "israel": ["borders"]},
+              relation_names={"borders"},
+              edges={("turkey", "borders", "greece"): ["fact"], ("greece", "borders", "turkey"): ["fact"]})
+    assert yes_no("does turkey border greece", g) == ("turkey", "borders", "greece")
+    assert yes_no("what borders turkey", g) is None
+    assert yes_no_sentence("turkey", "borders", "greece", edge_truth(g, "turkey", "borders", "greece"), "yes") == \
+        "Yes: Turkey borders Greece."
+    no = yes_no_sentence("turkey", "borders", "israel", edge_truth(g, "turkey", "borders", "israel"), "yes")
+    assert no.startswith("Not in what I learned: I have no link saying that Turkey borders Israel.") and "guessed otherwise" in no

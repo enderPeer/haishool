@@ -68,10 +68,34 @@ class Graph:
     views: dict[tuple[str, str], list[str]] = field(default_factory=dict)  # (node, relation) -> views held
     all_views: set[str] = field(default_factory=set)
     relation_names: set[str] = field(default_factory=set)
+    edges: dict[tuple[str, str, str], list[str]] = field(default_factory=dict)  # (a, rel, b) -> views ("fact")
 
     @property
     def nodes(self) -> set[str]:
         return set(self.rels)
+
+    def named(self, question: str, aliases: dict[str, str] | None = None) -> list[str]:
+        """Linked things named in the question, in the order they appear; a rare word of a name
+        counts too ("einstein" -> albert_einstein)."""
+        q = question.lower()
+        found = {c[2] for c in candidates(q, self.nodes, aliases) if c[2] in self.rels}
+        if not hasattr(self, "_words"):
+            index: dict[str, set[str]] = {}
+            for n in self.rels:
+                for w in n.split("_"):
+                    if len(w) >= 4:
+                        index.setdefault(w, set()).add(n)
+            self._words = {w: next(iter(ns)) for w, ns in index.items() if len(ns) == 1}
+        # a one-word thing that is only the asked relation's word ("capital") is not a subject
+        rel_words = {w for r in self.relation_names for w in r.split("_")}
+        if len(found) > 1:
+            found = {n for n in found if "_" in n or n not in rel_words} or found
+        if len(found) < 2:
+            covered = {w for n in found for w in n.split("_")}
+            for w in re.findall(r"[a-z0-9]+", q):
+                if w in self._words and w not in covered and w not in rel_words:
+                    found.add(self._words[w])
+        return sorted(found, key=lambda n: min((q.find(w) for w in n.split("_") if q.find(w) >= 0), default=len(q)))
 
 
 def load_graph(train_lines: Path, edges: Path | None = None) -> Graph:
@@ -93,7 +117,12 @@ def load_graph(train_lines: Path, edges: Path | None = None) -> Graph:
     if edges and edges.exists():
         for line in edges.open(encoding="utf-8"):
             e = json.loads(line)
-            if e.get("view", "fact") == "fact":
+            view = e.get("view", "fact")
+            for key in ((e["a"], e["rel"], e["b"]), (e["b"], e.get("inverse", e["rel"]), e["a"])):
+                g.edges.setdefault(key, [])
+                if view not in g.edges[key]:
+                    g.edges[key].append(view)
+            if view == "fact":
                 continue
             g.all_views.add(e["view"])
             for key in ((e["a"], e["rel"]), (e["b"], e.get("inverse", e["rel"]))):
@@ -129,15 +158,26 @@ NICE: dict[str, str] = {
 }
 
 
-def relation_for(question: str, obj: str, g: Graph) -> str | None:
-    """The relation of ``obj`` the question asks about, or None."""
+GENERIC = {"is_a", "of_type", "type_of", "has_instance"}
+WEAK_WORDS = {"is", "a", "the", "type", "kind", "has", "was", "had", "of"}
+
+
+def _clause_free(question: str) -> str:
+    """The question without its "according to ..." clause (that names the side, not the subject)."""
+    return ACCORDING.sub(" ", question.lower())
+
+
+def relation_for(question: str, obj: str, g: Graph, among: list[str] | None = None) -> str | None:
+    """The relation of ``obj`` (or, with ``among``, any of those relations) the question asks about."""
     q = question.lower()
     words = {_stem(w) for w in re.findall(r"[a-z]+", q)}
     if re.search(r"\bwho (?:is|are|was|were|plays?|played) in\b", q) and "has_member" in g.rels.get(obj, []):
         return "has_member"
     best, best_score = None, 0.0
-    for rel in g.rels.get(obj, []):
-        own = {_stem(w) for w in rel.split("_") if w not in PREPS and w not in ("has", "was", "had")}
+    for rel in (among if among is not None else g.rels.get(obj, [])):
+        if rel in GENERIC:
+            continue
+        own = {_stem(w) for w in rel.split("_") if w not in PREPS and w not in WEAK_WORDS}
         syn = {_stem(w) for w in SYNONYMS.get(rel, ())}
         score = len(words & own) * 2 + len(words & syn)
         if score > best_score:
@@ -169,23 +209,65 @@ def two_nodes(question: str, g: Graph, aliases: dict[str, str] | None = None) ->
     """The two linked things a "how is X connected to Y" question names, in the order asked."""
     if not CONNECT.search(question.lower()):
         return None
-    q = question.lower()
-    found = [c[2] for c in candidates(q, g.nodes, aliases) if c[2] in g.nodes]
-    if len(found) < 2:
-        return None
-    found.sort(key=lambda n: min((q.find(w) for w in n.split("_") if q.find(w) >= 0), default=len(q)))
-    return found[0], found[1]
+    found = g.named(question, aliases)
+    return (found[0], found[-1]) if len(found) >= 2 else None
 
 
 def node_in(question: str, g: Graph, aliases: dict[str, str] | None = None) -> str | None:
-    """The longest linked thing named in the question."""
-    found = [c for c in candidates(question.lower(), g.nodes, aliases) if c[2] in g.nodes]
+    """The linked thing the question is about: one that has the asked relation first ("the capital
+    of israel": israel, not the concept capital), then the longest name."""
+    q = _clause_free(question)
+    found = [c for c in candidates(q, g.nodes, aliases) if c[2] in g.nodes]
     if found:
-        return max(found, key=lambda c: (c[0], c[1]))[2]
+        return max(found, key=lambda c: (relation_for(q, c[2], g) is not None, c[0], c[1]))[2]
     for word, view in VIEW_ALIASES.items():  # "what is holy to the jews" -> judaism
         if view in g.nodes and re.search(rf"\b{word}\b", question.lower()):
             return view
     return None
+
+
+YESNO = re.compile(r"^\s*(?:is|are|was|were|does|do|did|has|have|had|can)\b")
+
+
+def yes_no(question: str, g: Graph, aliases: dict[str, str] | None = None) -> tuple[str, str, str] | None:
+    """``("turkey", "borders", "greece")`` for "does turkey border greece?", else None."""
+    q = question.lower()
+    if not YESNO.search(q):
+        return None
+    found = g.named(q, aliases)
+    if len(found) < 2:
+        return None
+    pairs = [(a, b) for i, a in enumerate(found) for b in found[i + 1:]]
+    for a, b in pairs:  # the asked relation links them
+        rel = relation_for(q, a, g)
+        if rel and (a, rel, b) in g.edges:
+            return a, rel, b
+    for a, b in pairs:  # any link between them that the question words fit
+        rels = [r for (x, r, y) in g.edges if x == a and y == b]
+        rel = relation_for(q, a, g, among=rels)
+        if rel:
+            return a, rel, b
+    a, b = found[0], found[-1]  # the asked relation, even if they are not linked by it: "no"
+    rel = relation_for(q, a, g) or relation_for(q, a, g, among=sorted(g.relation_names))
+    return (a, rel, b) if rel else None
+
+
+def edge_truth(g: Graph, a: str, rel: str, b: str) -> list[str]:
+    """What the links data says: ``["fact"]``, the views that hold it, or ``[]`` (not a link)."""
+    return g.edges.get((a, rel, b), [])
+
+
+def yes_no_sentence(a: str, rel: str, b: str, truth: list[str], model_said: str) -> str:
+    claim = f"{_title(a)} {rel_phrase(rel)} {_title(b)}"
+    if "fact" in truth:
+        text = f"Yes: {claim}."
+    elif truth:
+        text = f"It depends on whom you ask: {claim} according to {', '.join(_title(v) for v in truth)}; others disagree."
+    else:
+        text = f"Not in what I learned: I have no link saying that {claim}."
+    said = model_said.split()[0] if model_said.split() else ""
+    agrees = (said == "yes") == ("fact" in truth) if said in ("yes", "no") else True
+    return text if agrees else text + " (The model guessed otherwise; the answer follows the links it was trained on.)"
 
 
 def rel_phrase(rel: str) -> str:
@@ -244,6 +326,9 @@ def path_text(path: str, hops: str, g: Graph) -> str:
             continue
         out.append(_title(toks[i]))
         i += 1
+    if len(toks) == 5 and toks[1] == "of_type" and toks[3] == "type_of":  # only a shared kind links them
+        kind = toks[2].removeprefix("type_").replace("_", " ")
+        return (f"Both are {kind}s ({_title(toks[0])} and {_title(toks[4])}); I learned no closer link between them.")
     n = hops.split()[0] if hops.split() else ""
     tail = f" That is {n} hop{'s' if n != '1' else ''}." if n.isdigit() else ""
     return " → ".join(out) + "." + tail

@@ -54,28 +54,6 @@ What it cannot do: answer about things outside its table (it says so), hold a co
 know more than the keys of each record. The facts come from the teacher model and have not been
 checked by a person; some are wrong or oddly worded, and they show up exactly that way.
 
-## Version 5: everything linked (round 4b)
-
-Round 4b (same parallel session) links all 3,081 records into one graph: 3,840 things and 14,502
-links (from the hand-written seed, from record values that name another record, from rules, and
-through shared hubs such as Europe, kitchen or "person"), plus yes/no lines (`q turkey borders
-greece. a yes.`). The chat (`haishool/links.py`) adds:
-
-- yes/no questions ("does Turkey border Greece"). The answer follows the edge list the model was
-  trained on; when the model's own yes/no disagrees, the answer says so (its "no" examples used
-  random partners, so it says yes to near misses such as Turkey and Israel);
-- paths between any two records, also by partial name ("how is Einstein connected to Newton");
-  when two things only share a kind, it says that instead of a path through the hub.
-
-| | Version 5 | Version 4 | Version 3 |
-|---|---|---|---|
-| Trained facts recalled exactly | 99.6 % | 100 % | 100 % |
-| Held-out facts guessed exactly (1,877) | **35 %** | 21 % | 22 % |
-| Relations recalled exactly | 99 % of 500 | 98 % of 213 | n/a |
-| Yes/no lines recalled | 100 % of 500 | n/a | n/a |
-| Paths it never saw, exactly | 66 % of 500 (bigger graph) | 96 % of 279 | n/a |
-| Parameters | 15.8 million | 15.8 million | 15.7 million |
-
 ## Version 4: links between things
 
 Round 4 (built in a parallel session) adds a small graph of 52 things and 135 hand-checked links
@@ -134,6 +112,12 @@ no against the links and marks the model's mistakes. Paths can be real but point
 teacher record is wrong, and `usa` is still a separate hub from `united_states` in this build.
 Data: `data/hops-v4b/` (`hops-train-r4.txt` sha256 12013c56...), model: `model/haishool-v4b.pt`.
 
+In the public chat (`haishool/links.py`, version 4b since 2026-10-01): yes/no questions ("does
+Turkey border Greece") answer from the links the model was trained on and say when the model's own
+guess disagrees; a missing link is answered as "not in what I learned", not as a hard no; paths work
+by partial names ("how is Einstein connected to Newton"), and two things that only share a kind are
+described as such instead of a path through the hub.
+
 ## How it answers every question
 
 It never refuses. If a question names no record, Homunculi still answers from its training data,
@@ -171,7 +155,7 @@ must have seen).
 
 ```bash
 pip install torch fastapi uvicorn
-python -m haishool.app --model model/haishool-v5.pt --records data/records-r3-all.jsonl --hops data/hops-v5 --port 8650
+python -m haishool.app --model model/haishool-v4b.pt --records data/records-r3-all.jsonl --hops data/hops-v4b --port 8650
 # version 4: --model model/haishool-v4.pt --hops data/hops-v4; version 3 without links: model/haishool-v3.pt, no --hops
 python -m haishool.hops_app --model model/haishool-v4b.pt --records data/records-r3-all.jsonl --port 8651
 # version 4b test chat: paths, yes/no and views, every step checked against the links
