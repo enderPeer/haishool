@@ -54,6 +54,36 @@ What it cannot do: answer about things outside its table (it says so), hold a co
 know more than the keys of each record. The facts come from the teacher model and have not been
 checked by a person; some are wrong or oddly worded, and they show up exactly that way.
 
+## Version 4: links between things
+
+Round 4 (built in a parallel session) adds a small graph of 52 things and 135 hand-checked links
+(54 kinds: borders, capital of, founded, holy to, influenced, ...). Disputed links keep who holds
+them instead of one flat answer. The model learned each thing's links, each side's view and the
+paths between any two things:
+
+```
+q turkey borders. a greece syria.
+q jerusalem capital_of. a israel palestine contested.
+q jerusalem capital_of according_to palestine. a palestine.
+q abraham hop led_zeppelin. a abraham father_figure_of christianity according_to christianity ... signed led_zeppelin.
+```
+
+In the chat: "what borders Turkey", "what is the capital of Israel" (contested, with the sides),
+"... according to Palestine", "how is Abraham connected to Led Zeppelin" (a six-hop path), and
+descriptions of linked things combine their facts with their links (`haishool/links.py`).
+
+The round-4 data (`data/hops-v4/`) and its build and training code (`haishool/relations.py`,
+`student.py --extra-lines`) come with the round-4 commit from that session.
+
+| | Version 4 | Version 3 |
+|---|---|---|
+| Trained facts recalled exactly | 1,000 of 1,000 | 1,000 of 1,000 |
+| Held-out facts guessed exactly | 21 % of 1,877 | 22 % of 1,877 |
+| Relations recalled exactly | 98 % of 213 | n/a |
+| Views ("according to") recalled exactly | 19 of 19 | n/a |
+| Paths between linked things it never saw, exactly | 96 % of 279 (path length 97 %) | n/a |
+| Parameters | 15.8 million | 15.7 million |
+
 ## How it answers every question
 
 It never refuses. If a question names no record, Homunculi still answers from its training data,
@@ -91,7 +121,8 @@ must have seen).
 
 ```bash
 pip install torch fastapi uvicorn
-python -m haishool.app --model model/haishool-v3.pt --records data/records-r3-all.jsonl --port 8650
+python -m haishool.app --model model/haishool-v4.pt --records data/records-r3-all.jsonl --hops data/hops-v4 --port 8650
+# version 3 without links: --model model/haishool-v3.pt and no --hops
 ```
 
 Train your own (the teacher needs [ollama](https://ollama.com) with `qwen2.5:14b-instruct-q4_K_M`):
@@ -111,7 +142,7 @@ python -m pytest tests                                                          
 | Path | Content |
 |---|---|
 | `haishool/` | schema, teachers, merge, model, student training, parser and translator, chat app |
-| `model/` | weights of versions 1 to 3 (half precision) and their training and evaluation reports |
+| `model/` | weights of versions 1 to 4 (half precision) and their training and evaluation reports |
 | `data/` | the training facts, one JSON line per record: `records-r1/r2/r3.jsonl` per round, `manual.jsonl` and `identity.jsonl` by hand, `records-r3-all.jsonl` merged (what v3 was trained on) |
 | `docs/` | the website (landing page with chat, data browser) |
 | `tests/` | rule tests for parser, translator and merge |

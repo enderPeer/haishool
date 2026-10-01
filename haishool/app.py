@@ -19,7 +19,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel, Field
 
-from haishool.student import answer, describe, load
+from haishool.student import answer, describe, generate, load
+from haishool.links import Graph, load_graph, node_in, path_text, relation_for, relation_sentence, two_nodes, view_for
 from haishool.search import Index, resolve
 from haishool.translate import SELF, alias_index, record_text, sentence, subject
 
@@ -62,11 +63,19 @@ class Ask(BaseModel):
     question: str = Field(min_length=1, max_length=300)
 
 
-def build(model_path: Path, records_path: Path, device: str) -> FastAPI:
+def build(model_path: Path, records_path: Path, device: str, hops: Path | None = None) -> FastAPI:
     model, vocab = load(model_path, device)
     rows = [json.loads(line) for line in records_path.open(encoding="utf-8")]
     known = {r["obj"]: r["values"].get("type") for r in rows} | {SELF: "self"}
     aliases = alias_index(rows)
+    values = {r["obj"]: r["values"] for r in rows}
+    # round 4: the links between things (training lines + edge list from haishool.relations)
+    graph: Graph | None = None
+    if hops is not None:
+        graph = load_graph(hops / "hops-train-r4.txt", hops / "hops-edges-r4.jsonl")
+        for node in graph.nodes:
+            known.setdefault(node, "node")
+            rows.append({"obj": node, "values": {"type": "node"}}) if node not in values else None
     index = Index(rows)
     app = FastAPI()
     app.add_middleware(CORSMiddleware, allow_origins=["https://enderpeer.github.io"],
@@ -82,14 +91,62 @@ def build(model_path: Path, records_path: Path, device: str) -> FastAPI:
     @app.get("/api/info")
     def info() -> dict:
         return {"objects": len(known) - 1, "params": model.num_params(), "vocab": len(vocab.itos),
-                "model": model_path.name}
+                "model": model_path.name, "linked": len(graph.nodes) if graph else 0}
+
+    def ask_links(question: str) -> dict | None:
+        """Round-4 routes: a path between two linked things, or one relation (optionally in one view)."""
+        if graph is None:
+            return None
+        pair = two_nodes(question, graph, aliases)
+        if pair:
+            a, b = pair
+            path = generate(model, vocab, f"q {a} hop {b}. a", max_new=90, device=device)
+            n = generate(model, vocab, f"q {a} hops {b}. a", device=device)
+            return {"answer": path_text(path, n, graph), "query": f"q {a} hop {b}. a q {a} hops {b}. a",
+                    "dense": f"{path} | {n}"}
+        obj = node_in(question, graph, aliases)
+        if obj is None:
+            return None
+        rel = relation_for(question, obj, graph)
+        if rel is None:
+            return None
+        view = view_for(question, graph)
+        prompt = f"q {obj} {rel}" + (f" according_to {view}" if view else "") + ". a"
+        dense = generate(model, vocab, prompt, device=device)
+        text = relation_sentence(obj, rel, dense, graph)
+        if view:
+            text = f"According to {view.replace('_', ' ').title()}: {text}"
+        return {"answer": text, "query": prompt, "dense": dense}
+
+    def describe_node(obj: str, etype: str | None) -> dict:
+        """A linked thing: its record facts key by key, then its links (the free description of a
+        linked thing gives only the links)."""
+        parts, dense_parts, query = [], [], []
+        own = [k for k in values.get(obj, {}) if k not in ("type", "aliases")]
+        if own:
+            got = [(k, answer(model, vocab, obj, k, device)) for k in own]
+            line = f"{obj}. " + " ".join(f"{k} {d}." for k, d in got)
+            parts += record_text(line, etype if etype not in ("self", "node") else None)
+            dense_parts.append(line)
+        for rel in graph.rels.get(obj, [])[:6]:
+            d = generate(model, vocab, f"q {obj} {rel}. a", device=device)
+            parts.append(relation_sentence(obj, rel, d, graph))
+            dense_parts.append(f"{rel} {d}.")
+            query.append(rel)
+        return {"answer": " ".join(parts), "query": f"{obj}. + links: " + " ".join(query), "dense": " ".join(dense_parts)}
 
     @app.post("/api/ask")
     def ask(body: Ask) -> dict:
+        with torch.no_grad():
+            linked = ask_links(body.question)
+            if linked:
+                return linked
         r = resolve(body.question, known, aliases, index)
         obj, attrs, note, prefix = r["obj"], r["attrs"], r["note"], r["prefix"]
         etype = known.get(obj)
         with torch.no_grad():
+            if attrs is None and graph is not None and obj in graph.nodes and not prefix:
+                return describe_node(obj, etype)
             if attrs is None:
                 dense = describe(model, vocab, obj, device)
                 text = " ".join(record_text(dense, etype if etype != "self" else None)) or "I know its name but no facts."
@@ -114,8 +171,9 @@ def main() -> None:
     ap.add_argument("--host", default="127.0.0.1")
     ap.add_argument("--port", type=int, default=8650)
     ap.add_argument("--device", default="cpu")
+    ap.add_argument("--hops", type=Path, default=None, help="folder with the round-4 hops files (links model)")
     args = ap.parse_args()
-    uvicorn.run(build(args.model, args.records, args.device), host=args.host, port=args.port)
+    uvicorn.run(build(args.model, args.records, args.device, args.hops), host=args.host, port=args.port)
 
 
 if __name__ == "__main__":

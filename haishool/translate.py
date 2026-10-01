@@ -104,7 +104,7 @@ INTENT_KEYS: dict[str, tuple[str, ...]] = {
 OBJECT_KEYS = ("kind", "color", "shape", "size", "made", "parts", "use", "place", "alive")
 DESCRIBE = re.compile(r"\btell me (?:about|everything)|\bdescribe\b|\bexplain\b|\binfo(?:rmation)? (?:about|on)\b|\bwhat do you know about\b")
 SELF_WORDS = re.compile(r"\byou\b|\byour\b|\byourself\b|\bhomunculi\b|\bu\b|\bur\b")
-PROPER = {"person", "country", "religion", "work", "event", "office"}
+PROPER = {"person", "country", "religion", "work", "event", "office", "node"}
 SMALL = {"of", "the", "and", "in", "on", "a", "an", "to", "for", "at", "by"}
 
 

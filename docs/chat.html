@@ -92,9 +92,10 @@ button.send:disabled{opacity:.5;cursor:default}button.send svg{width:20px;height
 const $=id=>document.getElementById(id);
 const log=$("log"),form=$("form"),q=$("q"),send=$("send"),statusEl=$("status");
 const KEY="homunculi-chat-v1";
-const examples=["who are you","what are your desires","who is the kanzler","how many states does germany have","what is game theory",
-  "who was albert einstein","what are the big religions","which shoe am i wearing right now","what is the capital of japan",
-  "tell me about the cold war","what is a black hole","who made minecraft","make me rich","what color is a banana"];
+const examples=["who are you","how is abraham connected to led zeppelin","what borders turkey","what is the capital of israel",
+  "where does baklava come from","who is the kanzler","how many states does germany have","what is game theory",
+  "who was albert einstein","which shoe am i wearing right now","what is the capital of japan","tell me about istanbul",
+  "who invented the telephone","make me rich","what color is a banana"];
 let api=null,busy=false,msgs=[],past=[],pastIdx=-1;
 
 const store={load(){try{return JSON.parse(localStorage.getItem(KEY)||"[]")}catch(e){return[]}},
@@ -106,7 +107,7 @@ function icon(){const s=document.createElementNS("http://www.w3.org/2000/svg","s
 
 function intro(){const d=document.createElement("div");d.className="intro";const b=document.createElement("div");b.className="big";b.append(icon());
   const p=document.createElement("p");p.innerHTML="<b>Homunculi</b> learned facts, not language: objects, people, countries, history, science and culture. "+
-  "Fixed rules turn what it says into English, so nothing is made up on top.";d.append(b,p);log.append(d)}
+  "It also knows how some things link up, and who holds a disputed link. Fixed rules turn what it says into English, so nothing is made up on top.";d.append(b,p);log.append(d)}
 
 function bubble(who,text,dense,query){
   const row=document.createElement("div");row.className="row "+who;
@@ -155,7 +156,7 @@ async function connect(){
   let base="";
   try{const e=await fetch("endpoint.json",{cache:"no-store"});if(e.ok)base=((await e.json()).api_url||"").replace(/\/$/,"")}catch(e){}
   try{const i=await fetch(base+"/api/info",{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json()});api=base;
-    setStatus(true,"online · runs locally in Berlin · "+i.objects.toLocaleString("en")+" things known · "+(i.params/1e6).toFixed(1)+" M parameters")}
+    setStatus(true,"online · runs locally in Berlin · "+i.objects.toLocaleString("en")+" things known"+(i.linked?" · "+i.linked+" linked":"")+" · "+(i.params/1e6).toFixed(1)+" M parameters")}
   catch(e){api=null;setStatus(false,"offline right now · the machine I run on may be asleep")}
   greet()}
 

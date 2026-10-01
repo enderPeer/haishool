@@ -1,0 +1,340 @@
+{
+ "records": 3081,
+ "vocab": 13355,
+ "params": 15787008,
+ "train_tokens_per_pass": 352176,
+ "steps": 14000,
+ "holdout": 0.0,
+ "recall_trained_pairs": {
+  "n": 1000,
+  "exact": 1.0,
+  "word_recall": 1.0
+ },
+ "inference_heldout_pairs": {
+  "n": 0
+ },
+ "log": [
+  {
+   "step": 250,
+   "loss": 1.9592,
+   "seconds": 23.4
+  },
+  {
+   "step": 500,
+   "loss": 1.4125,
+   "seconds": 46.7
+  },
+  {
+   "step": 750,
+   "loss": 1.1377,
+   "seconds": 70.2
+  },
+  {
+   "step": 1000,
+   "loss": 1.0818,
+   "seconds": 93.6
+  },
+  {
+   "step": 1250,
+   "loss": 1.0382,
+   "seconds": 117.1
+  },
+  {
+   "step": 1500,
+   "loss": 1.0362,
+   "seconds": 140.5
+  },
+  {
+   "step": 1750,
+   "loss": 1.0023,
+   "seconds": 164.0
+  },
+  {
+   "step": 2000,
+   "loss": 1.0275,
+   "seconds": 187.4
+  },
+  {
+   "step": 2250,
+   "loss": 1.0374,
+   "seconds": 210.8
+  },
+  {
+   "step": 2500,
+   "loss": 0.9996,
+   "seconds": 234.1
+  },
+  {
+   "step": 2750,
+   "loss": 1.0102,
+   "seconds": 257.5
+  },
+  {
+   "step": 3000,
+   "loss": 1.0446,
+   "seconds": 280.8
+  },
+  {
+   "step": 3250,
+   "loss": 1.0267,
+   "seconds": 304.3
+  },
+  {
+   "step": 3500,
+   "loss": 1.0338,
+   "seconds": 327.6
+  },
+  {
+   "step": 3750,
+   "loss": 1.0534,
+   "seconds": 351.0
+  },
+  {
+   "step": 4000,
+   "loss": 0.9963,
+   "seconds": 374.3
+  },
+  {
+   "step": 4250,
+   "loss": 1.0186,
+   "seconds": 397.7
+  },
+  {
+   "step": 4500,
+   "loss": 1.0313,
+   "seconds": 421.0
+  },
+  {
+   "step": 4750,
+   "loss": 1.035,
+   "seconds": 444.4
+  },
+  {
+   "step": 5000,
+   "loss": 0.9891,
+   "seconds": 467.7
+  },
+  {
+   "step": 5250,
+   "loss": 1.0259,
+   "seconds": 491.1
+  },
+  {
+   "step": 5500,
+   "loss": 0.9986,
+   "seconds": 514.4
+  },
+  {
+   "step": 5750,
+   "loss": 1.0119,
+   "seconds": 537.8
+  },
+  {
+   "step": 6000,
+   "loss": 1.0223,
+   "seconds": 561.1
+  },
+  {
+   "step": 6250,
+   "loss": 1.047,
+   "seconds": 584.4
+  },
+  {
+   "step": 6500,
+   "loss": 1.0081,
+   "seconds": 607.7
+  },
+  {
+   "step": 6750,
+   "loss": 1.0125,
+   "seconds": 631.0
+  },
+  {
+   "step": 7000,
+   "loss": 1.0345,
+   "seconds": 654.3
+  },
+  {
+   "step": 7250,
+   "loss": 1.0061,
+   "seconds": 677.6
+  },
+  {
+   "step": 7500,
+   "loss": 1.017,
+   "seconds": 701.0
+  },
+  {
+   "step": 7750,
+   "loss": 1.0319,
+   "seconds": 724.4
+  },
+  {
+   "step": 8000,
+   "loss": 0.9847,
+   "seconds": 747.7
+  },
+  {
+   "step": 8250,
+   "loss": 0.9972,
+   "seconds": 771.1
+  },
+  {
+   "step": 8500,
+   "loss": 1.0165,
+   "seconds": 794.4
+  },
+  {
+   "step": 8750,
+   "loss": 1.0112,
+   "seconds": 817.8
+  },
+  {
+   "step": 9000,
+   "loss": 1.0083,
+   "seconds": 841.2
+  },
+  {
+   "step": 9250,
+   "loss": 0.9809,
+   "seconds": 864.5
+  },
+  {
+   "step": 9500,
+   "loss": 0.9903,
+   "seconds": 887.9
+  },
+  {
+   "step": 9750,
+   "loss": 0.9799,
+   "seconds": 911.2
+  },
+  {
+   "step": 10000,
+   "loss": 0.9969,
+   "seconds": 934.5
+  },
+  {
+   "step": 10250,
+   "loss": 1.0187,
+   "seconds": 957.9
+  },
+  {
+   "step": 10500,
+   "loss": 1.0052,
+   "seconds": 981.2
+  },
+  {
+   "step": 10750,
+   "loss": 1.0151,
+   "seconds": 1004.5
+  },
+  {
+   "step": 11000,
+   "loss": 1.0062,
+   "seconds": 1027.9
+  },
+  {
+   "step": 11250,
+   "loss": 1.0007,
+   "seconds": 1051.2
+  },
+  {
+   "step": 11500,
+   "loss": 1.0336,
+   "seconds": 1074.6
+  },
+  {
+   "step": 11750,
+   "loss": 0.9926,
+   "seconds": 1098.0
+  },
+  {
+   "step": 12000,
+   "loss": 0.9863,
+   "seconds": 1121.3
+  },
+  {
+   "step": 12250,
+   "loss": 1.0262,
+   "seconds": 1144.7
+  },
+  {
+   "step": 12500,
+   "loss": 1.0049,
+   "seconds": 1168.0
+  },
+  {
+   "step": 12750,
+   "loss": 1.0142,
+   "seconds": 1191.4
+  },
+  {
+   "step": 13000,
+   "loss": 1.0102,
+   "seconds": 1214.7
+  },
+  {
+   "step": 13250,
+   "loss": 0.9879,
+   "seconds": 1238.0
+  },
+  {
+   "step": 13500,
+   "loss": 0.9965,
+   "seconds": 1261.3
+  },
+  {
+   "step": 13750,
+   "loss": 1.013,
+   "seconds": 1284.7
+  },
+  {
+   "step": 14000,
+   "loss": 1.0035,
+   "seconds": 1308.1
+  }
+ ],
+ "extra_lines": {
+  "file": "data/hops-train-r4.txt",
+  "lines": 5588,
+  "trained": 5588,
+  "held_out": 0,
+  "recall_trained": {
+   "relation": {
+    "n": 213,
+    "exact": 0.9812
+   },
+   "view": {
+    "n": 19,
+    "exact": 1.0
+   },
+   "hop": {
+    "n": 500,
+    "exact": 1.0
+   },
+   "hops": {
+    "n": 500,
+    "exact": 1.0
+   }
+  },
+  "inference_heldout": {
+   "relation": {
+    "n": 0,
+    "exact": null
+   },
+   "view": {
+    "n": 0,
+    "exact": null
+   },
+   "hop": {
+    "n": 0,
+    "exact": null
+   },
+   "hops": {
+    "n": 0,
+    "exact": null
+   }
+  }
+ }
+}
