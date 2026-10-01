@@ -1,0 +1,135 @@
+{"a": "turkey", "rel": "borders", "inverse": "borders", "b": "greece", "view": "fact", "src": "seed", "why": "Land border in Thrace along the Evros river."}
+{"a": "turkey", "rel": "borders", "inverse": "borders", "b": "syria", "view": "fact", "src": "seed", "why": "Long southern border."}
+{"a": "israel", "rel": "borders", "inverse": "borders", "b": "lebanon", "view": "fact", "src": "seed", "why": "Northern border."}
+{"a": "israel", "rel": "borders", "inverse": "borders", "b": "syria", "view": "fact", "src": "seed", "why": "Border at the Golan Heights; where it runs is itself disputed."}
+{"a": "israel", "rel": "borders", "inverse": "borders", "b": "egypt", "view": "fact", "src": "seed", "why": "Border across the Sinai."}
+{"a": "lebanon", "rel": "borders", "inverse": "borders", "b": "syria", "view": "fact", "src": "seed", "why": "Northern and eastern border of Lebanon."}
+{"a": "turkey", "rel": "coast_on", "inverse": "coast_of", "b": "mediterranean_sea", "view": "fact", "src": "seed", "why": "Southern coast of Anatolia."}
+{"a": "israel", "rel": "coast_on", "inverse": "coast_of", "b": "mediterranean_sea", "view": "fact", "src": "seed", "why": "Western coast."}
+{"a": "greece", "rel": "coast_on", "inverse": "coast_of", "b": "mediterranean_sea", "view": "fact", "src": "seed", "why": "Aegean and Ionian seas are parts of it."}
+{"a": "lebanon", "rel": "coast_on", "inverse": "coast_of", "b": "mediterranean_sea", "view": "fact", "src": "seed", "why": "Whole western side."}
+{"a": "syria", "rel": "coast_on", "inverse": "coast_of", "b": "mediterranean_sea", "view": "fact", "src": "seed", "why": "Short coast around Latakia."}
+{"a": "egypt", "rel": "coast_on", "inverse": "coast_of", "b": "mediterranean_sea", "view": "fact", "src": "seed", "why": "Northern coast with Alexandria."}
+{"a": "morocco", "rel": "coast_on", "inverse": "coast_of", "b": "mediterranean_sea", "view": "fact", "src": "seed", "why": "Northern coast next to the Strait of Gibraltar."}
+{"a": "israel", "rel": "part_of", "inverse": "has_part", "b": "levant", "view": "fact", "src": "seed", "why": "The Levant is the eastern Mediterranean coast."}
+{"a": "lebanon", "rel": "part_of", "inverse": "has_part", "b": "levant", "view": "fact", "src": "seed", "why": "Core of the Levant."}
+{"a": "syria", "rel": "part_of", "inverse": "has_part", "b": "levant", "view": "fact", "src": "seed", "why": "Core of the Levant."}
+{"a": "palestine", "rel": "part_of", "inverse": "has_part", "b": "levant", "view": "fact", "src": "seed", "why": "Core of the Levant."}
+{"a": "istanbul", "rel": "city_in", "inverse": "has_city", "b": "turkey", "view": "fact", "src": "seed", "why": "Largest city of Turkey."}
+{"a": "berlin", "rel": "capital_of", "inverse": "has_capital", "b": "germany", "view": "fact", "src": "seed", "why": "Capital since reunification."}
+{"a": "london", "rel": "capital_of", "inverse": "has_capital", "b": "united_kingdom", "view": "fact", "src": "seed", "why": "Capital."}
+{"a": "hamburg", "rel": "city_in", "inverse": "has_city", "b": "germany", "view": "fact", "src": "seed", "why": "Port city in the north."}
+{"a": "marrakesh", "rel": "city_in", "inverse": "has_city", "b": "morocco", "view": "fact", "src": "seed", "why": "City in central Morocco."}
+{"a": "jerusalem", "rel": "capital_of", "inverse": "has_capital", "b": "israel", "view": "israel", "src": "seed", "why": "Israel names all of Jerusalem its capital; few states agree."}
+{"a": "jerusalem", "rel": "capital_of", "inverse": "has_capital", "b": "israel", "view": "united_states", "src": "seed", "why": "The United States recognised it in 2017."}
+{"a": "jerusalem", "rel": "capital_of", "inverse": "has_capital", "b": "palestine", "view": "palestine", "src": "seed", "why": "Palestinians name East Jerusalem their capital."}
+{"a": "palestine", "rel": "borders", "inverse": "borders", "b": "israel", "view": "fact", "src": "seed", "why": "West Bank and Gaza lie next to Israel; the lines are disputed."}
+{"a": "palestine", "rel": "borders", "inverse": "borders", "b": "egypt", "view": "fact", "src": "seed", "why": "Gaza borders Egypt at Rafah."}
+{"a": "jerusalem", "rel": "holy_to", "inverse": "holds_holy", "b": "judaism", "view": "judaism", "src": "seed", "why": "Site of the Temple; the Western Wall."}
+{"a": "jerusalem", "rel": "holy_to", "inverse": "holds_holy", "b": "christianity", "view": "christianity", "src": "seed", "why": "Place of the crucifixion and resurrection in Christian belief."}
+{"a": "jerusalem", "rel": "holy_to", "inverse": "holds_holy", "b": "islam", "view": "islam", "src": "seed", "why": "Al-Aqsa; the night journey of Muhammad in Muslim belief."}
+{"a": "abraham", "rel": "father_figure_of", "inverse": "has_father_figure", "b": "judaism", "view": "judaism", "src": "seed", "why": "Patriarch of the covenant."}
+{"a": "abraham", "rel": "father_figure_of", "inverse": "has_father_figure", "b": "christianity", "view": "christianity", "src": "seed", "why": "Father of faith in Christian tradition."}
+{"a": "abraham", "rel": "father_figure_of", "inverse": "has_father_figure", "b": "islam", "view": "islam", "src": "seed", "why": "Ibrahim, a prophet in Islam."}
+{"a": "moses", "rel": "prophet_of", "inverse": "has_prophet", "b": "judaism", "view": "judaism", "src": "seed", "why": "Gave the Torah in Jewish belief."}
+{"a": "moses", "rel": "prophet_of", "inverse": "has_prophet", "b": "islam", "view": "islam", "src": "seed", "why": "Musa, a prophet in Islam."}
+{"a": "jesus", "rel": "prophet_of", "inverse": "has_prophet", "b": "islam", "view": "islam", "src": "seed", "why": "Isa, a prophet in Islam."}
+{"a": "jesus", "rel": "son_of_god_in", "inverse": "holds_son_of_god", "b": "christianity", "view": "christianity", "src": "seed", "why": "Central Christian belief; Judaism and Islam do not hold it."}
+{"a": "muhammad", "rel": "prophet_of", "inverse": "has_prophet", "b": "islam", "view": "islam", "src": "seed", "why": "The final prophet in Muslim belief."}
+{"a": "jesus", "rel": "lived_in", "inverse": "home_of", "b": "jerusalem", "view": "fact", "src": "seed", "why": "Died in Jerusalem around 30 CE."}
+{"a": "moses", "rel": "lived_in", "inverse": "home_of", "b": "egypt", "view": "judaism", "src": "seed", "why": "The Exodus story begins in Egypt."}
+{"a": "byzantine_empire", "rel": "had_capital", "inverse": "was_capital_of", "b": "istanbul", "view": "fact", "src": "seed", "why": "As Constantinople, capital until 1453."}
+{"a": "istanbul", "rel": "old_name_from", "inverse": "gave_old_name_to", "b": "byzantine_empire", "view": "greece", "src": "seed", "why": "Greek speakers still call the city Konstantinoupoli, after its Byzantine name."}
+{"a": "byzantine_empire", "rel": "spoke_language_of", "inverse": "language_spoken_by", "b": "greece", "view": "fact", "src": "seed", "why": "Greek was the language of the Byzantine state."}
+{"a": "byzantine_empire", "rel": "state_religion", "inverse": "state_religion_of", "b": "christianity", "view": "fact", "src": "seed", "why": "Orthodox Christian empire."}
+{"a": "byzantine_empire", "rel": "built", "inverse": "built_by", "b": "hagia_sophia", "view": "fact", "src": "seed", "why": "Finished in 537 as a cathedral."}
+{"a": "hagia_sophia", "rel": "city_in", "inverse": "has_city", "b": "istanbul", "view": "fact", "src": "seed", "why": "Stands in the old city."}
+{"a": "hagia_sophia", "rel": "used_by", "inverse": "used", "b": "christianity", "view": "fact", "src": "seed", "why": "Church from 537 to 1453."}
+{"a": "hagia_sophia", "rel": "used_by", "inverse": "used", "b": "islam", "view": "fact", "src": "seed", "why": "Mosque from 1453, museum from 1934, mosque again since 2020."}
+{"a": "fall_of_constantinople", "rel": "ended", "inverse": "ended_by", "b": "byzantine_empire", "view": "fact", "src": "seed", "why": "1453, the end of the Byzantine state."}
+{"a": "fall_of_constantinople", "rel": "led_by", "inverse": "led", "b": "mehmed_ii", "view": "fact", "src": "seed", "why": "Ottoman sultan who took the city."}
+{"a": "fall_of_constantinople", "rel": "happened_in", "inverse": "scene_of", "b": "istanbul", "view": "fact", "src": "seed", "why": "The siege of the city in 1453."}
+{"a": "mehmed_ii", "rel": "ruled", "inverse": "ruled_by", "b": "ottoman_empire", "view": "fact", "src": "seed", "why": "Sultan 1444-46 and 1451-81."}
+{"a": "ottoman_empire", "rel": "had_capital", "inverse": "was_capital_of", "b": "istanbul", "view": "fact", "src": "seed", "why": "Capital from 1453 to 1922."}
+{"a": "ottoman_empire", "rel": "followed_by", "inverse": "followed", "b": "turkey", "view": "fact", "src": "seed", "why": "The Republic of Turkey was founded in 1923."}
+{"a": "ottoman_empire", "rel": "ruled", "inverse": "ruled_by", "b": "jerusalem", "view": "fact", "src": "seed", "why": "From 1517 to 1917."}
+{"a": "ottoman_empire", "rel": "ruled", "inverse": "ruled_by", "b": "levant", "view": "fact", "src": "seed", "why": "For about four hundred years."}
+{"a": "ottoman_empire", "rel": "ruled", "inverse": "ruled_by", "b": "egypt", "view": "fact", "src": "seed", "why": "From 1517, later in name only."}
+{"a": "ottoman_empire", "rel": "ruled", "inverse": "ruled_by", "b": "greece", "view": "fact", "src": "seed", "why": "Until Greek independence in the 1820s."}
+{"a": "suleiman_the_magnificent", "rel": "ruled", "inverse": "ruled_by", "b": "ottoman_empire", "view": "fact", "src": "seed", "why": "Sultan 1520-1566."}
+{"a": "suleiman_the_magnificent", "rel": "built", "inverse": "built_by", "b": "jerusalem", "view": "fact", "src": "seed", "why": "The present walls of the Old City, 1537-1541."}
+{"a": "ottoman_empire", "rel": "allied_with", "inverse": "allied_with", "b": "germany", "view": "fact", "src": "seed", "why": "Central Powers in the First World War."}
+{"a": "ottoman_empire", "rel": "fought_in", "inverse": "had_side", "b": "world_war_i", "view": "fact", "src": "seed", "why": "1914-1918; the empire broke up afterwards."}
+{"a": "germany", "rel": "fought_in", "inverse": "had_side", "b": "world_war_i", "view": "fact", "src": "seed", "why": "Central Powers."}
+{"a": "united_kingdom", "rel": "fought_in", "inverse": "had_side", "b": "world_war_i", "view": "fact", "src": "seed", "why": "Allied Powers."}
+{"a": "united_kingdom", "rel": "ruled", "inverse": "ruled_by", "b": "palestine", "view": "fact", "src": "seed", "why": "British Mandate 1920-1948, after the Ottoman defeat."}
+{"a": "turkey", "rel": "recognised", "inverse": "recognised_by", "b": "israel", "view": "fact", "src": "seed", "why": "In 1949, the first Muslim-majority country to do so."}
+{"a": "germany", "rel": "relations_with", "inverse": "relations_with", "b": "israel", "view": "fact", "src": "seed", "why": "Diplomatic relations since 1965."}
+{"a": "turkey", "rel": "signed", "inverse": "signed_by", "b": "turkish_german_labour_agreement", "view": "fact", "src": "seed", "why": "1961 recruitment agreement for guest workers."}
+{"a": "germany", "rel": "signed", "inverse": "signed_by", "b": "turkish_german_labour_agreement", "view": "fact", "src": "seed", "why": "West Germany, 1961."}
+{"a": "doner_kebab", "rel": "origin_in", "inverse": "origin_of", "b": "turkey", "view": "fact", "src": "seed", "why": "Meat roasted on a vertical spit, Ottoman Anatolia."}
+{"a": "doner_kebab", "rel": "popularised_in", "inverse": "popularised", "b": "berlin", "view": "fact", "src": "seed", "why": "The bread sandwich spread from Berlin in the 1970s; who invented it is disputed."}
+{"a": "doner_kebab", "rel": "brought_by", "inverse": "brought", "b": "turkish_german_labour_agreement", "view": "fact", "src": "seed", "why": "Turkish workers who came under it opened the first shops."}
+{"a": "yogurt", "rel": "word_from", "inverse": "gave_word", "b": "turkey", "view": "fact", "src": "seed", "why": "The word comes from Turkish yogurt."}
+{"a": "coffee", "rel": "culture_in", "inverse": "has_culture_of", "b": "istanbul", "view": "fact", "src": "seed", "why": "Coffeehouses opened there in the 1550s."}
+{"a": "coffee", "rel": "national_style_of", "inverse": "has_national_style", "b": "turkey", "view": "turkey", "src": "seed", "why": "Turkish coffee; UNESCO listed the culture in 2013."}
+{"a": "coffee", "rel": "national_style_of", "inverse": "has_national_style", "b": "greece", "view": "greece", "src": "seed", "why": "The same drink is called Greek coffee in Greece."}
+{"a": "coffee", "rel": "drunk_in", "inverse": "drinks", "b": "israel", "view": "fact", "src": "seed", "why": "Called botz or turki in Hebrew slang."}
+{"a": "coffee", "rel": "drunk_in", "inverse": "drinks", "b": "lebanon", "view": "fact", "src": "seed", "why": "Ahweh, brewed the same way."}
+{"a": "baklava", "rel": "origin_claimed_by", "inverse": "claims_origin_of", "b": "turkey", "view": "turkey", "src": "seed", "why": "Gaziantep baklava has EU protected status since 2013."}
+{"a": "baklava", "rel": "origin_claimed_by", "inverse": "claims_origin_of", "b": "greece", "view": "greece", "src": "seed", "why": "Greeks see it as their own dessert."}
+{"a": "baklava", "rel": "refined_in", "inverse": "refined", "b": "ottoman_empire", "view": "fact", "src": "seed", "why": "Refined in the Topkapi palace kitchens."}
+{"a": "hummus", "rel": "eaten_in", "inverse": "eats", "b": "israel", "view": "fact", "src": "seed", "why": "An everyday food."}
+{"a": "hummus", "rel": "eaten_in", "inverse": "eats", "b": "turkey", "view": "fact", "src": "seed", "why": "Eaten especially in the south-east."}
+{"a": "hummus", "rel": "eaten_in", "inverse": "eats", "b": "syria", "view": "fact", "src": "seed", "why": "Classic Levantine dish."}
+{"a": "hummus", "rel": "eaten_in", "inverse": "eats", "b": "egypt", "view": "fact", "src": "seed", "why": "Common dish."}
+{"a": "hummus", "rel": "origin_in", "inverse": "origin_of", "b": "levant", "view": "fact", "src": "seed", "why": "A dish of the eastern Mediterranean."}
+{"a": "hummus", "rel": "origin_claimed_by", "inverse": "claims_origin_of", "b": "lebanon", "view": "lebanon", "src": "seed", "why": "The record-plate contests with Israel, 2008-2010."}
+{"a": "hummus", "rel": "origin_claimed_by", "inverse": "claims_origin_of", "b": "israel", "view": "israel", "src": "seed", "why": "Seen as a national dish in Israel."}
+{"a": "olive", "rel": "grown_in", "inverse": "grows", "b": "mediterranean_sea", "view": "fact", "src": "seed", "why": "Grows around the whole Mediterranean."}
+{"a": "olive", "rel": "grown_in", "inverse": "grows", "b": "greece", "view": "fact", "src": "seed", "why": "One of the largest producers."}
+{"a": "olive", "rel": "grown_in", "inverse": "grows", "b": "turkey", "view": "fact", "src": "seed", "why": "A large producer."}
+{"a": "olive", "rel": "grown_in", "inverse": "grows", "b": "palestine", "view": "fact", "src": "seed", "why": "Olive harvest is central to village life."}
+{"a": "ahmet_ertegun", "rel": "born_in", "inverse": "birthplace_of", "b": "istanbul", "view": "fact", "src": "seed", "why": "Born 1923, son of a Turkish diplomat."}
+{"a": "ahmet_ertegun", "rel": "lived_in", "inverse": "home_of", "b": "united_states", "view": "fact", "src": "seed", "why": "Moved to Washington with his father in 1935."}
+{"a": "ahmet_ertegun", "rel": "founded", "inverse": "founded_by", "b": "atlantic_records", "view": "fact", "src": "seed", "why": "Co-founded it in New York in 1947."}
+{"a": "atlantic_records", "rel": "signed", "inverse": "signed_by", "b": "led_zeppelin", "view": "fact", "src": "seed", "why": "Signed the band in 1968."}
+{"a": "atlantic_records", "rel": "based_in", "inverse": "base_of", "b": "united_states", "view": "fact", "src": "seed", "why": "New York."}
+{"a": "ertegun_tribute_concert", "rel": "honoured", "inverse": "honoured_by", "b": "ahmet_ertegun", "view": "fact", "src": "seed", "why": "Held after his death in 2006."}
+{"a": "ertegun_tribute_concert", "rel": "headlined_by", "inverse": "headlined", "b": "led_zeppelin", "view": "fact", "src": "seed", "why": "The band's reunion, 10 December 2007."}
+{"a": "ertegun_tribute_concert", "rel": "happened_in", "inverse": "scene_of", "b": "london", "view": "fact", "src": "seed", "why": "O2 Arena."}
+{"a": "led_zeppelin", "rel": "formed_in", "inverse": "formed_here", "b": "london", "view": "fact", "src": "seed", "why": "1968."}
+{"a": "led_zeppelin", "rel": "origin_in", "inverse": "origin_of", "b": "united_kingdom", "view": "fact", "src": "seed", "why": "English rock band."}
+{"a": "robert_plant", "rel": "member_of", "inverse": "has_member", "b": "led_zeppelin", "view": "fact", "src": "seed", "why": "Singer."}
+{"a": "jimmy_page", "rel": "member_of", "inverse": "has_member", "b": "led_zeppelin", "view": "fact", "src": "seed", "why": "Guitarist and founder."}
+{"a": "led_zeppelin", "rel": "plays", "inverse": "played_by", "b": "rock_music", "view": "fact", "src": "seed", "why": "Hard rock."}
+{"a": "led_zeppelin", "rel": "influenced_by", "inverse": "influenced", "b": "blues", "view": "fact", "src": "seed", "why": "Covered and reworked blues songs."}
+{"a": "rock_music", "rel": "influenced_by", "inverse": "influenced", "b": "blues", "view": "fact", "src": "seed", "why": "Rock and roll grew out of rhythm and blues."}
+{"a": "blues", "rel": "origin_in", "inverse": "origin_of", "b": "united_states", "view": "fact", "src": "seed", "why": "African American music of the Deep South."}
+{"a": "led_zeppelin", "rel": "made", "inverse": "made_by", "b": "stairway_to_heaven", "view": "fact", "src": "seed", "why": "1971."}
+{"a": "led_zeppelin", "rel": "made", "inverse": "made_by", "b": "kashmir_song", "view": "fact", "src": "seed", "why": "Kashmir, on Physical Graffiti, 1975."}
+{"a": "kashmir_song", "rel": "inspired_by", "inverse": "inspired", "b": "morocco", "view": "robert_plant", "src": "seed", "why": "Plant said he wrote it after driving through the southern Moroccan desert."}
+{"a": "robert_plant", "rel": "travelled_in", "inverse": "visited_by", "b": "morocco", "view": "fact", "src": "seed", "why": "Trip in 1973."}
+{"a": "jimmy_page", "rel": "made", "inverse": "made_by", "b": "no_quarter_unledded", "view": "fact", "src": "seed", "why": "With Robert Plant, 1994."}
+{"a": "robert_plant", "rel": "made", "inverse": "made_by", "b": "no_quarter_unledded", "view": "fact", "src": "seed", "why": "With Jimmy Page, 1994."}
+{"a": "no_quarter_unledded", "rel": "recorded_in", "inverse": "recording_place_of", "b": "marrakesh", "view": "fact", "src": "seed", "why": "Parts recorded with Gnawa musicians there."}
+{"a": "no_quarter_unledded", "rel": "played_with", "inverse": "played_on", "b": "egypt", "view": "fact", "src": "seed", "why": "An Egyptian ensemble played Kashmir with them."}
+{"a": "the_beatles", "rel": "plays", "inverse": "played_by", "b": "rock_music", "view": "fact", "src": "seed", "why": "Rock and pop."}
+{"a": "the_beatles", "rel": "origin_in", "inverse": "origin_of", "b": "united_kingdom", "view": "fact", "src": "seed", "why": "Liverpool."}
+{"a": "the_beatles", "rel": "played_in", "inverse": "hosted", "b": "hamburg", "view": "fact", "src": "seed", "why": "Club residencies 1960-1962."}
+{"a": "muhammad", "rel": "founded", "inverse": "founded_by", "b": "islam", "view": "historians", "src": "seed", "why": "Historians date Islam from Muhammad; in Muslim belief it is the original faith and he is its last prophet."}
+{"a": "jesus", "rel": "founded", "inverse": "founded_by", "b": "christianity", "view": "historians", "src": "seed", "why": "Historians trace Christianity to Jesus and his followers; Christians see him as the Son of God."}
+{"a": "abraham", "rel": "founded", "inverse": "founded_by", "b": "judaism", "view": "judaism", "src": "seed", "why": "Jewish tradition begins the covenant with Abraham; historians date Judaism later."}
+{"a": "turkey", "rel": "known_for", "inverse": "makes_known", "b": "istanbul", "view": "fact", "src": "records", "why": "round-3 record of turkey: known_for istanbul"}
+{"a": "the_beatles", "rel": "country", "inverse": "country_of", "b": "united_kingdom", "view": "fact", "src": "records", "why": "round-3 record of the_beatles: country uk"}
+{"a": "led_zeppelin", "rel": "country", "inverse": "country_of", "b": "united_kingdom", "view": "fact", "src": "records", "why": "round-3 record of led_zeppelin: country united_kingdom"}
+{"a": "led_zeppelin", "rel": "known_for", "inverse": "makes_known", "b": "stairway_to_heaven", "view": "fact", "src": "records", "why": "round-3 record of led_zeppelin: known_for stairway_to_heaven"}
+{"a": "jimmy_page", "rel": "country", "inverse": "country_of", "b": "united_kingdom", "view": "fact", "src": "records", "why": "round-3 record of jimmy_page: country uk"}
+{"a": "jimmy_page", "rel": "known_for", "inverse": "makes_known", "b": "led_zeppelin", "view": "fact", "src": "records", "why": "round-3 record of jimmy_page: known_for led_zepellin"}
+{"a": "robert_plant", "rel": "country", "inverse": "country_of", "b": "united_kingdom", "view": "fact", "src": "records", "why": "round-3 record of robert_plant: country uk"}
+{"a": "robert_plant", "rel": "known_for", "inverse": "makes_known", "b": "led_zeppelin", "view": "fact", "src": "records", "why": "round-3 record of robert_plant: known_for led_zepellin"}
+{"a": "jesus", "rel": "known_for", "inverse": "makes_known", "b": "christianity", "view": "fact", "src": "records", "why": "round-3 record of jesus: known_for christianity"}
+{"a": "muhammad", "rel": "known_for", "inverse": "makes_known", "b": "islam", "view": "fact", "src": "records", "why": "round-3 record of muhammad: known_for islam"}
+{"a": "moses", "rel": "country", "inverse": "country_of", "b": "egypt", "view": "fact", "src": "records", "why": "round-3 record of moses: country egypt"}
+{"a": "israel", "rel": "known_for", "inverse": "makes_known", "b": "jerusalem", "view": "fact", "src": "records", "why": "round-3 record of israel: known_for jerusalem_dead_sea"}
+{"a": "morocco", "rel": "known_for", "inverse": "makes_known", "b": "marrakesh", "view": "fact", "src": "records", "why": "round-3 record of morocco: known_for medina_of_marrakesh"}

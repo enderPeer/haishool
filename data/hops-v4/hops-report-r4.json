@@ -1,0 +1,35 @@
+{
+ "nodes": 52,
+ "edges": 135,
+ "edges_from_records": 13,
+ "edges_with_a_view": 26,
+ "views": [
+  "christianity",
+  "greece",
+  "historians",
+  "islam",
+  "israel",
+  "judaism",
+  "lebanon",
+  "palestine",
+  "robert_plant",
+  "turkey",
+  "united_states"
+ ],
+ "relations": 54,
+ "connected": true,
+ "pairs": 2652,
+ "paths_using_a_view": 480,
+ "max_hops": 7,
+ "mean_hops": 3.05,
+ "hops_histogram": {
+  "1": 236,
+  "2": 654,
+  "3": 842,
+  "4": 630,
+  "5": 250,
+  "6": 30,
+  "7": 10
+ },
+ "training_lines": 5588
+}

@@ -11,6 +11,12 @@ windows of ``ctx`` tokens, next-token loss everywhere.
 With ``--holdout f`` a seeded fraction f of (object, attribute) pairs is removed from training
 entirely (from the queries AND from the records), and the run reports exact-match accuracy on
 the trained pairs (recall) and on the held-out pairs (inference from similar objects).
+
+``--extra-lines file`` adds ready-made dense lines (round 4: ``data/hops-train-r4.txt``, the
+relations between things) to every pass, each after an ``<eos>`` like any other sample. With
+``--holdout f`` the same fraction of hop pairs (both ``q x hop y`` and ``q x hops y``) is left
+out, so the report shows whether the model can compose a path it never saw. Without the flag
+training is unchanged.
 """
 
 from __future__ import annotations
@@ -68,8 +74,41 @@ class Vocab:
         return [self.itos[i] for i in ids]
 
 
-def corpus(records: list[Record], passes: int, seed: int) -> list[str]:
-    samples = [r.line() for r in records] + [q for r in records for q in r.queries()]
+def load_extra(path: Path | None) -> list[str]:
+    if not path:
+        return []
+    return [ln.strip() for ln in path.open(encoding="utf-8") if ln.strip()]
+
+
+def split_extra(lines: list[str], holdout: float, seed: int) -> tuple[list[str], list[str]]:
+    """Hold out whole hop pairs: ``q x hop y`` and ``q x hops y`` go together."""
+    if holdout <= 0:
+        return lines, []
+    rng = random.Random(seed + 7)
+    pairs = sorted({tuple(ln.split(".")[0].split()[1::2]) for ln in lines if _hop_kind(ln)})
+    held_pairs = {p for p in pairs if rng.random() < holdout}
+    train, held = [], []
+    for ln in lines:
+        kind = _hop_kind(ln)
+        (held if kind and tuple(ln.split(".")[0].split()[1::2]) in held_pairs else train).append(ln)
+    return train, held
+
+
+def _hop_kind(line: str) -> str:
+    """``hop`` / ``hops`` for path queries (``q x hop y. a ...``), else ``""``."""
+    w = line.split(".")[0].split()
+    return w[2] if len(w) == 4 and w[0] == "q" and w[2] in ("hop", "hops") else ""
+
+
+def extra_kind(line: str) -> str:
+    """Report bucket of an extra query line: hop, hops, view, relation (``""`` for plain lines)."""
+    if not line.startswith("q "):
+        return ""
+    return _hop_kind(line) or ("view" if " according_to " in line.split(". a ")[0] else "relation")
+
+
+def corpus(records: list[Record], passes: int, seed: int, extra: list[str] | None = None) -> list[str]:
+    samples = [r.line() for r in records] + [q for r in records for q in r.queries()] + list(extra or [])
     rng = random.Random(seed)
     stream: list[str] = []
     for _ in range(passes):
@@ -107,12 +146,16 @@ def describe(model: GPT, vocab: Vocab, obj: str, device: str = "cpu") -> str:
     return obj + ". " + generate(model, vocab, f"{obj}.", stop="", max_new=90, device=device)
 
 
-def train(records_path: Path, out: Path, holdout: float, seed: int, steps: int, device: str) -> dict:
+def train(records_path: Path, out: Path, holdout: float, seed: int, steps: int, device: str,
+          extra_path: Path | None = None) -> dict:
     records = load_records(records_path)
     train_recs, held = split_pairs(records, holdout, seed)
+    extra = load_extra(extra_path)
+    extra_train, extra_held = split_extra(extra, holdout, seed)
     words = [w for r in records for w in tokens(r.line())] + [w for r in records for q in r.queries() for w in tokens(q)]
+    words += [w for ln in extra for w in tokens(ln)]
     vocab = Vocab(words)
-    stream = torch.tensor(vocab.encode(corpus(train_recs, passes=60, seed=seed)), dtype=torch.long)
+    stream = torch.tensor(vocab.encode(corpus(train_recs, passes=60, seed=seed, extra=extra_train)), dtype=torch.long)
     cfg = GPTConfig(vocab_size=max(32, len(vocab.itos)), n_layer=6, n_head=8, d_model=384, ctx=96, dropout=0.1)
     torch.manual_seed(seed)
     model = GPT(cfg).to(device)
@@ -154,6 +197,22 @@ def train(records_path: Path, out: Path, holdout: float, seed: int, steps: int, 
     report = {"records": len(records), "vocab": len(vocab.itos), "params": model.num_params(),
               "train_tokens_per_pass": len(stream) // 60, "steps": steps, "holdout": holdout,
               "recall_trained_pairs": acc(sample), "inference_heldout_pairs": acc(held), "log": log}
+    if extra:
+        def acc_lines(lines: list[str], limit: int) -> dict:
+            out_: dict[str, dict] = {}
+            for kind in ("relation", "view", "hop", "hops"):
+                some = [ln for ln in lines if extra_kind(ln) == kind]
+                some = random.Random(seed + 2).sample(some, min(limit, len(some)))
+                exact = 0
+                for ln in some:
+                    prompt, _, gold = ln.partition(". a ")
+                    exact += generate(model, vocab, prompt + ". a", device=device) == gold.rstrip(".")
+                out_[kind] = {"n": len(some), "exact": round(exact / len(some), 4) if some else None}
+            return out_
+
+        report["extra_lines"] = {"file": str(extra_path), "lines": len(extra), "trained": len(extra_train),
+                                 "held_out": len(extra_held), "recall_trained": acc_lines(extra_train, 500),
+                                 "inference_heldout": acc_lines(extra_held, 500)}
     out.mkdir(parents=True, exist_ok=True)
     torch.save({"model_state": model.state_dict(), "gpt_config": cfg.to_json(), "itos": vocab.itos}, out / "student.pt")
     (out / "report.json").write_text(json.dumps(report, indent=1), encoding="utf-8")
@@ -182,8 +241,9 @@ def main() -> None:
     t.add_argument("--seed", type=int, default=20261001)
     t.add_argument("--steps", type=int, default=4000)
     t.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
+    t.add_argument("--extra-lines", type=Path, help="ready-made dense lines, e.g. data/hops-train-r4.txt")
     args = ap.parse_args()
-    train(args.records, args.out, args.holdout, args.seed, args.steps, args.device)
+    train(args.records, args.out, args.holdout, args.seed, args.steps, args.device, args.extra_lines)
 
 
 if __name__ == "__main__":
