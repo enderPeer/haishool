@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haishool data</title>
+<meta name="description" content="Every fact Haishool was trained on, searchable.">
+<style>
+:root{--bg:#f6f5f0;--fg:#1f2622;--muted:#647069;--card:#fffefa;--line:#dcd9cf;--accent:#2f6b4f;--soft:#e8efe9;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141816;--fg:#e6eae5;--muted:#9aa49d;--card:#1c211e;--line:#2f3632;--accent:#7cc4a0;--soft:#1f2a24}}
+:root[data-theme="dark"]{--bg:#141816;--fg:#e6eae5;--muted:#9aa49d;--card:#1c211e;--line:#2f3632;--accent:#7cc4a0;--soft:#1f2a24}
+*{box-sizing:border-box}html,body{margin:0}body{background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}header{padding:40px 0 16px}a{color:var(--accent)}
+h1{font-size:clamp(28px,5vw,40px);margin:6px 0 10px}.eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:14px}.stat b{font-size:18px;margin-right:4px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}input,select{padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:15px}
+input{flex:1;min-width:200px}.count{color:var(--muted);font-size:14px;margin-bottom:8px}
+.table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:900px}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{position:sticky;top:0;background:var(--card);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.obj{font-weight:600;white-space:nowrap}tr:hover td{background:var(--soft)}.line{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:2px}
+footer{padding:24px 0 40px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="eyebrow"><a href="./">Haishool</a> · training data</div>
+  <h1>Everything Haishool knows</h1>
+  <p>These are all the facts the model was trained on, nothing more. Each object has up to nine attributes; multi-word items are joined with underscores. The facts were written by a local teacher model (Qwen2.5-14B-Instruct) and have not been checked by a person.</p>
+  <div class="stats" id="stats"></div>
+</header>
+<main class="wrap">
+  <div class="controls">
+    <input id="search" type="search" placeholder="Search objects or values, e.g. yellow, kitchen, tool" aria-label="Search">
+    <select id="attr" aria-label="Attribute"><option value="">all attributes</option></select>
+  </div>
+  <div class="count" id="count"></div>
+  <div class="table"><table><thead><tr id="head"></tr></thead><tbody id="body"></tbody></table></div>
+</main>
+<footer class="wrap">Data CC BY 4.0. Raw file: <a href="data/records.json">records.json</a> · source and history on <a href="https://github.com/enderPeer/haishool">GitHub</a>.</footer>
+<script>
+"use strict";
+const KEYS=["kind","color","shape","size","made","parts","use","place","alive","name"];
+const pretty=v=>(v||"").replace(/_/g," ");
+let rows=[];
+function render(){const s=document.getElementById("search").value.trim().toLowerCase(),a=document.getElementById("attr").value;
+const body=document.getElementById("body");body.replaceChildren();let n=0;
+for(const r of rows){const hay=a?(r.values[a]||""):Object.values(r.values).join(" ");if(s&&!(r.obj.includes(s.replace(/ /g,"_"))||pretty(hay).toLowerCase().includes(s)))continue;
+n++;if(n>1500)continue;const tr=document.createElement("tr");const td=document.createElement("td");td.className="obj";td.textContent=pretty(r.obj);tr.append(td);
+for(const k of KEYS){const c=document.createElement("td");c.textContent=pretty(r.values[k]);tr.append(c)}body.append(tr)}
+document.getElementById("count").textContent=n+" of "+rows.length+" objects"+(n>1500?" (first 1500 shown)":"")}
+fetch("data/records.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{rows=d.records.sort((x,y)=>x.obj.localeCompare(y.obj));
+document.getElementById("stats").innerHTML="";[["objects",d.objects],["facts",d.facts],["data round",d.round]].forEach(([l,v])=>{const s=document.createElement("div");s.className="stat";const b=document.createElement("b");b.textContent=v;s.append(b,document.createTextNode(l));document.getElementById("stats").append(s)});
+const head=document.getElementById("head");["object",...KEYS].forEach(k=>{const th=document.createElement("th");th.textContent=k;head.append(th)});
+const sel=document.getElementById("attr");KEYS.forEach(k=>{const o=document.createElement("option");o.value=k;o.textContent=k;sel.append(o)});render()});
+document.getElementById("search").addEventListener("input",render);document.getElementById("attr").addEventListener("change",render);
+</script>
+</body>
+</html>

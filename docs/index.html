@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haishool</title>
+<meta name="description" content="A small model that learns facts, not language. Trained from scratch on dense facts about everyday objects; rules turn its answers into English.">
+<style>
+:root{--bg:#f6f5f0;--fg:#1f2622;--muted:#647069;--card:#fffefa;--line:#dcd9cf;--accent:#2f6b4f;--accent-fg:#fff;--soft:#e8efe9;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141816;--fg:#e6eae5;--muted:#9aa49d;--card:#1c211e;--line:#2f3632;--accent:#7cc4a0;--accent-fg:#0f1411;--soft:#1f2a24}}
+:root[data-theme="dark"]{--bg:#141816;--fg:#e6eae5;--muted:#9aa49d;--card:#1c211e;--line:#2f3632;--accent:#7cc4a0;--accent-fg:#0f1411;--soft:#1f2a24}
+*{box-sizing:border-box}html,body{margin:0}body{background:var(--bg);color:var(--fg);font:17px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}header{padding:56px 0 24px}
+.eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(34px,6vw,52px);line-height:1.05;margin:8px 0 16px;letter-spacing:-.02em}
+.lead{font-size:19px;max-width:640px;margin:0}.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+a.btn{display:inline-block;padding:11px 18px;border-radius:10px;text-decoration:none;font-weight:600;font-size:15px}
+a.primary{background:var(--accent);color:var(--accent-fg)}a.ghost{border:1px solid var(--line);color:var(--fg)}
+section{padding:28px 0}h2{font-size:22px;margin:0 0 12px}
+.flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:8px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;font-size:14px}
+.step b{display:block;font-size:13px;color:var(--muted);font-weight:600;margin-bottom:4px}
+.step code{font-family:var(--mono);font-size:12.5px;word-break:break-word}
+@media (max-width:720px){.flow{grid-template-columns:1fr}}
+.chat{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+#log{padding:16px;min-height:180px;max-height:460px;overflow-y:auto}
+.msg{margin:0 0 12px}.msg .who{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.msg.you .text{background:var(--soft);display:inline-block;padding:8px 12px;border-radius:10px}
+.dense{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-top:4px;white-space:pre-wrap}
+form{display:flex;gap:8px;border-top:1px solid var(--line);padding:12px}
+input{flex:1;min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--fg);font-size:16px}
+button{padding:10px 16px;border:0;border-radius:10px;background:var(--accent);color:var(--accent-fg);font-size:16px;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 14px}.chip{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:4px 10px;background:none;color:var(--fg);cursor:pointer}
+.status{font-size:13px;color:var(--muted);padding:10px 16px 0}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}.fact .n{font-size:26px;font-weight:700}
+.fact .l{font-size:14px;color:var(--muted)}@media (max-width:620px){.facts{grid-template-columns:1fr}}
+ul{padding-left:20px}li{margin:4px 0}footer{padding:32px 0 48px;color:var(--muted);font-size:14px}a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="eyebrow">Open-source experiment · runs locally in Berlin</div>
+  <h1>Haishool learns facts,<br>not language.</h1>
+  <p class="lead">A 12-million-parameter model trained from scratch only on dense facts about everyday objects. It never sees an English sentence; fixed rules turn its answers into English, and you can always see what the model itself said.</p>
+  <div class="links"><a class="btn primary" href="#try">Ask it something</a><a class="btn ghost" href="data.html">Browse the training data</a><a class="btn ghost" href="https://github.com/enderPeer/haishool">Source on GitHub</a></div>
+</header>
+
+<section class="wrap">
+  <h2>How an answer is made</h2>
+  <div class="flow">
+    <div class="step"><b>1 · You ask</b>what color is a banana</div>
+    <div class="step"><b>2 · Rules parse</b><code>q banana color. a</code></div>
+    <div class="step"><b>3 · Model answers</b><code>yellow green</code></div>
+    <div class="step"><b>4 · Rules translate</b>A banana is usually yellow or green.</div>
+    <div class="step"><b>5 · You check</b>the grey line shows the raw model output</div>
+  </div>
+</section>
+
+<section class="wrap" id="try">
+  <h2>Try it</h2>
+  <div class="chat">
+    <div class="status" id="status">Connecting to the model…</div>
+    <div id="log" aria-live="polite"></div>
+    <div class="chips" id="chips"></div>
+    <form id="form"><input id="q" autocomplete="off" placeholder="Ask about an everyday object" aria-label="Your question"><button>Ask</button></form>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Version 1 in numbers</h2>
+  <div class="facts">
+    <div class="fact"><div class="n" id="n-objects">858</div><div class="l">everyday objects, 9 attributes each</div></div>
+    <div class="fact"><div class="n">1000/1000</div><div class="l">sampled trained facts recalled exactly</div></div>
+    <div class="fact"><div class="n">27%</div><div class="l">held-back facts guessed exactly from similar objects</div></div>
+  </div>
+  <ul>
+    <li>It knows only the objects in its table and says so for anything else.</li>
+    <li>The facts were written by a local teacher model and have not been checked by a person.</li>
+    <li>Why it is built this way: <a href="https://github.com/enderPeer/haishool/blob/main/LESSONS.md">what we learned before</a>.</li>
+  </ul>
+</section>
+
+<footer class="wrap">Code MIT · model and data CC BY 4.0 · facts generated with Qwen2.5-14B-Instruct. The model runs on a home machine behind a temporary tunnel and may be offline.</footer>
+
+<script>
+"use strict";
+const log=document.getElementById("log"),form=document.getElementById("form"),q=document.getElementById("q"),status=document.getElementById("status");
+let api=null;
+const examples=["what color is a banana","what is a refrigerator used for","tell me about a guitar","where do you find a cow","is a tree alive","who are you","where do you run"];
+function add(cls,who,text,dense){const m=document.createElement("div");m.className="msg "+cls;const w=document.createElement("div");w.className="who";w.textContent=who;const t=document.createElement("div");t.className="text";t.textContent=text;m.append(w,t);if(dense){const d=document.createElement("div");d.className="dense";d.textContent=dense;m.append(d)}log.append(m);log.scrollTop=log.scrollHeight}
+async function ask(text){add("you","You",text);if(!api){add("bot","Haishool","The model is not reachable right now.");return}
+try{const r=await fetch(api+"/api/ask",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({question:text})});const j=await r.json();add("bot","Haishool",j.answer,j.dense?("query: "+j.query+"\nmodel: "+j.dense):"")}catch(e){add("bot","Haishool","The model is not reachable right now.")}}
+examples.forEach(e=>{const b=document.createElement("button");b.className="chip";b.type="button";b.textContent=e;b.onclick=()=>ask(e);document.getElementById("chips").append(b)});
+form.addEventListener("submit",e=>{e.preventDefault();const t=q.value.trim();if(t){q.value="";ask(t)}});
+fetch("endpoint.json",{cache:"no-store"}).then(r=>r.json()).then(async e=>{api=(e.api_url||"").replace(/\/$/,"");const i=await fetch(api+"/api/info").then(r=>r.json());status.textContent="Connected · "+i.objects+" objects · "+(i.params/1e6).toFixed(1)+" M parameters";document.getElementById("n-objects").textContent=i.objects}).catch(()=>{status.textContent="The model is offline right now. The training data is still browsable."});
+</script>
+</body>
+</html>

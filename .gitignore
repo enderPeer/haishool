@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+runs/
+.venv/
+data/objects.txt
+data/all.jsonl
+genesis.txt
