@@ -171,10 +171,19 @@ def _keys_for(etype: str | None) -> tuple[str, ...]:
     return OBJECT_KEYS
 
 
-def parse(question: str, known: set[str] | dict, aliases: dict[str, str] | None = None) -> dict:
+def wanted_keys(question: str) -> set[str]:
+    """Every key the question words could be asking for."""
+    q = question.lower()
+    return {k for pattern, intent in INTENTS if intent not in ("what", "kind") and re.search(pattern, q)
+            for k in INTENT_KEYS.get(intent, (intent,))}
+
+
+def parse(question: str, known: set[str] | dict, aliases: dict[str, str] | None = None,
+          self_fallback: bool = True) -> dict:
     """Return ``{"obj", "attrs"}``; ``attrs`` None means describe the whole record.
 
-    ``known`` maps object -> entity type (None for plain objects); a set is accepted too.
+    ``known`` maps object -> entity type (None for plain objects); a set is accepted too. With
+    ``self_fallback`` a question that names nothing but says "you" is about Homunculi itself.
     """
     q = question.lower().strip()
     types = known if isinstance(known, dict) else dict.fromkeys(known)
@@ -184,30 +193,40 @@ def parse(question: str, known: set[str] | dict, aliases: dict[str, str] | None 
         return {"obj": RICH, "attrs": ["answer", "advice"]}
     if PROBLEM_Q.search(q) and PROBLEM in types:
         return {"obj": PROBLEM, "attrs": ["advice"]}
-    wanted = {k for pattern, intent in INTENTS if intent not in ("what", "kind") and re.search(pattern, q)
-              for k in INTENT_KEYS.get(intent, (intent,))}
-    obj = find_object(q, types, aliases, wanted)
-    if obj is None and SELF_WORDS.search(q):
+    obj = find_object(q, types, aliases, wanted_keys(q))
+    if obj is None and self_fallback and SELF_WORDS.search(q):
         obj = SELF
     if obj is None:
         return {"obj": None, "attrs": None}
+    return {"obj": obj, "attrs": choose_attrs(q, obj, types.get(obj))}
+
+
+def choose_attrs(question: str, obj: str, etype: str | None) -> list[str] | None:
+    """Which keys of ``obj`` the question asks for; None means describe the whole record."""
+    q = question.lower().strip()
     if DESCRIBE.search(q):
-        return {"obj": obj, "attrs": None}
-    etype = types.get(obj)
+        return None
     keys = ("name", "kind", "made", "use", "place", "alive", "desires", "feelings") if obj == SELF else _keys_for(etype)
     for pattern, intent in INTENTS:
         if not re.search(pattern, q):
             continue
         if intent == "what":
             if obj == SELF:
-                return {"obj": obj, "attrs": ["name", "kind"]}
-            return {"obj": obj, "attrs": ["kind"] if etype is None else None}
+                return ["name", "kind"]
+            return ["kind"] if etype is None else None
         for key in INTENT_KEYS.get(intent, (intent,)):
             if key in keys:
-                return {"obj": obj, "attrs": [key]}
+                return [key]
         if intent == "kind":
-            return {"obj": obj, "attrs": ["kind"]}
-    return {"obj": obj, "attrs": None if etype else ["kind"]}
+            return ["kind"]
+    return None if etype else ["kind"]
+
+
+def has_wanted(question: str, obj: str, etype: str | None) -> bool:
+    """Whether the record's type carries a key the question asks for (no key asked counts as yes)."""
+    wanted = wanted_keys(question)
+    keys = set(_keys_for(etype)) | ({"name", "desires", "feelings"} if obj == SELF else set())
+    return not wanted or bool(wanted & keys)
 
 
 def _article(word: str) -> str:

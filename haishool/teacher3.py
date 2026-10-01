@@ -137,7 +137,7 @@ def records(host: str, entities_file: Path, out: Path, batch: int) -> None:
                 prompt = (
                     f"For each {etype} below give short, true, widely known facts. Return these keys; each "
                     "value is a list of 1 to 4 short items separated by spaces, an item of several words "
-                    "joined with underscores (for example theory_of_relativity). Write years and numbers "
+                    "joined with underscores (for example first_word_second_word). Write years and numbers "
                     "with digits. Plain lowercase English, no sentences. If you are not sure, write unknown.\n"
                     f"{spec}\n"
                     '- "aliases": other common names for it, including the German name, joined with underscores\n'

@@ -20,7 +20,8 @@ from fastapi.responses import HTMLResponse
 from pydantic import BaseModel, Field
 
 from haishool.student import answer, describe, load
-from haishool.translate import SELF, alias_index, parse, record_text, sentence
+from haishool.search import Index, resolve
+from haishool.translate import SELF, alias_index, record_text, sentence, subject
 
 PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Haishool</title>
@@ -66,6 +67,7 @@ def build(model_path: Path, records_path: Path, device: str) -> FastAPI:
     rows = [json.loads(line) for line in records_path.open(encoding="utf-8")]
     known = {r["obj"]: r["values"].get("type") for r in rows} | {SELF: "self"}
     aliases = alias_index(rows)
+    index = Index(rows)
     app = FastAPI()
     app.add_middleware(CORSMiddleware, allow_origins=["https://enderpeer.github.io"],
                        allow_methods=["GET", "POST"], allow_headers=["content-type"])
@@ -74,7 +76,7 @@ def build(model_path: Path, records_path: Path, device: str) -> FastAPI:
     page = chat.read_text(encoding="utf-8") if chat.exists() else PAGE.replace("__N__", str(len(known) - 1))
 
     @app.get("/", response_class=HTMLResponse)
-    def index() -> str:
+    def home() -> str:
         return page
 
     @app.get("/api/info")
@@ -84,22 +86,23 @@ def build(model_path: Path, records_path: Path, device: str) -> FastAPI:
 
     @app.post("/api/ask")
     def ask(body: Ask) -> dict:
-        p = parse(body.question, known, aliases)
-        obj, attrs = p["obj"], p["attrs"]
-        if obj is None:
-            return {"answer": "I don't know that yet. I know everyday objects, people, countries, religions, "
-                              "history, science and maths ideas, software, games, films and music.",
-                    "query": None, "dense": None}
+        r = resolve(body.question, known, aliases, index)
+        obj, attrs, note, prefix = r["obj"], r["attrs"], r["note"], r["prefix"]
         etype = known.get(obj)
         with torch.no_grad():
             if attrs is None:
                 dense = describe(model, vocab, obj, device)
-                text = " ".join(record_text(dense, etype if etype != "self" else None)) or "I don't know much about it."
-                return {"answer": text, "query": f"{obj}.", "dense": dense}
-            got = [(a, answer(model, vocab, obj, a, device)) for a in attrs]
-        return {"answer": " ".join(sentence(obj, a, d, etype) for a, d in got),
-                "query": " ".join(f"q {obj} {a}. a" for a, _ in got),
-                "dense": " | ".join(d for _, d in got)}
+                text = " ".join(record_text(dense, etype if etype != "self" else None)) or "I know its name but no facts."
+                query = f"{obj}."
+            else:
+                got = [(a, answer(model, vocab, obj, a, device)) for a in attrs]
+                text = " ".join(sentence(obj, a, d, etype) for a, d in got)
+                name = subject(obj, etype if etype != "self" else None)
+                if note.startswith(("found by", "spelling")) and name.lower() not in text.lower():
+                    text = f"{name}: {text[:1].lower()}{text[1:]}"  # "Halo: its genre is ..."
+                query = " ".join(f"q {obj} {a}. a" for a, _ in got)
+                dense = " | ".join(d for _, d in got)
+        return {"answer": prefix + text, "query": (note + "\n" if note else "") + query, "dense": dense}
 
     return app
 

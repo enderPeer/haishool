@@ -1,8 +1,8 @@
 {
  "records": 3081,
- "vocab": 13226,
- "params": 15737472,
- "train_tokens_per_pass": 284221,
+ "vocab": 13230,
+ "params": 15739008,
+ "train_tokens_per_pass": 284223,
  "steps": 14000,
  "holdout": 0.0,
  "recall_trained_pairs": {
@@ -16,283 +16,283 @@
  "log": [
   {
    "step": 250,
-   "loss": 2.0162,
+   "loss": 2.0605,
    "seconds": 10.9
   },
   {
    "step": 500,
-   "loss": 1.4439,
+   "loss": 1.4901,
    "seconds": 21.7
   },
   {
    "step": 750,
-   "loss": 1.1454,
-   "seconds": 32.4
+   "loss": 1.1508,
+   "seconds": 32.5
   },
   {
    "step": 1000,
-   "loss": 1.0684,
-   "seconds": 43.2
+   "loss": 1.0544,
+   "seconds": 43.3
   },
   {
    "step": 1250,
-   "loss": 1.0664,
-   "seconds": 54.0
+   "loss": 1.0978,
+   "seconds": 54.2
   },
   {
    "step": 1500,
-   "loss": 1.0596,
-   "seconds": 64.8
+   "loss": 1.0198,
+   "seconds": 65.0
   },
   {
    "step": 1750,
-   "loss": 1.0392,
-   "seconds": 75.6
+   "loss": 1.0316,
+   "seconds": 75.8
   },
   {
    "step": 2000,
-   "loss": 1.0436,
-   "seconds": 86.4
+   "loss": 0.9853,
+   "seconds": 86.7
   },
   {
    "step": 2250,
-   "loss": 1.021,
-   "seconds": 97.2
+   "loss": 1.0851,
+   "seconds": 97.5
   },
   {
    "step": 2500,
-   "loss": 1.0366,
-   "seconds": 108.0
+   "loss": 1.0189,
+   "seconds": 108.4
   },
   {
    "step": 2750,
-   "loss": 1.0477,
-   "seconds": 118.8
+   "loss": 1.0466,
+   "seconds": 119.2
   },
   {
    "step": 3000,
-   "loss": 1.0392,
-   "seconds": 129.6
+   "loss": 1.0393,
+   "seconds": 130.0
   },
   {
    "step": 3250,
-   "loss": 1.0051,
-   "seconds": 140.4
+   "loss": 1.0184,
+   "seconds": 140.9
   },
   {
    "step": 3500,
-   "loss": 1.0335,
-   "seconds": 151.2
+   "loss": 1.0356,
+   "seconds": 151.7
   },
   {
    "step": 3750,
-   "loss": 1.0259,
-   "seconds": 161.9
+   "loss": 1.0089,
+   "seconds": 162.5
   },
   {
    "step": 4000,
-   "loss": 1.0121,
-   "seconds": 172.7
+   "loss": 1.016,
+   "seconds": 173.3
   },
   {
    "step": 4250,
-   "loss": 1.026,
-   "seconds": 183.5
+   "loss": 1.0684,
+   "seconds": 184.2
   },
   {
    "step": 4500,
-   "loss": 1.013,
-   "seconds": 194.3
+   "loss": 1.0123,
+   "seconds": 195.0
   },
   {
    "step": 4750,
-   "loss": 1.0333,
-   "seconds": 205.1
+   "loss": 1.0199,
+   "seconds": 205.8
   },
   {
    "step": 5000,
-   "loss": 1.0184,
-   "seconds": 215.9
+   "loss": 1.0214,
+   "seconds": 216.6
   },
   {
    "step": 5250,
-   "loss": 1.0492,
-   "seconds": 226.7
+   "loss": 1.0115,
+   "seconds": 227.4
   },
   {
    "step": 5500,
-   "loss": 1.0024,
-   "seconds": 237.5
+   "loss": 1.0202,
+   "seconds": 238.2
   },
   {
    "step": 5750,
-   "loss": 1.0301,
-   "seconds": 248.3
+   "loss": 1.0343,
+   "seconds": 249.0
   },
   {
    "step": 6000,
-   "loss": 1.014,
-   "seconds": 259.1
+   "loss": 0.9847,
+   "seconds": 259.9
   },
   {
    "step": 6250,
-   "loss": 1.0227,
-   "seconds": 269.9
+   "loss": 1.0261,
+   "seconds": 270.7
   },
   {
    "step": 6500,
-   "loss": 1.0437,
-   "seconds": 280.7
+   "loss": 0.9955,
+   "seconds": 281.5
   },
   {
    "step": 6750,
-   "loss": 1.0041,
-   "seconds": 291.4
+   "loss": 1.0284,
+   "seconds": 292.3
   },
   {
    "step": 7000,
-   "loss": 1.0213,
-   "seconds": 302.2
+   "loss": 0.9978,
+   "seconds": 303.1
   },
   {
    "step": 7250,
-   "loss": 1.0525,
-   "seconds": 313.0
+   "loss": 1.0293,
+   "seconds": 313.9
   },
   {
    "step": 7500,
-   "loss": 1.0315,
-   "seconds": 323.8
+   "loss": 1.0439,
+   "seconds": 324.7
   },
   {
    "step": 7750,
-   "loss": 1.0574,
-   "seconds": 334.6
+   "loss": 1.0071,
+   "seconds": 335.5
   },
   {
    "step": 8000,
-   "loss": 1.0304,
-   "seconds": 345.4
+   "loss": 1.038,
+   "seconds": 346.3
   },
   {
    "step": 8250,
-   "loss": 1.0257,
-   "seconds": 356.2
+   "loss": 0.9968,
+   "seconds": 357.1
   },
   {
    "step": 8500,
-   "loss": 1.0188,
-   "seconds": 367.0
+   "loss": 1.0168,
+   "seconds": 367.9
   },
   {
    "step": 8750,
-   "loss": 0.9907,
-   "seconds": 377.8
+   "loss": 0.9988,
+   "seconds": 378.6
   },
   {
    "step": 9000,
-   "loss": 1.0184,
-   "seconds": 388.5
+   "loss": 1.0304,
+   "seconds": 389.4
   },
   {
    "step": 9250,
-   "loss": 1.0347,
-   "seconds": 399.3
+   "loss": 1.0346,
+   "seconds": 400.2
   },
   {
    "step": 9500,
-   "loss": 0.9939,
-   "seconds": 410.1
+   "loss": 1.0099,
+   "seconds": 411.0
   },
   {
    "step": 9750,
-   "loss": 1.0129,
-   "seconds": 420.9
+   "loss": 1.0109,
+   "seconds": 421.8
   },
   {
    "step": 10000,
-   "loss": 1.0755,
-   "seconds": 431.7
+   "loss": 1.0056,
+   "seconds": 432.6
   },
   {
    "step": 10250,
-   "loss": 1.0239,
-   "seconds": 442.5
+   "loss": 0.9784,
+   "seconds": 443.4
   },
   {
    "step": 10500,
-   "loss": 1.0005,
-   "seconds": 453.3
+   "loss": 1.0302,
+   "seconds": 454.2
   },
   {
    "step": 10750,
-   "loss": 1.0148,
-   "seconds": 464.1
+   "loss": 0.9958,
+   "seconds": 465.0
   },
   {
    "step": 11000,
-   "loss": 0.9969,
-   "seconds": 474.9
+   "loss": 1.0197,
+   "seconds": 475.8
   },
   {
    "step": 11250,
-   "loss": 1.0097,
-   "seconds": 485.6
+   "loss": 1.0072,
+   "seconds": 486.6
   },
   {
    "step": 11500,
-   "loss": 0.9968,
-   "seconds": 496.4
+   "loss": 1.0104,
+   "seconds": 497.4
   },
   {
    "step": 11750,
-   "loss": 1.0144,
-   "seconds": 507.2
+   "loss": 1.0423,
+   "seconds": 508.2
   },
   {
    "step": 12000,
-   "loss": 0.9963,
-   "seconds": 518.0
+   "loss": 1.01,
+   "seconds": 519.0
   },
   {
    "step": 12250,
-   "loss": 1.0198,
-   "seconds": 528.8
+   "loss": 0.9918,
+   "seconds": 529.8
   },
   {
    "step": 12500,
-   "loss": 1.0255,
-   "seconds": 539.6
+   "loss": 1.0041,
+   "seconds": 540.6
   },
   {
    "step": 12750,
-   "loss": 1.0109,
-   "seconds": 550.4
+   "loss": 0.9842,
+   "seconds": 551.4
   },
   {
    "step": 13000,
-   "loss": 1.036,
-   "seconds": 561.2
+   "loss": 1.049,
+   "seconds": 562.2
   },
   {
    "step": 13250,
-   "loss": 1.0323,
-   "seconds": 572.0
+   "loss": 1.0267,
+   "seconds": 573.0
   },
   {
    "step": 13500,
-   "loss": 1.0283,
-   "seconds": 582.8
+   "loss": 1.0017,
+   "seconds": 583.8
   },
   {
    "step": 13750,
-   "loss": 1.0133,
-   "seconds": 593.6
+   "loss": 1.0179,
+   "seconds": 594.5
   },
   {
    "step": 14000,
-   "loss": 1.0015,
-   "seconds": 604.3
+   "loss": 1.0192,
+   "seconds": 605.4
   }
  ]
 }

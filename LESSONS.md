@@ -81,3 +81,9 @@ stays visibly wrong instead of being dressed up.
   generated records unmatchable until keys were reduced to plain letters.
 - **Some questions have no answer in any table.** "Which shoe am I wearing?" and "will bitcoin go
   up tomorrow?" get an explicit "I cannot know that" record instead of a guess.
+- **A format example in a prompt becomes data.** The teacher prompt showed "theory_of_relativity"
+  as an example of an underscore item; four records then claimed it (Leonardo da Vinci, Tesla, an
+  actor, Platonism). Use a placeholder that cannot be a fact ("first_word_second_word").
+- **Never leave a question unanswered, but say how sure the route is.** When no record is named,
+  search the facts themselves (rare words weigh most), fix typos, and as a last resort answer with
+  the most similar name while saying plainly that the asked thing is unknown.

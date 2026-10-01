@@ -54,6 +54,39 @@ What it cannot do: answer about things outside its table (it says so), hold a co
 know more than the keys of each record. The facts come from the teacher model and have not been
 checked by a person; some are wrong or oddly worded, and they show up exactly that way.
 
+## How it answers every question
+
+It never refuses. If a question names no record, Homunculi still answers from its training data,
+trying these in order and saying under the answer how it found the record:
+
+1. a rare word of a record's name ("who is **einstein**"), also with a typo fixed ("einstien");
+2. the question's words inside another record's facts ("who invented the **telephone**" finds the
+   person whose facts mention it; "which country has the capital **tokyo**" finds Japan);
+3. small talk ("hello", "how are you") goes to its identity record;
+4. otherwise the record whose name is spelled most alike, said plainly: "I learned nothing about
+   quasar. The closest thing I know is Qatar: ...".
+
+The model writes every fact in the answer; the search only picks which record to ask.
+
+## How it compares
+
+| Model | Parameters | Training text | Training compute (≈ 6 × parameters × tokens) |
+|---|---|---|---|
+| **Haishool v3** | 15.7 M (6 layers, width 384, context 96 words) | 1.3 MB: 22,341 facts, 284 k word tokens, repeated (172 M tokens processed) | ≈ 1.6 × 10¹⁶ FLOP, 10 minutes on one RTX 4090 |
+| TinyStories models (2023) | 1 to 33 M | about 2 million very simple short stories | small, hours on one GPU |
+| GPT-2 small (2019) | 124 M | about 40 GB of web text | |
+| Homunculi a 0.0.2 (our general model) | 218 M | about 21 B characters (4.6 B tokens), 24 hours on one RTX 4090 | ≈ 6 × 10¹⁸ FLOP |
+| GPT-3 (2020) | 175 B | about 300 B tokens | ≈ 3 × 10²³ FLOP |
+| Qwen2.5-14B (the teacher) | 14.7 B (48 layers, width 5,120, long context) | about 18 T tokens | ≈ 1.6 × 10²⁴ FLOP |
+
+Haishool is about a thousand times smaller than its teacher and saw tens of millions of times less
+text; the teacher's training took roughly a hundred million times more compute. It is the same kind
+of network (a decoder-only transformer), only tiny. What makes it work at that size is the split:
+the model only has to store facts in one regular format, and fixed rules do the language. The price
+is that it knows nothing outside its table, cannot reason over several facts or hold a conversation,
+and is only as right as the teacher's facts (22 % of held-back facts it guesses exactly, the rest it
+must have seen).
+
 ## Run it yourself
 
 ```bash

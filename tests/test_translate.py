@@ -1,6 +1,7 @@
 """Parser and translator rules (no model needed): python -m pytest tests"""
 
 from haishool.combine import merge
+from haishool.search import Index, resolve
 from haishool.schema import Record, object_key
 from haishool.translate import alias_index, parse, record_text, sentence
 
@@ -66,3 +67,19 @@ def test_keys_and_merge():
                     {"obj": "brazil", "values": {"type": "country", "capital": "brasilia"}},
                     {"obj": "brazil", "values": {"type": "country", "states": "26"}}])
     assert merged["brazil"] == {"type": "country", "capital": "brasilia", "states": "26"}
+
+
+def test_always_answers():
+    index = Index(ROWS)
+
+    def route(q):
+        r = resolve(q, KNOWN, ALIASES, index)
+        return r["obj"], r["attrs"], r["prefix"]
+
+    assert route("who is einstein")[0] == "albert_einstein"
+    assert route("who was einstien")[0] == "albert_einstein"
+    assert route("which country has the capital tokyo")[:2] == ("japan", ["capital"])
+    assert route("hello")[:2] == ("homunculi", ["name", "place"])
+    assert route("where do you run")[:2] == ("homunculi", ["place"])
+    obj, attrs, prefix = route("what is a quasar")
+    assert obj and prefix.startswith("I learned nothing about quasar.")
