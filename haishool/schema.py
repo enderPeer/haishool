@@ -18,6 +18,7 @@ them, and rendered with spaces by the translator.
 from __future__ import annotations
 
 import re
+import unicodedata
 from dataclasses import dataclass
 
 #: attribute key -> (question words the parser looks for, English template parts)
@@ -35,9 +36,35 @@ ATTRIBUTES: dict[str, str] = {
 #: attributes only the identity record carries (not asked from the teacher)
 EXTRA = ("name",)
 ORDER = tuple(ATTRIBUTES)
-ALL_KEYS = ORDER + ("name",)
 
-_WORD = re.compile(r"[a-z_]+")
+#: Round 3 (knowledge map): entity types and their keys. A record carries ``type`` plus the keys of
+#: its type; values follow the same rules as the object attributes (digits allowed for years and
+#: counts).
+TYPES: dict[str, dict[str, str]] = {
+    "person": {"kind": "what they are, one or two words", "role": "their main role or job",
+               "country": "their country", "era": "century or decade they lived or worked in",
+               "known_for": "what they are known for"},
+    "country": {"kind": "country", "continent": "continent", "capital": "capital city",
+                "language": "main languages", "currency": "currency", "states": "number of states or regions",
+                "government": "form of government", "known_for": "what it is known for"},
+    "religion": {"kind": "religion", "founder": "founder or origin figure", "holy_book": "holy book",
+                 "god": "belief about god or gods", "origin": "place of origin",
+                 "followers": "approximate number of followers"},
+    "event": {"kind": "kind of event", "time": "year or century", "place": "where it happened",
+              "cause": "main cause", "result": "main result", "people": "main people involved"},
+    "concept": {"kind": "kind of concept", "field": "field of knowledge", "meaning": "short meaning",
+                "example": "a simple example", "related": "related ideas"},
+    "work": {"kind": "kind of work or product", "maker": "creator, company or artist",
+             "year": "year it appeared", "genre": "genre or category", "known_for": "what it is known for"},
+    "list": {"kind": "list", "members": "the members", "count": "how many members"},
+    "office": {"kind": "office", "holder": "current holder", "since": "year since when",
+               "country": "country"},
+}
+EXTRA_KEYS = ("type", "name", "desires", "feelings", "advice", "answer", "reason", "aliases")
+ALL_KEYS = ORDER + tuple(dict.fromkeys(k for keys in TYPES.values() for k in keys if k not in ORDER)) + EXTRA_KEYS
+QUERY_KEYS = tuple(k for k in ALL_KEYS if k not in ("aliases",))
+
+_WORD = re.compile(r"[a-z0-9_]+")
 
 
 def normalise_value(text: str, max_words: int = 6) -> str:
@@ -52,7 +79,10 @@ def normalise_value(text: str, max_words: int = 6) -> str:
 
 
 def object_key(name: str) -> str:
-    return "_".join(_WORD.findall(name.lower().replace("-", " ").replace(" ", "_").replace("__", "_"))).strip("_")
+    """``"André-Marie Ampère"`` -> ``andre_marie_ampere``, ``"J. K. Rowling"`` -> ``j_k_rowling``."""
+    plain = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
+    plain = re.sub(r"['’]", "", plain)
+    return re.sub(r"_+", "_", "_".join(_WORD.findall(re.sub(r"[^a-z0-9]+", " ", plain)))).strip("_")
 
 
 @dataclass(frozen=True)
@@ -69,7 +99,7 @@ class Record:
         return " ".join(parts)
 
     def queries(self) -> list[str]:
-        return [f"q {self.obj} {key}. a {self.values[key]}." for key in ALL_KEYS if self.values.get(key)]
+        return [f"q {self.obj} {key}. a {self.values[key]}." for key in QUERY_KEYS if self.values.get(key)]
 
 
 def parse_record(line: str) -> Record | None:

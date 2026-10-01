@@ -1,0 +1,1440 @@
+{"obj": "albert_einstein", "type": "person", "category": "famous scientists"}
+{"obj": "isaac_newton", "type": "person", "category": "famous scientists"}
+{"obj": "marie_curie", "type": "person", "category": "famous scientists"}
+{"obj": "charles_darwin", "type": "person", "category": "famous scientists"}
+{"obj": "niels_bohr", "type": "person", "category": "famous scientists"}
+{"obj": "louis_pasteur", "type": "person", "category": "famous scientists"}
+{"obj": "richard_feynman", "type": "person", "category": "famous scientists"}
+{"obj": "james_clerk_maxwell", "type": "person", "category": "famous scientists"}
+{"obj": "michael_faraday", "type": "person", "category": "famous scientists"}
+{"obj": "thomas_edison", "type": "person", "category": "famous scientists"}
+{"obj": "nikola_tesla", "type": "person", "category": "famous scientists"}
+{"obj": "edwin_hubble", "type": "person", "category": "famous scientists"}
+{"obj": "werner_heisenberg", "type": "person", "category": "famous scientists"}
+{"obj": "erwin_schr_dinger", "type": "person", "category": "famous scientists"}
+{"obj": "linus_pauling", "type": "person", "category": "famous scientists"}
+{"obj": "rosalind_franklin", "type": "person", "category": "famous scientists"}
+{"obj": "james_watson", "type": "person", "category": "famous scientists"}
+{"obj": "francis_crick", "type": "person", "category": "famous scientists"}
+{"obj": "svante_arrhenius", "type": "person", "category": "famous scientists"}
+{"obj": "albert_schweitzer", "type": "person", "category": "famous scientists"}
+{"obj": "carl_sagan", "type": "person", "category": "famous scientists"}
+{"obj": "stephen_hawking", "type": "person", "category": "famous scientists"}
+{"obj": "james_hutton", "type": "person", "category": "famous scientists"}
+{"obj": "john_dalton", "type": "person", "category": "famous scientists"}
+{"obj": "antoine_lavoisier", "type": "person", "category": "famous scientists"}
+{"obj": "joseph_priestley", "type": "person", "category": "famous scientists"}
+{"obj": "andr_marie_amp_re", "type": "person", "category": "famous scientists"}
+{"obj": "william_thomson_lord_kelvin", "type": "person", "category": "famous scientists"}
+{"obj": "henri_poincar", "type": "person", "category": "famous scientists"}
+{"obj": "emil_fischer", "type": "person", "category": "famous scientists"}
+{"obj": "otto_hahn", "type": "person", "category": "famous scientists"}
+{"obj": "lise_meitner", "type": "person", "category": "famous scientists"}
+{"obj": "paul_dirac", "type": "person", "category": "famous scientists"}
+{"obj": "enrico_fermi", "type": "person", "category": "famous scientists"}
+{"obj": "ernst_chain", "type": "person", "category": "famous scientists"}
+{"obj": "howard_florey", "type": "person", "category": "famous scientists"}
+{"obj": "alexander_fleming", "type": "person", "category": "famous scientists"}
+{"obj": "kary_mullis", "type": "person", "category": "famous scientists"}
+{"obj": "craig_venter", "type": "person", "category": "famous scientists"}
+{"obj": "james_dyson", "type": "person", "category": "famous scientists"}
+{"obj": "abraham_lincoln", "type": "person", "category": "important world leaders in history"}
+{"obj": "adolf_hitler", "type": "person", "category": "important world leaders in history"}
+{"obj": "alexander_the_great", "type": "person", "category": "important world leaders in history"}
+{"obj": "augustus", "type": "person", "category": "important world leaders in history"}
+{"obj": "benito_mussolini", "type": "person", "category": "important world leaders in history"}
+{"obj": "catherine_the_great", "type": "person", "category": "important world leaders in history"}
+{"obj": "charlemagne", "type": "person", "category": "important world leaders in history"}
+{"obj": "chiang_kai_shek", "type": "person", "category": "important world leaders in history"}
+{"obj": "churchill", "type": "person", "category": "important world leaders in history"}
+{"obj": "cleopatra", "type": "person", "category": "important world leaders in history"}
+{"obj": "cyrus_the_great", "type": "person", "category": "important world leaders in history"}
+{"obj": "deng_xiaoping", "type": "person", "category": "important world leaders in history"}
+{"obj": "elizabeth_i", "type": "person", "category": "important world leaders in history"}
+{"obj": "fidel_castro", "type": "person", "category": "important world leaders in history"}
+{"obj": "genghis_khan", "type": "person", "category": "important world leaders in history"}
+{"obj": "gorbachev", "type": "person", "category": "important world leaders in history"}
+{"obj": "ho_chi_minh", "type": "person", "category": "important world leaders in history"}
+{"obj": "imperial_japan", "type": "person", "category": "important world leaders in history"}
+{"obj": "jiang_zemin", "type": "person", "category": "important world leaders in history"}
+{"obj": "jose_rizal", "type": "person", "category": "important world leaders in history"}
+{"obj": "joseph_stalin", "type": "person", "category": "important world leaders in history"}
+{"obj": "kim_il_sung", "type": "person", "category": "important world leaders in history"}
+{"obj": "kim_jong_il", "type": "person", "category": "important world leaders in history"}
+{"obj": "kim_jong_un", "type": "person", "category": "important world leaders in history"}
+{"obj": "kublai_khan", "type": "person", "category": "important world leaders in history"}
+{"obj": "lenin", "type": "person", "category": "important world leaders in history"}
+{"obj": "mao_zedong", "type": "person", "category": "important world leaders in history"}
+{"obj": "napoleon_bonaparte", "type": "person", "category": "important world leaders in history"}
+{"obj": "nelson_mandela", "type": "person", "category": "important world leaders in history"}
+{"obj": "osama_bin_laden", "type": "person", "category": "important world leaders in history"}
+{"obj": "pericles", "type": "person", "category": "important world leaders in history"}
+{"obj": "qin_shi_huang", "type": "person", "category": "important world leaders in history"}
+{"obj": "roosevelt", "type": "person", "category": "important world leaders in history"}
+{"obj": "saddam_hussein", "type": "person", "category": "important world leaders in history"}
+{"obj": "sukarno", "type": "person", "category": "important world leaders in history"}
+{"obj": "sun_yat_sen", "type": "person", "category": "important world leaders in history"}
+{"obj": "suharto", "type": "person", "category": "important world leaders in history"}
+{"obj": "tamerlane", "type": "person", "category": "important world leaders in history"}
+{"obj": "winston_churchill", "type": "person", "category": "important world leaders in history"}
+{"obj": "xi_jinping", "type": "person", "category": "important world leaders in history"}
+{"obj": "konrad_adenauer", "type": "person", "category": "chancellors of germany since 1949"}
+{"obj": "ludwig_erhard", "type": "person", "category": "chancellors of germany since 1949"}
+{"obj": "kurt_georg_kiesinger", "type": "person", "category": "chancellors of germany since 1949"}
+{"obj": "willy_brandt", "type": "person", "category": "chancellors of germany since 1949"}
+{"obj": "helmut_schmidt", "type": "person", "category": "chancellors of germany since 1949"}
+{"obj": "helmut_kohl", "type": "person", "category": "chancellors of germany since 1949"}
+{"obj": "lothar_de_maizi_re", "type": "person", "category": "chancellors of germany since 1949"}
+{"obj": "gerhard_schr_der", "type": "person", "category": "chancellors of germany since 1949"}
+{"obj": "angela_merkel", "type": "person", "category": "chancellors of germany since 1949"}
+{"obj": "olaf_scholz", "type": "person", "category": "chancellors of germany since 1949"}
+{"obj": "christian_schwarz_schilling", "type": "person", "category": "chancellors of germany since 1949"}
+{"obj": "peter_altmaier", "type": "person", "category": "chancellors of germany since 1949"}
+{"obj": "alexander_graham_bell", "type": "person", "category": "famous inventors"}
+{"obj": "james_watt", "type": "person", "category": "famous inventors"}
+{"obj": "benjamin_franklin", "type": "person", "category": "famous inventors"}
+{"obj": "henry_ford", "type": "person", "category": "famous inventors"}
+{"obj": "guglielmo_marconi", "type": "person", "category": "famous inventors"}
+{"obj": "charles_babbage", "type": "person", "category": "famous inventors"}
+{"obj": "ada_lovelace", "type": "person", "category": "famous inventors"}
+{"obj": "edison", "type": "person", "category": "famous inventors"}
+{"obj": "wright_brothers", "type": "person", "category": "famous inventors"}
+{"obj": "james_hargreaves", "type": "person", "category": "famous inventors"}
+{"obj": "tim_berners_lee", "type": "person", "category": "famous inventors"}
+{"obj": "steve_jobs", "type": "person", "category": "famous inventors"}
+{"obj": "bill_gates", "type": "person", "category": "famous inventors"}
+{"obj": "thomas_savery", "type": "person", "category": "famous inventors"}
+{"obj": "thomas_newcomen", "type": "person", "category": "famous inventors"}
+{"obj": "james_clark_maxwell", "type": "person", "category": "famous inventors"}
+{"obj": "robert_fulton", "type": "person", "category": "famous inventors"}
+{"obj": "george_stephenson", "type": "person", "category": "famous inventors"}
+{"obj": "the_beatles", "type": "person", "category": "famous musicians and bands"}
+{"obj": "michael_jackson", "type": "person", "category": "famous musicians and bands"}
+{"obj": "elvis_presley", "type": "person", "category": "famous musicians and bands"}
+{"obj": "bob_dylan", "type": "person", "category": "famous musicians and bands"}
+{"obj": "freddie_mercury", "type": "person", "category": "famous musicians and bands"}
+{"obj": "david_bowie", "type": "person", "category": "famous musicians and bands"}
+{"obj": "john_lennon", "type": "person", "category": "famous musicians and bands"}
+{"obj": "paul_mccartney", "type": "person", "category": "famous musicians and bands"}
+{"obj": "george_harrison", "type": "person", "category": "famous musicians and bands"}
+{"obj": "ringo_starr", "type": "person", "category": "famous musicians and bands"}
+{"obj": "led_zeppelin", "type": "person", "category": "famous musicians and bands"}
+{"obj": "queen", "type": "person", "category": "famous musicians and bands"}
+{"obj": "pink_floyd", "type": "person", "category": "famous musicians and bands"}
+{"obj": "the_rolling_stones", "type": "person", "category": "famous musicians and bands"}
+{"obj": "elton_john", "type": "person", "category": "famous musicians and bands"}
+{"obj": "david_gilmour", "type": "person", "category": "famous musicians and bands"}
+{"obj": "jimmy_page", "type": "person", "category": "famous musicians and bands"}
+{"obj": "robert_plant", "type": "person", "category": "famous musicians and bands"}
+{"obj": "brian_may", "type": "person", "category": "famous musicians and bands"}
+{"obj": "roger_waters", "type": "person", "category": "famous musicians and bands"}
+{"obj": "prince", "type": "person", "category": "famous musicians and bands"}
+{"obj": "kurt_cobain", "type": "person", "category": "famous musicians and bands"}
+{"obj": "nirvana", "type": "person", "category": "famous musicians and bands"}
+{"obj": "tupac_shakur", "type": "person", "category": "famous musicians and bands"}
+{"obj": "eminem", "type": "person", "category": "famous musicians and bands"}
+{"obj": "dr_dre", "type": "person", "category": "famous musicians and bands"}
+{"obj": "kanye_west", "type": "person", "category": "famous musicians and bands"}
+{"obj": "jay_z", "type": "person", "category": "famous musicians and bands"}
+{"obj": "beyonc", "type": "person", "category": "famous musicians and bands"}
+{"obj": "britney_spears", "type": "person", "category": "famous musicians and bands"}
+{"obj": "madonna", "type": "person", "category": "famous musicians and bands"}
+{"obj": "whitney_houston", "type": "person", "category": "famous musicians and bands"}
+{"obj": "barry_white", "type": "person", "category": "famous musicians and bands"}
+{"obj": "stevie_wonder", "type": "person", "category": "famous musicians and bands"}
+{"obj": "ray_charles", "type": "person", "category": "famous musicians and bands"}
+{"obj": "aretha_franklin", "type": "person", "category": "famous musicians and bands"}
+{"obj": "elvis_costello", "type": "person", "category": "famous musicians and bands"}
+{"obj": "sting", "type": "person", "category": "famous musicians and bands"}
+{"obj": "u2", "type": "person", "category": "famous musicians and bands"}
+{"obj": "coldplay", "type": "person", "category": "famous musicians and bands"}
+{"obj": "radiohead", "type": "person", "category": "famous musicians and bands"}
+{"obj": "adele", "type": "person", "category": "famous musicians and bands"}
+{"obj": "leonardo_dicaprio", "type": "person", "category": "famous film actors and directors"}
+{"obj": "tom_hanks", "type": "person", "category": "famous film actors and directors"}
+{"obj": "meryl_streep", "type": "person", "category": "famous film actors and directors"}
+{"obj": "robert_de_niro", "type": "person", "category": "famous film actors and directors"}
+{"obj": "brad_pitt", "type": "person", "category": "famous film actors and directors"}
+{"obj": "angelina_jolie", "type": "person", "category": "famous film actors and directors"}
+{"obj": "johnny_depp", "type": "person", "category": "famous film actors and directors"}
+{"obj": "nicole_kidman", "type": "person", "category": "famous film actors and directors"}
+{"obj": "tom_cruise", "type": "person", "category": "famous film actors and directors"}
+{"obj": "denzel_washington", "type": "person", "category": "famous film actors and directors"}
+{"obj": "scarlett_johansson", "type": "person", "category": "famous film actors and directors"}
+{"obj": "ryan_gosling", "type": "person", "category": "famous film actors and directors"}
+{"obj": "chris_evans", "type": "person", "category": "famous film actors and directors"}
+{"obj": "chris_hemsworth", "type": "person", "category": "famous film actors and directors"}
+{"obj": "chris_pratt", "type": "person", "category": "famous film actors and directors"}
+{"obj": "hugh_jackman", "type": "person", "category": "famous film actors and directors"}
+{"obj": "hugh_grant", "type": "person", "category": "famous film actors and directors"}
+{"obj": "russell_crowe", "type": "person", "category": "famous film actors and directors"}
+{"obj": "will_smith", "type": "person", "category": "famous film actors and directors"}
+{"obj": "joaquin_phoenix", "type": "person", "category": "famous film actors and directors"}
+{"obj": "eddie_redmayne", "type": "person", "category": "famous film actors and directors"}
+{"obj": "benedict_cumberbatch", "type": "person", "category": "famous film actors and directors"}
+{"obj": "michael_fassbender", "type": "person", "category": "famous film actors and directors"}
+{"obj": "idris_elba", "type": "person", "category": "famous film actors and directors"}
+{"obj": "timothee_chalamet", "type": "person", "category": "famous film actors and directors"}
+{"obj": "ansel_elgort", "type": "person", "category": "famous film actors and directors"}
+{"obj": "saoirse_ronan", "type": "person", "category": "famous film actors and directors"}
+{"obj": "rami_malek", "type": "person", "category": "famous film actors and directors"}
+{"obj": "tilda_swinton", "type": "person", "category": "famous film actors and directors"}
+{"obj": "cate_blanchett", "type": "person", "category": "famous film actors and directors"}
+{"obj": "kristen_stewart", "type": "person", "category": "famous film actors and directors"}
+{"obj": "margot_robbie", "type": "person", "category": "famous film actors and directors"}
+{"obj": "emma_stone", "type": "person", "category": "famous film actors and directors"}
+{"obj": "jennifer_lawrence", "type": "person", "category": "famous film actors and directors"}
+{"obj": "sandra_bullock", "type": "person", "category": "famous film actors and directors"}
+{"obj": "halle_berry", "type": "person", "category": "famous film actors and directors"}
+{"obj": "julia_roberts", "type": "person", "category": "famous film actors and directors"}
+{"obj": "gwyneth_paltrow", "type": "person", "category": "famous film actors and directors"}
+{"obj": "nicolas_cage", "type": "person", "category": "famous film actors and directors"}
+{"obj": "james_cameron", "type": "person", "category": "famous film actors and directors"}
+{"obj": "quentin_tarantino", "type": "person", "category": "famous film actors and directors"}
+{"obj": "christopher_nolan", "type": "person", "category": "famous film actors and directors"}
+{"obj": "steven_spielberg", "type": "person", "category": "famous film actors and directors"}
+{"obj": "martin_scorsese", "type": "person", "category": "famous film actors and directors"}
+{"obj": "francis_ford_coppola", "type": "person", "category": "famous film actors and directors"}
+{"obj": "stanley_kubrick", "type": "person", "category": "famous film actors and directors"}
+{"obj": "woody_allen", "type": "person", "category": "famous film actors and directors"}
+{"obj": "david_fincher", "type": "person", "category": "famous film actors and directors"}
+{"obj": "george_lucas", "type": "person", "category": "famous film actors and directors"}
+{"obj": "ridley_scott", "type": "person", "category": "famous film actors and directors"}
+{"obj": "william_shakespeare", "type": "person", "category": "famous writers and poets"}
+{"obj": "jane_austen", "type": "person", "category": "famous writers and poets"}
+{"obj": "charles_dickens", "type": "person", "category": "famous writers and poets"}
+{"obj": "emily_dickinson", "type": "person", "category": "famous writers and poets"}
+{"obj": "edgar_allan_poe", "type": "person", "category": "famous writers and poets"}
+{"obj": "oscar_wilde", "type": "person", "category": "famous writers and poets"}
+{"obj": "ernest_hemingway", "type": "person", "category": "famous writers and poets"}
+{"obj": "f_scott_fitzgerald", "type": "person", "category": "famous writers and poets"}
+{"obj": "t_s_eliot", "type": "person", "category": "famous writers and poets"}
+{"obj": "virginia_woolf", "type": "person", "category": "famous writers and poets"}
+{"obj": "james_joyce", "type": "person", "category": "famous writers and poets"}
+{"obj": "dante_alighieri", "type": "person", "category": "famous writers and poets"}
+{"obj": "william_wordsworth", "type": "person", "category": "famous writers and poets"}
+{"obj": "john_keats", "type": "person", "category": "famous writers and poets"}
+{"obj": "walt_whitman", "type": "person", "category": "famous writers and poets"}
+{"obj": "ralph_waldo_emerson", "type": "person", "category": "famous writers and poets"}
+{"obj": "henry_david_thoreau", "type": "person", "category": "famous writers and poets"}
+{"obj": "robert_frost", "type": "person", "category": "famous writers and poets"}
+{"obj": "langston_hughes", "type": "person", "category": "famous writers and poets"}
+{"obj": "toni_morrison", "type": "person", "category": "famous writers and poets"}
+{"obj": "gabriel_garcia_marquez", "type": "person", "category": "famous writers and poets"}
+{"obj": "haruki_murakami", "type": "person", "category": "famous writers and poets"}
+{"obj": "j_d_salinger", "type": "person", "category": "famous writers and poets"}
+{"obj": "e_b_white", "type": "person", "category": "famous writers and poets"}
+{"obj": "margaret_atwood", "type": "person", "category": "famous writers and poets"}
+{"obj": "alice_walker", "type": "person", "category": "famous writers and poets"}
+{"obj": "zadie_smith", "type": "person", "category": "famous writers and poets"}
+{"obj": "salman_rushdie", "type": "person", "category": "famous writers and poets"}
+{"obj": "j_k_rowling", "type": "person", "category": "famous writers and poets"}
+{"obj": "neil_gaiman", "type": "person", "category": "famous writers and poets"}
+{"obj": "plato", "type": "person", "category": "famous philosophers"}
+{"obj": "aristotle", "type": "person", "category": "famous philosophers"}
+{"obj": "kant", "type": "person", "category": "famous philosophers"}
+{"obj": "hegel", "type": "person", "category": "famous philosophers"}
+{"obj": "nietzsche", "type": "person", "category": "famous philosophers"}
+{"obj": "socrates", "type": "person", "category": "famous philosophers"}
+{"obj": "descartes", "type": "person", "category": "famous philosophers"}
+{"obj": "locke", "type": "person", "category": "famous philosophers"}
+{"obj": "hume", "type": "person", "category": "famous philosophers"}
+{"obj": "rousseau", "type": "person", "category": "famous philosophers"}
+{"obj": "marx", "type": "person", "category": "famous philosophers"}
+{"obj": "freud", "type": "person", "category": "famous philosophers"}
+{"obj": "wittgenstein", "type": "person", "category": "famous philosophers"}
+{"obj": "heidegger", "type": "person", "category": "famous philosophers"}
+{"obj": "sartre", "type": "person", "category": "famous philosophers"}
+{"obj": "camus", "type": "person", "category": "famous philosophers"}
+{"obj": "russell", "type": "person", "category": "famous philosophers"}
+{"obj": "hobbes", "type": "person", "category": "famous philosophers"}
+{"obj": "mill", "type": "person", "category": "famous philosophers"}
+{"obj": "spinoza", "type": "person", "category": "famous philosophers"}
+{"obj": "leibniz", "type": "person", "category": "famous philosophers"}
+{"obj": "kierkegaard", "type": "person", "category": "famous philosophers"}
+{"obj": "ayer", "type": "person", "category": "famous philosophers"}
+{"obj": "nagel", "type": "person", "category": "famous philosophers"}
+{"obj": "rawls", "type": "person", "category": "famous philosophers"}
+{"obj": "foucault", "type": "person", "category": "famous philosophers"}
+{"obj": "habermas", "type": "person", "category": "famous philosophers"}
+{"obj": "derrida", "type": "person", "category": "famous philosophers"}
+{"obj": "wolin", "type": "person", "category": "famous philosophers"}
+{"obj": "rorty", "type": "person", "category": "famous philosophers"}
+{"obj": "elon_musk", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "jeff_bezos", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "warren_buffett", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "mark_zuckerberg", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "larry_page", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "sergey_brin", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "larry_ellison", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "steve_ballmer", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "richard_branson", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "oprah_winfrey", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "michael_bloomberg", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "jack_ma", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "satya_nadella", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "tim_cook", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "jack_dorsey", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "sheryl_sandberg", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "howard_schultz", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "meg_whitman", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "arianna_huffington", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "reed_hastings", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "brian_chesky", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "joe_gebbia", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "nate_keller", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "travis_kalanick", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "dara_khosrowshahi", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "daniel_ek", "type": "person", "category": "famous entrepreneurs and business people"}
+{"obj": "jesus", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "muhammad", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "buddha", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "confucius", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "laozi", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "zoroaster", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "krishna", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "gautama_buddha", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "moses", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "rama", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "siddhartha_gautama", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "zarathustra", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "juda", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "mani", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "sri_ramakrishna", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "sri_chaitanya", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "sri_ramana_maharshi", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "sri_aurobindo", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "sri_ram", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "sri_krishna", "type": "person", "category": "founders of world religions and religious figures"}
+{"obj": "leonardo_da_vinci", "type": "person", "category": "famous painters and artists"}
+{"obj": "vincent_van_gogh", "type": "person", "category": "famous painters and artists"}
+{"obj": "pablo_picasso", "type": "person", "category": "famous painters and artists"}
+{"obj": "claude_monet", "type": "person", "category": "famous painters and artists"}
+{"obj": "michelangelo", "type": "person", "category": "famous painters and artists"}
+{"obj": "rembrandt", "type": "person", "category": "famous painters and artists"}
+{"obj": "edgar_degas", "type": "person", "category": "famous painters and artists"}
+{"obj": "paul_c_zanne", "type": "person", "category": "famous painters and artists"}
+{"obj": "jan_van_eyck", "type": "person", "category": "famous painters and artists"}
+{"obj": "titian", "type": "person", "category": "famous painters and artists"}
+{"obj": "hieronymus_bosch", "type": "person", "category": "famous painters and artists"}
+{"obj": "albrecht_d_rer", "type": "person", "category": "famous painters and artists"}
+{"obj": "raphael", "type": "person", "category": "famous painters and artists"}
+{"obj": "caravaggio", "type": "person", "category": "famous painters and artists"}
+{"obj": "jan_vermeer", "type": "person", "category": "famous painters and artists"}
+{"obj": "salvador_dal", "type": "person", "category": "famous painters and artists"}
+{"obj": "georgia_o_keeffe", "type": "person", "category": "famous painters and artists"}
+{"obj": "jackson_pollock", "type": "person", "category": "famous painters and artists"}
+{"obj": "andy_warhol", "type": "person", "category": "famous painters and artists"}
+{"obj": "frida_kahlo", "type": "person", "category": "famous painters and artists"}
+{"obj": "diego_rivera", "type": "person", "category": "famous painters and artists"}
+{"obj": "edvard_munch", "type": "person", "category": "famous painters and artists"}
+{"obj": "henri_matisse", "type": "person", "category": "famous painters and artists"}
+{"obj": "claude_lorrain", "type": "person", "category": "famous painters and artists"}
+{"obj": "johannes_vermeer", "type": "person", "category": "famous painters and artists"}
+{"obj": "thomas_gainsborough", "type": "person", "category": "famous painters and artists"}
+{"obj": "john_constable", "type": "person", "category": "famous painters and artists"}
+{"obj": "francisco_goya", "type": "person", "category": "famous painters and artists"}
+{"obj": "lebron_james", "type": "person", "category": "famous athletes"}
+{"obj": "michael_jordan", "type": "person", "category": "famous athletes"}
+{"obj": "tiger_woods", "type": "person", "category": "famous athletes"}
+{"obj": "serena_williams", "type": "person", "category": "famous athletes"}
+{"obj": "roger_federer", "type": "person", "category": "famous athletes"}
+{"obj": "lionel_messi", "type": "person", "category": "famous athletes"}
+{"obj": "cristiano_ronaldo", "type": "person", "category": "famous athletes"}
+{"obj": "tom_brady", "type": "person", "category": "famous athletes"}
+{"obj": "kobe_bryant", "type": "person", "category": "famous athletes"}
+{"obj": "usain_bolt", "type": "person", "category": "famous athletes"}
+{"obj": "novak_djokovic", "type": "person", "category": "famous athletes"}
+{"obj": "simone_biles", "type": "person", "category": "famous athletes"}
+{"obj": "stephen_curry", "type": "person", "category": "famous athletes"}
+{"obj": "neymar", "type": "person", "category": "famous athletes"}
+{"obj": "kevin_durant", "type": "person", "category": "famous athletes"}
+{"obj": "luka_doncic", "type": "person", "category": "famous athletes"}
+{"obj": "shaquille_o_neal", "type": "person", "category": "famous athletes"}
+{"obj": "dale_earnhardt_jr", "type": "person", "category": "famous athletes"}
+{"obj": "jack_nicklaus", "type": "person", "category": "famous athletes"}
+{"obj": "wayne_gretzky", "type": "person", "category": "famous athletes"}
+{"obj": "muhammad_ali", "type": "person", "category": "famous athletes"}
+{"obj": "jackie_robinson", "type": "person", "category": "famous athletes"}
+{"obj": "babe_ruth", "type": "person", "category": "famous athletes"}
+{"obj": "michele_ferrero", "type": "person", "category": "famous athletes"}
+{"obj": "pele", "type": "person", "category": "famous athletes"}
+{"obj": "wayne_rooney", "type": "person", "category": "famous athletes"}
+{"obj": "manny_pacquiao", "type": "person", "category": "famous athletes"}
+{"obj": "ronaldinho", "type": "person", "category": "famous athletes"}
+{"obj": "dwyane_wade", "type": "person", "category": "famous athletes"}
+{"obj": "tony_hawk", "type": "person", "category": "famous athletes"}
+{"obj": "afghanistan", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "albania", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "algeria", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "andorra", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "angola", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "antigua_and_barbuda", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "argentina", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "armenia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "australia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "austria", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "azerbaijan", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "bahamas", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "bahrain", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "bangladesh", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "barbados", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "belarus", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "belgium", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "belize", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "benin", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "bhutan", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "bolivia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "bosnia_and_herzegovina", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "botswana", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "brunei", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "bulgaria", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "burkina_faso", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "burundi", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "cambodia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "cameroon", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "canada", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "cape_verde", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "central_african_republic", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "chad", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "chile", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "china", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "colombia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "comoros", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "congo_brazzaville", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "congo_kinshasa", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "costa_rica", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "croatia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "cuba", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "cyprus", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "czech_republic", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "denmark", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "djibouti", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "dominica", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "dominican_republic", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "ecuador", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "egypt", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "el_salvador", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "equatorial_guinea", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "eritrea", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "estonia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "ethiopia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "fiji", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "finland", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "france", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "gabon", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "gambia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "georgia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "germany", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "ghana", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "greece", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "grenada", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "guatemala", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "guinea", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "guinea_bissau", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "guyana", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "haiti", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "honduras", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "hungary", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "iceland", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "india", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "indonesia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "iran", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "iraq", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "ireland", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "israel", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "italy", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "ivory_coast", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "jamaica", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "japan", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "jordan", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "kazakhstan", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "kenya", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "kiribati", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "kosovo", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "kuwait", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "kyrgyzstan", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "laos", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "latvia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "lebanon", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "lesotho", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "liberia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "libya", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "liechtenstein", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "lithuania", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "luxembourg", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "madagascar", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "malawi", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "malaysia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "maldives", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "mali", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "malta", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "marshall_islands", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "mauritania", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "mauritius", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "mexico", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "micronesia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "moldova", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "monaco", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "mongolia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "montenegro", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "morocco", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "mozambique", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "myanmar_burma", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "namibia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "nauru", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "nepal", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "netherlands", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "new_zealand", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "nicaragua", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "niger", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "nigeria", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "north_korea", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "north_macedonia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "norway", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "oman", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "pakistan", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "palau", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "palestinian_territories", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "panama", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "papua_new_guinea", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "paraguay", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "peru", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "philippines", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "poland", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "portugal", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "qatar", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "romania", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "russia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "rwanda", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "saint_kitts_and_nevis", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "saint_lucia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "saint_vincent_and_the_grenadines", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "samoa", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "san_marino", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "sao_tome_and_principe", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "saudi_arabia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "senegal", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "serbia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "seychelles", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "sierra_leone", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "singapore", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "slovakia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "slovenia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "solomon_islands", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "somalia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "south_africa", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "south_korea", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "south_sudan", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "spain", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "sri_lanka", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "sudan", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "suriname", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "sweden", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "switzerland", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "syria", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "taiwan", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "tajikistan", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "tanzania", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "thailand", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "timor_leste", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "togo", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "tonga", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "trinidad_and_tobago", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "tunisia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "turkmenistan", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "tuvalu", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "uganda", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "ukraine", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "united_arab_emirates", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "united_kingdom", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "united_states", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "uruguay", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "uzbekistan", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "vanuatu", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "vatican_city", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "venezuela", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "vietnam", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "yemen", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "zambia", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "zimbabwe", "type": "country", "category": "countries of the world, the most important ones"}
+{"obj": "christianity", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "islam", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "hinduism", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "buddhism", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "judaism", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "taoism", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "shinto", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "sikhism", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "zoroastrianism", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "confucianism", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "jainism", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "bah_faith", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "atheism", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "agnosticism", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "wicca", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "paganism", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "rastafari", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "yoruba_religion", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "native_american_spirituality", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "tengrism", "type": "religion", "category": "world religions and belief systems"}
+{"obj": "fall_of_rome", "type": "event", "category": "major events of world history"}
+{"obj": "black_death", "type": "event", "category": "major events of world history"}
+{"obj": "renaissance", "type": "event", "category": "major events of world history"}
+{"obj": "age_of_discovery", "type": "event", "category": "major events of world history"}
+{"obj": "reformation", "type": "event", "category": "major events of world history"}
+{"obj": "thirty_years_war", "type": "event", "category": "major events of world history"}
+{"obj": "scientific_revolution", "type": "event", "category": "major events of world history"}
+{"obj": "english_civil_war", "type": "event", "category": "major events of world history"}
+{"obj": "glorious_revolution", "type": "event", "category": "major events of world history"}
+{"obj": "american_revolution", "type": "event", "category": "major events of world history"}
+{"obj": "french_revolution", "type": "event", "category": "major events of world history"}
+{"obj": "napoleonic_wars", "type": "event", "category": "major events of world history"}
+{"obj": "industrial_revolution", "type": "event", "category": "major events of world history"}
+{"obj": "haitian_revolution", "type": "event", "category": "major events of world history"}
+{"obj": "war_of_1812", "type": "event", "category": "major events of world history"}
+{"obj": "greek_war_of_independence", "type": "event", "category": "major events of world history"}
+{"obj": "revolutions_of_1848", "type": "event", "category": "major events of world history"}
+{"obj": "mexican_american_war", "type": "event", "category": "major events of world history"}
+{"obj": "california_gold_rush", "type": "event", "category": "major events of world history"}
+{"obj": "crimean_war", "type": "event", "category": "major events of world history"}
+{"obj": "american_civil_war", "type": "event", "category": "major events of world history"}
+{"obj": "paris_commune", "type": "event", "category": "major events of world history"}
+{"obj": "indian_rebellion", "type": "event", "category": "major events of world history"}
+{"obj": "american_indian_wars", "type": "event", "category": "major events of world history"}
+{"obj": "meiji_restoration", "type": "event", "category": "major events of world history"}
+{"obj": "russo_turkish_war", "type": "event", "category": "major events of world history"}
+{"obj": "russo_japanese_war", "type": "event", "category": "major events of world history"}
+{"obj": "balkan_wars", "type": "event", "category": "major events of world history"}
+{"obj": "world_war_i", "type": "event", "category": "major events of world history"}
+{"obj": "russian_revolution", "type": "event", "category": "major events of world history"}
+{"obj": "treaty_of_versailles", "type": "event", "category": "major events of world history"}
+{"obj": "spanish_flu", "type": "event", "category": "major events of world history"}
+{"obj": "russian_civil_war", "type": "event", "category": "major events of world history"}
+{"obj": "chinese_revolution", "type": "event", "category": "major events of world history"}
+{"obj": "world_war_ii", "type": "event", "category": "major events of world history"}
+{"obj": "holocaust", "type": "event", "category": "major events of world history"}
+{"obj": "nuremberg_trials", "type": "event", "category": "major events of world history"}
+{"obj": "cold_war", "type": "event", "category": "major events of world history"}
+{"obj": "korean_war", "type": "event", "category": "major events of world history"}
+{"obj": "vietnam_war", "type": "event", "category": "major events of world history"}
+{"obj": "cuban_missile_crisis", "type": "event", "category": "major events of world history"}
+{"obj": "assassination_of_jfk", "type": "event", "category": "major events of world history"}
+{"obj": "nixon_resignation", "type": "event", "category": "major events of world history"}
+{"obj": "cambodia_vietnam_war", "type": "event", "category": "major events of world history"}
+{"obj": "iran_hostage_crisis", "type": "event", "category": "major events of world history"}
+{"obj": "fall_of_the_berlin_wall", "type": "event", "category": "major events of world history"}
+{"obj": "gulf_war", "type": "event", "category": "major events of world history"}
+{"obj": "9_11_attacks", "type": "event", "category": "major events of world history"}
+{"obj": "iraq_war", "type": "event", "category": "major events of world history"}
+{"obj": "financial_crisis_of_2008", "type": "event", "category": "major events of world history"}
+{"obj": "arab_spring", "type": "event", "category": "major events of world history"}
+{"obj": "covid_19_pandemic", "type": "event", "category": "major events of world history"}
+{"obj": "teutoburg_forest_battle", "type": "event", "category": "major events of german history"}
+{"obj": "charlemagne_crowned_holy_roman_emperor", "type": "event", "category": "major events of german history"}
+{"obj": "reformation_starts", "type": "event", "category": "major events of german history"}
+{"obj": "peace_of_westphalia", "type": "event", "category": "major events of german history"}
+{"obj": "thirty_years_war_ends", "type": "event", "category": "major events of german history"}
+{"obj": "battle_of_leipzig", "type": "event", "category": "major events of german history"}
+{"obj": "congress_of_vienna", "type": "event", "category": "major events of german history"}
+{"obj": "german_confederation", "type": "event", "category": "major events of german history"}
+{"obj": "revolution_of_1848", "type": "event", "category": "major events of german history"}
+{"obj": "franco_prussian_war", "type": "event", "category": "major events of german history"}
+{"obj": "unification_of_germany", "type": "event", "category": "major events of german history"}
+{"obj": "krupp_begins_arms_production", "type": "event", "category": "major events of german history"}
+{"obj": "assassination_of_walther_rathenau", "type": "event", "category": "major events of german history"}
+{"obj": "beer_hall_putsch", "type": "event", "category": "major events of german history"}
+{"obj": "nazis_gain_power", "type": "event", "category": "major events of german history"}
+{"obj": "night_of_the_long_knives", "type": "event", "category": "major events of german history"}
+{"obj": "kristallnacht", "type": "event", "category": "major events of german history"}
+{"obj": "world_war_ii_starts", "type": "event", "category": "major events of german history"}
+{"obj": "battle_of_stalingrad", "type": "event", "category": "major events of german history"}
+{"obj": "hiroshima_and_nagasaki", "type": "event", "category": "major events of german history"}
+{"obj": "berlin_blockade", "type": "event", "category": "major events of german history"}
+{"obj": "formation_of_west_germany", "type": "event", "category": "major events of german history"}
+{"obj": "formation_of_east_germany", "type": "event", "category": "major events of german history"}
+{"obj": "berlin_wall_built", "type": "event", "category": "major events of german history"}
+{"obj": "construction_of_the_berlin_wall", "type": "event", "category": "major events of german history"}
+{"obj": "east_german_uprising", "type": "event", "category": "major events of german history"}
+{"obj": "berlin_wall_falls", "type": "event", "category": "major events of german history"}
+{"obj": "reunification_of_germany", "type": "event", "category": "major events of german history"}
+{"obj": "german_democratic_republic_established", "type": "event", "category": "major events of german history"}
+{"obj": "german_empire_established", "type": "event", "category": "major events of german history"}
+{"obj": "spanish_civil_war", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "iranian_revolution", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "cuban_revolution", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "war_of_spanish_succession", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "seven_years_war", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "mexican_revolution", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "indian_independence_movement", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "sino_japanese_war", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "second_opium_war", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "anglo_zulu_war", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "boxer_rebellion", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "war_of_polish_succession", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "war_of_austrian_succession", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "war_of_bavarian_succession", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "war_of_jenkins_ear", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "war_of_the_roses", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "war_of_independence_latin_america", "type": "event", "category": "famous wars and revolutions"}
+{"obj": "theory_of_relativity", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "quantum_mechanics", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "dna_double_helix", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "penicillin", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "electricity", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "steam_engine", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "printing_press", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "internet", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "telescope", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "microscope", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "light_bulb", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "telegraph", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "x_rays", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "mri", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "laser", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "aspirin", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "semiconductor", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "airplane", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "automobile", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "cell_phone", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "gps", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "credit_card", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "credit_card_chip", "type": "event", "category": "great scientific discoveries and inventions"}
+{"obj": "black_thursday_1929", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "black_tuesday_1929", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "wall_street_crash_of_1929", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "great_depression", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "black_monday_1987", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "japanese_asset_price_bubble", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "black_wednesday_1992", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "mexican_peso_crisis", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "asian_financial_crisis", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "russian_financial_crisis", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "long_term_capital_management_crisis", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "dot_com_bubble", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "nasdaq_crash", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "september_11_attacks_impact", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "enron_scandal", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "worldcom_scandal", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "2000_2002_market_crash", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "2008_financial_crisis", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "great_recession", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "flash_crash_2010", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "eurozone_crisis", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "brexit_vote", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "oil_price_shock_2014", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "gamestop_short_squeeze", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "crypto_market_crash_2022", "type": "event", "category": "stock market crashes, financial crises and famous market events"}
+{"obj": "sputnik_1_launch", "type": "event", "category": "milestones of space exploration"}
+{"obj": "first_human_in_space", "type": "event", "category": "milestones of space exploration"}
+{"obj": "first_american_in_space", "type": "event", "category": "milestones of space exploration"}
+{"obj": "first_spacewalk", "type": "event", "category": "milestones of space exploration"}
+{"obj": "gemini_program", "type": "event", "category": "milestones of space exploration"}
+{"obj": "apollo_8_orbits_moon", "type": "event", "category": "milestones of space exploration"}
+{"obj": "apollo_11_moon_landing", "type": "event", "category": "milestones of space exploration"}
+{"obj": "first_space_station", "type": "event", "category": "milestones of space exploration"}
+{"obj": "skylab", "type": "event", "category": "milestones of space exploration"}
+{"obj": "apollo_soyuz_test_project", "type": "event", "category": "milestones of space exploration"}
+{"obj": "first_space_shuttle", "type": "event", "category": "milestones of space exploration"}
+{"obj": "voyager_1_launch", "type": "event", "category": "milestones of space exploration"}
+{"obj": "hubble_space_telescope_launch", "type": "event", "category": "milestones of space exploration"}
+{"obj": "mars_pathfinder", "type": "event", "category": "milestones of space exploration"}
+{"obj": "cassini_huygens_mission", "type": "event", "category": "milestones of space exploration"}
+{"obj": "international_space_station_assembly", "type": "event", "category": "milestones of space exploration"}
+{"obj": "spirit_and_opportunity_rovers", "type": "event", "category": "milestones of space exploration"}
+{"obj": "phoenix_mars_lander", "type": "event", "category": "milestones of space exploration"}
+{"obj": "curiosity_rover", "type": "event", "category": "milestones of space exploration"}
+{"obj": "new_horizons_flyby_of_pluto", "type": "event", "category": "milestones of space exploration"}
+{"obj": "dna", "type": "concept", "category": "basic biology concepts"}
+{"obj": "rna", "type": "concept", "category": "basic biology concepts"}
+{"obj": "gene", "type": "concept", "category": "basic biology concepts"}
+{"obj": "chromosome", "type": "concept", "category": "basic biology concepts"}
+{"obj": "cell", "type": "concept", "category": "basic biology concepts"}
+{"obj": "mitosis", "type": "concept", "category": "basic biology concepts"}
+{"obj": "meiosis", "type": "concept", "category": "basic biology concepts"}
+{"obj": "photosynthesis", "type": "concept", "category": "basic biology concepts"}
+{"obj": "respiration", "type": "concept", "category": "basic biology concepts"}
+{"obj": "homeostasis", "type": "concept", "category": "basic biology concepts"}
+{"obj": "mutation", "type": "concept", "category": "basic biology concepts"}
+{"obj": "natural_selection", "type": "concept", "category": "basic biology concepts"}
+{"obj": "evolution", "type": "concept", "category": "basic biology concepts"}
+{"obj": "genetics", "type": "concept", "category": "basic biology concepts"}
+{"obj": "ecology", "type": "concept", "category": "basic biology concepts"}
+{"obj": "biodiversity", "type": "concept", "category": "basic biology concepts"}
+{"obj": "phenotype", "type": "concept", "category": "basic biology concepts"}
+{"obj": "genotype", "type": "concept", "category": "basic biology concepts"}
+{"obj": "metabolism", "type": "concept", "category": "basic biology concepts"}
+{"obj": "enzyme", "type": "concept", "category": "basic biology concepts"}
+{"obj": "protein", "type": "concept", "category": "basic biology concepts"}
+{"obj": "carbohydrate", "type": "concept", "category": "basic biology concepts"}
+{"obj": "lipid", "type": "concept", "category": "basic biology concepts"}
+{"obj": "nucleic_acid", "type": "concept", "category": "basic biology concepts"}
+{"obj": "cell_membrane", "type": "concept", "category": "basic biology concepts"}
+{"obj": "cytoplasm", "type": "concept", "category": "basic biology concepts"}
+{"obj": "nucleus", "type": "concept", "category": "basic biology concepts"}
+{"obj": "mitochondria", "type": "concept", "category": "basic biology concepts"}
+{"obj": "ribosome", "type": "concept", "category": "basic biology concepts"}
+{"obj": "chloroplast", "type": "concept", "category": "basic biology concepts"}
+{"obj": "endoplasmic_reticulum", "type": "concept", "category": "basic biology concepts"}
+{"obj": "golgi_apparatus", "type": "concept", "category": "basic biology concepts"}
+{"obj": "cytoskeleton", "type": "concept", "category": "basic biology concepts"}
+{"obj": "centrosome", "type": "concept", "category": "basic biology concepts"}
+{"obj": "vacuole", "type": "concept", "category": "basic biology concepts"}
+{"obj": "peroxisome", "type": "concept", "category": "basic biology concepts"}
+{"obj": "lysosome", "type": "concept", "category": "basic biology concepts"}
+{"obj": "cytosol", "type": "concept", "category": "basic biology concepts"}
+{"obj": "gravity", "type": "concept", "category": "basic physics concepts"}
+{"obj": "inertia", "type": "concept", "category": "basic physics concepts"}
+{"obj": "velocity", "type": "concept", "category": "basic physics concepts"}
+{"obj": "acceleration", "type": "concept", "category": "basic physics concepts"}
+{"obj": "force", "type": "concept", "category": "basic physics concepts"}
+{"obj": "mass", "type": "concept", "category": "basic physics concepts"}
+{"obj": "weight", "type": "concept", "category": "basic physics concepts"}
+{"obj": "density", "type": "concept", "category": "basic physics concepts"}
+{"obj": "pressure", "type": "concept", "category": "basic physics concepts"}
+{"obj": "temperature", "type": "concept", "category": "basic physics concepts"}
+{"obj": "heat", "type": "concept", "category": "basic physics concepts"}
+{"obj": "work", "type": "concept", "category": "basic physics concepts"}
+{"obj": "power", "type": "concept", "category": "basic physics concepts"}
+{"obj": "energy", "type": "concept", "category": "basic physics concepts"}
+{"obj": "potential_energy", "type": "concept", "category": "basic physics concepts"}
+{"obj": "kinetic_energy", "type": "concept", "category": "basic physics concepts"}
+{"obj": "momentum", "type": "concept", "category": "basic physics concepts"}
+{"obj": "torque", "type": "concept", "category": "basic physics concepts"}
+{"obj": "friction", "type": "concept", "category": "basic physics concepts"}
+{"obj": "leverage", "type": "concept", "category": "basic physics concepts"}
+{"obj": "pendulum", "type": "concept", "category": "basic physics concepts"}
+{"obj": "wave", "type": "concept", "category": "basic physics concepts"}
+{"obj": "frequency", "type": "concept", "category": "basic physics concepts"}
+{"obj": "amplitude", "type": "concept", "category": "basic physics concepts"}
+{"obj": "wavelength", "type": "concept", "category": "basic physics concepts"}
+{"obj": "speed_of_light", "type": "concept", "category": "basic physics concepts"}
+{"obj": "reflection", "type": "concept", "category": "basic physics concepts"}
+{"obj": "refraction", "type": "concept", "category": "basic physics concepts"}
+{"obj": "diffraction", "type": "concept", "category": "basic physics concepts"}
+{"obj": "interference", "type": "concept", "category": "basic physics concepts"}
+{"obj": "resonance", "type": "concept", "category": "basic physics concepts"}
+{"obj": "magnetism", "type": "concept", "category": "basic physics concepts"}
+{"obj": "conductivity", "type": "concept", "category": "basic physics concepts"}
+{"obj": "resistance", "type": "concept", "category": "basic physics concepts"}
+{"obj": "voltage", "type": "concept", "category": "basic physics concepts"}
+{"obj": "current", "type": "concept", "category": "basic physics concepts"}
+{"obj": "circuit", "type": "concept", "category": "basic physics concepts"}
+{"obj": "ohm_s_law", "type": "concept", "category": "basic physics concepts"}
+{"obj": "arithmetic", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "algebra", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "geometry", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "trigonometry", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "calculus", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "probability", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "statistics", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "number_theory", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "set_theory", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "logic", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "functions", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "equations", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "inequalities", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "graphs", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "matrices", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "vectors", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "complex_numbers", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "polynomials", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "ratios", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "proportions", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "percentages", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "fractions", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "decimals", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "integers", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "natural_numbers", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "whole_numbers", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "rational_numbers", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "irrational_numbers", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "real_numbers", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "imaginary_numbers", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "prime_numbers", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "composite_numbers", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "factorials", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "permutations", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "combinations", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "series", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "sequences", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "limits", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "derivatives", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "integrals", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "differential_equations", "type": "concept", "category": "basic mathematics concepts"}
+{"obj": "nash_equilibrium", "type": "concept", "category": "game theory concepts"}
+{"obj": "prisoner_s_dilemma", "type": "concept", "category": "game theory concepts"}
+{"obj": "zero_sum_game", "type": "concept", "category": "game theory concepts"}
+{"obj": "chicken_game", "type": "concept", "category": "game theory concepts"}
+{"obj": "stag_hunt", "type": "concept", "category": "game theory concepts"}
+{"obj": "battle_of_the_sexes", "type": "concept", "category": "game theory concepts"}
+{"obj": "coordination_game", "type": "concept", "category": "game theory concepts"}
+{"obj": "dominated_strategy", "type": "concept", "category": "game theory concepts"}
+{"obj": "minimax", "type": "concept", "category": "game theory concepts"}
+{"obj": "nash_bargaining_solution", "type": "concept", "category": "game theory concepts"}
+{"obj": "evolutionarily_stable_strategy", "type": "concept", "category": "game theory concepts"}
+{"obj": "subgame_perfect_equilibrium", "type": "concept", "category": "game theory concepts"}
+{"obj": "bayesian_game", "type": "concept", "category": "game theory concepts"}
+{"obj": "signaling_game", "type": "concept", "category": "game theory concepts"}
+{"obj": "mechanism_design", "type": "concept", "category": "game theory concepts"}
+{"obj": "voting_game", "type": "concept", "category": "game theory concepts"}
+{"obj": "public_goods_game", "type": "concept", "category": "game theory concepts"}
+{"obj": "tragedy_of_the_commons", "type": "concept", "category": "game theory concepts"}
+{"obj": "centipede_game", "type": "concept", "category": "game theory concepts"}
+{"obj": "ultimatum_game", "type": "concept", "category": "game theory concepts"}
+{"obj": "dictator_game", "type": "concept", "category": "game theory concepts"}
+{"obj": "trust_game", "type": "concept", "category": "game theory concepts"}
+{"obj": "pirate_game", "type": "concept", "category": "game theory concepts"}
+{"obj": "tacit_coordination_game", "type": "concept", "category": "game theory concepts"}
+{"obj": "feedback", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "negative_feedback", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "positive_feedback", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "equifinality", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "requisite_variety", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "cybernetics", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "general_system_theory", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "holism", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "emergence", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "hierarchy", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "synergy", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "redundancy", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "degeneracy", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "boundary", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "interface", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "input", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "output", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "throughput", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "black_box", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "white_box", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "feedback_loop", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "control_system", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "self_organization", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "complexity", "type": "concept", "category": "systems theory and cybernetics concepts"}
+{"obj": "algorithm", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "data_structure", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "object_oriented_programming", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "functional_programming", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "recursion", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "iteration", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "array", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "linked_list", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "stack", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "queue", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "graph", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "binary_search_tree", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "heap", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "hash_table", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "sorting", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "searching", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "big_o_notation", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "dynamic_programming", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "memoization", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "caching", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "concurrency", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "parallelism", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "asynchronous_programming", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "event_loop", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "callback", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "promise", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "async_await", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "rest", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "graphql", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "api", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "middleware", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "webhooks", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "oauth", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "jwt", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "encryption", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "decryption", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "hashing", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "cryptography", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "blockchain", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "smart_contract", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "docker", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "kubernetes", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "ci_cd", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "devops", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "microservices", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "serverless", "type": "concept", "category": "computer science and coding concepts"}
+{"obj": "supply_and_demand", "type": "concept", "category": "economics and money concepts"}
+{"obj": "inflation", "type": "concept", "category": "economics and money concepts"}
+{"obj": "deflation", "type": "concept", "category": "economics and money concepts"}
+{"obj": "gross_domestic_product_gdp", "type": "concept", "category": "economics and money concepts"}
+{"obj": "monetary_policy", "type": "concept", "category": "economics and money concepts"}
+{"obj": "fiscal_policy", "type": "concept", "category": "economics and money concepts"}
+{"obj": "interest_rates", "type": "concept", "category": "economics and money concepts"}
+{"obj": "central_bank", "type": "concept", "category": "economics and money concepts"}
+{"obj": "exchange_rates", "type": "concept", "category": "economics and money concepts"}
+{"obj": "currency", "type": "concept", "category": "economics and money concepts"}
+{"obj": "stock_market", "type": "concept", "category": "economics and money concepts"}
+{"obj": "bond_market", "type": "concept", "category": "economics and money concepts"}
+{"obj": "commodities", "type": "concept", "category": "economics and money concepts"}
+{"obj": "hedging", "type": "concept", "category": "economics and money concepts"}
+{"obj": "risk_management", "type": "concept", "category": "economics and money concepts"}
+{"obj": "investment", "type": "concept", "category": "economics and money concepts"}
+{"obj": "savings", "type": "concept", "category": "economics and money concepts"}
+{"obj": "loans", "type": "concept", "category": "economics and money concepts"}
+{"obj": "credit", "type": "concept", "category": "economics and money concepts"}
+{"obj": "debt", "type": "concept", "category": "economics and money concepts"}
+{"obj": "equity", "type": "concept", "category": "economics and money concepts"}
+{"obj": "profit", "type": "concept", "category": "economics and money concepts"}
+{"obj": "loss", "type": "concept", "category": "economics and money concepts"}
+{"obj": "revenue", "type": "concept", "category": "economics and money concepts"}
+{"obj": "expenses", "type": "concept", "category": "economics and money concepts"}
+{"obj": "budget", "type": "concept", "category": "economics and money concepts"}
+{"obj": "taxation", "type": "concept", "category": "economics and money concepts"}
+{"obj": "tariffs", "type": "concept", "category": "economics and money concepts"}
+{"obj": "subsidies", "type": "concept", "category": "economics and money concepts"}
+{"obj": "trade_balance", "type": "concept", "category": "economics and money concepts"}
+{"obj": "capital", "type": "concept", "category": "economics and money concepts"}
+{"obj": "labor", "type": "concept", "category": "economics and money concepts"}
+{"obj": "unemployment", "type": "concept", "category": "economics and money concepts"}
+{"obj": "wages", "type": "concept", "category": "economics and money concepts"}
+{"obj": "income_inequality", "type": "concept", "category": "economics and money concepts"}
+{"obj": "poverty", "type": "concept", "category": "economics and money concepts"}
+{"obj": "wealth", "type": "concept", "category": "economics and money concepts"}
+{"obj": "gini_coefficient", "type": "concept", "category": "economics and money concepts"}
+{"obj": "human_development_index", "type": "concept", "category": "economics and money concepts"}
+{"obj": "bear_market", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "bull_market", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "day_trading", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "dividend", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "dividend_yield", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "dow_jones", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "earnings_per_share", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "equities", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "etfs", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "fiscal_year", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "gdp", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "high_frequency_trading", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "hedge_fund", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "index_fund", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "ira", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "margin", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "market_cap", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "momentum_investing", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "mutual_fund", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "nasdaq", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "p_e_ratio", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "portfolio", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "profit_and_loss", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "put_option", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "real_estate_investment_trust_reit", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "s_p_500", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "short_selling", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "stock_split", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "technical_analysis", "type": "concept", "category": "stock market and investing concepts"}
+{"obj": "atomic_theory", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "molecular_structure", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "periodic_table", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "valence_electrons", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "chemical_bond", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "ionic_bond", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "covalent_bond", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "metallic_bond", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "lewis_dot_structure", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "mole_concept", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "avogadro_s_number", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "ideal_gas_law", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "thermochemistry", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "enthalpy", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "entropy", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "redox_reaction", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "acid_base_theory", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "ph_scale", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "colligative_properties", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "electronegativity", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "vsepr_theory", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "buffer_solution", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "titration", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "spectroscopy", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "nmr", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "ir", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "uv_vis", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "catalyst", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "reaction_mechanism", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "equilibrium_constant", "type": "concept", "category": "basic chemistry concepts"}
+{"obj": "behaviorism", "type": "concept", "category": "psychology concepts"}
+{"obj": "cognitive_dissonance", "type": "concept", "category": "psychology concepts"}
+{"obj": "classical_conditioning", "type": "concept", "category": "psychology concepts"}
+{"obj": "defense_mechanisms", "type": "concept", "category": "psychology concepts"}
+{"obj": "depression", "type": "concept", "category": "psychology concepts"}
+{"obj": "developmental_psychology", "type": "concept", "category": "psychology concepts"}
+{"obj": "dream_analysis", "type": "concept", "category": "psychology concepts"}
+{"obj": "ego", "type": "concept", "category": "psychology concepts"}
+{"obj": "empathy", "type": "concept", "category": "psychology concepts"}
+{"obj": "extroversion", "type": "concept", "category": "psychology concepts"}
+{"obj": "flow", "type": "concept", "category": "psychology concepts"}
+{"obj": "freudian_slip", "type": "concept", "category": "psychology concepts"}
+{"obj": "groupthink", "type": "concept", "category": "psychology concepts"}
+{"obj": "habituation", "type": "concept", "category": "psychology concepts"}
+{"obj": "hindsight_bias", "type": "concept", "category": "psychology concepts"}
+{"obj": "humanistic_psychology", "type": "concept", "category": "psychology concepts"}
+{"obj": "id", "type": "concept", "category": "psychology concepts"}
+{"obj": "inferiority_complex", "type": "concept", "category": "psychology concepts"}
+{"obj": "introspection", "type": "concept", "category": "psychology concepts"}
+{"obj": "maslow_s_hierarchy", "type": "concept", "category": "psychology concepts"}
+{"obj": "operant_conditioning", "type": "concept", "category": "psychology concepts"}
+{"obj": "personality_disorders", "type": "concept", "category": "psychology concepts"}
+{"obj": "psychoanalysis", "type": "concept", "category": "psychology concepts"}
+{"obj": "psychometrics", "type": "concept", "category": "psychology concepts"}
+{"obj": "rational_emotive_behavior_therapy", "type": "concept", "category": "psychology concepts"}
+{"obj": "existentialism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "nihilism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "utilitarianism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "deontology", "type": "concept", "category": "philosophy concepts"}
+{"obj": "empiricism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "rationalism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "idealism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "materialism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "pragmatism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "feminism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "marxism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "anarchism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "platonism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "aristotelianism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "stoicism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "skepticism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "nietzscheanism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "hedonism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "epicureanism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "kantianism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "hegelianism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "schopenhauerism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "daoism", "type": "concept", "category": "philosophy concepts"}
+{"obj": "ai", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "cybersecurity", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "data_science", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "e_commerce", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "edge_computing", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "enterprise", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "facebook", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "freemium", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "gaming", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "google", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "hardware", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "iot", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "java", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "javascript", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "linux", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "machine_learning", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "mobile", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "nft", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "open_source", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "php", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "python", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "qr_code", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "reddit", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "robotics", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "seo", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "social_media", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "tensorflow", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "twitter", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "vr", "type": "concept", "category": "internet and technology concepts"}
+{"obj": "microsoft_word", "type": "work", "category": "most used software and apps"}
+{"obj": "google_chrome", "type": "work", "category": "most used software and apps"}
+{"obj": "adobe_photoshop", "type": "work", "category": "most used software and apps"}
+{"obj": "spotify", "type": "work", "category": "most used software and apps"}
+{"obj": "instagram", "type": "work", "category": "most used software and apps"}
+{"obj": "linkedin", "type": "work", "category": "most used software and apps"}
+{"obj": "netflix", "type": "work", "category": "most used software and apps"}
+{"obj": "tiktok", "type": "work", "category": "most used software and apps"}
+{"obj": "zoom", "type": "work", "category": "most used software and apps"}
+{"obj": "slack", "type": "work", "category": "most used software and apps"}
+{"obj": "microsoft_excel", "type": "work", "category": "most used software and apps"}
+{"obj": "microsoft_powerpoint", "type": "work", "category": "most used software and apps"}
+{"obj": "canva", "type": "work", "category": "most used software and apps"}
+{"obj": "trello", "type": "work", "category": "most used software and apps"}
+{"obj": "asana", "type": "work", "category": "most used software and apps"}
+{"obj": "github", "type": "work", "category": "most used software and apps"}
+{"obj": "figma", "type": "work", "category": "most used software and apps"}
+{"obj": "discord", "type": "work", "category": "most used software and apps"}
+{"obj": "telegram", "type": "work", "category": "most used software and apps"}
+{"obj": "whatsapp", "type": "work", "category": "most used software and apps"}
+{"obj": "snapchat", "type": "work", "category": "most used software and apps"}
+{"obj": "pinterest", "type": "work", "category": "most used software and apps"}
+{"obj": "wikipedia", "type": "work", "category": "most used software and apps"}
+{"obj": "stack_overflow", "type": "work", "category": "most used software and apps"}
+{"obj": "coursera", "type": "work", "category": "most used software and apps"}
+{"obj": "udemy", "type": "work", "category": "most used software and apps"}
+{"obj": "duolingo", "type": "work", "category": "most used software and apps"}
+{"obj": "khan_academy", "type": "work", "category": "most used software and apps"}
+{"obj": "wps_office", "type": "work", "category": "most used software and apps"}
+{"obj": "evernote", "type": "work", "category": "most used software and apps"}
+{"obj": "notion", "type": "work", "category": "most used software and apps"}
+{"obj": "adobe_illustrator", "type": "work", "category": "most used software and apps"}
+{"obj": "adobe_indesign", "type": "work", "category": "most used software and apps"}
+{"obj": "audacity", "type": "work", "category": "most used software and apps"}
+{"obj": "obs_studio", "type": "work", "category": "most used software and apps"}
+{"obj": "adobe_acrobat_reader", "type": "work", "category": "most used software and apps"}
+{"obj": "skype", "type": "work", "category": "most used software and apps"}
+{"obj": "adobe_xd", "type": "work", "category": "most used software and apps"}
+{"obj": "c", "type": "work", "category": "programming languages"}
+{"obj": "swift", "type": "work", "category": "programming languages"}
+{"obj": "perl", "type": "work", "category": "programming languages"}
+{"obj": "r", "type": "work", "category": "programming languages"}
+{"obj": "sql", "type": "work", "category": "programming languages"}
+{"obj": "typescript", "type": "work", "category": "programming languages"}
+{"obj": "kotlin", "type": "work", "category": "programming languages"}
+{"obj": "rust", "type": "work", "category": "programming languages"}
+{"obj": "scala", "type": "work", "category": "programming languages"}
+{"obj": "groovy", "type": "work", "category": "programming languages"}
+{"obj": "lua", "type": "work", "category": "programming languages"}
+{"obj": "objective_c", "type": "work", "category": "programming languages"}
+{"obj": "haskell", "type": "work", "category": "programming languages"}
+{"obj": "erlang", "type": "work", "category": "programming languages"}
+{"obj": "clojure", "type": "work", "category": "programming languages"}
+{"obj": "julia", "type": "work", "category": "programming languages"}
+{"obj": "elixir", "type": "work", "category": "programming languages"}
+{"obj": "sass", "type": "work", "category": "programming languages"}
+{"obj": "solidity", "type": "work", "category": "programming languages"}
+{"obj": "assembly", "type": "work", "category": "programming languages"}
+{"obj": "vba", "type": "work", "category": "programming languages"}
+{"obj": "super_mario_bros", "type": "work", "category": "famous video games"}
+{"obj": "the_legend_of_zelda", "type": "work", "category": "famous video games"}
+{"obj": "tetris", "type": "work", "category": "famous video games"}
+{"obj": "pac_man", "type": "work", "category": "famous video games"}
+{"obj": "donkey_kong_country", "type": "work", "category": "famous video games"}
+{"obj": "street_fighter_ii", "type": "work", "category": "famous video games"}
+{"obj": "mortal_kombat", "type": "work", "category": "famous video games"}
+{"obj": "sonic_the_hedgehog", "type": "work", "category": "famous video games"}
+{"obj": "final_fantasy", "type": "work", "category": "famous video games"}
+{"obj": "resident_evil", "type": "work", "category": "famous video games"}
+{"obj": "metal_gear_solid", "type": "work", "category": "famous video games"}
+{"obj": "halo", "type": "work", "category": "famous video games"}
+{"obj": "grand_theft_auto_iii", "type": "work", "category": "famous video games"}
+{"obj": "the_sims", "type": "work", "category": "famous video games"}
+{"obj": "world_of_warcraft", "type": "work", "category": "famous video games"}
+{"obj": "call_of_duty_4_modern_warfare", "type": "work", "category": "famous video games"}
+{"obj": "portal", "type": "work", "category": "famous video games"}
+{"obj": "bioshock", "type": "work", "category": "famous video games"}
+{"obj": "left_4_dead", "type": "work", "category": "famous video games"}
+{"obj": "fallout_3", "type": "work", "category": "famous video games"}
+{"obj": "mass_effect", "type": "work", "category": "famous video games"}
+{"obj": "mirror_s_edge", "type": "work", "category": "famous video games"}
+{"obj": "littlebigplanet", "type": "work", "category": "famous video games"}
+{"obj": "dragon_age_origins", "type": "work", "category": "famous video games"}
+{"obj": "uncharted_2_among_thieves", "type": "work", "category": "famous video games"}
+{"obj": "red_dead_redemption", "type": "work", "category": "famous video games"}
+{"obj": "crysis", "type": "work", "category": "famous video games"}
+{"obj": "batman_arkham_asylum", "type": "work", "category": "famous video games"}
+{"obj": "dark_souls", "type": "work", "category": "famous video games"}
+{"obj": "the_elder_scrolls_v_skyrim", "type": "work", "category": "famous video games"}
+{"obj": "borderlands", "type": "work", "category": "famous video games"}
+{"obj": "dead_space", "type": "work", "category": "famous video games"}
+{"obj": "saints_row_2", "type": "work", "category": "famous video games"}
+{"obj": "dustforce", "type": "work", "category": "famous video games"}
+{"obj": "touhou", "type": "work", "category": "famous video games"}
+{"obj": "persona_5", "type": "work", "category": "famous video games"}
+{"obj": "undertale", "type": "work", "category": "famous video games"}
+{"obj": "celeste", "type": "work", "category": "famous video games"}
+{"obj": "hollow_knight", "type": "work", "category": "famous video games"}
+{"obj": "stardew_valley", "type": "work", "category": "famous video games"}
+{"obj": "rocket_league", "type": "work", "category": "famous video games"}
+{"obj": "fortnite", "type": "work", "category": "famous video games"}
+{"obj": "among_us", "type": "work", "category": "famous video games"}
+{"obj": "the_shawshank_redemption", "type": "work", "category": "famous movies"}
+{"obj": "the_godfather", "type": "work", "category": "famous movies"}
+{"obj": "the_dark_knight", "type": "work", "category": "famous movies"}
+{"obj": "forrest_gump", "type": "work", "category": "famous movies"}
+{"obj": "pulp_fiction", "type": "work", "category": "famous movies"}
+{"obj": "the_matrix", "type": "work", "category": "famous movies"}
+{"obj": "inception", "type": "work", "category": "famous movies"}
+{"obj": "the_lord_of_the_rings", "type": "work", "category": "famous movies"}
+{"obj": "the_lion_king", "type": "work", "category": "famous movies"}
+{"obj": "jurassic_park", "type": "work", "category": "famous movies"}
+{"obj": "titanic", "type": "work", "category": "famous movies"}
+{"obj": "star_wars", "type": "work", "category": "famous movies"}
+{"obj": "back_to_the_future", "type": "work", "category": "famous movies"}
+{"obj": "the_terminator", "type": "work", "category": "famous movies"}
+{"obj": "avatar", "type": "work", "category": "famous movies"}
+{"obj": "the_avengers", "type": "work", "category": "famous movies"}
+{"obj": "iron_man", "type": "work", "category": "famous movies"}
+{"obj": "guardians_of_the_galaxy", "type": "work", "category": "famous movies"}
+{"obj": "deadpool", "type": "work", "category": "famous movies"}
+{"obj": "spider_man", "type": "work", "category": "famous movies"}
+{"obj": "harry_potter", "type": "work", "category": "famous movies"}
+{"obj": "the_hunger_games", "type": "work", "category": "famous movies"}
+{"obj": "the_great_gatsby", "type": "work", "category": "famous movies"}
+{"obj": "the_social_network", "type": "work", "category": "famous movies"}
+{"obj": "the_silence_of_the_lambs", "type": "work", "category": "famous movies"}
+{"obj": "schindler_s_list", "type": "work", "category": "famous movies"}
+{"obj": "good_will_hunting", "type": "work", "category": "famous movies"}
+{"obj": "american_beauty", "type": "work", "category": "famous movies"}
+{"obj": "fight_club", "type": "work", "category": "famous movies"}
+{"obj": "the_green_mile", "type": "work", "category": "famous movies"}
+{"obj": "saving_private_ryan", "type": "work", "category": "famous movies"}
+{"obj": "up", "type": "work", "category": "famous movies"}
+{"obj": "toy_story", "type": "work", "category": "famous movies"}
+{"obj": "finding_nemo", "type": "work", "category": "famous movies"}
+{"obj": "frozen", "type": "work", "category": "famous movies"}
+{"obj": "beauty_and_the_beast", "type": "work", "category": "famous movies"}
+{"obj": "moana", "type": "work", "category": "famous movies"}
+{"obj": "coco", "type": "work", "category": "famous movies"}
+{"obj": "the_lion_king_2019", "type": "work", "category": "famous movies"}
+{"obj": "avengers_endgame", "type": "work", "category": "famous movies"}
+{"obj": "juno", "type": "work", "category": "famous movies"}
+{"obj": "the_wolf_of_wall_street", "type": "work", "category": "famous movies"}
+{"obj": "inglourious_basterds", "type": "work", "category": "famous movies"}
+{"obj": "breaking_bad", "type": "work", "category": "famous tv series"}
+{"obj": "game_of_thrones", "type": "work", "category": "famous tv series"}
+{"obj": "the_sopranos", "type": "work", "category": "famous tv series"}
+{"obj": "friends", "type": "work", "category": "famous tv series"}
+{"obj": "the_wire", "type": "work", "category": "famous tv series"}
+{"obj": "the_office", "type": "work", "category": "famous tv series"}
+{"obj": "stranger_things", "type": "work", "category": "famous tv series"}
+{"obj": "black_mirror", "type": "work", "category": "famous tv series"}
+{"obj": "westworld", "type": "work", "category": "famous tv series"}
+{"obj": "the_crown", "type": "work", "category": "famous tv series"}
+{"obj": "mad_men", "type": "work", "category": "famous tv series"}
+{"obj": "better_call_saul", "type": "work", "category": "famous tv series"}
+{"obj": "peaky_blinders", "type": "work", "category": "famous tv series"}
+{"obj": "bojack_horseman", "type": "work", "category": "famous tv series"}
+{"obj": "the_handmaid_s_tale", "type": "work", "category": "famous tv series"}
+{"obj": "the_mandalorian", "type": "work", "category": "famous tv series"}
+{"obj": "fargo", "type": "work", "category": "famous tv series"}
+{"obj": "the_marvelous_mrs_maisel", "type": "work", "category": "famous tv series"}
+{"obj": "atlanta", "type": "work", "category": "famous tv series"}
+{"obj": "mr_robot", "type": "work", "category": "famous tv series"}
+{"obj": "the_expanse", "type": "work", "category": "famous tv series"}
+{"obj": "the_good_place", "type": "work", "category": "famous tv series"}
+{"obj": "parks_and_recreation", "type": "work", "category": "famous tv series"}
+{"obj": "the_walking_dead", "type": "work", "category": "famous tv series"}
+{"obj": "rick_and_morty", "type": "work", "category": "famous tv series"}
+{"obj": "succession", "type": "work", "category": "famous tv series"}
+{"obj": "chernobyl", "type": "work", "category": "famous tv series"}
+{"obj": "bohemian_rhapsody", "type": "work", "category": "famous songs and albums"}
+{"obj": "imagine", "type": "work", "category": "famous songs and albums"}
+{"obj": "smells_like_teen_spirit", "type": "work", "category": "famous songs and albums"}
+{"obj": "hotel_california", "type": "work", "category": "famous songs and albums"}
+{"obj": "like_a_rolling_stone", "type": "work", "category": "famous songs and albums"}
+{"obj": "yesterday", "type": "work", "category": "famous songs and albums"}
+{"obj": "my_generation", "type": "work", "category": "famous songs and albums"}
+{"obj": "stairway_to_heaven", "type": "work", "category": "famous songs and albums"}
+{"obj": "wonderwall", "type": "work", "category": "famous songs and albums"}
+{"obj": "sweet_child_o_mine", "type": "work", "category": "famous songs and albums"}
+{"obj": "the_dark_side_of_the_moon", "type": "work", "category": "famous songs and albums"}
+{"obj": "thriller", "type": "work", "category": "famous songs and albums"}
+{"obj": "nevermind", "type": "work", "category": "famous songs and albums"}
+{"obj": "abbey_road", "type": "work", "category": "famous songs and albums"}
+{"obj": "the_bodyguard", "type": "work", "category": "famous songs and albums"}
+{"obj": "the_wall", "type": "work", "category": "famous songs and albums"}
+{"obj": "born_in_the_u_s_a", "type": "work", "category": "famous songs and albums"}
+{"obj": "pet_sounds", "type": "work", "category": "famous songs and albums"}
+{"obj": "sgt_pepper_s_lonely_hearts_club_band", "type": "work", "category": "famous songs and albums"}
+{"obj": "back_in_black", "type": "work", "category": "famous songs and albums"}
+{"obj": "21", "type": "work", "category": "famous songs and albums"}
+{"obj": "the_miseducation_of_lauryn_hill", "type": "work", "category": "famous songs and albums"}
+{"obj": "the_chronic", "type": "work", "category": "famous songs and albums"}
+{"obj": "the_rise_and_rise_of_lewis_capaldi", "type": "work", "category": "famous songs and albums"}
+{"obj": "good_kid_m_a_a_d_city", "type": "work", "category": "famous songs and albums"}
+{"obj": "the_eminem_show", "type": "work", "category": "famous songs and albums"}
+{"obj": "the_marshall_mathers_lp", "type": "work", "category": "famous songs and albums"}
+{"obj": "humble", "type": "work", "category": "famous songs and albums"}
+{"obj": "to_pimp_a_butterfly", "type": "work", "category": "famous songs and albums"}
+{"obj": "the_bible", "type": "work", "category": "most influential books in history"}
+{"obj": "the_quran", "type": "work", "category": "most influential books in history"}
+{"obj": "don_quixote", "type": "work", "category": "most influential books in history"}
+{"obj": "the_iliad", "type": "work", "category": "most influential books in history"}
+{"obj": "the_odyssey", "type": "work", "category": "most influential books in history"}
+{"obj": "the_republic", "type": "work", "category": "most influential books in history"}
+{"obj": "the_prince", "type": "work", "category": "most influential books in history"}
+{"obj": "the_communist_manifesto", "type": "work", "category": "most influential books in history"}
+{"obj": "the_origin_of_species", "type": "work", "category": "most influential books in history"}
+{"obj": "the_divine_comedy", "type": "work", "category": "most influential books in history"}
+{"obj": "hamlet", "type": "work", "category": "most influential books in history"}
+{"obj": "war_and_peace", "type": "work", "category": "most influential books in history"}
+{"obj": "les_mis_rables", "type": "work", "category": "most influential books in history"}
+{"obj": "pride_and_prejudice", "type": "work", "category": "most influential books in history"}
+{"obj": "to_kill_a_mockingbird", "type": "work", "category": "most influential books in history"}
+{"obj": "1984", "type": "work", "category": "most influential books in history"}
+{"obj": "brave_new_world", "type": "work", "category": "most influential books in history"}
+{"obj": "moby_dick", "type": "work", "category": "most influential books in history"}
+{"obj": "the_catcher_in_the_rye", "type": "work", "category": "most influential books in history"}
+{"obj": "the_brothers_karamazov", "type": "work", "category": "most influential books in history"}
+{"obj": "crime_and_punishment", "type": "work", "category": "most influential books in history"}
+{"obj": "ulysses", "type": "work", "category": "most influential books in history"}
+{"obj": "the_brothers_grimm_fairy_tales", "type": "work", "category": "most influential books in history"}
+{"obj": "the_little_prince", "type": "work", "category": "most influential books in history"}
+{"obj": "the_diary_of_a_young_girl", "type": "work", "category": "most influential books in history"}
+{"obj": "the_hobbit", "type": "work", "category": "most influential books in history"}
+{"obj": "the_tao_te_ching", "type": "work", "category": "most influential books in history"}
+{"obj": "the_art_of_war", "type": "work", "category": "most influential books in history"}
+{"obj": "windows", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "macos", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "ios", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "android", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "chrome_os", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "ubuntu", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "centos", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "debian", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "arch", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "red_hat", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "opensuse", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "tizen", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "haiku", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "reactos", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "freebsd", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "netbsd", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "openbsd", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "youtube", "type": "work", "category": "operating systems and social media platforms"}
+{"obj": "continents", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "planets_of_the_solar_system", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "major_world_religions", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "german_federal_states", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "oceans", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "g7_countries", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_ancient_world", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_natural_wonders_of_the_world", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_modern_world", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_industrial_world", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_medieval_world", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_underwater_world", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_universe", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_solar_system", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_animal_kingdom", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_plant_kingdom", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_human_body", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_digital_world", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_ocean", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_sky", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_earth_s_interior", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_earth_s_surface", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_earth_s_atmosphere", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_earth_s_climate", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "seven_wonders_of_the_earth_s_geology", "type": "list", "category": "common general knowledge lists, for example the continents, the planets of the solar system, the major world religions, the german federal states, the oceans, the g7 countries"}
+{"obj": "game_theory", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "systems_theory", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "black_hole", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "pythagorean_theorem", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "big_bang", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "atom", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "prime_number", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "artificial_intelligence", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "neural_network", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "democracy", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "capitalism", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "communism", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "climate_change", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "vaccine", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "virus", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "bacteria", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "compound_interest", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "bitcoin", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "stock_exchange", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "bond", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "interest_rate", "type": "concept", "category": "core science, maths and systems ideas"}
+{"obj": "minecraft", "type": "work", "category": "famous software, games, films and music"}
+{"obj": "grand_theft_auto_v", "type": "work", "category": "famous software, games, films and music"}
+{"obj": "pokemon", "type": "work", "category": "famous software, games, films and music"}
+{"obj": "the_simpsons", "type": "work", "category": "famous software, games, films and music"}
+{"obj": "google_search", "type": "work", "category": "famous software, games, films and music"}
+{"obj": "excel", "type": "work", "category": "famous software, games, films and music"}
+{"obj": "photoshop", "type": "work", "category": "famous software, games, films and music"}
+{"obj": "iphone", "type": "work", "category": "famous software, games, films and music"}
+{"obj": "chatgpt", "type": "work", "category": "famous software, games, films and music"}
+{"obj": "brazil", "type": "country", "category": "countries of the world"}
+{"obj": "turkey", "type": "country", "category": "countries of the world"}
+{"obj": "german_reunification", "type": "event", "category": "major events of history"}
+{"obj": "moon_landing", "type": "event", "category": "major events of history"}
+{"obj": "september_11_attacks", "type": "event", "category": "major events of history"}

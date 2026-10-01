@@ -20,7 +20,7 @@ from fastapi.responses import HTMLResponse
 from pydantic import BaseModel, Field
 
 from haishool.student import answer, describe, load
-from haishool.translate import SELF, parse, record_text, sentence
+from haishool.translate import SELF, alias_index, parse, record_text, sentence
 
 PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Haishool</title>
@@ -37,12 +37,12 @@ border-top:1px solid var(--line);padding:12px 16px}form div{max-width:760px;marg
 input{flex:1;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--fg);font-size:16px}
 button{padding:10px 16px;border-radius:10px;border:0;background:var(--accent);color:#fff;font-size:16px}
 .hint{color:var(--muted);font-size:14px}code{font-size:13px}</style></head><body><main>
-<h1>Haishool · objects</h1><div class="sub">A small model trained only on dense facts about __N__ everyday objects.
+<h1>Haishool</h1><div class="sub">A small model trained only on dense facts about __N__ objects, people, countries, ideas and works.
 Its answers are turned into English by fixed rules; the grey line shows what the model itself wrote.</div>
-<div class="hint">Try: <code>what color is a banana</code> · <code>what is a hammer used for</code> ·
-<code>where do you find a cow</code> · <code>tell me about a guitar</code> · <code>who are you</code> ·
-<code>where do you run</code></div><div id="log"></div></main>
-<form id="f"><div><input id="q" autocomplete="off" placeholder="Ask about an everyday object" autofocus>
+<div class="hint">Try: <code>who are you</code> · <code>who is the kanzler</code> ·
+<code>how many states does germany have</code> · <code>who was albert einstein</code> · <code>what is game theory</code> ·
+<code>which shoe am i wearing right now</code> · <code>what color is a banana</code></div><div id="log"></div></main>
+<form id="f"><div><input id="q" autocomplete="off" placeholder="Ask about objects, people, countries, history, science" autofocus>
 <button>Ask</button></div></form><script>
 const log=document.getElementById('log'),f=document.getElementById('f'),q=document.getElementById('q');
 function add(cls,who,text,dense){const d=document.createElement('div');d.className='msg '+cls;
@@ -63,7 +63,9 @@ class Ask(BaseModel):
 
 def build(model_path: Path, records_path: Path, device: str) -> FastAPI:
     model, vocab = load(model_path, device)
-    known = {json.loads(line)["obj"] for line in records_path.open(encoding="utf-8")} | {SELF}
+    rows = [json.loads(line) for line in records_path.open(encoding="utf-8")]
+    known = {r["obj"]: r["values"].get("type") for r in rows} | {SELF: "self"}
+    aliases = alias_index(rows)
     app = FastAPI()
     app.add_middleware(CORSMiddleware, allow_origins=["https://enderpeer.github.io"],
                        allow_methods=["GET", "POST"], allow_headers=["content-type"])
@@ -76,22 +78,26 @@ def build(model_path: Path, records_path: Path, device: str) -> FastAPI:
     @app.get("/api/info")
     def info() -> dict:
         return {"objects": len(known) - 1, "params": model.num_params(), "vocab": len(vocab.itos),
-                "model": str(model_path)}
+                "model": model_path.name}
 
     @app.post("/api/ask")
     def ask(body: Ask) -> dict:
-        p = parse(body.question, known)
-        obj, attr = p["obj"], p["attr"]
+        p = parse(body.question, known, aliases)
+        obj, attrs = p["obj"], p["attrs"]
         if obj is None:
-            return {"answer": "I don't know that object yet. I only know everyday objects like a "
-                              "spoon, a dog, a car or a banana.", "query": None, "dense": None}
+            return {"answer": "I don't know that yet. I know everyday objects, people, countries, religions, "
+                              "history, science and maths ideas, software, games, films and music.",
+                    "query": None, "dense": None}
+        etype = known.get(obj)
         with torch.no_grad():
-            if attr is None:
+            if attrs is None:
                 dense = describe(model, vocab, obj, device)
-                text = " ".join(record_text(dense)) or "I don't know much about it."
+                text = " ".join(record_text(dense, etype if etype != "self" else None)) or "I don't know much about it."
                 return {"answer": text, "query": f"{obj}.", "dense": dense}
-            dense = answer(model, vocab, obj, attr, device)
-        return {"answer": sentence(obj, attr, dense), "query": f"q {obj} {attr}. a", "dense": dense}
+            got = [(a, answer(model, vocab, obj, a, device)) for a in attrs]
+        return {"answer": " ".join(sentence(obj, a, d, etype) for a, d in got),
+                "query": " ".join(f"q {obj} {a}. a" for a, _ in got),
+                "dense": " | ".join(d for _, d in got)}
 
     return app
 

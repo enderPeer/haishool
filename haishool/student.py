@@ -25,7 +25,7 @@ from pathlib import Path
 import torch
 
 from haishool.model import GPT, GPTConfig
-from haishool.schema import ORDER, Record
+from haishool.schema import QUERY_KEYS, Record
 
 EOS = "<eos>"
 SPECIAL = ["<pad>", EOS, ".", "q", "a"]
@@ -49,8 +49,8 @@ def split_pairs(records: list[Record], holdout: float, seed: int) -> tuple[list[
     for rec in records:
         values = dict(rec.values)
         if holdout > 0 and rec.obj != "homunculi":
-            for key in ORDER:
-                if key in values and key != "kind" and rng.random() < holdout:
+            for key in QUERY_KEYS:
+                if key in values and key not in ("kind", "type") and rng.random() < holdout:
                     held.append((rec.obj, key, values.pop(key)))
         train.append(Record(rec.obj, values))
     return train, held
@@ -82,8 +82,9 @@ def corpus(records: list[Record], passes: int, seed: int) -> list[str]:
 
 @torch.no_grad()
 def generate(model: GPT, vocab: Vocab, prompt: str, *, stop: str = ".", max_new: int = 40, device: str = "cpu") -> str:
-    ids = vocab.encode(tokens(prompt))
-    if not ids:
+    # every training sample follows an <eos>; without it a describe prompt often ends at once
+    ids = vocab.encode([EOS, *tokens(prompt)])
+    if len(ids) < 2:
         return ""
     x = torch.tensor([ids], device=device)
     out: list[str] = []
@@ -103,7 +104,7 @@ def answer(model: GPT, vocab: Vocab, obj: str, key: str, device: str = "cpu") ->
 
 
 def describe(model: GPT, vocab: Vocab, obj: str, device: str = "cpu") -> str:
-    return obj + ". " + generate(model, vocab, f"{obj}.", stop="", max_new=60, device=device)
+    return obj + ". " + generate(model, vocab, f"{obj}.", stop="", max_new=90, device=device)
 
 
 def train(records_path: Path, out: Path, holdout: float, seed: int, steps: int, device: str) -> dict:
@@ -147,7 +148,7 @@ def train(records_path: Path, out: Path, holdout: float, seed: int, steps: int, 
             overlap += len(g & p) / len(g) if g else 0
         return {"n": len(pairs), "exact": round(exact / len(pairs), 4), "word_recall": round(overlap / len(pairs), 4)}
 
-    trained_pairs = [(r.obj, k, r.values[k]) for r in train_recs for k in ORDER if k in r.values]
+    trained_pairs = [(r.obj, k, r.values[k]) for r in train_recs for k in QUERY_KEYS if k in r.values]
     rng = random.Random(seed + 1)
     sample = rng.sample(trained_pairs, min(1000, len(trained_pairs)))
     report = {"records": len(records), "vocab": len(vocab.itos), "params": model.num_params(),

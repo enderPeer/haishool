@@ -1,69 +1,87 @@
 # Haishool
 
 A small language model that learns **facts, not language**. It is trained from scratch only on
-dense lines of facts about everyday objects; fixed rules turn its answers into English.
+dense lines of facts (everyday objects, people, countries, religions, history, markets, science,
+software and pop culture); fixed rules turn its answers into English.
 
 **Try it:** https://enderpeer.github.io/haishool/ · **Training data:** https://enderpeer.github.io/haishool/data.html
 
 ```
 your question ──► parser (rules) ──► dense query ──► model ──► dense answer ──► translator (rules) ──► English
-"what color is a banana"           q banana color. a          yellow green          "A banana is usually yellow or green."
+"what is the capital of japan"       q japan capital. a        tokyo                 "The capital of Japan is Tokyo."
 ```
 
 ## How it works
 
-1. **Facts.** A local teacher model (Qwen2.5-14B-Instruct) lists everyday objects and writes nine
-   short attributes for each: kind, color, shape, size, made of, parts, use, place, alive.
+1. **Facts.** A local teacher model (Qwen2.5-14B-Instruct) lists things and writes short facts
+   about each. Everyday objects get nine attributes (kind, color, shape, size, made of, parts, use,
+   place, alive). Since round 3, other things have a type with their own keys: a person has a role,
+   country, era and what they are known for; a country has a capital, languages, currency, number of
+   states and government; an event has a time, place, cause, result and people; and there are types
+   for religions, concepts, works (software, games, films, music, books), lists and offices.
    ```
    spoon. kind utensil. color silver. shape curved. size hand. made metal plastic. parts handle bowl. use eating_soups. place kitchen_dining_room. alive no.
+   japan. kind country. known_for technology_electronics. continent asia. capital tokyo. language japanese. currency yen. states 47. government parliamentary_constitutional_monarchy. type country.
    ```
-2. **Model.** A 13-million-parameter GPT (6 layers, width 384, word-level vocabulary) learns only
-   these lines and the matching questions (`q spoon color. a silver.`). It never sees an English
+2. **Model.** A 16-million-parameter GPT (6 layers, width 384, word-level vocabulary) learns only
+   these lines and the matching questions (`q japan capital. a tokyo.`). It never sees an English
    sentence.
-3. **Translator.** Rules turn the dense answer into a sentence. They add no facts: if the model is
+3. **Parser.** Rules find the thing a question is about (including aliases such as the German
+   *Kanzler*) and which key is asked; the record's type decides the key ("when" is the time of an
+   event, the year of a film, the era of a person).
+4. **Translator.** Rules turn the dense answer into a sentence. They add no facts: if the model is
    wrong, the sentence is wrong in the same way, and the page shows the raw model output under
    every answer.
-4. **Identity.** One record says who it is: it is called Homunculi and runs locally in Berlin.
+5. **Hand-written records.** A few records are written by hand and say so in the data:
+   - who it is: called Homunculi, runs locally in Berlin, no desires or feelings of its own;
+   - questions it cannot know ("which shoe am I wearing?"): it says it cannot know that and why;
+   - "make me rich": no quick safe way and no personal investment advice, only general habits;
+   - current office holders, with "as far as my data goes";
+   - a few common lists (German federal states, the big religions, the planets).
 
-## Results (version 2)
+## Results (version 3)
 
 | | |
 |---|---|
-| Objects | 1,634 (858 in round 1, 776 in round 2), plus the identity record |
+| Records | 3,080 plus identity: 1,632 everyday objects, 410 concepts, 366 people, 256 works, 196 countries, 170 events, 27 lists, 19 religions, 4 offices |
+| Facts | 22,341 |
 | Facts recalled exactly | 1,000 of 1,000 sampled trained facts |
-| Held-out facts guessed exactly | 25 % (1,253 facts held back in a separate run; 30 % of their words right). Version 1: 27 % of 667 |
-| Model | 13.2 million parameters, word vocabulary of 6,570 |
-| Training | 9,000 steps, about 5 minutes on one RTX 4090 |
+| Held-out facts guessed exactly | 22 % (1,877 facts held back in a separate run; 26 % of their words right). Version 2: 25 % of 1,253 |
+| Model | 15.7 million parameters, word vocabulary of 13,226 |
+| Training | 14,000 steps, about 10 minutes on one RTX 4090 |
 
-What it cannot do: answer about objects outside its table (it says so), hold a conversation, or
-know anything beyond the nine attributes. The facts come from the teacher model and have not been
-checked by a person.
+What it cannot do: answer about things outside its table (it says so), hold a conversation, or
+know more than the keys of each record. The facts come from the teacher model and have not been
+checked by a person; some are wrong or oddly worded, and they show up exactly that way.
 
 ## Run it yourself
 
 ```bash
 pip install torch fastapi uvicorn
-cat data/records-r1.jsonl data/records-r2.jsonl > data/all.jsonl
-python -m haishool.app --model model/haishool-objects-v2.pt --records data/all.jsonl --port 8650
+python -m haishool.app --model model/haishool-v3.pt --records data/records-r3-all.jsonl --port 8650
 ```
 
 Train your own (the teacher needs [ollama](https://ollama.com) with `qwen2.5:14b-instruct-q4_K_M`):
 
 ```bash
-python -m haishool.teacher objects --out data/objects.txt
+python -m haishool.teacher objects --out data/objects.txt                       # rounds 1-2: everyday objects
 python -m haishool.teacher records --objects data/objects.txt --out data/records.jsonl
-cat data/records.jsonl data/identity.jsonl > data/all.jsonl
-python -m haishool.student train --records data/all.jsonl --out runs/full
+python -m haishool.teacher3 entities --out data/entities-r3.txt                 # round 3: typed records
+python -m haishool.teacher3 records --entities data/entities-r3.txt --out data/records-r3.jsonl
+python -m haishool.combine data/all.jsonl data/records.jsonl data/records-r3.jsonl data/manual.jsonl data/identity.jsonl
+python -m haishool.student train --records data/all.jsonl --out runs/full --steps 14000
+python -m pytest tests                                                          # parser and translator rules
 ```
 
 ## Files
 
 | Path | Content |
 |---|---|
-| `haishool/` | schema, teacher, model, student training, translator, chat app |
-| `model/` | weights of versions 1 and 2 (half precision) and their training and evaluation reports |
-| `data/` | the training facts, one JSON line per object, per data round |
+| `haishool/` | schema, teachers, merge, model, student training, parser and translator, chat app |
+| `model/` | weights of versions 1 to 3 (half precision) and their training and evaluation reports |
+| `data/` | the training facts, one JSON line per record: `records-r1/r2/r3.jsonl` per round, `manual.jsonl` and `identity.jsonl` by hand, `records-r3-all.jsonl` merged (what v3 was trained on) |
 | `docs/` | the website (landing page with chat, data browser) |
+| `tests/` | rule tests for parser, translator and merge |
 | `LESSONS.md` | what we learned before this, and why it is built this way |
 
 ## Licence

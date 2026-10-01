@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Haishool</title>
-<meta name="description" content="A small model that learns facts, not language. Trained from scratch on dense facts about everyday objects; rules turn its answers into English.">
+<meta name="description" content="A small model that learns facts, not language. Trained from scratch on dense facts about objects, people, countries, history, science and culture; rules turn its answers into English.">
 <style>
 :root{--bg:#f6f5f0;--fg:#1f2622;--muted:#647069;--card:#fffefa;--line:#dcd9cf;--accent:#2f6b4f;--accent-fg:#fff;--soft:#e8efe9;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141816;--fg:#e6eae5;--muted:#9aa49d;--card:#1c211e;--line:#2f3632;--accent:#7cc4a0;--accent-fg:#0f1411;--soft:#1f2a24}}
@@ -42,17 +42,17 @@ ul{padding-left:20px}li{margin:4px 0}footer{padding:32px 0 48px;color:var(--mute
 <header class="wrap">
   <div class="eyebrow">Open-source experiment · runs locally in Berlin</div>
   <h1>Haishool learns facts,<br>not language.</h1>
-  <p class="lead">A 13-million-parameter model trained from scratch only on dense facts about everyday objects. It never sees an English sentence; fixed rules turn its answers into English, and you can always see what the model itself said.</p>
+  <p class="lead">A small model trained from scratch only on dense facts: everyday objects, people, countries, religions, history, markets, science, software and pop culture. It never sees an English sentence; fixed rules turn its answers into English, and you can always see what the model itself said.</p>
   <div class="links"><a class="btn primary" href="#try">Ask it something</a><a class="btn ghost" href="data.html">Browse the training data</a><a class="btn ghost" href="https://github.com/enderPeer/haishool">Source on GitHub</a></div>
 </header>
 
 <section class="wrap">
   <h2>How an answer is made</h2>
   <div class="flow">
-    <div class="step"><b>1 · You ask</b>what color is a banana</div>
-    <div class="step"><b>2 · Rules parse</b><code>q banana color. a</code></div>
-    <div class="step"><b>3 · Model answers</b><code>yellow green</code></div>
-    <div class="step"><b>4 · Rules translate</b>A banana is usually yellow or green.</div>
+    <div class="step"><b>1 · You ask</b>what is the capital of japan</div>
+    <div class="step"><b>2 · Rules parse</b><code>q japan capital. a</code></div>
+    <div class="step"><b>3 · Model answers</b><code>tokyo</code></div>
+    <div class="step"><b>4 · Rules translate</b>The capital of Japan is Tokyo.</div>
     <div class="step"><b>5 · You check</b>the grey line shows the raw model output</div>
   </div>
 </section>
@@ -63,20 +63,21 @@ ul{padding-left:20px}li{margin:4px 0}footer{padding:32px 0 48px;color:var(--mute
     <div class="status" id="status">Connecting to the model…</div>
     <div id="log" aria-live="polite"></div>
     <div class="chips" id="chips"></div>
-    <form id="form"><input id="q" autocomplete="off" placeholder="Ask about an everyday object" aria-label="Your question"><button>Ask</button></form>
+    <form id="form"><input id="q" autocomplete="off" placeholder="Ask about objects, people, countries, history, science…" aria-label="Your question"><button>Ask</button></form>
   </div>
 </section>
 
 <section class="wrap">
-  <h2>Version 1 in numbers</h2>
+  <h2>Version 3 in numbers</h2>
   <div class="facts">
-    <div class="fact"><div class="n" id="n-objects">1634</div><div class="l">everyday objects, 9 attributes each</div></div>
+    <div class="fact"><div class="n" id="n-objects">3080</div><div class="l">records: objects, people, countries, events, concepts, works</div></div>
     <div class="fact"><div class="n">1000/1000</div><div class="l">sampled trained facts recalled exactly</div></div>
-    <div class="fact"><div class="n">25%</div><div class="l">held-back facts guessed exactly from similar objects</div></div>
+    <div class="fact"><div class="n">22%</div><div class="l">held-back facts guessed exactly from similar records</div></div>
   </div>
   <ul>
-    <li>It knows only the objects in its table and says so for anything else.</li>
-    <li>The facts were written by a local teacher model and have not been checked by a person.</li>
+    <li>It knows only the records in its table and says so for anything else.</li>
+    <li>Questions nobody could answer from facts (what you are wearing, tomorrow's prices) get "I cannot know that".</li>
+    <li>The facts were written by a local teacher model and have not been checked by a person; a few, such as current office holders, were written by hand.</li>
     <li>Why it is built this way: <a href="https://github.com/enderPeer/haishool/blob/main/LESSONS.md">what we learned before</a>.</li>
   </ul>
 </section>
@@ -87,13 +88,13 @@ ul{padding-left:20px}li{margin:4px 0}footer{padding:32px 0 48px;color:var(--mute
 "use strict";
 const log=document.getElementById("log"),form=document.getElementById("form"),q=document.getElementById("q"),status=document.getElementById("status");
 let api=null;
-const examples=["what color is a banana","what is a refrigerator used for","tell me about a guitar","where do you find a cow","is a tree alive","who are you","where do you run"];
+const examples=["who are you","who is the kanzler","how many states does germany have","what are the big religions","who was albert einstein","what is game theory","which shoe am i wearing right now","make me rich","what color is a banana"];
 function add(cls,who,text,dense){const m=document.createElement("div");m.className="msg "+cls;const w=document.createElement("div");w.className="who";w.textContent=who;const t=document.createElement("div");t.className="text";t.textContent=text;m.append(w,t);if(dense){const d=document.createElement("div");d.className="dense";d.textContent=dense;m.append(d)}log.append(m);log.scrollTop=log.scrollHeight}
 async function ask(text){add("you","You",text);if(!api){add("bot","Haishool","The model is not reachable right now.");return}
 try{const r=await fetch(api+"/api/ask",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({question:text})});const j=await r.json();add("bot","Haishool",j.answer,j.dense?("query: "+j.query+"\nmodel: "+j.dense):"")}catch(e){add("bot","Haishool","The model is not reachable right now.")}}
 examples.forEach(e=>{const b=document.createElement("button");b.className="chip";b.type="button";b.textContent=e;b.onclick=()=>ask(e);document.getElementById("chips").append(b)});
 form.addEventListener("submit",e=>{e.preventDefault();const t=q.value.trim();if(t){q.value="";ask(t)}});
-fetch("endpoint.json",{cache:"no-store"}).then(r=>r.json()).then(async e=>{api=(e.api_url||"").replace(/\/$/,"");const i=await fetch(api+"/api/info").then(r=>r.json());status.textContent="Connected · "+i.objects+" objects · "+(i.params/1e6).toFixed(1)+" M parameters";document.getElementById("n-objects").textContent=i.objects}).catch(()=>{status.textContent="The model is offline right now. The training data is still browsable."});
+fetch("endpoint.json",{cache:"no-store"}).then(r=>r.json()).then(async e=>{api=(e.api_url||"").replace(/\/$/,"");const i=await fetch(api+"/api/info").then(r=>r.json());status.textContent="Connected · "+i.objects+" records · "+(i.params/1e6).toFixed(1)+" M parameters";document.getElementById("n-objects").textContent=i.objects}).catch(()=>{status.textContent="The model is offline right now. The training data is still browsable."});
 </script>
 </body>
 </html>

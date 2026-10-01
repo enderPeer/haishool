@@ -65,3 +65,19 @@ stays visibly wrong instead of being dressed up.
 - Watch disk space and memory per worker before a long run, not during it.
 - Good, simple, consistent data beats a lot of mixed data (the TinyStories result: tiny models
   write coherent stories when the training text is simple and consistent).
+
+## 9. Round 3: from objects to the world
+
+- **Give each kind of thing its own keys.** People, countries, events and concepts do not have a
+  color or a shape. Typed records (a person has a role, an era and what they are known for) let the
+  same small model answer "when", "who made" and "how many states" without any new machinery.
+- **Ask the model the way it was trained.** Every training sample follows an end-of-sample token.
+  Prompts without it made the model stop early in one description of six; with it, 300 of 300
+  sampled records came back exactly.
+- **Names collide.** Round 1 knew "brazil" as a nut, which blocked the country. A typed record now
+  replaces a same-named plain object, and when a question names two things ("the capital of
+  Japan"), the parser picks the one whose type has the asked-for key.
+- **Normalise names before matching them.** Accents and initials ("J. K. Rowling") made 38
+  generated records unmatchable until keys were reduced to plain letters.
+- **Some questions have no answer in any table.** "Which shoe am I wearing?" and "will bitcoin go
+  up tomorrow?" get an explicit "I cannot know that" record instead of a guess.
