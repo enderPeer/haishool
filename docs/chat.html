@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chat with Homunculi</title>
+<meta name="description" content="Talk to Homunculi, a small model that learned facts instead of language. Runs locally in Berlin.">
+<meta name="theme-color" content="#f6f5f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121614" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M24 6h16v4h-3v14l15 24a6 6 0 0 1-5 9H17a6 6 0 0 1-5-9l15-24V10h-3z' fill='%232f6b4f'/%3E%3Ccircle cx='32' cy='40' r='5' fill='%23f6f5f0'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#f6f5f0;--bg2:#efede5;--fg:#1f2622;--muted:#69736c;--card:#fffefa;--line:#dcd9cf;--accent:#2f6b4f;--accent-fg:#fff;--soft:#e4ede6;--you:#2f6b4f;--you-fg:#fff;--glow:rgba(47,107,79,.18);--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121614;--bg2:#171c19;--fg:#e6eae5;--muted:#9aa49d;--card:#1b201d;--line:#2d3430;--accent:#7cc4a0;--accent-fg:#0f1411;--soft:#1f2a24;--you:#2c5a44;--you-fg:#eef5f0;--glow:rgba(124,196,160,.16)}}
+:root[data-theme="dark"]{--bg:#121614;--bg2:#171c19;--fg:#e6eae5;--muted:#9aa49d;--card:#1b201d;--line:#2d3430;--accent:#7cc4a0;--accent-fg:#0f1411;--soft:#1f2a24;--you:#2c5a44;--you-fg:#eef5f0;--glow:rgba(124,196,160,.16)}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:radial-gradient(1200px 600px at 50% -200px,var(--glow),transparent 70%),var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;justify-content:center}
+.app{width:100%;max-width:820px;height:100dvh;display:flex;flex-direction:column}
+header{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(8px);position:sticky;top:0;z-index:2}
+.avatar{width:44px;height:44px;border-radius:50%;background:var(--soft);display:grid;place-items:center;flex:none;border:1px solid var(--line)}
+.avatar svg{width:26px;height:26px}
+.who{flex:1;min-width:0}.who h1{font-size:17px;margin:0;line-height:1.2}
+.who .sub{font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--muted);margin-right:6px;vertical-align:1px}
+.dot.on{background:#3aa66f;box-shadow:0 0 0 3px rgba(58,166,111,.18)}.dot.off{background:#c0533f}
+.hbtn{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:10px;padding:7px 10px;font-size:13px;cursor:pointer;text-decoration:none;white-space:nowrap}
+.hbtn:hover{border-color:var(--accent)}
+#log{flex:1;overflow-y:auto;padding:20px 16px 8px;scroll-behavior:smooth}
+.row{display:flex;gap:10px;margin:0 0 14px;align-items:flex-end;animation:in .22s ease-out}
+@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.row.you{justify-content:flex-end}
+.row .mini{width:28px;height:28px;border-radius:50%;background:var(--soft);display:grid;place-items:center;flex:none;border:1px solid var(--line)}
+.row .mini svg{width:16px;height:16px}
+.bubble{max-width:min(78%,560px);padding:10px 14px;border-radius:18px;background:var(--card);border:1px solid var(--line);word-wrap:break-word}
+.row.bot .bubble{border-bottom-left-radius:6px}
+.row.you .bubble{background:var(--you);color:var(--you-fg);border-color:transparent;border-bottom-right-radius:6px}
+details{margin-top:6px}summary{font-size:12px;color:var(--muted);cursor:pointer;list-style:none;user-select:none}
+summary::-webkit-details-marker{display:none}summary::before{content:"▸ ";}details[open] summary::before{content:"▾ "}
+.dense{font-family:var(--mono);font-size:12px;color:var(--muted);white-space:pre-wrap;margin-top:4px;padding:6px 8px;background:var(--bg2);border-radius:8px}
+.typing{display:inline-flex;gap:4px;padding:4px 2px}.typing i{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:b 1s infinite ease-in-out}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes b{0%,80%,100%{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}
+.intro{text-align:center;color:var(--muted);font-size:14px;margin:8px auto 22px;max-width:520px}
+.intro .big{width:72px;height:72px;margin:6px auto 10px;border-radius:50%;background:var(--soft);display:grid;place-items:center;border:1px solid var(--line)}
+.intro .big svg{width:40px;height:40px}.intro b{color:var(--fg)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:4px 16px 10px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;font-size:13px;border:1px solid var(--line);border-radius:999px;padding:6px 12px;background:var(--card);color:var(--fg);cursor:pointer}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+form{display:flex;gap:8px;padding:10px 16px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:color-mix(in srgb,var(--bg) 92%,transparent)}
+input{flex:1;min-width:0;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--card);color:var(--fg);font-size:16px;outline:none}
+input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--glow)}
+button.send{width:48px;border:0;border-radius:14px;background:var(--accent);color:var(--accent-fg);cursor:pointer;display:grid;place-items:center}
+button.send:disabled{opacity:.5;cursor:default}button.send svg{width:20px;height:20px}
+.note{font-size:12px;color:var(--muted);text-align:center;padding:0 16px 8px}
+.note a{color:var(--muted)}
+@media (max-width:520px){.hide-sm{display:none}.bubble{max-width:85%}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="avatar" aria-hidden="true"><svg viewBox="0 0 64 64"><use href="#flask"/></svg></div>
+    <div class="who">
+      <h1>Homunculi</h1>
+      <div class="sub" id="status"><span class="dot"></span>connecting…</div>
+    </div>
+    <a class="hbtn hide-sm" href="https://enderpeer.github.io/haishool/data.html" target="_blank" rel="noopener">What I know</a>
+    <a class="hbtn hide-sm" href="https://enderpeer.github.io/haishool/">About</a>
+    <button class="hbtn" id="clear" type="button" title="Start a new conversation">New chat</button>
+  </header>
+
+  <main id="log" aria-live="polite"></main>
+
+  <div class="chips" id="chips"></div>
+  <form id="form" autocomplete="off">
+    <input id="q" maxlength="300" placeholder="Ask Homunculi something…" aria-label="Your message" enterkeyhint="send">
+    <button class="send" id="send" aria-label="Send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  </form>
+  <div class="note">Every answer comes from the model; open "what the model said" to see its raw output. Facts were written by a teacher model and are not checked by hand.</div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="flask" viewBox="0 0 64 64">
+    <path d="M24 6h16M27 6v18L13 47a7 7 0 0 0 6 11h26a7 7 0 0 0 6-11L37 24V6" fill="none" stroke="var(--accent)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M17 44h30l3 5a5 5 0 0 1-4 7H18a5 5 0 0 1-4-7z" fill="var(--accent)" opacity=".22"/>
+    <circle cx="32" cy="40" r="4.2" fill="var(--accent)"/>
+    <path d="M32 44.5v6M28 48h8M32 50.5l-3 4M32 50.5l3 4" stroke="var(--accent)" stroke-width="2.4" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<script>
+"use strict";
+const $=id=>document.getElementById(id);
+const log=$("log"),form=$("form"),q=$("q"),send=$("send"),statusEl=$("status");
+const KEY="homunculi-chat-v1";
+const examples=["who are you","what are your desires","who is the kanzler","how many states does germany have","what is game theory",
+  "who was albert einstein","what are the big religions","which shoe am i wearing right now","what is the capital of japan",
+  "tell me about the cold war","what is a black hole","who made minecraft","make me rich","what color is a banana"];
+let api=null,busy=false,msgs=[],past=[],pastIdx=-1;
+
+const store={load(){try{return JSON.parse(localStorage.getItem(KEY)||"[]")}catch(e){return[]}},
+  save(){try{localStorage.setItem(KEY,JSON.stringify(msgs.slice(-60)))}catch(e){}},
+  clear(){try{localStorage.removeItem(KEY)}catch(e){}}};
+
+function icon(){const s=document.createElementNS("http://www.w3.org/2000/svg","svg");s.setAttribute("viewBox","0 0 64 64");
+  const u=document.createElementNS("http://www.w3.org/2000/svg","use");u.setAttribute("href","#flask");s.append(u);return s}
+
+function intro(){const d=document.createElement("div");d.className="intro";const b=document.createElement("div");b.className="big";b.append(icon());
+  const p=document.createElement("p");p.innerHTML="<b>Homunculi</b> learned facts, not language: objects, people, countries, history, science and culture. "+
+  "Fixed rules turn what it says into English, so nothing is made up on top.";d.append(b,p);log.append(d)}
+
+function bubble(who,text,dense,query){
+  const row=document.createElement("div");row.className="row "+who;
+  if(who==="bot"){const m=document.createElement("div");m.className="mini";m.append(icon());row.append(m)}
+  const b=document.createElement("div");b.className="bubble";
+  const t=document.createElement("div");t.textContent=text;b.append(t);
+  if(dense){const det=document.createElement("details");const s=document.createElement("summary");s.textContent="what the model said";
+    const pre=document.createElement("div");pre.className="dense";pre.textContent=(query?"query: "+query+"\n":"")+"model: "+dense;det.append(s,pre);b.append(det)}
+  row.append(b);log.append(row);log.scrollTop=log.scrollHeight;return row}
+
+function typing(){const row=document.createElement("div");row.className="row bot";const m=document.createElement("div");m.className="mini";m.append(icon());
+  const b=document.createElement("div");b.className="bubble";b.innerHTML='<span class="typing" aria-label="Homunculi is thinking"><i></i><i></i><i></i></span>';
+  row.append(m,b);log.append(row);log.scrollTop=log.scrollHeight;return row}
+
+async function call(text){const r=await fetch(api+"/api/ask",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({question:text})});
+  if(!r.ok)throw new Error(r.status);return r.json()}
+
+async function ask(text){
+  if(busy)return;text=text.trim();if(!text)return;
+  busy=true;send.disabled=true;past.unshift(text);pastIdx=-1;
+  bubble("you",text);msgs.push({who:"you",text});
+  const wait=typing();let msg;
+  try{if(api===null)throw new Error("offline");const j=await call(text);msg={who:"bot",text:j.answer,dense:j.dense,query:j.query}}
+  catch(e){msg={who:"bot",text:"I can't be reached right now. The machine I run on may be asleep; please try again later."}}
+  await new Promise(r=>setTimeout(r,250));wait.remove();
+  bubble(msg.who,msg.text,msg.dense,msg.query);if(msg.dense!==undefined)msgs.push(msg);store.save();
+  busy=false;send.disabled=false;q.focus()}
+
+function chips(){const c=$("chips");c.replaceChildren();examples.forEach(e=>{const b=document.createElement("button");b.type="button";b.className="chip";b.textContent=e;b.onclick=()=>ask(e);c.append(b)})}
+
+function restore(){log.replaceChildren();intro();msgs=store.load();msgs.forEach(m=>bubble(m.who,m.text,m.dense,m.query))}
+
+async function greet(){if(msgs.length||api===null)return;const wait=typing();
+  try{const a=await call("who are you"),b=await call("where do you run");wait.remove();
+    const msg={who:"bot",text:a.answer+" "+b.answer+" Ask me about something.",dense:a.dense+" | "+b.dense,query:a.query+" "+b.query};
+    bubble(msg.who,msg.text,msg.dense,msg.query);msgs.push(msg);store.save()}catch(e){wait.remove()}}
+
+function setStatus(on,text){statusEl.replaceChildren();const d=document.createElement("span");d.className="dot "+(on?"on":"off");statusEl.append(d,document.createTextNode(text))}
+
+form.addEventListener("submit",e=>{e.preventDefault();const t=q.value;q.value="";ask(t)});
+q.addEventListener("keydown",e=>{if(e.key==="ArrowUp"&&past.length&&(q.value===""||pastIdx>=0)){e.preventDefault();pastIdx=Math.min(pastIdx+1,past.length-1);q.value=past[pastIdx]}
+  else if(e.key==="ArrowDown"&&pastIdx>=0){e.preventDefault();pastIdx--;q.value=pastIdx>=0?past[pastIdx]:""}});
+$("clear").onclick=()=>{store.clear();msgs=[];restore();greet();q.focus()};
+
+async function connect(){
+  let base="";
+  try{const e=await fetch("endpoint.json",{cache:"no-store"});if(e.ok)base=((await e.json()).api_url||"").replace(/\/$/,"")}catch(e){}
+  try{const i=await fetch(base+"/api/info",{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json()});api=base;
+    setStatus(true,"online · runs locally in Berlin · "+i.objects.toLocaleString("en")+" things known · "+(i.params/1e6).toFixed(1)+" M parameters")}
+  catch(e){api=null;setStatus(false,"offline right now · the machine I run on may be asleep")}
+  greet()}
+
+chips();restore();connect();q.focus();
+</script>
+</body>
+</html>

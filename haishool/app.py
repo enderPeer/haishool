@@ -69,7 +69,9 @@ def build(model_path: Path, records_path: Path, device: str) -> FastAPI:
     app = FastAPI()
     app.add_middleware(CORSMiddleware, allow_origins=["https://enderpeer.github.io"],
                        allow_methods=["GET", "POST"], allow_headers=["content-type"])
-    page = PAGE.replace("__N__", str(len(known) - 1))
+    # the chat window of the website (docs/chat.html) when it is there; it falls back to this server's API
+    chat = Path(__file__).resolve().parent.parent / "docs" / "chat.html"
+    page = chat.read_text(encoding="utf-8") if chat.exists() else PAGE.replace("__N__", str(len(known) - 1))
 
     @app.get("/", response_class=HTMLResponse)
     def index() -> str:
