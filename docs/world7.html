@@ -115,7 +115,12 @@ footer{padding:32px 0 48px;color:var(--muted);font-size:14px}
 
 <section>
   <h2>Training</h2>
-  <p>A model is being trained on these worlds alone on the Berlin GPU machine: lessons whose answer follows from the question (80 %) and the stories of the worlds (20 %). Results will appear on this page.</p>
+  <p>A model of 33 million parameters was trained on these worlds alone (720,000 lines, 105,000 steps on one RTX 4090): lessons whose answer follows from the question (80 % of the tokens) and the stories of 256 worlds (20 %). Questions it never saw:</p>
+  <div class="cols">
+    <div class="panel"><h3>Rules: 39 %</h3><p>Best where the answer is short or a decision: chemistry 63 %, the chain's hand-offs 65 %, replicators 55 %, language 52 %. Weakest where it must do multi-digit arithmetic with powers and roots: gravity 16 %, first minutes 17 %, society 23 %.</p></div>
+    <div class="panel"><h3>Stories: not memorised</h3><p>On the worlds it was trained on it gets 29 % right, about what it guesses for worlds it never saw (32 %). It did not learn the 256 languages: 0 of 15 sentences said right, 27 of 107 meanings.</p></div>
+  </div>
+  <p class="muted">The loss was still falling when training stopped (0.88 to 0.50), so a longer run should help. Development and sealed scores agree (39.7 % and 39.4 %), so the rules it learned hold on new inputs.</p>
 </section>
 </main>
 
