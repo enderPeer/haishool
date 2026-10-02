@@ -1,0 +1,1114 @@
+{
+  "fingerprint": {
+    "checkpoint": "d00f1d2b86d251be915ca0cc509ae4b85efbbcaabd1acba9ddc0281e57bc0145",
+    "data": "d2f0c3b306f8cc32c52bba4f6e051860eb85bdb7901f726731a8ee59482203a3",
+    "split": "dev",
+    "files": {
+      "elements-dev.txt": "356a7da50e03f50d499bc16c4c5ce7473c1719b75c3d65fc8e621a5445273648",
+      "forces-dev.txt": "b24dc63d4110e94ffa2afa1ed702f532de5b77a2a351e6c0be68d608eae66738",
+      "legacy_chem-dev.txt": "99fe7cb50e6d94f3ce6c56540abc4cdd47eddd37095823e3f006ab47b8e1112f",
+      "legacy_gravity-dev.txt": "cc73ebbcefec6e1bd4ccdf778551459033ea53d3b02841e460fdb2c402eb9770",
+      "legacy_life-dev.txt": "3fe4c038f8354a8bfde296161960c57f686ff426df23fe29890d2f709add3f16",
+      "legacy_nucleo-dev.txt": "c725537069ba2d92d7052624695b46728cacf7502a82de4e1dec8d8dd7c13702",
+      "legacy_planets-dev.txt": "0aa1d66bc33e3c686771b23217504a1f29dd1c4a2eddcd9697204cd5273c7a48",
+      "legacy_world-dev.txt": "4e30aebd63871092c680edbb4277c45859a5333e44371ab591a53b102157c367",
+      "maths-dev.txt": "ab6653e4f744267ddb8f087660a99c1593a5333a401c3ff95b621bfb75165336",
+      "predict_chem-dev.txt": "db810e1fc4c6287505e58ede0d358216c4488158e0625805456ccd81e8051678",
+      "predict_gravity-dev.txt": "9515011134b263429b306a473d53d8e82d157aea6fd7cbc5f217edd57b7ff7d0",
+      "predict_life-dev.txt": "e9584afd3fa9762e6ba75c2b40d113f1651d8e4c770848486ad5775470017d8b",
+      "predict_nucleo-dev.txt": "192c9be22485be55346169e4179db75fd978536b96a752ee901e526baa67b0b3",
+      "predict_planets-dev.txt": "6585a582d722e7973b7b2548952109672d045ba7c4a61436a8599caa988edb85",
+      "predict_world-dev.txt": "92abc8f31a54c683e65cc9b84200d3b5056fbc1278df8f336af00921dc528175",
+      "reactions-dev.txt": "0de9ecd69c1494451cae0066101be7236fc5fb29aa8fa57c314e4cefbb1a18c2",
+      "substances-dev.txt": "89b74ef8206d35981c5217eb31a00bcb64330233cd779cd0662ac69363da7968"
+    },
+    "old_files": {
+      "old-recall.txt": "20fbf4ababdf89a61118b77adf6a464fddfcea14e0d7ebf6f252b9c87ff7e801",
+      "old-heldout.txt": "646197a71fdea16fcae44fd97651c441b83fce09d230ecbcd118dd33bbbbabc6"
+    }
+  },
+  "topics": {
+    "elements": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.73828125,
+          "gate_ok": 0.73828125
+        },
+        "direct": {
+          "n": 256,
+          "exact": 0.73828125,
+          "gate_ok": 0.73828125
+        }
+      },
+      "examples": [
+        {
+          "prompt": "higher boiling_k sodium bromine",
+          "expected": "sodium",
+          "answer": "bromine"
+        },
+        {
+          "prompt": "higher electronegativity uranium phosphorus",
+          "expected": "phosphorus",
+          "answer": "uranium"
+        },
+        {
+          "prompt": "lower number ytterbium americium",
+          "expected": "ytterbium",
+          "answer": "americium"
+        },
+        {
+          "prompt": "higher boiling_k iron krypton",
+          "expected": "iron",
+          "answer": "krypton"
+        },
+        {
+          "prompt": "check bismuth mass_number 2 0 9",
+          "expected": "yes",
+          "answer": "no"
+        },
+        {
+          "prompt": "zirconium discovered",
+          "expected": "1 7 8 9",
+          "answer": "1 8 7 9"
+        },
+        {
+          "prompt": "element group 1 8 period 4",
+          "expected": "krypton",
+          "answer": "iron"
+        },
+        {
+          "prompt": "check nihonium mass_number 2 8 2",
+          "expected": "no",
+          "answer": "yes"
+        }
+      ]
+    },
+    "forces": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.33984375,
+          "gate_ok": 0.33984375
+        },
+        "worked": {
+          "n": 137,
+          "exact": 0.2773722627737226,
+          "gate_ok": 0.2773722627737226
+        },
+        "direct": {
+          "n": 119,
+          "exact": 0.4117647058823529,
+          "gate_ok": 0.4117647058823529
+        }
+      },
+      "examples": [
+        {
+          "prompt": "friction mu 0 point 9 9 n 7 6 steps",
+          "expected": "formula mu times n then substitute 0 point 9 9 times 7 6 then result 7 5 point 2 4",
+          "answer": "formula mu times n then substitute 0 point 9 9 times 7 6 then result 7 5 point 6 4"
+        },
+        {
+          "prompt": "spring_force k 9 2 5 x 0 point 5 2 steps",
+          "expected": "formula k times x then substitute 9 2 5 times 0 point 5 2 then result 4 8 1",
+          "answer": "formula k times x then substitute 9 2 5 times 0 point 5 2 then result 4 7 6 point 5"
+        },
+        {
+          "prompt": "drag rho 1 v 5 6 c 0 point 1 area 0 point 2 5 steps",
+          "expected": "formula half times rho times v squared times c times area then substitute 0 point 5 times 1 times 5 6 squared times 0 point 1 times 0 point 2 5 then result 3 9 point 2",
+          "answer": "formula half times rho times v squared times c times area then substitute 0 point 5 times 1 times 5 6 squared times 0 point 1 times 0 point 2 5 then result 3 0 point 4"
+        },
+        {
+          "prompt": "escape_speed m 8 point 6 e 2 4 r 1 point 8 e 8 steps",
+          "expected": "formula sqrt open 2 times big_g times m over r close then substitute sqrt open 2 times 6 point 6 7 4 e minus 1 1 times 8 point 6 e 2 4 over 1 point 8 e 8 close then result 2 5 2 5",
+          "answer": "formula sqrt open 2 times big_g times m over r close then substitute sqrt open 2 times 6 point 6 7 4 e minus 1 1 times 8 point 6 e 2 4 over 1 point 8 e 8 close then result 2 1 0 6"
+        },
+        {
+          "prompt": "acceleration f 3 4 m 8 8",
+          "expected": "0 point 3 8 6 4",
+          "answer": "0 point 3 8 8 8"
+        },
+        {
+          "prompt": "check pressure f 2 1 0 area 0 point 0 3 equals 1 0 5 0 0",
+          "expected": "no",
+          "answer": "yes"
+        },
+        {
+          "prompt": "gravity_force m 3 2 0 m 1 0 r 2 steps",
+          "expected": "formula big_g times m_1 times m_2 over r squared then substitute 6 point 6 7 4 e minus 1 1 times 3 2 0 times 1 0 over 2 squared then result 5 point 3 3 9 e minus 8",
+          "answer": "formula big_g times m_1 times m_2 over r squared then substitute 6 point 6 7 4 e minus 1 1 times 3 2 0 times 1 0 over 2 squared then result 4 point 0 0 5 e minus 8"
+        },
+        {
+          "prompt": "centripetal m 2 3 v 8 r 2 point 5 steps",
+          "expected": "formula m times v squared over r then substitute 2 3 times 8 squared over 2 point 5 then result 5 8 8 point 8",
+          "answer": "formula m times v squared over r then substitute 2 3 times 8 squared over 2 point 5 then result 7 0 5 point 2"
+        }
+      ]
+    },
+    "legacy_chem": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.4375,
+          "gate_ok": 0.48046875
+        },
+        "direct": {
+          "n": 256,
+          "exact": 0.4375,
+          "gate_ok": 0.48046875
+        }
+      },
+      "examples": [
+        {
+          "prompt": "chem seed 6 8 9 9 final nh3",
+          "expected": "1 6",
+          "answer": "0"
+        },
+        {
+          "prompt": "chem seed 4 1 1 0 final h2",
+          "expected": "3 0 6 5",
+          "answer": "0"
+        },
+        {
+          "prompt": "chem seed 9 3 6 step 2 2 next biggest",
+          "expected": "1 8",
+          "answer": "1 5"
+        },
+        {
+          "prompt": "chem seed 4 5 3 3 step 1 1 h2o",
+          "expected": "6 2",
+          "answer": "3 3"
+        },
+        {
+          "prompt": "chem seed 3 6 4 2 step 2 7 next nacl",
+          "expected": "2 7 4",
+          "answer": "0"
+        },
+        {
+          "prompt": "chem seed 9 8 0 3 step 1 9 next mgo",
+          "expected": "8 0",
+          "answer": "0"
+        },
+        {
+          "prompt": "chem seed 7 9 8 7 step 1 temperature",
+          "expected": "3 8 6 7",
+          "answer": "2 7 0 0"
+        },
+        {
+          "prompt": "chem seed 4 1 1 0 step 5 next biggest",
+          "expected": "1 0",
+          "answer": "1"
+        }
+      ]
+    },
+    "legacy_gravity": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.296875,
+          "gate_ok": 0.40234375
+        },
+        "direct": {
+          "n": 256,
+          "exact": 0.296875,
+          "gate_ok": 0.40234375
+        }
+      },
+      "examples": [
+        {
+          "prompt": "gravity seed 8 5 9 6 step 1 9 next radius",
+          "expected": "0 point 5 9 8",
+          "answer": "0 point 1 5 8"
+        },
+        {
+          "prompt": "gravity seed 3 9 2 6 step 2 0 next angular_momentum",
+          "expected": "0 point 2 7 2",
+          "answer": "0 point 3 3 3"
+        },
+        {
+          "prompt": "gravity seed 6 9 4 8 final largest_clump",
+          "expected": "0",
+          "answer": "0 point 5 9 4"
+        },
+        {
+          "prompt": "gravity seed 5 7 1 8 final spiral_ever",
+          "expected": "yes",
+          "answer": "no"
+        },
+        {
+          "prompt": "gravity seed 7 9 2 3 step 3 6 largest_clump",
+          "expected": "0 point 0 1 9 5",
+          "answer": "0 point 4 6 9"
+        },
+        {
+          "prompt": "gravity seed 7 5 step 2 9 largest_clump",
+          "expected": "0 point 1 8 8",
+          "answer": "0 point 5 9 8"
+        },
+        {
+          "prompt": "gravity seed 7 9 2 3 step 9 next largest_clump",
+          "expected": "0",
+          "answer": "0 point 0 2 3 4"
+        },
+        {
+          "prompt": "gravity seed 4 5 6 7 step 9 next radius",
+          "expected": "0 point 4 6 3",
+          "answer": "0 point 5 3 2"
+        }
+      ]
+    },
+    "legacy_life": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.16796875,
+          "gate_ok": 0.203125
+        },
+        "direct": {
+          "n": 256,
+          "exact": 0.16796875,
+          "gate_ok": 0.203125
+        }
+      },
+      "examples": [
+        {
+          "prompt": "life seed 8 1 0 5 final replicators",
+          "expected": "6 5 2",
+          "answer": "1 3 3"
+        },
+        {
+          "prompt": "life seed 4 8 4 5 final replicators",
+          "expected": "8 7 8",
+          "answer": "1 3 3"
+        },
+        {
+          "prompt": "life seed 8 0 5 step 2 4 stage",
+          "expected": "competition",
+          "answer": "dominated"
+        },
+        {
+          "prompt": "life seed 4 8 4 5 step 7 next mean_length",
+          "expected": "8 point 5 8",
+          "answer": "5 point 0 2"
+        },
+        {
+          "prompt": "life seed 6 2 param monomers",
+          "expected": "1 4 4 2 5",
+          "answer": "1 2 6 0 0"
+        },
+        {
+          "prompt": "life seed 5 5 5 3 step 1 2 next free_monomers",
+          "expected": "1 8 6 6 0",
+          "answer": "1 2 3 5 5"
+        },
+        {
+          "prompt": "life seed 7 9 8 7 step 2 3 next mean_length",
+          "expected": "6 point 8 6",
+          "answer": "1 0 point 4"
+        },
+        {
+          "prompt": "life seed 9 3 6 step 3 0 mean_length",
+          "expected": "5 point 2 5",
+          "answer": "1 0 point 4"
+        }
+      ]
+    },
+    "legacy_nucleo": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.3046875,
+          "gate_ok": 0.34375
+        },
+        "direct": {
+          "n": 256,
+          "exact": 0.3046875,
+          "gate_ok": 0.34375
+        }
+      },
+      "examples": [
+        {
+          "prompt": "nucleo seed 3 6 4 2 final deuterium",
+          "expected": "1 point 3 4 e minus 5",
+          "answer": "1 point 0 1 e minus 4"
+        },
+        {
+          "prompt": "nucleo seed 1 0 6 6 step 2 1 deuterium",
+          "expected": "2 point 1 6 e minus 6",
+          "answer": "0"
+        },
+        {
+          "prompt": "nucleo seed 1 0 6 6 step 2 0 next free_neutrons",
+          "expected": "0 point 0 9 5 3",
+          "answer": "0 point 1 7 4"
+        },
+        {
+          "prompt": "nucleo seed 7 3 8 step 7 n_p_ratio",
+          "expected": "0 point 2 3 6",
+          "answer": "0 point 1 9 3"
+        },
+        {
+          "prompt": "nucleo seed 8 1 0 5 step 1 5 next free_neutrons",
+          "expected": "0 point 2 4 9",
+          "answer": "0 point 1 7 4"
+        },
+        {
+          "prompt": "nucleo seed 8 1 0 5 step 2 6 temperature",
+          "expected": "2 point 9 8 e 8",
+          "answer": "1 point 0 1 e 8"
+        },
+        {
+          "prompt": "nucleo seed 8 1 0 5 final bottleneck_n_p_ratio",
+          "expected": "0 point 2 7 5",
+          "answer": "0 point 1 5 2"
+        },
+        {
+          "prompt": "nucleo seed 7 5 step 1 5 next hydrogen",
+          "expected": "0 point 7 4 6",
+          "answer": "0 point 8 3 2"
+        }
+      ]
+    },
+    "legacy_planets": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.4921875,
+          "gate_ok": 0.4921875
+        },
+        "direct": {
+          "n": 256,
+          "exact": 0.4921875,
+          "gate_ok": 0.4921875
+        }
+      },
+      "examples": [
+        {
+          "prompt": "planets seed 5 4 9 6 step 3 next planets",
+          "expected": "2 3",
+          "answer": "2 4"
+        },
+        {
+          "prompt": "planets seed 5 2 6 final total_planet_mass",
+          "expected": "6 9 point 6",
+          "answer": "1 0 4"
+        },
+        {
+          "prompt": "planets seed 4 5 3 3 final planets",
+          "expected": "7",
+          "answer": "6"
+        },
+        {
+          "prompt": "planets seed 6 9 4 8 step 1 5 planets",
+          "expected": "1 0",
+          "answer": "2 4"
+        },
+        {
+          "prompt": "planets seed 5 7 1 8 step 1 0 next largest_mass",
+          "expected": "9 point 9 2",
+          "answer": "1 point 0 1"
+        },
+        {
+          "prompt": "planets seed 8 0 5 step 2 2 next largest_mass",
+          "expected": "7 9 point 9",
+          "answer": "1 0 point 1"
+        },
+        {
+          "prompt": "planets seed 8 0 5 step 8 largest_mass",
+          "expected": "5 point 6 8",
+          "answer": "1 point 0 1"
+        },
+        {
+          "prompt": "planets seed 7 9 8 7 step 2 7 rocky",
+          "expected": "4",
+          "answer": "1"
+        }
+      ]
+    },
+    "legacy_world": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.26171875,
+          "gate_ok": 0.30859375
+        },
+        "direct": {
+          "n": 256,
+          "exact": 0.26171875,
+          "gate_ok": 0.30859375
+        }
+      },
+      "examples": [
+        {
+          "prompt": "world seed 4 1 1 0 param t_gas",
+          "expected": "2 point 2 1",
+          "answer": "4 point 2 4"
+        },
+        {
+          "prompt": "world seed 7 9 8 7 era planets ice",
+          "expected": "0",
+          "answer": "3"
+        },
+        {
+          "prompt": "world seed 9 3 6 final planets",
+          "expected": "7",
+          "answer": "6"
+        },
+        {
+          "prompt": "world seed 8 4 7 1 era nucleo helium",
+          "expected": "0 point 2 0 3",
+          "answer": "0 point 2 7 3"
+        },
+        {
+          "prompt": "world seed 2 2 2 6 era star disc_mass",
+          "expected": "0",
+          "answer": "1 3 1"
+        },
+        {
+          "prompt": "world seed 9 3 6 era star disc_mass",
+          "expected": "8 5 point 6",
+          "answer": "1 3 1"
+        },
+        {
+          "prompt": "world seed 7 5 era enrichment silicon",
+          "expected": "9 point 8 4 e minus 4",
+          "answer": "0"
+        },
+        {
+          "prompt": "world seed 3 7 8 param t_gas",
+          "expected": "4 point 6 5",
+          "answer": "4 point 2 4"
+        }
+      ]
+    },
+    "maths": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.75,
+          "gate_ok": 0.75
+        },
+        "direct": {
+          "n": 224,
+          "exact": 0.7142857142857143,
+          "gate_ok": 0.7142857142857143
+        },
+        "worked": {
+          "n": 32,
+          "exact": 1.0,
+          "gate_ok": 1.0
+        }
+      },
+      "examples": [
+        {
+          "prompt": "calc 9 6 6 times 9 3",
+          "expected": "8 9 8 3 8",
+          "answer": "8 9 3 2 8"
+        },
+        {
+          "prompt": "calc 1 3 2 over 1 2 plus 3",
+          "expected": "1 4",
+          "answer": "1 1"
+        },
+        {
+          "prompt": "calc 2 3 2 2 over 9",
+          "expected": "2 5 8",
+          "answer": "2 6 8"
+        },
+        {
+          "prompt": "solve 1 2 x plus 8 8 equals 9 x plus 9 4",
+          "expected": "x 2",
+          "answer": "x 1"
+        },
+        {
+          "prompt": "solve 3 8 equals minus 5 x minus 6 2",
+          "expected": "x minus 2 0",
+          "answer": "x minus 1 8"
+        },
+        {
+          "prompt": "check 1 2 percent of 2 9 2 5 equals 3 5 2",
+          "expected": "no",
+          "answer": "yes"
+        },
+        {
+          "prompt": "calc open 1 2 minus 7 close times 2 7",
+          "expected": "1 3 5",
+          "answer": "1 8 7"
+        },
+        {
+          "prompt": "solve 7 x minus 6 8 equals 3 x minus 8 4",
+          "expected": "x minus 4",
+          "answer": "x minus 2"
+        }
+      ]
+    },
+    "predict_chem": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.14453125,
+          "gate_ok": 0.14453125
+        },
+        "direct": {
+          "n": 256,
+          "exact": 0.14453125,
+          "gate_ok": 0.14453125
+        }
+      },
+      "examples": [
+        {
+          "prompt": "chem predict schedule_temperature t_start 6 9 9 3 t_end 3 9 6 2 step 2 9 steps 4 5",
+          "expected": "4 8 4 9",
+          "answer": "4 8 4 3"
+        },
+        {
+          "prompt": "chem predict schedule_temperature t_start 9 1 0 3 t_end 8 9 4 4 step 4 steps 4 4",
+          "expected": "9 0 8 8",
+          "answer": "9 0 9 3"
+        },
+        {
+          "prompt": "chem predict schedule_temperature t_start 4 1 5 3 t_end 1 5 4 2 step 3 8 steps 4 0",
+          "expected": "1 6 2 0",
+          "answer": "1 6 1 4"
+        },
+        {
+          "prompt": "chem predict schedule_temperature t_start 6 6 7 3 t_end 2 2 6 8 step 9 steps 1 9",
+          "expected": "4 0 0 2",
+          "answer": "3 8 4 5"
+        },
+        {
+          "prompt": "chem predict schedule_temperature t_start 4 9 9 7 t_end 1 2 1 9 step 2 3 steps 4 4",
+          "expected": "2 3 9 0",
+          "answer": "2 4 6 4"
+        },
+        {
+          "prompt": "chem predict schedule_temperature t_start 9 5 8 1 t_end 8 3 8 step 2 steps 2 1",
+          "expected": "7 5 9 7",
+          "answer": "8 9 1 0"
+        },
+        {
+          "prompt": "chem predict schedule_temperature t_start 5 8 0 1 t_end 8 4 9 step 2 0 steps 5 1",
+          "expected": "2 7 3 0",
+          "answer": "2 9 4 1"
+        },
+        {
+          "prompt": "chem predict schedule_temperature t_start 7 5 6 6 t_end 5 8 2 step 2 steps 5",
+          "expected": "2 7 1 2",
+          "answer": "2 9 4 1"
+        }
+      ]
+    },
+    "predict_gravity": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.01953125,
+          "gate_ok": 0.01953125
+        },
+        "direct": {
+          "n": 256,
+          "exact": 0.01953125,
+          "gate_ok": 0.01953125
+        }
+      },
+      "examples": [
+        {
+          "prompt": "gravity predict cooling_vertical vertical_velocity minus 1 point 6 0 2 mean_vertical_velocity 0 point 8 6 2 8 cooling 0 point 3 5 8 dt_tff 0 point 0 7 6 3 9",
+          "expected": "minus 2 point 2 2 2",
+          "answer": "minus 2 point 1 7"
+        },
+        {
+          "prompt": "gravity predict cooling_vertical vertical_velocity minus 4 point 1 3 4 mean_vertical_velocity minus 2 point 8 3 2 cooling 0 point 2 0 2 7 dt_tff 0 point 0 1 9 8 2",
+          "expected": "minus 1 point 2 8 1",
+          "answer": "minus 1 point 2 8"
+        },
+        {
+          "prompt": "gravity predict cooling_vertical vertical_velocity 2 point 9 7 5 mean_vertical_velocity 1 point 3 1 2 cooling 0 point 3 0 3 6 dt_tff 0 point 0 0 4 3 5 8",
+          "expected": "1 point 6 5 4",
+          "answer": "1 point 6 5"
+        },
+        {
+          "prompt": "gravity predict cooling_vertical vertical_velocity 0 point 8 7 6 5 mean_vertical_velocity minus 1 point 1 3 4 cooling 0 point 1 1 2 4 dt_tff 0 point 0 1 4 5 1",
+          "expected": "1 point 9 9 7",
+          "answer": "1 point 0 0 4"
+        },
+        {
+          "prompt": "gravity predict cooling_vertical vertical_velocity minus 0 point 8 4 0 2 mean_vertical_velocity 1 point 1 8 8 cooling 0 point 0 3 4 6 8 dt_tff 0 point 0 8 3 7 6",
+          "expected": "minus 2 point 0 0 5",
+          "answer": "minus 1 point 0 1 3"
+        },
+        {
+          "prompt": "gravity predict cooling_vertical vertical_velocity minus 0 point 7 2 5 2 mean_vertical_velocity minus 4 point 8 3 5 cooling 0 point 0 4 7 6 2 dt_tff 0 point 0 5 5 7 1",
+          "expected": "4 point 0 6 7",
+          "answer": "4 point 0 7"
+        },
+        {
+          "prompt": "gravity predict cooling_vertical vertical_velocity minus 0 point 8 9 5 8 mean_vertical_velocity 0 point 4 9 7 5 cooling 0 point 0 2 0 7 9 dt_tff 0 point 0 4 5 8",
+          "expected": "minus 1 point 3 8 8",
+          "answer": "minus 1 point 3 8"
+        },
+        {
+          "prompt": "gravity predict cooling_vertical vertical_velocity minus 2 point 6 8 3 mean_vertical_velocity minus 2 point 3 1 7 cooling 0 point 4 4 4 4 dt_tff 0 point 0 2 4 4 6",
+          "expected": "minus 0 point 3 5 0 7",
+          "answer": "minus 0 point 3 5 1 1"
+        }
+      ]
+    },
+    "predict_life": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.703125,
+          "gate_ok": 0.703125
+        },
+        "direct": {
+          "n": 256,
+          "exact": 0.703125,
+          "gate_ok": 0.703125
+        }
+      },
+      "examples": [
+        {
+          "prompt": "life predict survival_probability length 8 decay 0 point 8 4 5 4",
+          "expected": "0 point 8 9 4 3",
+          "answer": "0 point 8 9 4 4"
+        },
+        {
+          "prompt": "life predict next_total total 9 4 9 4 3 inflow 5 8 0 8",
+          "expected": "1 0 0 7 5 1",
+          "answer": "1 0 0 7 2 1"
+        },
+        {
+          "prompt": "life predict survival_probability length 8 decay 2 point 5 8 9",
+          "expected": "0 point 6 7 6 4",
+          "answer": "0 point 6 7 6 3"
+        },
+        {
+          "prompt": "life predict survival_probability length 6 decay 2 point 0 4 9",
+          "expected": "0 point 6 5 8 5",
+          "answer": "0 point 6 6 8 5"
+        },
+        {
+          "prompt": "life predict survival_probability length 1 3 decay 0 point 1 5 7 5",
+          "expected": "0 point 9 8 7 9",
+          "answer": "0 point 9 8 8 7"
+        },
+        {
+          "prompt": "life predict survival_probability length 1 3 decay 0 point 9 1 8 4",
+          "expected": "0 point 9 2 9 4",
+          "answer": "0 point 9 3 7 8"
+        },
+        {
+          "prompt": "life predict survival_probability length 1 2 decay 2 point 4 4 9",
+          "expected": "0 point 7 9 5 9",
+          "answer": "0 point 7 9 6 8"
+        },
+        {
+          "prompt": "life predict survival_probability length 2 decay 0 point 4 3 7 2",
+          "expected": "0 point 7 8 1 4",
+          "answer": "0 point 7 8 2 2"
+        }
+      ]
+    },
+    "predict_nucleo": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.0,
+          "gate_ok": 0.0
+        },
+        "direct": {
+          "n": 256,
+          "exact": 0.0,
+          "gate_ok": 0.0
+        }
+      },
+      "examples": [
+        {
+          "prompt": "nucleo predict cooling_temperature temperature 8 point 4 0 8 e 9 time 4 3 3 point 6 next_time 1 2 1 5",
+          "expected": "5 point 0 2 3 e 9",
+          "answer": "5 point 0 2 2 e 9"
+        },
+        {
+          "prompt": "nucleo predict cooling_temperature temperature 9 point 9 0 7 e 9 time 6 4 0 point 9 next_time 2 0 3 9",
+          "expected": "5 point 5 5 4 e 9",
+          "answer": "5 point 2 1 2 e 9"
+        },
+        {
+          "prompt": "nucleo predict cooling_temperature temperature 8 point 0 5 1 e 9 time 4 2 5 point 3 next_time 5 8 4 5",
+          "expected": "2 point 1 7 2 e 9",
+          "answer": "2 point 1 1 3 e 9"
+        },
+        {
+          "prompt": "nucleo predict cooling_temperature temperature 1 point 2 0 8 e 9 time 6 1 0 point 2 next_time 2 7 2 3",
+          "expected": "5 point 7 1 8 e 8",
+          "answer": "5 point 9 0 3 e 8"
+        },
+        {
+          "prompt": "nucleo predict cooling_temperature temperature 7 point 9 0 4 e 9 time 1 7 1 point 8 next_time 4 1 7 0",
+          "expected": "1 point 6 0 4 e 9",
+          "answer": "1 point 6 5 2 e 9"
+        },
+        {
+          "prompt": "nucleo predict cooling_temperature temperature 3 point 6 8 5 e 8 time 9 9 6 point 3 next_time 6 3 4 4",
+          "expected": "1 point 4 6 e 8",
+          "answer": "1 point 4 0 1 e 8"
+        },
+        {
+          "prompt": "nucleo predict cooling_temperature temperature 3 point 6 9 3 e 9 time 6 8 6 point 5 next_time 5 9 3 8",
+          "expected": "1 point 2 5 6 e 9",
+          "answer": "1 point 2 1 4 e 9"
+        },
+        {
+          "prompt": "nucleo predict cooling_temperature temperature 5 point 9 2 8 e 9 time 8 0 2 point 3 next_time 6 5 9 5",
+          "expected": "2 point 0 6 8 e 9",
+          "answer": "2 point 0 4 1 e 9"
+        }
+      ]
+    },
+    "predict_planets": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.0078125,
+          "gate_ok": 0.0078125
+        },
+        "direct": {
+          "n": 256,
+          "exact": 0.0078125,
+          "gate_ok": 0.0078125
+        }
+      },
+      "examples": [
+        {
+          "prompt": "planets predict solids_remaining remaining 1 7 point 4 8 efficiency 0 point 6 9 0 9 orbit 8 point 5 3 star_mass 1 point 4 2 9 dt 0 point 9 3 2",
+          "expected": "1 4 point 9 8",
+          "answer": "1 5 point 1 6"
+        },
+        {
+          "prompt": "planets predict solids_remaining remaining 8 2 point 7 2 efficiency 1 point 3 9 orbit 4 point 6 3 6 star_mass 0 point 7 3 6 4 dt 0 point 7 2 8 2",
+          "expected": "5 3 point 5 4",
+          "answer": "5 1 point 6 6"
+        },
+        {
+          "prompt": "planets predict solids_remaining remaining 1 6 point 5 7 efficiency 1 point 2 3 8 orbit 2 9 point 1 4 star_mass 1 point 2 4 4 dt 1 point 4 7 4",
+          "expected": "1 5 point 5 3",
+          "answer": "1 5 point 6 6"
+        },
+        {
+          "prompt": "planets predict solids_remaining remaining 8 1 point 1 8 efficiency 1 point 3 5 9 orbit 7 point 6 2 2 star_mass 1 point 3 5 8 dt 1 point 9 8 7",
+          "expected": "3 8 point 4 3",
+          "answer": "3 5 point 6 6"
+        },
+        {
+          "prompt": "planets predict solids_remaining remaining 9 7 point 5 5 efficiency 1 point 1 9 8 orbit 1 2 point 2 5 star_mass 0 point 7 6 3 4 dt 0 point 4 8 6 9",
+          "expected": "9 1 point 9 2",
+          "answer": "9 1 point 1 6"
+        },
+        {
+          "prompt": "planets predict solids_remaining remaining 4 9 point 1 7 efficiency 0 point 9 7 7 8 orbit 0 point 6 2 2 1 star_mass 0 point 2 dt 1 point 3 2 6",
+          "expected": "0 point 1 3 3 5",
+          "answer": "0 point 0 0 1 0 0 7"
+        },
+        {
+          "prompt": "planets predict solids_remaining remaining 5 6 point 8 1 efficiency 1 point 0 9 3 orbit 2 3 point 0 4 star_mass 0 point 9 5 1 8 dt 5 point 6 1 4 e minus 4",
+          "expected": "5 6 point 8 1",
+          "answer": "5 5 point 1 5"
+        },
+        {
+          "prompt": "planets predict solids_remaining remaining 8 9 point 2 2 efficiency 1 point 2 0 1 orbit 2 5 point 6 7 star_mass 0 point 3 3 0 3 dt 0 point 4 6 4 5",
+          "expected": "8 8 point 1 3",
+          "answer": "8 8 point 1 2"
+        }
+      ]
+    },
+    "predict_world": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.46484375,
+          "gate_ok": 0.96484375
+        },
+        "direct": {
+          "n": 256,
+          "exact": 0.46484375,
+          "gate_ok": 0.96484375
+        }
+      },
+      "examples": [
+        {
+          "prompt": "world predict handoff metallicity hydrogen 0 point 8 6 2 generations 2",
+          "expected": "0 point 0 1 7",
+          "answer": "0 point 0 1 6 1"
+        },
+        {
+          "prompt": "world predict handoff frost_line star_mass 0 point 1 0 2",
+          "expected": "0 point 0 4 9 7",
+          "answer": "0 point 0 5 9 2"
+        },
+        {
+          "prompt": "world predict handoff temperature star_mass 0 point 1 6 5 orbit 2 point 0 8",
+          "expected": "7 3",
+          "answer": "7 9"
+        },
+        {
+          "prompt": "world predict handoff temperature star_mass 1 point 2 2 orbit 0 point 3 9 5",
+          "expected": "5 6 0",
+          "answer": "5 9 4"
+        },
+        {
+          "prompt": "world predict handoff temperature star_mass 0 point 7 8 3 orbit 2 point 6 9",
+          "expected": "1 7 0",
+          "answer": "1 6 1"
+        },
+        {
+          "prompt": "world predict handoff cooling metallicity 0 point 0 2 4 5",
+          "expected": "0 point 5 9",
+          "answer": "0 point 6 9"
+        },
+        {
+          "prompt": "world predict handoff temperature star_mass 0 point 3 5 8 orbit 3 point 0 8",
+          "expected": "9 8",
+          "answer": "9 1"
+        },
+        {
+          "prompt": "world predict handoff temperature star_mass 0 point 2 0 7 orbit 1 point 4",
+          "expected": "9 2",
+          "answer": "9 8"
+        }
+      ]
+    },
+    "reactions": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.81640625,
+          "gate_ok": 0.81640625
+        },
+        "direct": {
+          "n": 256,
+          "exact": 0.81640625,
+          "gate_ok": 0.81640625
+        }
+      },
+      "examples": [
+        {
+          "prompt": "check 2 x he4 gives 4 x be8 balanced",
+          "expected": "no",
+          "answer": "yes"
+        },
+        {
+          "prompt": "count_nuclear 2 5 x am241 mass_number",
+          "expected": "6 0 2 5",
+          "answer": "5 2 8 5"
+        },
+        {
+          "prompt": "balance o 2 plus c 3 h 8 gives c 1 o 2 plus h 2 o 1",
+          "expected": "5 1 3 4",
+          "answer": "5 5 4 4"
+        },
+        {
+          "prompt": "count_nuclear 8 x u234 plus 5 x he4 charge",
+          "expected": "7 4 6",
+          "answer": "7 4 2"
+        },
+        {
+          "prompt": "check 1 x n 1 h 3 plus 1 x h 1 n 1 o 3 gives 1 x n 2 h 4 o 3 balanced",
+          "expected": "yes",
+          "answer": "no"
+        },
+        {
+          "prompt": "lime_slaking equation",
+          "expected": "1 x ca 1 o 1 plus 1 x h 2 o 1 gives 1 x ca 1 o 2 h 2",
+          "answer": "1 x ca 1 c 1 o 3 plus 2 x h 2 s 1 o 4 gives 1 x ca 1 s 1 o 4 plus 1 x h 2 o 1 plus 1 x c 1 o 2"
+        },
+        {
+          "prompt": "check 1 x he3 plus 1 x h1 gives 1 x n13 plus 1 x gamma balanced",
+          "expected": "no",
+          "answer": "yes"
+        },
+        {
+          "prompt": "balance al 1 plus h 1 cl 1 gives h 2 plus al 1 cl 3",
+          "expected": "2 6 3 2",
+          "answer": "6 2 3 1"
+        }
+      ]
+    },
+    "substances": {
+      "scores": {
+        "all": {
+          "n": 256,
+          "exact": 0.390625,
+          "gate_ok": 0.390625
+        },
+        "worked": {
+          "n": 118,
+          "exact": 0.3474576271186441,
+          "gate_ok": 0.3474576271186441
+        },
+        "direct": {
+          "n": 138,
+          "exact": 0.427536231884058,
+          "gate_ok": 0.427536231884058
+        }
+      },
+      "examples": [
+        {
+          "prompt": "mass_percent c 7 f 1 u 7 uranium steps",
+          "expected": "formula sum count times atomic_weight then c 7 times 1 2 point 0 1 1 is 8 4 point 0 7 7 then f 1 times 1 8 point 9 9 8 4 0 3 1 6 3 is 1 8 point 9 9 8 4 0 3 1 6 3 then u 7 times 2 3 8 point 0 2 8 9 1 is 1 6 6 6 point 2 0 2 3 7 then sum 8 4 point 0 7 7 plus 1 8 point 9 9 8 4 0 3 1 6 3 plus 1 6 6 6 point 2 0 2 3 7 is 1 7 6 9 point 2 7 7 7 7 3 1 6 3 then formula 1 0 0 times element_mass over total_mass then substitute 1 0 0 times 1 6 6 6 point 2 0 2 3 7 over 1 7 6 9 point 2 7 7 7 7 3 1 6 3 then result 9 4 point 1 7",
+          "answer": "formula sum count times atomic_weight then c 7 times 1 2 point 0 1 1 is 8 4 point 0 7 7 then f 1 times 1 8 point 9 9 8 4 0 3 1 6 3 is 1 8 point 9 9 8 4 0 3 1 6 3 then u 7 times 2 3 8 point 0 2 8 9 1 is 1 6 6 6 point 2 0 2 3 7 then sum 8 4 point 0 7 7 plus 1 8 point 9 9 8 4 0 3 1 6 3 plus 1 6 6 6 point 2 0 2 3 7 is 1 7 2 9 point 2 7 7 7 7 3 1 6 3 then formula 1 0 0 times element_mass over total_mass then substitute 1 0 0 times 1 8 point 9 9 8 4 0 3 1 6 3 over 1 7 2 9 point 2 7 7 7 7 3 1 6 3 then result 1 point 0 3 7"
+        },
+        {
+          "prompt": "mass_percent i 8 cr 1 1 o 6 chromium steps",
+          "expected": "formula sum count times atomic_weight then cr 1 1 times 5 1 point 9 9 6 1 is 5 7 1 point 9 5 7 1 then i 8 times 1 2 6 point 9 0 4 4 7 is 1 0 1 5 point 2 3 5 7 6 then o 6 times 1 5 point 9 9 9 is 9 5 point 9 9 4 then sum 5 7 1 point 9 5 7 1 plus 1 0 1 5 point 2 3 5 7 6 plus 9 5 point 9 9 4 is 1 6 8 3 point 1 8 6 8 6 then formula 1 0 0 times element_mass over total_mass then substitute 1 0 0 times 5 7 1 point 9 5 7 1 over 1 6 8 3 point 1 8 6 8 6 then result 3 3 point 9 8",
+          "answer": "formula sum count times atomic_weight then cr 1 1 times 5 1 point 9 9 6 1 is 5 7 1 point 9 5 7 1 then i 8 times 1 2 6 point 9 0 4 4 7 is 1 0 1 5 point 2 3 5 7 6 then o 6 times 1 5 point 9 9 9 is 9 5 point 9 9 4 then sum 5 7 1 point 9 5 7 1 plus 1 0 1 5 point 2 3 5 7 6 plus 9 5 point 9 9 4 is 1 7 8 4 point 1 8 6 8 6 then formula 1 0 0 times element_mass over total_mass then substitute 1 0 0 times 9 5 point 9 9 4 over 1 7 8 4 point 1 8 6 8 6 then result 5 point 1 1 1"
+        },
+        {
+          "prompt": "mass_percent c 3 h 1 n 1 nitrogen",
+          "expected": "2 7 point 4 4",
+          "answer": "1 0 point 3 6"
+        },
+        {
+          "prompt": "element_count calcite oxygen",
+          "expected": "3",
+          "answer": "4"
+        },
+        {
+          "prompt": "element_count mercury_oxide oxygen",
+          "expected": "1",
+          "answer": "2"
+        },
+        {
+          "prompt": "molar_mass c 9 h 2 6 n 4 p 3",
+          "expected": "2 8 3 point 2 6",
+          "answer": "3 2 2 point 1 2"
+        },
+        {
+          "prompt": "atoms p 1 1 sn 7",
+          "expected": "1 8",
+          "answer": "2 0"
+        },
+        {
+          "prompt": "mass_percent c 1 h 2 1 n 8 carbon steps",
+          "expected": "formula sum count times atomic_weight then c 1 times 1 2 point 0 1 1 is 1 2 point 0 1 1 then h 2 1 times 1 point 0 0 8 is 2 1 point 1 6 8 then n 8 times 1 4 point 0 0 7 is 1 1 2 point 0 5 6 then sum 1 2 point 0 1 1 plus 2 1 point 1 6 8 plus 1 1 2 point 0 5 6 is 1 4 5 point 2 3 5 then formula 1 0 0 times element_mass over total_mass then substitute 1 0 0 times 1 2 point 0 1 1 over 1 4 5 point 2 3 5 then result 8 point 2 7",
+          "answer": "formula sum count times atomic_weight then c 1 times 1 2 point 0 1 1 is 1 2 point 0 1 1 then h 2 1 times 1 point 0 0 8 is 2 1 point 1 6 8 then n 8 times 1 4 point 0 0 7 is 1 1 2 point 0 5 6 then sum 1 2 point 0 1 1 plus 2 1 point 1 6 8 plus 1 1 2 point 0 5 6 is 1 4 5 point 2 3 5 then formula 1 0 0 times element_mass over total_mass then substitute 1 0 0 times 1 1 point 1 6 8 over 1 4 5 point 2 3 5 then result 7 point 1 5 5"
+        }
+      ]
+    }
+  },
+  "old": {
+    "old-recall": {
+      "scores": {
+        "all": {
+          "n": 1000,
+          "exact": 0.969,
+          "gate_ok": 0.969
+        },
+        "direct": {
+          "n": 1000,
+          "exact": 0.969,
+          "gate_ok": 0.969
+        }
+      },
+      "examples": [
+        {
+          "prompt": "freddie_mercury country",
+          "expected": "uk",
+          "answer": "united_kingdom"
+        },
+        {
+          "prompt": "sunglasses shape",
+          "expected": "rectangular_round",
+          "answer": "rectangular"
+        },
+        {
+          "prompt": "peacock size",
+          "expected": "larger_than_a_chicken",
+          "answer": "small"
+        },
+        {
+          "prompt": "cape_verde government",
+          "expected": "republic",
+          "answer": "parliamentary_democracy"
+        },
+        {
+          "prompt": "raincoat made",
+          "expected": "waterproof_fabric",
+          "answer": "fabric"
+        },
+        {
+          "prompt": "niger states",
+          "expected": "8",
+          "answer": "7"
+        },
+        {
+          "prompt": "sunglasses color",
+          "expected": "black brown",
+          "answer": "black brown white"
+        },
+        {
+          "prompt": "armenia government",
+          "expected": "republic",
+          "answer": "presidential_republic"
+        }
+      ]
+    },
+    "old-heldout": {
+      "scores": {
+        "all": {
+          "n": 5739,
+          "exact": 0.5051402683394319,
+          "gate_ok": 0.5051402683394319
+        },
+        "direct": {
+          "n": 5739,
+          "exact": 0.5051402683394319,
+          "gate_ok": 0.5051402683394319
+        }
+      },
+      "examples": [
+        {
+          "prompt": "fork shape",
+          "expected": "prongs",
+          "answer": "long_and_thin"
+        },
+        {
+          "prompt": "bowl shape",
+          "expected": "round",
+          "answer": "tall round"
+        },
+        {
+          "prompt": "ladle color",
+          "expected": "black silver white",
+          "answer": "silver black"
+        },
+        {
+          "prompt": "napkin shape",
+          "expected": "square rectangular",
+          "answer": "rectangular"
+        },
+        {
+          "prompt": "colander size",
+          "expected": "larger_than_a_plate",
+          "answer": "kitchen_utensil"
+        },
+        {
+          "prompt": "strainer size",
+          "expected": "small",
+          "answer": "flat_with_holes"
+        },
+        {
+          "prompt": "cork_screw size",
+          "expected": "small",
+          "answer": "hand_size"
+        },
+        {
+          "prompt": "cork_screw parts",
+          "expected": "screw handle",
+          "answer": "handle screw"
+        }
+      ]
+    }
+  },
+  "selection_score": 0.4431818181818182
+}

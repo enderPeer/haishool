@@ -1,0 +1,458 @@
+q acceleration f 7 9 m 4 7. a 1 point 6 8 1.
+q spring_force k 5 0 0 x 0 point 0 6. a 3 0.
+q check centripetal m 3 2 v 2 0 r 1 0 0 equals 1 2 8 0. a no.
+q thrust mdot 1 7 3 ve 3 7 0 0. a 6 4 0 1 0 0.
+q tidal m 8 point 5 e 2 8 m 9 0 0 r 3 6 0 0 0 0 d 9 point 9 e 6. a 3 point 7 8 9 e 6.
+q centripetal m 3 4 v 2 1 r 0 point 5. a 2 9 9 8 8.
+q centripetal m 9 v 1 4 r 1 point 5. a 1 1 7 6.
+q gravity_force m 1 m 2 0 0 r 5. a 5 point 3 3 9 e minus 1 0.
+q check gravity_force m 8 point 3 e 2 5 m 6 5 0 r 9 point 4 e 7 equals 4 0 7 point 5. a yes.
+q escape_speed m 4 point 1 e 2 7 r 9 point 8 e 6. a 2 3 6 3 0 0.
+q friction mu 0 point 8 4 n 4 3. a 3 6 point 1 2.
+q net_force f 3 0 f 3 3 0 same. a 3 6 0.
+q buoyancy rho 1 0 0 0 vol 0 point 7 7. a 7 5 5 4.
+q thrust mdot 2 2 0 ve 1 3 0 0. a 2 8 6 0 0 0.
+q check thrust mdot 2 4 5 ve 3 1 0 0 equals 7 5 9 5 0 0. a yes.
+q lift rho 1 point 2 v 4 c 0 point 2 area 5 0. a 9 6.
+q friction mu 0 point 0 2 n 3. a 0 point 0 6.
+q spring_force k 5 9 0 x 0 point 9 9. a 5 8 4 point 1.
+q escape_speed m 1 point 9 9 e 3 0 r 6 point 9 6 e 8. a 6 1 7 8 0 0.
+q pressure f 4 2 0 area 2 point 4. a 1 7 5.
+q magnetic_force charge 5 v 3 3 0 0 b 2. a 3 3 0 0 0.
+q drag rho 1 0 0 0 v 7 c 1 area 0 point 1. a 2 4 5 0.
+q longer_range weak kinetic_friction. a kinetic_friction.
+q check forces examples jet_engine equals thrust. a yes.
+q drag rho 1 v 3 c 0 point 3 area 1 0. a 1 3 point 5.
+q gravity_force m 9 6 m 1 9 0 0 r 2. a 3 point 0 4 3 e minus 6.
+q net_force f 4 4 0 f 7 8 0 opposite. a 3 4 0.
+q centripetal m 1 2 v 2 3 r 5. a 1 2 7 0.
+q spring_force k 1 0 9 0 x 0 point 0 5. a 5 4 point 5.
+q lift rho 1 0 2 5 v 2 0 c 0 point 8 area 5 0. a 8 point 2 e 6.
+q coulomb_force charge 6 e minus 6 charge 2 e minus 6 r 2. a 0 point 0 2 6 9 6.
+q friction mu 0 point 5 3 n 8 2. a 4 3 point 4 6.
+q thrust mdot 6 8 ve 1 1 0 0. a 7 4 8 0 0.
+q magnetic_force charge 0 point 0 0 7 v 8 0 0 b 0 point 5. a 2 point 8.
+q weight m 2 2 on jupiter. a 5 4 5 point 4.
+q friction mu 0 point 2 n 6 6. a 1 3 point 2.
+q buoyancy rho 1 3 6 0 0 vol 0 point 0 8 3. a 1 1 0 7 0.
+q drag rho 1 v 3 7 c 1 area 1 0. a 6 8 4 5.
+q acceleration f 3 8 m 3 7. a 1 point 0 2 7.
+q net_force f 8 1 0 f 3 2 0 same. a 1 1 3 0.
+q gravity_force m 6 m 6 8 r 3. a 3 point 0 2 6 e minus 9.
+q thrust mdot 4 8 9 0 ve 1 3 0 0. a 6 point 3 5 7 e 6.
+q escape_speed m 7 point 3 5 e 2 2 r 1 point 7 4 e 6. a 2 3 7 5.
+q check surface_gravity m 1 point 8 e 2 4 r 3 point 1 e 8 equals 1 point 2 5 e minus 4. a no.
+q net_force f 1 0 0 f 7 opposite. a 9 3.
+q orbital_speed m 2 e 3 0 r 1 point 6 e 7. a 2 point 8 8 8 e 6.
+q magnetic_force charge 4 e minus 6 v 5 4 b 0 point 1. a 2 point 1 6 e minus 5.
+q check lift rho 1 v 6 5 c 1 point 5 area 2 equals 1 2 6 7 6. a no.
+q lift rho 1 0 0 0 v 2 1 c 1 area 1 0 0. a 2 point 2 0 5 e 7.
+q magnetic_force charge 1 v 5 7 b 1. a 5 7.
+q spring_force k 8 1 0 x 0 point 1. a 8 1.
+q drag rho 1 v 5 6 c 0 point 5 area 0 point 1. a 7 8 point 4.
+q orbital_speed m 1 point 6 e 2 3 r 2 point 4 e 6. a 2 1 0 9.
+q tidal m 1 e 2 9 m 5 3 0 0 0 r 7 point 5 e 6 d 6 point 5 e 1 0. a 0 point 0 1 9 3 2.
+q escape_speed m 1 point 9 e 2 7 r 7 point 1 8 e 7. a 5 9 4 3 0.
+q net_force f 6 8 0 f 9 4 opposite. a 5 8 6.
+q acceleration f 2 3 m 2 0. a 1 point 1 5.
+q check drag rho 1 0 2 5 v 3 6 c 1 area 0 point 0 1 equals 6 6 4 2. a yes.
+q escape_speed m 6 e 2 7 r 8 e 8. a 3 1 6 4 0.
+q spring_force k 5 7 0 x 0 point 7 8. a 4 4 4 point 6.
+q centripetal m 1 0 v 2 2 r 1 0. a 4 8 4.
+q friction mu 0 point 7 5 n 6 3. a 4 7 point 2 5.
+q acceleration f 3 4 m 8 0. a 0 point 4 2 5.
+q orbital_speed m 4 point 7 e 2 5 r 6 8 0 0 0 0. a 6 7 9 2 0.
+q weight m 9 4 point 9. a 9 3 1.
+q orbital_speed m 2 point 9 e 2 9 r 3 point 7 e 7. a 7 2 3 3 0 0.
+q longer_range normal drag. a same.
+q orbital_speed m 7 point 3 5 e 2 2 r 1 point 1 7 4 e 7. a 6 4 6 point 4.
+q drag rho 1 0 0 0 v 1 0 c 1 area 2. a 1 0 0 0 0 0.
+q longer_range thrust drag. a same.
+q centripetal m 2 v 2 5 r 1 point 5. a 8 3 3 point 3.
+q longer_range metallic_bond tidal. a tidal.
+q spring_force k 1 1 3 x 0 point 5 1. a 5 7 point 6 3.
+q tidal m 5 point 9 7 e 2 4 m 9 0 0 0 r 1 point 7 4 e 6 d 3 point 8 4 e 8. a 0 point 2 2 0 4.
+q check net_force f 2 f 1 6 same equals 1 8. a yes.
+q tidal m 1 point 9 e 2 7 m 4 1 0 0 0 r 1 point 8 2 e 6 d 4 point 2 2 e 8. a 2 5 1 point 8.
+q escape_speed m 1 point 9 e 2 7 r 7 point 1 5 e 7. a 5 9 5 6 0.
+q pressure f 5 2 0 0 area 0 point 2 9. a 1 7 9 3 0.
+q check orbital_speed m 4 point 3 e 2 9 r 7 point 4 e 8 equals 1 9 6 9 0. a no.
+q thrust mdot 1 5 5 0 ve 2 8 0 0. a 4 point 3 4 e 6.
+q buoyancy rho 1 0 0 0 vol 0 point 0 0 8. a 7 8 point 4 8.
+q friction mu 0 point 7 n 9 6. a 6 7 point 2.
+q escape_speed m 3 point 3 e 2 3 r 2 point 9 4 e 6. a 3 8 7 1.
+q pressure f 3 2 area 9 point 1. a 3 point 5 1 6.
+q spring_force k 4 1 x 0 point 7 7. a 3 1 point 5 7.
+q acceleration f 5 4 m 8 8. a 0 point 6 1 3 6.
+q spring_force k 2 8 5 x 0 point 9 5. a 2 7 0 point 8.
+q acceleration f 2 3 m 5 6. a 0 point 4 1 0 7.
+q net_force f 5 0 f 2 7 same. a 7 7.
+q check weight m 9 1 point 6 on mars equals 3 4 1 point 7. a yes.
+q acceleration f 2 2 m 9 7. a 0 point 2 2 6 8.
+q lift rho 1 0 2 5 v 3 3 c 1 point 5 area 1. a 8 3 7 2 0 0.
+q spring_force k 5 7 5 x 0 point 6. a 3 4 5.
+q check friction mu 0 point 8 7 n 1 0 equals 6 point 9 6. a no.
+q tidal m 1 point 9 e 2 7 m 3 8 0 0 r 1 point 8 2 e 6 d 4 point 2 2 e 8. a 2 3 point 3 4.
+q magnetic_force charge 7 e minus 6 v 6 0 b 1. a 4 point 2 e minus 4.
+q buoyancy rho 1 point 2 vol 3. a 3 5 point 3 2.
+q tidal m 7 point 3 e 2 6 m 6 2 0 0 r 4 point 3 e 7 d 3 point 6 e 1 1. a 5 point 5 6 8 e minus 7.
+q check buoyancy rho 1 0 0 0 vol 8 point 6 equals 8 4 3 6 6. a yes.
+q magnetic_force charge 9 e minus 6 v 2 4 b 1. a 2 point 1 6 e minus 4.
+q coulomb_force charge 9 e minus 9 charge 4 e minus 6 r 0 point 2. a 0 point 0 0 8 0 8 9.
+q buoyancy rho 1 3 6 0 0 vol 0 point 0 3 8. a 5 0 7 0.
+q magnetic_force charge 5 e minus 6 v 6 8 0 b 0 point 0 1. a 3 point 4 e minus 5.
+q escape_speed m 2 point 8 e 2 6 r 1 7 0 0 0 0. a 4 6 8 9 0 0.
+q net_force f 9 1 0 f 7 5 opposite. a 8 3 5.
+q drag rho 1 0 2 5 v 5 c 0 point 5 area 5. a 3 2 0 3 0.
+q thrust mdot 1 4 5 ve 1 1 0 0. a 1 5 9 5 0 0.
+q thrust mdot 2 0 1 0 ve 1 0 0 0. a 2 point 0 1 e 6.
+q lift rho 1 point 2 v 7 5 c 0 point 5 area 2. a 3 3 7 5.
+q spring_force k 1 2 1 x 0 point 0 5. a 6 point 0 5.
+q forces examples helicopter_rotor. a lift.
+q buoyancy rho 5 2 0 vol 1 point 4. a 7 1 4 2.
+q centripetal m 2 0 v 3 0 r 1. a 1 8 0 0 0.
+q acceleration f 7 6 m 5 4. a 1 point 4 0 7.
+q longer_range hydrogen_bond electrostatic. a electrostatic.
+q acceleration f 3 2 m 7 8. a 0 point 4 1 0 3.
+q pressure f 1 0 0 0 area 1 3. a 7 6 point 9 2.
+q escape_speed m 9 point 6 e 2 8 r 8 point 7 e 8. a 1 2 1 4 0 0.
+q centripetal m 3 3 v 2 6 r 2. a 1 1 1 5 4.
+q drag rho 1 0 2 5 v 5 4 c 0 point 5 area 5. a 3 point 7 3 6 e 6.
+q drag rho 1 0 0 0 v 1 9 c 0 point 2 5 area 5. a 2 2 5 6 2 5.
+q forces examples diamond. a covalent_bond.
+q tidal m 7 point 3 5 e 2 2 m 5 5 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 6 point 0 7 e minus 5.
+q drag rho 1 0 0 0 v 3 1 c 1 area 2. a 9 6 1 0 0 0.
+q spring_force k 1 8 4 0 x 0 point 2 2. a 4 0 4 point 8.
+q drag rho 1 v 1 9 c 0 point 2 5 area 2. a 9 0 point 2 5.
+q spring_force k 7 3 5 x 0 point 4 6. a 3 3 8 point 1.
+q drag rho 1 v 5 3 c 0 point 3 area 0 point 0 1. a 4 point 2 1 3.
+q lift rho 1 0 2 5 v 9 0 c 1 point 5 area 2 0. a 1 point 2 4 5 e 8.
+q thrust mdot 2 7 9 0 ve 3 0 0 0. a 8 point 3 7 e 6.
+q thrust mdot 2 1 3 0 ve 6 0 0. a 1 point 2 7 8 e 6.
+q check friction mu 0 point 7 2 n 1 6 0 equals 1 2 6 point 7. a no.
+q longer_range pressure_force tidal. a tidal.
+q surface_gravity m 3 point 6 e 2 3 r 2 point 2 e 6. a 4 point 9 6 4.
+q check drag rho 1 0 0 0 v 4 9 c 0 point 1 area 1 equals 1 0 8 0 4 5. a no.
+q weight m 3 5 point 1 on mars. a 1 3 0 point 9.
+q lift rho 1 point 2 v 5 1 c 0 point 5 area 2. a 1 5 6 1.
+q tidal m 3 point 8 e 2 5 m 7 8 r 6 e 7 d 3 point 5 e 1 1. a 5 point 5 3 7 e minus 1 0.
+q surface_gravity m 6 point 6 e 2 8 r 8 point 1 e 6. a 6 7 1 4 0.
+q coulomb_force charge 3 e minus 9 charge 5 e minus 6 r 2. a 3 point 3 7 1 e minus 5.
+q check thrust mdot 2 5 0 0 ve 9 0 0 equals 2 point 2 5 e 6. a yes.
+q coulomb_force charge 5 e minus 6 charge minus 6 e minus 6 r 0 point 0 2. a minus 6 7 4 point 1.
+q gravity_force m 2 6 m 7 8 r 5. a 5 point 4 1 4 e minus 9.
+q longer_range ionic_bond tidal. a tidal.
+q longer_range electromagnetism kinetic_friction. a electromagnetism.
+q acceleration f 1 m 4 6. a 0 point 0 2 1 7 4.
+q centripetal m 2 4 v 2 r 4. a 2 4.
+q magnetic_force charge 1 v 6 1 b 0 point 2. a 1 2 point 2.
+q lift rho 1 point 2 v 6 2 c 0 point 5 area 2 0. a 2 3 0 6 4.
+q buoyancy rho 1 0 2 5 vol 2 point 1. a 2 1 1 2 0.
+q centripetal m 4 4 v 1 5 r 0 point 5. a 1 9 8 0 0.
+q coulomb_force charge 9 e minus 6 charge 2 e minus 9 r 0 point 5. a 6 point 4 7 1 e minus 4.
+q escape_speed m 3 point 2 e 2 7 r 8 point 9 e 8. a 2 1 9 1 0.
+q weight m 8 9 point 5 on jupiter. a 2 2 1 9.
+q net_force f 3 4 f 4 7 opposite. a 1 3.
+q thrust mdot 4 3 6 ve 2 0 0 0. a 8 7 2 0 0 0.
+q coulomb_force charge 1 e minus 9 charge 1 e minus 6 r 0 point 1. a 8 point 9 8 8 e minus 4.
+q check orbital_speed m 4 point 8 e 2 3 r 6 point 6 e 8 equals 2 2 0 point 3. a yes.
+q orbital_speed m 7 point 8 e 2 4 r 8 point 6 e 6. a 7 7 8 0.
+q drag rho 1 point 2 v 3 6 c 1 point 2 area 2. a 1 8 6 6.
+q buoyancy rho 1 3 6 0 0 vol 4 point 8. a 6 4 0 4 0 0.
+q acceleration f 9 5 m 1 2. a 7 point 9 1 7.
+q forces direction along_wall. a capillary.
+q surface_gravity m 6 point 5 e 2 8 r 2 point 2 e 7. a 8 9 6 3.
+q check pressure f 4 2 0 0 area 9 equals 2 3 3 point 3. a no.
+q centripetal m 4 6 v 8 r 1 0. a 2 9 4 point 4.
+q tidal m 8 point 3 e 2 6 m 1 1 0 0 r 7 point 2 e 7 d 5 point 9 e 9. a 0 point 0 4 2 7 2.
+q magnetic_force charge 0 point 0 0 5 v 5 b 0 point 0 1. a 2 point 5 e minus 4.
+q check friction mu 0 point 3 7 n 1 1 equals 4 point 0 7. a yes.
+q lift rho 1 0 2 5 v 8 2 c 0 point 3 area 5 0. a 5 point 1 6 9 e 7.
+q thrust mdot 1 5 5 ve 2 0 0. a 3 1 0 0 0.
+q gravity_force m 5 9 m 3 5 0 r 5. a 5 point 5 1 3 e minus 8.
+q drag rho 1 point 2 v 1 3 c 0 point 2 5 area 0 point 0 1. a 0 point 2 5 3 5.
+q check orbital_speed m 5 point 1 e 2 6 r 3 3 0 0 0 0 equals 2 8 9 0 8 0. a no.
+q spring_force k 1 9 4 x 0 point 4 7. a 9 1 point 1 8.
+q spring_force k 7 1 0 x 0 point 0 7. a 4 9 point 7.
+q weight m 2 7 point 3 on moon. a 4 4 point 2 3.
+q friction mu 0 point 3 5 n 1 0 0. a 3 5.
+q friction mu 0 point 2 1 n 5. a 1 point 0 5.
+q magnetic_force charge 8 v 7 9 b 1. a 6 3 2.
+q forces range_m infinite. a gravity electromagnetism electrostatic magnetic tidal radiation_pressure.
+q check buoyancy rho 8 9 0 vol 3 point 6 equals 3 1 4 3 0. a yes.
+q check tidal m 8 point 9 e 2 4 m 2 2 0 0 0 r 4 point 5 e 6 d 3 e 8 equals 8 point 7 1 2. a no.
+q gravity_force m 7 0 m 2 5 0 r 1 point 5. a 5 point 1 9 1 e minus 7.
+q weight m 3 9 2 on moon. a 6 3 5.
+q longer_range tidal electrostatic. a same.
+q acceleration f 9 0 m 7 6. a 1 point 1 8 4.
+q magnetic_force charge 1 e minus 6 v 4 0 0 0 b 0 point 5. a 0 point 0 0 2.
+q tidal m 8 point 4 e 2 3 m 4 5 0 0 r 9 0 0 0 0 0 d 6 point 3 e 9. a 1 point 8 1 6 e minus 6.
+q magnetic_force charge 5 v 5 7 0 b 0 point 1. a 2 8 5.
+q magnetic_force charge 0 point 0 0 4 v 7 4 0 0 b 0 point 0 5. a 1 point 4 8.
+q weight m 4 9 point 4. a 4 8 4 point 6.
+q gravity_force m 9 e 2 9 m 2 6 0 0 0 r 1 8 0 0 0 0. a 4 point 8 2 e 1 3.
+q check surface_gravity m 6 point 4 e 2 8 r 4 point 1 e 6 equals 2 5 4 1 0 0. a yes.
+q net_force f 9 9 0 f 7 0 0 same. a 1 6 9 0.
+q pressure f 3 4 0 area 8 point 4. a 4 0 point 4 8.
+q pressure f 7 2 area 0 point 6 9. a 1 0 4 point 3.
+q pressure f 1 7 area 6 3. a 0 point 2 6 9 8.
+q weight m 1 0 point 5. a 1 0 3.
+q buoyancy rho 1 3 6 0 0 vol 0 point 9 8. a 1 3 0 7 0 0.
+q magnetic_force charge 0 point 0 0 9 v 8 7 b 1. a 0 point 7 8 3.
+q gravity_force m 8 4 0 0 m 2 4 r 3. a 1 point 4 9 5 e minus 6.
+q magnetic_force charge 7 e minus 6 v 9 7 0 0 b 1. a 0 point 0 6 7 9.
+q friction mu 0 point 4 1 n 1 4. a 5 point 7 4.
+q lift rho 1 0 0 0 v 7 3 c 0 point 5 area 1 0 0. a 1 point 3 3 2 e 8.
+q weight m 1 6 7. a 1 6 3 8.
+q acceleration f 8 1 m 1 0. a 8 point 1.
+q acceleration f 1 m 7. a 0 point 1 4 2 9.
+q net_force f 6 4 f 1 4 opposite. a 5 0.
+q coulomb_force charge 6 e minus 9 charge 6 e minus 9 r 0 point 3. a 3 point 5 9 5 e minus 6.
+q orbital_speed m 6 point 5 e 2 2 r 3 point 3 e 8. a 1 1 4 point 7.
+q weight m 2 9 0 on earth. a 2 8 4 5.
+q spring_force k 6 2 0 x 0 point 8 5. a 5 2 7.
+q friction mu 0 point 6 3 n 3. a 1 point 8 9.
+q buoyancy rho 1 0 0 0 vol 8. a 7 8 4 8 0.
+q acceleration f 8 0 m 1 8. a 4 point 4 4 4.
+q tidal m 5 point 9 7 e 2 4 m 9 4 0 0 0 r 1 point 7 4 e 6 d 3 point 8 4 e 8. a 2 point 3 0 2.
+q check buoyancy rho 1 0 0 0 vol 0 point 2 equals 2 1 5 8. a no.
+q coulomb_force charge 5 e minus 9 charge 9 e minus 6 r 0 point 1 5. a 0 point 0 1 7 9 8.
+q longer_range spring radiation_pressure. a radiation_pressure.
+q magnetic_force charge 0 point 0 0 5 v 1 4 0 0 b 0 point 1. a 0 point 7.
+q thrust mdot 4 6 9 ve 3 2 0 0. a 1 point 5 0 1 e 6.
+q thrust mdot 4 0 6 ve 5 0 0. a 2 0 3 0 0 0.
+q thrust mdot 1 2 8 ve 3 4 0 0. a 4 3 5 2 0 0.
+q acceleration f 7 8 m 8 6. a 0 point 9 0 7.
+q escape_speed m 3 point 1 e 2 4 r 3 2 0 0 0 0. a 3 5 9 6 0.
+q centripetal m 2 0 v 6 r 1 0. a 7 2.
+q pressure f 3 7 0 area 0 point 0 1. a 3 7 0 0 0.
+q thrust mdot 1 7 5 ve 3 6 0 0. a 6 3 0 0 0 0.
+q escape_speed m 4 point 6 e 2 6 r 4 point 4 e 6. a 1 1 8 1 0 0.
+q orbital_speed m 5 point 6 8 e 2 6 r 5 point 8 3 e 7. a 2 5 5 0 0.
+q tidal m 7 point 9 e 2 2 m 1 5 r 7 point 8 e 6 d 1 point 8 e 9. a 2 point 1 1 5 e minus 7.
+q orbital_speed m 1 point 9 e 2 7 r 7 point 1 6 e 7. a 4 2 0 8 0.
+q magnetic_force charge 8 v 9 2 0 0 b 0 point 0 1. a 7 3 6.
+q orbital_speed m 7 point 8 e 2 4 r 3 3 0 0 0 0. a 3 9 7 2 0.
+q buoyancy rho 1 point 2 vol 0 point 3 2. a 3 point 7 6 7.
+q drag rho 1 v 2 1 c 1 point 2 area 1 0. a 2 6 4 6.
+q check thrust mdot 4 3 0 ve 4 0 0 0 equals 8 6 0 0 0 0. a no.
+q centripetal m 2 3 v 2 3 r 3. a 4 0 5 6.
+q tidal m 7 point 3 5 e 2 2 m 5 1 0 0 0 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 0 point 0 5 6 2 9.
+q check lift rho 1 v 2 0 c 0 point 2 area 1 equals 4 0. a yes.
+q tidal m 9 point 2 e 2 8 m 7 0 r 7 point 7 e 6 d 7 point 9 e 7. a 1 3 4 2 0.
+q longer_range magnetic gravity. a same.
+q spring_force k 4 9 x 0 point 0 3. a 1 point 4 7.
+q check pressure f 3 4 0 0 area 8 2 equals 4 point 1 4 6. a no.
+q tidal m 3 point 5 e 2 3 m 6 4 0 r 4 e 6 d 1 point 6 e 8. a 0 point 0 2 9 2.
+q orbital_speed m 3 point 9 e 2 4 r 8 point 6 e 8. a 5 5 0 point 1.
+q magnetic_force charge 7 v 5 5 b 2. a 7 7 0.
+q check forces examples comet_tail equals radiation_pressure. a yes.
+q magnetic_force charge 2 e minus 6 v 6 1 0 0 b 0 point 1. a 0 point 0 0 1 2 2.
+q centripetal m 5 0 v 1 2 r 1 0. a 7 2 0.
+q thrust mdot 2 7 ve 2 0 0 0. a 5 4 0 0 0.
+q buoyancy rho 1 3 9 0 vol 0 point 0 2 5. a 3 4 0 point 9.
+q escape_speed m 6 point 9 e 2 9 r 1 point 8 e 6. a 7 point 1 5 3 e 6.
+q check acceleration f 2 1 0 m 4 2 equals 5. a yes.
+q lift rho 1 0 2 5 v 6 9 c 0 point 5 area 1 0. a 1 point 2 2 e 7.
+q weight m 7 3. a 7 1 6 point 1.
+q weight m 6 7 4 on earth. a 6 6 1 2.
+q magnetic_force charge 8 e minus 6 v 1 0 0 0 b 1. a 0 point 0 0 8.
+q centripetal m 3 0 v 2 7 r 0 point 5. a 4 3 7 4 0.
+q spring_force k 7 6 x 0 point 3 7. a 2 8 point 1 2.
+q lift rho 1 point 2 v 8 6 c 0 point 2 area 5 0. a 4 4 3 7 6.
+q magnetic_force charge 0 point 0 0 6 v 2 3 b 2. a 0 point 2 7 6.
+q escape_speed m 7 point 3 e 2 7 r 3 9 0 0 0 0. a 1 point 5 8 1 e 6.
+q coulomb_force charge 6 e minus 6 charge 6 e minus 9 r 0 point 1. a 0 point 0 3 2 3 6.
+q orbital_speed m 4 point 4 e 2 8 r 5 point 2 e 6. a 7 5 1 5 0 0.
+q thrust mdot 2 3 5 0 ve 4 3 0 0. a 1 point 0 1 e 7.
+q buoyancy rho 1 0 0 0 vol 0 point 1. a 9 8 1.
+q magnetic_force charge 8 e minus 6 v 5 2 0 b 2. a 0 point 0 0 8 3 2.
+q check drag rho 1 0 2 5 v 4 1 c 1 area 0 point 1 equals 6 8 9 2 0. a no.
+q buoyancy rho 1 0 0 0 vol 0 point 0 1 7. a 1 6 6 point 8.
+q pressure f 1 5 area 0 point 9 9. a 1 5 point 1 5.
+q spring_force k 8 7 0 x 0 point 0 3. a 2 6 point 1.
+q orbital_speed m 4 point 1 e 2 4 r 8 point 3 e 8. a 5 7 4 point 2.
+q weight m 6 2 point 3 on jupiter. a 1 5 4 4.
+q thrust mdot 2 3 3 ve 1 7 0 0. a 3 9 6 1 0 0.
+q gravity_force m 6 2 0 0 0 m 4 8 r 1 0. a 1 point 9 8 6 e minus 6.
+q coulomb_force charge minus 5 e minus 6 charge 9 e minus 6 r 0 point 3. a minus 4 point 4 9 4.
+q gravity_force m 4 6 m 5 6 r 2 0. a 4 point 2 9 8 e minus 1 0.
+q check tidal m 7 point 3 5 e 2 2 m 3 4 0 r 6 point 3 7 e 6 d 3 point 8 4 e 8 equals 4 point 6 9 1 e minus 4. a no.
+q lift rho 1 0 2 5 v 7 9 c 0 point 8 area 2 0. a 5 point 1 1 8 e 7.
+q orbital_speed m 3 point 2 e 2 2 r 8 point 9 e 8. a 4 8 point 9 9.
+q buoyancy rho 1 point 2 vol 0 point 0 7. a 0 point 8 2 4.
+q weight m 9 3 point 5. a 9 1 7 point 2.
+q friction mu 0 point 3 7 n 1 7. a 6 point 2 9.
+q thrust mdot 1 1 9 ve 3 2 0 0. a 3 8 0 8 0 0.
+q gravity_force m 4 0 0 m 1 3 r 4. a 2 point 1 6 9 e minus 8.
+q spring_force k 3 6 0 x 0 point 2 4. a 8 6 point 4.
+q tidal m 4 e 2 6 m 1 1 r 4 point 9 e 7 d 7 point 6 e 9. a 6 point 5 5 6 e minus 5.
+q pressure f 2 7 0 area 0 point 2 4. a 1 1 2 5.
+q centripetal m 2 8 v 2 0 r 2 point 5. a 4 4 8 0.
+q net_force f 3 9 f 4 4 0 opposite. a 4 0 1.
+q thrust mdot 9 4 ve 7 0 0. a 6 5 8 0 0.
+q lift rho 1 0 2 5 v 2 4 c 1 point 2 area 0 point 5. a 1 7 7 1 2 0.
+q lift rho 1 point 2 v 1 5 c 1 point 2 area 2. a 3 2 4.
+q orbital_speed m 2 e 2 2 r 2 point 9 e 8. a 6 7 point 8 4.
+q gravity_force m 3 point 2 e 2 3 m 2 1 r 6 point 4 e 8. a 0 point 0 0 1 0 9 5.
+q pressure f 5 8 area 0 point 7 6. a 7 6 point 3 2.
+q check acceleration f 9 5 m 6 equals 1 5 point 8 3. a yes.
+q gravity_force m 4 point 8 e 2 7 m 9 9 r 8 2 0 0 0 0. a 4 point 7 1 7 e 7.
+q longer_range kinetic_friction electromagnetism. a electromagnetism.
+q pressure f 3 2 0 0 area 9 7. a 3 2 point 9 9.
+q drag rho 1 v 9 c 0 point 1 area 5. a 2 0 point 2 5.
+q centripetal m 2 4 v 8 r 1 0. a 1 5 3 point 6.
+q tidal m 4 point 2 e 2 3 m 9 6 0 0 0 r 9 7 0 0 0 0 d 7 point 8 e 9. a 1 point 1 e minus 5.
+q friction mu 0 point 9 1 n 4 2 0. a 3 8 2 point 2.
+q forces examples electric_motor. a electromagnetism magnetic.
+q check centripetal m 1 5 v 2 1 r 1 equals 3 3 0 8. a no.
+q longer_range surface_tension drag. a same.
+q centripetal m 1 7 v 2 7 r 1 point 5. a 8 2 6 2.
+q weight m 8 7 9 on jupiter. a 2 1 7 9 0.
+q net_force f 5 2 f 4 7 opposite. a 5.
+q surface_gravity m 4 point 4 e 2 8 r 8 point 3 e 6. a 4 2 6 3 0.
+q friction mu 0 point 4 5 n 5 5. a 2 4 point 7 5.
+q lift rho 1 point 2 v 1 1 c 1 point 5 area 5. a 5 4 4 point 5.
+q lift rho 1 0 0 0 v 2 4 c 1 area 2 0. a 5 point 7 6 e 6.
+q coulomb_force charge 8 e minus 9 charge 5 e minus 6 r 0 point 0 5. a 0 point 1 4 3 8.
+q coulomb_force charge minus 4 e minus 9 charge 6 e minus 6 r 0 point 0 2. a minus 0 point 5 3 9 3.
+q centripetal m 2 9 v 1 9 r 2. a 5 2 3 4.
+q weight m 8 8 point 4. a 8 6 7 point 2.
+q acceleration f 3 6 m 4 7. a 0 point 7 6 6.
+q tidal m 1 point 9 9 e 3 0 m 4 2 0 r 6 point 3 7 e 6 d 1 point 5 e 1 1. a 2 point 1 0 6 e minus 4.
+q orbital_speed m 4 point 8 7 e 2 4 r 7 point 0 5 e 6. a 6 7 9 0.
+q coulomb_force charge 9 e minus 6 charge 5 e minus 9 r 1. a 4 point 0 4 5 e minus 4.
+q longer_range surface_tension tidal. a tidal.
+q buoyancy rho 1 0 2 5 vol 6 point 7. a 6 7 3 7 0.
+q coulomb_force charge 5 e minus 6 charge 4 e minus 9 r 0 point 2. a 0 point 0 0 4 4 9 4.
+q longer_range nuclear_binding gravity. a gravity.
+q centripetal m 3 8 v 2 r 2 point 5. a 6 0 point 8.
+q magnetic_force charge 0 point 0 0 8 v 5 6 0 b 2. a 8 point 9 6.
+q orbital_speed m 1 point 0 2 e 2 6 r 6 point 0 4 e 7. a 1 0 6 2 0.
+q acceleration f 7 2 0 m 3 7. a 1 9 point 4 6.
+q coulomb_force charge 4 e minus 6 charge minus 2 e minus 9 r 0 point 5. a minus 2 point 8 7 6 e minus 4.
+q acceleration f 9 m 3 0. a 0 point 3.
+q drag rho 1 0 2 5 v 4 1 c 0 point 3 area 1 0. a 2 point 5 8 5 e 6.
+q lift rho 1 point 2 v 4 c 0 point 2 area 1 0 0. a 1 9 2.
+q weight m 2 3 5 on mars. a 8 7 6 point 5.
+q forces direction perpendicular_to_surface. a normal pressure_force.
+q check net_force f 7 5 0 f 1 1 opposite equals 7 3 9. a yes.
+q drag rho 1 0 2 5 v 5 5 c 0 point 5 area 0 point 5. a 3 8 7 6 0 0.
+q longer_range strong static_friction. a static_friction.
+q friction mu 0 point 7 2 n 6 2 0. a 4 4 6 point 4.
+q thrust mdot 2 0 4 ve 3 7 0 0. a 7 5 4 8 0 0.
+q gravity_force m 1 6 0 0 m 3 0 r 2 0. a 8 point 0 0 9 e minus 9.
+q centripetal m 2 5 v 1 5 r 4. a 1 4 0 6.
+q tidal m 4 point 5 e 2 9 m 9 7 r 3 point 4 e 7 d 8 point 7 e 9. a 0 point 3 0 0 8.
+q tidal m 4 point 9 e 2 3 m 2 8 0 r 4 point 8 e 7 d 9 point 5 e 1 1. a 1 point 0 2 5 e minus 1 2.
+q spring_force k 1 8 8 0 x 0 point 5 5. a 1 0 3 4.
+q thrust mdot 3 5 3 0 ve 2 3 0 0. a 8 point 1 1 9 e 6.
+q friction mu 0 point 7 6 n 3 5 0. a 2 6 6.
+q escape_speed m 5 point 6 8 e 2 6 r 6 point 0 2 e 7. a 3 5 4 9 0.
+q acceleration f 2 3 0 m 7 3. a 3 point 1 5 1.
+q acceleration f 2 8 m 7 9. a 0 point 3 5 4 4.
+q magnetic_force charge 9 e minus 6 v 6 2 b 0 point 2. a 1 point 1 1 6 e minus 4.
+q spring_force k 1 8 0 x 0 point 5 8. a 1 0 4 point 4.
+q gravity_force m 4 9 0 0 m 1 0 0 r 1 0 0. a 3 point 2 7 e minus 9.
+q acceleration f 9 9 0 m 3 7. a 2 6 point 7 6.
+q drag rho 1 0 0 0 v 3 6 c 0 point 3 area 1. a 1 9 4 4 0 0.
+q tidal m 1 point 9 e 2 7 m 3 0 0 0 r 1 point 8 2 e 6 d 4 point 2 2 e 8. a 1 8 point 4 3.
+q lift rho 1 point 2 v 4 6 c 1 area 1 0 0. a 1 2 6 9 6 0.
+q longer_range drag tidal. a tidal.
+q weight m 6 7 point 9. a 6 6 6 point 1.
+q net_force f 5 4 0 f 5 8 0 opposite. a 4 0.
+q surface_gravity m 4 point 1 e 2 6 r 8 point 5 e 8. a 0 point 0 3 7 8 7.
+q check escape_speed m 2 point 5 e 2 5 r 3 point 1 e 7 equals 1 0 3 8 0. a yes.
+q lift rho 1 0 2 5 v 7 3 c 1 point 5 area 1. a 4 point 0 9 7 e 6.
+q weight m 4 1 point 5 on jupiter. a 1 0 2 9.
+q escape_speed m 1 point 2 e 2 3 r 1 3 0 0 0 0. a 1 1 1 0 0.
+q buoyancy rho 1 point 2 vol 3 point 8. a 4 4 point 7 3.
+q escape_speed m 2 point 8 e 2 6 r 2 point 8 e 8. a 1 1 5 5 0.
+q magnetic_force charge 0 point 0 0 1 v 2 3 0 b 1. a 0 point 2 3.
+q orbital_speed m 7 point 5 e 2 9 r 9 point 8 e 8. a 2 2 6 0 0 0.
+q orbital_speed m 5 point 6 8 e 2 6 r 5 point 8 2 e 7. a 2 5 5 2 0.
+q check tidal m 1 point 9 e 2 7 m 9 0 0 0 0 r 3 point 6 e 6 d 7 point 3 e 8 equals 2 6 4. a no.
+q acceleration f 8 4 0 m 7 9. a 1 0 point 6 3.
+q surface_gravity m 7 point 7 e 2 5 r 9 point 4 e 7. a 0 point 5 8 1 6.
+q coulomb_force charge 4 e minus 6 charge 6 e minus 6 r 2. a 0 point 0 5 3 9 3.
+q acceleration f 1 8 m 5 6. a 0 point 3 2 1 4.
+q escape_speed m 1 point 9 9 e 3 0 r 6 point 9 7 e 8. a 6 1 7 3 0 0.
+q pressure f 5 3 area 6 3. a 0 point 8 4 1 3.
+q check thrust mdot 1 3 1 0 ve 2 4 0 0 equals 4 point 7 1 6 e 6. a no.
+q drag rho 1 0 2 5 v 4 2 c 0 point 1 area 5. a 4 5 2 0 2 5.
+q coulomb_force charge 9 e minus 6 charge 6 e minus 6 r 5. a 0 point 0 1 9 4 1.
+q pressure f 4 area 3 point 8. a 1 point 0 5 3.
+q pressure f 8 5 area 5. a 1 7.
+q check net_force f 9 1 f 2 3 0 opposite equals 1 3 9. a yes.
+q check spring_force k 1 8 3 0 x 0 point 9 5 equals 1 7 3 8. a yes.
+q friction mu 0 point 9 n 3 0. a 2 7.
+q magnetic_force charge 9 v 9 2 0 0 b 0 point 0 1. a 8 2 8.
+q buoyancy rho 1 3 6 0 0 vol 0 point 5. a 6 6 7 0 8.
+q surface_gravity m 4 point 9 e 2 4 r 3 point 5 e 6. a 2 6 point 7.
+q friction mu 0 point 3 7 n 6 1. a 2 2 point 5 7.
+q check tidal m 1 point 9 9 e 3 0 m 2 6 r 6 point 3 7 e 6 d 1 point 5 e 1 1 equals 6 point 5 1 5 e minus 6. a no.
+q friction mu 0 point 5 n 8 7. a 4 3 point 5.
+q surface_gravity m 1 point 8 e 2 6 r 2 point 1 e 6. a 2 7 2 4.
+q surface_gravity m 6 point 7 e 2 4 r 9 point 6 e 7. a 0 point 0 4 8 5 2.
+q check net_force f 6 6 0 f 4 6 same equals 7 0 6. a yes.
+q net_force f 6 8 0 f 1 1 opposite. a 6 6 9.
+q friction mu 0 point 5 6 n 3 8. a 2 1 point 2 8.
+q surface_gravity m 4 point 6 e 2 4 r 1 point 4 e 7. a 1 point 5 6 6.
+q tidal m 2 point 2 e 3 0 m 1 1 0 0 r 3 point 1 e 7 d 3 point 1 e 1 0. a 0 point 3 3 6 1.
+q drag rho 1 point 2 v 3 5 c 1 point 2 area 1. a 8 8 2.
+q longer_range weak ionic_bond. a ionic_bond.
+q friction mu 0 point 1 6 n 8 0. a 1 2 point 8.
+q magnetic_force charge 0 point 0 0 1 v 7 6 b 2. a 0 point 1 5 2.
+q longer_range magnetic strong. a magnetic.
+q surface_gravity m 2 point 3 e 2 8 r 5 point 3 e 8. a 5 point 4 6 5.
+q friction mu 0 point 3 8 n 1 5 5. a 5 8 point 9.
+q pressure f 4 7 area 3 3. a 1 point 4 2 4.
+q drag rho 1 point 2 v 2 2 c 1 point 2 area 2. a 6 9 7.
+q acceleration f 2 4 m 9 5. a 0 point 2 5 2 6.
+q spring_force k 8 3 0 x 0 point 2 3. a 1 9 0 point 9.
+q centripetal m 2 8 v 1 6 r 0 point 5. a 1 4 3 3 6.
+q centripetal m 2 1 v 2 5 r 1 point 5. a 8 7 5 0.
+q magnetic_force charge 0 point 0 0 3 v 2 3 b 2. a 0 point 1 3 8.
+q magnetic_force charge 6 e minus 6 v 9 2 0 0 b 0 point 2. a 0 point 0 1 1 0 4.
+q gravity_force m 1 point 6 e 2 4 m 2 9 0 0 0 r 2 point 4 e 7. a 5 3 7 6.
+q tidal m 7 point 4 e 2 7 m 1 6 0 r 7 point 5 e 6 d 7 point 9 e 1 0. a 2 point 4 0 4 e minus 6.
+q acceleration f 3 7 0 m 6 1. a 6 point 0 6 6.
+q friction mu 0 point 8 6 n 6 0. a 5 1 point 6.
+q tidal m 8 point 9 e 2 2 m 6 0 r 7 2 0 0 0 0 d 3 point 9 e 7. a 0 point 0 0 8 6 5 2.
+q tidal m 1 point 9 e 2 7 m 3 0 0 0 0 r 1 point 8 2 e 6 d 4 point 2 2 e 8. a 1 8 4 point 3.
+q forces described_by kutta. a lift.
+q escape_speed m 9 point 9 e 2 4 r 3 point 8 e 8. a 1 8 6 5.
+q coulomb_force charge 8 e minus 6 charge 4 e minus 6 r 0 point 1 5. a 1 2 point 7 8.
+q spring_force k 5 3 0 x 0 point 6 8. a 3 6 0 point 4.
+q tidal m 1 point 9 9 e 3 0 m 7 2 0 r 6 point 3 7 e 6 d 1 point 5 e 1 1. a 3 point 6 1 e minus 4.
+q lift rho 1 0 0 0 v 4 9 c 0 point 8 area 2. a 1 point 9 2 1 e 6.
+q check pressure f 1 0 0 0 area 8 point 2 equals 1 0 9 point 8. a no.
+q spring_force k 1 1 x 0 point 0 5. a 0 point 5 5.
+q net_force f 6 7 f 7 9 same. a 1 4 6.
+q magnetic_force charge 6 e minus 6 v 8 0 b 0 point 5. a 2 point 4 e minus 4.
+q acceleration f 6 2 m 5 7. a 1 point 0 8 8.
+q pressure f 9 area 4 point 4. a 2 point 0 4 5.
+q drag rho 1 0 2 5 v 3 8 c 0 point 3 area 0 point 1. a 2 2 2 0 0.
+q check weight m 7 7 7 on earth equals 1 5 2 4 4. a no.
+q acceleration f 6 9 m 1 2. a 5 point 7 5.
+q gravity_force m 1 point 0 2 e 2 6 m 5 1 0 0 0 r 2 point 4 8 e 7. a 5 6 4 5 0 0.
+q centripetal m 1 3 v 9 r 2. a 5 2 6 point 5.
+q orbital_speed m 2 point 7 e 2 9 r 3 5 0 0 0 0. a 7 point 1 7 5 e 6.
+q drag rho 1 point 2 v 5 3 c 1 area 0 point 0 1. a 1 6 point 8 5.
+q gravity_force m 5 5 0 0 0 m 4 8 r 5 0. a 7 point 0 4 8 e minus 8.
+q magnetic_force charge 6 e minus 6 v 7 2 b 0 point 5. a 2 point 1 6 e minus 4.
+q net_force f 7 4 0 f 8 7 opposite. a 6 5 3.
+q acceleration f 8 4 0 m 3. a 2 8 0.
+q centripetal m 3 2 v 1 5 r 1 point 5. a 4 8 0 0.
+q coulomb_force charge 8 e minus 9 charge 1 e minus 6 r 0 point 1. a 0 point 0 0 7 1 9.
+q check buoyancy rho 3 0 0 vol 0 point 0 3 7 equals 1 0 8 point 9. a yes.
+q centripetal m 5 0 v 1 0 r 4. a 1 2 5 0.
+q tidal m 4 point 9 e 2 7 m 6 8 r 7 8 0 0 0 0 d 6 point 5 e 6. a 1 2 6 3 0 0.
+q gravity_force m 9 2 0 0 m 8 5 r 1. a 5 point 2 1 9 e minus 5.
+q coulomb_force charge 4 e minus 6 charge minus 1 e minus 9 r 0 point 0 2. a minus 0 point 0 8 9 8 8.
+q net_force f 5 4 f 8 2 same. a 1 3 6.
+q check pressure f 2 3 area 3 5 equals 0 point 6 5 7 1. a yes.
+q magnetic_force charge 0 point 0 0 8 v 1 6 b 2. a 0 point 2 5 6.
+q longer_range gravity tidal. a same.
+q check orbital_speed m 1 point 9 e 2 7 r 7 point 2 5 e 7 equals 3 7 6 3 8. a no.
+q drag rho 1 point 2 v 5 c 0 point 1 area 0 point 5. a 0 point 7 5.

@@ -1,0 +1,174 @@
+{
+ "round": 5,
+ "seed": 20261001,
+ "budget_tokens": 350000,
+ "max_tokens": 80,
+ "earlier_prompts": 84953,
+ "topics": {
+  "maths": {
+   "lines": 5099,
+   "tokens": 104926,
+   "by_kind": {
+    "calc": 4370,
+    "yesno": 729
+   },
+   "budget": 105000,
+   "n": 5099,
+   "records": 0,
+   "seconds": 0.69,
+   "sealed": {
+    "lines": 898,
+    "tokens": 18865,
+    "by_kind": {
+     "calc": 748,
+     "yesno": 150
+    },
+    "drawn": 1000
+   },
+   "dropped": {
+    "long": 0,
+    "rejected": 0,
+    "conflict": 0,
+    "collision": 0,
+    "repeated": 0,
+    "seen": 102
+   }
+  },
+  "elements": {
+   "lines": 4692,
+   "tokens": 57774,
+   "by_kind": {
+    "calc": 1612,
+    "fact": 1316,
+    "record": 236,
+    "yesno": 1528
+   },
+   "budget": 57750,
+   "n": 4456,
+   "records": 236,
+   "seconds": 0.19,
+   "sealed": {
+    "lines": 449,
+    "tokens": 4696,
+    "by_kind": {
+     "calc": 212,
+     "fact": 95,
+     "yesno": 142
+    },
+    "drawn": 1000
+   },
+   "dropped": {
+    "long": 0,
+    "rejected": 0,
+    "conflict": 0,
+    "collision": 0,
+    "repeated": 0,
+    "seen": 551
+   }
+  },
+  "substances": {
+   "lines": 4050,
+   "tokens": 75116,
+   "by_kind": {
+    "calc": 1323,
+    "fact": 1438,
+    "record": 534,
+    "yesno": 755
+   },
+   "budget": 75250,
+   "n": 3516,
+   "records": 534,
+   "seconds": 0.4,
+   "sealed": {
+    "lines": 751,
+    "tokens": 9651,
+    "by_kind": {
+     "calc": 314,
+     "fact": 272,
+     "yesno": 165
+    },
+    "drawn": 1000
+   },
+   "dropped": {
+    "long": 0,
+    "rejected": 0,
+    "conflict": 0,
+    "collision": 0,
+    "repeated": 0,
+    "seen": 249
+   }
+  },
+  "reactions": {
+   "lines": 3017,
+   "tokens": 57801,
+   "by_kind": {
+    "calc": 885,
+    "fact": 1396,
+    "record": 173,
+    "yesno": 563
+   },
+   "budget": 57750,
+   "n": 2844,
+   "records": 173,
+   "seconds": 0.46,
+   "sealed": {
+    "lines": 451,
+    "tokens": 8767,
+    "by_kind": {
+     "calc": 159,
+     "fact": 158,
+     "yesno": 134
+    },
+    "drawn": 1000
+   },
+   "dropped": {
+    "long": 0,
+    "rejected": 0,
+    "conflict": 0,
+    "collision": 0,
+    "repeated": 0,
+    "seen": 549
+   }
+  },
+  "forces": {
+   "lines": 3067,
+   "tokens": 53898,
+   "by_kind": {
+    "calc": 1535,
+    "fact": 875,
+    "record": 31,
+    "yesno": 626
+   },
+   "budget": 54250,
+   "n": 3036,
+   "records": 31,
+   "seconds": 0.29,
+   "sealed": {
+    "lines": 458,
+    "tokens": 10017,
+    "by_kind": {
+     "calc": 386,
+     "fact": 27,
+     "yesno": 45
+    },
+    "drawn": 1000
+   },
+   "dropped": {
+    "long": 0,
+    "rejected": 0,
+    "conflict": 0,
+    "collision": 0,
+    "repeated": 0,
+    "seen": 542
+   }
+  }
+ },
+ "total": {
+  "lines": 19925,
+  "tokens": 349515,
+  "sealed_lines": 3007,
+  "sealed_tokens": 51996,
+  "dropped": 0,
+  "seconds": 2.03
+ }
+}

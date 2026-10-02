@@ -1,0 +1,19 @@
+{
+  "url": "http://192.168.178.171:8652/",
+  "host": "adler40",
+  "workspace": "/home/ender/haishool-v5-preview-20261001",
+  "module": "haishool.v5_app",
+  "launcher": "scripts/run-v5-preview-adler.sh",
+  "checkpoint": "haishool-v5-8x512-selected.pt",
+  "checkpoint_sha256": "c1d591cdd92cee78731116e469bfc57e960a17a543fa6acf9bc2647768c70550",
+  "science_ready": true,
+  "verified_tests": 100,
+  "public_v4b_services": "unchanged",
+  "verification": "model answer preserved; gate result shown separately",
+  "scope": "LAN preview; each question independent; no retraining",
+  "public_url": "https://crawford-earn-function-concern.trycloudflare.com/",
+  "public_directory": "https://enderpeer.github.io/homunculi-site/",
+  "tunnel_pid": 36048,
+  "tunnel_log": "runs/v5-public-tunnel.log",
+  "tunnel_lifetime": "temporary quick tunnel; update published URL after restart"
+}

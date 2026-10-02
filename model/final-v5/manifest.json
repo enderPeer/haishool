@@ -1,0 +1,184 @@
+{
+  "artifacts": {
+    "haishool-v5-6x384-selected.pt": {
+      "sha256": "634644c6e1380d7d1456d726b62a12c775cdf88c7504f6b419465ccbeeffb1b5",
+      "bytes": 65342917,
+      "source": "runs/final-v5/6x384-eval/student.pt",
+      "source_sha256": "423d0f4c2feec664faf3a53ccb18d2654196fb992a5ba1178f295c85bcca35ab",
+      "config": {
+        "vocab_size": 14398,
+        "n_layer": 6,
+        "n_head": 8,
+        "d_model": 384,
+        "ctx": 256,
+        "dropout": 0.1,
+        "bias": false,
+        "tie_embeddings": true
+      },
+      "phase": "selected",
+      "smoke": [
+        {
+          "prompt": "meadow use",
+          "expected": "pasture_recreation",
+          "got": "pasture_recreation"
+        },
+        {
+          "prompt": "file parts",
+          "expected": "pages_tabs",
+          "got": "pages_tabs"
+        },
+        {
+          "prompt": "gamestop_short_squeeze place",
+          "expected": "united_states",
+          "got": "united_states"
+        }
+      ],
+      "sealed_report": "6x384-sealed.json"
+    },
+    "haishool-v5-6x384-production.pt": {
+      "sha256": "6c2461dc79d9dd8b33357312885cd6f21ce2b63fde5cf6fb3310f17afe40b493",
+      "bytes": 66376735,
+      "source": "runs/final-v5/6x384-full/student.pt",
+      "source_sha256": "badf7ba34ec98a9acc6838c9691174b2afa631ca3ac21cde5a1cf75e4ed92b98",
+      "config": {
+        "vocab_size": 15060,
+        "n_layer": 6,
+        "n_head": 8,
+        "d_model": 384,
+        "ctx": 256,
+        "dropout": 0.1,
+        "bias": false,
+        "tie_embeddings": true
+      },
+      "phase": "production",
+      "smoke": [
+        {
+          "prompt": "chips color",
+          "expected": "brown_yellow",
+          "got": "brown_yellow"
+        },
+        {
+          "prompt": "dark_souls genre",
+          "expected": "action_role_playing",
+          "got": "action_role_playing"
+        },
+        {
+          "prompt": "earlobe parts",
+          "expected": "skin_only",
+          "got": "skin_only"
+        }
+      ],
+      "sealed_report": null
+    },
+    "haishool-v5-8x512-selected.pt": {
+      "sha256": "c1d591cdd92cee78731116e469bfc57e960a17a543fa6acf9bc2647768c70550",
+      "bytes": 131067525,
+      "source": "runs/final-v5/8x512-feedback/student.pt",
+      "source_sha256": "d00f1d2b86d251be915ca0cc509ae4b85efbbcaabd1acba9ddc0281e57bc0145",
+      "config": {
+        "vocab_size": 14401,
+        "n_layer": 8,
+        "n_head": 8,
+        "d_model": 512,
+        "ctx": 256,
+        "dropout": 0.1,
+        "bias": false,
+        "tie_embeddings": true
+      },
+      "phase": "selected",
+      "smoke": [
+        {
+          "prompt": "meadow use",
+          "expected": "pasture_recreation",
+          "got": "pasture_recreation"
+        },
+        {
+          "prompt": "file parts",
+          "expected": "pages_tabs",
+          "got": "pages_tabs"
+        },
+        {
+          "prompt": "gamestop_short_squeeze place",
+          "expected": "united_states",
+          "got": "united_states"
+        }
+      ],
+      "sealed_report": "8x512-sealed.json"
+    },
+    "haishool-v5-8x512-production.pt": {
+      "sha256": "20f836586646c342dc3ea1251bac8677e65c9f5c9d454bc645dc870b981d04b0",
+      "bytes": 132434103,
+      "source": "runs/final-v5/8x512-full/student.pt",
+      "source_sha256": "322a8b4f913ec7d8b8a3b2b97cbebc4dfb1fdf5c76ce7aaf54f54c5a1cddbde5",
+      "config": {
+        "vocab_size": 15060,
+        "n_layer": 8,
+        "n_head": 8,
+        "d_model": 512,
+        "ctx": 256,
+        "dropout": 0.1,
+        "bias": false,
+        "tie_embeddings": true
+      },
+      "phase": "production",
+      "smoke": [
+        {
+          "prompt": "chips color",
+          "expected": "brown_yellow",
+          "got": "brown_yellow"
+        },
+        {
+          "prompt": "dark_souls genre",
+          "expected": "action_role_playing",
+          "got": "action_role_playing"
+        },
+        {
+          "prompt": "earlobe parts",
+          "expected": "skin_only",
+          "got": "skin_only"
+        }
+      ],
+      "sealed_report": null
+    }
+  },
+  "reports": {
+    "6x384-corrections/report.json": "092d8f5c0eb8bab1c41a180c44eb71dca6c8e87a19e705153c720f6a227c3f64",
+    "6x384-eval/dev.json": "7a6c60a4d6003f426cd62853fdd15dc61ab99d4989f4fe738ee60dbf975db848",
+    "6x384-eval/dev.started.json": "5dc7e39fa44aaa4be8b34b1afbd569afdd558b3d43b6c367fe6a639ecd559ff1",
+    "6x384-eval/status.json": "a0529d849efae025b6539f55cb85000f421fc63b3b2ed3f8126780cc7b9f4efe",
+    "6x384-eval/training-report.json": "3fb8efd9f6d5715c444df9a5f3050b2c806174c6fe01ad0fbb0a825158d3bd29",
+    "6x384-feedback/dev.json": "9430a8f0c9900a8740c4b536ef1feed2cb9e6519ca9015057f03129b511f06b8",
+    "6x384-feedback/dev.started.json": "817ba58bc38b7759835db6e87c8bd76acc651add298855d04825383f76d8ed56",
+    "6x384-feedback/status.json": "8d778f6646c310d9a4ce51a0ae99f17094b3bff3f3aed8f12db06af6d6c0587c",
+    "6x384-feedback/training-report.json": "509b19a2251ce787266cb9bec57cd35adfc722909db45cdb97a6aa3f94654bfa",
+    "6x384-full/dev.json": "7cbfd206269b579d6c0c0b09c0c2b70c128bd7429b681e5d3244a21eb8c3a70c",
+    "6x384-full/dev.started.json": "f071ca9cdff7604a5306f7b5f884f09cbaae2529d2aabba99e8654aa6db6dc50",
+    "6x384-full/status.json": "252ca5a8f7bf80cc31971b3574a415c47dcf84758866ecd2a43397bcf51d4b92",
+    "6x384-full/training-report.json": "8d11a90c62839bde2591150cf286c0719ea1a40104ab8cce269c80d6f16ba133",
+    "6x384-sealed.json": "50731ee88c95c1d76a39cfdd7f40964b4f4361c4bc6b9040b88d6982e1e5130b",
+    "6x384-sealed.started.json": "dcb034bddd5b45b3b55c646b99d54fca6d3f779d157ad7882111587aaa8ff464",
+    "6x384-selection.json": "b32724049e99de35bda6a79bd34de188e54e67af370115a8313ab36a68faae8c",
+    "8x512-corrections/report.json": "fd7c07f203f7fedc38fd442458d3d71d07006c7f803b51f8fc12e6c689a51346",
+    "8x512-eval/dev.json": "2838742f7d092804ec736e284e0aad875e9aeb91fb5b0e92fabcbadeef93ceab",
+    "8x512-eval/dev.started.json": "a2140feb92b84067a296fcb7008b95a6bf10c89afcd6aebe28107c964de23210",
+    "8x512-eval/status.json": "1ed144ca26c32ef90cb663dee7ae6fa2031463d99a9ea083201b1ce5bef1c25c",
+    "8x512-eval/training-report.json": "f27dc1b42c604951e37942132c27b4ae1970eeb9b844fe0377b7e84edc9cfe79",
+    "8x512-feedback/dev.json": "5ff81eff1e23e8306934cfc1f8576cd7c29d297380c5b812de0e47d7286ebfa2",
+    "8x512-feedback/dev.started.json": "6f91155475c8cb65c24dbe24f4d11d7cca09daa03759daf50fec299381f944ae",
+    "8x512-feedback/status.json": "896cec1f910db03b3eae373ddfa314db9e5c5f0bdc16137887f4a7f19a05c645",
+    "8x512-feedback/training-report.json": "a8a0230ef0e462c71bf594f26d0a220e1ef8470d6593a90a42889ca44eb6f930",
+    "8x512-full/dev.json": "27e29b758f61c8784c6be72eda5fe4234253c8e58f6b40be0d89514769831a1c",
+    "8x512-full/dev.started.json": "28f7ed4fb0b8087b136a1f7fe24f52768cb8b96aa2b4812f2955d79d1c1c4989",
+    "8x512-full/status.json": "1add4389209a7df747e62da87b30c27341f4623c9e756561665bb2243d190938",
+    "8x512-full/training-report.json": "500d35263e7ba1b119ecb01310e13fbd6b8f851e41770820b06fb6d5b80e2e64",
+    "8x512-sealed.json": "6786c0d0efcfd3a52e6e281e9c5c3d47b2f77937f30730c527837217bb06a751",
+    "8x512-sealed.started.json": "ee10837bfb35d87794b32f1c1b34fa1ef08f487e9b7040fdee6abd562ff8b753",
+    "8x512-selection.json": "415f022d3894f1819cc091a9c17c3c2ca4096866d6dcfe81dbea8d8432126095",
+    "pipeline.json": "a9851f55fd91d0038cd2d498f6cb70248980afdc0e6f2aa3eee12d5375a2c9f5",
+    "status.json": "0ed9285adf880f36c87335a02bde3366bb4419f809f98d860a9f282224caa71b",
+    "summary.json": "c189c71977a1a8209f6fa1e5a520ef612d348d2cc192bdff0dad78090e860adc",
+    "dataset-report.json": "d2f0c3b306f8cc32c52bba4f6e051860eb85bdb7901f726731a8ee59482203a3"
+  },
+  "verification": "float32 tensors equal original; exported files loaded and generated on Adler",
+  "report_archive_sha256": "ca9ac375268d326adb6a22e555da0031920685b4ef559f0ac379297c17d56cbd"
+}

@@ -1,0 +1,28 @@
+{
+  "checkpoint": "d8d1c74638a454dd2141d59eb1f0743f1781cf90bf7a5f94cc0320e10d2075b7",
+  "data": "d2f0c3b306f8cc32c52bba4f6e051860eb85bdb7901f726731a8ee59482203a3",
+  "split": "dev",
+  "files": {
+    "elements-dev.txt": "356a7da50e03f50d499bc16c4c5ce7473c1719b75c3d65fc8e621a5445273648",
+    "forces-dev.txt": "b24dc63d4110e94ffa2afa1ed702f532de5b77a2a351e6c0be68d608eae66738",
+    "legacy_chem-dev.txt": "99fe7cb50e6d94f3ce6c56540abc4cdd47eddd37095823e3f006ab47b8e1112f",
+    "legacy_gravity-dev.txt": "cc73ebbcefec6e1bd4ccdf778551459033ea53d3b02841e460fdb2c402eb9770",
+    "legacy_life-dev.txt": "3fe4c038f8354a8bfde296161960c57f686ff426df23fe29890d2f709add3f16",
+    "legacy_nucleo-dev.txt": "c725537069ba2d92d7052624695b46728cacf7502a82de4e1dec8d8dd7c13702",
+    "legacy_planets-dev.txt": "0aa1d66bc33e3c686771b23217504a1f29dd1c4a2eddcd9697204cd5273c7a48",
+    "legacy_world-dev.txt": "4e30aebd63871092c680edbb4277c45859a5333e44371ab591a53b102157c367",
+    "maths-dev.txt": "ab6653e4f744267ddb8f087660a99c1593a5333a401c3ff95b621bfb75165336",
+    "predict_chem-dev.txt": "db810e1fc4c6287505e58ede0d358216c4488158e0625805456ccd81e8051678",
+    "predict_gravity-dev.txt": "9515011134b263429b306a473d53d8e82d157aea6fd7cbc5f217edd57b7ff7d0",
+    "predict_life-dev.txt": "e9584afd3fa9762e6ba75c2b40d113f1651d8e4c770848486ad5775470017d8b",
+    "predict_nucleo-dev.txt": "192c9be22485be55346169e4179db75fd978536b96a752ee901e526baa67b0b3",
+    "predict_planets-dev.txt": "6585a582d722e7973b7b2548952109672d045ba7c4a61436a8599caa988edb85",
+    "predict_world-dev.txt": "92abc8f31a54c683e65cc9b84200d3b5056fbc1278df8f336af00921dc528175",
+    "reactions-dev.txt": "0de9ecd69c1494451cae0066101be7236fc5fb29aa8fa57c314e4cefbb1a18c2",
+    "substances-dev.txt": "89b74ef8206d35981c5217eb31a00bcb64330233cd779cd0662ac69363da7968"
+  },
+  "old_files": {
+    "old-recall.txt": "20fbf4ababdf89a61118b77adf6a464fddfcea14e0d7ebf6f252b9c87ff7e801",
+    "old-heldout.txt": "646197a71fdea16fcae44fd97651c441b83fce09d230ecbcd118dd33bbbbabc6"
+  }
+}

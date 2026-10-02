@@ -1,0 +1,10 @@
+{
+  "steps": 30000,
+  "feedback_steps": 3000,
+  "production_steps": 3000,
+  "scale": 1.0,
+  "world_seeds": 512,
+  "batch": 48,
+  "device": "cuda",
+  "data": "data/final-v5"
+}

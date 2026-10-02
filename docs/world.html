@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Haishool World</title>
-<meta name="description" content="Haishool round 5: truth gates for maths, elements, substances, reactions and forces, and a toy universe from the first second to self-copying molecules. Built and checked; training in progress.">
+<meta name="description" content="Haishool round 5: truth gates and a toy universe. Final combined training is complete: measured results, verified checkpoints, and remaining limitations.">
 <style>
 :root{--bg:#f6f5f0;--fg:#1f2622;--muted:#647069;--card:#fffefa;--line:#dcd9cf;--accent:#2f6b4f;--accent-fg:#fff;--soft:#e8efe9;
 --ok:#2f6b4f;--okbg:#e3f0e8;--warn:#8a6410;--warnbg:#f4ecd6;--bad:#a33a2c;--badbg:#f6e1dd;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
@@ -56,7 +56,7 @@ footer{padding:32px 0 48px;color:var(--muted);font-size:14px}
 </head>
 <body>
 <header class="wrap">
-  <div class="eyebrow">Haishool round 5 · built and checked · training in progress</div>
+  <div class="eyebrow">Haishool round 5 · final training complete · experimental results</div>
   <h1>A universe small enough to check.</h1>
   <p class="lead">Facts and views come from people. Round 5 adds a second kind of truth: what follows from rules and can be checked by calculation. Maths, the elements, what things are made of, balanced reactions, the forces, and a toy universe that runs from the first second to molecules that copy themselves. Every answer has a gate: code that knows the truth and judges what the model says.</p>
   <div class="links"><a class="btn primary" href="#world">Explore a world</a><a class="btn ghost" href="hops.html">Version 4b: the links</a><a class="btn ghost" href="index.html">Haishool home</a></div>
@@ -128,14 +128,38 @@ q check 1 2 plus 7 equals 2 0. a no.</pre>
 <section class="wrap">
   <h2>Where it stands</h2>
   <ul class="status">
-    <li><span class="pill ok">done</span>Five gates, the feedback loop and six simulation levels are built; about 900 automated tests pass.</li>
+    <li><span class="pill ok">done</span>Five gates, the feedback loop and six simulation levels are built; more than 1,000 automated tests pass.</li>
     <li><span class="pill ok">done</span>Pilot training: old facts and link paths are unharmed; lookups in the new tables are right for 80 to 95 % of unseen questions.</li>
     <li><span class="pill ok">done</span>Experiment: the model learns to calculate from a stream of examples (table above).</li>
-    <li><span class="pill warn">now</span>All parts are being merged into one dataset; calculations are being rewritten as worked steps.</li>
-    <li><span class="pill warn">next</span>Full training, then the feedback loop: the model answers fresh questions, the gates mark them right or wrong, and both go back into training.</li>
-    <li><span class="pill bad">open</span>Physics and chemistry formulas were 0 to 7 % right on unseen questions in the pilot. Simulation questions do not yet carry their inputs, so the model can only memorise the worlds it saw.</li>
+    <li><span class="pill ok">done</span>The final curriculum has 2,272,426 training lines, 60,871,214 tokens and 3,456 simulation rollouts. Development and sealed sets each contain 4,352 questions; equivalent question forms stay in the same split.</li>
+    <li><span class="pill ok">done</span>Worked physics and chemistry calculations check every step. New simulation lessons include their inputs and predict analytical substeps or conditional expectations.</li>
+    <li><span class="pill ok">done</span>Both model sizes completed training, verified feedback, sealed evaluation and separate production refinements on 2026-10-01. The successful pipeline took 49 minutes 42 seconds on Adler.</li>
+    <li><span class="pill warn">result</span>The wide model is stronger: 39.42 % exact on 2,816 sealed truth/input-conditioned questions, against 34.48 % for the small model. Worked maths: 36 of 36 correct, against 34 of 36.</li>
+    <li><span class="pill bad">open</span>Wide-model nucleosynthesis, gravity and planet calculations were only 0 to 1.56 % exact. Old trained-fact recall was 96.9 % for the selected wide model, below the previous model's near-perfect recall. Full-world seed questions remain recall tests.</li>
   </ul>
-  <p>The model on the <a href="chat.html">chat</a> is still version 4b. Round 5 code and data will be published in the repository when the full training has run.</p>
+  <p>The model on the <a href="chat.html">chat</a> is still version 4b. Four experimental checkpoints and 36 reports have been exported and verified locally; they have not replaced the public model.</p>
+</section>
+
+<section class="wrap">
+  <h2>Final combined-model results</h2>
+  <p>Selected checkpoints, evaluated after development-based selection. Each topic contributes 256 sealed questions; six legacy simulation-recall topics are reported separately. Earlier maths-only results above use a different dataset and training objective.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Measure</th><th class="num">6 layers, width 384</th><th class="num">8 layers, width 512</th></tr></thead>
+    <tbody>
+      <tr class="new"><td>Sealed exact, eleven topics</td><td class="num">34.48 %</td><td class="num">39.42 %</td></tr>
+      <tr><td>Accepted by each topic's gate</td><td class="num">39.88 %</td><td class="num">44.78 %</td></tr>
+      <tr><td>Old trained facts recalled (1,000 sampled)</td><td class="num">92.9 %</td><td class="num">96.9 %</td></tr>
+      <tr><td>Maths, exact</td><td class="num">63.67 %</td><td class="num">74.61 %</td></tr>
+      <tr><td>Worked maths, exact</td><td class="num">34 / 36</td><td class="num">36 / 36</td></tr>
+      <tr><td>Worked forces, exact</td><td class="num">22 / 128</td><td class="num">37 / 128</td></tr>
+      <tr><td>Worked substances, exact</td><td class="num">38 / 141</td><td class="num">49 / 141</td></tr>
+      <tr><td>World handoffs, exact / accepted</td><td class="num">28.13 / 87.50 %</td><td class="num">38.67 / 97.66 %</td></tr>
+    </tbody>
+  </table></div>
+  <p>World handoff numbers allow 5 % error; most other input-conditioned gates require the canonical four-significant-digit answer. Acceptance is therefore a mixed-tolerance measure, not uniform exact accuracy or proof of physical understanding.</p>
+  <p>Feedback improved the wide candidate's development acceptance from 43.79 to 44.32 %. It reduced the small candidate's score from 40.80 to 40.20 %, so the small base checkpoint was selected. Each feedback pass checked 2,816 new questions.</p>
+  <p>The later production refinements have development reports only: exact / accepted 35.30 / 40.52 % for small and 40.06 / 44.67 % for wide. Their old-fact recall was 90.7 and 95.2 % on a changed sample. They do not inherit the selected checkpoints' sealed scores. The small production run also used correction data despite its feedback candidate having been rejected.</p>
+  <p>The next upgrade should protect old-fact recall explicitly and teach intermediate calculation steps for weak numeric predictions. The simulation outcomes on this page describe the toy rules, not the real probability of planets or life.</p>
 </section>
 
 <footer class="wrap">Haishool · code MIT, model and data CC BY 4.0 · element data from the mendeleev package · <a href="index.html">home</a></footer>

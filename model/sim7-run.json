@@ -1,0 +1,117 @@
+{
+  "status": "running",
+  "purpose": "Haishool trained on ONLY the simulated worlds of round 7 (lessons and stories of haishool/evo and the corrected round-6 levels of haishool/cosmos under rules 7): no old facts, no hops, no truth topics.",
+  "host": "adler40",
+  "workspace": "/home/ender/haishool-sim7",
+  "python": "/home/ender/homunculi/.venv/bin/python",
+  "gpu": "GPU 0 (RTX 4090) only, CUDA_VISIBLE_DEVICES=0; GPU 1 and the services on ports 8650-8652 untouched",
+  "tmux_session": "haishool-sim7",
+  "launch_command": "tmux new-session -d -s haishool-sim7 \"bash /home/ender/haishool-sim7/run-sim7.sh 2>&1 | tee -a /home/ender/haishool-sim7/sim7.log\"",
+  "launcher": "/home/ender/haishool-sim7/run-sim7.sh (only on adler; exports CUDA_VISIBLE_DEVICES=0, OMP_NUM_THREADS=1, OPENBLAS_NUM_THREADS=1, CUBLAS_WORKSPACE_CONFIG=:4096:8)",
+  "command": "/home/ender/homunculi/.venv/bin/python -u -m haishool.train_sim run --name sim7 --data data/evo-v7 --scale 1 --world-seeds 256 --workers 12 --steps 105000 --layers 8 --width 512 --heads 8 --ctx 256 --batch 48 --device cuda",
+  "log": "/home/ender/haishool-sim7/sim7.log",
+  "status_file": "/home/ender/haishool-sim7/runs/sim7/status.json",
+  "train_status_file": "/home/ender/haishool-sim7/runs/sim7/train/status.json",
+  "resume": "Run 'bash run-sim7.sh' again (in the same tmux session name): every phase resumes (training from runs/sim7/train/latest.pt, saved every 1000 steps). The training fingerprint includes the sha256 of every haishool/*.py file in the workspace, so do not edit code there before a resume. runs/sim7/settings.json locks the settings; runs/sim7/run.lock prevents a second launch.",
+  "code": {
+    "trainer": "haishool/train_final.py with --mix sim (train(mix='sim')); mix 'final' is the default and unchanged",
+    "pipeline": "haishool/train_sim.py",
+    "tests": "tests/test_train_sim.py"
+  },
+  "timeline_utc": {
+    "launched": "2026-10-02T10:13:44Z",
+    "dataset_built": "2026-10-02T10:17:37Z",
+    "gold_gate_check_passed": "2026-10-02T10:18:16Z",
+    "training_started": "2026-10-02T10:18:23Z",
+    "training_expected_end": "about 2026-10-02T11:11Z",
+    "run_expected_complete": "about 2026-10-02T11:20Z to 11:30Z (dev, sealed, train recall, summary, fp16 export after training)"
+  },
+  "expected_duration": {
+    "build_minutes": 3.9,
+    "gate_check_minutes": 0.7,
+    "training_minutes": 53,
+    "evaluation_and_export_minutes": "about 5 to 15",
+    "total_minutes": "about 65 to 75"
+  },
+  "model": {"layers": 8, "width": 512, "heads": 8, "context_tokens": 256, "batch": 48, "parameters_approx": "26 million (vocab 1465)", "precision": "bf16 autocast, float32 weights; export float16"},
+  "steps": 105000,
+  "steps_reason": "Measured on adler GPU 0 at exactly this configuration: 34.65 steps/s in a 2000-step benchmark on the smoke dataset (steps 100-2000, including a checkpoint), 33.08 steps/s on the real dataset (steps 100-3100). The default 60000 steps would train in about 29 minutes; 105000 steps give about 51 min at the benchmark rate and 53 min at the measured real rate, inside the requested 45-60 minutes with margin on both sides.",
+  "steps_per_second": {"benchmark_smoke_data": 34.65, "real_run_first_3100_steps": 33.08},
+  "sampled_tokens": 1290240000,
+  "token_mix": {
+    "rule": "lessons (predict_*) 0.8 and stories (legacy_*) 0.2 of the sampled tokens, each split equally among the 12 topics of its group",
+    "per_lesson_topic": 0.066667,
+    "per_story_topic": 0.016667,
+    "old_facts_hops_truth": 0,
+    "holdout": 0
+  },
+  "dataset": {
+    "path": "/home/ender/haishool-sim7/data/evo-v7",
+    "report": "data/evo-v7/report.json",
+    "report_sha256": "b2dce69537072e01b045213f0a6b21f922974f5b812eb8529fcef9b642c530dc",
+    "builder": "python -m haishool.curriculum7 build --out data/evo-v7 --scale 1.0 --world-seeds 256 --workers 12 --seed 20261001",
+    "build_seconds": 230.82,
+    "rollouts": {"total": 3456, "train_seeds": 256, "dev_seeds": 16, "sealed_seeds": 16},
+    "disk": "121 MB",
+    "totals": {
+      "train": {"lines": 719561, "tokens": 25292573},
+      "dev": {"lines": 6144, "tokens": 131547},
+      "sealed": {"lines": 6144, "tokens": 131771}
+    },
+    "vocabulary": 1465,
+    "dropped_long_lines": 0,
+    "topics": {
+      "predict_stars": {"train_lines": 30355, "train_tokens": 691834, "dev_lines": 256, "sealed_lines": 256, "status": "target_reached"},
+      "predict_cells": {"train_lines": 30480, "train_tokens": 730678, "dev_lines": 256, "sealed_lines": 256, "status": "target_reached"},
+      "predict_bodies": {"train_lines": 30246, "train_tokens": 780365, "dev_lines": 256, "sealed_lines": 256, "status": "target_reached"},
+      "predict_senses": {"train_lines": 30366, "train_tokens": 771155, "dev_lines": 256, "sealed_lines": 256, "status": "target_reached"},
+      "predict_signals": {"train_lines": 19078, "train_tokens": 345306, "dev_lines": 256, "sealed_lines": 256, "status": "saturated (finite input space; same token share as the other lesson topics, so more repetitions)"},
+      "predict_society": {"train_lines": 30349, "train_tokens": 751704, "dev_lines": 256, "sealed_lines": 256, "status": "target_reached"},
+      "predict_world7": {"train_lines": 30139, "train_tokens": 705823, "dev_lines": 256, "sealed_lines": 256, "status": "target_reached"},
+      "predict_nucleo_rules7": {"train_lines": 30480, "train_tokens": 843821, "dev_lines": 256, "sealed_lines": 256, "status": "target_reached"},
+      "predict_gravity_rules7": {"train_lines": 30296, "train_tokens": 916525, "dev_lines": 256, "sealed_lines": 256, "status": "target_reached"},
+      "predict_planets_rules7": {"train_lines": 30497, "train_tokens": 839275, "dev_lines": 256, "sealed_lines": 256, "status": "target_reached"},
+      "predict_chem_rules7": {"train_lines": 30219, "train_tokens": 628800, "dev_lines": 256, "sealed_lines": 256, "status": "target_reached"},
+      "predict_life_rules7": {"train_lines": 30335, "train_tokens": 705583, "dev_lines": 256, "sealed_lines": 256, "status": "target_reached"},
+      "legacy_stars": {"train_lines": 21470, "train_tokens": 1112735, "dev_lines": 256, "sealed_lines": 256},
+      "legacy_cells": {"train_lines": 24059, "train_tokens": 1036554, "dev_lines": 256, "sealed_lines": 256},
+      "legacy_bodies": {"train_lines": 31488, "train_tokens": 1539027, "dev_lines": 256, "sealed_lines": 256},
+      "legacy_senses": {"train_lines": 27136, "train_tokens": 1425463, "dev_lines": 256, "sealed_lines": 256},
+      "legacy_signals": {"train_lines": 43889, "train_tokens": 1308483, "dev_lines": 256, "sealed_lines": 256},
+      "legacy_society": {"train_lines": 33024, "train_tokens": 1795089, "dev_lines": 256, "sealed_lines": 256},
+      "legacy_world7": {"train_lines": 35089, "train_tokens": 784656, "dev_lines": 256, "sealed_lines": 256},
+      "legacy_nucleo_rules7": {"train_lines": 20508, "train_tokens": 784263, "dev_lines": 256, "sealed_lines": 256},
+      "legacy_gravity_rules7": {"train_lines": 28160, "train_tokens": 1895584, "dev_lines": 256, "sealed_lines": 256},
+      "legacy_planets_rules7": {"train_lines": 29668, "train_tokens": 984238, "dev_lines": 256, "sealed_lines": 256},
+      "legacy_chem_rules7": {"train_lines": 38694, "train_tokens": 1832880, "dev_lines": 256, "sealed_lines": 256},
+      "legacy_life_rules7": {"train_lines": 33536, "train_tokens": 2082732, "dev_lines": 256, "sealed_lines": 256}
+    },
+    "repetition_note": "1.29 billion sampled tokens over 25.3 million: each lesson topic is seen about 95-250 times (predict_signals most), each story topic about 10-27 times."
+  },
+  "evaluation": {
+    "policy": "dev and sealed are each evaluated once with a fingerprinted marker (final_run's rule): a started evaluation is never redone with another checkpoint. No selection between checkpoints: the final student.pt is evaluated.",
+    "gates": "lessons by their LessonGate (curriculum7.lesson_gates); stories by the level's simulation().check (haishool.evo.<level>; legacy_<old>_rules7 by haishool.cosmos.<old>.simulation(), which replays rules 7 prompts). All 12288 dev and sealed golds were accepted by these gates before training (runs/sim7/gates.json).",
+    "scoring": "final_run.score_lines / ask_many (greedy, equal-length batches); per-topic reports in final_run's format plus all_lines, seeded/seedless and language counts",
+    "unscorable_lines": "A dev or sealed prompt with a word outside the vocabulary (a world7 era such as replicators_2 that only a held-out world reaches) cannot be asked: such lines are listed under 'unscorable' and counted as wrong in all_lines and in summary.json.",
+    "caveat": "Dev and sealed story questions name seeds the model never saw (seeds are split train/dev/sealed for all levels at once), so they measure guessing, not memory; memorisation of stories is measured on the train split (train-recall.json: 256 sampled lines per story topic judged by the exact trained answer, and every world7 say/meaning line of the train worlds judged by the world7 gate). Lessons are computable from the question: their dev/sealed scores measure whether the rules were learned."
+  },
+  "results": {
+    "phase": "runs/sim7/status.json ('complete' when done; 'failed' with the error otherwise)",
+    "training_report": "runs/sim7/train/training-report.json (loss log, observed token mixture)",
+    "checkpoint": "runs/sim7/train/student.pt (float32, with optimizer state)",
+    "dev": "runs/sim7/dev.json",
+    "sealed": "runs/sim7/sealed.json",
+    "train_recall": "runs/sim7/train-recall.json",
+    "summary": "runs/sim7/summary.json: dev / sealed / train_recall, each with lessons and stories (macro and micro gate_ok, per topic), stories by seeded vs seedless lines, world7_language {say, meaning: n asked, right}",
+    "export": "runs/sim7/export/sim7-8x512-fp16.pt (keys model_state in float16, gpt_config, itos; loads with haishool.student.load) and sim7-8x512-fp16.json (sha256, max error vs float32, probe answers)"
+  },
+  "preflight": {
+    "local_tests": "python -m pytest -q tests/test_train_sim.py tests/test_train_final.py tests/test_final_run.py tests/test_curriculum7.py: 68 passed, 4 skipped (no torch on the workstation)",
+    "adler_tests": "same four files on adler (torch 2.14): 71 passed, 1 failed: tests/test_curriculum7.py::test_with_truth_writes_what_train_final_needs needs data/truth-v5/elements.jsonl, which was deliberately not copied to the workspace (the --with-truth option is not used by this run; the test passes on the workstation). All torch-dependent tests passed.",
+    "mix_final_unchanged": "prepare() of the round-5 fixture writes byte-identical files (prepared.json, token caches, old-recall, old-heldout) and weights with the new code as with the original train_final.py from ~/haishool-final-20261001; frozen in tests/test_train_sim.py. The default training config has no 'mix' key.",
+    "smoke": "train_sim run --name smoke --data data/evo-v7-smoke --scale 0.01 --world-seeds 8 --steps 50 on GPU 0: build, gate check (7363 golds), training (loss 7.39 -> 3.26), dev, sealed, recall, summary and fp16 export (54 MB, max error 4.9e-4) completed in 5.5 minutes",
+    "copied": "haishool, scripts, tests only (tar); data/records-r3-all.jsonl not copied: mix sim never reads it, and the builder's earlier-answer check cannot match a round-7 prompt"
+  },
+  "workspace_extras": "runs/smoke, data/evo-v7-smoke and runs/bench (the speed benchmark) take about 1.5 GB and can be removed after the run; the sim7 run itself uses about 1 GB (checkpoints 0.73 GB, token cache 0.1 GB, dataset 0.12 GB)",
+  "public_chat": "unchanged; no service on ports 8650-8652 touched"
+}

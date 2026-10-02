@@ -1,0 +1,835 @@
+q world seed 3 3 9 8 era nucleo hydrogen. a 0 point 6 8 7.
+q world seed 3 3 9 8 era nucleo helium. a 0 point 3 1 3.
+q world seed 3 3 9 8 era nucleo traces. a 2 point 9 1 e minus 5.
+q world seed 3 3 9 8 era enrichment generations. a 2.
+q world seed 3 3 9 8 era enrichment hydrogen. a 0 point 6 4 6.
+q world seed 3 3 9 8 era enrichment helium. a 0 point 3 4.
+q world seed 3 3 9 8 era enrichment metallicity. a 0 point 0 1 3 5.
+q world seed 3 3 9 8 era enrichment carbon. a 0 point 0 0 2 4 3.
+q world seed 3 3 9 8 era enrichment oxygen. a 0 point 0 0 5 9 5.
+q world seed 3 3 9 8 era enrichment iron. a 0 point 0 0 1 3 5.
+q world seed 3 3 9 8 era enrichment nitrogen. a 8 point 1 2 e minus 4.
+q world seed 3 3 9 8 era enrichment neon. a 0 point 0 0 1 3 5.
+q world seed 3 3 9 8 era enrichment magnesium. a 8 point 1 2 e minus 4.
+q world seed 3 3 9 8 era enrichment silicon. a 8 point 1 2 e minus 4.
+q world seed 3 3 9 8 era cloud spin. a 0 point 1 2.
+q world seed 3 3 9 8 era cloud cooling. a 0 point 3 7.
+q world seed 3 3 9 8 era disc flattening. a 0 point 1 0 2.
+q world seed 3 3 9 8 era disc spiral. a no.
+q world seed 3 3 9 8 era disc clumps. a 2.
+q world seed 3 3 9 8 era disc largest_clump. a 0 point 7 7 3.
+q world seed 3 3 9 8 era disc collapse_time. a 1 point 2.
+q world seed 3 3 9 8 era star fusion. a yes.
+q world seed 3 3 9 8 era star star_mass. a 1 point 1 6.
+q world seed 3 3 9 8 era star luminosity. a 1 point 6 8.
+q world seed 3 3 9 8 era star frost_line. a 3 point 5.
+q world seed 3 3 9 8 era star hz_inner. a 1 point 2 3.
+q world seed 3 3 9 8 era star hz_outer. a 2 point 2.
+q world seed 3 3 9 8 era star disc_mass. a 1 3 5.
+q world seed 3 3 9 8 era star t_gas. a 7 point 1.
+q world seed 3 3 9 8 era planets planets. a 6.
+q world seed 3 3 9 8 era planets rocky. a 3.
+q world seed 3 3 9 8 era planets ice. a 3.
+q world seed 3 3 9 8 era planets gas. a 0.
+q world seed 3 3 9 8 era planets habitable. a 1.
+q world seed 3 3 9 8 era planets largest_mass. a 8 1 point 8.
+q world seed 3 3 9 8 era chemistry_1 orbit. a 1 point 3 6.
+q world seed 3 3 9 8 era chemistry_1 mass. a 5 point 2 5.
+q world seed 3 3 9 8 era chemistry_1 temperature. a 3 0 5.
+q world seed 3 3 9 8 era chemistry_1 mix. a ocean.
+q world seed 3 3 9 8 era chemistry_1 water. a 5 5 8 5.
+q world seed 3 3 9 8 era chemistry_1 organic. a 1 7.
+q world seed 3 3 9 8 era life_1 monomers. a 1 1 9 0 0.
+q world seed 3 3 9 8 era life_1 first_replicator_step. a 1.
+q world seed 3 3 9 8 era life_1 peak_replicators. a 1 7 2 5.
+q world seed 3 3 9 8 era life_1 replicators. a 1 7 2 5.
+q world seed 3 3 9 8 era life_1 diversity. a 7 9.
+q world seed 3 3 9 8 era life_1 outcome. a coexist.
+q world seed 3 3 9 8 final hydrogen. a 0 point 6 4 6.
+q world seed 3 3 9 8 final helium. a 0 point 3 4.
+q world seed 3 3 9 8 final metallicity. a 0 point 0 1 3 5.
+q world seed 3 3 9 8 final clumps. a 2.
+q world seed 3 3 9 8 final planets. a 6.
+q world seed 3 3 9 8 final habitable. a 1.
+q world seed 3 3 9 8 final planets_with_water. a 1.
+q world seed 3 3 9 8 final planets_with_life. a 1.
+q world seed 3 3 9 8 final eras. a 8.
+q world seed 3 3 9 8 final outcome. a life.
+q world seed 3 3 9 8 param generations. a 2.
+q world seed 3 3 9 8 param spin. a 0 point 1 2.
+q world seed 3 3 9 8 param t_gas. a 7 point 1.
+q world seed 3 3 9 8 timeline. a nucleo enrichment cloud disc star planets chemistry_1 life_1.
+q world seed 3 3 9 8 why life. a metals star planets habitable water organic replicators survivors.
+q world handoff metallicity hydrogen 0 point 6 8 7 generations 2. a 0 point 0 1 3 5.
+q world handoff cooling metallicity 0 point 0 1 3 5. a 0 point 3 7.
+q world handoff disc_mass metallicity 0 point 0 1 3 5. a 1 3 5.
+q world handoff temperature star_mass 1 point 1 6 orbit 1 point 3 6. a 3 0 5.
+q world handoff luminosity star_mass 0 point 3 9 6. a 0 point 0 3 9 1.
+q world handoff temperature star_mass 1 point 3 5 orbit 1 point 2 6. a 3 5 5.
+q world handoff disc_mass metallicity 0 point 0 1 6 6. a 1 6 6.
+q world handoff frost_line star_mass 0 point 4 6 5. a 0 point 7 0 7.
+q world handoff disc_mass metallicity 0 point 0 2 0 4. a 2 0 4.
+q world handoff mix temperature 4 1 6. a rocky.
+q world handoff metallicity hydrogen 0 point 8 8 1 generations 2. a 0 point 0 1 7 4.
+q world handoff metallicity hydrogen 0 point 5 4 generations 1. a 0 point 0 0 5 4.
+q world handoff temperature star_mass 0 point 1 6 5 orbit 2 point 6 6. a 6 8.
+q world handoff temperature star_mass 0 point 1 6 orbit 4 point 1 9. a 6 0.
+q world handoff metallicity hydrogen 0 point 5 0 5 generations 3. a 0 point 0 1 4 7.
+q world handoff frost_line star_mass 0 point 8 0 7. a 1 point 8 6.
+q world handoff mix temperature 4 5 0. a rocky.
+q world handoff luminosity star_mass 0 point 7 6. a 0 point 3 8 3.
+q world seed 8 8 0 7 era nucleo hydrogen. a 0 point 5 9 5.
+q world seed 8 8 0 7 era nucleo helium. a 0 point 4 0 5.
+q world seed 8 8 0 7 era nucleo traces. a 3 point 2 8 e minus 5.
+q world seed 8 8 0 7 era enrichment generations. a 1.
+q world seed 8 8 0 7 era enrichment hydrogen. a 0 point 5 7 7.
+q world seed 8 8 0 7 era enrichment helium. a 0 point 4 1 7.
+q world seed 8 8 0 7 era enrichment metallicity. a 0 point 0 0 5 9 5.
+q world seed 8 8 0 7 era enrichment carbon. a 0 point 0 0 1 0 7.
+q world seed 8 8 0 7 era enrichment oxygen. a 0 point 0 0 2 6 2.
+q world seed 8 8 0 7 era enrichment iron. a 5 point 9 5 e minus 4.
+q world seed 8 8 0 7 era enrichment nitrogen. a 3 point 5 7 e minus 4.
+q world seed 8 8 0 7 era enrichment neon. a 5 point 9 5 e minus 4.
+q world seed 8 8 0 7 era enrichment magnesium. a 3 point 5 7 e minus 4.
+q world seed 8 8 0 7 era enrichment silicon. a 3 point 5 7 e minus 4.
+q world seed 8 8 0 7 era cloud spin. a 0 point 1 4.
+q world seed 8 8 0 7 era cloud cooling. a 0 point 2 2.
+q world seed 8 8 0 7 era disc flattening. a 0 point 2 9 2.
+q world seed 8 8 0 7 era disc spiral. a yes.
+q world seed 8 8 0 7 era disc clumps. a 2.
+q world seed 8 8 0 7 era disc largest_clump. a 0 point 6 7 2.
+q world seed 8 8 0 7 era disc collapse_time. a 1 point 2.
+q world seed 8 8 0 7 era star fusion. a yes.
+q world seed 8 8 0 7 era star star_mass. a 1 point 0 1.
+q world seed 8 8 0 7 era star luminosity. a 1 point 0 4.
+q world seed 8 8 0 7 era star frost_line. a 2 point 7 5.
+q world seed 8 8 0 7 era star hz_inner. a 0 point 9 6 7.
+q world seed 8 8 0 7 era star hz_outer. a 1 point 7 3.
+q world seed 8 8 0 7 era star disc_mass. a 5 9 point 5.
+q world seed 8 8 0 7 era star t_gas. a 8 point 9 9.
+q world seed 8 8 0 7 era planets planets. a 6.
+q world seed 8 8 0 7 era planets rocky. a 3.
+q world seed 8 8 0 7 era planets ice. a 3.
+q world seed 8 8 0 7 era planets gas. a 0.
+q world seed 8 8 0 7 era planets habitable. a 1.
+q world seed 8 8 0 7 era planets largest_mass. a 2 8.
+q world seed 8 8 0 7 era chemistry_1 orbit. a 1 point 3 8.
+q world seed 8 8 0 7 era chemistry_1 mass. a 2 point 0 8.
+q world seed 8 8 0 7 era chemistry_1 temperature. a 2 7 2.
+q world seed 8 8 0 7 era chemistry_1 mix. a rocky.
+q world seed 8 8 0 7 era chemistry_1 water. a 2 9.
+q world seed 8 8 0 7 era chemistry_1 organic. a 0.
+q world seed 8 8 0 7 final hydrogen. a 0 point 5 7 7.
+q world seed 8 8 0 7 final helium. a 0 point 4 1 7.
+q world seed 8 8 0 7 final metallicity. a 0 point 0 0 5 9 5.
+q world seed 8 8 0 7 final clumps. a 2.
+q world seed 8 8 0 7 final planets. a 6.
+q world seed 8 8 0 7 final habitable. a 1.
+q world seed 8 8 0 7 final planets_with_water. a 0.
+q world seed 8 8 0 7 final planets_with_life. a 0.
+q world seed 8 8 0 7 final eras. a 7.
+q world seed 8 8 0 7 final outcome. a no_water.
+q world seed 8 8 0 7 param generations. a 1.
+q world seed 8 8 0 7 param spin. a 0 point 1 4.
+q world seed 8 8 0 7 param t_gas. a 8 point 9 9.
+q world seed 8 8 0 7 timeline. a nucleo enrichment cloud disc star planets chemistry_1.
+q world seed 8 8 0 7 why no_water. a metals star planets habitable.
+q world handoff metallicity hydrogen 0 point 5 9 5 generations 1. a 0 point 0 0 5 9 5.
+q world handoff cooling metallicity 0 point 0 0 5 9 5. a 0 point 2 2.
+q world handoff star_mass largest_clump 0 point 6 7 2. a 1 point 0 1.
+q world handoff fusion star_mass 1 point 0 1. a yes.
+q world handoff luminosity star_mass 1 point 0 1. a 1 point 0 4.
+q world handoff frost_line star_mass 1 point 0 1. a 2 point 7 5.
+q world handoff disc_mass metallicity 0 point 0 0 5 9 5. a 5 9 point 5.
+q world handoff temperature star_mass 1 point 0 1 orbit 1 point 3 8. a 2 7 2.
+q world handoff metallicity hydrogen 0 point 7 4 7 generations 3. a 0 point 0 2 1 7.
+q world handoff temperature star_mass 0 point 2 9 6 orbit 4 point 5 6. a 7 8.
+q world handoff star_mass largest_clump 0 point 2 5 5. a 0 point 3 8 3.
+q world handoff fusion star_mass 0 point 0 3 4 7. a no.
+q world handoff mix temperature 2 1 2. a rocky.
+q world handoff cooling metallicity 0 point 0 1 2. a 0 point 3 4.
+q world handoff disc_mass metallicity 0 point 0 0 2 6 3. a 2 6 point 3.
+q world handoff star_mass largest_clump 0 point 6 4 7. a 0 point 9 7 1.
+q world handoff star_mass largest_clump 0 point 4 8 9. a 0 point 7 3 4.
+q world handoff star_mass largest_clump 0 point 1 7 1. a 0 point 2 5 7.
+q world handoff star_mass largest_clump 0 point 2 0 9. a 0 point 3 1 4.
+q world handoff cooling metallicity 0 point 0 2 1 7. a 0 point 5 3.
+q world handoff metallicity hydrogen 0 point 8 7 7 generations 2. a 0 point 0 1 7 3.
+q world seed 2 5 7 4 era nucleo hydrogen. a 0 point 7 9 8.
+q world seed 2 5 7 4 era nucleo helium. a 0 point 2 0 1.
+q world seed 2 5 7 4 era nucleo traces. a 2 point 8 4 e minus 4.
+q world seed 2 5 7 4 era enrichment generations. a 0.
+q world seed 2 5 7 4 era enrichment hydrogen. a 0 point 7 9 8.
+q world seed 2 5 7 4 era enrichment helium. a 0 point 2 0 1.
+q world seed 2 5 7 4 era enrichment metallicity. a 0.
+q world seed 2 5 7 4 era enrichment carbon. a 0.
+q world seed 2 5 7 4 era enrichment oxygen. a 0.
+q world seed 2 5 7 4 era enrichment iron. a 0.
+q world seed 2 5 7 4 era enrichment nitrogen. a 0.
+q world seed 2 5 7 4 era enrichment neon. a 0.
+q world seed 2 5 7 4 era enrichment magnesium. a 0.
+q world seed 2 5 7 4 era enrichment silicon. a 0.
+q world seed 2 5 7 4 era cloud spin. a 0 point 3 3.
+q world seed 2 5 7 4 era cloud cooling. a 0 point 1.
+q world seed 2 5 7 4 era disc flattening. a 0 point 3 8 7.
+q world seed 2 5 7 4 era disc spiral. a no.
+q world seed 2 5 7 4 era disc clumps. a 1.
+q world seed 2 5 7 4 era disc largest_clump. a 0 point 4 3 8.
+q world seed 2 5 7 4 era disc collapse_time. a 2 point 8.
+q world seed 2 5 7 4 era star fusion. a yes.
+q world seed 2 5 7 4 era star star_mass. a 0 point 6 5 7.
+q world seed 2 5 7 4 era star luminosity. a 0 point 2 3.
+q world seed 2 5 7 4 era star frost_line. a 1 point 2 9.
+q world seed 2 5 7 4 era star hz_inner. a 0 point 4 5 5.
+q world seed 2 5 7 4 era star hz_outer. a 0 point 8 1 5.
+q world seed 2 5 7 4 era star disc_mass. a 0.
+q world seed 2 5 7 4 era star t_gas. a 1 point 2 2.
+q world seed 2 5 7 4 era planets planets. a 0.
+q world seed 2 5 7 4 era planets rocky. a 0.
+q world seed 2 5 7 4 era planets ice. a 0.
+q world seed 2 5 7 4 era planets gas. a 0.
+q world seed 2 5 7 4 era planets habitable. a 0.
+q world seed 2 5 7 4 era planets largest_mass. a 0.
+q world seed 2 5 7 4 final hydrogen. a 0 point 7 9 8.
+q world seed 2 5 7 4 final helium. a 0 point 2 0 1.
+q world seed 2 5 7 4 final metallicity. a 0.
+q world seed 2 5 7 4 final clumps. a 1.
+q world seed 2 5 7 4 final planets. a 0.
+q world seed 2 5 7 4 final habitable. a 0.
+q world seed 2 5 7 4 final planets_with_water. a 0.
+q world seed 2 5 7 4 final planets_with_life. a 0.
+q world seed 2 5 7 4 final eras. a 6.
+q world seed 2 5 7 4 final outcome. a no_metals.
+q world seed 2 5 7 4 param generations. a 0.
+q world seed 2 5 7 4 param spin. a 0 point 3 3.
+q world seed 2 5 7 4 param t_gas. a 1 point 2 2.
+q world seed 2 5 7 4 timeline. a nucleo enrichment cloud disc star planets.
+q world seed 2 5 7 4 why no_metals. a star.
+q world handoff metallicity hydrogen 0 point 7 9 8 generations 0. a 0.
+q world handoff luminosity star_mass 0 point 0 3 4. a 0.
+q world handoff metallicity hydrogen 0 point 5 3 3 generations 1. a 0 point 0 0 5 3 3.
+q world handoff star_mass largest_clump 0 point 4 3 3. a 0 point 6 5.
+q world handoff frost_line star_mass 1 point 2 5. a 3 point 9 9.
+q world handoff luminosity star_mass 0 point 1 5 7. a 0 point 0 0 1 5 3.
+q world handoff temperature star_mass 0 point 8 0 5 orbit 3 point 9 1. a 1 4 9.
+q world handoff mix temperature 3 3 2. a ocean.
+q world handoff temperature star_mass 0 point 9 3 3 orbit 1 point 9 1. a 2 2 3.
+q world handoff cooling metallicity 0 point 0 0 6 0 3. a 0 point 2 2.
+q world handoff disc_mass metallicity 0 point 0 0 3 8 5. a 3 8 point 5.
+q world handoff mix temperature 2 6 6. a rocky.
+q world handoff frost_line star_mass 0 point 4 8 2. a 0 point 7 5 3.
+q world handoff fusion star_mass 0 point 1 3 1. a yes.
+q world handoff mix temperature 4 1 3. a rocky.
+q world handoff monomers organic 1 1. a 7 7 0 0.
+q world seed 8 0 4 3 era nucleo hydrogen. a 0 point 5 9 2.
+q world seed 8 0 4 3 era nucleo helium. a 0 point 4 0 8.
+q world seed 8 0 4 3 era nucleo traces. a 2 point 5 1 e minus 5.
+q world seed 8 0 4 3 era enrichment generations. a 2.
+q world seed 8 0 4 3 era enrichment hydrogen. a 0 point 5 5 7.
+q world seed 8 0 4 3 era enrichment helium. a 0 point 4 3 1.
+q world seed 8 0 4 3 era enrichment metallicity. a 0 point 0 1 1 7.
+q world seed 8 0 4 3 era enrichment carbon. a 0 point 0 0 2 1.
+q world seed 8 0 4 3 era enrichment oxygen. a 0 point 0 0 5 1 3.
+q world seed 8 0 4 3 era enrichment iron. a 0 point 0 0 1 1 7.
+q world seed 8 0 4 3 era enrichment nitrogen. a 7 e minus 4.
+q world seed 8 0 4 3 era enrichment neon. a 0 point 0 0 1 1 7.
+q world seed 8 0 4 3 era enrichment magnesium. a 7 e minus 4.
+q world seed 8 0 4 3 era enrichment silicon. a 7 e minus 4.
+q world seed 8 0 4 3 era cloud spin. a 0 point 1 8.
+q world seed 8 0 4 3 era cloud cooling. a 0 point 3 3.
+q world seed 8 0 4 3 era disc flattening. a 0 point 0 9 1.
+q world seed 8 0 4 3 era disc spiral. a no.
+q world seed 8 0 4 3 era disc clumps. a 2.
+q world seed 8 0 4 3 era disc largest_clump. a 0 point 6 9 9.
+q world seed 8 0 4 3 era disc collapse_time. a 1 point 2.
+q world seed 8 0 4 3 era star fusion. a yes.
+q world seed 8 0 4 3 era star star_mass. a 1 point 0 5.
+q world seed 8 0 4 3 era star luminosity. a 1 point 1 9.
+q world seed 8 0 4 3 era star frost_line. a 2 point 9 4.
+q world seed 8 0 4 3 era star hz_inner. a 1 point 0 3.
+q world seed 8 0 4 3 era star hz_outer. a 1 point 8 5.
+q world seed 8 0 4 3 era star disc_mass. a 1 1 7.
+q world seed 8 0 4 3 era star t_gas. a 2 point 2.
+q world seed 8 0 4 3 era planets planets. a 7.
+q world seed 8 0 4 3 era planets rocky. a 4.
+q world seed 8 0 4 3 era planets ice. a 3.
+q world seed 8 0 4 3 era planets gas. a 0.
+q world seed 8 0 4 3 era planets habitable. a 1.
+q world seed 8 0 4 3 era planets largest_mass. a 4 7 point 3.
+q world seed 8 0 4 3 era chemistry_1 orbit. a 1 point 4 6.
+q world seed 8 0 4 3 era chemistry_1 mass. a 4 point 0 6.
+q world seed 8 0 4 3 era chemistry_1 temperature. a 2 7 3.
+q world seed 8 0 4 3 era chemistry_1 mix. a ocean.
+q world seed 8 0 4 3 era chemistry_1 water. a 5 5 5 8.
+q world seed 8 0 4 3 era chemistry_1 organic. a 1 8.
+q world seed 8 0 4 3 era life_1 monomers. a 1 2 6 0 0.
+q world seed 8 0 4 3 era life_1 first_replicator_step. a 4.
+q world seed 8 0 4 3 era life_1 peak_replicators. a 2 6 0 3.
+q world seed 8 0 4 3 era life_1 replicators. a 2 6 0 3.
+q world seed 8 0 4 3 era life_1 diversity. a 8 7.
+q world seed 8 0 4 3 era life_1 outcome. a coexist.
+q world seed 8 0 4 3 final hydrogen. a 0 point 5 5 7.
+q world seed 8 0 4 3 final helium. a 0 point 4 3 1.
+q world seed 8 0 4 3 final metallicity. a 0 point 0 1 1 7.
+q world seed 8 0 4 3 final clumps. a 2.
+q world seed 8 0 4 3 final planets. a 7.
+q world seed 8 0 4 3 final habitable. a 1.
+q world seed 8 0 4 3 final planets_with_water. a 1.
+q world seed 8 0 4 3 final planets_with_life. a 1.
+q world seed 8 0 4 3 final eras. a 8.
+q world seed 8 0 4 3 final outcome. a life.
+q world seed 8 0 4 3 param generations. a 2.
+q world seed 8 0 4 3 param spin. a 0 point 1 8.
+q world seed 8 0 4 3 param t_gas. a 2 point 2.
+q world seed 8 0 4 3 timeline. a nucleo enrichment cloud disc star planets chemistry_1 life_1.
+q world seed 8 0 4 3 why life. a metals star planets habitable water organic replicators survivors.
+q world handoff metallicity hydrogen 0 point 5 9 2 generations 2. a 0 point 0 1 1 7.
+q world handoff cooling metallicity 0 point 0 1 1 7. a 0 point 3 3.
+q world handoff fusion star_mass 1 point 0 5. a yes.
+q world handoff frost_line star_mass 1 point 0 5. a 2 point 9 4.
+q world handoff disc_mass metallicity 0 point 0 1 1 7. a 1 1 7.
+q world handoff temperature star_mass 1 point 0 5 orbit 1 point 4 6. a 2 7 3.
+q world handoff star_mass largest_clump 0 point 2 0 1. a 0 point 3 0 2.
+q world handoff frost_line star_mass 1 point 2 4. a 3 point 9 3.
+q world handoff frost_line star_mass 0 point 9 5 7. a 2 point 5.
+q world handoff temperature star_mass 0 point 9 6 6 orbit 1 point 7 6. a 2 3 7.
+q world handoff star_mass largest_clump 0 point 5 5 4. a 0 point 8 3 1.
+q world handoff mix temperature 2 1 3. a rocky.
+q world handoff fusion star_mass 0 point 0 2 5 9. a no.
+q world handoff disc_mass metallicity 0 point 0 0 3 5 8. a 3 5 point 8.
+q world handoff frost_line star_mass 0 point 2 2 8. a 0 point 2 0 3.
+q world handoff mix temperature 2 5 1. a rocky.
+q world handoff metallicity hydrogen 0 point 7 4 4 generations 3. a 0 point 0 2 1 7.
+q world handoff fusion star_mass 0 point 1 8 3. a yes.
+q world handoff temperature star_mass 0 point 4 2 6 orbit 3 point 7 9. a 1 0 1.
+q world handoff cooling metallicity 0 point 0 1 8 6. a 0 point 4 7.
+q world handoff fusion star_mass 0 point 0 6 1 5. a no.
+q world seed 8 8 9 0 era nucleo hydrogen. a 0 point 7 8 3.
+q world seed 8 8 9 0 era nucleo helium. a 0 point 2 1 7.
+q world seed 8 8 9 0 era nucleo traces. a 3 point 0 7 e minus 5.
+q world seed 8 8 9 0 era enrichment generations. a 2.
+q world seed 8 8 9 0 era enrichment hydrogen. a 0 point 7 3 7.
+q world seed 8 8 9 0 era enrichment helium. a 0 point 2 4 7.
+q world seed 8 8 9 0 era enrichment metallicity. a 0 point 0 1 5 4.
+q world seed 8 8 9 0 era enrichment carbon. a 0 point 0 0 2 7 8.
+q world seed 8 8 9 0 era enrichment oxygen. a 0 point 0 0 6 7 9.
+q world seed 8 8 9 0 era enrichment iron. a 0 point 0 0 1 5 4.
+q world seed 8 8 9 0 era enrichment nitrogen. a 9 point 2 6 e minus 4.
+q world seed 8 8 9 0 era enrichment neon. a 0 point 0 0 1 5 4.
+q world seed 8 8 9 0 era enrichment magnesium. a 9 point 2 6 e minus 4.
+q world seed 8 8 9 0 era enrichment silicon. a 9 point 2 6 e minus 4.
+q world seed 8 8 9 0 era cloud spin. a 0 point 3.
+q world seed 8 8 9 0 era cloud cooling. a 0 point 4 1.
+q world seed 8 8 9 0 era disc flattening. a 0 point 0 4 2 6.
+q world seed 8 8 9 0 era disc spiral. a yes.
+q world seed 8 8 9 0 era disc clumps. a 7.
+q world seed 8 8 9 0 era disc largest_clump. a 0 point 6 4 8.
+q world seed 8 8 9 0 era disc collapse_time. a 1 point 7.
+q world seed 8 8 9 0 era star fusion. a yes.
+q world seed 8 8 9 0 era star star_mass. a 0 point 9 7 2.
+q world seed 8 8 9 0 era star luminosity. a 0 point 9 0 5.
+q world seed 8 8 9 0 era star frost_line. a 2 point 5 7.
+q world seed 8 8 9 0 era star hz_inner. a 0 point 9 0 4.
+q world seed 8 8 9 0 era star hz_outer. a 1 point 6 2.
+q world seed 8 8 9 0 era star disc_mass. a 1 5 4.
+q world seed 8 8 9 0 era star t_gas. a 7 point 9 5.
+q world seed 8 8 9 0 era planets planets. a 6.
+q world seed 8 8 9 0 era planets rocky. a 4.
+q world seed 8 8 9 0 era planets ice. a 2.
+q world seed 8 8 9 0 era planets gas. a 0.
+q world seed 8 8 9 0 era planets habitable. a 1.
+q world seed 8 8 9 0 era planets largest_mass. a 1 6 1.
+q world seed 8 8 9 0 era chemistry_1 orbit. a 1 point 1 6.
+q world seed 8 8 9 0 era chemistry_1 mass. a 2 point 4 9.
+q world seed 8 8 9 0 era chemistry_1 temperature. a 2 8 5.
+q world seed 8 8 9 0 era chemistry_1 mix. a ocean.
+q world seed 8 8 9 0 era chemistry_1 water. a 5 5 4 8.
+q world seed 8 8 9 0 era chemistry_1 organic. a 1 9.
+q world seed 8 8 9 0 era life_1 monomers. a 1 3 3 0 0.
+q world seed 8 8 9 0 era life_1 first_replicator_step. a 9.
+q world seed 8 8 9 0 era life_1 peak_replicators. a 1 3 6 7.
+q world seed 8 8 9 0 era life_1 replicators. a 1 3 6 7.
+q world seed 8 8 9 0 era life_1 diversity. a 4 7.
+q world seed 8 8 9 0 era life_1 outcome. a dominated.
+q world seed 8 8 9 0 final hydrogen. a 0 point 7 3 7.
+q world seed 8 8 9 0 final helium. a 0 point 2 4 7.
+q world seed 8 8 9 0 final metallicity. a 0 point 0 1 5 4.
+q world seed 8 8 9 0 final clumps. a 7.
+q world seed 8 8 9 0 final planets. a 6.
+q world seed 8 8 9 0 final habitable. a 1.
+q world seed 8 8 9 0 final planets_with_water. a 1.
+q world seed 8 8 9 0 final planets_with_life. a 1.
+q world seed 8 8 9 0 final eras. a 8.
+q world seed 8 8 9 0 final outcome. a dominated.
+q world seed 8 8 9 0 param generations. a 2.
+q world seed 8 8 9 0 param spin. a 0 point 3.
+q world seed 8 8 9 0 param t_gas. a 7 point 9 5.
+q world seed 8 8 9 0 timeline. a nucleo enrichment cloud disc star planets chemistry_1 life_1.
+q world seed 8 8 9 0 why dominated. a metals star planets habitable water organic replicators survivors.
+q world handoff metallicity hydrogen 0 point 7 8 3 generations 2. a 0 point 0 1 5 4.
+q world handoff star_mass largest_clump 0 point 6 4 8. a 0 point 9 7 2.
+q world handoff fusion star_mass 0 point 9 7 2. a yes.
+q world handoff luminosity star_mass 0 point 9 7 2. a 0 point 9 0 5.
+q world handoff frost_line star_mass 0 point 9 7 2. a 2 point 5 7.
+q world handoff temperature star_mass 0 point 9 7 2 orbit 1 point 1 6. a 2 8 5.
+q world handoff metallicity hydrogen 0 point 8 8 9 generations 3. a 0 point 0 2 5 9.
+q world handoff mix temperature 2 0 3. a rocky.
+q world handoff metallicity hydrogen 0 point 8 4 1 generations 1. a 0 point 0 0 8 4 1.
+q world handoff star_mass largest_clump 0 point 4 0 6. a 0 point 6 0 9.
+q world handoff star_mass largest_clump 0 point 8 8 7. a 1 point 3 3.
+q world handoff fusion star_mass 0 point 1 6 9. a yes.
+q world handoff frost_line star_mass 0 point 5 2 9. a 0 point 8 8 6.
+q world handoff cooling metallicity 0 point 0 0 2 3 2. a 0 point 1 5.
+q world handoff luminosity star_mass 0 point 5 5 4. a 0 point 1 2 7.
+q world handoff metallicity hydrogen 0 point 7 1 5 generations 1. a 0 point 0 0 7 1 5.
+q world handoff star_mass largest_clump 0 point 0 9 4 9. a 0 point 1 4 2.
+q world handoff luminosity star_mass 0 point 1 4 8. a 0 point 0 0 1 2 5.
+q world handoff fusion star_mass 0 point 0 2 6 7. a no.
+q world handoff mix temperature 3 6 1. a ocean.
+q world seed 9 4 4 2 era nucleo hydrogen. a 0 point 6 2.
+q world seed 9 4 4 2 era nucleo helium. a 0 point 3 7 9.
+q world seed 9 4 4 2 era nucleo traces. a 2 point 9 9 e minus 5.
+q world seed 9 4 4 2 era enrichment generations. a 0.
+q world seed 9 4 4 2 era enrichment hydrogen. a 0 point 6 2.
+q world seed 9 4 4 2 era enrichment helium. a 0 point 3 7 9.
+q world seed 9 4 4 2 era enrichment metallicity. a 0.
+q world seed 9 4 4 2 era enrichment carbon. a 0.
+q world seed 9 4 4 2 era enrichment oxygen. a 0.
+q world seed 9 4 4 2 era enrichment iron. a 0.
+q world seed 9 4 4 2 era enrichment nitrogen. a 0.
+q world seed 9 4 4 2 era enrichment neon. a 0.
+q world seed 9 4 4 2 era enrichment magnesium. a 0.
+q world seed 9 4 4 2 era enrichment silicon. a 0.
+q world seed 9 4 4 2 era cloud spin. a 0 point 3 4.
+q world seed 9 4 4 2 era cloud cooling. a 0 point 1.
+q world seed 9 4 4 2 era disc flattening. a 0 point 5 7 6.
+q world seed 9 4 4 2 era disc spiral. a no.
+q world seed 9 4 4 2 era disc clumps. a 1.
+q world seed 9 4 4 2 era disc largest_clump. a 0 point 3 9 5.
+q world seed 9 4 4 2 era disc collapse_time. a 2 point 8.
+q world seed 9 4 4 2 era star fusion. a yes.
+q world seed 9 4 4 2 era star star_mass. a 0 point 5 9 3.
+q world seed 9 4 4 2 era star luminosity. a 0 point 1 6 1.
+q world seed 9 4 4 2 era star frost_line. a 1 point 0 8.
+q world seed 9 4 4 2 era star hz_inner. a 0 point 3 8 1.
+q world seed 9 4 4 2 era star hz_outer. a 0 point 6 8 1.
+q world seed 9 4 4 2 era star disc_mass. a 0.
+q world seed 9 4 4 2 era star t_gas. a 3 point 5 6.
+q world seed 9 4 4 2 era planets planets. a 0.
+q world seed 9 4 4 2 era planets rocky. a 0.
+q world seed 9 4 4 2 era planets ice. a 0.
+q world seed 9 4 4 2 era planets gas. a 0.
+q world seed 9 4 4 2 era planets habitable. a 0.
+q world seed 9 4 4 2 era planets largest_mass. a 0.
+q world seed 9 4 4 2 final hydrogen. a 0 point 6 2.
+q world seed 9 4 4 2 final helium. a 0 point 3 7 9.
+q world seed 9 4 4 2 final metallicity. a 0.
+q world seed 9 4 4 2 final clumps. a 1.
+q world seed 9 4 4 2 final planets. a 0.
+q world seed 9 4 4 2 final habitable. a 0.
+q world seed 9 4 4 2 final planets_with_water. a 0.
+q world seed 9 4 4 2 final planets_with_life. a 0.
+q world seed 9 4 4 2 final eras. a 6.
+q world seed 9 4 4 2 final outcome. a no_metals.
+q world seed 9 4 4 2 param generations. a 0.
+q world seed 9 4 4 2 param spin. a 0 point 3 4.
+q world seed 9 4 4 2 param t_gas. a 3 point 5 6.
+q world seed 9 4 4 2 timeline. a nucleo enrichment cloud disc star planets.
+q world seed 9 4 4 2 why no_metals. a star.
+q world handoff metallicity hydrogen 0 point 6 2 generations 0. a 0.
+q world handoff fusion star_mass 0 point 5 9 3. a yes.
+q world handoff luminosity star_mass 0 point 5 9 3. a 0 point 1 6 1.
+q world handoff frost_line star_mass 0 point 5 9 3. a 1 point 0 8.
+q world handoff metallicity hydrogen 0 point 8 1 9 generations 0. a 0.
+q world handoff frost_line star_mass 0 point 0 8 7 7. a 0 point 0 3 8 2.
+q world handoff metallicity hydrogen 0 point 5 7 1 generations 3. a 0 point 0 1 6 6.
+q world handoff luminosity star_mass 0 point 2 2 8. a 0 point 0 0 5 6 6.
+q world handoff frost_line star_mass 0 point 7 2 5. a 1 point 5 4.
+q world handoff metallicity hydrogen 0 point 5 6 7 generations 0. a 0.
+q world handoff metallicity hydrogen 0 point 7 4 4 generations 1. a 0 point 0 0 7 4 4.
+q world handoff star_mass largest_clump 0 point 3 2. a 0 point 4 8.
+q world handoff temperature star_mass 0 point 5 4 orbit 3 point 0 6. a 1 2 6.
+q world handoff star_mass largest_clump 0 point 4 9 3. a 0 point 7 4.
+q world handoff temperature star_mass 1 point 2 1 orbit 4 point 3 3. a 1 9 1.
+q world handoff temperature star_mass 1 point 2 3 orbit 3 point 5 3. a 2 1 1.
+q world handoff frost_line star_mass 0 point 5 4 3. a 0 point 9 2 7.
+q world handoff mix temperature 2 1 7. a rocky.
+q world handoff disc_mass metallicity 0 point 0 0 7 9 7. a 7 9 point 7.
+q world handoff star_mass largest_clump 0 point 5 0 9. a 0 point 7 6 4.
+q world handoff disc_mass metallicity 0 point 0 2 2 3. a 2 2 3.
+q world seed 3 3 4 9 era nucleo hydrogen. a 0 point 6 2 1.
+q world seed 3 3 4 9 era nucleo helium. a 0 point 3 7 8.
+q world seed 3 3 4 9 era nucleo traces. a 4 point 5 3 e minus 5.
+q world seed 3 3 4 9 era enrichment generations. a 0.
+q world seed 3 3 4 9 era enrichment hydrogen. a 0 point 6 2 1.
+q world seed 3 3 4 9 era enrichment helium. a 0 point 3 7 8.
+q world seed 3 3 4 9 era enrichment metallicity. a 0.
+q world seed 3 3 4 9 era enrichment carbon. a 0.
+q world seed 3 3 4 9 era enrichment oxygen. a 0.
+q world seed 3 3 4 9 era enrichment iron. a 0.
+q world seed 3 3 4 9 era enrichment nitrogen. a 0.
+q world seed 3 3 4 9 era enrichment neon. a 0.
+q world seed 3 3 4 9 era enrichment magnesium. a 0.
+q world seed 3 3 4 9 era enrichment silicon. a 0.
+q world seed 3 3 4 9 era cloud spin. a 0 point 3 4.
+q world seed 3 3 4 9 era cloud cooling. a 0 point 1.
+q world seed 3 3 4 9 era disc flattening. a 0 point 4 4 4.
+q world seed 3 3 4 9 era disc spiral. a yes.
+q world seed 3 3 4 9 era disc clumps. a 2.
+q world seed 3 3 4 9 era disc largest_clump. a 0 point 4 6 9.
+q world seed 3 3 4 9 era disc collapse_time. a 2 point 3.
+q world seed 3 3 4 9 era star fusion. a yes.
+q world seed 3 3 4 9 era star star_mass. a 0 point 7 0 4.
+q world seed 3 3 4 9 era star luminosity. a 0 point 2 9 3.
+q world seed 3 3 4 9 era star frost_line. a 1 point 4 6.
+q world seed 3 3 4 9 era star hz_inner. a 0 point 5 1 4.
+q world seed 3 3 4 9 era star hz_outer. a 0 point 9 2.
+q world seed 3 3 4 9 era star disc_mass. a 0.
+q world seed 3 3 4 9 era star t_gas. a 1 point 9 4.
+q world seed 3 3 4 9 era planets planets. a 0.
+q world seed 3 3 4 9 era planets rocky. a 0.
+q world seed 3 3 4 9 era planets ice. a 0.
+q world seed 3 3 4 9 era planets gas. a 0.
+q world seed 3 3 4 9 era planets habitable. a 0.
+q world seed 3 3 4 9 era planets largest_mass. a 0.
+q world seed 3 3 4 9 final hydrogen. a 0 point 6 2 1.
+q world seed 3 3 4 9 final helium. a 0 point 3 7 8.
+q world seed 3 3 4 9 final metallicity. a 0.
+q world seed 3 3 4 9 final clumps. a 2.
+q world seed 3 3 4 9 final planets. a 0.
+q world seed 3 3 4 9 final habitable. a 0.
+q world seed 3 3 4 9 final planets_with_water. a 0.
+q world seed 3 3 4 9 final planets_with_life. a 0.
+q world seed 3 3 4 9 final eras. a 6.
+q world seed 3 3 4 9 final outcome. a no_metals.
+q world seed 3 3 4 9 param generations. a 0.
+q world seed 3 3 4 9 param spin. a 0 point 3 4.
+q world seed 3 3 4 9 param t_gas. a 1 point 9 4.
+q world seed 3 3 4 9 timeline. a nucleo enrichment cloud disc star planets.
+q world seed 3 3 4 9 why no_metals. a star.
+q world handoff metallicity hydrogen 0 point 6 2 1 generations 0. a 0.
+q world handoff frost_line star_mass 0 point 7 3 3. a 1 point 5 7.
+q world handoff temperature star_mass 1 point 2 orbit 0 point 4 4 8. a 5 2 1.
+q world handoff temperature star_mass 1 point 1 orbit 3 point 8 5. a 1 8 7.
+q world handoff metallicity hydrogen 0 point 7 1 2 generations 0. a 0.
+q world handoff mix temperature 4 4 7. a rocky.
+q world handoff disc_mass metallicity 0 point 0 0 6 5 9. a 6 5 point 9.
+q world handoff cooling metallicity 2 point 7 6 e minus 5. a 0 point 1.
+q world handoff metallicity hydrogen 0 point 8 7 4 generations 1. a 0 point 0 0 8 7 4.
+q world handoff temperature star_mass 1 point 4 orbit 4 point 7 7. a 2 0 4.
+q world handoff star_mass largest_clump 0 point 0 4 2 2. a 0 point 0 6 3 3.
+q world handoff luminosity star_mass 0 point 4 6 5. a 0 point 0 6 8 6.
+q world handoff fusion star_mass 0 point 0 7 1 2. a no.
+q world handoff fusion star_mass 0 point 0 8. a yes.
+q world handoff metallicity hydrogen 0 point 8 5 5 generations 1. a 0 point 0 0 8 5 5.
+q world handoff frost_line star_mass 0 point 9 1 6. a 2 point 3 2.
+q world seed 5 5 5 8 era nucleo hydrogen. a 0 point 7 0 8.
+q world seed 5 5 5 8 era nucleo helium. a 0 point 2 9 2.
+q world seed 5 5 5 8 era nucleo traces. a 3 point 9 6 e minus 5.
+q world seed 5 5 5 8 era enrichment generations. a 2.
+q world seed 5 5 5 8 era enrichment hydrogen. a 0 point 6 6 6.
+q world seed 5 5 5 8 era enrichment helium. a 0 point 3 2.
+q world seed 5 5 5 8 era enrichment metallicity. a 0 point 0 1 3 9.
+q world seed 5 5 5 8 era enrichment carbon. a 0 point 0 0 2 5 1.
+q world seed 5 5 5 8 era enrichment oxygen. a 0 point 0 0 6 1 4.
+q world seed 5 5 5 8 era enrichment iron. a 0 point 0 0 1 3 9.
+q world seed 5 5 5 8 era enrichment nitrogen. a 8 point 3 7 e minus 4.
+q world seed 5 5 5 8 era enrichment neon. a 0 point 0 0 1 3 9.
+q world seed 5 5 5 8 era enrichment magnesium. a 8 point 3 7 e minus 4.
+q world seed 5 5 5 8 era enrichment silicon. a 8 point 3 7 e minus 4.
+q world seed 5 5 5 8 era cloud spin. a 0 point 3 6.
+q world seed 5 5 5 8 era cloud cooling. a 0 point 3 8.
+q world seed 5 5 5 8 era disc flattening. a 0 point 0 3 4 3.
+q world seed 5 5 5 8 era disc spiral. a yes.
+q world seed 5 5 5 8 era disc clumps. a 6.
+q world seed 5 5 5 8 era disc largest_clump. a 0 point 6 2 9.
+q world seed 5 5 5 8 era disc collapse_time. a 1 point 5.
+q world seed 5 5 5 8 era star fusion. a yes.
+q world seed 5 5 5 8 era star star_mass. a 0 point 9 4 4.
+q world seed 5 5 5 8 era star luminosity. a 0 point 8 1 7.
+q world seed 5 5 5 8 era star frost_line. a 2 point 4 4.
+q world seed 5 5 5 8 era star hz_inner. a 0 point 8 5 9.
+q world seed 5 5 5 8 era star hz_outer. a 1 point 5 4.
+q world seed 5 5 5 8 era star disc_mass. a 1 3 9.
+q world seed 5 5 5 8 era star t_gas. a 4 point 7 5.
+q world seed 5 5 5 8 era planets planets. a 7.
+q world seed 5 5 5 8 era planets rocky. a 3.
+q world seed 5 5 5 8 era planets ice. a 4.
+q world seed 5 5 5 8 era planets gas. a 0.
+q world seed 5 5 5 8 era planets habitable. a 1.
+q world seed 5 5 5 8 era planets largest_mass. a 6 0 point 8.
+q world seed 5 5 5 8 era chemistry_1 orbit. a 0 point 9 9 7.
+q world seed 5 5 5 8 era chemistry_1 mass. a 3 point 4 8.
+q world seed 5 5 5 8 era chemistry_1 temperature. a 2 9 8.
+q world seed 5 5 5 8 era chemistry_1 mix. a ocean.
+q world seed 5 5 5 8 era chemistry_1 water. a 5 5 6 3.
+q world seed 5 5 5 8 era chemistry_1 organic. a 1 7.
+q world seed 5 5 5 8 era life_1 monomers. a 1 1 9 0 0.
+q world seed 5 5 5 8 era life_1 first_replicator_step. a 1.
+q world seed 5 5 5 8 era life_1 peak_replicators. a 1 6 8 4.
+q world seed 5 5 5 8 era life_1 replicators. a 1 6 8 4.
+q world seed 5 5 5 8 era life_1 diversity. a 8 2.
+q world seed 5 5 5 8 era life_1 outcome. a dominated.
+q world seed 5 5 5 8 final hydrogen. a 0 point 6 6 6.
+q world seed 5 5 5 8 final helium. a 0 point 3 2.
+q world seed 5 5 5 8 final metallicity. a 0 point 0 1 3 9.
+q world seed 5 5 5 8 final clumps. a 6.
+q world seed 5 5 5 8 final planets. a 7.
+q world seed 5 5 5 8 final habitable. a 1.
+q world seed 5 5 5 8 final planets_with_water. a 1.
+q world seed 5 5 5 8 final planets_with_life. a 1.
+q world seed 5 5 5 8 final eras. a 8.
+q world seed 5 5 5 8 final outcome. a dominated.
+q world seed 5 5 5 8 param generations. a 2.
+q world seed 5 5 5 8 param spin. a 0 point 3 6.
+q world seed 5 5 5 8 param t_gas. a 4 point 7 5.
+q world seed 5 5 5 8 timeline. a nucleo enrichment cloud disc star planets chemistry_1 life_1.
+q world seed 5 5 5 8 why dominated. a metals star planets habitable water organic replicators survivors.
+q world handoff metallicity hydrogen 0 point 7 0 8 generations 2. a 0 point 0 1 3 9.
+q world handoff cooling metallicity 0 point 0 1 3 9. a 0 point 3 8.
+q world handoff disc_mass metallicity 0 point 0 1 3 9. a 1 3 9.
+q world handoff temperature star_mass 0 point 9 4 4 orbit 0 point 9 9 7. a 2 9 8.
+q world handoff mix temperature 2 9 8. a ocean.
+q world handoff luminosity star_mass 0 point 4 3 4. a 0 point 0 5 3 9.
+q world handoff frost_line star_mass 0 point 8 7 3. a 2 point 1 3.
+q world handoff frost_line star_mass 0 point 4 4 5. a 0 point 6 5 5.
+q world handoff mix temperature 3 3 0. a ocean.
+q world handoff luminosity star_mass 0 point 3 7 2. a 0 point 0 3 1 4.
+q world handoff metallicity hydrogen 0 point 5 1 6 generations 1. a 0 point 0 0 5 1 6.
+q world handoff luminosity star_mass 0 point 0 5 6 3. a 0.
+q world handoff disc_mass metallicity 0 point 0 2 7 2. a 2 7 2.
+q world handoff fusion star_mass 0 point 0 6 9 7. a no.
+q world handoff frost_line star_mass 0 point 2 6 7. a 0 point 2 6 8.
+q world handoff cooling metallicity 0 point 0 0 2 5 2. a 0 point 1 5.
+q world handoff temperature star_mass 0 point 1 9 orbit 1 point 6 9. a 8 3.
+q world handoff luminosity star_mass 1 point 1 8. a 1 point 7 8.
+q world handoff cooling metallicity 0 point 0 2 9 7. a 0 point 6.
+q world handoff frost_line star_mass 0 point 5 0 2. a 0 point 8 0 8.
+q world handoff fusion star_mass 0 point 0 9 6 1. a yes.
+q world handoff luminosity star_mass 0 point 0 4. a 0.
+q world handoff temperature star_mass 0 point 2 orbit 4 point 6 3. a 6 5.
+q world handoff metallicity hydrogen 0 point 6 9 4 generations 1. a 0 point 0 0 6 9 4.
+q world seed 5 4 1 1 era nucleo hydrogen. a 0 point 8 0 2.
+q world seed 5 4 1 1 era nucleo helium. a 0 point 1 9 7.
+q world seed 5 4 1 1 era nucleo traces. a 2 point 7 3 e minus 4.
+q world seed 5 4 1 1 era enrichment generations. a 0.
+q world seed 5 4 1 1 era enrichment hydrogen. a 0 point 8 0 2.
+q world seed 5 4 1 1 era enrichment helium. a 0 point 1 9 7.
+q world seed 5 4 1 1 era enrichment metallicity. a 0.
+q world seed 5 4 1 1 era enrichment carbon. a 0.
+q world seed 5 4 1 1 era enrichment oxygen. a 0.
+q world seed 5 4 1 1 era enrichment iron. a 0.
+q world seed 5 4 1 1 era enrichment nitrogen. a 0.
+q world seed 5 4 1 1 era enrichment neon. a 0.
+q world seed 5 4 1 1 era enrichment magnesium. a 0.
+q world seed 5 4 1 1 era enrichment silicon. a 0.
+q world seed 5 4 1 1 era cloud spin. a 0 point 1 6.
+q world seed 5 4 1 1 era cloud cooling. a 0 point 1.
+q world seed 5 4 1 1 era disc flattening. a 0 point 4 8 1.
+q world seed 5 4 1 1 era disc spiral. a no.
+q world seed 5 4 1 1 era disc clumps. a 3.
+q world seed 5 4 1 1 era disc largest_clump. a 0 point 4 9 6.
+q world seed 5 4 1 1 era disc collapse_time. a 1 point 5.
+q world seed 5 4 1 1 era star fusion. a yes.
+q world seed 5 4 1 1 era star star_mass. a 0 point 7 4 4.
+q world seed 5 4 1 1 era star luminosity. a 0 point 3 5 5.
+q world seed 5 4 1 1 era star frost_line. a 1 point 6 1.
+q world seed 5 4 1 1 era star hz_inner. a 0 point 5 6 6.
+q world seed 5 4 1 1 era star hz_outer. a 1 point 0 1.
+q world seed 5 4 1 1 era star disc_mass. a 0.
+q world seed 5 4 1 1 era star t_gas. a 4 point 9 4.
+q world seed 5 4 1 1 era planets planets. a 0.
+q world seed 5 4 1 1 era planets rocky. a 0.
+q world seed 5 4 1 1 era planets ice. a 0.
+q world seed 5 4 1 1 era planets gas. a 0.
+q world seed 5 4 1 1 era planets habitable. a 0.
+q world seed 5 4 1 1 era planets largest_mass. a 0.
+q world seed 5 4 1 1 final hydrogen. a 0 point 8 0 2.
+q world seed 5 4 1 1 final helium. a 0 point 1 9 7.
+q world seed 5 4 1 1 final metallicity. a 0.
+q world seed 5 4 1 1 final clumps. a 3.
+q world seed 5 4 1 1 final planets. a 0.
+q world seed 5 4 1 1 final habitable. a 0.
+q world seed 5 4 1 1 final planets_with_water. a 0.
+q world seed 5 4 1 1 final planets_with_life. a 0.
+q world seed 5 4 1 1 final eras. a 6.
+q world seed 5 4 1 1 final outcome. a no_metals.
+q world seed 5 4 1 1 param generations. a 0.
+q world seed 5 4 1 1 param spin. a 0 point 1 6.
+q world seed 5 4 1 1 param t_gas. a 4 point 9 4.
+q world seed 5 4 1 1 timeline. a nucleo enrichment cloud disc star planets.
+q world seed 5 4 1 1 why no_metals. a star.
+q world handoff metallicity hydrogen 0 point 8 0 2 generations 0. a 0.
+q world handoff star_mass largest_clump 0 point 4 9 6. a 0 point 7 4 4.
+q world handoff fusion star_mass 0 point 7 4 4. a yes.
+q world handoff luminosity star_mass 0 point 7 4 4. a 0 point 3 5 5.
+q world handoff frost_line star_mass 0 point 7 4 4. a 1 point 6 1.
+q world handoff temperature star_mass 1 point 2 1 orbit 0 point 6 4. a 4 4 4.
+q world handoff fusion star_mass 0 point 1 9 2. a yes.
+q world handoff luminosity star_mass 0 point 6 0 2. a 0 point 1 6 9.
+q world handoff mix temperature 1 7 7. a rocky.
+q world handoff fusion star_mass 0 point 0 8 2 2. a yes.
+q world handoff mix temperature 2 6 4. a rocky.
+q world handoff metallicity hydrogen 0 point 5 8 4 generations 0. a 0.
+q world handoff metallicity hydrogen 0 point 6 3 2 generations 1. a 0 point 0 0 6 3 2.
+q world handoff temperature star_mass 0 point 7 6 4 orbit 4. a 1 4 3.
+q world handoff metallicity hydrogen 0 point 6 3 7 generations 2. a 0 point 0 1 2 5.
+q world handoff fusion star_mass 0 point 1 8 6. a yes.
+q world handoff disc_mass metallicity 0 point 0 0 1 0 2. a 1 0 point 2.
+q world handoff metallicity hydrogen 0 point 6 6 6 generations 0. a 0.
+q world seed 7 6 5 0 era nucleo hydrogen. a 0 point 7 1 2.
+q world seed 7 6 5 0 era nucleo helium. a 0 point 2 8 8.
+q world seed 7 6 5 0 era nucleo traces. a 1 point 9 3 e minus 5.
+q world seed 7 6 5 0 era enrichment generations. a 3.
+q world seed 7 6 5 0 era enrichment hydrogen. a 0 point 6 4 9.
+q world seed 7 6 5 0 era enrichment helium. a 0 point 3 3.
+q world seed 7 6 5 0 era enrichment metallicity. a 0 point 0 2 0 7.
+q world seed 7 6 5 0 era enrichment carbon. a 0 point 0 0 3 7 3.
+q world seed 7 6 5 0 era enrichment oxygen. a 0 point 0 0 9 1 1.
+q world seed 7 6 5 0 era enrichment iron. a 0 point 0 0 2 0 7.
+q world seed 7 6 5 0 era enrichment nitrogen. a 0 point 0 0 1 2 4.
+q world seed 7 6 5 0 era enrichment neon. a 0 point 0 0 2 0 7.
+q world seed 7 6 5 0 era enrichment magnesium. a 0 point 0 0 1 2 4.
+q world seed 7 6 5 0 era enrichment silicon. a 0 point 0 0 1 2 4.
+q world seed 7 6 5 0 era cloud spin. a 0 point 2 5.
+q world seed 7 6 5 0 era cloud cooling. a 0 point 5 1.
+q world seed 7 6 5 0 era disc flattening. a 0 point 0 2 1 2.
+q world seed 7 6 5 0 era disc spiral. a no.
+q world seed 7 6 5 0 era disc clumps. a 2.
+q world seed 7 6 5 0 era disc largest_clump. a 0 point 6 8 8.
+q world seed 7 6 5 0 era disc collapse_time. a 1 point 5.
+q world seed 7 6 5 0 era star fusion. a yes.
+q world seed 7 6 5 0 era star star_mass. a 1 point 0 3.
+q world seed 7 6 5 0 era star luminosity. a 1 point 1 1.
+q world seed 7 6 5 0 era star frost_line. a 2 point 8 4.
+q world seed 7 6 5 0 era star hz_inner. a 1.
+q world seed 7 6 5 0 era star hz_outer. a 1 point 7 9.
+q world seed 7 6 5 0 era star disc_mass. a 2 0 7.
+q world seed 7 6 5 0 era star t_gas. a 1 point 0 2.
+q world seed 7 6 5 0 era planets planets. a 7.
+q world seed 7 6 5 0 era planets rocky. a 4.
+q world seed 7 6 5 0 era planets ice. a 3.
+q world seed 7 6 5 0 era planets gas. a 0.
+q world seed 7 6 5 0 era planets habitable. a 1.
+q world seed 7 6 5 0 era planets largest_mass. a 9 1 point 2.
+q world seed 7 6 5 0 era chemistry_1 orbit. a 1 point 0 6.
+q world seed 7 6 5 0 era chemistry_1 mass. a 4 point 3 7.
+q world seed 7 6 5 0 era chemistry_1 temperature. a 3 1 0.
+q world seed 7 6 5 0 era chemistry_1 mix. a ocean.
+q world seed 7 6 5 0 era chemistry_1 water. a 5 6 0 1.
+q world seed 7 6 5 0 era chemistry_1 organic. a 2 1.
+q world seed 7 6 5 0 era life_1 monomers. a 1 4 7 0 0.
+q world seed 7 6 5 0 era life_1 first_replicator_step. a 4.
+q world seed 7 6 5 0 era life_1 peak_replicators. a 2 0 7.
+q world seed 7 6 5 0 era life_1 replicators. a 2 0 7.
+q world seed 7 6 5 0 era life_1 diversity. a 1 2.
+q world seed 7 6 5 0 era life_1 outcome. a coexist.
+q world seed 7 6 5 0 final hydrogen. a 0 point 6 4 9.
+q world seed 7 6 5 0 final helium. a 0 point 3 3.
+q world seed 7 6 5 0 final metallicity. a 0 point 0 2 0 7.
+q world seed 7 6 5 0 final clumps. a 2.
+q world seed 7 6 5 0 final planets. a 7.
+q world seed 7 6 5 0 final habitable. a 1.
+q world seed 7 6 5 0 final planets_with_water. a 1.
+q world seed 7 6 5 0 final planets_with_life. a 1.
+q world seed 7 6 5 0 final eras. a 8.
+q world seed 7 6 5 0 final outcome. a life.
+q world seed 7 6 5 0 param generations. a 3.
+q world seed 7 6 5 0 param spin. a 0 point 2 5.
+q world seed 7 6 5 0 param t_gas. a 1 point 0 2.
+q world seed 7 6 5 0 timeline. a nucleo enrichment cloud disc star planets chemistry_1 life_1.
+q world seed 7 6 5 0 why life. a metals star planets habitable water organic replicators survivors.
+q world handoff metallicity hydrogen 0 point 7 1 2 generations 3. a 0 point 0 2 0 7.
+q world handoff cooling metallicity 0 point 0 2 0 7. a 0 point 5 1.
+q world handoff star_mass largest_clump 0 point 6 8 8. a 1 point 0 3.
+q world handoff fusion star_mass 1 point 0 3. a yes.
+q world handoff luminosity star_mass 1 point 0 3. a 1 point 1 1.
+q world handoff disc_mass metallicity 0 point 0 2 0 7. a 2 0 7.
+q world handoff temperature star_mass 1 point 0 3 orbit 1 point 0 6. a 3 1 0.
+q world handoff temperature star_mass 0 point 1 8 9 orbit 4 point 5 4. a 6 3.
+q world handoff temperature star_mass 0 point 8 6 8 orbit 1 point 1 6. a 2 6 1.
+q world handoff temperature star_mass 0 point 8 5 9 orbit 4 point 7 4. a 1 4 5.
+q world handoff mix temperature 3 6 5. a ocean.
+q world handoff luminosity star_mass 0 point 1 5 2. a 0 point 0 0 1 3 7.
+q world handoff fusion star_mass 0 point 1 8 7. a yes.
+q world handoff metallicity hydrogen 0 point 5 4 3 generations 2. a 0 point 0 1 0 7.
+q world handoff star_mass largest_clump 0 point 3 6. a 0 point 5 4.
+q world handoff disc_mass metallicity 0 point 0 1 5 9. a 1 5 9.
+q world handoff temperature star_mass 0 point 6 2 3 orbit 1 point 1 5. a 2 0 5.
+q world handoff metallicity hydrogen 0 point 7 3 4 generations 2. a 0 point 0 1 4 5.
+q world handoff fusion star_mass 0 point 0 5 7. a no.
+q world handoff temperature star_mass 1 point 3 7 orbit 1 point 5 6. a 3 2 6.
+q world handoff luminosity star_mass 0 point 8 6 4. a 0 point 6.
+q world handoff metallicity hydrogen 0 point 8 3 6 generations 1. a 0 point 0 0 8 3 6.
+q world handoff mix temperature 1 6 1. a rocky.
+q world handoff temperature star_mass 0 point 5 3 1 orbit 4 point 4 1. a 1 0 9.
+q world seed 7 2 5 8 era nucleo hydrogen. a 0 point 8 3 1.
+q world seed 7 2 5 8 era nucleo helium. a 0 point 1 6 9.
+q world seed 7 2 5 8 era nucleo traces. a 2 point 0 9 e minus 5.
+q world seed 7 2 5 8 era enrichment generations. a 0.
+q world seed 7 2 5 8 era enrichment hydrogen. a 0 point 8 3 1.
+q world seed 7 2 5 8 era enrichment helium. a 0 point 1 6 9.
+q world seed 7 2 5 8 era enrichment metallicity. a 0.
+q world seed 7 2 5 8 era enrichment carbon. a 0.
+q world seed 7 2 5 8 era enrichment oxygen. a 0.
+q world seed 7 2 5 8 era enrichment iron. a 0.
+q world seed 7 2 5 8 era enrichment nitrogen. a 0.
+q world seed 7 2 5 8 era enrichment neon. a 0.
+q world seed 7 2 5 8 era enrichment magnesium. a 0.
+q world seed 7 2 5 8 era enrichment silicon. a 0.
+q world seed 7 2 5 8 era cloud spin. a 0 point 3 7.
+q world seed 7 2 5 8 era cloud cooling. a 0 point 1.
+q world seed 7 2 5 8 era disc flattening. a 0 point 3 8 1.
+q world seed 7 2 5 8 era disc spiral. a yes.
+q world seed 7 2 5 8 era disc clumps. a 2.
+q world seed 7 2 5 8 era disc largest_clump. a 0 point 3 5 2.
+q world seed 7 2 5 8 era disc collapse_time. a 3 point 3.
+q world seed 7 2 5 8 era star fusion. a yes.
+q world seed 7 2 5 8 era star star_mass. a 0 point 5 2 8.
+q world seed 7 2 5 8 era star luminosity. a 0 point 1 0 7.
+q world seed 7 2 5 8 era star frost_line. a 0 point 8 8 3.
+q world seed 7 2 5 8 era star hz_inner. a 0 point 3 1 1.
+q world seed 7 2 5 8 era star hz_outer. a 0 point 5 5 6.
+q world seed 7 2 5 8 era star disc_mass. a 0.
+q world seed 7 2 5 8 era star t_gas. a 3 point 7 5.
+q world seed 7 2 5 8 era planets planets. a 0.
+q world seed 7 2 5 8 era planets rocky. a 0.
+q world seed 7 2 5 8 era planets ice. a 0.
+q world seed 7 2 5 8 era planets gas. a 0.
+q world seed 7 2 5 8 era planets habitable. a 0.
+q world seed 7 2 5 8 era planets largest_mass. a 0.
+q world seed 7 2 5 8 final hydrogen. a 0 point 8 3 1.
+q world seed 7 2 5 8 final helium. a 0 point 1 6 9.
+q world seed 7 2 5 8 final metallicity. a 0.
+q world seed 7 2 5 8 final clumps. a 2.
+q world seed 7 2 5 8 final planets. a 0.
+q world seed 7 2 5 8 final habitable. a 0.
+q world seed 7 2 5 8 final planets_with_water. a 0.
+q world seed 7 2 5 8 final planets_with_life. a 0.
+q world seed 7 2 5 8 final eras. a 6.
+q world seed 7 2 5 8 final outcome. a no_metals.
+q world seed 7 2 5 8 param generations. a 0.
+q world seed 7 2 5 8 param spin. a 0 point 3 7.
+q world seed 7 2 5 8 param t_gas. a 3 point 7 5.
+q world seed 7 2 5 8 timeline. a nucleo enrichment cloud disc star planets.
+q world seed 7 2 5 8 why no_metals. a star.
+q world handoff star_mass largest_clump 0 point 3 5 2. a 0 point 5 2 8.
+q world handoff fusion star_mass 0 point 5 2 8. a yes.
+q world handoff luminosity star_mass 0 point 5 2 8. a 0 point 1 0 7.
+q world handoff frost_line star_mass 0 point 5 2 8. a 0 point 8 8 3.
+q world handoff disc_mass metallicity 0 point 0 1 4 1. a 1 4 1.
+q world handoff frost_line star_mass 1 point 3 1. a 4 point 3 3.
+q world handoff star_mass largest_clump 0 point 3 6 2. a 0 point 5 4 3.
+q world handoff temperature star_mass 0 point 8 7 9 orbit 0 point 4 5 8. a 4 0 0.
+q world handoff star_mass largest_clump 0 point 3 1 4. a 0 point 4 7 1.
+q world handoff cooling metallicity 0 point 0 2 5 2. a 0 point 6.
+q world handoff star_mass largest_clump 0 point 6 9 2. a 1 point 0 4.
+q world handoff metallicity hydrogen 0 point 8 8 4 generations 0. a 0.
+q world handoff cooling metallicity 0 point 0 0 2 3 5. a 0 point 1 5.
+q world handoff disc_mass metallicity 0 point 0 0 9 5 5. a 9 5 point 5.
+q world handoff fusion star_mass 0 point 0 5 6 5. a no.
+q world handoff luminosity star_mass 0 point 0 4 4 6. a 0.
+q world handoff star_mass largest_clump 0 point 2 0 2. a 0 point 3 0 3.
+q world handoff fusion star_mass 0 point 0 6 6 6. a no.
+q world handoff fusion star_mass 0 point 0 6 5 1. a no.
+q world handoff mix temperature 3 3 9. a ocean.

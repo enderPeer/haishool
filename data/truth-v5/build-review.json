@@ -1,0 +1,910 @@
+{
+ "integration": {
+  "files": [
+   "C:\\Users\\end\\Desktop\\Haishool\\haishool\\round5.py",
+   "C:\\Users\\end\\Desktop\\Haishool\\tests\\test_round5.py",
+   "C:\\Users\\end\\Desktop\\Haishool\\haishool\\truth\\__init__.py (edited: new is_finite)",
+   "C:\\Users\\end\\Desktop\\Haishool\\haishool\\truth\\elements.py (edited: one line, is_finite)",
+   "C:\\Users\\end\\Desktop\\Haishool\\haishool\\truth\\reactions.py (edited: one line, is_finite)",
+   "C:\\Users\\end\\Desktop\\Haishool\\haishool\\truth\\forces.py (edited: two lines, is_finite)",
+   "C:\\Users\\end\\Desktop\\Haishool\\haishool\\cosmos\\__init__.py (edited: close() rejects non-finite numbers)",
+   "C:\\Users\\end\\Desktop\\Haishool\\haishool\\cosmos\\planets.py (edited: one line, is_finite)",
+   "C:\\Users\\end\\Desktop\\Haishool\\haishool\\cosmos\\chem.py (edited: one line, is_finite)",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\truth-v5\\maths-train.txt",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\truth-v5\\maths-sealed.txt",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\truth-v5\\elements-train.txt",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\truth-v5\\elements-sealed.txt",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\truth-v5\\substances-train.txt",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\truth-v5\\substances-sealed.txt",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\truth-v5\\reactions-train.txt",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\truth-v5\\reactions-sealed.txt",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\truth-v5\\forces-train.txt",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\truth-v5\\forces-sealed.txt",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\truth-v5\\prompts.txt",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\truth-v5\\report.json",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\cosmos-v6\\{nucleo,gravity,planets,chem,life,world}-train.txt",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\cosmos-v6\\{nucleo,gravity,planets,chem,life,world}-sealed.txt",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\cosmos-v6\\{nucleo,gravity,planets,chem,life,world}-heldout.txt (world's is empty)",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\cosmos-v6\\{nucleo,gravity,planets,chem,life,world}-rollouts.jsonl",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\cosmos-v6\\prompts.txt",
+   "C:\\Users\\end\\Desktop\\Haishool\\data\\cosmos-v6\\report.json"
+  ],
+  "report": {
+   "command": "python -m haishool.round5 build --out-truth data/truth-v5 --out-cosmos data/cosmos-v6 --seed 20261001 (3 min 14 s wall; round 5 was rebuilt once more with --only truth after the cross-topic sealed fix, 2 s; training files identical between the two builds)",
+   "totals": {
+    "truth": {
+     "lines": 19925,
+     "tokens": 349515,
+     "budget_tokens": 350000,
+     "sealed_lines": 3011,
+     "sealed_tokens": 52116,
+     "dropped": 0,
+     "seconds": 1.94
+    },
+    "cosmos": {
+     "lines": 11750,
+     "tokens": 347481,
+     "budget_tokens": 350000,
+     "sealed_lines": 1759,
+     "sealed_tokens": 30738,
+     "heldout_lines": 3040,
+     "rollouts": 142,
+     "sealed_rollouts": 33,
+     "dropped": 268,
+     "seconds": 191.46
+    },
+    "both_rounds": {
+     "training_lines": 31675,
+     "training_tokens": 696996,
+     "sealed_lines": 4770
+    }
+   },
+   "truth_report_json": {
+    "round": 5,
+    "seed": 20261001,
+    "budget_tokens": 350000,
+    "max_tokens": 80,
+    "earlier_prompts": 84953,
+    "topics": {
+     "maths": {
+      "lines": 5099,
+      "tokens": 104926,
+      "by_kind": {
+       "calc": 4370,
+       "yesno": 729
+      },
+      "budget": 105000,
+      "n": 5099,
+      "records": 0,
+      "seconds": 0.62,
+      "sealed": {
+       "lines": 902,
+       "tokens": 18985,
+       "by_kind": {
+        "calc": 752,
+        "yesno": 150
+       },
+       "drawn": 1000
+      },
+      "dropped": {
+       "long": 0,
+       "rejected": 0,
+       "conflict": 0,
+       "collision": 0,
+       "repeated": 0,
+       "seen": 98
+      }
+     },
+     "elements": {
+      "lines": 4692,
+      "tokens": 57774,
+      "by_kind": {
+       "calc": 1612,
+       "fact": 1316,
+       "record": 236,
+       "yesno": 1528
+      },
+      "budget": 57750,
+      "n": 4456,
+      "records": 236,
+      "seconds": 0.19,
+      "sealed": {
+       "lines": 449,
+       "tokens": 4696,
+       "by_kind": {
+        "calc": 212,
+        "fact": 95,
+        "yesno": 142
+       },
+       "drawn": 1000
+      },
+      "dropped": {
+       "long": 0,
+       "rejected": 0,
+       "conflict": 0,
+       "collision": 0,
+       "repeated": 0,
+       "seen": 551
+      }
+     },
+     "substances": {
+      "lines": 4050,
+      "tokens": 75116,
+      "by_kind": {
+       "calc": 1323,
+       "fact": 1438,
+       "record": 534,
+       "yesno": 755
+      },
+      "budget": 75250,
+      "n": 3516,
+      "records": 534,
+      "seconds": 0.39,
+      "sealed": {
+       "lines": 751,
+       "tokens": 9651,
+       "by_kind": {
+        "calc": 314,
+        "fact": 272,
+        "yesno": 165
+       },
+       "drawn": 1000
+      },
+      "dropped": {
+       "long": 0,
+       "rejected": 0,
+       "conflict": 0,
+       "collision": 0,
+       "repeated": 0,
+       "seen": 249
+      }
+     },
+     "reactions": {
+      "lines": 3017,
+      "tokens": 57801,
+      "by_kind": {
+       "calc": 885,
+       "fact": 1396,
+       "record": 173,
+       "yesno": 563
+      },
+      "budget": 57750,
+      "n": 2844,
+      "records": 173,
+      "seconds": 0.46,
+      "sealed": {
+       "lines": 451,
+       "tokens": 8767,
+       "by_kind": {
+        "calc": 159,
+        "fact": 158,
+        "yesno": 134
+       },
+       "drawn": 1000
+      },
+      "dropped": {
+       "long": 0,
+       "rejected": 0,
+       "conflict": 0,
+       "collision": 0,
+       "repeated": 0,
+       "seen": 549
+      }
+     },
+     "forces": {
+      "lines": 3067,
+      "tokens": 53898,
+      "by_kind": {
+       "calc": 1535,
+       "fact": 875,
+       "record": 31,
+       "yesno": 626
+      },
+      "budget": 54250,
+      "n": 3036,
+      "records": 31,
+      "seconds": 0.28,
+      "sealed": {
+       "lines": 458,
+       "tokens": 10017,
+       "by_kind": {
+        "calc": 386,
+        "fact": 27,
+        "yesno": 45
+       },
+       "drawn": 1000
+      },
+      "dropped": {
+       "long": 0,
+       "rejected": 0,
+       "conflict": 0,
+       "collision": 0,
+       "repeated": 0,
+       "seen": 542
+      }
+     }
+    },
+    "total": {
+     "lines": 19925,
+     "tokens": 349515,
+     "sealed_lines": 3011,
+     "sealed_tokens": 52116,
+     "dropped": 0,
+     "seconds": 1.94
+    }
+   },
+   "cosmos_report_json": {
+    "round": 6,
+    "seed": 20261001,
+    "budget_tokens": 350000,
+    "max_tokens": 80,
+    "step_questions": 32,
+    "earlier_prompts": 84953,
+    "sims": {
+     "nucleo": {
+      "lines": 1520,
+      "tokens": 51519,
+      "by_kind": {
+       "calc": 525,
+       "fact": 375,
+       "record": 620
+      },
+      "budget": 52500,
+      "rollouts": 20,
+      "seeds": [
+       5440,
+       6892,
+       8574,
+       6256,
+       95,
+       5779,
+       9043,
+       6651,
+       6922,
+       9296,
+       3196,
+       488,
+       2087,
+       1186,
+       3891,
+       2849,
+       8541,
+       7040,
+       7958,
+       8354
+      ],
+      "sealed": {
+       "lines": 225,
+       "tokens": 4185,
+       "by_kind": {
+        "calc": 129,
+        "fact": 96
+       },
+       "rollouts": 5,
+       "seeds": [
+        3398,
+        8807,
+        2574,
+        8043,
+        8890
+       ]
+      },
+      "heldout": {
+       "lines": 640,
+       "tokens": 11924,
+       "by_kind": {
+        "calc": 292,
+        "fact": 348
+       }
+      },
+      "dropped": {
+       "long": 0,
+       "rejected": 0,
+       "conflict": 0,
+       "collision": 0,
+       "repeated": 0,
+       "gate_failed": 0,
+       "seen": 0
+      },
+      "seconds": 0.29
+     },
+     "gravity": {
+      "lines": 1501,
+      "tokens": 58619,
+      "by_kind": {
+       "calc": 400,
+       "fact": 322,
+       "record": 779
+      },
+      "budget": 59500,
+      "rollouts": 19,
+      "seeds": [
+       5440,
+       6892,
+       8574,
+       6256,
+       95,
+       5779,
+       9043,
+       6651,
+       6922,
+       9296,
+       3196,
+       488,
+       2087,
+       1186,
+       3891,
+       2849,
+       8541,
+       7040,
+       7958
+      ],
+      "sealed": {
+       "lines": 152,
+       "tokens": 2776,
+       "by_kind": {
+        "calc": 82,
+        "fact": 70
+       },
+       "rollouts": 4,
+       "seeds": [
+        3398,
+        8807,
+        2574,
+        8043
+       ]
+      },
+      "heldout": {
+       "lines": 608,
+       "tokens": 11224,
+       "by_kind": {
+        "calc": 294,
+        "fact": 314
+       }
+      },
+      "dropped": {
+       "long": 0,
+       "rejected": 0,
+       "conflict": 0,
+       "collision": 0,
+       "repeated": 0,
+       "gate_failed": 0,
+       "seen": 0
+      },
+      "seconds": 53.65
+     },
+     "planets": {
+      "lines": 1400,
+      "tokens": 47862,
+      "by_kind": {
+       "calc": 457,
+       "fact": 323,
+       "record": 620
+      },
+      "budget": 49000,
+      "rollouts": 20,
+      "seeds": [
+       5440,
+       6892,
+       8574,
+       6256,
+       95,
+       5779,
+       9043,
+       6651,
+       6922,
+       9296,
+       3196,
+       488,
+       2087,
+       1186,
+       3891,
+       2849,
+       8541,
+       7040,
+       7958,
+       8354
+      ],
+      "sealed": {
+       "lines": 195,
+       "tokens": 3310,
+       "by_kind": {
+        "calc": 107,
+        "fact": 88
+       },
+       "rollouts": 5,
+       "seeds": [
+        3398,
+        8807,
+        2574,
+        8043,
+        8890
+       ]
+      },
+      "heldout": {
+       "lines": 640,
+       "tokens": 11004,
+       "by_kind": {
+        "calc": 309,
+        "fact": 331
+       }
+      },
+      "dropped": {
+       "long": 0,
+       "rejected": 0,
+       "conflict": 0,
+       "collision": 0,
+       "repeated": 0,
+       "gate_failed": 0,
+       "seen": 0
+      },
+      "seconds": 0.26
+     },
+     "chem": {
+      "lines": 1646,
+      "tokens": 53507,
+      "by_kind": {
+       "calc": 531,
+       "fact": 474,
+       "record": 641
+      },
+      "budget": 52500,
+      "rollouts": 19,
+      "seeds": [
+       5440,
+       6892,
+       8574,
+       6256,
+       95,
+       5779,
+       9043,
+       6651,
+       6922,
+       9296,
+       3196,
+       488,
+       2087,
+       1186,
+       3891,
+       2849,
+       8541,
+       7040,
+       7958
+      ],
+      "sealed": {
+       "lines": 176,
+       "tokens": 2920,
+       "by_kind": {
+        "calc": 111,
+        "fact": 65
+       },
+       "rollouts": 4,
+       "seeds": [
+        3398,
+        8807,
+        2574,
+        8043
+       ]
+      },
+      "heldout": {
+       "lines": 608,
+       "tokens": 10312,
+       "by_kind": {
+        "calc": 297,
+        "fact": 311
+       }
+      },
+      "dropped": {
+       "long": 0,
+       "rejected": 0,
+       "conflict": 0,
+       "collision": 0,
+       "repeated": 0,
+       "gate_failed": 0,
+       "seen": 0
+      },
+      "seconds": 10.92
+     },
+     "life": {
+      "lines": 1462,
+      "tokens": 55193,
+      "by_kind": {
+       "calc": 381,
+       "fact": 367,
+       "record": 714
+      },
+      "budget": 56000,
+      "rollouts": 17,
+      "seeds": [
+       5440,
+       6892,
+       8574,
+       6256,
+       95,
+       5779,
+       9043,
+       6651,
+       6922,
+       9296,
+       3196,
+       488,
+       2087,
+       1186,
+       3891,
+       2849,
+       8541
+      ],
+      "sealed": {
+       "lines": 176,
+       "tokens": 3105,
+       "by_kind": {
+        "calc": 100,
+        "fact": 76
+       },
+       "rollouts": 4,
+       "seeds": [
+        3398,
+        8807,
+        2574,
+        8043
+       ]
+      },
+      "heldout": {
+       "lines": 544,
+       "tokens": 9756,
+       "by_kind": {
+        "calc": 266,
+        "fact": 278
+       }
+      },
+      "dropped": {
+       "long": 0,
+       "rejected": 0,
+       "conflict": 0,
+       "collision": 0,
+       "repeated": 0,
+       "gate_failed": 0,
+       "seen": 0
+      },
+      "seconds": 1.75
+     },
+     "world": {
+      "lines": 4221,
+      "tokens": 80781,
+      "by_kind": {
+       "calc": 1604,
+       "fact": 2177,
+       "record": 440
+      },
+      "budget": 80500,
+      "rollouts": 47,
+      "seeds": [
+       5440,
+       6892,
+       8574,
+       6256,
+       95,
+       5779,
+       9043,
+       6651,
+       6922,
+       9296,
+       3196,
+       488,
+       2087,
+       1186,
+       3891,
+       2849,
+       8541,
+       7040,
+       7958,
+       8354,
+       8048,
+       9727,
+       3961,
+       5867,
+       7628,
+       9340,
+       7291,
+       2367,
+       3727,
+       9619,
+       7755,
+       2985,
+       1291,
+       3084,
+       8040,
+       7064,
+       8855,
+       6045,
+       2606,
+       5086,
+       8644,
+       1334,
+       7830,
+       5106,
+       7364,
+       2760,
+       6791
+      ],
+      "sealed": {
+       "lines": 835,
+       "tokens": 14442,
+       "by_kind": {
+        "calc": 340,
+        "fact": 495
+       },
+       "rollouts": 11,
+       "seeds": [
+        3398,
+        8807,
+        2574,
+        8043,
+        8890,
+        9442,
+        3349,
+        5558,
+        5411,
+        7650,
+        7258
+       ]
+      },
+      "heldout": {
+       "lines": 0,
+       "tokens": 0,
+       "by_kind": {}
+      },
+      "dropped": {
+       "long": 0,
+       "rejected": 0,
+       "conflict": 0,
+       "collision": 0,
+       "repeated": 268,
+       "gate_failed": 0,
+       "seen": 95
+      },
+      "seconds": 124.59
+     }
+    },
+    "total": {
+     "lines": 11750,
+     "tokens": 347481,
+     "sealed_lines": 1759,
+     "sealed_tokens": 30738,
+     "dropped": 268,
+     "seconds": 191.46,
+     "rollouts": 142,
+     "sealed_rollouts": 33,
+     "heldout_lines": 3040
+    }
+   },
+   "world_outcomes_train_and_sealed": {
+    "no_water/train": 12,
+    "life/train": 10,
+    "no_metals/train": 9,
+    "dominated/train": 9,
+    "no_habitable/train": 6,
+    "sterile/train": 1,
+    "no_metals/sealed": 5,
+    "life/sealed": 3,
+    "dominated/sealed": 2,
+    "no_water/sealed": 1
+   },
+   "trainer_check_without_torch": "every *-train.txt read with student.load_extra / drop_not_dense / drop_long(ctx 96): 0 lines not dense, 0 too long; longest line 80 tokens (a substances record); about 1,600 words not in the round-4 hops file",
+   "tests": {
+    "whole_suite_before_my_changes": "894 passed, 5 skipped, 1 warning (forces gate raised OverflowError inside the loop test)",
+    "whole_suite_final": "924 passed, 5 skipped, 0 warnings in 468 s (python -m pytest tests -q); the 5 skips are the torch tests of tests/test_student.py",
+    "tests/test_round5.py": "30 passed in about 50 s"
+   }
+  },
+  "tests_passed": true,
+  "failing_tests": [],
+  "open_issues": [
+   "Nothing was sent to training: this machine has no torch. The build is done and the files are ready; the training launch (student.py train --init model/haishool-v4b.pt --extra-lines <each *-train.txt> ...) still has to be run on the training machine.",
+   "Round-6 sealed sets ask about seeds the model never saw, and the prompt carries only the seed number, not the parameters. Apart from seed-independent answers (time grid, step 0 values) and the world's seedless hand-off questions, such questions cannot be answered by rule; expect near-chance scores there. The meaningful round-6 measures are <sim>-heldout.txt (seen records, unseen questions) and the hand-off questions in world-sealed.txt.",
+   "The 350,000-token round-6 budget buys only 17 to 20 rollouts per level and 47 worlds (142 rollouts in all). Each rollout keeps all its records but only 32 of its 590 to 1,170 step questions. Learning the dynamics across seeds is not to be expected at this size; --cosmos-tokens scales it (a world costs about 2.7 s, gravity about 2.5 s per rollout here).",
+   "Additions beyond the task text, please confirm or drop: (a) <sim>-heldout.txt files (3,040 questions about training seeds that are in no training line; world's is empty); (b) an 'evaluate' command (python -m haishool.round5 evaluate --model ... --lines ...) because the loop's own evaluate knows only the five truth gates; its model path is untested (no torch), only score() with a stand-in model is tested; (c) data/cosmos-v6/prompts.txt; (d) build flags --truth-tokens, --cosmos-tokens, --sealed, --only.",
+   "The build uses records() + generate() only, as specified. It does not add substances.facts() (5,624 lines) or reactions.all_facts(): they would not fit the budget. Every table fact is in a record line, but only part of them is also asked as a question (e.g. 1,438 substances fact questions).",
+   "Sealed table facts are still in their always-trained record lines (e.g. 'q oxygen valence' is sealed, the oxygen record is trained). For table topics the sealed set therefore measures record-to-answer, and only the calculations measure a rule. Roughly half of the 1,000 sealed draws per table topic are dropped as given away by training (elements 551, reactions 549, forces 542, substances 249, maths 98).",
+   "The 'restated question' filter (asked()) is a heuristic: for a check line it takes the shortest start of the claim the gate can answer. It misses reactions 'check ... balanced' against 'balance ...', and elements 'check a heavier_than b' against 'heavier a b' (those checks count as their own question). For forces it uses the gate's meta['inner'].",
+   "I edited other agents' modules (allowed by the task, APIs unchanged) to fix two real defects found during integration: gravity and life accepted '1 e 9 9 9 9' as a right answer for any number (cosmos.close(inf, x) was True), and elements, reactions, forces, planets and chem raised OverflowError on a 400-digit answer. Fix: new haishool.truth.is_finite, used in those gates, and close() now returns False for non-finite numbers. The loop test's 'gates at odds' warning is gone.",
+   "Leniency left as it is: several simulations accept non-canonical spellings of a right number ('0 0' for 0 in life), and their 5 % / within-1 tolerances accept a wrong last digit. The loop writes the gate's own value back, so training is not affected, only the judged score.",
+   "tests/test_round5.py has two tests that rebuild and compare bytes with the shipped files in data/truth-v5 and data/cosmos-v6 (nucleo, planets, life). They fail by design when a gate changes after the build ('stale: run python -m haishool.round5 build'). They would also fail on a machine whose Python or numpy draws differently; I could only test Python 3.11 / numpy 2.4.6 here. Output was identical under PYTHONHASHSEED 1 and 12345 for all truth files and for nucleo, planets, life, chem.",
+   "world: 268 lines dropped as 'repeated' and 95 sealed lines as 'seen'. All are seedless hand-off questions with the same prompt and the same answer in several worlds (e.g. 'world handoff cooling metallicity 0' nine times); nothing was lost. World outcomes no_star, no_planets, no_organics and extinct do not occur in the 58 worlds built.",
+   "haishool/student.py is not mine and was not touched: its KIND_WORDS lacks the newer verbs (nuclide, count_nuclear, surface_gravity, lift, thrust, tidal), so those lines are reported under 'fact' unless a file has 30 or more of them. Its docstring still names data/truth-v5/truth-train-r5.txt; the build writes one file per topic instead (pass each with its own --extra-lines).",
+   "Eight prompts are in both elements-train.txt and substances-train.txt ('<element> state' and its checks), with the same answer; the build verifies that every owner of a prompt accepts the line.",
+   "While checking determinism I passed a Git-Bash style path inside python -c and Python created C:\\c\\Users\\...\\scratchpad\\r5\\hsc1 and hsc12345 (36 files of my own output). I verified the tree held nothing else and removed C:\\c. No repository file was affected.",
+   "No git commands that change state were run. git status still shows haishool/student.py as modified (another agent's change) and everything of rounds 5/6 as untracked."
+  ],
+  "notes": "Both rounds are built and the whole suite passes (924 passed, 5 skipped), but nothing has been trained: there is no torch on this machine.\n\nWHAT WAS BUILT\n- Round 5 (data/truth-v5): 19,925 training lines, 349,515 tokens of the 350,000 budget, 3,011 sealed questions, 0 lines dropped.\n- Round 6 (data/cosmos-v6): 11,750 training lines, 347,481 tokens, 142 training rollouts, 33 sealed rollouts with 1,759 sealed questions, 3,040 held-out questions.\n- The build took 3 min 14 s; the world (125 s) and gravity (54 s) are the slow parts, far under the 20-minute limit, so N_train was not reduced.\n\nHOW round5.py WORKS (C:\\Users\\end\\Desktop\\Haishool\\haishool\\round5.py)\n- Budget: tokens are counted with haishool.student.tokens plus 1 per line. TRUTH_SHARE = maths 0.30, elements 0.165, substances 0.215, reactions 0.165, forces 0.155. COSMOS_SHARE = nucleo 0.15, gravity 0.17, planets 0.14, chem 0.15, life 0.16, world 0.23.\n- Round 5: a topic's n for generate() is fitted to its share (maths 5,099, elements 4,456, substances 3,516, reactions 2,844, forces 3,036). Each topic and purpose has its own SHA-256-derived random generator, so topics do not move each other.\n- Round 6: all simulations share one list of training seeds and one of sealed seeds, each taking a prefix. So nucleo seed s is the first hour of world seed s (nucleo's 20 seeds are the first 20 of the world's 47).\n- Thinning: per rollout all records are kept, all non-step questions, and 32 step questions drawn by seed; 32 more go to <sim>-heldout.txt.\n- Screening: every line is checked before writing. It is dropped and counted if it is over 80 tokens, rejected by its own gate, judged differently by another owning gate, gives a round 1-4 prompt a second answer (84,953 earlier prompts loaded; 0 collisions), or repeats a prompt. A rollout whose conserved() fails is skipped (0 failed).\n- Sealed: a sealed question is dropped when any topic's training holds its prompt or a check line that restates it. This was first done per topic; a cross-file check then found 'q helium state' and 'q zinc state' sealed in one topic and trained in the other, so sealed sets are now filtered against all topics' training.\n- judge: prints prompt, answer, owner, owners, ok, expected, reason, agree as JSON, over the 5 gates, the 6 simulations and the loop's judge lines. Numbers must be digit tokens ('gravity seed 5 4 4 0 ...'; 'seed 5440' has no owner).\n- stats prints both report.json files.\n\nVERBATIM EXAMPLES\n- truth record: `hydrogen element. number 1. symbol h. protons 1. electrons 1. neutrons 0. mass_number 1. mass 1 point 0 0 8. group 1. period 1. block s. category nonmetal. metal nonmetal. radioactive no.`\n- truth training questions: `q solve 1 1 x equals 1 4 3. a x 1 3.` / `q check meitnerium protons 1 0 9. a yes.` / `q molar_mass c 2 7 h 4 4 o 1. a 3 8 4 point 6 5.` / `q count_atoms 2 x c 2 h 6 o 1 plus 2 x c 1 o 2 carbon. a 6.` / `q spring_force k 1 7 2 x 0 point 6 1. a 1 0 4 point 9.`\n- truth sealed: `q calc 2 4 7 point 9 plus 2 7 7 point 9 6. a 5 2 5 point 8 6.` / `q oxygen valence. a minus 2.` / `q molar_mass s 1 o 3. a 8 0 point 0 5 7.` / `q steam_reforming reactants. a methane water.` / `q tidal m 8 point 5 e 2 8 m 9 0 0 r 3 6 0 0 0 0 d 9 point 9 e 6. a 3 point 7 8 9 e 6.`\n- truth prompts.txt line: `acceleration f 8 1 0 m 9`\n- cosmos records: `nucleo seed 5 4 4 0 params. eta_factor 0 point 3 5 2. tau_n 9 0 8. t_freeze 0 point 5 1 6. expansion_factor 1 point 2 7.` / `gravity seed 5 4 4 0 step 0. time 0. radius 0 point 6 8 8. flattening 1 point 0 1. clumps 0. largest_clump 0. spiral no. energy minus 0 point 3 2 5. angular_momentum 0 point 1 5 7. stage cloud.` / `chem valence. h 1. he 0. o 2. c 4. n 3. ne 0. mg 2. si 4. s 2. fe 2. al 3. ca 2. na 1. k 1. cl 1.` / `world handoff cooling. from metallicity. cooling_primordial 0 point 1. cooling_per_metal 2 0. cooling_max 0 point 6.`\n- cosmos training questions: `q nucleo seed 5 4 4 0 param eta_factor. a 0 point 3 5 2.` / `q gravity seed 5 4 4 0 step 0 next stage. a cloud.` / `q planets seed 5 4 4 0 step 0 planets. a 0.` / `q chem seed 5 4 4 0 step 0 next h2. a 0.` / `q life seed 5 4 4 0 final replicators. a 0.` / `q world seed 5 4 4 0 era nucleo hydrogen. a 0 point 5 4 8.` / `q world handoff cooling metallicity 0. a 0 point 1.`\n- cosmos sealed: `q nucleo seed 3 3 9 8 step 1 temperature. a 2 point 4 7 e 1 0.` / `q planets seed 3 3 9 8 step 1 0 planets. a 2 4.` / `q world seed 3 3 9 8 era enrichment metallicity. a 0 point 0 1 3 5.`\n- cosmos held out: `q gravity seed 5 4 4 0 step 1 7 next angular_momentum. a 0 point 1 5 7.` / `q chem seed 5 4 4 0 step 9 next biggest. a 3.`\n- rollouts.jsonl row (start): `{\"sim\": \"nucleo\", \"seed\": 5440, \"split\": \"train\", \"params\": {\"eta_factor\": 0.352, \"tau_n\": 908.0, \"t_freeze\": 0.516, \"expansion_factor\": 1.27, ...}, \"steps\": [{\"time\": 0.1, \"temperature\": 28060676663.31569, ...`\n- judge output: `{\"prompt\": \"calc 1 2 plus 7\", \"answer\": \"2 0\", \"owner\": \"maths\", \"owners\": [\"maths\"], \"ok\": false, \"expected\": \"1 9\", \"reason\": \"expected 1 9\", \"agree\": true}`\n\nTESTS (C:\\Users\\end\\Desktop\\Haishool\\tests\\test_round5.py, 30 tests)\n- Determinism: same seed gives byte-identical files; another seed differs.\n- Every line of every built file is dense, at most 80 tokens and accepted by judge() with the right owner.\n- Changed answers (digit moved, yes/no flipped, word replaced), 400-digit numbers, infinity and empty answers are rejected, with the expected value filled in.\n- No judge owns 'turkey capital', 'q spoon color', 'gold found_in'.\n- Sealed prompts are in no topic's training file and are not restated by a training check; no record is in a sealed file; sealed seeds differ from training seeds.\n- Reports equal the file contents; tokens are within 2 % of the budget; prompts.txt feeds loop.run's exclude; rollouts.jsonl rows equal the replayed rollouts and pass conserved().\n- The gravity and world path, the command line (build, judge, stats, evaluate errors), score() with a stand-in model, and the shipped files against a fresh build are covered."
+ },
+ "critic": {
+  "findings": [
+   {
+    "where": "C:/Users/end/Desktop/Haishool/data/truth-v5/maths-train.txt (whole file) + haishool/student.py corpus_ids",
+    "key": "maths volume / repetition regime",
+    "value": "5,099 lines, 104,926 tokens (5.9 % of a pass); the same lines are repeated in all 60 passes",
+    "correct": "a stream of fresh maths lines per pass (hundreds of thousands to 1.5 M distinct lines), or a much larger maths share",
+    "reason": "The repo's own experiments decide this. Pilot (model/r5-pilot-eval-report.json, 9,000 maths lines repeated): held-out calc 0.25, solve 0.17, check 0.51 = memorised, no rule. Stream experiment (model/exp-maths-stream-6x384.json, 1.5 M distinct lines, same 6x384 model): held-out 0.93 overall, plus 1.0, solve 0.92-1.0. The build is in the pilot regime, so 'maths with solvable algebraic truth' will be recalled, not computed. Even 5,099 fresh lines per pass (60 passes = 300k distinct) costs no extra tokens.",
+    "confidence": "high"
+   },
+   {
+    "where": "C:/Users/end/Desktop/Haishool/data/cosmos-v6/*-sealed.txt (1,759 lines) and round5.py build_cosmos",
+    "key": "sealed questions of round 6",
+    "value": "q gravity seed 3398 step .. clumps style prompts for seeds with no trained record or params; majority-answer baseline from training seeds: nucleo 0.35, gravity 0.24, planets 0.41, chem 0.43, life 0.19, world 0.23",
+    "correct": "questions that carry their input in the prompt (params or previous state -> next state), as the world hand-offs do; or give the sealed seed's params/first records and ask the rest",
+    "reason": "The prompt holds only a seed number; parameters and noise come from random.Random(seed), which no model can know. Everything above the baseline is unknowable, so these sets cannot show 'learned the rules', only seed-independent constants (time grid, early stages). Only the 219 seedless hand-off questions in world-sealed.txt test a rule.",
+    "confidence": "high"
+   },
+   {
+    "where": "C:/Users/end/Desktop/Haishool/data/cosmos-v6/{gravity,planets,life,nucleo,chem}-train.txt and -heldout.txt",
+    "key": "'next' and step questions",
+    "value": "q gravity seed 6 2 5 6 step 2 1 next radius. a 0 point 1 4 3.   q planets seed 5 4 4 0 step 2 7 next gas_present. a no.",
+    "correct": "unsure; e.g. one sample holding state t and state t+1, or 'q <sim> next. <fields of state t>' -> fields of t+1",
+    "reason": "Every held-out answer is verbatim in a trained record (gravity 608/608, planets 640/640, life 544/544): 'next' is a lookup of the record of step t+1 keyed by (seed, step), not a prediction from a state. Lines are shuffled singly, so two consecutive states never share a window. The simulations are therefore learned as about 27,500 arbitrary 3-digit numbers (numeric record fields: chem 6,611, life 6,375, planets 5,520, gravity 4,674, nucleo 4,280), not as dynamics.",
+    "confidence": "high"
+   },
+   {
+    "where": "C:/Users/end/Desktop/Haishool/data/cosmos-v6/nucleo-*.txt, chem-*.txt",
+    "key": "metrics asked but in no record",
+    "value": "q nucleo seed 4 8 8 step 2 1 helium3. a 5 point 1 6 e minus 6.   q nucleo seed 7 9 5 8 step 2 4 lithium. a 4 point 5 9 e minus 1 0.   q chem seed 3 1 9 6 step 1 9 o2. a 0.   q chem seed 6 6 5 1 step 2 6 mgo. a 0.   q chem seed 6 6 5 1 step 9 next co. a 4.",
+    "correct": "put helium3/lithium and o2/co2/mgo/co/feo/n2 into the step records (a second record line if 80 tokens are too few) or do not ask them per step",
+    "reason": "Nucleo records have no helium3/lithium field, chem records no o2, co2, mgo, co, feo, n2. In training these are isolated facts (137 nucleo, 198 chem step questions); in the held-out files 143 of 640 nucleo and 203 of 608 chem questions have no source at all, so the held-out score is capped near 0.78 / 0.67 for a perfect reader.",
+    "confidence": "high"
+   },
+   {
+    "where": "C:/Users/end/Desktop/Haishool/data/truth-v5/forces-train.txt (calc verbs)",
+    "key": "forces calculations",
+    "value": "q orbital_speed m 1 point 1 e 2 8 r 9 point 9 e 6. a 2 7 2 3 0 0.   q pressure f 8 8 area 9 6. a 0 point 9 1 6 7.   q tidal m 4 point 5 e 2 2 m 8 8 r 9 point 2 e 7 d 4 point 9 e 9. a 4 point 1 3 3 e minus 7.",
+    "correct": "operands chosen so the result is exact small-integer arithmetic, or worked steps, or a fresh stream per pass; otherwise treat as memorised lines and keep them out of the sealed score",
+    "reason": "1,626 calc lines over 18 verbs (about 90 each) ask for 4-significant-digit products, quotients and square roots in e-notation. The pilot measured held-out exact 0.0 on 14 of 18 verbs (weight, pressure, drag, lift, thrust, tidal, orbital_speed, escape_speed, ...). 259 answers are in e-notation, and the form switches at 1e6: 'q thrust mdot 3 3 6 ve 4 2 0 0. a 1 point 4 1 1 e 6.' (exactly 1411200) beside 'a 7 5 0 0 0 0'; 'q surface_gravity ... a 5 1 0 8 0.' is 4 digits padded with a zero.",
+    "confidence": "high"
+   },
+   {
+    "where": "C:/Users/end/Desktop/Haishool/data/truth-v5/substances-train.txt (molar_mass, mass_percent)",
+    "key": "random formulas",
+    "value": "q molar_mass li 1 1 mg 1 br 6 ba 5. a 1 2 6 6 point 7.   q molar_mass s 1 0 br 2 ag 1 0. a 1 5 5 9 point 1.   q atoms c 1 2 p 4 cr 2. a 1 8.",
+    "correct": "real formulas, or small formulas with a worked sum (count times weight ... then result), or a stream",
+    "reason": "Li11MgBr6Ba5 and S10Br2Ag10 are not substances; the lines are arithmetic over 5-digit atomic weights with about 370 examples. Pilot held-out: molar_mass 0.07, mass_percent 0.22, reverse lookup 'substance formula' 0.06. The 'atoms' and 'element_count' kinds are learnable (0.33, 0.65) and worth keeping.",
+    "confidence": "medium"
+   },
+   {
+    "where": "C:/Users/end/Desktop/Haishool/data/cosmos-v6/{gravity,planets,chem,life}-train.txt vs world-train.txt; round5.py docstring lines 49-50",
+    "key": "same seed, different universe",
+    "value": "q planets seed 5 4 4 0 final planets. a 6.  vs  q world seed 5 4 4 0 final planets. a 0.   q gravity seed 5 4 4 0 final clumps. a 1.  vs  q world seed 5 4 4 0 era disc clumps. a 5.",
+    "correct": "either give the standalone levels seeds that the world never uses, or make '<level> seed s' the world's own era of seed s",
+    "reason": "All levels take seeds from one list. Only nucleo matches the world (20 of 20 final helium values equal). Gravity differs on 14 of 19 shared seeds, planets on 17 of 20, chem h2o on 10 of 10 compared: the standalone runs use random_params(seed), the world uses hand-off parameters. The docstring's 'nucleo seed s is the first hour of world seed s' is true for nucleo only; the model sees one seed label with two contradicting stories.",
+    "confidence": "high"
+   },
+   {
+    "where": "C:/Users/end/Desktop/Haishool/data/cosmos-v6/gravity-train.txt",
+    "key": "params record",
+    "value": "no 'gravity seed S params.' line and no 'param' question (nucleo, planets, life have them); spin and cooling never appear",
+    "correct": "gravity seed S params. spin 0 point 3 5. cooling 0 point 4.  plus q gravity seed S param spin / cooling",
+    "reason": "The docstring's whole physics is 'cooling removes random motion, spin decides disc versus single clump', but the cause is invisible in the lines, so no relation between cause and outcome can be learned. Chem likewise never states its start and end temperature.",
+    "confidence": "high"
+   },
+   {
+    "where": "C:/Users/end/Desktop/Haishool/data/truth-v5/maths-train.txt (check lines with x, 314 lines)",
+    "key": "check <equation> x <value>",
+    "value": "q check x minus 1 equals minus 8 x minus 7. a yes.   q check 8 x minus 3 9 equals x minus 3 2 x minus 1. a no.   q check x over 6 equals 1 x 1 6. a no.",
+    "correct": "a separator word, e.g. 'q check x minus 1 equals minus 8 for x minus 7. a yes.'",
+    "reason": "In the grammar 'minus 8 x minus 7' is the expression -8x - 7, so the line reads as x - 1 = -8x - 7. All 314 check-x lines put a number directly in front of the separating x; only the convention 'the last x separates' resolves it, the opposite of what '8 x' means everywhere else in the topic. A prompt format cannot be changed cheaply after training.",
+    "confidence": "medium"
+   },
+   {
+    "where": "C:/Users/end/Desktop/Haishool/data/cosmos-v6/life-train.txt",
+    "key": "first_replicator_step",
+    "value": "q life seed 5 4 4 0 final first_replicator_step. a minus 1.",
+    "correct": "a never.",
+    "reason": "A magic number for 'no replicator ever'; gravity uses the word for the same case ('q gravity seed 6 8 9 2 final collapse_time. a never.') and chem says 'a never' for a bond. -1 is also a number the 5 % tolerance logic and a reader can mistake for a step.",
+    "confidence": "high"
+   },
+   {
+    "where": "C:/Users/end/Desktop/Haishool/data/cosmos-v6/world-train.txt",
+    "key": "why / outcome",
+    "value": "q world seed 5 4 4 0 why no_metals. a star.   outcomes in 47 training worlds: no_water 12, life 10, no_metals 9, dominated 9, no_habitable 6, sterile 1; no_star, no_planets, no_organics, extinct 0",
+    "correct": "unsure; e.g. 'q world seed S missing. a metals.' and enough worlds (or chosen seeds) that every outcome occurs several times",
+    "reason": "'why no_metals -> star' lists the links that held, which reads as 'because of the star'; the prompt also contains the outcome it is about. Four of ten outcome words never occur in training and one occurs once, so a sealed world ending that way cannot be answered. chemistry_2 occurs once, life eras in 20 worlds.",
+    "confidence": "medium"
+   },
+   {
+    "where": "C:/Users/end/Desktop/Haishool/haishool/student.py train() (random windows, ctx 96) with the round-6 records",
+    "key": "window versus line length",
+    "value": "cosmos lines: mean 33-39 tokens, p95 59-67, max 74; substances max 80; rounds 1-4: mean 11, max 44",
+    "correct": "--ctx 160 or more for this round (the flag may grow with --init), or windows that start at an <eos>",
+    "reason": "A window starts anywhere in the stream. I computed the share of target tokens whose line head (seed and step) lies outside the window: 8 % for rounds 1-4, 24-27 % for the five level files, 18 % for substances. A quarter of the gradient on rollout records asks for numbers without saying which seed and step.",
+    "confidence": "medium"
+   },
+   {
+    "where": "whole mix: data/records-r3-all.jsonl + data/hops-v4b/hops-train-r4.txt + 11 new train files",
+    "key": "token shares, vocabulary, digits",
+    "value": "1,767,454 tokens per pass: rounds 1-3 16.1 %, hops 44.5 %, round 5 19.8 %, round 6 19.7 %; vocabulary 13,391 -> 14,992 (+1,601; 368 new words occur at most 3 times per pass, 34 once); digit tokens 1.8 % -> 16.5 % of the stream",
+    "correct": "no change needed for recall; train at least as long as the pilot (30,000 steps, about 210 passes) and report old recall and hop scores next to the new ones",
+    "reason": "The pilot with a similar mix (1.71 M tokens per pass, from scratch, 30,000 steps) kept old recall 0.999 and held-out hops 0.658/0.724 (v4b: 0.656/0.732), so the mix does not hurt the old knowledge. The documented command (--init v4b, --steps 8000) gives only about 55 passes over 1.77 M tokens; chaotic 3-digit records need more. Ten digit tokens now carry a sixth of all predictions with very different roles (seed labels, steps, counts, mantissas).",
+    "confidence": "medium"
+   },
+   {
+    "where": "rounds 1-4 (data/records-r3-all.jsonl) versus round 5",
+    "key": "number spelling",
+    "value": "old: 'black_death. ... time 1347.', 'uganda. ... states 111.' (167 multi-digit tokens, 785 lines); new: 'discovered 1 6 8 7.'",
+    "correct": "one spelling; re-emit the old years and counts digit by digit in a later round",
+    "reason": "The same quantity type has two token forms, so nothing learned about digits transfers to the old years and vice versa. Not caused by this build, but the mix now makes it visible.",
+    "confidence": "high"
+   },
+   {
+    "where": "C:/Users/end/Desktop/Haishool/data/truth-v5/elements-train.txt, elements.jsonl",
+    "key": "metal",
+    "value": "tennessine element. ... category halogen. metal nonmetal.   q elements metal metalloid. a boron silicon germanium arsenic antimony tellurium polonium.   q count elements metal nonmetal. a 2 0.",
+    "correct": "key renamed (metal_class or character); for astatine, tennessine, oganesson leave it out as state and density already are, polonium unsure",
+    "reason": "The key and its value are the same word ('iron metal metal'), which reads oddly in lists and counts. The table drops state and density of astatine and the superheavy elements as predictions but still asserts them as nonmetals (count 20 includes At, Ts, Og); polonium as metalloid is contested (often counted a metal).",
+    "confidence": "low"
+   },
+   {
+    "where": "C:/Users/end/Desktop/Haishool/data/truth-v5/substances-train.txt (mixtures)",
+    "key": "state / main_parts of mixtures",
+    "value": "human_body mixture. ... state solid.   sun mixture. ... state gas.   earth_core mixture. ... state liquid.   universe mixture. main_parts hydrogen 7 4 helium 2 4 oxygen 1 carbon 0 point 5.",
+    "correct": "state left out where it is not one state (human_body, earth_core: liquid outer, solid inner), plasma for the sun, and the universe row named as ordinary matter only",
+    "reason": "These are hand-curated shares and labels that a gate can only repeat, not check. Several components are names no line defines: proteins, salts, fats, minerals, sugars, gravel, sand, charcoal, extractives.",
+    "confidence": "medium"
+   },
+   {
+    "where": "data/truth-v5/elements-train.txt, substances-train.txt (check lines answered no)",
+    "key": "wrong values of yes/no lines",
+    "value": "q check hydrogen econf rn 5f14 6d10 7s2 7p5. a no.   q check kyanite class amino_acid. a no.   q check zinc neutrons 1 5 3. a no.   q check orpiment occurs_in dna. a no.",
+    "correct": "wrong values drawn near the right one (neighbouring element, adjacent class, one digit off), as maths already does",
+    "reason": "Yes and no are balanced (elements 754/774, maths 375/354, forces 312/314), but many 'no' lines are implausible at sight, so 'far away means no' answers them without knowing the value.",
+    "confidence": "medium"
+   },
+   {
+    "where": "across topics (formula tokens, chem keys, forces operands)",
+    "key": "one token, several meanings",
+    "value": "co: cobalt in a dense formula and the carbon-monoxide count in 'q chem seed 6 6 5 1 step 9 next co. a 4.'; no: nobelium's symbol and the answer no; e: exponent and electron; x: the unknown, the coefficient mark '2 x h 2 o 1' and the spring's extension; 'q tidal m ... m ... r ... d ...' names two operands m",
+    "correct": "unsure; at least m_1 m_2 as the formula line already writes them, and carbon_monoxide instead of co in chem",
+    "reason": "Context separates them for a large model; for 16 M parameters every shared token costs a little, and 'co' is a real collision between two chemistry topics.",
+    "confidence": "low"
+   },
+   {
+    "where": "C:/Users/end/Desktop/Haishool/data/truth-v5/reactions-train.txt",
+    "key": "single-reactant chemical 'gives'",
+    "value": "q oxygen gives. a ozone.",
+    "correct": "unsure; e.g. drop single-reactant chemical rows from the 'gives' questions",
+    "reason": "Reads as a general statement about oxygen. Nuclear rows repeat the reactant (proton plus proton gives), chemical rows do not. The ambiguous reactant sets (carbon plus oxygen, methane plus oxygen, glucose) are correctly left out.",
+    "confidence": "low"
+   },
+   {
+    "where": "rounds 1-4 records next to round 5 records",
+    "key": "old teacher lines about the same things",
+    "value": "water. kind drink. ... made h o. parts lid bottle.   diamond. kind shape. ... made glass metal.   gravity. kind fundamental_force.  (new record: gravity force. kind fundamental.)",
+    "correct": "clean the old rows in a later round; the forces gate already avoids asking 'gravity kind'",
+    "reason": "No prompt has two answers (0 collisions, verified across all files), but the new record 'kind fundamental' sits beside the trained answer 'fundamental_force', and the old junk about water and diamond stays in the model beside the checked rows.",
+    "confidence": "medium"
+   }
+  ],
+  "missing": [
+   "Own-output feedback: no line of the form 'q judge <question> answer <given>. a right/wrong.' exists in any training file (0 in all 11). haishool/truth/loop.py is written but needs a trained model and torch; this build is turn zero of the spiral, not a turn of it.",
+   "The feedback loop covers the five round-5 gates only (loop.TOPICS); the six simulations and the world hand-offs have no generate(rng, n) and are not asked fresh questions. round5.py has 'evaluate' for them but no 'loop'.",
+   "State-conditioned simulation questions: nothing asks 'given this state or these parameters, what comes next'. Only the world hand-offs are rule-shaped (1,087 lines, 39 to 137 per rule), too few for sqrt and power 3.5 rules (frost_line, luminosity, temperature).",
+   "Maths: only arithmetic and linear equations in one unknown with integer solutions. No worked steps for minus, over or solve (steps exist for plus and times only), no fractions as answers, no quadratics, no systems, no divisibility/primes, no units.",
+   "Materials: 485 curated rows (429 substances, 56 mixtures), composition only. No density, melting or boiling point for substances; no macromolecules as such (proteins, DNA, haemoglobin), no plasma or states of matter, no dark matter/dark energy, no soil, clay, magma, plastics by common name. 'All materials' is not reachable; the table does not say what it leaves out.",
+   "Forces: 31 rows cover the four interactions and the everyday forces; missing are degeneracy pressure (what holds white dwarfs and neutron stars), viscosity/shear, Casimir, the electroweak unification and cosmic expansion/dark energy. The forces table and the simulations are not linked (gravity runs in G = 1 units and never cites the table).",
+   "Chain gaps between the levels: stars are a formula (3 % of hydrogen per generation), no stellar life cycle or supernova; no recombination/first atoms; no galaxy (the cloud is one proto-stellar cloud of 256 particles); no geology, ocean or atmosphere; life ends at self-copying 4-letter strings: no cells, no organisms, no traits or ecology. 'Organisms' is not reached.",
+   "The spiral as a shape: 'spiral yes' in 98 of 779 gravity state records (12.6 %), stage 'disc' in 7; by its own docstring the detector 'cannot tell arms from a bar or a pair of clumps'. Questions: 9 yes against 63 no.",
+   "No common clock: nucleo counts seconds, gravity free-fall times, planets Myr, chem and life steps; the world lines list eras but never an age of the universe, so 'from the start of time' is an order, not a timeline.",
+   "World has no held-out file (world-heldout.txt is empty by construction) and four of ten outcomes never occur in training.",
+   "No link from rounds 5/6 into the round-4 relation graph (keys were named composition, occurs_in, main_parts to avoid made_of and found_in), so the hops explorer cannot walk from water to hydrogen or from iron to the earth's core.",
+   "Training hand-over: no torch on this machine and no script or command that names the 11 training files; the two documented commands point at files the build does not write. Nothing was sent to training by this build."
+  ],
+  "bugs": [
+   "C:/Users/end/Desktop/Haishool/haishool/student.py:6 - the documented train command passes '--extra-lines data/truth-v5/truth-train-r5.txt'; the build writes <topic>-train.txt per topic (5 + 6 files) and no such file. load_extra (student.py:164-168) opens the path unguarded, so the command dies with FileNotFoundError.",
+   "C:/Users/end/Desktop/Haishool/haishool/truth/loop.py:27-28 - documented '--exclude data/truth-train-r5.txt data/truth-sealed-r5.txt' do not exist (main raises 'no such line file'); the real inputs are data/truth-v5/prompts.txt and data/cosmos-v6/prompts.txt.",
+   "C:/Users/end/Desktop/Haishool/haishool/truth/loop.py run(), the test 'if ln.prompt in exclude' (about line 349) - exclusion is by exact prompt only; round5.asked() (round5.py:246-267), which maps a check line to the question it restates, is not applied. Simulated with exclude = data/truth-v5/prompts.txt and 2,000 fresh lines per gate: 9 of 1,875 maths, 50 of 1,221 elements, 27 of 1,589 substances, 4 of 1,319 forces questions restate a sealed question (e.g. fresh 'q solve x over 4 equals 1 0' against a sealed check of the same equation). Loop lines fed back into training would open the sealed set.",
+   "C:/Users/end/Desktop/Haishool/haishool/round5.py:133 (_STEP_Q) with thin() at 289-298 - the pattern '^[a-z]+ seed [0-9 ]+ step ' never matches a world question (they say 'era'), so thin() holds nothing out for world: world-heldout.txt is always 0 bytes while the report lists it like the others.",
+   "C:/Users/end/Desktop/Haishool/haishool/round5.py:289-298 thin() / 477 - held-out and sealed questions are drawn without regard to whether the asked metric is in any record (nucleo helium3, lithium; chem o2, co2, mgo, co, feo, n2), and sealed rollouts get questions but neither params nor records (line 477), which makes them unanswerable by design.",
+   "C:/Users/end/Desktop/Haishool/haishool/student.py:157-158 Vocab.encode - a word that is not in the vocabulary is dropped silently, so a prompt with an unknown word is asked as a different prompt. Not triggered today: I checked every sealed and held-out file and 3,000 fresh lines per gate, 0 unknown tokens.",
+   "C:/Users/end/Desktop/Haishool/haishool/student.py:96-110 KIND_WORDS - tidal, thrust, lift, surface_gravity, count_nuclear and nuclide are missing; they only get a bucket through verbs_of() when a file holds 30 or more such prompts, otherwise they are counted as 'fact' and blur the fact score of small held-out sets.",
+   "C:/Users/end/Desktop/Haishool/haishool/round5.py:49-50 (docstring) - 'nucleo seed s is the first hour of world seed s' holds for nucleo only; the text implies shared seeds mean shared universes, which the data contradicts for gravity, planets, chem and life."
+  ],
+  "summary": "The build is clean as a file set: a full rebuild in the scratchpad reproduced all 36 data files byte for byte, no line exceeds 80 tokens, no prompt has two answers, yes/no is balanced, sealed and fresh questions hold no unknown token, and the pilot showed the old facts and hops survive such a mix. Against the intent it delivers the closed topics, the gates, the elements, a fair materials table (485 rows) and forces table (31 rows) and a six-level chain, but it falls short in three places: maths is in the memorising regime (5,099 repeated lines, where the repo's own experiment needed a stream of fresh lines to reach 0.93 held-out), the simulations are trained as lookups keyed by seed and step and not as rules (sealed rollouts are unanswerable, 'next' is a record lookup, and the same seed names different universes in the level files and the world), and the feedback of the model's own output has code but not one line of data yet. The main training risks are the 1,600-odd forces and 670 molar-mass/mass-percent calculations that the pilot answered at 0 to 22 % held-out, about 27,500 chaotic 3-digit numbers in rollout records, a 96-token window that cuts a quarter of the rollout tokens off from their seed and step, and a documented train command that names files which do not exist and too few steps. Fix before training, because prompt formats freeze once trained: stream the maths (and other unbounded calc kinds) per pass, add state- or parameter-conditioned simulation questions and gravity params, put every asked metric into a record or stop asking it, separate level seeds from world seeds, replace 'minus 1' by 'never', give check-x a separator word, raise ctx, and correct the train and loop commands plus the loop's sealed-question exclusion. After the first training: run the loop and extend it to the simulations, unify number spelling with rounds 1-4, widen the tables and the maths forms, and fill the chain's gaps (stars, galaxy, organisms, a common clock).\""
+ }
+}

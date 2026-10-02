@@ -1,0 +1,898 @@
+q solve minus 2 3 x minus 3 2 equals 1 1 x plus 3 4 2. a x minus 1 1.
+q calc 7 6 0 plus 7 7 steps. a 0 plus 7 is 7 write 7 then 6 plus 7 is 1 3 write 3 carry 1 then 7 plus 0 plus 1 is 8 write 8 then result 8 3 7.
+q calc 1 1 2 4 over 2. a 5 6 2.
+q check 1 1 9 plus 7 0 0 7 equals 7 1 1 6. a no.
+q calc 2 4 7 point 9 plus 2 7 7 point 9 6. a 5 2 5 point 8 6.
+q calc 9 7 0 times 2 steps. a 0 times 2 is 0 write 0 then 7 times 2 is 1 4 write 4 carry 1 then 9 times 2 is 1 8 plus 1 is 1 9 write 9 carry 1 then result 1 9 4 0.
+q solve x plus 3 equals 6. a x 3.
+q solve 8 8 x plus 5 0 equals 3 x plus 1 2 4 0. a x 1 4.
+q solve minus 6 4 equals minus 3 x minus 1 0. a x 1 8.
+q check 8 1 4 5 over 9 equals 9 0 5. a yes.
+q calc 6 2 6 times 6. a 3 7 5 6.
+q calc minus 6 plus minus 5. a minus 1 1.
+q calc 2 6 minus 5 3 6 7. a minus 5 3 4 1.
+q calc 4 1 1 1 plus 3 3 3 3 steps. a 1 plus 3 is 4 write 4 then 1 plus 3 is 4 write 4 then 1 plus 3 is 4 write 4 then 4 plus 3 is 7 write 7 then result 7 4 4 4.
+q compare 0 with 0. a equal.
+q calc 3 8 times 9 6. a 3 6 4 8.
+q check x plus 3 8 equals 3 7 x minus 1. a yes.
+q compare 9 3 point 1 with minus 8 1 point 7. a greater.
+q check 8 plus 9 equals 1 7. a yes.
+q check minus 3 0 plus 3 2 3 equals 2 9 2. a no.
+q calc 5 times 2 plus 9 1. a 1 0 1.
+q calc 5 7 1 1 plus 8. a 5 7 1 9.
+q solve 8 7 x equals 6 0 9. a x 7.
+q solve x over 4 minus 5 8 equals minus 7 0. a x minus 4 8.
+q solve x over 2 plus 5 5 equals 6 2. a x 1 4.
+q calc 3 2 2 times 8. a 2 5 7 6.
+q calc 6 1 plus 6 times 6 4. a 4 4 5.
+q calc 1 2 minus 1 8 times 7. a minus 1 1 4.
+q check 3 1 2 over 1 2 equals 2 4. a no.
+q check x plus 8 0 equals 9 4 x 1 6. a no.
+q check x over 4 plus 4 2 equals 4 2 x 2. a no.
+q check open x plus 1 7 close times 1 2 equals 2 6 4 x minus 5. a no.
+q solve x over 1 0 plus 2 9 equals 1 8. a x minus 1 1 0.
+q calc 8 minus 1 0 times 2 4. a minus 2 3 2.
+q calc 4 6 5 0 plus minus 5 0 9. a 4 1 4 1.
+q compare 4 6 4 4 with 4 6 3 4. a greater.
+q calc 4 3 times 2 1. a 9 0 3.
+q calc 8 6 plus 9 steps. a 6 plus 9 is 1 5 write 5 carry 1 then 8 plus 0 plus 1 is 9 write 9 then result 9 5.
+q solve 1 2 x equals minus 1 2 0. a x minus 1 0.
+q calc minus 5 0 6 point 8 minus 3 9 0 point 5. a minus 8 9 7 point 3.
+q calc 9 6 times 4 3. a 4 1 2 8.
+q check 9 1 0 times 4 equals 3 6 3 9. a no.
+q compare 6 5 point 5 8 with 6 5 point 5 8. a equal.
+q calc 3 minus 5 2 0 7. a minus 5 2 0 4.
+q solve x over 7 minus 4 1 equals minus 4 6. a x minus 3 5.
+q solve minus 1 0 x plus 7 9 equals 2 6 9. a x minus 1 9.
+q calc root 9. a 3.
+q calc 5 8 0 1 minus 2 9. a 5 7 7 2.
+q check x plus 6 8 equals 7 0 x 3. a no.
+q compare 2 7 2 2 with 2 6 2 2. a greater.
+q calc 9 0 2 plus 9 3 steps. a 2 plus 3 is 5 write 5 then 0 plus 9 is 9 write 9 then 9 plus 0 is 9 write 9 then result 9 9 5.
+q solve 1 1 x minus 4 8 equals minus 1 2 x plus 6 7. a x 5.
+q calc 6 2 3 point 1 minus 3 2 2 point 0 2. a 3 0 1 point 0 8.
+q compare minus 2 6 point 6 with 5 8 point 1. a less.
+q calc 2 5 times 9 6 steps. a 2 5 times 9 0 is 2 2 5 0 then 2 5 times 6 is 1 5 0 then 2 2 5 0 plus 1 5 0 is 2 4 0 0 then result 2 4 0 0.
+q compare minus 2 8 6 8 with 7 1 3. a less.
+q calc 1 7 2 1 minus minus 2 3. a 1 7 4 4.
+q calc 6 0 percent of 3 1 2 0. a 1 8 7 2.
+q calc 5 plus 3 9 1. a 3 9 6.
+q solve open x plus 9 2 close times 8 7 equals 6 7 8 6. a x minus 1 4.
+q calc 3 3 3 plus minus 6 5. a 2 6 8.
+q solve x over 2 minus 5 3 equals minus 5 5. a x minus 4.
+q check open x minus 9 6 close times 7 equals minus 6 6 5 x 1. a yes.
+q calc 0 plus 3 4. a 3 4.
+q solve open x minus 8 6 close times 1 0 equals minus 8 5 0. a x 1.
+q calc minus 2 6 5 point 1 minus 7 9 3 point 7. a minus 1 0 5 8 point 8.
+q check 8 2 equals minus 5 x minus 1 3 x minus 9. a no.
+q check 9 6 0 over 2 0 equals 2 0. a no.
+q calc 3 2 times 6. a 1 9 2.
+q compare minus 1 2 5 0 with minus 4 1 5 7. a greater.
+q check x minus 8 equals minus 1 0 x minus 1. a no.
+q solve minus 7 9 x minus 3 8 equals minus 4 3 3. a x 5.
+q solve 9 1 equals 7 x plus 3 5. a x 8.
+q solve open x minus 6 9 close times 1 2 equals minus 1 0 0 8. a x minus 1 5.
+q solve minus 2 5 equals 4 x minus 9 3. a x 1 7.
+q calc 7 8 times 3 steps. a 8 times 3 is 2 4 write 4 carry 2 then 7 times 3 is 2 1 plus 2 is 2 3 write 3 carry 2 then result 2 3 4.
+q check 6 x minus 5 1 equals x plus 1 9 x 1 4. a yes.
+q calc 1 0 times open 6 8 plus 5 close. a 7 3 0.
+q calc 7 2 3 3 plus 2. a 7 2 3 5.
+q calc 3 6 4 over 7. a 5 2.
+q solve x over 6 plus 1 7 equals 3 1. a x 8 4.
+q compare minus 7 7 7 with minus 7 7 6. a less.
+q check 7 2 minus 9 3 2 2 equals minus 9 2 4 0. a no.
+q calc 2 5 percent of 2 4 0 4. a 6 0 1.
+q calc 3 1 9 2 over 7. a 4 5 6.
+q calc minus 7 6 0 point 1 plus 7 5 1 point 3. a minus 8 point 8.
+q check 5 x equals 6 5 x 2 3. a no.
+q calc 6 0 percent of 1 5 2 5. a 9 1 5.
+q calc 4 3 4 point 5 7 minus 3 8 1 point 4. a 5 3 point 1 7.
+q calc root 1 8 4 9. a 4 3.
+q calc 2 5 6 2 over 3. a 8 5 4.
+q calc 5 times 1 0. a 5 0.
+q check 3 x plus 9 1 equals 1 2 x plus 5 5 x 8. a no.
+q check 5 2 3 6 over 7 equals 7 5 0. a no.
+q calc 7 minus 8 2 times 2 6. a minus 2 1 2 5.
+q calc 2 0 percent of 4 8 9 5. a 9 7 9.
+q calc 9 8 times 9. a 8 8 2.
+q check x over 6 equals minus 1 x minus 5. a no.
+q calc 1 0 8 over 3 plus 7. a 4 3.
+q solve open x plus 6 6 close times 5 4 equals 2 8 0 8. a x minus 1 4.
+q calc 6 minus 8. a minus 2.
+q calc 6 times 9. a 5 4.
+q check 3 2 5 equals 6 1 x minus 4 1 x 1 6. a no.
+q calc 7 8 times 1 4 steps. a 7 8 times 1 0 is 7 8 0 then 7 8 times 4 is 3 1 2 then 7 8 0 plus 3 1 2 is 1 0 9 2 then result 1 0 9 2.
+q check minus 1 1 9 7 plus minus 6 4 0 5 equals minus 7 6 0 2. a yes.
+q calc 5 3 7 0 plus 4 1 2 0 steps. a 0 plus 0 is 0 write 0 then 7 plus 2 is 9 write 9 then 3 plus 1 is 4 write 4 then 5 plus 4 is 9 write 9 then result 9 4 9 0.
+q calc root 1 7 1 6 1. a 1 3 1.
+q check x minus 4 6 equals minus 4 7 x 1. a no.
+q solve minus 3 x minus 1 6 equals minus 4. a x minus 4.
+q calc 6 0 percent of 4 8 3 0. a 2 8 9 8.
+q check x over 4 equals 1 0 x 3 8. a no.
+q solve open x minus 6 0 close times 1 1 equals minus 5 0 6. a x 1 4.
+q calc minus 2 1 8 minus 4 7. a minus 2 6 5.
+q calc minus 2 2 6 point 1 9 minus 2 1 0. a minus 4 3 6 point 1 9.
+q calc 6 times open 1 1 plus 2 close. a 7 8.
+q calc 3 8 4 plus 2 steps. a 4 plus 2 is 6 write 6 then 8 plus 0 is 8 write 8 then 3 plus 0 is 3 write 3 then result 3 8 6.
+q solve open x minus 4 5 close times 1 equals minus 4 6. a x minus 1.
+q calc 2 times 5 minus 5. a 5.
+q check 8 power 2 plus 4 equals 6 9. a no.
+q solve x plus 8 7 equals 8 0. a x minus 7.
+q check 1 9 2 4 plus 6 0 equals 1 9 8 4. a yes.
+q check 2 2 power 2 equals 4 7 4. a no.
+q calc 7 9 times 6 6 steps. a 7 9 times 6 0 is 4 7 4 0 then 7 9 times 6 is 4 7 4 then 4 7 4 0 plus 4 7 4 is 5 2 1 4 then result 5 2 1 4.
+q check 3 7 4 point 2 plus 9 7 1 point 7 4 equals 1 3 4 5 point 9 4. a yes.
+q calc 6 3 2 point 4 minus 9 5 7. a minus 3 2 4 point 6.
+q calc 9 3 times 3. a 2 7 9.
+q solve open x minus 2 0 close times 9 equals minus 2 6 1. a x minus 9.
+q solve minus 3 7 equals 8 0 x plus 4 3. a x minus 1.
+q calc 6 9 1 2 times 9 steps. a 2 times 9 is 1 8 write 8 carry 1 then 1 times 9 is 9 plus 1 is 1 0 write 0 carry 1 then 9 times 9 is 8 1 plus 1 is 8 2 write 2 carry 8 then 6 times 9 is 5 4 plus 8 is 6 2 write 2 carry 6 then result 6 2 2 0 8.
+q solve 5 x equals minus 7 5. a x minus 1 5.
+q compare 5 1 point 1 with 5 1 point 1 1. a less.
+q calc minus 6 8 plus 2 6. a minus 4 2.
+q compare 9 with 8. a greater.
+q calc minus 3 minus 2 5. a minus 2 8.
+q check x plus 1 4 equals 0 x minus 1 4. a yes.
+q compare 4 1 5 8 with minus 6 9 7 3. a greater.
+q calc 2 4 4 times 9 2. a 2 2 4 4 8.
+q check open x minus 2 2 close times 1 1 equals minus 3 3 0 x minus 1 0. a no.
+q calc 2 8 1 point 5 9 plus 2 0 8 point 8 9. a 4 9 0 point 4 8.
+q calc 4 times 1 2. a 4 8.
+q calc open 9 minus 9 1 close times 4. a minus 3 2 8.
+q check open 4 plus 4 close times 1 1 equals 8 8. a yes.
+q calc 2 2 5 times 2 steps. a 5 times 2 is 1 0 write 0 carry 1 then 2 times 2 is 4 plus 1 is 5 write 5 then 2 times 2 is 4 write 4 then result 4 5 0.
+q calc 5 1 plus 2 2. a 7 3.
+q check x over 8 minus 3 2 equals minus 3 6 x 3 2. a no.
+q calc 8 4 7 9 minus 4. a 8 4 7 5.
+q check minus 1 6 4 equals minus 7 x minus 4 5 x 1 7. a yes.
+q solve 1 2 x equals 1 0 8. a x 9.
+q solve 5 0 x equals minus 9 5 0. a x minus 1 9.
+q calc 2 5 percent of 3 8 9 6. a 9 7 4.
+q calc root 7 8 4. a 2 8.
+q compare minus 6 5 point 9 with 8 1 point 4. a less.
+q calc 4 4 times 2 2 2 3 over 5 7. a 1 7 1 6.
+q calc 2 plus 5 times 1 2. a 6 2.
+q calc 8 0 8 plus 8. a 8 1 6.
+q check open 4 7 minus 4 6 close times 9 5 equals 9 5. a yes.
+q calc 6 5 3 plus 9 5 4 steps. a 3 plus 4 is 7 write 7 then 5 plus 5 is 1 0 write 0 carry 1 then 6 plus 9 plus 1 is 1 6 write 6 carry 1 then result 1 6 0 7.
+q calc 3 4 0 plus 4 8 steps. a 0 plus 8 is 8 write 8 then 4 plus 4 is 8 write 8 then 3 plus 0 is 3 write 3 then result 3 8 8.
+q solve x minus 2 2 equals minus 2 8. a x minus 6.
+q calc minus 2 6 plus 8. a minus 1 8.
+q check 8 0 minus 6 0 times 9 equals 4 6 0. a no.
+q solve 3 x plus 4 equals minus 2 0. a x minus 8.
+q calc 4 3 9 3 minus 5 8 9. a 3 8 0 4.
+q compare minus 7 3 2 0 with minus 7 2 2 0. a less.
+q calc 3 1 6 minus 0. a 3 1 6.
+q calc 6 6 power 2 plus 5 8. a 4 4 1 4.
+q calc 9 9 1 minus 9 8 8. a 3.
+q calc minus 9 5 6 3 minus 2 0 4. a minus 9 7 6 7.
+q solve open x plus 2 5 close times 2 7 equals 1 1 0 7. a x 1 6.
+q calc open 5 minus 7 9 close times 1 2. a minus 8 8 8.
+q calc 4 1 percent of 7 0 0. a 2 8 7.
+q calc 7 5 power 2. a 5 6 2 5.
+q calc 4 9 plus 0 steps. a 9 plus 0 is 9 write 9 then 4 plus 0 is 4 write 4 then result 4 9.
+q calc 1 0 7 times 1. a 1 0 7.
+q solve x over 4 minus 1 4 equals minus 1 3. a x 4.
+q calc open 8 plus 8 close times 8. a 1 2 8.
+q solve 8 x plus 2 7 equals 9 1. a x 8.
+q check minus 7 x equals 2 8 x minus 1 4. a no.
+q solve 1 1 x plus 7 3 equals 1 0 x plus 5 7. a x minus 1 6.
+q compare minus 8 8 point 6 with minus 8 8 point 5. a less.
+q calc 4 6 minus 9. a 3 7.
+q calc 6 plus 3 8 0 over 1 0. a 4 4.
+q solve 2 7 5 equals 4 5 x plus 5 0. a x 5.
+q check 1 5 2 equals 7 x plus 1 2 x 2 0. a yes.
+q solve x plus 5 5 equals 4 4. a x minus 1 1.
+q solve 2 x equals minus 2 2. a x minus 1 1.
+q solve 8 2 x plus 5 2 equals 9 5 4. a x 1 1.
+q compare minus 3 3 point 4 7 with minus 3 3 point 3 7. a less.
+q calc 2 0 percent of 4 4 8 0. a 8 9 6.
+q calc 2 0 percent of 2 3 8 0. a 4 7 6.
+q calc 4 5 percent of 8 4 0. a 3 7 8.
+q solve 4 8 x equals 8 6 4. a x 1 8.
+q solve open x minus 6 7 close times 8 equals minus 4 9 6. a x 5.
+q calc 4 3 power 2. a 1 8 4 9.
+q calc 6 2 0 2 over 7. a 8 8 6.
+q check 9 9 2 minus 3 equals 9 9 9. a no.
+q compare 7 0 7 with 8 0 7. a less.
+q calc 4 6 4 point 7 minus 7 3 1 point 8 4. a minus 2 6 7 point 1 4.
+q calc 4 5 0 5 over 5 3. a 8 5.
+q check 8 8 5 times 7 1 equals 6 2 8 3 5. a yes.
+q solve 2 x equals 1 8. a x 9.
+q check x over 9 equals minus 1 2 x minus 1 0 8. a yes.
+q check 3 x minus 4 5 equals 4 x minus 5 4 x 8. a no.
+q calc 5 8 2 0 over 6 0. a 9 7.
+q check 3 x equals 4 5 x 1 5. a yes.
+q solve minus 1 8 equals minus 8 x plus 7 0. a x 1 1.
+q compare minus 8 6 8 3 with minus 8 6 8 2. a less.
+q calc 2 7 1 point 4 minus 8 7 4 point 1. a minus 6 0 2 point 7.
+q solve x over 5 equals minus 1 1. a x minus 5 5.
+q calc 2 4 times 6 minus 6 8. a 7 6.
+q check open x plus 2 7 close times 9 equals 3 6 0 x 1 3. a yes.
+q solve 1 4 equals 2 x plus 4 4. a x minus 1 5.
+q calc 3 9 9 point 6 plus 2 6 5 point 0 3. a 6 6 4 point 6 3.
+q solve x over 9 plus 6 5 equals 6 9. a x 3 6.
+q calc 7 7 plus 5 8 0 5. a 5 8 8 2.
+q calc 7 7 0 plus 6 8 6 3 steps. a 0 plus 3 is 3 write 3 then 7 plus 6 is 1 3 write 3 carry 1 then 7 plus 8 plus 1 is 1 6 write 6 carry 1 then 0 plus 6 plus 1 is 7 write 7 then result 7 6 3 3.
+q calc 1 6 5 point 9 minus 4 2 6 point 0 9. a minus 2 6 0 point 1 9.
+q calc 5 5 minus 6 1. a minus 6.
+q calc 5 8 7 point 9 7 minus 8 8 6 point 3. a minus 2 9 8 point 3 3.
+q solve 3 x plus 4 3 equals x plus 5. a x minus 1 9.
+q solve x over 1 2 plus 3 0 equals 4 3. a x 1 5 6.
+q calc 1 0 times 7 0. a 7 0 0.
+q calc 2 1 7 2 over 4. a 5 4 3.
+q calc 8 1 9 1 minus 4. a 8 1 8 7.
+q calc 5 0 percent of 1 6 8 8. a 8 4 4.
+q calc 3 0 percent of 2 9 7 0. a 8 9 1.
+q solve x over 7 plus 5 0 equals 5 0. a x 0.
+q calc 7 9 8 plus 8 6 3 steps. a 8 plus 3 is 1 1 write 1 carry 1 then 9 plus 6 plus 1 is 1 6 write 6 carry 1 then 7 plus 8 plus 1 is 1 6 write 6 carry 1 then result 1 6 6 1.
+q calc 1 6 1 point 9 plus 5 2 9 point 8 6. a 6 9 1 point 7 6.
+q calc 5 2 plus minus 8. a 4 4.
+q compare minus 7 point 5 with 7 6 point 7. a less.
+q solve x over 4 equals 9. a x 3 6.
+q calc 1 3 8 minus 5 3 1. a minus 3 9 3.
+q check open 2 plus 8 close times 9 8 equals 9 8 1. a no.
+q calc 1 3 0 over 5. a 2 6.
+q solve minus 2 1 9 equals 1 2 x plus 9. a x minus 1 9.
+q check 5 times open 1 1 plus 9 close equals 1 0 0. a yes.
+q calc 5 8 7 2 over 8. a 7 3 4.
+q solve open x plus 4 1 close times 1 1 equals 5 0 6. a x 5.
+q compare 6 6 point 3 1 with 6 6 point 3 1. a equal.
+q calc minus 7 4 plus 7 4. a 0.
+q compare 8 8 with 4 7 2 0. a less.
+q calc root 1 1 4 4 9. a 1 0 7.
+q calc 7 4 3 6 times 2 steps. a 6 times 2 is 1 2 write 2 carry 1 then 3 times 2 is 6 plus 1 is 7 write 7 then 4 times 2 is 8 write 8 then 7 times 2 is 1 4 write 4 carry 1 then result 1 4 8 7 2.
+q calc 4 4 8 plus 2 8 0 steps. a 8 plus 0 is 8 write 8 then 4 plus 8 is 1 2 write 2 carry 1 then 4 plus 2 plus 1 is 7 write 7 then result 7 2 8.
+q calc 1 0 percent of 3 5 3 0. a 3 5 3.
+q calc 7 2 times 4 steps. a 2 times 4 is 8 write 8 then 7 times 4 is 2 8 write 8 carry 2 then result 2 8 8.
+q calc open 7 plus 3 close times 3. a 3 0.
+q calc 3 9 percent of 7 0 0. a 2 7 3.
+q compare 1 with 1 8 6 4. a less.
+q calc 3 6 1 4 plus 7 5 4 2. a 1 1 1 5 6.
+q solve 4 x equals minus 4. a x minus 1.
+q solve minus 6 x plus 1 3 equals 6 x plus 7 3. a x minus 5.
+q compare 2 1 8 with 1 1 8. a greater.
+q check open x minus 3 4 close times 7 equals minus 3 2 9 x minus 1 3. a yes.
+q calc minus 5 8 0 plus 1 3 1 3. a 7 3 3.
+q solve x minus 3 0 equals minus 4 3. a x minus 1 3.
+q calc 5 6 4 point 4 minus 8 1 2 point 6. a minus 2 4 8 point 2.
+q calc 1 2 times 6 minus 9. a 6 3.
+q compare 5 4 point 1 with 5 4 point 1. a equal.
+q compare minus 6 point 6 with 9 1 point 0 3. a less.
+q calc 2 5 percent of 6 6 4. a 1 6 6.
+q solve 7 7 x plus 2 3 equals 9 x minus 4 5. a x minus 1.
+q calc 2 times 5 minus 7. a 3.
+q compare 7 with minus 5 4 4 6. a greater.
+q calc 7 8 4 over 8. a 9 8.
+q calc 1 6 point 4 minus 4 0 3 point 2. a minus 3 8 6 point 8.
+q calc 9 8 plus 6 steps. a 8 plus 6 is 1 4 write 4 carry 1 then 9 plus 0 plus 1 is 1 0 write 0 carry 1 then result 1 0 4.
+q solve 4 5 x plus 8 9 equals x minus 5 7 1. a x minus 1 5.
+q solve 3 8 equals minus 1 2 x minus 7 0. a x minus 9.
+q calc 3 minus 5 5 times 2 2. a minus 1 2 0 7.
+q compare 1 7 point 0 9 with 5 2 point 2. a less.
+q calc 3 7 2 2 plus 5 1 0 2 steps. a 2 plus 2 is 4 write 4 then 2 plus 0 is 2 write 2 then 7 plus 1 is 8 write 8 then 3 plus 5 is 8 write 8 then result 8 8 2 4.
+q compare 3 2 8 4 with 3 2 7 4. a greater.
+q calc 1 4 8 times 7 2. a 1 0 6 5 6.
+q calc 1 minus 9. a minus 8.
+q calc 2 0 4 times 3 4 steps. a 2 0 4 times 3 0 is 6 1 2 0 then 2 0 4 times 4 is 8 1 6 then 6 1 2 0 plus 8 1 6 is 6 9 3 6 then result 6 9 3 6.
+q calc minus 8 plus 8 3 9. a 8 3 1.
+q solve x over 2 minus 2 equals 2. a x 8.
+q calc 8 0 percent of 1 5 9 5. a 1 2 7 6.
+q check open x minus 7 1 close times 3 equals minus 1 6 5 x 1 6. a yes.
+q calc 3 7 times 1 0 minus 8 5. a 2 8 5.
+q solve minus 7 x minus 1 1 equals minus 1 1. a x 0.
+q calc 1 7 6 0 over 4 0. a 4 4.
+q calc 2 7 9 0 over 4 5. a 6 2.
+q check minus 4 0 minus 8 5 equals minus 1 2 5. a yes.
+q calc 6 0 9 point 7 plus 6 6 2 point 8. a 1 2 7 2 point 5.
+q check 5 5 plus 9 2 times 7 equals 6 9 9. a yes.
+q check x plus 8 3 equals 8 9 x 7. a no.
+q check 0 plus 3 1 equals 3 1. a yes.
+q compare 8 4 point 0 6 2 with 8 4 point 0 5 2. a greater.
+q check 4 6 7 1 over 9 equals 5 1 9. a yes.
+q check 6 2 minus 3 0 times 9 2 equals minus 2 6 9 9. a no.
+q check open x minus 6 0 close times 1 equals minus 7 1 x minus 1 1. a yes.
+q calc 3 7 7 times 1. a 3 7 7.
+q calc 5 9 2 minus 9 2 4 point 1 2. a minus 3 3 2 point 1 2.
+q calc 3 6 1 times 6 steps. a 1 times 6 is 6 write 6 then 6 times 6 is 3 6 write 6 carry 3 then 3 times 6 is 1 8 plus 3 is 2 1 write 1 carry 2 then result 2 1 6 6.
+q calc 5 5 times 6 1 steps. a 5 5 times 6 0 is 3 3 0 0 then 5 5 times 1 is 5 5 then 3 3 0 0 plus 5 5 is 3 3 5 5 then result 3 3 5 5.
+q check 6 x minus 6 equals minus 6 x minus 2 2 2 x 1 8. a no.
+q calc 4 5 7 point 2 2 plus 1 4 6 point 9. a 6 0 4 point 1 2.
+q calc root 6 7 6. a 2 6.
+q calc 3 minus 6 times 1 2. a minus 6 9.
+q calc 6 6 times 2 steps. a 6 times 2 is 1 2 write 2 carry 1 then 6 times 2 is 1 2 plus 1 is 1 3 write 3 carry 1 then result 1 3 2.
+q calc 5 5 times 9 steps. a 5 times 9 is 4 5 write 5 carry 4 then 5 times 9 is 4 5 plus 4 is 4 9 write 9 carry 4 then result 4 9 5.
+q check x over 3 equals minus 1 2 x minus 3 7. a no.
+q solve 8 3 equals 1 0 x plus 4 3. a x 4.
+q calc 5 percent of 1 3 0 0. a 6 5.
+q check 3 1 x plus 4 0 equals 7 1 x 1. a yes.
+q solve x over 7 minus 1 equals minus 1 6. a x minus 1 0 5.
+q solve x over 7 plus 3 0 equals 2 7. a x minus 2 1.
+q solve 2 x equals minus 4. a x minus 2.
+q compare 6 3 point 1 with minus 2 7 point 0 9. a greater.
+q compare 1 2 0 9 with 1 1 9 9. a greater.
+q calc 3 plus 4. a 7.
+q check root 1 0 2 4 equals 3 3. a no.
+q calc 3 8 6 point 4 9 plus 2 0 0 point 5 6. a 5 8 7 point 0 5.
+q check 9 5 minus 7 equals 8 8. a yes.
+q solve x over 5 minus 4 3 equals minus 4 7. a x minus 2 0.
+q solve open x plus 9 4 close times 7 2 equals 7 7 0 4. a x 1 3.
+q calc 4 times 9 plus 5. a 4 1.
+q compare 4 0 point 0 3 4 with 4 0 point 0 3 4. a equal.
+q calc 4 2 6 plus 7 1 steps. a 6 plus 1 is 7 write 7 then 2 plus 7 is 9 write 9 then 4 plus 0 is 4 write 4 then result 4 9 7.
+q solve 2 6 x minus 8 9 equals minus 2 7 1. a x minus 7.
+q compare 4 4 point 7 6 with minus 9 5 point 6 8. a greater.
+q solve 7 x minus 2 4 equals minus 2 x minus 2 0 4. a x minus 2 0.
+q solve open x minus 7 2 close times 8 5 equals minus 4 4 2 0. a x 2 0.
+q compare 3 1 point 9 with 9 6 point 8 1 6. a less.
+q check x plus 4 8 equals 5 2 x 4. a yes.
+q check 3 0 percent of 7 2 0 equals 2 1 6. a yes.
+q solve open x plus 7 6 close times 8 equals 5 6 0. a x minus 6.
+q compare minus 4 6 5 with minus 3 2 7 1. a greater.
+q calc 8 9 minus 2. a 8 7.
+q calc 2 0 percent of 3 1 8 0. a 6 3 6.
+q check 7 x equals minus 9 8 x minus 1 5. a no.
+q solve minus 2 6 equals 9 x minus 9 8. a x 8.
+q check open x minus 3 8 close times 5 equals minus 1 4 5 x 8. a no.
+q calc 7 6 2 minus 7 1. a 6 9 1.
+q calc 9 0 percent of 2 7 7 0. a 2 4 9 3.
+q calc 7 8 7 times 2 6. a 2 0 4 6 2.
+q solve x over 1 2 minus 1 5 equals minus 9. a x 7 2.
+q calc 8 2 7 minus 2. a 8 2 5.
+q solve minus 4 7 1 equals 4 7 x minus 9 5. a x minus 8.
+q calc 2 0 percent of 2 8 6 0. a 5 7 2.
+q check 5 x minus 7 1 equals 4 x 1 5. a yes.
+q solve 8 x equals 9 6. a x 1 2.
+q calc 9 8 plus 7 9 1 2 steps. a 8 plus 2 is 1 0 write 0 carry 1 then 9 plus 1 plus 1 is 1 1 write 1 carry 1 then 0 plus 9 plus 1 is 1 0 write 0 carry 1 then 0 plus 7 plus 1 is 8 write 8 then result 8 0 1 0.
+q calc 1 3 6 0 minus 5 0 7. a 8 5 3.
+q check x plus 1 6 equals minus 1 x minus 7. a no.
+q calc 7 8 plus 1 steps. a 8 plus 1 is 9 write 9 then 7 plus 0 is 7 write 7 then result 7 9.
+q calc 6 0 7 2 times 7 steps. a 2 times 7 is 1 4 write 4 carry 1 then 7 times 7 is 4 9 plus 1 is 5 0 write 0 carry 5 then 0 times 7 is 0 plus 5 is 5 write 5 then 6 times 7 is 4 2 write 2 carry 4 then result 4 2 5 0 4.
+q solve open x plus 8 9 close times 9 5 equals 9 1 2 0. a x 7.
+q solve minus 4 3 x plus 4 1 equals minus 8 x plus 7 4 1. a x minus 2 0.
+q calc 1 1 plus 2 0 minus 8. a 2 3.
+q check 7 4 0 plus 8 0 equals 8 2 0. a yes.
+q calc minus 6 2 plus 2 5. a minus 3 7.
+q calc 5 4 times 5 steps. a 4 times 5 is 2 0 write 0 carry 2 then 5 times 5 is 2 5 plus 2 is 2 7 write 7 carry 2 then result 2 7 0.
+q compare 2 9 with 5 9 3 6. a less.
+q calc 4 5 4 6 times 4 steps. a 6 times 4 is 2 4 write 4 carry 2 then 4 times 4 is 1 6 plus 2 is 1 8 write 8 carry 1 then 5 times 4 is 2 0 plus 1 is 2 1 write 1 carry 2 then 4 times 4 is 1 6 plus 2 is 1 8 write 8 carry 1 then result 1 8 1 8 4.
+q calc 3 0 percent of 1 9 8 0. a 5 9 4.
+q solve open x plus 5 8 close times 3 equals 1 7 4. a x 0.
+q solve open x plus 2 2 close times 6 4 equals 5 7 6. a x minus 1 3.
+q calc 5 2 6 1 times 9 steps. a 1 times 9 is 9 write 9 then 6 times 9 is 5 4 write 4 carry 5 then 2 times 9 is 1 8 plus 5 is 2 3 write 3 carry 2 then 5 times 9 is 4 5 plus 2 is 4 7 write 7 carry 4 then result 4 7 3 4 9.
+q check 0 plus 8 1 7 1 equals 8 1 7 1. a yes.
+q check 1 2 4 times 9 equals 1 1 1 6. a yes.
+q calc 2 8 2 plus 3 steps. a 2 plus 3 is 5 write 5 then 8 plus 0 is 8 write 8 then 2 plus 0 is 2 write 2 then result 2 8 5.
+q calc 3 2 0 1 over 3 3. a 9 7.
+q calc 5 percent of 3 9 0 0. a 1 9 5.
+q solve open x plus 6 1 close times 2 3 equals 1 0 3 5. a x minus 1 6.
+q calc 2 7 3 over 1 3. a 2 1.
+q solve 7 9 x plus 1 equals 1 1 x minus 1 3 5 9. a x minus 2 0.
+q compare minus 4 7 point 2 6 with minus 4 7 point 2 6 1. a greater.
+q calc 6 2 8 over 4. a 1 5 7.
+q solve minus 9 x plus 9 6 equals 2 7 6. a x minus 2 0.
+q check 8 3 times 6 3 equals 5 2 2 9. a yes.
+q check 6 x plus 5 1 equals 1 1 x minus 9 x 2. a no.
+q calc 7 7 minus 5. a 7 2.
+q calc 7 times 8 plus 1 2. a 6 8.
+q calc 3 0 plus 1 0 6 steps. a 0 plus 6 is 6 write 6 then 3 plus 0 is 3 write 3 then 0 plus 1 is 1 write 1 then result 1 3 6.
+q calc 9 8 4 6 plus 2 steps. a 6 plus 2 is 8 write 8 then 4 plus 0 is 4 write 4 then 8 plus 0 is 8 write 8 then 9 plus 0 is 9 write 9 then result 9 8 4 8.
+q compare 4 3 5 with minus 7 7 9 6. a greater.
+q calc 2 7 7 plus 3. a 2 8 0.
+q solve x plus 6 3 equals 7 7. a x 1 4.
+q calc 3 3 7 point 1 8 plus 2 9 7 point 4. a 6 3 4 point 5 8.
+q calc 1 5 6 4 over 4. a 3 9 1.
+q calc 5 percent of 2 0 6 0. a 1 0 3.
+q calc 2 minus 6 0 2. a minus 6 0 0.
+q calc 4 9 point 3 4 plus 1 0 4 point 6 7. a 1 5 4 point 0 1.
+q calc 3 0 percent of 3 4 1 0. a 1 0 2 3.
+q compare 3 0 point 7 8 with 3 0 point 7 8. a equal.
+q calc minus 9 1 5 3 plus 8 9 4 3. a minus 2 1 0.
+q calc 2 2 8 5 times 3 steps. a 5 times 3 is 1 5 write 5 carry 1 then 8 times 3 is 2 4 plus 1 is 2 5 write 5 carry 2 then 2 times 3 is 6 plus 2 is 8 write 8 then 2 times 3 is 6 write 6 then result 6 8 5 5.
+q solve 1 0 1 equals 1 9 x minus 5 1. a x 8.
+q check 9 x minus 6 1 equals minus 8 x minus 3 8 4 x minus 1 9. a yes.
+q calc 6 minus 5. a 1.
+q check 1 8 times 2 equals 4 6. a no.
+q check 4 1 6 over 2 6 plus 7 equals minus 2 3. a no.
+q solve minus 4 equals 5 x minus 2 9. a x 5.
+q calc 8 7 times open 7 5 plus 5 close. a 6 9 6 0.
+q check 3 2 7 4 minus 6 equals 3 2 6 7. a no.
+q calc 4 9 times 9 8. a 4 8 0 2.
+q calc 6 3 8 minus 4 9. a 5 8 9.
+q calc 5 2 0 point 4 plus 8 8 0 point 6 9. a 1 4 0 1 point 0 9.
+q solve x minus 7 1 equals minus 7 0. a x 1.
+q calc minus 5 1 minus 2 7 1 5. a minus 2 7 6 6.
+q check 2 4 percent of 4 2 0 0 equals 1 0 0 8. a yes.
+q calc 8 9 plus 1 steps. a 9 plus 1 is 1 0 write 0 carry 1 then 8 plus 0 plus 1 is 9 write 9 then result 9 0.
+q check x over 3 minus 2 5 equals minus 3 6 x minus 3 1. a no.
+q calc 4 0 9 point 3 minus 3 4 point 2. a 3 7 5 point 1.
+q calc 4 9 minus 4 times 6. a 2 5.
+q calc 6 plus 3. a 9.
+q calc 2 2 2 3 over 9. a 2 4 7.
+q compare minus 6 7 8 3 with minus 5 7 7 8. a less.
+q calc 5 4 7 2 over 1 2. a 4 5 6.
+q calc minus 2 3 0 plus minus 1. a minus 2 3 1.
+q solve minus 1 1 x minus 2 5 equals minus 2 2 3. a x 1 8.
+q check 7 8 times 5 equals 3 9 0. a yes.
+q check 2 3 8 over 3 4 equals 1 4. a no.
+q solve 9 x equals minus 4 5. a x minus 5.
+q calc 9 1 7 plus 7 7 6 1. a 8 6 7 8.
+q calc 2 6 4 over 3. a 8 8.
+q calc 2 0 9 times 6 steps. a 9 times 6 is 5 4 write 4 carry 5 then 0 times 6 is 0 plus 5 is 5 write 5 then 2 times 6 is 1 2 write 2 carry 1 then result 1 2 5 4.
+q calc minus 4 1 3 2 plus 2 6 7. a minus 3 8 6 5.
+q solve x plus 8 equals minus 3. a x minus 1 1.
+q solve 6 1 x equals 1 2 2. a x 2.
+q calc 8 times open 1 2 plus 3 close. a 1 2 0.
+q check x over 1 2 minus 7 5 equals minus 8 7 x minus 1 3 4. a no.
+q compare minus 2 0 8 3 with minus 2 0 8 3. a equal.
+q solve x plus 1 4 equals 2 0. a x 6.
+q calc 1 2 minus 7 3 times 6. a minus 4 2 6.
+q check x over 6 plus 3 2 equals 1 9 x minus 7 8. a yes.
+q solve x minus 6 6 equals minus 5 4. a x 1 2.
+q calc 7 5 8 0 over 1 0. a 7 5 8.
+q calc 2 2 2 3 over 3 9. a 5 7.
+q calc 1 0 times 9 plus 1 1. a 1 0 1.
+q solve minus 1 0 x plus 2 3 equals 1 8 3. a x minus 1 6.
+q calc 6 1 2 3 plus 7 3 steps. a 3 plus 3 is 6 write 6 then 2 plus 7 is 9 write 9 then 1 plus 0 is 1 write 1 then 6 plus 0 is 6 write 6 then result 6 1 9 6.
+q calc minus 4 9 5 8 plus 8 4 9 6. a 3 5 3 8.
+q solve minus 7 x plus 4 6 equals minus 1 0. a x 8.
+q solve 3 5 x minus 4 6 equals minus 4 6. a x 0.
+q solve 3 x equals minus 3 9. a x minus 1 3.
+q calc 2 plus 9. a 1 1.
+q check 4 9 4 point 8 2 minus 8 1 point 2 2 equals 4 1 3 point 5. a no.
+q compare 3 1 7 6 with minus 3 0 4 7. a greater.
+q check open 7 minus 6 close times 7 equals 6. a no.
+q calc 5 9 plus 3 1 2 over 6. a 1 1 1.
+q calc 8 plus minus 7 7 1. a minus 7 6 3.
+q check 2 5 5 times 2 2 equals 5 3 5 5. a no.
+q calc 2 3 3 minus 6 4 point 4. a 1 6 8 point 6.
+q calc 8 6 6 point 1 plus 1 9 8 point 5. a 1 0 6 4 point 6.
+q check 6 0 7 times 3 4 equals 2 0 6 3 8. a yes.
+q calc 3 8 plus 9 8 0 9 steps. a 8 plus 9 is 1 7 write 7 carry 1 then 3 plus 0 plus 1 is 4 write 4 then 0 plus 8 is 8 write 8 then 0 plus 9 is 9 write 9 then result 9 8 4 7.
+q calc 1 2 4 7 minus 8. a 1 2 3 9.
+q calc 5 0 plus 6 steps. a 0 plus 6 is 6 write 6 then 5 plus 0 is 5 write 5 then result 5 6.
+q calc 6 1 times 2 3. a 1 4 0 3.
+q calc 2 times 8 9 plus 1 2. a 1 9 0.
+q calc 5 plus 5 1. a 5 6.
+q compare 7 7 point 7 with 7 7 point 7. a equal.
+q calc 5 6 2 point 8 8 plus 2 5 0 point 5 6. a 8 1 3 point 4 4.
+q solve minus 9 x plus 4 5 equals x minus 2 5. a x 7.
+q calc 1 percent of 2 4 0 0. a 2 4.
+q calc 2 9 0 9 minus 9 1. a 2 8 1 8.
+q calc 6 2 9 point 6 plus 1 5 1 point 8. a 7 8 1 point 4.
+q solve open x plus 8 1 close times 1 equals 7 8. a x minus 3.
+q compare 7 9 5 4 with 7 9 5 5. a less.
+q check 9 6 plus 9 equals 1 0 5. a yes.
+q calc 1 0 0 percent of 2 3 8 9. a 2 3 8 9.
+q calc 1 1 plus 8 8 minus 5. a 9 4.
+q check x plus 5 6 equals 3 8 x minus 1 8. a yes.
+q check x over 8 plus 8 7 equals 8 8 x 8. a yes.
+q calc 9 0 percent of 8 3 0. a 7 4 7.
+q calc 6 minus 3 9 times 8 6. a minus 3 3 4 8.
+q calc 7 times 8 plus 1 1. a 6 7.
+q calc 4 5 times 2. a 9 0.
+q calc 2 0 times 8 5. a 1 7 0 0.
+q calc 2 minus minus 5 4 4. a 5 4 6.
+q solve minus 7 2 equals 6 x minus 3 6. a x minus 6.
+q compare minus 1 8 9 with 2 6 5 5. a less.
+q calc 2 4 times 1 9 steps. a 2 4 times 1 0 is 2 4 0 then 2 4 times 9 is 2 1 6 then 2 4 0 plus 2 1 6 is 4 5 6 then result 4 5 6.
+q calc 6 9 9 point 5 plus 2 7 6 point 1 6. a 9 7 5 point 6 6.
+q solve open x plus 1 4 close times 7 equals 5 6. a x minus 6.
+q calc 5 6 5 point 6 minus 1 6 5 point 9 2. a 3 9 9 point 6 8.
+q calc 1 3 1 0 over 5. a 2 6 2.
+q solve open x minus 6 5 close times 8 9 equals minus 4 0 9 4. a x 1 9.
+q calc 8 3 1 times 4 steps. a 1 times 4 is 4 write 4 then 3 times 4 is 1 2 write 2 carry 1 then 8 times 4 is 3 2 plus 1 is 3 3 write 3 carry 3 then result 3 3 2 4.
+q solve minus 1 0 2 equals minus 1 1 x minus 4 7. a x 5.
+q solve minus 9 x plus 4 1 equals minus 4 x plus 9 6. a x minus 1 1.
+q calc 1 6 minus 8 3. a minus 6 7.
+q solve open x plus 3 9 close times 8 equals 4 4 0. a x 1 6.
+q calc 7 1 6 point 7 6 plus 3 6 3 point 7 3. a 1 0 8 0 point 4 9.
+q calc 3 4 times 3 steps. a 4 times 3 is 1 2 write 2 carry 1 then 3 times 3 is 9 plus 1 is 1 0 write 0 carry 1 then result 1 0 2.
+q calc 2 6 6 point 4 9 minus 2 6 4 point 2. a 2 point 2 9.
+q solve 1 1 x minus 9 4 equals minus 3 0 3. a x minus 1 9.
+q calc 7 0 percent of 4 9 5 0. a 3 4 6 5.
+q calc 7 3 6 0 minus minus 1 8. a 7 3 7 8.
+q solve x over 2 equals 2. a x 4.
+q solve x over 1 0 plus 2 3 equals 2 5. a x 2 0.
+q calc 1 percent of 3 0 0 0. a 3 0.
+q calc 8 4 4 0 minus 5 3 2 9. a 3 1 1 1.
+q calc 1 1 plus 3 8 7 1 over 4 9. a 9 0.
+q solve x over 4 plus 9 7 equals 1 1 1. a x 5 6.
+q calc 4 minus 9 3 1 2. a minus 9 3 0 8.
+q calc 5 8 2 6 plus 0. a 5 8 2 6.
+q calc minus 6 minus 2 6 7 6. a minus 2 6 8 2.
+q calc 9 0 9 point 5 2 plus 4 8 5 point 0 4. a 1 3 9 4 point 5 6.
+q calc 1 1 minus 3 7 times 9. a minus 3 2 2.
+q calc 2 9 4 5 plus 6 3 steps. a 5 plus 3 is 8 write 8 then 4 plus 6 is 1 0 write 0 carry 1 then 9 plus 0 plus 1 is 1 0 write 0 carry 1 then 2 plus 0 plus 1 is 3 write 3 then result 3 0 0 8.
+q calc 9 5 2 8 plus 8 4 7 steps. a 8 plus 7 is 1 5 write 5 carry 1 then 2 plus 4 plus 1 is 7 write 7 then 5 plus 8 is 1 3 write 3 carry 1 then 9 plus 0 plus 1 is 1 0 write 0 carry 1 then result 1 0 3 7 5.
+q calc 1 0 plus 1 1 minus 1 1. a 1 0.
+q calc 8 0 percent of 4 5 6 0. a 3 6 4 8.
+q calc 6 9 plus 1 steps. a 9 plus 1 is 1 0 write 0 carry 1 then 6 plus 0 plus 1 is 7 write 7 then result 7 0.
+q calc 5 6 times 8 3 steps. a 5 6 times 8 0 is 4 4 8 0 then 5 6 times 3 is 1 6 8 then 4 4 8 0 plus 1 6 8 is 4 6 4 8 then result 4 6 4 8.
+q check 3 7 7 2 over 4 equals 9 4 3. a yes.
+q solve x minus 9 2 equals minus 1 0 8. a x minus 1 6.
+q calc 3 9 6 over 3 3. a 1 2.
+q solve open x minus 4 7 close times 1 0 equals minus 5 9 0. a x minus 1 2.
+q calc 3 0 times 4 steps. a 0 times 4 is 0 write 0 then 3 times 4 is 1 2 write 2 carry 1 then result 1 2 0.
+q calc 1 7 plus 2 8 9 1. a 2 9 0 8.
+q calc 5 9 2 6 plus minus 8 1 2. a 5 1 1 4.
+q check 5 percent of 2 6 2 0 equals 1 3 0. a no.
+q compare 2 4 point 8 4 5 with 2 4 point 8 4 5. a equal.
+q check x over 1 2 plus 1 0 equals 2 1 x 1 4 2. a no.
+q check minus 8 1 8 equals 5 5 x minus 4 8 x minus 4. a no.
+q calc 1 5 0 over 1 0. a 1 5.
+q calc 5 4 1 plus minus 8 1 0. a minus 2 6 9.
+q calc 7 8 times 3 1. a 2 4 1 8.
+q check 6 5 minus 3 8 equals 2 7. a yes.
+q solve 2 8 x minus 7 3 equals 1 1 x minus 1 7 5. a x minus 6.
+q calc 2 7 1 plus 0 steps. a 1 plus 0 is 1 write 1 then 7 plus 0 is 7 write 7 then 2 plus 0 is 2 write 2 then result 2 7 1.
+q calc 6 0 9 0 plus 5 8 2 7 steps. a 0 plus 7 is 7 write 7 then 9 plus 2 is 1 1 write 1 carry 1 then 0 plus 8 plus 1 is 9 write 9 then 6 plus 5 is 1 1 write 1 carry 1 then result 1 1 9 1 7.
+q calc 5 0 minus minus 2 2 3 6. a 2 2 8 6.
+q calc open 8 8 minus 6 5 close times 4. a 9 2.
+q solve open x minus 9 4 close times 9 equals minus 8 8 2. a x minus 4.
+q compare 1 0 point 1 with 1 0 point 1 1. a less.
+q calc minus 7 3 5 3 plus 2 2. a minus 7 3 3 1.
+q check 1 1 x plus 7 6 equals minus 1 2 2 x minus 3 6. a no.
+q calc 5 1 7 point 3 4 minus 2 9 point 4. a 4 8 7 point 9 4.
+q calc 9 1 plus 2 minus 4. a 8 9.
+q calc open 1 2 minus 5 close times 6. a 4 2.
+q calc 4 0 5 times 1 7. a 6 8 8 5.
+q calc 8 3 7 9 over 9. a 9 3 1.
+q solve open x minus 3 close times 1 2 equals 1 0 8. a x 1 2.
+q calc 8 times 5. a 4 0.
+q check 1 9 5 3 over 2 1 equals 9 3. a yes.
+q calc 9 minus 8. a 1.
+q calc 6 8 over 4 plus 6. a 2 3.
+q calc 2 0 9 3 plus 9. a 2 1 0 2.
+q calc minus 7 0 2 1 minus 3 2 2 6. a minus 1 0 2 4 7.
+q check 1 0 0 times 7 7 equals 7 8 0 0. a no.
+q solve x minus 6 3 equals minus 7 4. a x minus 1 1.
+q calc 3 5 1 point 5 plus 9 4 9 point 0 7. a 1 3 0 0 point 5 7.
+q solve minus 1 1 8 equals minus 9 x plus 5 3. a x 1 9.
+q compare 8 with minus 8 0 9 2. a greater.
+q calc 5 9 3 3 plus 4 7 steps. a 3 plus 7 is 1 0 write 0 carry 1 then 3 plus 4 plus 1 is 8 write 8 then 9 plus 0 is 9 write 9 then 5 plus 0 is 5 write 5 then result 5 9 8 0.
+q check minus 4 6 0 6 plus minus 5 4 7 7 equals minus 1 0 1 8 3. a no.
+q solve minus 2 x equals minus 1 6. a x 8.
+q solve x over 5 minus 2 3 equals minus 2 5. a x minus 1 0.
+q calc 4 1 times 3 6. a 1 4 7 6.
+q solve 1 1 x plus 5 2 equals minus x plus 6 4. a x 1.
+q compare minus 9 8 7 6 with 8 2 1 9. a less.
+q calc 9 3 0 over 3 0. a 3 1.
+q calc minus 6 3 9 minus 1 8 8 2. a minus 2 5 2 1.
+q calc 2 percent of 1 5 0 0. a 3 0.
+q check 6 plus 4 2 2 equals 4 3 8. a no.
+q check x minus 7 5 equals minus 8 2 x minus 5. a no.
+q solve x plus 1 8 equals 3 8. a x 2 0.
+q calc 8 5 power 2 plus 7. a 7 2 3 2.
+q calc 8 0 5 1 over 9 7. a 8 3.
+q calc 5 7 7 minus 5 8 4. a minus 7.
+q check minus 5 2 plus 9 9 9 0 equals 9 9 3 8. a yes.
+q calc 2 8 2 times 1 2 steps. a 2 8 2 times 1 0 is 2 8 2 0 then 2 8 2 times 2 is 5 6 4 then 2 8 2 0 plus 5 6 4 is 3 3 8 4 then result 3 3 8 4.
+q solve x over 2 minus 8 4 equals minus 7 6. a x 1 6.
+q calc 1 7 5 point 8 plus 8 6 9 point 8. a 1 0 4 5 point 6.
+q solve 1 0 x plus 2 1 equals 3 x plus 4 2. a x 3.
+q calc minus 1 8 minus 2 4 2 4. a minus 2 4 4 2.
+q calc 4 9 0 4 minus 8 8 4. a 4 0 2 0.
+q compare 0 with minus 8 0 9. a greater.
+q calc 5 2 3 7 minus 6 2 6 3. a minus 1 0 2 6.
+q calc 8 3 4 point 4 plus 6 3 5 point 8. a 1 4 7 0 point 2.
+q calc 4 2 2 times 8. a 3 3 7 6.
+q solve 6 x equals minus 1 8. a x minus 3.
+q solve minus 8 x equals minus 7 2. a x 9.
+q solve open x plus 5 6 close times 1 equals 7 6. a x 2 0.
+q calc 5 8 9 times 8. a 4 7 1 2.
+q calc 8 3 7 times 9 7 steps. a 8 3 7 times 9 0 is 7 5 3 3 0 then 8 3 7 times 7 is 5 8 5 9 then 7 5 3 3 0 plus 5 8 5 9 is 8 1 1 8 9 then result 8 1 1 8 9.
+q calc 1 5 plus 1 1 times 6 7. a 7 5 2.
+q solve 1 2 x plus 8 8 equals minus 1 5 2. a x minus 2 0.
+q solve open x minus 5 5 close times 9 equals minus 6 0 3. a x minus 1 2.
+q calc 2 3 4 over 9. a 2 6.
+q calc 9 4 4 1 plus 9 1 5 5 steps. a 1 plus 5 is 6 write 6 then 4 plus 5 is 9 write 9 then 4 plus 1 is 5 write 5 then 9 plus 9 is 1 8 write 8 carry 1 then result 1 8 5 9 6.
+q calc 7 1 2 0 over 8 0. a 8 9.
+q calc 2 0 percent of 1 8 4 0. a 3 6 8.
+q calc minus 4 3 5 plus 5 8. a minus 3 7 7.
+q solve x over 8 plus 2 9 equals 4 3. a x 1 1 2.
+q solve open x minus 1 1 close times 6 equals 5 4. a x 2 0.
+q compare minus 2 2 point 1 3 4 with minus 2 2 point 1 3 5. a greater.
+q check open x minus 1 8 close times 1 2 equals minus 4 4 4 x 1 9. a no.
+q calc 2 9 2 8 plus 2 steps. a 8 plus 2 is 1 0 write 0 carry 1 then 2 plus 0 plus 1 is 3 write 3 then 9 plus 0 is 9 write 9 then 2 plus 0 is 2 write 2 then result 2 9 3 0.
+q check x minus 5 6 equals minus 4 3 x 1 2. a no.
+q solve x over 3 plus 9 3 equals 7 8. a x minus 4 5.
+q calc 2 5 1 1 over 3. a 8 3 7.
+q solve open x plus 6 3 close times 1 2 equals 6 6 0. a x minus 8.
+q solve x over 8 minus 6 9 equals minus 6 9. a x 0.
+q calc 2 8 8 times 9. a 2 5 9 2.
+q solve minus 7 x plus 1 9 equals x plus 2 7. a x minus 1.
+q calc 1 5 power 2 plus 6. a 2 3 1.
+q calc open 7 plus 2 close times 3 0. a 2 7 0.
+q calc 3 8 7 6 over 1 2. a 3 2 3.
+q solve 1 0 equals 6 x minus 3 2. a x 7.
+q solve minus 5 3 5 equals 8 5 x minus 2 5. a x minus 6.
+q calc 2 2 1 times 7 7. a 1 7 0 1 7.
+q calc 5 5 6 plus 9 1 7 2. a 9 7 2 8.
+q solve x minus 9 equals 6. a x 1 5.
+q check open x plus 7 2 close times 1 0 equals 5 6 0 x minus 3 2. a no.
+q calc 3 3 percent of 4 9 0 0. a 1 6 1 7.
+q calc 6 minus 4 6 7 7. a minus 4 6 7 1.
+q solve x minus 7 6 equals minus 5 7. a x 1 9.
+q solve x over 8 plus 9 8 equals 1 0 0. a x 1 6.
+q calc minus 6 9 2 2 plus 5 8 7 4. a minus 1 0 4 8.
+q calc minus 3 4 9 plus 2 5. a minus 3 2 4.
+q calc 6 0 4 8 over 6 3. a 9 6.
+q solve 1 2 x equals 6 0. a x 5.
+q check 9 7 2 minus 6 4 8 equals 3 2 4. a yes.
+q calc 5 4 1 times 3. a 1 6 2 3.
+q calc 7 3 2 over 1 2 plus 2 3. a 8 4.
+q calc 5 2 2 times 6 steps. a 2 times 6 is 1 2 write 2 carry 1 then 2 times 6 is 1 2 plus 1 is 1 3 write 3 carry 1 then 5 times 6 is 3 0 plus 1 is 3 1 write 1 carry 3 then result 3 1 3 2.
+q solve 4 equals minus 5 x minus 4 6. a x minus 1 0.
+q calc 6 7 8 6 plus 1 7 2. a 6 9 5 8.
+q calc 8 6 6 minus 8. a 8 5 8.
+q calc 4 7 7 plus 2 8 steps. a 7 plus 8 is 1 5 write 5 carry 1 then 7 plus 2 plus 1 is 1 0 write 0 carry 1 then 4 plus 0 plus 1 is 5 write 5 then result 5 0 5.
+q calc 8 times 7. a 5 6.
+q calc 6 1 1 times 2 2. a 1 3 4 4 2.
+q calc 6 6 5 point 6 6 minus 1 1 2 point 4 6. a 5 5 3 point 2.
+q calc 9 2 percent of 2 6 7 5. a 2 4 6 1.
+q calc 4 2 1 plus 6 6 steps. a 1 plus 6 is 7 write 7 then 2 plus 6 is 8 write 8 then 4 plus 0 is 4 write 4 then result 4 8 7.
+q calc 9 1 4 plus 9 1 3. a 1 8 2 7.
+q calc minus 7 0 minus 7 0. a minus 1 4 0.
+q compare 9 point 5 2 with 9 point 4 2. a greater.
+q calc 2 7 1 4 minus 9 7 8. a 1 7 3 6.
+q check 4 5 2 plus 8 3 0 5 equals 8 7 5 7. a yes.
+q solve 5 x minus 3 4 equals minus 4. a x 6.
+q compare minus 6 7 3 with 5 3 1 4. a less.
+q calc 4 plus 1 3 1 8. a 1 3 2 2.
+q calc 7 1 6 4 over 1 2. a 5 9 7.
+q calc 1 6 0 point 7 7 plus 6 8 8 point 6. a 8 4 9 point 3 7.
+q compare 5 6 5 2 with 5 6 4 2. a greater.
+q calc 6 7 0 plus 7 3 5 steps. a 0 plus 5 is 5 write 5 then 7 plus 3 is 1 0 write 0 carry 1 then 6 plus 7 plus 1 is 1 4 write 4 carry 1 then result 1 4 0 5.
+q calc 5 5 6 point 7 plus 3 6 4 point 6. a 9 2 1 point 3.
+q calc 5 3 4 over 8 9. a 6.
+q calc 7 0 plus 7 0 7 9 steps. a 0 plus 9 is 9 write 9 then 7 plus 7 is 1 4 write 4 carry 1 then 0 plus 0 plus 1 is 1 write 1 then 0 plus 7 is 7 write 7 then result 7 1 4 9.
+q calc 1 minus 8 1 1 0. a minus 8 1 0 9.
+q calc 3 4 3 5 over 5. a 6 8 7.
+q solve 9 9 x minus 1 0 equals 4 8 5. a x 5.
+q check 6 3 1 4 plus 4 2 6 equals 6 7 4 1. a no.
+q solve 9 x minus 5 4 equals minus 1 0 x plus 1 9 3. a x 1 3.
+q check 7 7 1 point 3 minus 5 1 0 point 3 5 equals 2 6 1 point 9 5. a no.
+q compare minus 5 1 point 4 with minus 5 1 point 4 1. a greater.
+q compare 9 4 point 1 1 4 with 9 4 point 2 1 4. a less.
+q calc 6 7 0 plus 3 2 0 point 1. a 9 9 0 point 1.
+q calc 5 3 8 1 plus 4 0 1 3. a 9 3 9 4.
+q calc minus 7 9 2 3 minus 9 1 5. a minus 8 8 3 8.
+q check open x minus 7 6 close times 5 equals minus 3 5 0 x 5. a no.
+q calc 3 5 minus 0. a 3 5.
+q calc 1 0 plus 3 minus 8. a 5.
+q solve 1 1 x equals 2 2. a x 2.
+q solve minus 1 8 x minus 3 1 equals minus 8 x plus 1 3 9. a x minus 1 7.
+q solve 1 1 x minus 7 4 equals 5 8. a x 1 2.
+q check 1 2 times 6 equals 6 0. a no.
+q check open x minus 4 0 close times 5 equals minus 2 1 5 x minus 3. a yes.
+q check 3 percent of 1 5 0 0 equals 4 6. a no.
+q solve 9 7 x equals 1 6 4 9. a x 1 7.
+q check 5 power 2 plus 6 equals 3 1. a yes.
+q solve 6 x plus 2 2 equals 8 2. a x 1 0.
+q compare 2 4 2 1 with 2 4 2 2. a less.
+q calc 3 9 2 4 over 1 2. a 3 2 7.
+q solve x over 9 minus 6 equals 8. a x 1 2 6.
+q calc open 8 plus 8 5 close times 2 2. a 2 0 4 6.
+q solve 1 3 7 equals 6 x plus 5 3. a x 1 4.
+q calc 5 percent of 3 1 4 0. a 1 5 7.
+q calc 5 3 times 4 8. a 2 5 4 4.
+q calc 4 0 8 7 minus 6 9 6 3. a minus 2 8 7 6.
+q calc 1 0 0 percent of 4 6 1 9. a 4 6 1 9.
+q calc 9 8 9 times 1 1. a 1 0 8 7 9.
+q check 5 8 5 6 over 9 6 equals 6 0. a no.
+q calc 8 2 4 2 plus 5 6 7 steps. a 2 plus 7 is 9 write 9 then 4 plus 6 is 1 0 write 0 carry 1 then 2 plus 5 plus 1 is 8 write 8 then 8 plus 0 is 8 write 8 then result 8 8 0 9.
+q check 2 9 5 plus 4 equals 2 9 9. a yes.
+q calc 1 9 9 5 minus 7 4 0. a 1 2 5 5.
+q calc 2 plus 4 7 5 2 over 6 6. a 7 4.
+q check 7 4 5 1 minus 5 7 4 1 equals 1 7 0 0. a no.
+q calc 6 5 times 7. a 4 5 5.
+q calc 1 percent of 3 9 0 0. a 3 9.
+q calc 7 6 7 point 7 minus 2 5 5 point 5 1. a 5 1 2 point 1 9.
+q calc 1 3 2 0 plus 5 4 0 steps. a 0 plus 0 is 0 write 0 then 2 plus 4 is 6 write 6 then 3 plus 5 is 8 write 8 then 1 plus 0 is 1 write 1 then result 1 8 6 0.
+q solve x over 8 plus 5 9 equals 5 7. a x minus 1 6.
+q check 6 8 minus 1 6 8 equals minus 9 0. a no.
+q calc 3 0 8 4 times 2 steps. a 4 times 2 is 8 write 8 then 8 times 2 is 1 6 write 6 carry 1 then 0 times 2 is 0 plus 1 is 1 write 1 then 3 times 2 is 6 write 6 then result 6 1 6 8.
+q calc 2 5 8 1 over 8 9. a 2 9.
+q calc 1 9 6 point 7 8 plus 7 2 9 point 9. a 9 2 6 point 6 8.
+q compare minus 4 8 3 7 with minus 4 8 4 7. a greater.
+q compare minus 7 point 0 3 9 with minus 8 6 point 2. a greater.
+q calc 1 5 7 8 plus 5 8 2 4 steps. a 8 plus 4 is 1 2 write 2 carry 1 then 7 plus 2 plus 1 is 1 0 write 0 carry 1 then 5 plus 8 plus 1 is 1 4 write 4 carry 1 then 1 plus 5 plus 1 is 7 write 7 then result 7 4 0 2.
+q calc 1 4 2 6 over 6 2 plus 2 6. a 4 9.
+q calc 7 1 6 7 plus 1. a 7 1 6 8.
+q compare 6 8 point 6 6 with 0 point 2 2. a greater.
+q solve open x plus 5 8 close times 9 equals 6 4 8. a x 1 4.
+q check 1 9 equals x plus 4 x 5. a no.
+q calc 7 2 plus 6 8 steps. a 2 plus 8 is 1 0 write 0 carry 1 then 7 plus 6 plus 1 is 1 4 write 4 carry 1 then result 1 4 0.
+q calc 2 5 plus 2 9. a 5 4.
+q solve 3 x minus 2 5 equals 9 x plus 1 7. a x minus 7.
+q calc 5 7 7 2 minus 6 7. a 5 7 0 5.
+q solve x over 2 plus 4 2 equals 3 1. a x minus 2 2.
+q check minus 8 9 4 2 minus minus 5 5 7 9 equals minus 3 3 7 3. a no.
+q calc 4 0 8 6 over 9. a 4 5 4.
+q compare 6 1 point 9 4 with minus 8 1 point 3 8. a greater.
+q calc 5 6 7 0 over 1 0. a 5 6 7.
+q check 8 0 1 times 1 1 equals 8 8 1 1. a yes.
+q calc 7 5 2 plus 1 steps. a 2 plus 1 is 3 write 3 then 5 plus 0 is 5 write 5 then 7 plus 0 is 7 write 7 then result 7 5 3.
+q calc 1 4 8 times 7 steps. a 8 times 7 is 5 6 write 6 carry 5 then 4 times 7 is 2 8 plus 5 is 3 3 write 3 carry 3 then 1 times 7 is 7 plus 3 is 1 0 write 0 carry 1 then result 1 0 3 6.
+q calc 4 2 3 point 7 minus 1 7 3 point 9. a 2 4 9 point 8.
+q calc 2 1 0 6 plus 1 0 0 4 steps. a 6 plus 4 is 1 0 write 0 carry 1 then 0 plus 0 plus 1 is 1 write 1 then 1 plus 0 is 1 write 1 then 2 plus 1 is 3 write 3 then result 3 1 1 0.
+q solve x over 2 minus 9 9 equals minus 9 9. a x 0.
+q check 1 9 7 equals 1 1 x minus 2 3 x 2 0. a yes.
+q calc minus 4 4 9 9 minus minus 4. a minus 4 4 9 5.
+q check 1 percent of 5 0 0 0 equals 5 0. a yes.
+q check minus 5 7 equals minus 5 x plus 1 3 x 1 2. a no.
+q check 5 minus 7 8 5 equals minus 7 7 0. a no.
+q solve 1 1 x plus 5 6 equals 5 6. a x 0.
+q calc 1 0 0 percent of 3 6 9 6. a 3 6 9 6.
+q calc 6 6 times 4 0 minus 8 7. a 2 5 5 3.
+q compare minus 9 2 with minus 9 2 point 0 1. a greater.
+q check x over 5 plus 5 4 equals 6 1 x 3 5. a yes.
+q calc 6 5 minus 1 5 6 1. a minus 1 4 9 6.
+q calc 5 6 times 5. a 2 8 0.
+q calc 3 5 power 2 plus 1 2. a 1 2 3 7.
+q calc 4 1 3 point 8 minus 7 6 1 point 0 7. a minus 3 4 7 point 2 7.
+q calc 7 2 0 1 minus 4 6. a 7 1 5 5.
+q calc 2 2 5 4 minus 5 5 1. a 1 7 0 3.
+q check x over 8 equals 1 3 x 1 0 4. a yes.
+q calc 3 6 0 1 minus 5 9 6. a 3 0 0 5.
+q solve 6 6 x minus 1 3 equals 9 7 7. a x 1 5.
+q calc 8 9 1 over 1 1 plus 5. a 8 6.
+q calc 6 8 3 plus 1 0 0 8 steps. a 3 plus 8 is 1 1 write 1 carry 1 then 8 plus 0 plus 1 is 9 write 9 then 6 plus 0 is 6 write 6 then 0 plus 1 is 1 write 1 then result 1 6 9 1.
+q calc 2 7 6 8 times 2 steps. a 8 times 2 is 1 6 write 6 carry 1 then 6 times 2 is 1 2 plus 1 is 1 3 write 3 carry 1 then 7 times 2 is 1 4 plus 1 is 1 5 write 5 carry 1 then 2 times 2 is 4 plus 1 is 5 write 5 then result 5 5 3 6.
+q solve minus 4 x equals 6 0. a x minus 1 5.
+q calc 7 4 3 plus 2 5. a 7 6 8.
+q solve 1 2 x equals 1 9 2. a x 1 6.
+q calc 9 plus 3 5 0 over 5. a 7 9.
+q check x over 1 2 plus 8 6 equals 8 2 x minus 4 6. a no.
+q calc 3 3 point 0 6 minus 9 6 2 point 4 7. a minus 9 2 9 point 4 1.
+q calc 6 8 times 8 minus 8 5. a 4 5 9.
+q calc 5 times 9. a 4 5.
+q calc 4 plus 1. a 5.
+q calc minus 5 4 1 plus 3 8 9 4. a 3 3 5 3.
+q calc 3 2 plus 4 4. a 7 6.
+q calc 7 0 6 plus 2 6 3 3. a 3 3 3 9.
+q compare minus 2 1 5 1 with minus 2 1 5 1. a equal.
+q calc 4 3 0 8 over 6. a 7 1 8.
+q calc 6 0 percent of 5 1 5. a 3 0 9.
+q calc 8 8 plus 4 4 steps. a 8 plus 4 is 1 2 write 2 carry 1 then 8 plus 4 plus 1 is 1 3 write 3 carry 1 then result 1 3 2.
+q calc minus 6 plus 8 7 0 9. a 8 7 0 3.
+q solve 8 x minus 1 9 equals minus 1 7 1. a x minus 1 9.
+q compare minus 1 3 with 9 8 5 0. a less.
+q calc 8 minus 2. a 6.
+q calc root 1 7 6 8 9. a 1 3 3.
+q calc 1 1 6 8 over 8. a 1 4 6.
+q check 1 2 percent of 3 8 2 5 equals 4 5 8. a no.
+q calc 7 times 1 1. a 7 7.
+q compare 9 4 point 5 with 9 4 point 5. a equal.
+q compare 1 5 8 5 with 1 5 8 6. a less.
+q solve 1 0 2 1 equals 8 3 x minus 5 8. a x 1 3.
+q solve minus 2 1 5 equals minus 1 2 x minus 2 3. a x 1 6.
+q check 8 5 minus minus 5 6 7 7 equals 5 7 5 2. a no.
+q calc 5 percent of 2 2 0 0. a 1 1 0.
+q compare minus 4 8 point 1 7 with minus 4 8 point 1 7. a equal.
+q calc 3 7 6 over 4 plus 4. a 9 8.
+q calc 5 6 power 2. a 3 1 3 6.
+q check 8 x minus 2 1 equals 7 x minus 2 4 x minus 3. a yes.
+q check x over 9 equals minus 1 x minus 9. a yes.
+q solve open x plus 4 close times 9 equals 1 7 1. a x 1 5.
+q calc 4 0 1 2 plus 1 steps. a 2 plus 1 is 3 write 3 then 1 plus 0 is 1 write 1 then 0 plus 0 is 0 write 0 then 4 plus 0 is 4 write 4 then result 4 0 1 3.
+q solve 1 9 2 equals minus 8 x plus 8 8. a x minus 1 3.
+q solve 4 9 8 equals 3 7 x plus 9 1. a x 1 1.
+q check minus 4 minus minus 1 4 0 equals 1 3 6. a yes.
+q compare minus 8 1 point 6 with minus 4 9 point 4 6 1. a less.
+q compare 4 6 1 2 with minus 3 8 1 0. a greater.
+q solve x minus 1 equals minus 8 x minus 2 8. a x minus 3.
+q check x over 1 2 plus 6 8 equals 7 8 x 1 1 8. a no.
+q calc 4 1 6 point 6 1 plus 4 4 3 point 2 2. a 8 5 9 point 8 3.
+q compare 7 4 point 6 with 7 4 point 6 1. a less.
+q calc 1 1 2 plus 2 steps. a 2 plus 2 is 4 write 4 then 1 plus 0 is 1 write 1 then 1 plus 0 is 1 write 1 then result 1 1 4.
+q calc 2 2 4 3 times 7 steps. a 3 times 7 is 2 1 write 1 carry 2 then 4 times 7 is 2 8 plus 2 is 3 0 write 0 carry 3 then 2 times 7 is 1 4 plus 3 is 1 7 write 7 carry 1 then 2 times 7 is 1 4 plus 1 is 1 5 write 5 carry 1 then result 1 5 7 0 1.
+q solve minus 1 1 x plus 8 6 equals 8 x plus 3 9 0. a x minus 1 6.
+q check 1 1 5 equals minus 2 4 x minus 5 x minus 3. a no.
+q calc 3 plus 3 7 6 over 4. a 9 7.
+q calc 5 6 0 over 1 0 plus 1 2. a 6 8.
+q check 5 x equals minus 2 5 x minus 3. a no.
+q solve open x minus 8 5 close times 1 equals minus 8 9. a x minus 4.
+q check 7 4 0 point 2 minus 7 5 8 point 8 7 equals minus 1 9 point 6 7. a no.
+q calc 7 2 7 point 6 plus 6 2 4 point 0 3. a 1 3 5 1 point 6 3.
+q solve minus 1 3 1 equals 1 2 x minus 4 7. a x minus 7.
+q calc 8 0 percent of 1 0 7 0. a 8 5 6.
+q calc 8 4 8 plus 8 0 9 steps. a 8 plus 9 is 1 7 write 7 carry 1 then 4 plus 0 plus 1 is 5 write 5 then 8 plus 8 is 1 6 write 6 carry 1 then result 1 6 5 7.
+q calc 1 1 plus 1 2 times 9. a 1 1 9.
+q calc 2 2 minus 7 4. a minus 5 2.
+q calc 1 2 6 plus 8. a 1 3 4.
+q calc 7 6 5 minus 3 7 5. a 3 9 0.
+q solve open x plus 6 3 close times 7 equals 4 2 7. a x minus 2.
+q check minus 2 2 minus 5 6 1 1 equals 5 5 8 9. a no.
+q calc 3 0 0 plus 6 steps. a 0 plus 6 is 6 write 6 then 0 plus 0 is 0 write 0 then 3 plus 0 is 3 write 3 then result 3 0 6.
+q solve 9 x plus 9 2 equals 7 4. a x minus 2.
+q calc 3 4 times 1 1. a 3 7 4.
+q calc 5 2 7 point 8 1 minus 8 0 6 point 8. a minus 2 7 8 point 9 9.
+q calc 3 1 0 8 over 1 2. a 2 5 9.
+q calc 1 6 times 8 5 steps. a 1 6 times 8 0 is 1 2 8 0 then 1 6 times 5 is 8 0 then 1 2 8 0 plus 8 0 is 1 3 6 0 then result 1 3 6 0.
+q compare minus 6 3 with minus 6 2 point 9 9. a less.
+q compare 2 6 point 2 8 with 2 6 point 2 7 9. a greater.
+q calc 1 0 percent of 2 9 0 0. a 2 9 0.
+q calc minus 1 3 2 minus 9. a minus 1 4 1.
+q check x over 1 0 plus 7 1 equals 7 4 x 3 0. a yes.
+q calc 9 1 1 9 plus 1 2 steps. a 9 plus 2 is 1 1 write 1 carry 1 then 1 plus 1 plus 1 is 3 write 3 then 1 plus 0 is 1 write 1 then 9 plus 0 is 9 write 9 then result 9 1 3 1.
+q calc 3 2 9 0 over 3 5. a 9 4.
+q calc 7 3 4 3 plus 7 7 9 steps. a 3 plus 9 is 1 2 write 2 carry 1 then 4 plus 7 plus 1 is 1 2 write 2 carry 1 then 3 plus 7 plus 1 is 1 1 write 1 carry 1 then 7 plus 0 plus 1 is 8 write 8 then result 8 1 2 2.
+q calc 4 9 4 point 5 4 plus 4 2 8 point 6. a 9 2 3 point 1 4.
+q calc 9 minus 9. a 0.
+q compare 9 1 9 with 9 2 9. a less.
+q check 1 2 5 4 over 1 1 equals 1 1 4. a yes.
+q solve 1 2 x equals minus 8 4. a x minus 7.
+q calc 9 0 2 point 6 plus 8 1 1 point 6. a 1 7 1 4 point 2.
+q check 6 8 5 0 over 1 0 equals 6 8 4. a no.
+q solve minus 5 2 x plus 7 1 equals x plus 2 3 0. a x minus 3.
+q solve x minus 2 2 equals minus 1 5. a x 7.
+q check 8 6 times 1 2 equals 1 0 3 2. a yes.
+q calc 3 9 5 7 times 5 steps. a 7 times 5 is 3 5 write 5 carry 3 then 5 times 5 is 2 5 plus 3 is 2 8 write 8 carry 2 then 9 times 5 is 4 5 plus 2 is 4 7 write 7 carry 4 then 3 times 5 is 1 5 plus 4 is 1 9 write 9 carry 1 then result 1 9 7 8 5.
+q calc 2 3 0 point 3 plus 8 6 9 point 4. a 1 0 9 9 point 7.
+q calc open 2 plus 3 close times 4 3. a 2 1 5.
+q calc 4 3 times 2. a 8 6.
+q calc 1 0 6 6 over 1 3. a 8 2.
+q check 6 0 percent of 4 6 2 0 equals 2 7 7 2. a yes.
+q calc minus 1 5 5 minus 9 2 2 point 1. a minus 1 0 7 7 point 1.
+q calc 8 4 3 plus 5 6 steps. a 3 plus 6 is 9 write 9 then 4 plus 5 is 9 write 9 then 8 plus 0 is 8 write 8 then result 8 9 9.
+q solve 4 x equals minus 7 2. a x minus 1 8.
+q compare 4 with 4. a equal.
+q calc 5 6 7 plus 4 1 5 steps. a 7 plus 5 is 1 2 write 2 carry 1 then 6 plus 1 plus 1 is 8 write 8 then 5 plus 4 is 9 write 9 then result 9 8 2.
+q calc minus 3 6 8 minus 7 7 point 1 3. a minus 4 4 5 point 1 3.
+q compare minus 7 2 point 6 1 1 with minus 7 2 point 6 1 2. a greater.
+q check minus 5 1 1 2 plus 8 2 3 4 equals minus 1 3 3 4 6. a no.
+q calc 8 5 9 8 minus 7 0 8. a 7 8 9 0.
+q compare minus 2 2 point 1 with 7 4 point 8 2. a less.
+q calc 2 4 8 times 9. a 2 2 3 2.
+q solve x plus 1 0 equals 1. a x minus 9.
+q solve 3 x equals 4 5. a x 1 5.
+q solve open x minus 2 8 close times 2 equals minus 3 2. a x 1 2.
+q calc minus 4 6 plus 8 8. a 4 2.
+q calc 7 plus 4 1 9. a 4 2 6.
+q calc 9 9 3 6 over 1 2. a 8 2 8.
+q compare 9 7 point 8 8 with 1 6 point 0 7 5. a greater.
+q calc 2 minus 3 3 2. a minus 3 3 0.
+q calc 3 1 4 1 over 9. a 3 4 9.
+q calc 3 9 2 point 8 3 plus 1 7 1 point 1 1. a 5 6 3 point 9 4.
+q solve x minus 1 4 equals minus 2 1. a x minus 7.
+q solve open x plus 1 2 close times 6 equals 1 8. a x minus 9.
+q check 8 minus minus 8 5 equals 9 4. a no.
+q check 2 9 7 5 over 5 equals 5 9 5. a yes.
+q calc 6 9 times 7. a 4 8 3.
+q compare 2 4 point 0 4 7 with 2 4 point 0 4 7. a equal.
+q solve 1 6 x plus 1 9 equals minus 1 0 x minus 2 9 3. a x minus 1 2.
+q calc 3 plus 7 2 over 8. a 1 2.
+q calc minus 9 plus 1 6. a 7.
+q calc open 8 plus 4 close times 6 7. a 8 0 4.
+q check 8 0 0 2 minus 8 8 4 equals minus 7 1 1 8. a no.
+q calc 4 3 plus 3 steps. a 3 plus 3 is 6 write 6 then 4 plus 0 is 4 write 4 then result 4 6.
+q check 2 2 3 6 over 4 equals 5 5 7. a no.
+q solve 1 2 x plus 5 8 equals minus 6 2. a x minus 1 0.
+q calc 7 0 8 3 over 9. a 7 8 7.
+q calc 5 1 plus 5 4 5 steps. a 1 plus 5 is 6 write 6 then 5 plus 4 is 9 write 9 then 0 plus 5 is 5 write 5 then result 5 9 6.
+q calc 5 times 8. a 4 0.
+q check 2 0 4 plus 4 4 equals 2 4 8. a yes.
+q solve 1 6 x equals 2 4 0. a x 1 5.
+q solve x over 1 2 equals 9. a x 1 0 8.
+q calc 5 minus 4 1 8 5. a minus 4 1 8 0.
+q solve x over 9 plus 6 6 equals 6 8. a x 1 8.
+q calc 9 2 0 0 plus 6 3 0 7 steps. a 0 plus 7 is 7 write 7 then 0 plus 0 is 0 write 0 then 2 plus 3 is 5 write 5 then 9 plus 6 is 1 5 write 5 carry 1 then result 1 5 5 0 7.
+q calc 1 3 5 6 plus 9 steps. a 6 plus 9 is 1 5 write 5 carry 1 then 5 plus 0 plus 1 is 6 write 6 then 3 plus 0 is 3 write 3 then 1 plus 0 is 1 write 1 then result 1 3 6 5.
+q check 8 9 8 2 over 9 equals 1 0 0 8. a no.
+q compare 6 8 2 8 with 6 8 2 8. a equal.
+q check 6 5 x plus 6 9 equals 1 3 0 4 x 2 1. a no.
+q calc 1 0 times 7. a 7 0.
+q check x minus 3 1 equals minus 2 8 x 3. a yes.
+q calc 3 2 2 times 9 8. a 3 1 5 5 6.
+q calc 1 2 plus 2 2 9 7 steps. a 2 plus 7 is 9 write 9 then 1 plus 9 is 1 0 write 0 carry 1 then 0 plus 2 plus 1 is 3 write 3 then 0 plus 2 is 2 write 2 then result 2 3 0 9.
+q calc 1 1 power 2 plus 6. a 1 2 7.
+q calc 7 4 5 4 plus 9 3 9. a 8 3 9 3.
+q solve 2 8 x plus 9 4 equals 6 x minus 6 0. a x minus 7.
+q solve x over 8 equals minus 9. a x minus 7 2.
+q calc 3 4 5 9 minus 4 8. a 3 4 1 1.
+q calc 3 0 times 7 9. a 2 3 7 0.
+q calc 7 minus 2 0. a minus 1 3.
+q calc 9 0 percent of 2 0 4 0. a 1 8 3 6.
+q solve x plus 7 9 equals 9 8. a x 1 9.

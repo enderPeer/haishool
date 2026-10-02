@@ -1,0 +1,23 @@
+{
+  "models": {
+    "6x384": {
+      "selected": "runs/final-v5/6x384-eval",
+      "sha256": "423d0f4c2feec664faf3a53ccb18d2654196fb992a5ba1178f295c85bcca35ab",
+      "base_dev": 0.4080255681818182,
+      "feedback_dev": 0.40198863636363635,
+      "sealed": "runs/final-v5/6x384-sealed.json",
+      "production": "runs/final-v5/6x384-full/student.pt",
+      "production_dev": "runs/final-v5/6x384-full/dev.json"
+    },
+    "8x512": {
+      "selected": "runs/final-v5/8x512-feedback",
+      "sha256": "d00f1d2b86d251be915ca0cc509ae4b85efbbcaabd1acba9ddc0281e57bc0145",
+      "base_dev": 0.43785511363636365,
+      "feedback_dev": 0.4431818181818182,
+      "sealed": "runs/final-v5/8x512-sealed.json",
+      "production": "runs/final-v5/8x512-full/student.pt",
+      "production_dev": "runs/final-v5/8x512-full/dev.json"
+    }
+  },
+  "sealed_policy": "select on development, lock checkpoint, evaluate sealed once"
+}

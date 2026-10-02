@@ -1,0 +1,1400 @@
+planets seed 5 4 4 0 params. m_star 0 point 5 7. disc_mass 2 0 6 point 5. t_gas 1 point 2. core_threshold 1 0. r_frost 1 point 0 1. luminosity 0 point 1 4.
+planets seed 5 4 4 0 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 5 4 4 0 step 0 planets. a 0.
+planets seed 5 4 4 0 step 1. time 0 point 0 5. planets 1 6. rocky 1 6. ice 0. gas 0. largest_mass 0 point 8 3 5. innermost_au 0 point 3 3. outermost_au 8 point 6 2. debris 0. gas_present yes. stage embryos.
+q planets seed 5 4 4 0 step 1 next largest_mass. a 1 point 5 1.
+planets seed 5 4 4 0 step 2. time 0 point 1. planets 2 0. rocky 2 0. ice 0. gas 0. largest_mass 1 point 5 1. innermost_au 0 point 3 3. outermost_au 1 5 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 5 4 4 0 step 2 largest_mass. a 1 point 5 1.
+planets seed 5 4 4 0 step 3. time 0 point 1 5. planets 2 3. rocky 2 3. ice 0. gas 0. largest_mass 2 point 0 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 5 4 4 0 step 3 gas. a 0.
+q planets seed 5 4 4 0 step 3 stage. a embryos.
+q planets seed 5 4 4 0 step 3 next time. a 0 point 2.
+q planets seed 5 4 4 0 step 3 next debris. a 0.
+planets seed 5 4 4 0 step 4. time 0 point 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 5 4 4 0 step 5. time 0 point 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 1 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 5 4 4 0 step 6. time 0 point 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 5 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 5 4 4 0 step 6 innermost_au. a 0 point 3 3.
+q planets seed 5 4 4 0 step 6 next time. a 0 point 5.
+q planets seed 5 4 4 0 step 6 next largest_mass. a 3 point 8 4.
+planets seed 5 4 4 0 step 7. time 0 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 8 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 5 4 4 0 step 8. time 0 point 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 3 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 5 4 4 0 step 8 next gas_present. a yes.
+planets seed 5 4 4 0 step 9. time 1. planets 2 4. rocky 2 3. ice 1. gas 0. largest_mass 5 point 0 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 5 4 4 0 step 9 next gas. a 0.
+planets seed 5 4 4 0 step 1 0. time 1 point 5. planets 2 2. rocky 2 1. ice 1. gas 0. largest_mass 1 1 point 1. innermost_au 0 point 3 3. outermost_au 2 5 point 4. debris 0. gas_present no. stage clearing.
+planets seed 5 4 4 0 step 1 1. time 2. planets 1 8. rocky 1 2. ice 6. gas 0. largest_mass 1 1 point 8. innermost_au 0 point 3 3. outermost_au 2 3 point 1. debris 0 point 0 0 1 9 2. gas_present no. stage clearing.
+planets seed 5 4 4 0 step 1 2. time 2 point 5. planets 1 7. rocky 9. ice 8. gas 0. largest_mass 1 2 point 1. innermost_au 0 point 3 3. outermost_au 2 3 point 1. debris 0 point 0 0 1 9 2. gas_present no. stage clearing.
+planets seed 5 4 4 0 step 1 3. time 3. planets 1 3. rocky 5. ice 8. gas 0. largest_mass 1 8 point 2. innermost_au 0 point 3 3. outermost_au 2 3 point 1. debris 0 point 0 0 1 9 2. gas_present no. stage clearing.
+q planets seed 5 4 4 0 step 1 3 next ice. a 5.
+planets seed 5 4 4 0 step 1 4. time 4. planets 8. rocky 3. ice 5. gas 0. largest_mass 3 1 point 7. innermost_au 0 point 3 3. outermost_au 1 9 point 9. debris 0 point 0 0 6 2 9. gas_present no. stage clearing.
+q planets seed 5 4 4 0 step 1 4 next largest_mass. a 3 3 point 3.
+planets seed 5 4 4 0 step 1 5. time 5. planets 7. rocky 2. ice 5. gas 0. largest_mass 3 3 point 3. innermost_au 0 point 3 6 7. outermost_au 1 9 point 9. debris 0 point 0 0 6 4 9. gas_present no. stage clearing.
+q planets seed 5 4 4 0 step 1 5 rocky. a 2.
+q planets seed 5 4 4 0 step 1 5 next rocky. a 2.
+planets seed 5 4 4 0 step 1 6. time 6. planets 6. rocky 2. ice 4. gas 0. largest_mass 4 3. innermost_au 0 point 3 6 7. outermost_au 1 9 point 9. debris 0 point 0 0 6 4 9. gas_present no. stage done.
+q planets seed 5 4 4 0 step 1 6 largest_mass. a 4 3.
+q planets seed 5 4 4 0 step 1 6 outermost_au. a 1 9 point 9.
+planets seed 5 4 4 0 step 1 7. time 7. planets 6. rocky 2. ice 4. gas 0. largest_mass 4 3 point 6. innermost_au 0 point 3 6 7. outermost_au 1 9 point 9. debris 0 point 0 0 6 4 9. gas_present no. stage done.
+planets seed 5 4 4 0 step 1 8. time 8. planets 6. rocky 2. ice 4. gas 0. largest_mass 4 3 point 9. innermost_au 0 point 3 6 7. outermost_au 1 9 point 9. debris 0 point 0 0 6 4 9. gas_present no. stage done.
+q planets seed 5 4 4 0 step 1 8 ice. a 4.
+planets seed 5 4 4 0 step 1 9. time 9. planets 6. rocky 2. ice 4. gas 0. largest_mass 4 4. innermost_au 0 point 3 6 7. outermost_au 1 9 point 9. debris 0 point 0 0 6 4 9. gas_present no. stage done.
+planets seed 5 4 4 0 step 2 0. time 1 0. planets 6. rocky 2. ice 4. gas 0. largest_mass 4 4 point 1. innermost_au 0 point 3 6 7. outermost_au 1 9 point 9. debris 0 point 0 0 6 4 9. gas_present no. stage done.
+q planets seed 5 4 4 0 step 2 0 debris. a 0 point 0 0 6 4 9.
+planets seed 5 4 4 0 step 2 1. time 1 2. planets 6. rocky 2. ice 4. gas 0. largest_mass 4 6 point 4. innermost_au 0 point 3 6 7. outermost_au 1 9 point 9. debris 0 point 0 0 6 4 9. gas_present no. stage done.
+planets seed 5 4 4 0 step 2 2. time 1 5. planets 6. rocky 2. ice 4. gas 0. largest_mass 5 1 point 1. innermost_au 0 point 3 6 7. outermost_au 1 9 point 9. debris 0 point 0 0 6 4 9. gas_present no. stage done.
+q planets seed 5 4 4 0 step 2 2 largest_mass. a 5 1 point 1.
+q planets seed 5 4 4 0 step 2 2 stage. a done.
+q planets seed 5 4 4 0 step 2 2 next gas_present. a no.
+planets seed 5 4 4 0 step 2 3. time 2 0. planets 6. rocky 2. ice 4. gas 0. largest_mass 5 6 point 2. innermost_au 0 point 3 6 7. outermost_au 1 9 point 9. debris 0 point 0 0 6 4 9. gas_present no. stage done.
+q planets seed 5 4 4 0 step 2 3 planets. a 6.
+q planets seed 5 4 4 0 step 2 3 next rocky. a 2.
+q planets seed 5 4 4 0 step 2 3 next debris. a 0 point 0 0 6 4 9.
+planets seed 5 4 4 0 step 2 4. time 2 5. planets 6. rocky 2. ice 4. gas 0. largest_mass 5 9 point 1. innermost_au 0 point 3 6 7. outermost_au 1 9 point 9. debris 0 point 0 0 6 4 9. gas_present no. stage done.
+q planets seed 5 4 4 0 step 2 4 next gas_present. a no.
+planets seed 5 4 4 0 step 2 5. time 3 0. planets 6. rocky 2. ice 4. gas 0. largest_mass 6 0 point 9. innermost_au 0 point 3 6 7. outermost_au 1 9 point 9. debris 0 point 0 0 6 4 9. gas_present no. stage done.
+planets seed 5 4 4 0 step 2 6. time 3 5. planets 6. rocky 2. ice 4. gas 0. largest_mass 6 3. innermost_au 0 point 3 6 7. outermost_au 1 9 point 9. debris 0 point 0 0 6 4 9. gas_present no. stage done.
+q planets seed 5 4 4 0 step 2 6 largest_mass. a 6 3.
+planets seed 5 4 4 0 step 2 7. time 4 0. planets 6. rocky 2. ice 4. gas 0. largest_mass 6 6 point 2. innermost_au 0 point 3 6 7. outermost_au 1 9 point 9. debris 0 point 0 0 6 4 9. gas_present no. stage done.
+q planets seed 5 4 4 0 step 2 7 gas_present. a no.
+q planets seed 5 4 4 0 step 2 7 next gas_present. a no.
+planets seed 5 4 4 0 step 2 8. time 4 5. planets 6. rocky 2. ice 4. gas 0. largest_mass 6 8 point 6. innermost_au 0 point 3 6 7. outermost_au 1 9 point 9. debris 0 point 0 0 6 4 9. gas_present no. stage done.
+q planets seed 5 4 4 0 step 2 8 next innermost_au. a 0 point 3 6 7.
+planets seed 5 4 4 0 step 2 9. time 5 0. planets 6. rocky 2. ice 4. gas 0. largest_mass 7 0 point 5. innermost_au 0 point 3 6 7. outermost_au 1 9 point 9. debris 0 point 0 0 6 4 9. gas_present no. stage done.
+q planets seed 5 4 4 0 step 2 9 stage. a done.
+q planets seed 5 4 4 0 final planets. a 6.
+q planets seed 5 4 4 0 final rocky. a 2.
+q planets seed 5 4 4 0 final ice. a 4.
+q planets seed 5 4 4 0 final gas. a 0.
+q planets seed 5 4 4 0 final largest_mass. a 7 0 point 5.
+q planets seed 5 4 4 0 final habitable. a 2.
+q planets seed 5 4 4 0 final total_planet_mass. a 1 9 8.
+planets seed 6 8 9 2 params. m_star 1 point 3. disc_mass 2 5 3 point 8. t_gas 9 point 1. core_threshold 1 0. r_frost 4 point 2 7. luminosity 2 point 5.
+planets seed 6 8 9 2 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+planets seed 6 8 9 2 step 1. time 0 point 0 5. planets 1 9. rocky 1 9. ice 0. gas 0. largest_mass 0 point 9 8 6. innermost_au 0 point 3 3. outermost_au 1 0 point 4. debris 0. gas_present yes. stage embryos.
+q planets seed 6 8 9 2 step 1 time. a 0 point 0 5.
+q planets seed 6 8 9 2 step 1 outermost_au. a 1 0 point 4.
+planets seed 6 8 9 2 step 2. time 0 point 1. planets 2 3. rocky 2 3. ice 0. gas 0. largest_mass 1 point 2 9. innermost_au 0 point 3 3. outermost_au 2 2 point 5. debris 0. gas_present yes. stage embryos.
+q planets seed 6 8 9 2 step 2 next ice. a 0.
+planets seed 6 8 9 2 step 3. time 0 point 1 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 6 8 9 2 step 4. time 0 point 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 6 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 8 9 2 step 4 gas. a 0.
+q planets seed 6 8 9 2 step 4 next stage. a embryos.
+planets seed 6 8 9 2 step 5. time 0 point 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 7 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 8 9 2 step 5 stage. a embryos.
+q planets seed 6 8 9 2 step 5 next gas_present. a yes.
+planets seed 6 8 9 2 step 6. time 0 point 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 8 9 2 step 6 planets. a 2 4.
+planets seed 6 8 9 2 step 7. time 0 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 8 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 8 9 2 step 7 next gas. a 0.
+planets seed 6 8 9 2 step 8. time 0 point 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 7 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 6 8 9 2 step 9. time 1. planets 2 4. rocky 2 3. ice 1. gas 0. largest_mass 5 point 1 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 8 9 2 step 9 gas. a 0.
+q planets seed 6 8 9 2 step 9 innermost_au. a 0 point 3 3.
+q planets seed 6 8 9 2 step 9 next stage. a embryos.
+planets seed 6 8 9 2 step 1 0. time 1 point 5. planets 2 4. rocky 2 2. ice 2. gas 0. largest_mass 7 point 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 6 8 9 2 step 1 1. time 2. planets 2 4. rocky 1 9. ice 5. gas 0. largest_mass 9 point 2 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 8 9 2 step 1 1 next debris. a 0.
+planets seed 6 8 9 2 step 1 2. time 2 point 5. planets 2 4. rocky 1 9. ice 5. gas 0. largest_mass 1 0 point 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 8 9 2 step 1 2 stage. a embryos.
+planets seed 6 8 9 2 step 1 3. time 3. planets 2 4. rocky 1 6. ice 7. gas 1. largest_mass 4 4 point 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+planets seed 6 8 9 2 step 1 4. time 4. planets 2 3. rocky 1 6. ice 4. gas 3. largest_mass 2 1 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 1 2 9. gas_present yes. stage giants_forming.
+q planets seed 6 8 9 2 step 1 4 planets. a 2 3.
+q planets seed 6 8 9 2 step 1 4 gas. a 3.
+planets seed 6 8 9 2 step 1 5. time 5. planets 2 1. rocky 1 5. ice 4. gas 2. largest_mass 2 8 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 1 2 9. gas_present yes. stage giants_forming.
+q planets seed 6 8 9 2 step 1 5 ice. a 4.
+q planets seed 6 8 9 2 step 1 5 next ice. a 5.
+planets seed 6 8 9 2 step 1 6. time 6. planets 2 1. rocky 1 4. ice 5. gas 2. largest_mass 2 8 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 1 2 9. gas_present yes. stage giants_forming.
+planets seed 6 8 9 2 step 1 7. time 7. planets 1 9. rocky 1 4. ice 1. gas 4. largest_mass 2 8 5. innermost_au 0 point 3 3. outermost_au 2 2 point 8. debris 0 point 0 1 9 3. gas_present yes. stage giants_forming.
+planets seed 6 8 9 2 step 1 8. time 8. planets 1 8. rocky 1 4. ice 0. gas 4. largest_mass 2 8 7. innermost_au 0 point 3 3. outermost_au 2 2 point 8. debris 0 point 0 1 9 3. gas_present yes. stage giants_forming.
+planets seed 6 8 9 2 step 1 9. time 9. planets 1 8. rocky 1 4. ice 0. gas 4. largest_mass 2 8 8. innermost_au 0 point 3 3. outermost_au 2 2 point 8. debris 0 point 0 1 9 3. gas_present yes. stage giants_forming.
+planets seed 6 8 9 2 step 2 0. time 1 0. planets 1 5. rocky 1 1. ice 0. gas 4. largest_mass 2 9 0. innermost_au 0 point 3 3. outermost_au 2 2 point 8. debris 0 point 0 2 9. gas_present no. stage clearing.
+q planets seed 6 8 9 2 step 2 0 time. a 1 0.
+q planets seed 6 8 9 2 step 2 0 gas_present. a no.
+q planets seed 6 8 9 2 step 2 0 next debris. a 0 point 0 4 9 2.
+planets seed 6 8 9 2 step 2 1. time 1 2. planets 9. rocky 7. ice 0. gas 2. largest_mass 6 5 3. innermost_au 0 point 3 3. outermost_au 2 2 point 8. debris 0 point 0 4 9 2. gas_present no. stage clearing.
+q planets seed 6 8 9 2 step 2 1 gas. a 2.
+q planets seed 6 8 9 2 step 2 1 next planets. a 7.
+q planets seed 6 8 9 2 step 2 1 next stage. a clearing.
+planets seed 6 8 9 2 step 2 2. time 1 5. planets 7. rocky 5. ice 0. gas 2. largest_mass 6 6 8. innermost_au 0 point 3 3. outermost_au 2 2 point 8. debris 0 point 0 4 9 2. gas_present no. stage clearing.
+q planets seed 6 8 9 2 step 2 2 largest_mass. a 6 6 8.
+planets seed 6 8 9 2 step 2 3. time 2 0. planets 6. rocky 4. ice 0. gas 2. largest_mass 6 7 9. innermost_au 0 point 3 6 7. outermost_au 2 2 point 8. debris 0 point 0 4 9 2. gas_present no. stage done.
+planets seed 6 8 9 2 step 2 4. time 2 5. planets 6. rocky 4. ice 0. gas 2. largest_mass 6 8 4. innermost_au 0 point 3 6 7. outermost_au 2 2 point 8. debris 0 point 0 4 9 2. gas_present no. stage done.
+planets seed 6 8 9 2 step 2 5. time 3 0. planets 6. rocky 4. ice 0. gas 2. largest_mass 6 8 5. innermost_au 0 point 3 6 7. outermost_au 2 2 point 8. debris 0 point 0 4 9 2. gas_present no. stage done.
+planets seed 6 8 9 2 step 2 6. time 3 5. planets 6. rocky 4. ice 0. gas 2. largest_mass 6 8 6. innermost_au 0 point 3 6 7. outermost_au 2 2 point 8. debris 0 point 0 4 9 2. gas_present no. stage done.
+q planets seed 6 8 9 2 step 2 6 stage. a done.
+q planets seed 6 8 9 2 step 2 6 next gas. a 2.
+planets seed 6 8 9 2 step 2 7. time 4 0. planets 6. rocky 4. ice 0. gas 2. largest_mass 6 8 6. innermost_au 0 point 3 6 7. outermost_au 2 2 point 8. debris 0 point 0 4 9 2. gas_present no. stage done.
+planets seed 6 8 9 2 step 2 8. time 4 5. planets 6. rocky 4. ice 0. gas 2. largest_mass 6 8 6. innermost_au 0 point 3 6 7. outermost_au 2 2 point 8. debris 0 point 0 4 9 2. gas_present no. stage done.
+q planets seed 6 8 9 2 step 2 8 gas. a 2.
+q planets seed 6 8 9 2 step 2 8 innermost_au. a 0 point 3 6 7.
+q planets seed 6 8 9 2 step 2 8 debris. a 0 point 0 4 9 2.
+q planets seed 6 8 9 2 step 2 8 next innermost_au. a 0 point 3 6 7.
+planets seed 6 8 9 2 step 2 9. time 5 0. planets 6. rocky 4. ice 0. gas 2. largest_mass 6 8 6. innermost_au 0 point 3 6 7. outermost_au 2 2 point 8. debris 0 point 0 4 9 2. gas_present no. stage done.
+q planets seed 6 8 9 2 step 2 9 planets. a 6.
+q planets seed 6 8 9 2 final planets. a 6.
+q planets seed 6 8 9 2 final rocky. a 4.
+q planets seed 6 8 9 2 final ice. a 0.
+q planets seed 6 8 9 2 final gas. a 2.
+q planets seed 6 8 9 2 final largest_mass. a 6 8 6.
+q planets seed 6 8 9 2 final habitable. a 1.
+q planets seed 6 8 9 2 final total_planet_mass. a 9 3 4.
+planets seed 8 5 7 4 params. m_star 0 point 8 4. disc_mass 2 8 point 4. t_gas 4 point 2 7. core_threshold 1 0. r_frost 1 point 9 9. luminosity 0 point 5 4 3.
+planets seed 8 5 7 4 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+planets seed 8 5 7 4 step 1. time 0 point 0 5. planets 0. rocky 0. ice 0. gas 0. largest_mass 0 point 0 7 8 9. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 8 5 7 4 step 1 ice. a 0.
+q planets seed 8 5 7 4 step 1 next rocky. a 3.
+planets seed 8 5 7 4 step 2. time 0 point 1. planets 3. rocky 3. ice 0. gas 0. largest_mass 0 point 1 2 1. innermost_au 0 point 3 3. outermost_au 2 point 2 5. debris 0. gas_present yes. stage embryos.
+planets seed 8 5 7 4 step 3. time 0 point 1 5. planets 1 0. rocky 1 0. ice 0. gas 0. largest_mass 0 point 1 7 6. innermost_au 0 point 3 3. outermost_au 4 point 8 5. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 7 4 step 3 next debris. a 0.
+planets seed 8 5 7 4 step 4. time 0 point 2. planets 1 4. rocky 1 4. ice 0. gas 0. largest_mass 0 point 2 2 7. innermost_au 0 point 3 3. outermost_au 5 point 8 7. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 7 4 step 4 debris. a 0.
+planets seed 8 5 7 4 step 5. time 0 point 3. planets 1 6. rocky 1 6. ice 0. gas 0. largest_mass 0 point 3 1 9. innermost_au 0 point 3 3. outermost_au 7 point 1 1. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 7 4 step 5 debris. a 0.
+planets seed 8 5 7 4 step 6. time 0 point 4. planets 1 9. rocky 1 9. ice 0. gas 0. largest_mass 0 point 3 9 9. innermost_au 0 point 3 3. outermost_au 1 2 point 7. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 7 4 step 6 stage. a embryos.
+q planets seed 8 5 7 4 step 6 next planets. a 1 9.
+q planets seed 8 5 7 4 step 6 next debris. a 0.
+planets seed 8 5 7 4 step 7. time 0 point 5. planets 1 9. rocky 1 9. ice 0. gas 0. largest_mass 0 point 4 6 9. innermost_au 0 point 3 3. outermost_au 1 2 point 7. debris 0. gas_present yes. stage embryos.
+planets seed 8 5 7 4 step 8. time 0 point 7. planets 2 3. rocky 2 3. ice 0. gas 0. largest_mass 0 point 5 8 3. innermost_au 0 point 3 3. outermost_au 2 2 point 5. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 7 4 step 8 rocky. a 2 3.
+q planets seed 8 5 7 4 step 8 next gas. a 0.
+q planets seed 8 5 7 4 step 8 next gas_present. a yes.
+planets seed 8 5 7 4 step 9. time 1. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 0 point 7 0 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 7 4 step 9 stage. a embryos.
+planets seed 8 5 7 4 step 1 0. time 1 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 0 point 8 2 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 8 5 7 4 step 1 1. time 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 0 point 9 4 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 8 5 7 4 step 1 2. time 2 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 0 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 7 4 step 1 2 gas. a 0.
+planets seed 8 5 7 4 step 1 3. time 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 1 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 8 5 7 4 step 1 4. time 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 2 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 7 4 step 1 4 time. a 4.
+q planets seed 8 5 7 4 step 1 4 ice. a 0.
+planets seed 8 5 7 4 step 1 5. time 5. planets 2 0. rocky 2 0. ice 0. gas 0. largest_mass 2 point 3 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 0 4 7 8. gas_present no. stage clearing.
+q planets seed 8 5 7 4 step 1 5 stage. a clearing.
+q planets seed 8 5 7 4 step 1 5 next stage. a clearing.
+planets seed 8 5 7 4 step 1 6. time 6. planets 1 6. rocky 1 6. ice 0. gas 0. largest_mass 2 point 3 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 2 4 7. gas_present no. stage clearing.
+q planets seed 8 5 7 4 step 1 6 debris. a 0 point 0 2 4 7.
+q planets seed 8 5 7 4 step 1 6 next outermost_au. a 2 7 point 3.
+planets seed 8 5 7 4 step 1 7. time 7. planets 1 2. rocky 1 2. ice 0. gas 0. largest_mass 4 point 3 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 2 9 9. gas_present no. stage clearing.
+planets seed 8 5 7 4 step 1 8. time 8. planets 8. rocky 7. ice 1. gas 0. largest_mass 5 point 1 9. innermost_au 0 point 3 3. outermost_au 2 0 point 7. debris 0 point 0 2 9 9. gas_present no. stage clearing.
+q planets seed 8 5 7 4 step 1 8 next planets. a 8.
+planets seed 8 5 7 4 step 1 9. time 9. planets 8. rocky 6. ice 2. gas 0. largest_mass 5 point 2 3. innermost_au 0 point 3 3. outermost_au 2 0 point 7. debris 0 point 0 2 9 9. gas_present no. stage clearing.
+q planets seed 8 5 7 4 step 1 9 time. a 9.
+planets seed 8 5 7 4 step 2 0. time 1 0. planets 8. rocky 6. ice 2. gas 0. largest_mass 5 point 4 2. innermost_au 0 point 3 3. outermost_au 2 0 point 7. debris 0 point 0 2 9 9. gas_present no. stage clearing.
+q planets seed 8 5 7 4 step 2 0 largest_mass. a 5 point 4 2.
+planets seed 8 5 7 4 step 2 1. time 1 2. planets 8. rocky 5. ice 3. gas 0. largest_mass 5 point 8 9. innermost_au 0 point 3 3. outermost_au 2 0 point 7. debris 0 point 0 2 9 9. gas_present no. stage clearing.
+planets seed 8 5 7 4 step 2 2. time 1 5. planets 8. rocky 5. ice 3. gas 0. largest_mass 6 point 4 6. innermost_au 0 point 3 3. outermost_au 2 0 point 7. debris 0 point 0 2 9 9. gas_present no. stage clearing.
+q planets seed 8 5 7 4 step 2 2 gas_present. a no.
+q planets seed 8 5 7 4 step 2 2 next stage. a clearing.
+planets seed 8 5 7 4 step 2 3. time 2 0. planets 8. rocky 5. ice 3. gas 0. largest_mass 7 point 6 8. innermost_au 0 point 3 3. outermost_au 2 0 point 7. debris 0 point 0 2 9 9. gas_present no. stage clearing.
+planets seed 8 5 7 4 step 2 4. time 2 5. planets 7. rocky 4. ice 3. gas 0. largest_mass 8 point 6. innermost_au 0 point 4 0 6. outermost_au 2 0 point 7. debris 0 point 0 2 9 9. gas_present no. stage done.
+q planets seed 8 5 7 4 step 2 4 next gas. a 0.
+planets seed 8 5 7 4 step 2 5. time 3 0. planets 7. rocky 4. ice 3. gas 0. largest_mass 9 point 2 8. innermost_au 0 point 4 0 6. outermost_au 2 0 point 7. debris 0 point 0 2 9 9. gas_present no. stage done.
+q planets seed 8 5 7 4 step 2 5 next ice. a 3.
+planets seed 8 5 7 4 step 2 6. time 3 5. planets 7. rocky 4. ice 3. gas 0. largest_mass 9 point 7 9. innermost_au 0 point 4 0 6. outermost_au 2 0 point 7. debris 0 point 0 2 9 9. gas_present no. stage done.
+q planets seed 8 5 7 4 step 2 6 gas. a 0.
+q planets seed 8 5 7 4 step 2 6 next time. a 4 0.
+planets seed 8 5 7 4 step 2 7. time 4 0. planets 7. rocky 4. ice 3. gas 0. largest_mass 1 0 point 2. innermost_au 0 point 4 0 6. outermost_au 2 0 point 7. debris 0 point 0 2 9 9. gas_present no. stage done.
+q planets seed 8 5 7 4 step 2 7 ice. a 3.
+q planets seed 8 5 7 4 step 2 7 largest_mass. a 1 0 point 2.
+planets seed 8 5 7 4 step 2 8. time 4 5. planets 7. rocky 4. ice 3. gas 0. largest_mass 1 0 point 5. innermost_au 0 point 4 0 6. outermost_au 2 0 point 7. debris 0 point 0 2 9 9. gas_present no. stage done.
+q planets seed 8 5 7 4 step 2 8 next innermost_au. a 0 point 4 0 6.
+planets seed 8 5 7 4 step 2 9. time 5 0. planets 7. rocky 4. ice 3. gas 0. largest_mass 1 0 point 7. innermost_au 0 point 4 0 6. outermost_au 2 0 point 7. debris 0 point 0 2 9 9. gas_present no. stage done.
+q planets seed 8 5 7 4 step 2 9 time. a 5 0.
+q planets seed 8 5 7 4 final planets. a 7.
+q planets seed 8 5 7 4 final rocky. a 4.
+q planets seed 8 5 7 4 final ice. a 3.
+q planets seed 8 5 7 4 final gas. a 0.
+q planets seed 8 5 7 4 final largest_mass. a 1 0 point 7.
+q planets seed 8 5 7 4 final habitable. a 1.
+q planets seed 8 5 7 4 final total_planet_mass. a 2 6 point 9.
+planets seed 6 2 5 6 params. m_star 0 point 7 2. disc_mass 1 3 1 point 6. t_gas 5 point 1 3. core_threshold 1 0. r_frost 1 point 5 2. luminosity 0 point 3 1 7.
+planets seed 6 2 5 6 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 6 2 5 6 step 0 largest_mass. a 0.
+q planets seed 6 2 5 6 step 0 outermost_au. a 0.
+planets seed 6 2 5 6 step 1. time 0 point 0 5. planets 1 6. rocky 1 6. ice 0. gas 0. largest_mass 0 point 4 7. innermost_au 0 point 3 3. outermost_au 7 point 1 1. debris 0. gas_present yes. stage embryos.
+q planets seed 6 2 5 6 step 1 outermost_au. a 7 point 1 1.
+planets seed 6 2 5 6 step 2. time 0 point 1. planets 1 9. rocky 1 9. ice 0. gas 0. largest_mass 0 point 8 7 6. innermost_au 0 point 3 3. outermost_au 1 0 point 4. debris 0. gas_present yes. stage embryos.
+planets seed 6 2 5 6 step 3. time 0 point 1 5. planets 2 0. rocky 2 0. ice 0. gas 0. largest_mass 1 point 2 3. innermost_au 0 point 3 3. outermost_au 1 2 point 7. debris 0. gas_present yes. stage embryos.
+q planets seed 6 2 5 6 step 3 gas. a 0.
+planets seed 6 2 5 6 step 4. time 0 point 2. planets 2 1. rocky 2 1. ice 0. gas 0. largest_mass 1 point 5 3. innermost_au 0 point 3 3. outermost_au 1 8 point 6. debris 0. gas_present yes. stage embryos.
+planets seed 6 2 5 6 step 5. time 0 point 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 0 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 2 5 6 step 5 planets. a 2 4.
+q planets seed 6 2 5 6 step 5 outermost_au. a 2 7 point 3.
+q planets seed 6 2 5 6 step 5 next gas. a 0.
+planets seed 6 2 5 6 step 6. time 0 point 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 3 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 6 2 5 6 step 7. time 0 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 6 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 6 2 5 6 step 8. time 0 point 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 0 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 2 5 6 step 8 largest_mass. a 3 point 0 2.
+q planets seed 6 2 5 6 step 8 next planets. a 2 4.
+planets seed 6 2 5 6 step 9. time 1. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 2 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 2 5 6 step 9 debris. a 0.
+q planets seed 6 2 5 6 step 9 next ice. a 0.
+q planets seed 6 2 5 6 step 9 next gas. a 0.
+planets seed 6 2 5 6 step 1 0. time 1 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 5 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 2 5 6 step 1 0 debris. a 0.
+q planets seed 6 2 5 6 step 1 0 next debris. a 0.
+q planets seed 6 2 5 6 step 1 0 next stage. a embryos.
+planets seed 6 2 5 6 step 1 1. time 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 2 5 6 step 1 1 time. a 2.
+q planets seed 6 2 5 6 step 1 1 next debris. a 0.
+planets seed 6 2 5 6 step 1 2. time 2 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 2 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 6 2 5 6 step 1 3. time 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 5 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 6 2 5 6 step 1 4. time 4. planets 2 4. rocky 2 2. ice 2. gas 0. largest_mass 5 point 1 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 6 2 5 6 step 1 5. time 5. planets 2 4. rocky 2 0. ice 4. gas 0. largest_mass 6 point 3 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 2 5 6 step 1 5 next gas_present. a no.
+planets seed 6 2 5 6 step 1 6. time 6. planets 1 7. rocky 1 0. ice 7. gas 0. largest_mass 8 point 2 6. innermost_au 0 point 3 6 7. outermost_au 2 7 point 3. debris 0 point 0 1 3 2. gas_present no. stage clearing.
+planets seed 6 2 5 6 step 1 7. time 7. planets 1 2. rocky 5. ice 7. gas 0. largest_mass 1 1 point 9. innermost_au 0 point 3 6 7. outermost_au 2 7 point 3. debris 0 point 0 3 1. gas_present no. stage clearing.
+q planets seed 6 2 5 6 step 1 7 next gas. a 0.
+planets seed 6 2 5 6 step 1 8. time 8. planets 1 0. rocky 4. ice 6. gas 0. largest_mass 1 6. innermost_au 0 point 3 6 7. outermost_au 1 8 point 2. debris 0 point 0 3 1. gas_present no. stage clearing.
+q planets seed 6 2 5 6 step 1 8 time. a 8.
+q planets seed 6 2 5 6 step 1 8 next time. a 9.
+q planets seed 6 2 5 6 step 1 8 next gas. a 0.
+planets seed 6 2 5 6 step 1 9. time 9. planets 9. rocky 2. ice 7. gas 0. largest_mass 1 7 point 9. innermost_au 0 point 3 6 7. outermost_au 1 8 point 2. debris 0 point 0 3 1. gas_present no. stage clearing.
+q planets seed 6 2 5 6 step 1 9 time. a 9.
+q planets seed 6 2 5 6 step 1 9 ice. a 7.
+q planets seed 6 2 5 6 step 1 9 gas. a 0.
+q planets seed 6 2 5 6 step 1 9 next planets. a 8.
+planets seed 6 2 5 6 step 2 0. time 1 0. planets 8. rocky 2. ice 6. gas 0. largest_mass 2 5 point 9. innermost_au 0 point 3 6 7. outermost_au 1 8 point 2. debris 0 point 0 4 0 2. gas_present no. stage clearing.
+q planets seed 6 2 5 6 step 2 0 time. a 1 0.
+planets seed 6 2 5 6 step 2 1. time 1 2. planets 6. rocky 2. ice 4. gas 0. largest_mass 2 7. innermost_au 0 point 3 6 7. outermost_au 1 8 point 2. debris 0 point 0 4 0 2. gas_present no. stage clearing.
+planets seed 6 2 5 6 step 2 2. time 1 5. planets 5. rocky 2. ice 3. gas 0. largest_mass 3 1 point 2. innermost_au 0 point 3 6 7. outermost_au 1 8 point 2. debris 0 point 0 7 8 4. gas_present no. stage done.
+q planets seed 6 2 5 6 step 2 2 largest_mass. a 3 1 point 2.
+planets seed 6 2 5 6 step 2 3. time 2 0. planets 5. rocky 2. ice 3. gas 0. largest_mass 3 3 point 6. innermost_au 0 point 3 6 7. outermost_au 1 8 point 2. debris 0 point 0 7 8 4. gas_present no. stage done.
+planets seed 6 2 5 6 step 2 4. time 2 5. planets 5. rocky 2. ice 3. gas 0. largest_mass 3 8 point 7. innermost_au 0 point 3 6 7. outermost_au 1 8 point 2. debris 0 point 0 7 8 4. gas_present no. stage done.
+q planets seed 6 2 5 6 step 2 4 gas_present. a no.
+planets seed 6 2 5 6 step 2 5. time 3 0. planets 5. rocky 2. ice 3. gas 0. largest_mass 4 2 point 8. innermost_au 0 point 3 6 7. outermost_au 1 8 point 2. debris 0 point 0 7 8 4. gas_present no. stage done.
+q planets seed 6 2 5 6 step 2 5 next debris. a 0 point 0 7 8 4.
+planets seed 6 2 5 6 step 2 6. time 3 5. planets 5. rocky 2. ice 3. gas 0. largest_mass 4 6 point 1. innermost_au 0 point 3 6 7. outermost_au 1 8 point 2. debris 0 point 0 7 8 4. gas_present no. stage done.
+q planets seed 6 2 5 6 step 2 6 debris. a 0 point 0 7 8 4.
+planets seed 6 2 5 6 step 2 7. time 4 0. planets 5. rocky 2. ice 3. gas 0. largest_mass 4 8 point 7. innermost_au 0 point 3 6 7. outermost_au 1 8 point 2. debris 0 point 0 7 8 4. gas_present no. stage done.
+planets seed 6 2 5 6 step 2 8. time 4 5. planets 5. rocky 2. ice 3. gas 0. largest_mass 5 0 point 9. innermost_au 0 point 3 6 7. outermost_au 1 8 point 2. debris 0 point 0 7 8 4. gas_present no. stage done.
+q planets seed 6 2 5 6 step 2 8 next debris. a 0 point 0 7 8 4.
+planets seed 6 2 5 6 step 2 9. time 5 0. planets 5. rocky 2. ice 3. gas 0. largest_mass 5 2 point 6. innermost_au 0 point 3 6 7. outermost_au 1 8 point 2. debris 0 point 0 7 8 4. gas_present no. stage done.
+q planets seed 6 2 5 6 final planets. a 5.
+q planets seed 6 2 5 6 final rocky. a 2.
+q planets seed 6 2 5 6 final ice. a 3.
+q planets seed 6 2 5 6 final gas. a 0.
+q planets seed 6 2 5 6 final largest_mass. a 5 2 point 6.
+q planets seed 6 2 5 6 final habitable. a 0.
+q planets seed 6 2 5 6 final total_planet_mass. a 1 1 6.
+planets seed 9 5 params. m_star 1 point 2 6. disc_mass 1 5 9. t_gas 9 point 9 7. core_threshold 1 0. r_frost 4 point 0 5. luminosity 2 point 2 5.
+planets seed 9 5 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 9 5 step 0 planets. a 0.
+q planets seed 9 5 step 0 gas. a 0.
+planets seed 9 5 step 1. time 0 point 0 5. planets 1 8. rocky 1 8. ice 0. gas 0. largest_mass 0 point 6 3 7. innermost_au 0 point 3 3. outermost_au 1 0 point 4. debris 0. gas_present yes. stage embryos.
+planets seed 9 5 step 2. time 0 point 1. planets 2 2. rocky 2 2. ice 0. gas 0. largest_mass 0 point 7 8 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 9 5 step 3. time 0 point 1 5. planets 2 3. rocky 2 3. ice 0. gas 0. largest_mass 0 point 8 1 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 5 step 3 next stage. a embryos.
+planets seed 9 5 step 4. time 0 point 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 0 point 9 0 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 5 step 4 gas. a 0.
+planets seed 9 5 step 5. time 0 point 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 3 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 5 step 5 planets. a 2 4.
+q planets seed 9 5 step 5 gas_present. a yes.
+planets seed 9 5 step 6. time 0 point 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 7 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 5 step 6 debris. a 0.
+q planets seed 9 5 step 6 gas_present. a yes.
+planets seed 9 5 step 7. time 0 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 0 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 5 step 7 next stage. a embryos.
+planets seed 9 5 step 8. time 0 point 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 7 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 5 step 8 largest_mass. a 2 point 7 8.
+q planets seed 9 5 step 8 next time. a 1.
+planets seed 9 5 step 9. time 1. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 7 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 5 step 9 stage. a embryos.
+q planets seed 9 5 step 9 next planets. a 2 4.
+planets seed 9 5 step 1 0. time 1 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 9 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 9 5 step 1 1. time 2. planets 2 4. rocky 2 2. ice 2. gas 0. largest_mass 6 point 2 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 9 5 step 1 2. time 2 point 5. planets 2 4. rocky 2 1. ice 3. gas 0. largest_mass 7 point 3 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 5 step 1 2 next outermost_au. a 2 7 point 3.
+planets seed 9 5 step 1 3. time 3. planets 2 4. rocky 2 0. ice 4. gas 0. largest_mass 8 point 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 9 5 step 1 4. time 4. planets 2 4. rocky 1 8. ice 6. gas 0. largest_mass 9 point 9 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 5 step 1 4 time. a 4.
+q planets seed 9 5 step 1 4 largest_mass. a 9 point 9 2.
+q planets seed 9 5 step 1 4 innermost_au. a 0 point 3 3.
+q planets seed 9 5 step 1 4 next gas. a 0.
+planets seed 9 5 step 1 5. time 5. planets 2 4. rocky 1 7. ice 7. gas 0. largest_mass 1 1 point 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 5 step 1 5 ice. a 7.
+q planets seed 9 5 step 1 5 next ice. a 8.
+planets seed 9 5 step 1 6. time 6. planets 2 4. rocky 1 6. ice 8. gas 0. largest_mass 1 2 point 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 5 step 1 6 next time. a 7.
+planets seed 9 5 step 1 7. time 7. planets 2 3. rocky 1 6. ice 7. gas 0. largest_mass 3 6 point 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 9 5 step 1 7 gas_present. a yes.
+planets seed 9 5 step 1 8. time 8. planets 2 2. rocky 1 6. ice 4. gas 2. largest_mass 7 3 point 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 9 5 step 1 8 outermost_au. a 2 7 point 3.
+planets seed 9 5 step 1 9. time 9. planets 2 2. rocky 1 4. ice 6. gas 2. largest_mass 7 4 point 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+planets seed 9 5 step 2 0. time 1 0. planets 2 2. rocky 1 4. ice 6. gas 2. largest_mass 7 5 point 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present no. stage clearing.
+q planets seed 9 5 step 2 0 next outermost_au. a 2 5 point 6.
+planets seed 9 5 step 2 1. time 1 2. planets 1 3. rocky 9. ice 3. gas 1. largest_mass 1 6 1. innermost_au 0 point 3 6 7. outermost_au 2 5 point 6. debris 0 point 0 3 4 7. gas_present no. stage clearing.
+planets seed 9 5 step 2 2. time 1 5. planets 8. rocky 5. ice 2. gas 1. largest_mass 1 6 3. innermost_au 0 point 4 6 1. outermost_au 2 0 point 8. debris 0 point 0 4 4 9. gas_present no. stage clearing.
+planets seed 9 5 step 2 3. time 2 0. planets 6. rocky 3. ice 2. gas 1. largest_mass 1 6 5. innermost_au 0 point 4 6 1. outermost_au 2 0 point 8. debris 0 point 0 5 1 5. gas_present no. stage done.
+q planets seed 9 5 step 2 3 time. a 2 0.
+planets seed 9 5 step 2 4. time 2 5. planets 6. rocky 3. ice 2. gas 1. largest_mass 1 6 5. innermost_au 0 point 4 6 1. outermost_au 2 0 point 8. debris 0 point 0 5 1 5. gas_present no. stage done.
+q planets seed 9 5 step 2 4 debris. a 0 point 0 5 1 5.
+planets seed 9 5 step 2 5. time 3 0. planets 6. rocky 3. ice 2. gas 1. largest_mass 1 6 6. innermost_au 0 point 4 6 1. outermost_au 2 0 point 8. debris 0 point 0 5 1 5. gas_present no. stage done.
+planets seed 9 5 step 2 6. time 3 5. planets 6. rocky 3. ice 2. gas 1. largest_mass 1 6 6. innermost_au 0 point 4 6 1. outermost_au 2 0 point 8. debris 0 point 0 5 1 5. gas_present no. stage done.
+q planets seed 9 5 step 2 6 time. a 3 5.
+q planets seed 9 5 step 2 6 ice. a 2.
+q planets seed 9 5 step 2 6 next innermost_au. a 0 point 4 6 1.
+planets seed 9 5 step 2 7. time 4 0. planets 6. rocky 3. ice 2. gas 1. largest_mass 1 6 6. innermost_au 0 point 4 6 1. outermost_au 2 0 point 8. debris 0 point 0 5 1 5. gas_present no. stage done.
+q planets seed 9 5 step 2 7 gas_present. a no.
+q planets seed 9 5 step 2 7 next debris. a 0 point 0 5 1 5.
+planets seed 9 5 step 2 8. time 4 5. planets 6. rocky 3. ice 2. gas 1. largest_mass 1 6 6. innermost_au 0 point 4 6 1. outermost_au 2 0 point 8. debris 0 point 0 5 1 5. gas_present no. stage done.
+q planets seed 9 5 step 2 8 innermost_au. a 0 point 4 6 1.
+planets seed 9 5 step 2 9. time 5 0. planets 6. rocky 3. ice 2. gas 1. largest_mass 1 6 6. innermost_au 0 point 4 6 1. outermost_au 2 0 point 8. debris 0 point 0 5 1 5. gas_present no. stage done.
+q planets seed 9 5 final planets. a 6.
+q planets seed 9 5 final rocky. a 3.
+q planets seed 9 5 final ice. a 2.
+q planets seed 9 5 final gas. a 1.
+q planets seed 9 5 final largest_mass. a 1 6 6.
+q planets seed 9 5 final habitable. a 0.
+q planets seed 9 5 final total_planet_mass. a 2 7 2.
+planets seed 5 7 7 9 params. m_star 1 point 1. disc_mass 1 9 5 point 8. t_gas 5 point 1 8. core_threshold 1 0. r_frost 3 point 1 9. luminosity 1 point 4.
+planets seed 5 7 7 9 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 5 7 7 9 step 0 next time. a 0 point 0 5.
+q planets seed 5 7 7 9 step 0 next rocky. a 1 8.
+planets seed 5 7 7 9 step 1. time 0 point 0 5. planets 1 8. rocky 1 8. ice 0. gas 0. largest_mass 0 point 6 6 1. innermost_au 0 point 3 3. outermost_au 1 0 point 4. debris 0. gas_present yes. stage embryos.
+q planets seed 5 7 7 9 step 1 next gas. a 0.
+planets seed 5 7 7 9 step 2. time 0 point 1. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 0 point 9 1 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 5 7 7 9 step 2 gas. a 0.
+q planets seed 5 7 7 9 step 2 next ice. a 0.
+q planets seed 5 7 7 9 step 2 next largest_mass. a 1 point 0 7.
+q planets seed 5 7 7 9 step 2 next gas_present. a yes.
+planets seed 5 7 7 9 step 3. time 0 point 1 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 0 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 5 7 7 9 step 4. time 0 point 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 5 7 7 9 step 5. time 0 point 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 0 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 5 7 7 9 step 5 stage. a embryos.
+q planets seed 5 7 7 9 step 5 next largest_mass. a 2 point 5 9.
+planets seed 5 7 7 9 step 6. time 0 point 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 5 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 5 7 7 9 step 6 gas. a 0.
+q planets seed 5 7 7 9 step 6 outermost_au. a 2 7 point 3.
+q planets seed 5 7 7 9 step 6 next stage. a embryos.
+planets seed 5 7 7 9 step 7. time 0 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 1 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 5 7 7 9 step 7 innermost_au. a 0 point 3 3.
+planets seed 5 7 7 9 step 8. time 0 point 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 0 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 5 7 7 9 step 9. time 1. planets 2 4. rocky 2 3. ice 1. gas 0. largest_mass 5 point 1 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 5 7 7 9 step 1 0. time 1 point 5. planets 2 4. rocky 2 1. ice 3. gas 0. largest_mass 6 point 8 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 5 7 7 9 step 1 0 gas. a 0.
+planets seed 5 7 7 9 step 1 1. time 2. planets 2 4. rocky 2 1. ice 3. gas 0. largest_mass 8 point 0 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 5 7 7 9 step 1 1 largest_mass. a 8 point 0 6.
+q planets seed 5 7 7 9 step 1 1 stage. a embryos.
+q planets seed 5 7 7 9 step 1 1 next time. a 2 point 5.
+planets seed 5 7 7 9 step 1 2. time 2 point 5. planets 2 4. rocky 1 9. ice 5. gas 0. largest_mass 9 point 0 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 5 7 7 9 step 1 3. time 3. planets 2 4. rocky 1 9. ice 5. gas 0. largest_mass 9 point 9 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 5 7 7 9 step 1 4. time 4. planets 2 4. rocky 1 6. ice 8. gas 0. largest_mass 1 1 point 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 5 7 7 9 step 1 4 innermost_au. a 0 point 3 3.
+q planets seed 5 7 7 9 step 1 4 next time. a 5.
+planets seed 5 7 7 9 step 1 5. time 5. planets 2 2. rocky 1 3. ice 8. gas 1. largest_mass 4 7 point 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+planets seed 5 7 7 9 step 1 6. time 6. planets 1 7. rocky 1 1. ice 5. gas 1. largest_mass 7 6 point 9. innermost_au 0 point 3 3. outermost_au 2 4 point 5. debris 0. gas_present no. stage clearing.
+q planets seed 5 7 7 9 step 1 6 ice. a 5.
+planets seed 5 7 7 9 step 1 7. time 7. planets 1 5. rocky 1 0. ice 5. gas 0. largest_mass 1 0 0. innermost_au 0 point 3 3. outermost_au 2 4 point 5. debris 0. gas_present no. stage clearing.
+planets seed 5 7 7 9 step 1 8. time 8. planets 1 2. rocky 8. ice 4. gas 0. largest_mass 1 0 3. innermost_au 0 point 3 3. outermost_au 2 2 point 5. debris 0 point 0 2 1 9. gas_present no. stage clearing.
+q planets seed 5 7 7 9 step 1 8 time. a 8.
+q planets seed 5 7 7 9 step 1 8 rocky. a 8.
+q planets seed 5 7 7 9 step 1 8 ice. a 4.
+q planets seed 5 7 7 9 step 1 8 next gas. a 0.
+planets seed 5 7 7 9 step 1 9. time 9. planets 1 0. rocky 7. ice 3. gas 0. largest_mass 1 0 4. innermost_au 0 point 3 3. outermost_au 2 0 point 6. debris 0 point 0 2 9. gas_present no. stage clearing.
+q planets seed 5 7 7 9 step 1 9 planets. a 1 0.
+planets seed 5 7 7 9 step 2 0. time 1 0. planets 1 0. rocky 7. ice 3. gas 0. largest_mass 1 0 6. innermost_au 0 point 3 3. outermost_au 2 0 point 6. debris 0 point 0 2 9. gas_present no. stage clearing.
+q planets seed 5 7 7 9 step 2 0 next time. a 1 2.
+planets seed 5 7 7 9 step 2 1. time 1 2. planets 8. rocky 5. ice 3. gas 0. largest_mass 1 0 7. innermost_au 0 point 3 3. outermost_au 2 0 point 6. debris 0 point 0 2 9. gas_present no. stage clearing.
+planets seed 5 7 7 9 step 2 2. time 1 5. planets 6. rocky 3. ice 3. gas 0. largest_mass 1 0 8. innermost_au 0 point 4 6 1. outermost_au 2 0 point 6. debris 0 point 0 2 9. gas_present no. stage done.
+planets seed 5 7 7 9 step 2 3. time 2 0. planets 6. rocky 3. ice 3. gas 0. largest_mass 1 0 8. innermost_au 0 point 4 6 1. outermost_au 2 0 point 6. debris 0 point 0 2 9. gas_present no. stage done.
+q planets seed 5 7 7 9 step 2 3 next planets. a 6.
+planets seed 5 7 7 9 step 2 4. time 2 5. planets 6. rocky 3. ice 3. gas 0. largest_mass 1 0 8. innermost_au 0 point 4 6 1. outermost_au 2 0 point 6. debris 0 point 0 2 9. gas_present no. stage done.
+q planets seed 5 7 7 9 step 2 4 time. a 2 5.
+q planets seed 5 7 7 9 step 2 4 largest_mass. a 1 0 8.
+planets seed 5 7 7 9 step 2 5. time 3 0. planets 6. rocky 3. ice 3. gas 0. largest_mass 1 0 8. innermost_au 0 point 4 6 1. outermost_au 2 0 point 6. debris 0 point 0 2 9. gas_present no. stage done.
+q planets seed 5 7 7 9 step 2 5 next outermost_au. a 2 0 point 6.
+q planets seed 5 7 7 9 step 2 5 next gas_present. a no.
+planets seed 5 7 7 9 step 2 6. time 3 5. planets 6. rocky 3. ice 3. gas 0. largest_mass 1 0 8. innermost_au 0 point 4 6 1. outermost_au 2 0 point 6. debris 0 point 0 2 9. gas_present no. stage done.
+planets seed 5 7 7 9 step 2 7. time 4 0. planets 6. rocky 3. ice 3. gas 0. largest_mass 1 0 8. innermost_au 0 point 4 6 1. outermost_au 2 0 point 6. debris 0 point 0 2 9. gas_present no. stage done.
+q planets seed 5 7 7 9 step 2 7 largest_mass. a 1 0 8.
+planets seed 5 7 7 9 step 2 8. time 4 5. planets 6. rocky 3. ice 3. gas 0. largest_mass 1 0 8. innermost_au 0 point 4 6 1. outermost_au 2 0 point 6. debris 0 point 0 2 9. gas_present no. stage done.
+planets seed 5 7 7 9 step 2 9. time 5 0. planets 6. rocky 3. ice 3. gas 0. largest_mass 1 0 8. innermost_au 0 point 4 6 1. outermost_au 2 0 point 6. debris 0 point 0 2 9. gas_present no. stage done.
+q planets seed 5 7 7 9 final planets. a 6.
+q planets seed 5 7 7 9 final rocky. a 3.
+q planets seed 5 7 7 9 final ice. a 3.
+q planets seed 5 7 7 9 final gas. a 0.
+q planets seed 5 7 7 9 final largest_mass. a 1 0 8.
+q planets seed 5 7 7 9 final habitable. a 0.
+q planets seed 5 7 7 9 final total_planet_mass. a 2 3 2.
+planets seed 9 0 4 3 params. m_star 0 point 7 5. disc_mass 8 3 point 3. t_gas 9 point 3 9. core_threshold 1 0. r_frost 1 point 6 3. luminosity 0 point 3 6 5.
+planets seed 9 0 4 3 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 9 0 4 3 step 0 next time. a 0 point 0 5.
+planets seed 9 0 4 3 step 1. time 0 point 0 5. planets 1 0. rocky 1 0. ice 0. gas 0. largest_mass 0 point 2 6 4. innermost_au 0 point 3 3. outermost_au 3 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 9 0 4 3 step 2. time 0 point 1. planets 1 8. rocky 1 8. ice 0. gas 0. largest_mass 0 point 3 9 1. innermost_au 0 point 3 3. outermost_au 8 point 6 2. debris 0. gas_present yes. stage embryos.
+q planets seed 9 0 4 3 step 2 planets. a 1 8.
+q planets seed 9 0 4 3 step 2 innermost_au. a 0 point 3 3.
+q planets seed 9 0 4 3 step 2 next rocky. a 2 0.
+q planets seed 9 0 4 3 step 2 next ice. a 0.
+q planets seed 9 0 4 3 step 2 next stage. a embryos.
+planets seed 9 0 4 3 step 3. time 0 point 1 5. planets 2 0. rocky 2 0. ice 0. gas 0. largest_mass 0 point 5 6 2. innermost_au 0 point 3 3. outermost_au 1 5 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 0 4 3 step 3 time. a 0 point 1 5.
+planets seed 9 0 4 3 step 4. time 0 point 2. planets 2 0. rocky 2 0. ice 0. gas 0. largest_mass 0 point 7 1 9. innermost_au 0 point 3 3. outermost_au 1 5 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 9 0 4 3 step 5. time 0 point 3. planets 2 2. rocky 2 2. ice 0. gas 0. largest_mass 0 point 9 9 6. innermost_au 0 point 3 3. outermost_au 2 2 point 5. debris 0. gas_present yes. stage embryos.
+planets seed 9 0 4 3 step 6. time 0 point 4. planets 2 3. rocky 2 3. ice 0. gas 0. largest_mass 1 point 2 3. innermost_au 0 point 3 3. outermost_au 2 2 point 5. debris 0. gas_present yes. stage embryos.
+q planets seed 9 0 4 3 step 6 next innermost_au. a 0 point 3 3.
+q planets seed 9 0 4 3 step 6 next outermost_au. a 2 2 point 5.
+planets seed 9 0 4 3 step 7. time 0 point 5. planets 2 3. rocky 2 3. ice 0. gas 0. largest_mass 1 point 4 2. innermost_au 0 point 3 3. outermost_au 2 2 point 5. debris 0. gas_present yes. stage embryos.
+q planets seed 9 0 4 3 step 7 largest_mass. a 1 point 4 2.
+planets seed 9 0 4 3 step 8. time 0 point 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 7 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 9 0 4 3 step 9. time 1. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 0 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 0 4 3 step 9 planets. a 2 4.
+q planets seed 9 0 4 3 step 9 next stage. a embryos.
+planets seed 9 0 4 3 step 1 0. time 1 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 0 4 3 step 1 0 rocky. a 2 4.
+planets seed 9 0 4 3 step 1 1. time 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 9 0 4 3 step 1 2. time 2 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 9 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 0 4 3 step 1 2 rocky. a 2 4.
+planets seed 9 0 4 3 step 1 3. time 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 0 4 3 step 1 3 outermost_au. a 2 7 point 3.
+planets seed 9 0 4 3 step 1 4. time 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 2 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 0 4 3 step 1 4 next debris. a 0.
+planets seed 9 0 4 3 step 1 5. time 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 6 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 0 4 3 step 1 5 debris. a 0.
+q planets seed 9 0 4 3 step 1 5 next largest_mass. a 3 point 9 6.
+planets seed 9 0 4 3 step 1 6. time 6. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 9 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 0 4 3 step 1 6 next planets. a 2 4.
+q planets seed 9 0 4 3 step 1 6 next innermost_au. a 0 point 3 3.
+q planets seed 9 0 4 3 step 1 6 next outermost_au. a 2 7 point 3.
+planets seed 9 0 4 3 step 1 7. time 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 2 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 0 4 3 step 1 7 next planets. a 2 4.
+planets seed 9 0 4 3 step 1 8. time 8. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 4 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 0 4 3 step 1 8 next ice. a 0.
+q planets seed 9 0 4 3 step 1 8 next gas. a 0.
+q planets seed 9 0 4 3 step 1 8 next largest_mass. a 4 point 6 3.
+planets seed 9 0 4 3 step 1 9. time 9. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 6 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 9 0 4 3 step 2 0. time 1 0. planets 2 2. rocky 2 1. ice 1. gas 0. largest_mass 6 point 8 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 2 point 4 5 e minus 4. gas_present no. stage clearing.
+q planets seed 9 0 4 3 step 2 0 planets. a 2 2.
+q planets seed 9 0 4 3 step 2 0 next time. a 1 2.
+planets seed 9 0 4 3 step 2 1. time 1 2. planets 1 5. rocky 1 2. ice 3. gas 0. largest_mass 1 0 point 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 0 7 2 2. gas_present no. stage clearing.
+planets seed 9 0 4 3 step 2 2. time 1 5. planets 1 0. rocky 5. ice 5. gas 0. largest_mass 1 9 point 8. innermost_au 0 point 3 3. outermost_au 2 4 point 2. debris 0 point 0 2 4 7. gas_present no. stage clearing.
+q planets seed 9 0 4 3 step 2 2 next debris. a 0 point 0 2 4 7.
+planets seed 9 0 4 3 step 2 3. time 2 0. planets 7. rocky 3. ice 4. gas 0. largest_mass 2 5 point 6. innermost_au 0 point 4 6. outermost_au 2 4 point 2. debris 0 point 0 2 4 7. gas_present no. stage clearing.
+planets seed 9 0 4 3 step 2 4. time 2 5. planets 6. rocky 2. ice 4. gas 0. largest_mass 2 7 point 6. innermost_au 0 point 4 6. outermost_au 2 4 point 2. debris 0 point 0 2 4 7. gas_present no. stage done.
+planets seed 9 0 4 3 step 2 5. time 3 0. planets 6. rocky 2. ice 4. gas 0. largest_mass 2 8 point 9. innermost_au 0 point 4 6. outermost_au 2 4 point 2. debris 0 point 0 2 4 7. gas_present no. stage done.
+planets seed 9 0 4 3 step 2 6. time 3 5. planets 6. rocky 2. ice 4. gas 0. largest_mass 2 9 point 7. innermost_au 0 point 4 6. outermost_au 2 4 point 2. debris 0 point 0 2 4 7. gas_present no. stage done.
+q planets seed 9 0 4 3 step 2 6 next rocky. a 2.
+q planets seed 9 0 4 3 step 2 6 next largest_mass. a 3 0 point 1.
+planets seed 9 0 4 3 step 2 7. time 4 0. planets 6. rocky 2. ice 4. gas 0. largest_mass 3 0 point 1. innermost_au 0 point 4 6. outermost_au 2 4 point 2. debris 0 point 0 2 4 7. gas_present no. stage done.
+q planets seed 9 0 4 3 step 2 7 next stage. a done.
+planets seed 9 0 4 3 step 2 8. time 4 5. planets 6. rocky 2. ice 4. gas 0. largest_mass 3 0 point 4. innermost_au 0 point 4 6. outermost_au 2 4 point 2. debris 0 point 0 2 4 7. gas_present no. stage done.
+q planets seed 9 0 4 3 step 2 8 next stage. a done.
+planets seed 9 0 4 3 step 2 9. time 5 0. planets 6. rocky 2. ice 4. gas 0. largest_mass 3 0 point 6. innermost_au 0 point 4 6. outermost_au 2 4 point 2. debris 0 point 0 2 4 7. gas_present no. stage done.
+q planets seed 9 0 4 3 final planets. a 6.
+q planets seed 9 0 4 3 final rocky. a 2.
+q planets seed 9 0 4 3 final ice. a 4.
+q planets seed 9 0 4 3 final gas. a 0.
+q planets seed 9 0 4 3 final largest_mass. a 3 0 point 6.
+q planets seed 9 0 4 3 final habitable. a 1.
+q planets seed 9 0 4 3 final total_planet_mass. a 7 7 point 5.
+planets seed 6 6 5 1 params. m_star 0 point 5 7. disc_mass 2 4 8 point 6. t_gas 6 point 1. core_threshold 1 0. r_frost 1 point 0 1. luminosity 0 point 1 4.
+planets seed 6 6 5 1 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+planets seed 6 6 5 1 step 1. time 0 point 0 5. planets 1 9. rocky 1 9. ice 0. gas 0. largest_mass 1 point 0 8. innermost_au 0 point 3 3. outermost_au 1 0 point 4. debris 0. gas_present yes. stage embryos.
+q planets seed 6 6 5 1 step 1 largest_mass. a 1 point 0 8.
+planets seed 6 6 5 1 step 2. time 0 point 1. planets 2 0. rocky 2 0. ice 0. gas 0. largest_mass 1 point 9 4. innermost_au 0 point 3 3. outermost_au 2 2 point 5. debris 0. gas_present yes. stage embryos.
+planets seed 6 6 5 1 step 3. time 0 point 1 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 6 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 6 6 5 1 step 4. time 0 point 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 1 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 6 5 1 step 4 next stage. a embryos.
+planets seed 6 6 5 1 step 5. time 0 point 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 9 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 6 6 5 1 step 6. time 0 point 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 4 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 6 5 1 step 6 rocky. a 2 4.
+planets seed 6 6 5 1 step 7. time 0 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 7 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 6 5 1 step 7 stage. a embryos.
+q planets seed 6 6 5 1 step 7 next rocky. a 2 2.
+q planets seed 6 6 5 1 step 7 next innermost_au. a 0 point 3 3.
+planets seed 6 6 5 1 step 8. time 0 point 7. planets 2 4. rocky 2 2. ice 2. gas 0. largest_mass 5 point 1 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 6 5 1 step 8 next ice. a 6.
+planets seed 6 6 5 1 step 9. time 1. planets 2 3. rocky 1 7. ice 6. gas 0. largest_mass 2 0 point 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 6 6 5 1 step 9 stage. a giants_forming.
+q planets seed 6 6 5 1 step 9 next gas_present. a yes.
+planets seed 6 6 5 1 step 1 0. time 1 point 5. planets 2 1. rocky 1 4. ice 5. gas 2. largest_mass 1 1 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 6 6 5 1 step 1 0 next ice. a 3.
+planets seed 6 6 5 1 step 1 1. time 2. planets 2 0. rocky 1 4. ice 3. gas 3. largest_mass 2 1 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 6 6 5 1 step 1 1 rocky. a 1 4.
+q planets seed 6 6 5 1 step 1 1 next largest_mass. a 2 1 9.
+planets seed 6 6 5 1 step 1 2. time 2 point 5. planets 2 0. rocky 1 1. ice 6. gas 3. largest_mass 2 1 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 6 6 5 1 step 1 2 debris. a 0.
+q planets seed 6 6 5 1 step 1 2 stage. a giants_forming.
+planets seed 6 6 5 1 step 1 3. time 3. planets 1 7. rocky 1 1. ice 3. gas 3. largest_mass 2 2 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 0 4 7. gas_present yes. stage giants_forming.
+planets seed 6 6 5 1 step 1 4. time 4. planets 1 6. rocky 1 1. ice 0. gas 5. largest_mass 2 2 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 1 6 3. gas_present yes. stage giants_forming.
+q planets seed 6 6 5 1 step 1 4 debris. a 0 point 0 1 6 3.
+planets seed 6 6 5 1 step 1 5. time 5. planets 1 5. rocky 1 0. ice 0. gas 5. largest_mass 2 2 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 1 6 3. gas_present yes. stage giants_forming.
+q planets seed 6 6 5 1 step 1 5 next largest_mass. a 2 2 2.
+planets seed 6 6 5 1 step 1 6. time 6. planets 1 5. rocky 8. ice 2. gas 5. largest_mass 2 2 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 1 6 3. gas_present yes. stage giants_forming.
+q planets seed 6 6 5 1 step 1 6 planets. a 1 5.
+q planets seed 6 6 5 1 step 1 6 next planets. a 1 2.
+planets seed 6 6 5 1 step 1 7. time 7. planets 1 2. rocky 7. ice 1. gas 4. largest_mass 3 4 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 4 1 3. gas_present no. stage clearing.
+q planets seed 6 6 5 1 step 1 7 planets. a 1 2.
+planets seed 6 6 5 1 step 1 8. time 8. planets 8. rocky 4. ice 1. gas 3. largest_mass 3 4 9. innermost_au 0 point 3 3. outermost_au 2 2 point 6. debris 0 point 0 4 1 3. gas_present no. stage clearing.
+planets seed 6 6 5 1 step 1 9. time 9. planets 7. rocky 3. ice 1. gas 3. largest_mass 3 4 9. innermost_au 0 point 3 3. outermost_au 2 2 point 6. debris 0 point 0 4 1 3. gas_present no. stage clearing.
+q planets seed 6 6 5 1 step 1 9 ice. a 1.
+q planets seed 6 6 5 1 step 1 9 next largest_mass. a 3 4 9.
+planets seed 6 6 5 1 step 2 0. time 1 0. planets 7. rocky 3. ice 1. gas 3. largest_mass 3 4 9. innermost_au 0 point 3 3. outermost_au 2 2 point 6. debris 0 point 0 4 1 3. gas_present no. stage clearing.
+q planets seed 6 6 5 1 step 2 0 next debris. a 0 point 0 4 1 3.
+planets seed 6 6 5 1 step 2 1. time 1 2. planets 7. rocky 3. ice 1. gas 3. largest_mass 3 5 0. innermost_au 0 point 3 3. outermost_au 2 2 point 6. debris 0 point 0 4 1 3. gas_present no. stage clearing.
+q planets seed 6 6 5 1 step 2 1 time. a 1 2.
+q planets seed 6 6 5 1 step 2 1 outermost_au. a 2 2 point 6.
+q planets seed 6 6 5 1 step 2 1 next rocky. a 2.
+planets seed 6 6 5 1 step 2 2. time 1 5. planets 6. rocky 2. ice 1. gas 3. largest_mass 3 5 0. innermost_au 0 point 3 6 7. outermost_au 2 2 point 6. debris 0 point 0 4 1 3. gas_present no. stage done.
+planets seed 6 6 5 1 step 2 3. time 2 0. planets 6. rocky 2. ice 1. gas 3. largest_mass 3 5 0. innermost_au 0 point 3 6 7. outermost_au 2 2 point 6. debris 0 point 0 4 1 3. gas_present no. stage done.
+q planets seed 6 6 5 1 step 2 3 planets. a 6.
+q planets seed 6 6 5 1 step 2 3 gas. a 3.
+q planets seed 6 6 5 1 step 2 3 stage. a done.
+planets seed 6 6 5 1 step 2 4. time 2 5. planets 6. rocky 2. ice 1. gas 3. largest_mass 3 5 0. innermost_au 0 point 3 6 7. outermost_au 2 2 point 6. debris 0 point 0 4 1 3. gas_present no. stage done.
+q planets seed 6 6 5 1 step 2 4 time. a 2 5.
+planets seed 6 6 5 1 step 2 5. time 3 0. planets 6. rocky 2. ice 1. gas 3. largest_mass 3 5 0. innermost_au 0 point 3 6 7. outermost_au 2 2 point 6. debris 0 point 0 4 1 3. gas_present no. stage done.
+planets seed 6 6 5 1 step 2 6. time 3 5. planets 6. rocky 2. ice 1. gas 3. largest_mass 3 5 0. innermost_au 0 point 3 6 7. outermost_au 2 2 point 6. debris 0 point 0 4 1 3. gas_present no. stage done.
+q planets seed 6 6 5 1 step 2 6 stage. a done.
+planets seed 6 6 5 1 step 2 7. time 4 0. planets 6. rocky 2. ice 1. gas 3. largest_mass 3 5 0. innermost_au 0 point 3 6 7. outermost_au 2 2 point 6. debris 0 point 0 4 1 3. gas_present no. stage done.
+q planets seed 6 6 5 1 step 2 7 next gas_present. a no.
+planets seed 6 6 5 1 step 2 8. time 4 5. planets 6. rocky 2. ice 1. gas 3. largest_mass 3 5 0. innermost_au 0 point 3 6 7. outermost_au 2 2 point 6. debris 0 point 0 4 1 3. gas_present no. stage done.
+q planets seed 6 6 5 1 step 2 8 innermost_au. a 0 point 3 6 7.
+planets seed 6 6 5 1 step 2 9. time 5 0. planets 6. rocky 2. ice 1. gas 3. largest_mass 3 5 0. innermost_au 0 point 3 6 7. outermost_au 2 2 point 6. debris 0 point 0 4 1 3. gas_present no. stage done.
+q planets seed 6 6 5 1 final planets. a 6.
+q planets seed 6 6 5 1 final rocky. a 2.
+q planets seed 6 6 5 1 final ice. a 1.
+q planets seed 6 6 5 1 final gas. a 3.
+q planets seed 6 6 5 1 final largest_mass. a 3 5 0.
+q planets seed 6 6 5 1 final habitable. a 1.
+q planets seed 6 6 5 1 final total_planet_mass. a 9 0 0.
+planets seed 6 9 2 2 params. m_star 1 point 4. disc_mass 2 6 2 point 1. t_gas 7 point 6 6. core_threshold 1 0. r_frost 4 point 8 7. luminosity 3 point 2 5.
+planets seed 6 9 2 2 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 6 9 2 2 step 0 debris. a 0.
+planets seed 6 9 2 2 step 1. time 0 point 0 5. planets 2 1. rocky 2 1. ice 0. gas 0. largest_mass 1 point 0 2. innermost_au 0 point 3 3. outermost_au 1 8 point 6. debris 0. gas_present yes. stage embryos.
+q planets seed 6 9 2 2 step 1 next outermost_au. a 2 7 point 3.
+planets seed 6 9 2 2 step 2. time 0 point 1. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 6 9 2 2 step 3. time 0 point 1 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 4 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 9 2 2 step 3 stage. a embryos.
+q planets seed 6 9 2 2 step 3 next rocky. a 2 4.
+planets seed 6 9 2 2 step 4. time 0 point 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 6 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 6 9 2 2 step 5. time 0 point 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 0 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 6 9 2 2 step 6. time 0 point 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 6 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 9 2 2 step 6 debris. a 0.
+q planets seed 6 9 2 2 step 6 next ice. a 0.
+planets seed 6 9 2 2 step 7. time 0 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 2 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 9 2 2 step 7 outermost_au. a 2 7 point 3.
+q planets seed 6 9 2 2 step 7 gas_present. a yes.
+q planets seed 6 9 2 2 step 7 next ice. a 0.
+planets seed 6 9 2 2 step 8. time 0 point 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 3 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 9 2 2 step 8 next outermost_au. a 2 7 point 3.
+planets seed 6 9 2 2 step 9. time 1. planets 2 4. rocky 2 3. ice 1. gas 0. largest_mass 5 point 8 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 6 9 2 2 step 1 0. time 1 point 5. planets 2 4. rocky 2 1. ice 3. gas 0. largest_mass 8 point 2 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 6 9 2 2 step 1 1. time 2. planets 2 4. rocky 1 9. ice 5. gas 0. largest_mass 1 0 point 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 6 9 2 2 step 1 1 next time. a 2 point 5.
+planets seed 6 9 2 2 step 1 2. time 2 point 5. planets 2 4. rocky 1 7. ice 6. gas 1. largest_mass 3 7 point 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+planets seed 6 9 2 2 step 1 3. time 3. planets 2 2. rocky 1 5. ice 5. gas 2. largest_mass 2 0 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 6 9 2 2 step 1 3 ice. a 5.
+planets seed 6 9 2 2 step 1 4. time 4. planets 2 1. rocky 1 4. ice 5. gas 2. largest_mass 3 8 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+planets seed 6 9 2 2 step 1 5. time 5. planets 2 0. rocky 1 4. ice 2. gas 4. largest_mass 3 9 0. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 6 9 2 2 step 1 5 ice. a 2.
+q planets seed 6 9 2 2 step 1 5 next planets. a 1 8.
+q planets seed 6 9 2 2 step 1 5 next rocky. a 1 4.
+q planets seed 6 9 2 2 step 1 5 next stage. a giants_forming.
+planets seed 6 9 2 2 step 1 6. time 6. planets 1 8. rocky 1 4. ice 1. gas 3. largest_mass 3 9 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+planets seed 6 9 2 2 step 1 7. time 7. planets 1 8. rocky 1 4. ice 1. gas 3. largest_mass 3 9 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 6 9 2 2 step 1 7 next gas. a 2.
+planets seed 6 9 2 2 step 1 8. time 8. planets 1 6. rocky 1 3. ice 1. gas 2. largest_mass 7 0 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present no. stage clearing.
+q planets seed 6 9 2 2 step 1 8 planets. a 1 6.
+q planets seed 6 9 2 2 step 1 8 ice. a 1.
+q planets seed 6 9 2 2 step 1 8 next gas_present. a no.
+planets seed 6 9 2 2 step 1 9. time 9. planets 1 3. rocky 1 0. ice 1. gas 2. largest_mass 7 0 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 1 8 3. gas_present no. stage clearing.
+planets seed 6 9 2 2 step 2 0. time 1 0. planets 1 1. rocky 8. ice 1. gas 2. largest_mass 7 1 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 1 8 3. gas_present no. stage clearing.
+planets seed 6 9 2 2 step 2 1. time 1 2. planets 9. rocky 6. ice 1. gas 2. largest_mass 7 2 5. innermost_au 0 point 4 6 1. outermost_au 2 7 point 3. debris 0 point 0 1 8 3. gas_present no. stage clearing.
+q planets seed 6 9 2 2 step 2 1 largest_mass. a 7 2 5.
+q planets seed 6 9 2 2 step 2 1 next outermost_au. a 2 7 point 3.
+q planets seed 6 9 2 2 step 2 1 next debris. a 0 point 0 1 8 3.
+planets seed 6 9 2 2 step 2 2. time 1 5. planets 7. rocky 4. ice 1. gas 2. largest_mass 7 3 6. innermost_au 0 point 5 2 1. outermost_au 2 7 point 3. debris 0 point 0 1 8 3. gas_present no. stage clearing.
+q planets seed 6 9 2 2 step 2 2 stage. a clearing.
+q planets seed 6 9 2 2 step 2 2 next outermost_au. a 2 7 point 3.
+planets seed 6 9 2 2 step 2 3. time 2 0. planets 6. rocky 3. ice 1. gas 2. largest_mass 7 4 7. innermost_au 0 point 5 2 1. outermost_au 2 7 point 3. debris 0 point 0 2 1 4. gas_present no. stage done.
+q planets seed 6 9 2 2 step 2 3 rocky. a 3.
+q planets seed 6 9 2 2 step 2 3 outermost_au. a 2 7 point 3.
+q planets seed 6 9 2 2 step 2 3 gas_present. a no.
+q planets seed 6 9 2 2 step 2 3 next gas_present. a no.
+planets seed 6 9 2 2 step 2 4. time 2 5. planets 6. rocky 3. ice 1. gas 2. largest_mass 7 5 2. innermost_au 0 point 5 2 1. outermost_au 2 7 point 3. debris 0 point 0 2 1 4. gas_present no. stage done.
+planets seed 6 9 2 2 step 2 5. time 3 0. planets 6. rocky 3. ice 1. gas 2. largest_mass 7 5 5. innermost_au 0 point 5 2 1. outermost_au 2 7 point 3. debris 0 point 0 2 1 4. gas_present no. stage done.
+planets seed 6 9 2 2 step 2 6. time 3 5. planets 6. rocky 3. ice 1. gas 2. largest_mass 7 5 7. innermost_au 0 point 5 2 1. outermost_au 2 7 point 3. debris 0 point 0 2 1 4. gas_present no. stage done.
+q planets seed 6 9 2 2 step 2 6 next innermost_au. a 0 point 5 2 1.
+planets seed 6 9 2 2 step 2 7. time 4 0. planets 6. rocky 3. ice 1. gas 2. largest_mass 7 5 7. innermost_au 0 point 5 2 1. outermost_au 2 7 point 3. debris 0 point 0 2 1 4. gas_present no. stage done.
+q planets seed 6 9 2 2 step 2 7 next time. a 4 5.
+q planets seed 6 9 2 2 step 2 7 next ice. a 1.
+planets seed 6 9 2 2 step 2 8. time 4 5. planets 6. rocky 3. ice 1. gas 2. largest_mass 7 5 8. innermost_au 0 point 5 2 1. outermost_au 2 7 point 3. debris 0 point 0 2 1 4. gas_present no. stage done.
+planets seed 6 9 2 2 step 2 9. time 5 0. planets 6. rocky 3. ice 1. gas 2. largest_mass 7 5 8. innermost_au 0 point 5 2 1. outermost_au 2 7 point 3. debris 0 point 0 2 1 4. gas_present no. stage done.
+q planets seed 6 9 2 2 final planets. a 6.
+q planets seed 6 9 2 2 final rocky. a 3.
+q planets seed 6 9 2 2 final ice. a 1.
+q planets seed 6 9 2 2 final gas. a 2.
+q planets seed 6 9 2 2 final largest_mass. a 7 5 8.
+q planets seed 6 9 2 2 final habitable. a 1.
+q planets seed 6 9 2 2 final total_planet_mass. a 1 1 2 0.
+planets seed 9 2 9 6 params. m_star 1 point 0 9. disc_mass 6 6 point 4. t_gas 9 point 2 1. core_threshold 1 0. r_frost 3 point 1 4. luminosity 1 point 3 5.
+planets seed 9 2 9 6 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 9 2 9 6 step 0 time. a 0.
+q planets seed 9 2 9 6 step 0 gas. a 0.
+q planets seed 9 2 9 6 step 0 next debris. a 0.
+planets seed 9 2 9 6 step 1. time 0 point 0 5. planets 8. rocky 8. ice 0. gas 0. largest_mass 0 point 2 4 6. innermost_au 0 point 3 3. outermost_au 4. debris 0. gas_present yes. stage embryos.
+q planets seed 9 2 9 6 step 1 next rocky. a 1 6.
+planets seed 9 2 9 6 step 2. time 0 point 1. planets 1 6. rocky 1 6. ice 0. gas 0. largest_mass 0 point 3 1 8. innermost_au 0 point 3 3. outermost_au 8 point 6 2. debris 0. gas_present yes. stage embryos.
+q planets seed 9 2 9 6 step 2 innermost_au. a 0 point 3 3.
+q planets seed 9 2 9 6 step 2 next outermost_au. a 1 5 point 3.
+q planets seed 9 2 9 6 step 2 next stage. a embryos.
+planets seed 9 2 9 6 step 3. time 0 point 1 5. planets 1 9. rocky 1 9. ice 0. gas 0. largest_mass 0 point 4 6 3. innermost_au 0 point 3 3. outermost_au 1 5 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 9 2 9 6 step 4. time 0 point 2. planets 2 2. rocky 2 2. ice 0. gas 0. largest_mass 0 point 6. innermost_au 0 point 3 3. outermost_au 1 8 point 6. debris 0. gas_present yes. stage embryos.
+planets seed 9 2 9 6 step 5. time 0 point 3. planets 2 3. rocky 2 3. ice 0. gas 0. largest_mass 0 point 8 5. innermost_au 0 point 3 3. outermost_au 2 2 point 5. debris 0. gas_present yes. stage embryos.
+q planets seed 9 2 9 6 step 5 next planets. a 2 3.
+planets seed 9 2 9 6 step 6. time 0 point 4. planets 2 3. rocky 2 3. ice 0. gas 0. largest_mass 1 point 0 7. innermost_au 0 point 3 3. outermost_au 2 2 point 5. debris 0. gas_present yes. stage embryos.
+q planets seed 9 2 9 6 step 6 next planets. a 2 3.
+planets seed 9 2 9 6 step 7. time 0 point 5. planets 2 3. rocky 2 3. ice 0. gas 0. largest_mass 1 point 2 7. innermost_au 0 point 3 3. outermost_au 2 2 point 5. debris 0. gas_present yes. stage embryos.
+q planets seed 9 2 9 6 step 7 next innermost_au. a 0 point 3 3.
+planets seed 9 2 9 6 step 8. time 0 point 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 2 9 6 step 8 next time. a 1.
+q planets seed 9 2 9 6 step 8 next planets. a 2 4.
+planets seed 9 2 9 6 step 9. time 1. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 9 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 9 2 9 6 step 1 0. time 1 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 3 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 9 2 9 6 step 1 1. time 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 5 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 2 9 6 step 1 1 stage. a embryos.
+q planets seed 9 2 9 6 step 1 1 next gas. a 0.
+planets seed 9 2 9 6 step 1 2. time 2 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 6 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 2 9 6 step 1 2 next innermost_au. a 0 point 3 3.
+planets seed 9 2 9 6 step 1 3. time 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 8 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 9 2 9 6 step 1 4. time 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 2 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 2 9 6 step 1 4 planets. a 2 4.
+q planets seed 9 2 9 6 step 1 4 largest_mass. a 3 point 2 2.
+planets seed 9 2 9 6 step 1 5. time 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 4 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 9 2 9 6 step 1 6. time 6. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 6 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 2 9 6 step 1 6 gas. a 0.
+planets seed 9 2 9 6 step 1 7. time 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 9 2 9 6 step 1 8. time 8. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 0 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 2 9 6 step 1 8 innermost_au. a 0 point 3 3.
+q planets seed 9 2 9 6 step 1 8 next gas_present. a yes.
+planets seed 9 2 9 6 step 1 9. time 9. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 1 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 9 2 9 6 step 1 9 planets. a 2 4.
+q planets seed 9 2 9 6 step 1 9 next ice. a 3.
+planets seed 9 2 9 6 step 2 0. time 1 0. planets 1 7. rocky 1 4. ice 3. gas 0. largest_mass 7 point 6 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 0 7 2 1. gas_present no. stage clearing.
+planets seed 9 2 9 6 step 2 1. time 1 2. planets 7. rocky 4. ice 3. gas 0. largest_mass 1 9 point 6. innermost_au 0 point 4 1. outermost_au 2 1 point 7. debris 0 point 0 0 7 2 1. gas_present no. stage done.
+q planets seed 9 2 9 6 step 2 1 next largest_mass. a 2 1 point 3.
+planets seed 9 2 9 6 step 2 2. time 1 5. planets 7. rocky 4. ice 3. gas 0. largest_mass 2 1 point 3. innermost_au 0 point 4 1. outermost_au 2 1 point 7. debris 0 point 0 0 7 2 1. gas_present no. stage done.
+q planets seed 9 2 9 6 step 2 2 planets. a 7.
+q planets seed 9 2 9 6 step 2 2 stage. a done.
+q planets seed 9 2 9 6 step 2 2 next gas. a 0.
+q planets seed 9 2 9 6 step 2 2 next outermost_au. a 2 1 point 7.
+planets seed 9 2 9 6 step 2 3. time 2 0. planets 7. rocky 4. ice 3. gas 0. largest_mass 2 3. innermost_au 0 point 4 1. outermost_au 2 1 point 7. debris 0 point 0 0 7 2 1. gas_present no. stage done.
+q planets seed 9 2 9 6 step 2 3 next stage. a done.
+planets seed 9 2 9 6 step 2 4. time 2 5. planets 7. rocky 4. ice 3. gas 0. largest_mass 2 3 point 8. innermost_au 0 point 4 1. outermost_au 2 1 point 7. debris 0 point 0 0 7 2 1. gas_present no. stage done.
+q planets seed 9 2 9 6 step 2 4 next time. a 3 0.
+planets seed 9 2 9 6 step 2 5. time 3 0. planets 7. rocky 4. ice 3. gas 0. largest_mass 2 4 point 3. innermost_au 0 point 4 1. outermost_au 2 1 point 7. debris 0 point 0 0 7 2 1. gas_present no. stage done.
+planets seed 9 2 9 6 step 2 6. time 3 5. planets 7. rocky 4. ice 3. gas 0. largest_mass 2 4 point 5. innermost_au 0 point 4 1. outermost_au 2 1 point 7. debris 0 point 0 0 7 2 1. gas_present no. stage done.
+planets seed 9 2 9 6 step 2 7. time 4 0. planets 7. rocky 4. ice 3. gas 0. largest_mass 2 4 point 6. innermost_au 0 point 4 1. outermost_au 2 1 point 7. debris 0 point 0 0 7 2 1. gas_present no. stage done.
+q planets seed 9 2 9 6 step 2 7 time. a 4 0.
+q planets seed 9 2 9 6 step 2 7 next stage. a done.
+planets seed 9 2 9 6 step 2 8. time 4 5. planets 7. rocky 4. ice 3. gas 0. largest_mass 2 4 point 7. innermost_au 0 point 4 1. outermost_au 2 1 point 7. debris 0 point 0 0 7 2 1. gas_present no. stage done.
+planets seed 9 2 9 6 step 2 9. time 5 0. planets 7. rocky 4. ice 3. gas 0. largest_mass 2 4 point 7. innermost_au 0 point 4 1. outermost_au 2 1 point 7. debris 0 point 0 0 7 2 1. gas_present no. stage done.
+q planets seed 9 2 9 6 step 2 9 ice. a 3.
+q planets seed 9 2 9 6 final planets. a 7.
+q planets seed 9 2 9 6 final rocky. a 4.
+q planets seed 9 2 9 6 final ice. a 3.
+q planets seed 9 2 9 6 final gas. a 0.
+q planets seed 9 2 9 6 final largest_mass. a 2 4 point 7.
+q planets seed 9 2 9 6 final habitable. a 1.
+q planets seed 9 2 9 6 final total_planet_mass. a 6 3 point 8.
+planets seed 3 1 9 6 params. m_star 1 point 4 8. disc_mass 2 7 4 point 6. t_gas 3 point 8 9. core_threshold 1 0. r_frost 5 point 3 6. luminosity 3 point 9 4.
+planets seed 3 1 9 6 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+planets seed 3 1 9 6 step 1. time 0 point 0 5. planets 2 2. rocky 2 2. ice 0. gas 0. largest_mass 1 point 1 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 3 1 9 6 step 2. time 0 point 1. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 4 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 1 9 6 step 2 gas_present. a yes.
+q planets seed 3 1 9 6 step 2 next largest_mass. a 1 point 6 4.
+q planets seed 3 1 9 6 step 2 next gas_present. a yes.
+planets seed 3 1 9 6 step 3. time 0 point 1 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 6 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 1 9 6 step 3 next rocky. a 2 4.
+planets seed 3 1 9 6 step 4. time 0 point 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 8 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 1 9 6 step 4 rocky. a 2 4.
+q planets seed 3 1 9 6 step 4 debris. a 0.
+q planets seed 3 1 9 6 step 4 next rocky. a 2 4.
+q planets seed 3 1 9 6 step 4 next stage. a embryos.
+planets seed 3 1 9 6 step 5. time 0 point 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 5 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 1 9 6 step 5 rocky. a 2 4.
+q planets seed 3 1 9 6 step 5 next rocky. a 2 4.
+planets seed 3 1 9 6 step 6. time 0 point 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 1 9 6 step 6 debris. a 0.
+planets seed 3 1 9 6 step 7. time 0 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 0 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 3 1 9 6 step 8. time 0 point 7. planets 2 4. rocky 2 3. ice 1. gas 0. largest_mass 5 point 3 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 3 1 9 6 step 9. time 1. planets 2 4. rocky 2 1. ice 3. gas 0. largest_mass 7 point 3 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 1 9 6 step 9 gas_present. a yes.
+planets seed 3 1 9 6 step 1 0. time 1 point 5. planets 2 4. rocky 2 0. ice 4. gas 0. largest_mass 1 0 point 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 3 1 9 6 step 1 1. time 2. planets 2 3. rocky 1 8. ice 3. gas 2. largest_mass 4 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 3 1 9 6 step 1 1 next stage. a giants_forming.
+planets seed 3 1 9 6 step 1 2. time 2 point 5. planets 2 2. rocky 1 8. ice 2. gas 2. largest_mass 2 3 0. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 3 1 9 6 step 1 2 time. a 2 point 5.
+q planets seed 3 1 9 6 step 1 2 rocky. a 1 8.
+q planets seed 3 1 9 6 step 1 2 innermost_au. a 0 point 3 3.
+q planets seed 3 1 9 6 step 1 2 next largest_mass. a 2 3 3.
+planets seed 3 1 9 6 step 1 3. time 3. planets 2 1. rocky 1 6. ice 3. gas 2. largest_mass 2 3 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 3 1 9 6 step 1 3 next rocky. a 1 3.
+planets seed 3 1 9 6 step 1 4. time 4. planets 2 0. rocky 1 3. ice 4. gas 3. largest_mass 2 3 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 0 3 9 4. gas_present no. stage clearing.
+q planets seed 3 1 9 6 step 1 4 largest_mass. a 2 3 6.
+planets seed 3 1 9 6 step 1 5. time 5. planets 1 6. rocky 1 0. ice 4. gas 2. largest_mass 2 4 3. innermost_au 0 point 3 3. outermost_au 2 5 point 4. debris 0 point 0 1 0 7. gas_present no. stage clearing.
+q planets seed 3 1 9 6 step 1 5 next outermost_au. a 2 5 point 4.
+planets seed 3 1 9 6 step 1 6. time 6. planets 1 2. rocky 8. ice 2. gas 2. largest_mass 2 4 4. innermost_au 0 point 3 3. outermost_au 2 5 point 4. debris 0 point 0 1 0 7. gas_present no. stage clearing.
+planets seed 3 1 9 6 step 1 7. time 7. planets 9. rocky 5. ice 2. gas 2. largest_mass 2 4 5. innermost_au 0 point 3 6 7. outermost_au 2 5 point 4. debris 0 point 0 1 0 7. gas_present no. stage clearing.
+planets seed 3 1 9 6 step 1 8. time 8. planets 8. rocky 5. ice 2. gas 1. largest_mass 4 3 7. innermost_au 0 point 3 6 7. outermost_au 2 5 point 4. debris 0 point 0 1 0 7. gas_present no. stage clearing.
+planets seed 3 1 9 6 step 1 9. time 9. planets 7. rocky 5. ice 1. gas 1. largest_mass 4 4 4. innermost_au 0 point 3 6 7. outermost_au 2 3. debris 0 point 0 2 9 4. gas_present no. stage clearing.
+q planets seed 3 1 9 6 step 1 9 next innermost_au. a 0 point 3 6 7.
+planets seed 3 1 9 6 step 2 0. time 1 0. planets 7. rocky 5. ice 1. gas 1. largest_mass 4 4 9. innermost_au 0 point 3 6 7. outermost_au 2 3. debris 0 point 0 2 9 4. gas_present no. stage clearing.
+q planets seed 3 1 9 6 step 2 0 planets. a 7.
+planets seed 3 1 9 6 step 2 1. time 1 2. planets 7. rocky 5. ice 1. gas 1. largest_mass 4 5 5. innermost_au 0 point 3 6 7. outermost_au 2 3. debris 0 point 0 2 9 4. gas_present no. stage clearing.
+planets seed 3 1 9 6 step 2 2. time 1 5. planets 7. rocky 5. ice 1. gas 1. largest_mass 4 6 0. innermost_au 0 point 3 6 7. outermost_au 2 3. debris 0 point 0 2 9 4. gas_present no. stage clearing.
+q planets seed 3 1 9 6 step 2 2 ice. a 1.
+planets seed 3 1 9 6 step 2 3. time 2 0. planets 7. rocky 5. ice 1. gas 1. largest_mass 4 6 2. innermost_au 0 point 3 6 7. outermost_au 2 3. debris 0 point 0 2 9 4. gas_present no. stage clearing.
+q planets seed 3 1 9 6 step 2 3 innermost_au. a 0 point 3 6 7.
+q planets seed 3 1 9 6 step 2 3 stage. a clearing.
+planets seed 3 1 9 6 step 2 4. time 2 5. planets 6. rocky 4. ice 1. gas 1. largest_mass 4 6 2. innermost_au 0 point 4 1. outermost_au 2 3. debris 0 point 0 3 2 3. gas_present no. stage done.
+planets seed 3 1 9 6 step 2 5. time 3 0. planets 6. rocky 4. ice 1. gas 1. largest_mass 4 6 3. innermost_au 0 point 4 1. outermost_au 2 3. debris 0 point 0 3 2 3. gas_present no. stage done.
+q planets seed 3 1 9 6 step 2 5 next debris. a 0 point 0 3 2 3.
+planets seed 3 1 9 6 step 2 6. time 3 5. planets 6. rocky 4. ice 1. gas 1. largest_mass 4 6 3. innermost_au 0 point 4 1. outermost_au 2 3. debris 0 point 0 3 2 3. gas_present no. stage done.
+q planets seed 3 1 9 6 step 2 6 time. a 3 5.
+q planets seed 3 1 9 6 step 2 6 next rocky. a 4.
+q planets seed 3 1 9 6 step 2 6 next ice. a 1.
+planets seed 3 1 9 6 step 2 7. time 4 0. planets 6. rocky 4. ice 1. gas 1. largest_mass 4 6 3. innermost_au 0 point 4 1. outermost_au 2 3. debris 0 point 0 3 2 3. gas_present no. stage done.
+planets seed 3 1 9 6 step 2 8. time 4 5. planets 6. rocky 4. ice 1. gas 1. largest_mass 4 6 3. innermost_au 0 point 4 1. outermost_au 2 3. debris 0 point 0 3 2 3. gas_present no. stage done.
+q planets seed 3 1 9 6 step 2 8 rocky. a 4.
+q planets seed 3 1 9 6 step 2 8 outermost_au. a 2 3.
+q planets seed 3 1 9 6 step 2 8 gas_present. a no.
+planets seed 3 1 9 6 step 2 9. time 5 0. planets 6. rocky 4. ice 1. gas 1. largest_mass 4 6 3. innermost_au 0 point 4 1. outermost_au 2 3. debris 0 point 0 3 2 3. gas_present no. stage done.
+q planets seed 3 1 9 6 final planets. a 6.
+q planets seed 3 1 9 6 final rocky. a 4.
+q planets seed 3 1 9 6 final ice. a 1.
+q planets seed 3 1 9 6 final gas. a 1.
+q planets seed 3 1 9 6 final largest_mass. a 4 6 3.
+q planets seed 3 1 9 6 final habitable. a 1.
+q planets seed 3 1 9 6 final total_planet_mass. a 5 8 0.
+planets seed 4 8 8 params. m_star 0 point 6 1. disc_mass 2 2 0 point 3. t_gas 8 point 9 1. core_threshold 1 0. r_frost 1 point 1 4. luminosity 0 point 1 7 7.
+planets seed 4 8 8 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 4 8 8 step 0 planets. a 0.
+q planets seed 4 8 8 step 0 next largest_mass. a 0 point 6 8 4.
+planets seed 4 8 8 step 1. time 0 point 0 5. planets 1 7. rocky 1 7. ice 0. gas 0. largest_mass 0 point 6 8 4. innermost_au 0 point 3 3. outermost_au 8 point 6 2. debris 0. gas_present yes. stage embryos.
+planets seed 4 8 8 step 2. time 0 point 1. planets 2 1. rocky 2 1. ice 0. gas 0. largest_mass 1 point 2 9. innermost_au 0 point 3 3. outermost_au 1 8 point 6. debris 0. gas_present yes. stage embryos.
+q planets seed 4 8 8 step 2 next gas. a 0.
+planets seed 4 8 8 step 3. time 0 point 1 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 8 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 4 8 8 step 4. time 0 point 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 2 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 4 8 8 step 4 next gas_present. a yes.
+planets seed 4 8 8 step 5. time 0 point 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 0 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 4 8 8 step 5 gas. a 0.
+q planets seed 4 8 8 step 5 innermost_au. a 0 point 3 3.
+q planets seed 4 8 8 step 5 next gas_present. a yes.
+planets seed 4 8 8 step 6. time 0 point 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 6 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 4 8 8 step 6 next rocky. a 2 4.
+planets seed 4 8 8 step 7. time 0 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 1 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 4 8 8 step 7 time. a 0 point 5.
+planets seed 4 8 8 step 8. time 0 point 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 7 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 4 8 8 step 8 next debris. a 0.
+planets seed 4 8 8 step 9. time 1. planets 2 4. rocky 2 2. ice 2. gas 0. largest_mass 5 point 5 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 4 8 8 step 9 planets. a 2 4.
+q planets seed 4 8 8 step 9 next gas_present. a yes.
+planets seed 4 8 8 step 1 0. time 1 point 5. planets 2 4. rocky 1 8. ice 6. gas 0. largest_mass 6 point 6 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 4 8 8 step 1 0 next rocky. a 1 7.
+q planets seed 4 8 8 step 1 0 next gas_present. a yes.
+planets seed 4 8 8 step 1 1. time 2. planets 2 2. rocky 1 7. ice 3. gas 2. largest_mass 5 7 point 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 0 8 9 6. gas_present yes. stage giants_forming.
+planets seed 4 8 8 step 1 2. time 2 point 5. planets 1 9. rocky 1 4. ice 3. gas 2. largest_mass 1 7 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 0 8 9 6. gas_present yes. stage giants_forming.
+planets seed 4 8 8 step 1 3. time 3. planets 1 9. rocky 1 4. ice 2. gas 3. largest_mass 2 1 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 0 8 9 6. gas_present yes. stage giants_forming.
+q planets seed 4 8 8 step 1 3 next time. a 4.
+q planets seed 4 8 8 step 1 3 next planets. a 1 8.
+planets seed 4 8 8 step 1 4. time 4. planets 1 8. rocky 1 2. ice 2. gas 4. largest_mass 2 1 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 1 6 1. gas_present yes. stage giants_forming.
+q planets seed 4 8 8 step 1 4 largest_mass. a 2 1 8.
+planets seed 4 8 8 step 1 5. time 5. planets 1 6. rocky 1 0. ice 2. gas 4. largest_mass 2 2 0. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 1 6 1. gas_present yes. stage giants_forming.
+q planets seed 4 8 8 step 1 5 next time. a 6.
+planets seed 4 8 8 step 1 6. time 6. planets 1 6. rocky 1 0. ice 1. gas 5. largest_mass 2 2 0. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 1 6 1. gas_present yes. stage giants_forming.
+planets seed 4 8 8 step 1 7. time 7. planets 1 4. rocky 8. ice 1. gas 5. largest_mass 3 5 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 1 7 2. gas_present yes. stage giants_forming.
+q planets seed 4 8 8 step 1 7 planets. a 1 4.
+q planets seed 4 8 8 step 1 7 ice. a 1.
+q planets seed 4 8 8 step 1 7 stage. a giants_forming.
+planets seed 4 8 8 step 1 8. time 8. planets 1 3. rocky 7. ice 1. gas 5. largest_mass 3 5 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 1 7 2. gas_present yes. stage giants_forming.
+q planets seed 4 8 8 step 1 8 next debris. a 0 point 0 1 7 2.
+planets seed 4 8 8 step 1 9. time 9. planets 1 3. rocky 7. ice 1. gas 5. largest_mass 3 5 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 1 7 2. gas_present no. stage clearing.
+q planets seed 4 8 8 step 1 9 next planets. a 8.
+planets seed 4 8 8 step 2 0. time 1 0. planets 8. rocky 3. ice 1. gas 4. largest_mass 3 9 3. innermost_au 0 point 4 1. outermost_au 2 7 point 3. debris 0 point 0 3 4 7. gas_present no. stage clearing.
+planets seed 4 8 8 step 2 1. time 1 2. planets 5. rocky 1. ice 0. gas 4. largest_mass 3 9 3. innermost_au 0 point 5 3 2. outermost_au 2 0 point 3. debris 0 point 0 6 3 6. gas_present no. stage done.
+q planets seed 4 8 8 step 2 1 outermost_au. a 2 0 point 3.
+q planets seed 4 8 8 step 2 1 next rocky. a 1.
+planets seed 4 8 8 step 2 2. time 1 5. planets 5. rocky 1. ice 0. gas 4. largest_mass 3 9 4. innermost_au 0 point 5 3 2. outermost_au 2 0 point 3. debris 0 point 0 6 3 6. gas_present no. stage done.
+q planets seed 4 8 8 step 2 2 next planets. a 5.
+q planets seed 4 8 8 step 2 2 next stage. a done.
+planets seed 4 8 8 step 2 3. time 2 0. planets 5. rocky 1. ice 0. gas 4. largest_mass 3 9 4. innermost_au 0 point 5 3 2. outermost_au 2 0 point 3. debris 0 point 0 6 3 6. gas_present no. stage done.
+planets seed 4 8 8 step 2 4. time 2 5. planets 5. rocky 1. ice 0. gas 4. largest_mass 3 9 4. innermost_au 0 point 5 3 2. outermost_au 2 0 point 3. debris 0 point 0 6 3 6. gas_present no. stage done.
+q planets seed 4 8 8 step 2 4 debris. a 0 point 0 6 3 6.
+planets seed 4 8 8 step 2 5. time 3 0. planets 5. rocky 1. ice 0. gas 4. largest_mass 3 9 4. innermost_au 0 point 5 3 2. outermost_au 2 0 point 3. debris 0 point 0 6 3 6. gas_present no. stage done.
+q planets seed 4 8 8 step 2 5 time. a 3 0.
+q planets seed 4 8 8 step 2 5 next planets. a 5.
+planets seed 4 8 8 step 2 6. time 3 5. planets 5. rocky 1. ice 0. gas 4. largest_mass 3 9 4. innermost_au 0 point 5 3 2. outermost_au 2 0 point 3. debris 0 point 0 6 3 6. gas_present no. stage done.
+planets seed 4 8 8 step 2 7. time 4 0. planets 5. rocky 1. ice 0. gas 4. largest_mass 3 9 4. innermost_au 0 point 5 3 2. outermost_au 2 0 point 3. debris 0 point 0 6 3 6. gas_present no. stage done.
+q planets seed 4 8 8 step 2 7 gas. a 4.
+planets seed 4 8 8 step 2 8. time 4 5. planets 5. rocky 1. ice 0. gas 4. largest_mass 3 9 4. innermost_au 0 point 5 3 2. outermost_au 2 0 point 3. debris 0 point 0 6 3 6. gas_present no. stage done.
+q planets seed 4 8 8 step 2 8 next time. a 5 0.
+planets seed 4 8 8 step 2 9. time 5 0. planets 5. rocky 1. ice 0. gas 4. largest_mass 3 9 4. innermost_au 0 point 5 3 2. outermost_au 2 0 point 3. debris 0 point 0 6 3 6. gas_present no. stage done.
+q planets seed 4 8 8 final planets. a 5.
+q planets seed 4 8 8 final rocky. a 1.
+q planets seed 4 8 8 final ice. a 0.
+q planets seed 4 8 8 final gas. a 4.
+q planets seed 4 8 8 final largest_mass. a 3 9 4.
+q planets seed 4 8 8 final habitable. a 1.
+q planets seed 4 8 8 final total_planet_mass. a 1 0 3 0.
+planets seed 2 0 8 7 params. m_star 0 point 6 3. disc_mass 5 3 point 2. t_gas 5 point 1 5. core_threshold 1 0. r_frost 1 point 2. luminosity 0 point 1 9 8.
+planets seed 2 0 8 7 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 2 0 8 7 step 0 next planets. a 5.
+planets seed 2 0 8 7 step 1. time 0 point 0 5. planets 5. rocky 5. ice 0. gas 0. largest_mass 0 point 1 4 4. innermost_au 0 point 3 3. outermost_au 1 point 8 6. debris 0. gas_present yes. stage embryos.
+q planets seed 2 0 8 7 step 1 time. a 0 point 0 5.
+q planets seed 2 0 8 7 step 1 innermost_au. a 0 point 3 3.
+planets seed 2 0 8 7 step 2. time 0 point 1. planets 1 3. rocky 1 3. ice 0. gas 0. largest_mass 0 point 2 7 3. innermost_au 0 point 3 3. outermost_au 4. debris 0. gas_present yes. stage embryos.
+planets seed 2 0 8 7 step 3. time 0 point 1 5. planets 1 5. rocky 1 5. ice 0. gas 0. largest_mass 0 point 3 8 9. innermost_au 0 point 3 3. outermost_au 4 point 8 5. debris 0. gas_present yes. stage embryos.
+q planets seed 2 0 8 7 step 3 largest_mass. a 0 point 3 8 9.
+q planets seed 2 0 8 7 step 3 next outermost_au. a 8 point 6 2.
+planets seed 2 0 8 7 step 4. time 0 point 2. planets 1 6. rocky 1 6. ice 0. gas 0. largest_mass 0 point 4 9 3. innermost_au 0 point 3 3. outermost_au 8 point 6 2. debris 0. gas_present yes. stage embryos.
+q planets seed 2 0 8 7 step 4 planets. a 1 6.
+q planets seed 2 0 8 7 step 4 next planets. a 1 9.
+q planets seed 2 0 8 7 step 4 next stage. a embryos.
+planets seed 2 0 8 7 step 5. time 0 point 3. planets 1 9. rocky 1 9. ice 0. gas 0. largest_mass 0 point 6 6 9. innermost_au 0 point 3 3. outermost_au 1 2 point 7. debris 0. gas_present yes. stage embryos.
+q planets seed 2 0 8 7 step 5 rocky. a 1 9.
+planets seed 2 0 8 7 step 6. time 0 point 4. planets 2 2. rocky 2 2. ice 0. gas 0. largest_mass 0 point 8 1. innermost_au 0 point 3 3. outermost_au 1 8 point 6. debris 0. gas_present yes. stage embryos.
+planets seed 2 0 8 7 step 7. time 0 point 5. planets 2 3. rocky 2 3. ice 0. gas 0. largest_mass 0 point 9 2 3. innermost_au 0 point 3 3. outermost_au 2 2 point 5. debris 0. gas_present yes. stage embryos.
+planets seed 2 0 8 7 step 8. time 0 point 7. planets 2 3. rocky 2 3. ice 0. gas 0. largest_mass 1 point 0 9. innermost_au 0 point 3 3. outermost_au 2 2 point 5. debris 0. gas_present yes. stage embryos.
+q planets seed 2 0 8 7 step 8 largest_mass. a 1 point 0 9.
+planets seed 2 0 8 7 step 9. time 1. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 2 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 2 0 8 7 step 1 0. time 1 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 4 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 2 0 8 7 step 1 0 planets. a 2 4.
+q planets seed 2 0 8 7 step 1 0 next rocky. a 2 4.
+planets seed 2 0 8 7 step 1 1. time 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 6 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 2 0 8 7 step 1 1 planets. a 2 4.
+planets seed 2 0 8 7 step 1 2. time 2 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 7 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 2 0 8 7 step 1 2 rocky. a 2 4.
+q planets seed 2 0 8 7 step 1 2 next planets. a 2 4.
+planets seed 2 0 8 7 step 1 3. time 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 8 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 2 0 8 7 step 1 3 next gas. a 0.
+planets seed 2 0 8 7 step 1 4. time 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 0 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 2 0 8 7 step 1 5. time 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 1 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 2 0 8 7 step 1 5 next rocky. a 1 4.
+planets seed 2 0 8 7 step 1 6. time 6. planets 1 5. rocky 1 4. ice 1. gas 0. largest_mass 7 point 9 4. innermost_au 0 point 3 3. outermost_au 2 4 point 3. debris 0 point 0 1 1 5. gas_present no. stage clearing.
+q planets seed 2 0 8 7 step 1 6 largest_mass. a 7 point 9 4.
+planets seed 2 0 8 7 step 1 7. time 7. planets 9. rocky 6. ice 3. gas 0. largest_mass 8 point 5 3. innermost_au 0 point 3 6 7. outermost_au 1 7 point 8. debris 0 point 0 7 0 1. gas_present no. stage clearing.
+q planets seed 2 0 8 7 step 1 7 gas. a 0.
+q planets seed 2 0 8 7 step 1 7 next stage. a clearing.
+planets seed 2 0 8 7 step 1 8. time 8. planets 8. rocky 5. ice 3. gas 0. largest_mass 1 1 point 5. innermost_au 0 point 3 6 7. outermost_au 1 7 point 8. debris 0 point 0 7 0 1. gas_present no. stage clearing.
+q planets seed 2 0 8 7 step 1 8 time. a 8.
+planets seed 2 0 8 7 step 1 9. time 9. planets 7. rocky 4. ice 3. gas 0. largest_mass 1 2. innermost_au 0 point 4 6. outermost_au 1 7 point 8. debris 0 point 0 7 0 1. gas_present no. stage clearing.
+planets seed 2 0 8 7 step 2 0. time 1 0. planets 7. rocky 4. ice 3. gas 0. largest_mass 1 2 point 4. innermost_au 0 point 4 6. outermost_au 1 7 point 8. debris 0 point 0 7 0 1. gas_present no. stage clearing.
+q planets seed 2 0 8 7 step 2 0 next innermost_au. a 0 point 4 6.
+q planets seed 2 0 8 7 step 2 0 next outermost_au. a 1 7 point 8.
+planets seed 2 0 8 7 step 2 1. time 1 2. planets 6. rocky 3. ice 3. gas 0. largest_mass 1 2 point 9. innermost_au 0 point 4 6. outermost_au 1 7 point 8. debris 0 point 0 7 1 7. gas_present no. stage done.
+q planets seed 2 0 8 7 step 2 1 debris. a 0 point 0 7 1 7.
+q planets seed 2 0 8 7 step 2 1 stage. a done.
+planets seed 2 0 8 7 step 2 2. time 1 5. planets 6. rocky 3. ice 3. gas 0. largest_mass 1 3 point 3. innermost_au 0 point 4 6. outermost_au 1 7 point 8. debris 0 point 0 7 1 7. gas_present no. stage done.
+q planets seed 2 0 8 7 step 2 2 next time. a 2 0.
+planets seed 2 0 8 7 step 2 3. time 2 0. planets 6. rocky 3. ice 3. gas 0. largest_mass 1 4 point 5. innermost_au 0 point 4 6. outermost_au 1 7 point 8. debris 0 point 0 7 1 7. gas_present no. stage done.
+planets seed 2 0 8 7 step 2 4. time 2 5. planets 6. rocky 3. ice 3. gas 0. largest_mass 1 6 point 5. innermost_au 0 point 4 6. outermost_au 1 7 point 8. debris 0 point 0 7 1 7. gas_present no. stage done.
+planets seed 2 0 8 7 step 2 5. time 3 0. planets 6. rocky 3. ice 3. gas 0. largest_mass 1 8. innermost_au 0 point 4 6. outermost_au 1 7 point 8. debris 0 point 0 7 1 7. gas_present no. stage done.
+planets seed 2 0 8 7 step 2 6. time 3 5. planets 6. rocky 3. ice 3. gas 0. largest_mass 1 9 point 1. innermost_au 0 point 4 6. outermost_au 1 7 point 8. debris 0 point 0 7 1 7. gas_present no. stage done.
+q planets seed 2 0 8 7 step 2 6 next gas_present. a no.
+planets seed 2 0 8 7 step 2 7. time 4 0. planets 6. rocky 3. ice 3. gas 0. largest_mass 1 9 point 9. innermost_au 0 point 4 6. outermost_au 1 7 point 8. debris 0 point 0 7 1 7. gas_present no. stage done.
+q planets seed 2 0 8 7 step 2 7 time. a 4 0.
+q planets seed 2 0 8 7 step 2 7 next debris. a 0 point 0 7 1 7.
+planets seed 2 0 8 7 step 2 8. time 4 5. planets 6. rocky 3. ice 3. gas 0. largest_mass 2 0 point 6. innermost_au 0 point 4 6. outermost_au 1 7 point 8. debris 0 point 0 7 1 7. gas_present no. stage done.
+q planets seed 2 0 8 7 step 2 8 largest_mass. a 2 0 point 6.
+q planets seed 2 0 8 7 step 2 8 next stage. a done.
+planets seed 2 0 8 7 step 2 9. time 5 0. planets 6. rocky 3. ice 3. gas 0. largest_mass 2 1 point 1. innermost_au 0 point 4 6. outermost_au 1 7 point 8. debris 0 point 0 7 1 7. gas_present no. stage done.
+q planets seed 2 0 8 7 step 2 9 ice. a 3.
+q planets seed 2 0 8 7 final planets. a 6.
+q planets seed 2 0 8 7 final rocky. a 3.
+q planets seed 2 0 8 7 final ice. a 3.
+q planets seed 2 0 8 7 final gas. a 0.
+q planets seed 2 0 8 7 final largest_mass. a 2 1 point 1.
+q planets seed 2 0 8 7 final habitable. a 1.
+q planets seed 2 0 8 7 final total_planet_mass. a 4 7 point 8.
+planets seed 1 1 8 6 params. m_star 0 point 7 6. disc_mass 1 9 9 point 5. t_gas 7 point 0 6. core_threshold 1 0. r_frost 1 point 6 7. luminosity 0 point 3 8 3.
+planets seed 1 1 8 6 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+planets seed 1 1 8 6 step 1. time 0 point 0 5. planets 1 7. rocky 1 7. ice 0. gas 0. largest_mass 0 point 6 4. innermost_au 0 point 3 3. outermost_au 7 point 1 1. debris 0. gas_present yes. stage embryos.
+q planets seed 1 1 8 6 step 1 next debris. a 0.
+planets seed 1 1 8 6 step 2. time 0 point 1. planets 2 1. rocky 2 1. ice 0. gas 0. largest_mass 0 point 8 4 7. innermost_au 0 point 3 3. outermost_au 1 8 point 6. debris 0. gas_present yes. stage embryos.
+q planets seed 1 1 8 6 step 2 gas. a 0.
+planets seed 1 1 8 6 step 3. time 0 point 1 5. planets 2 3. rocky 2 3. ice 0. gas 0. largest_mass 1 point 2 3. innermost_au 0 point 3 3. outermost_au 2 2 point 5. debris 0. gas_present yes. stage embryos.
+q planets seed 1 1 8 6 step 3 planets. a 2 3.
+q planets seed 1 1 8 6 step 3 gas. a 0.
+planets seed 1 1 8 6 step 4. time 0 point 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 5 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 1 1 8 6 step 4 gas. a 0.
+q planets seed 1 1 8 6 step 4 next largest_mass. a 2 point 2 2.
+planets seed 1 1 8 6 step 5. time 0 point 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 2 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 1 1 8 6 step 6. time 0 point 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 7 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 1 1 8 6 step 6 next gas. a 0.
+planets seed 1 1 8 6 step 7. time 0 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 2 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 1 1 8 6 step 8. time 0 point 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 0 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 1 1 8 6 step 8 next outermost_au. a 2 7 point 3.
+planets seed 1 1 8 6 step 9. time 1. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 8 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 1 1 8 6 step 9 debris. a 0.
+q planets seed 1 1 8 6 step 9 next rocky. a 2 1.
+planets seed 1 1 8 6 step 1 0. time 1 point 5. planets 2 4. rocky 2 1. ice 3. gas 0. largest_mass 6 point 0 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 1 1 8 6 step 1 1. time 2. planets 2 4. rocky 1 9. ice 5. gas 0. largest_mass 7 point 2 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 1 1 8 6 step 1 1 planets. a 2 4.
+q planets seed 1 1 8 6 step 1 1 next rocky. a 1 9.
+planets seed 1 1 8 6 step 1 2. time 2 point 5. planets 2 3. rocky 1 9. ice 4. gas 0. largest_mass 1 6 point 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 1 1 8 6 step 1 2 innermost_au. a 0 point 3 3.
+q planets seed 1 1 8 6 step 1 2 next largest_mass. a 9 1 point 9.
+planets seed 1 1 8 6 step 1 3. time 3. planets 2 3. rocky 1 7. ice 5. gas 1. largest_mass 9 1 point 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 1 1 8 6 step 1 3 stage. a giants_forming.
+q planets seed 1 1 8 6 step 1 3 next largest_mass. a 1 4 7.
+planets seed 1 1 8 6 step 1 4. time 4. planets 2 1. rocky 1 5. ice 4. gas 2. largest_mass 1 4 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 0 7 6 1. gas_present yes. stage giants_forming.
+q planets seed 1 1 8 6 step 1 4 gas_present. a yes.
+q planets seed 1 1 8 6 step 1 4 next rocky. a 1 5.
+planets seed 1 1 8 6 step 1 5. time 5. planets 2 1. rocky 1 5. ice 4. gas 2. largest_mass 1 4 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 0 7 6 1. gas_present yes. stage giants_forming.
+q planets seed 1 1 8 6 step 1 5 time. a 5.
+q planets seed 1 1 8 6 step 1 5 gas. a 2.
+planets seed 1 1 8 6 step 1 6. time 6. planets 1 9. rocky 1 2. ice 3. gas 4. largest_mass 1 5 0. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 0 7 6 1. gas_present yes. stage giants_forming.
+planets seed 1 1 8 6 step 1 7. time 7. planets 1 9. rocky 1 1. ice 4. gas 4. largest_mass 1 5 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 0 7 6 1. gas_present yes. stage giants_forming.
+q planets seed 1 1 8 6 step 1 7 time. a 7.
+planets seed 1 1 8 6 step 1 8. time 8. planets 1 6. rocky 7. ice 5. gas 4. largest_mass 1 5 1. innermost_au 0 point 3 6 7. outermost_au 2 7 point 3. debris 0 point 0 0 9 4 2. gas_present no. stage clearing.
+planets seed 1 1 8 6 step 1 9. time 9. planets 1 1. rocky 5. ice 2. gas 4. largest_mass 1 5 1. innermost_au 0 point 3 6 7. outermost_au 2 7 point 3. debris 0 point 0 0 9 4 2. gas_present no. stage clearing.
+q planets seed 1 1 8 6 step 1 9 gas_present. a no.
+planets seed 1 1 8 6 step 2 0. time 1 0. planets 9. rocky 3. ice 3. gas 3. largest_mass 1 5 1. innermost_au 0 point 3 6 7. outermost_au 2 7 point 3. debris 0 point 0 1 0 9. gas_present no. stage clearing.
+q planets seed 1 1 8 6 step 2 0 gas. a 3.
+planets seed 1 1 8 6 step 2 1. time 1 2. planets 5. rocky 2. ice 1. gas 2. largest_mass 2 3 8. innermost_au 0 point 3 6 7. outermost_au 2 0 point 1. debris 0 point 0 3 4 3. gas_present no. stage done.
+q planets seed 1 1 8 6 step 2 1 gas. a 2.
+q planets seed 1 1 8 6 step 2 1 outermost_au. a 2 0 point 1.
+q planets seed 1 1 8 6 step 2 1 debris. a 0 point 0 3 4 3.
+planets seed 1 1 8 6 step 2 2. time 1 5. planets 5. rocky 2. ice 1. gas 2. largest_mass 2 3 8. innermost_au 0 point 3 6 7. outermost_au 2 0 point 1. debris 0 point 0 3 4 3. gas_present no. stage done.
+q planets seed 1 1 8 6 step 2 2 gas. a 2.
+q planets seed 1 1 8 6 step 2 2 outermost_au. a 2 0 point 1.
+planets seed 1 1 8 6 step 2 3. time 2 0. planets 5. rocky 2. ice 1. gas 2. largest_mass 2 3 8. innermost_au 0 point 3 6 7. outermost_au 2 0 point 1. debris 0 point 0 3 4 3. gas_present no. stage done.
+planets seed 1 1 8 6 step 2 4. time 2 5. planets 5. rocky 2. ice 1. gas 2. largest_mass 2 3 8. innermost_au 0 point 3 6 7. outermost_au 2 0 point 1. debris 0 point 0 3 4 3. gas_present no. stage done.
+q planets seed 1 1 8 6 step 2 4 next gas. a 2.
+planets seed 1 1 8 6 step 2 5. time 3 0. planets 5. rocky 2. ice 1. gas 2. largest_mass 2 3 8. innermost_au 0 point 3 6 7. outermost_au 2 0 point 1. debris 0 point 0 3 4 3. gas_present no. stage done.
+planets seed 1 1 8 6 step 2 6. time 3 5. planets 5. rocky 2. ice 1. gas 2. largest_mass 2 3 8. innermost_au 0 point 3 6 7. outermost_au 2 0 point 1. debris 0 point 0 3 4 3. gas_present no. stage done.
+q planets seed 1 1 8 6 step 2 6 rocky. a 2.
+q planets seed 1 1 8 6 step 2 6 next time. a 4 0.
+q planets seed 1 1 8 6 step 2 6 next outermost_au. a 2 0 point 1.
+planets seed 1 1 8 6 step 2 7. time 4 0. planets 5. rocky 2. ice 1. gas 2. largest_mass 2 3 8. innermost_au 0 point 3 6 7. outermost_au 2 0 point 1. debris 0 point 0 3 4 3. gas_present no. stage done.
+planets seed 1 1 8 6 step 2 8. time 4 5. planets 5. rocky 2. ice 1. gas 2. largest_mass 2 3 8. innermost_au 0 point 3 6 7. outermost_au 2 0 point 1. debris 0 point 0 3 4 3. gas_present no. stage done.
+planets seed 1 1 8 6 step 2 9. time 5 0. planets 5. rocky 2. ice 1. gas 2. largest_mass 2 3 8. innermost_au 0 point 3 6 7. outermost_au 2 0 point 1. debris 0 point 0 3 4 3. gas_present no. stage done.
+q planets seed 1 1 8 6 final planets. a 5.
+q planets seed 1 1 8 6 final rocky. a 2.
+q planets seed 1 1 8 6 final ice. a 1.
+q planets seed 1 1 8 6 final gas. a 2.
+q planets seed 1 1 8 6 final largest_mass. a 2 3 8.
+q planets seed 1 1 8 6 final habitable. a 1.
+q planets seed 1 1 8 6 final total_planet_mass. a 4 7 1.
+planets seed 3 8 9 1 params. m_star 1 point 1 6. disc_mass 1 6 7. t_gas 7 point 8 9. core_threshold 1 0. r_frost 3 point 5. luminosity 1 point 6 8.
+planets seed 3 8 9 1 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 3 8 9 1 step 0 next stage. a embryos.
+planets seed 3 8 9 1 step 1. time 0 point 0 5. planets 1 7. rocky 1 7. ice 0. gas 0. largest_mass 0 point 5 3 7. innermost_au 0 point 3 3. outermost_au 8 point 6 2. debris 0. gas_present yes. stage embryos.
+q planets seed 3 8 9 1 step 1 next outermost_au. a 1 8 point 6.
+planets seed 3 8 9 1 step 2. time 0 point 1. planets 2 2. rocky 2 2. ice 0. gas 0. largest_mass 0 point 7 8 6. innermost_au 0 point 3 3. outermost_au 1 8 point 6. debris 0. gas_present yes. stage embryos.
+q planets seed 3 8 9 1 step 2 largest_mass. a 0 point 7 8 6.
+planets seed 3 8 9 1 step 3. time 0 point 1 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 0 point 9 3 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 8 9 1 step 3 next innermost_au. a 0 point 3 3.
+q planets seed 3 8 9 1 step 3 next stage. a embryos.
+planets seed 3 8 9 1 step 4. time 0 point 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 0 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 8 9 1 step 4 next innermost_au. a 0 point 3 3.
+planets seed 3 8 9 1 step 5. time 0 point 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 3 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 8 9 1 step 5 rocky. a 2 4.
+planets seed 3 8 9 1 step 6. time 0 point 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 7 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 8 9 1 step 6 planets. a 2 4.
+q planets seed 3 8 9 1 step 6 gas_present. a yes.
+q planets seed 3 8 9 1 step 6 next ice. a 0.
+planets seed 3 8 9 1 step 7. time 0 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 0 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 8 9 1 step 7 next time. a 0 point 7.
+planets seed 3 8 9 1 step 8. time 0 point 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 7 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 8 9 1 step 8 largest_mass. a 2 point 7 6.
+q planets seed 3 8 9 1 step 8 stage. a embryos.
+q planets seed 3 8 9 1 step 8 next gas_present. a yes.
+planets seed 3 8 9 1 step 9. time 1. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 6 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 3 8 9 1 step 1 0. time 1 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 7 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 3 8 9 1 step 1 1. time 2. planets 2 4. rocky 2 2. ice 2. gas 0. largest_mass 5 point 8 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 8 9 1 step 1 1 innermost_au. a 0 point 3 3.
+q planets seed 3 8 9 1 step 1 1 next largest_mass. a 6 point 7 3.
+planets seed 3 8 9 1 step 1 2. time 2 point 5. planets 2 4. rocky 2 0. ice 4. gas 0. largest_mass 6 point 7 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 8 9 1 step 1 2 time. a 2 point 5.
+q planets seed 3 8 9 1 step 1 2 next time. a 3.
+planets seed 3 8 9 1 step 1 3. time 3. planets 2 4. rocky 1 9. ice 5. gas 0. largest_mass 7 point 5 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 8 9 1 step 1 3 time. a 3.
+planets seed 3 8 9 1 step 1 4. time 4. planets 2 4. rocky 1 7. ice 7. gas 0. largest_mass 8 point 8 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 3 8 9 1 step 1 5. time 5. planets 2 4. rocky 1 5. ice 9. gas 0. largest_mass 1 0 point 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 8 9 1 step 1 5 next time. a 6.
+q planets seed 3 8 9 1 step 1 5 next ice. a 1 0.
+planets seed 3 8 9 1 step 1 6. time 6. planets 2 4. rocky 1 4. ice 1 0. gas 0. largest_mass 1 2 point 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 3 8 9 1 step 1 6 gas_present. a yes.
+q planets seed 3 8 9 1 step 1 6 next gas. a 1.
+planets seed 3 8 9 1 step 1 7. time 7. planets 2 2. rocky 1 3. ice 8. gas 1. largest_mass 5 1 point 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 3 8 9 1 step 1 7 ice. a 8.
+q planets seed 3 8 9 1 step 1 7 next time. a 8.
+q planets seed 3 8 9 1 step 1 7 next outermost_au. a 2 7 point 3.
+planets seed 3 8 9 1 step 1 8. time 8. planets 2 0. rocky 1 3. ice 5. gas 2. largest_mass 5 2 point 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present no. stage clearing.
+q planets seed 3 8 9 1 step 1 8 next time. a 9.
+planets seed 3 8 9 1 step 1 9. time 9. planets 1 4. rocky 9. ice 4. gas 1. largest_mass 8 2 point 5. innermost_au 0 point 4 1. outermost_au 2 5 point 1. debris 0 point 0 2 0 9. gas_present no. stage clearing.
+planets seed 3 8 9 1 step 2 0. time 1 0. planets 1 1. rocky 7. ice 3. gas 1. largest_mass 8 5 point 5. innermost_au 0 point 4 1. outermost_au 1 9 point 4. debris 0 point 0 2 0 9. gas_present no. stage clearing.
+planets seed 3 8 9 1 step 2 1. time 1 2. planets 9. rocky 5. ice 3. gas 1. largest_mass 8 6 point 2. innermost_au 0 point 4 1. outermost_au 1 9 point 4. debris 0 point 0 2 0 9. gas_present no. stage clearing.
+planets seed 3 8 9 1 step 2 2. time 1 5. planets 7. rocky 4. ice 2. gas 1. largest_mass 8 6 point 6. innermost_au 0 point 4 1. outermost_au 1 9 point 4. debris 0 point 0 4 6 4. gas_present no. stage done.
+q planets seed 3 8 9 1 step 2 2 rocky. a 4.
+planets seed 3 8 9 1 step 2 3. time 2 0. planets 7. rocky 4. ice 2. gas 1. largest_mass 8 6 point 7. innermost_au 0 point 4 1. outermost_au 1 9 point 4. debris 0 point 0 4 6 4. gas_present no. stage done.
+q planets seed 3 8 9 1 step 2 3 time. a 2 0.
+planets seed 3 8 9 1 step 2 4. time 2 5. planets 7. rocky 4. ice 2. gas 1. largest_mass 8 6 point 8. innermost_au 0 point 4 1. outermost_au 1 9 point 4. debris 0 point 0 4 6 4. gas_present no. stage done.
+planets seed 3 8 9 1 step 2 5. time 3 0. planets 7. rocky 4. ice 2. gas 1. largest_mass 8 6 point 8. innermost_au 0 point 4 1. outermost_au 1 9 point 4. debris 0 point 0 4 6 4. gas_present no. stage done.
+q planets seed 3 8 9 1 step 2 5 time. a 3 0.
+planets seed 3 8 9 1 step 2 6. time 3 5. planets 7. rocky 4. ice 2. gas 1. largest_mass 8 6 point 8. innermost_au 0 point 4 1. outermost_au 1 9 point 4. debris 0 point 0 4 6 4. gas_present no. stage done.
+q planets seed 3 8 9 1 step 2 6 next rocky. a 4.
+planets seed 3 8 9 1 step 2 7. time 4 0. planets 7. rocky 4. ice 2. gas 1. largest_mass 8 6 point 8. innermost_au 0 point 4 1. outermost_au 1 9 point 4. debris 0 point 0 4 6 4. gas_present no. stage done.
+q planets seed 3 8 9 1 step 2 7 next rocky. a 4.
+planets seed 3 8 9 1 step 2 8. time 4 5. planets 7. rocky 4. ice 2. gas 1. largest_mass 8 6 point 8. innermost_au 0 point 4 1. outermost_au 1 9 point 4. debris 0 point 0 4 6 4. gas_present no. stage done.
+planets seed 3 8 9 1 step 2 9. time 5 0. planets 7. rocky 4. ice 2. gas 1. largest_mass 8 6 point 8. innermost_au 0 point 4 1. outermost_au 1 9 point 4. debris 0 point 0 4 6 4. gas_present no. stage done.
+q planets seed 3 8 9 1 final planets. a 7.
+q planets seed 3 8 9 1 final rocky. a 4.
+q planets seed 3 8 9 1 final ice. a 2.
+q planets seed 3 8 9 1 final gas. a 1.
+q planets seed 3 8 9 1 final largest_mass. a 8 6 point 8.
+q planets seed 3 8 9 1 final habitable. a 1.
+q planets seed 3 8 9 1 final total_planet_mass. a 2 4 3.
+planets seed 2 8 4 9 params. m_star 0 point 9 4. disc_mass 1 8. t_gas 8 point 5 4. core_threshold 1 0. r_frost 2 point 4 2. luminosity 0 point 8 0 5.
+planets seed 2 8 4 9 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+planets seed 2 8 4 9 step 1. time 0 point 0 5. planets 0. rocky 0. ice 0. gas 0. largest_mass 0 point 0 5 4 7. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+planets seed 2 8 4 9 step 2. time 0 point 1. planets 0. rocky 0. ice 0. gas 0. largest_mass 0 point 0 7 5 4. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 2 8 4 9 step 2 gas. a 0.
+q planets seed 2 8 4 9 step 2 next rocky. a 0.
+q planets seed 2 8 4 9 step 2 next debris. a 0.
+planets seed 2 8 4 9 step 3. time 0 point 1 5. planets 0. rocky 0. ice 0. gas 0. largest_mass 0 point 0 9 2 6. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 2 8 4 9 step 3 next debris. a 0.
+planets seed 2 8 4 9 step 4. time 0 point 2. planets 2. rocky 2. ice 0. gas 0. largest_mass 0 point 1 2 1. innermost_au 2 point 7 3. outermost_au 3 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 2 8 4 9 step 4 next time. a 0 point 3.
+planets seed 2 8 4 9 step 5. time 0 point 3. planets 4. rocky 4. ice 0. gas 0. largest_mass 0 point 1 7 4. innermost_au 0 point 8 6 2. outermost_au 7 point 1 1. debris 0. gas_present yes. stage embryos.
+q planets seed 2 8 4 9 step 5 gas. a 0.
+planets seed 2 8 4 9 step 6. time 0 point 4. planets 1 0. rocky 1 0. ice 0. gas 0. largest_mass 0 point 2 2 2. innermost_au 0 point 5 8 7. outermost_au 7 point 1 1. debris 0. gas_present yes. stage embryos.
+q planets seed 2 8 4 9 step 6 next gas. a 0.
+q planets seed 2 8 4 9 step 6 next innermost_au. a 0 point 5 8 7.
+planets seed 2 8 4 9 step 7. time 0 point 5. planets 1 4. rocky 1 4. ice 0. gas 0. largest_mass 0 point 2 6 6. innermost_au 0 point 5 8 7. outermost_au 1 0 point 4. debris 0. gas_present yes. stage embryos.
+q planets seed 2 8 4 9 step 7 next time. a 0 point 7.
+planets seed 2 8 4 9 step 8. time 0 point 7. planets 1 6. rocky 1 6. ice 0. gas 0. largest_mass 0 point 3 4 3. innermost_au 0 point 5 8 7. outermost_au 1 5 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 2 8 4 9 step 8 planets. a 1 6.
+planets seed 2 8 4 9 step 9. time 1. planets 1 7. rocky 1 7. ice 0. gas 0. largest_mass 0 point 4 3 6. innermost_au 0 point 5 8 7. outermost_au 1 5 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 2 8 4 9 step 1 0. time 1 point 5. planets 2 0. rocky 2 0. ice 0. gas 0. largest_mass 0 point 5 4 5. innermost_au 0 point 5 8 7. outermost_au 2 2 point 5. debris 0. gas_present yes. stage embryos.
+planets seed 2 8 4 9 step 1 1. time 2. planets 2 0. rocky 2 0. ice 0. gas 0. largest_mass 0 point 6 1 5. innermost_au 0 point 5 8 7. outermost_au 2 2 point 5. debris 0. gas_present yes. stage embryos.
+q planets seed 2 8 4 9 step 1 1 time. a 2.
+q planets seed 2 8 4 9 step 1 1 next rocky. a 2 1.
+q planets seed 2 8 4 9 step 1 1 next stage. a embryos.
+planets seed 2 8 4 9 step 1 2. time 2 point 5. planets 2 1. rocky 2 1. ice 0. gas 0. largest_mass 0 point 6 6. innermost_au 0 point 5 8 7. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 2 8 4 9 step 1 2 debris. a 0.
+q planets seed 2 8 4 9 step 1 2 next largest_mass. a 0 point 7 0 1.
+planets seed 2 8 4 9 step 1 3. time 3. planets 2 1. rocky 2 1. ice 0. gas 0. largest_mass 0 point 7 0 1. innermost_au 0 point 5 8 7. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 2 8 4 9 step 1 4. time 4. planets 2 1. rocky 2 1. ice 0. gas 0. largest_mass 0 point 8 1 4. innermost_au 0 point 5 8 7. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 2 8 4 9 step 1 4 next rocky. a 2 1.
+q planets seed 2 8 4 9 step 1 4 next ice. a 0.
+planets seed 2 8 4 9 step 1 5. time 5. planets 2 1. rocky 2 1. ice 0. gas 0. largest_mass 0 point 8 9 3. innermost_au 0 point 5 8 7. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 2 8 4 9 step 1 5 stage. a embryos.
+planets seed 2 8 4 9 step 1 6. time 6. planets 2 1. rocky 2 1. ice 0. gas 0. largest_mass 0 point 9 4 9. innermost_au 0 point 5 8 7. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 2 8 4 9 step 1 6 next ice. a 0.
+planets seed 2 8 4 9 step 1 7. time 7. planets 2 1. rocky 2 1. ice 0. gas 0. largest_mass 0 point 9 8 9. innermost_au 0 point 5 8 7. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 2 8 4 9 step 1 8. time 8. planets 2 1. rocky 2 1. ice 0. gas 0. largest_mass 1 point 0 2. innermost_au 0 point 5 8 7. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 2 8 4 9 step 1 8 next innermost_au. a 0 point 4 4 4.
+q planets seed 2 8 4 9 step 1 8 next gas_present. a no.
+planets seed 2 8 4 9 step 1 9. time 9. planets 1 7. rocky 1 7. ice 0. gas 0. largest_mass 1 point 8. innermost_au 0 point 4 4 4. outermost_au 2 7 point 3. debris 0 point 0 1 3 3. gas_present no. stage clearing.
+q planets seed 2 8 4 9 step 1 9 gas_present. a no.
+q planets seed 2 8 4 9 step 1 9 next outermost_au. a 2 7 point 3.
+planets seed 2 8 4 9 step 2 0. time 1 0. planets 1 1. rocky 1 1. ice 0. gas 0. largest_mass 2 point 9 5. innermost_au 0 point 5. outermost_au 2 7 point 3. debris 0 point 0 3 6 4. gas_present no. stage clearing.
+q planets seed 2 8 4 9 step 2 0 next gas_present. a no.
+planets seed 2 8 4 9 step 2 1. time 1 2. planets 8. rocky 8. ice 0. gas 0. largest_mass 3 point 1 7. innermost_au 0 point 5. outermost_au 2 2 point 4. debris 0 point 0 3 7 9. gas_present no. stage clearing.
+q planets seed 2 8 4 9 step 2 1 outermost_au. a 2 2 point 4.
+q planets seed 2 8 4 9 step 2 1 next outermost_au. a 1 8 point 7.
+q planets seed 2 8 4 9 step 2 1 next gas_present. a no.
+planets seed 2 8 4 9 step 2 2. time 1 5. planets 6. rocky 6. ice 0. gas 0. largest_mass 4 point 2 1. innermost_au 0 point 5. outermost_au 1 8 point 7. debris 0 point 0 5 0 2. gas_present no. stage clearing.
+planets seed 2 8 4 9 step 2 3. time 2 0. planets 6. rocky 5. ice 1. gas 0. largest_mass 5 point 1 6. innermost_au 0 point 4 6 2. outermost_au 1 8 point 7. debris 0 point 0 5 0 2. gas_present no. stage done.
+q planets seed 2 8 4 9 step 2 3 stage. a done.
+planets seed 2 8 4 9 step 2 4. time 2 5. planets 6. rocky 5. ice 1. gas 0. largest_mass 5 point 8 9. innermost_au 0 point 4 6 2. outermost_au 1 8 point 7. debris 0 point 0 5 0 2. gas_present no. stage done.
+planets seed 2 8 4 9 step 2 5. time 3 0. planets 6. rocky 5. ice 1. gas 0. largest_mass 6 point 4 6. innermost_au 0 point 4 6 2. outermost_au 1 8 point 7. debris 0 point 0 5 0 2. gas_present no. stage done.
+q planets seed 2 8 4 9 step 2 5 debris. a 0 point 0 5 0 2.
+planets seed 2 8 4 9 step 2 6. time 3 5. planets 6. rocky 5. ice 1. gas 0. largest_mass 6 point 9 1. innermost_au 0 point 4 6 2. outermost_au 1 8 point 7. debris 0 point 0 5 0 2. gas_present no. stage done.
+q planets seed 2 8 4 9 step 2 6 debris. a 0 point 0 5 0 2.
+planets seed 2 8 4 9 step 2 7. time 4 0. planets 6. rocky 5. ice 1. gas 0. largest_mass 7 point 2 5. innermost_au 0 point 4 6 2. outermost_au 1 8 point 7. debris 0 point 0 5 0 2. gas_present no. stage done.
+q planets seed 2 8 4 9 step 2 7 time. a 4 0.
+q planets seed 2 8 4 9 step 2 7 next outermost_au. a 1 8 point 7.
+planets seed 2 8 4 9 step 2 8. time 4 5. planets 6. rocky 5. ice 1. gas 0. largest_mass 7 point 5 2. innermost_au 0 point 4 6 2. outermost_au 1 8 point 7. debris 0 point 0 5 0 2. gas_present no. stage done.
+planets seed 2 8 4 9 step 2 9. time 5 0. planets 6. rocky 5. ice 1. gas 0. largest_mass 7 point 7 3. innermost_au 0 point 4 6 2. outermost_au 1 8 point 7. debris 0 point 0 5 0 2. gas_present no. stage done.
+q planets seed 2 8 4 9 final planets. a 6.
+q planets seed 2 8 4 9 final rocky. a 5.
+q planets seed 2 8 4 9 final ice. a 1.
+q planets seed 2 8 4 9 final gas. a 0.
+q planets seed 2 8 4 9 final largest_mass. a 7 point 7 3.
+q planets seed 2 8 4 9 final habitable. a 1.
+q planets seed 2 8 4 9 final total_planet_mass. a 1 6 point 4.
+planets seed 8 5 4 1 params. m_star 0 point 8 8. disc_mass 7 9 point 8. t_gas 8 point 9. core_threshold 1 0. r_frost 2 point 1 6. luminosity 0 point 6 3 9.
+planets seed 8 5 4 1 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 8 5 4 1 step 0 debris. a 0.
+planets seed 8 5 4 1 step 1. time 0 point 0 5. planets 9. rocky 9. ice 0. gas 0. largest_mass 0 point 2 6 1. innermost_au 0 point 3 3. outermost_au 2 point 7 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 4 1 step 1 largest_mass. a 0 point 2 6 1.
+q planets seed 8 5 4 1 step 1 debris. a 0.
+planets seed 8 5 4 1 step 2. time 0 point 1. planets 1 7. rocky 1 7. ice 0. gas 0. largest_mass 0 point 3 4 3. innermost_au 0 point 3 3. outermost_au 8 point 6 2. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 4 1 step 2 gas. a 0.
+planets seed 8 5 4 1 step 3. time 0 point 1 5. planets 2 0. rocky 2 0. ice 0. gas 0. largest_mass 0 point 4 0 3. innermost_au 0 point 3 3. outermost_au 1 2 point 7. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 4 1 step 3 next time. a 0 point 2.
+q planets seed 8 5 4 1 step 3 next innermost_au. a 0 point 3 3.
+q planets seed 8 5 4 1 step 3 next stage. a embryos.
+planets seed 8 5 4 1 step 4. time 0 point 2. planets 2 1. rocky 2 1. ice 0. gas 0. largest_mass 0 point 5 2 5. innermost_au 0 point 3 3. outermost_au 1 5 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 4 1 step 4 outermost_au. a 1 5 point 3.
+planets seed 8 5 4 1 step 5. time 0 point 3. planets 2 3. rocky 2 3. ice 0. gas 0. largest_mass 0 point 7 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 8 5 4 1 step 6. time 0 point 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 0 point 9 5 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 8 5 4 1 step 7. time 0 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 1 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 8 5 4 1 step 8. time 0 point 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 4 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 8 5 4 1 step 9. time 1. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 8 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 4 1 step 9 next time. a 1 point 5.
+q planets seed 8 5 4 1 step 9 next ice. a 0.
+q planets seed 8 5 4 1 step 9 next debris. a 0.
+planets seed 8 5 4 1 step 1 0. time 1 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 2 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 8 5 4 1 step 1 1. time 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 5 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 8 5 4 1 step 1 2. time 2 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 6 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 4 1 step 1 2 gas. a 0.
+q planets seed 8 5 4 1 step 1 2 next ice. a 0.
+planets seed 8 5 4 1 step 1 3. time 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 8 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 8 5 4 1 step 1 4. time 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 3 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 4 1 step 1 4 next rocky. a 2 4.
+planets seed 8 5 4 1 step 1 5. time 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 7 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 4 1 step 1 5 next innermost_au. a 0 point 3 3.
+planets seed 8 5 4 1 step 1 6. time 6. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 0 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 4 1 step 1 6 next stage. a embryos.
+planets seed 8 5 4 1 step 1 7. time 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 3 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 4 1 step 1 7 rocky. a 2 4.
+planets seed 8 5 4 1 step 1 8. time 8. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 5 4 1 step 1 8 largest_mass. a 4 point 5.
+q planets seed 8 5 4 1 step 1 8 next ice. a 0.
+planets seed 8 5 4 1 step 1 9. time 9. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 6 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present no. stage clearing.
+q planets seed 8 5 4 1 step 1 9 next debris. a 0 point 0 0 6 7 2.
+planets seed 8 5 4 1 step 2 0. time 1 0. planets 1 5. rocky 1 2. ice 3. gas 0. largest_mass 8 point 4 8. innermost_au 0 point 4 5 9. outermost_au 2 7 point 3. debris 0 point 0 0 6 7 2. gas_present no. stage clearing.
+q planets seed 8 5 4 1 step 2 0 next ice. a 4.
+planets seed 8 5 4 1 step 2 1. time 1 2. planets 1 0. rocky 6. ice 4. gas 0. largest_mass 1 2 point 1. innermost_au 0 point 4 5 9. outermost_au 2 7 point 3. debris 0 point 0 2 3 4. gas_present no. stage clearing.
+planets seed 8 5 4 1 step 2 2. time 1 5. planets 7. rocky 3. ice 4. gas 0. largest_mass 2 0 point 9. innermost_au 0 point 4 5 9. outermost_au 2 3. debris 0 point 0 3 0 1. gas_present no. stage done.
+q planets seed 8 5 4 1 step 2 2 innermost_au. a 0 point 4 5 9.
+planets seed 8 5 4 1 step 2 3. time 2 0. planets 7. rocky 3. ice 4. gas 0. largest_mass 2 2 point 5. innermost_au 0 point 4 5 9. outermost_au 2 3. debris 0 point 0 3 0 1. gas_present no. stage done.
+q planets seed 8 5 4 1 step 2 3 ice. a 4.
+q planets seed 8 5 4 1 step 2 3 innermost_au. a 0 point 4 5 9.
+planets seed 8 5 4 1 step 2 4. time 2 5. planets 7. rocky 3. ice 4. gas 0. largest_mass 2 3 point 3. innermost_au 0 point 4 5 9. outermost_au 2 3. debris 0 point 0 3 0 1. gas_present no. stage done.
+q planets seed 8 5 4 1 step 2 4 rocky. a 3.
+q planets seed 8 5 4 1 step 2 4 ice. a 4.
+planets seed 8 5 4 1 step 2 5. time 3 0. planets 7. rocky 3. ice 4. gas 0. largest_mass 2 3 point 7. innermost_au 0 point 4 5 9. outermost_au 2 3. debris 0 point 0 3 0 1. gas_present no. stage done.
+q planets seed 8 5 4 1 step 2 5 gas_present. a no.
+planets seed 8 5 4 1 step 2 6. time 3 5. planets 7. rocky 3. ice 4. gas 0. largest_mass 2 3 point 9. innermost_au 0 point 4 5 9. outermost_au 2 3. debris 0 point 0 3 0 1. gas_present no. stage done.
+q planets seed 8 5 4 1 step 2 6 gas. a 0.
+q planets seed 8 5 4 1 step 2 6 stage. a done.
+q planets seed 8 5 4 1 step 2 6 next largest_mass. a 2 4.
+planets seed 8 5 4 1 step 2 7. time 4 0. planets 7. rocky 3. ice 4. gas 0. largest_mass 2 4. innermost_au 0 point 4 5 9. outermost_au 2 3. debris 0 point 0 3 0 1. gas_present no. stage done.
+q planets seed 8 5 4 1 step 2 7 gas. a 0.
+planets seed 8 5 4 1 step 2 8. time 4 5. planets 7. rocky 3. ice 4. gas 0. largest_mass 2 4. innermost_au 0 point 4 5 9. outermost_au 2 3. debris 0 point 0 3 0 1. gas_present no. stage done.
+q planets seed 8 5 4 1 step 2 8 next largest_mass. a 2 4.
+planets seed 8 5 4 1 step 2 9. time 5 0. planets 7. rocky 3. ice 4. gas 0. largest_mass 2 4. innermost_au 0 point 4 5 9. outermost_au 2 3. debris 0 point 0 3 0 1. gas_present no. stage done.
+q planets seed 8 5 4 1 final planets. a 7.
+q planets seed 8 5 4 1 final rocky. a 3.
+q planets seed 8 5 4 1 final ice. a 4.
+q planets seed 8 5 4 1 final gas. a 0.
+q planets seed 8 5 4 1 final largest_mass. a 2 4.
+q planets seed 8 5 4 1 final habitable. a 1.
+q planets seed 8 5 4 1 final total_planet_mass. a 7 4 point 3.
+planets seed 7 0 4 0 params. m_star 0 point 5. disc_mass 1 3 7 point 1. t_gas 2 point 5 3. core_threshold 1 0. r_frost 0 point 8 0 3. luminosity 0 point 0 8 8 4.
+planets seed 7 0 4 0 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 7 0 4 0 step 0 debris. a 0.
+q planets seed 7 0 4 0 step 0 next ice. a 0.
+planets seed 7 0 4 0 step 1. time 0 point 0 5. planets 1 5. rocky 1 5. ice 0. gas 0. largest_mass 0 point 6 6. innermost_au 0 point 3 3. outermost_au 5 point 8 7. debris 0. gas_present yes. stage embryos.
+q planets seed 7 0 4 0 step 1 time. a 0 point 0 5.
+planets seed 7 0 4 0 step 2. time 0 point 1. planets 1 8. rocky 1 8. ice 0. gas 0. largest_mass 1 point 1 5. innermost_au 0 point 3 3. outermost_au 1 0 point 4. debris 0. gas_present yes. stage embryos.
+q planets seed 7 0 4 0 step 2 debris. a 0.
+planets seed 7 0 4 0 step 3. time 0 point 1 5. planets 2 1. rocky 2 1. ice 0. gas 0. largest_mass 1 point 5 2. innermost_au 0 point 3 3. outermost_au 1 5 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 7 0 4 0 step 3 debris. a 0.
+planets seed 7 0 4 0 step 4. time 0 point 2. planets 2 2. rocky 2 2. ice 0. gas 0. largest_mass 1 point 7 9. innermost_au 0 point 3 3. outermost_au 2 2 point 5. debris 0. gas_present yes. stage embryos.
+q planets seed 7 0 4 0 step 4 largest_mass. a 1 point 7 9.
+planets seed 7 0 4 0 step 5. time 0 point 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 1 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 7 0 4 0 step 6. time 0 point 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 3 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 7 0 4 0 step 7. time 0 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 4 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 7 0 4 0 step 7 stage. a embryos.
+planets seed 7 0 4 0 step 8. time 0 point 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 5 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 7 0 4 0 step 8 gas_present. a yes.
+q planets seed 7 0 4 0 step 8 stage. a embryos.
+q planets seed 7 0 4 0 step 8 next largest_mass. a 3 point 0 4.
+q planets seed 7 0 4 0 step 8 next debris. a 0.
+planets seed 7 0 4 0 step 9. time 1. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 0 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 7 0 4 0 step 9 stage. a embryos.
+q planets seed 7 0 4 0 step 9 next gas. a 0.
+planets seed 7 0 4 0 step 1 0. time 1 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 6 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 7 0 4 0 step 1 0 innermost_au. a 0 point 3 3.
+planets seed 7 0 4 0 step 1 1. time 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 0 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 7 0 4 0 step 1 2. time 2 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 7 0 4 0 step 1 2 next time. a 3.
+q planets seed 7 0 4 0 step 1 2 next innermost_au. a 0 point 3 6 7.
+q planets seed 7 0 4 0 step 1 2 next outermost_au. a 2 7 point 3.
+planets seed 7 0 4 0 step 1 3. time 3. planets 2 3. rocky 2 3. ice 0. gas 0. largest_mass 4 point 4 5. innermost_au 0 point 3 6 7. outermost_au 2 7 point 3. debris 0. gas_present no. stage clearing.
+planets seed 7 0 4 0 step 1 4. time 4. planets 1 2. rocky 8. ice 4. gas 0. largest_mass 1 8 point 1. innermost_au 0 point 4 1. outermost_au 2 7 point 3. debris 0 point 0 3 4 8. gas_present no. stage clearing.
+planets seed 7 0 4 0 step 1 5. time 5. planets 1 0. rocky 4. ice 6. gas 0. largest_mass 1 8 point 7. innermost_au 0 point 4 1. outermost_au 2 2 point 9. debris 0 point 0 3 4 8. gas_present no. stage clearing.
+planets seed 7 0 4 0 step 1 6. time 6. planets 9. rocky 4. ice 5. gas 0. largest_mass 1 8 point 9. innermost_au 0 point 4 1. outermost_au 2 2 point 9. debris 0 point 0 5 3 5. gas_present no. stage clearing.
+q planets seed 7 0 4 0 step 1 6 ice. a 5.
+q planets seed 7 0 4 0 step 1 6 next stage. a clearing.
+planets seed 7 0 4 0 step 1 7. time 7. planets 9. rocky 4. ice 5. gas 0. largest_mass 1 9 point 1. innermost_au 0 point 4 1. outermost_au 2 2 point 9. debris 0 point 0 5 3 5. gas_present no. stage clearing.
+q planets seed 7 0 4 0 step 1 7 next innermost_au. a 0 point 4 1.
+q planets seed 7 0 4 0 step 1 7 next debris. a 0 point 0 6 2 4.
+planets seed 7 0 4 0 step 1 8. time 8. planets 7. rocky 1. ice 6. gas 0. largest_mass 1 9 point 2. innermost_au 0 point 4 1. outermost_au 2 0 point 3. debris 0 point 0 6 2 4. gas_present no. stage clearing.
+planets seed 7 0 4 0 step 1 9. time 9. planets 6. rocky 1. ice 5. gas 0. largest_mass 2 0 point 7. innermost_au 0 point 4 1. outermost_au 2 0 point 3. debris 0 point 0 6 2 4. gas_present no. stage done.
+planets seed 7 0 4 0 step 2 0. time 1 0. planets 6. rocky 1. ice 5. gas 0. largest_mass 2 2 point 1. innermost_au 0 point 4 1. outermost_au 2 0 point 3. debris 0 point 0 6 2 4. gas_present no. stage done.
+q planets seed 7 0 4 0 step 2 0 gas. a 0.
+q planets seed 7 0 4 0 step 2 0 next planets. a 6.
+planets seed 7 0 4 0 step 2 1. time 1 2. planets 6. rocky 1. ice 5. gas 0. largest_mass 2 4 point 3. innermost_au 0 point 4 1. outermost_au 2 0 point 3. debris 0 point 0 6 2 4. gas_present no. stage done.
+q planets seed 7 0 4 0 step 2 1 next gas_present. a no.
+planets seed 7 0 4 0 step 2 2. time 1 5. planets 6. rocky 1. ice 5. gas 0. largest_mass 2 6 point 6. innermost_au 0 point 4 1. outermost_au 2 0 point 3. debris 0 point 0 6 2 4. gas_present no. stage done.
+planets seed 7 0 4 0 step 2 3. time 2 0. planets 6. rocky 1. ice 5. gas 0. largest_mass 3 0 point 4. innermost_au 0 point 4 1. outermost_au 2 0 point 3. debris 0 point 0 6 2 4. gas_present no. stage done.
+q planets seed 7 0 4 0 step 2 3 stage. a done.
+q planets seed 7 0 4 0 step 2 3 next gas. a 0.
+planets seed 7 0 4 0 step 2 4. time 2 5. planets 6. rocky 1. ice 5. gas 0. largest_mass 3 4 point 6. innermost_au 0 point 4 1. outermost_au 2 0 point 3. debris 0 point 0 6 2 4. gas_present no. stage done.
+q planets seed 7 0 4 0 step 2 4 next outermost_au. a 2 0 point 3.
+planets seed 7 0 4 0 step 2 5. time 3 0. planets 6. rocky 1. ice 5. gas 0. largest_mass 3 8. innermost_au 0 point 4 1. outermost_au 2 0 point 3. debris 0 point 0 6 2 4. gas_present no. stage done.
+q planets seed 7 0 4 0 step 2 5 gas_present. a no.
+q planets seed 7 0 4 0 step 2 5 next time. a 3 5.
+q planets seed 7 0 4 0 step 2 5 next gas. a 0.
+planets seed 7 0 4 0 step 2 6. time 3 5. planets 6. rocky 1. ice 5. gas 0. largest_mass 4 0 point 6. innermost_au 0 point 4 1. outermost_au 2 0 point 3. debris 0 point 0 6 2 4. gas_present no. stage done.
+q planets seed 7 0 4 0 step 2 6 next gas. a 0.
+planets seed 7 0 4 0 step 2 7. time 4 0. planets 6. rocky 1. ice 5. gas 0. largest_mass 4 2 point 7. innermost_au 0 point 4 1. outermost_au 2 0 point 3. debris 0 point 0 6 2 4. gas_present no. stage done.
+planets seed 7 0 4 0 step 2 8. time 4 5. planets 6. rocky 1. ice 5. gas 0. largest_mass 4 4 point 4. innermost_au 0 point 4 1. outermost_au 2 0 point 3. debris 0 point 0 6 2 4. gas_present no. stage done.
+planets seed 7 0 4 0 step 2 9. time 5 0. planets 6. rocky 1. ice 5. gas 0. largest_mass 4 5 point 7. innermost_au 0 point 4 1. outermost_au 2 0 point 3. debris 0 point 0 6 2 4. gas_present no. stage done.
+q planets seed 7 0 4 0 step 2 9 largest_mass. a 4 5 point 7.
+q planets seed 7 0 4 0 final planets. a 6.
+q planets seed 7 0 4 0 final rocky. a 1.
+q planets seed 7 0 4 0 final ice. a 5.
+q planets seed 7 0 4 0 final gas. a 0.
+q planets seed 7 0 4 0 final largest_mass. a 4 5 point 7.
+q planets seed 7 0 4 0 final habitable. a 1.
+q planets seed 7 0 4 0 final total_planet_mass. a 1 2 3.
+planets seed 7 9 5 8 params. m_star 1. disc_mass 2 3 7 point 7. t_gas 5 point 2 5. core_threshold 1 0. r_frost 2 point 7. luminosity 1.
+planets seed 7 9 5 8 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 7 9 5 8 step 0 debris. a 0.
+planets seed 7 9 5 8 step 1. time 0 point 0 5. planets 2 0. rocky 2 0. ice 0. gas 0. largest_mass 0 point 8 2 2. innermost_au 0 point 3 3. outermost_au 1 2 point 7. debris 0. gas_present yes. stage embryos.
+planets seed 7 9 5 8 step 2. time 0 point 1. planets 2 3. rocky 2 3. ice 0. gas 0. largest_mass 0 point 9 9 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 7 9 5 8 step 2 time. a 0 point 1.
+q planets seed 7 9 5 8 step 2 next rocky. a 2 4.
+planets seed 7 9 5 8 step 3. time 0 point 1 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 2 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 7 9 5 8 step 3 rocky. a 2 4.
+planets seed 7 9 5 8 step 4. time 0 point 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 5 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 7 9 5 8 step 4 largest_mass. a 1 point 5 8.
+q planets seed 7 9 5 8 step 4 next innermost_au. a 0 point 3 3.
+planets seed 7 9 5 8 step 5. time 0 point 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 2 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 7 9 5 8 step 5 planets. a 2 4.
+q planets seed 7 9 5 8 step 5 next outermost_au. a 2 7 point 3.
+q planets seed 7 9 5 8 step 5 next stage. a embryos.
+planets seed 7 9 5 8 step 6. time 0 point 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 9 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 7 9 5 8 step 6 next gas. a 0.
+planets seed 7 9 5 8 step 7. time 0 point 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 4 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 7 9 5 8 step 8. time 0 point 7. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 7 9 5 8 step 8 next planets. a 2 4.
+q planets seed 7 9 5 8 step 8 next debris. a 0.
+planets seed 7 9 5 8 step 9. time 1. planets 2 4. rocky 2 3. ice 1. gas 0. largest_mass 5 point 8 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 7 9 5 8 step 1 0. time 1 point 5. planets 2 4. rocky 2 0. ice 4. gas 0. largest_mass 7 point 6 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 7 9 5 8 step 1 1. time 2. planets 2 4. rocky 1 8. ice 6. gas 0. largest_mass 8 point 9 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 7 9 5 8 step 1 1 rocky. a 1 8.
+q planets seed 7 9 5 8 step 1 1 innermost_au. a 0 point 3 3.
+planets seed 7 9 5 8 step 1 2. time 2 point 5. planets 2 4. rocky 1 5. ice 9. gas 0. largest_mass 9 point 9 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 7 9 5 8 step 1 2 next outermost_au. a 2 7 point 3.
+planets seed 7 9 5 8 step 1 3. time 3. planets 2 4. rocky 1 5. ice 9. gas 0. largest_mass 1 0 point 8. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 7 9 5 8 step 1 3 ice. a 9.
+q planets seed 7 9 5 8 step 1 3 stage. a embryos.
+planets seed 7 9 5 8 step 1 4. time 4. planets 2 3. rocky 1 3. ice 8. gas 2. largest_mass 6 9 point 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 7 9 5 8 step 1 4 next outermost_au. a 2 7 point 3.
+planets seed 7 9 5 8 step 1 5. time 5. planets 2 1. rocky 1 2. ice 7. gas 2. largest_mass 1 2 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+planets seed 7 9 5 8 step 1 6. time 6. planets 1 7. rocky 1 0. ice 5. gas 2. largest_mass 1 3 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 0 4 3 7. gas_present no. stage clearing.
+q planets seed 7 9 5 8 step 1 6 gas. a 2.
+q planets seed 7 9 5 8 step 1 6 next stage. a clearing.
+planets seed 7 9 5 8 step 1 7. time 7. planets 1 1. rocky 6. ice 3. gas 2. largest_mass 1 4 1. innermost_au 0 point 3 3. outermost_au 2 5 point 6. debris 0 point 0 0 4 3 7. gas_present no. stage clearing.
+planets seed 7 9 5 8 step 1 8. time 8. planets 7. rocky 3. ice 2. gas 2. largest_mass 1 4 5. innermost_au 0 point 3 3. outermost_au 2 5 point 6. debris 0 point 0 0 7 9 1. gas_present no. stage clearing.
+planets seed 7 9 5 8 step 1 9. time 9. planets 7. rocky 3. ice 2. gas 2. largest_mass 1 4 7. innermost_au 0 point 3 3. outermost_au 2 5 point 6. debris 0 point 0 0 7 9 1. gas_present no. stage clearing.
+q planets seed 7 9 5 8 step 1 9 debris. a 0 point 0 0 7 9 1.
+q planets seed 7 9 5 8 step 1 9 stage. a clearing.
+planets seed 7 9 5 8 step 2 0. time 1 0. planets 7. rocky 3. ice 2. gas 2. largest_mass 1 5 0. innermost_au 0 point 3 3. outermost_au 2 5 point 6. debris 0 point 0 0 7 9 1. gas_present no. stage clearing.
+q planets seed 7 9 5 8 step 2 0 rocky. a 3.
+q planets seed 7 9 5 8 step 2 0 next ice. a 2.
+planets seed 7 9 5 8 step 2 1. time 1 2. planets 7. rocky 3. ice 2. gas 2. largest_mass 1 5 3. innermost_au 0 point 3 3. outermost_au 2 5 point 6. debris 0 point 0 0 7 9 1. gas_present no. stage clearing.
+q planets seed 7 9 5 8 step 2 1 next innermost_au. a 0 point 3 3.
+planets seed 7 9 5 8 step 2 2. time 1 5. planets 7. rocky 3. ice 2. gas 2. largest_mass 1 5 6. innermost_au 0 point 3 3. outermost_au 2 5 point 6. debris 0 point 0 0 7 9 1. gas_present no. stage clearing.
+planets seed 7 9 5 8 step 2 3. time 2 0. planets 6. rocky 3. ice 1. gas 2. largest_mass 1 5 7. innermost_au 0 point 3 3. outermost_au 2 0 point 8. debris 0 point 0 0 7 9 1. gas_present no. stage done.
+q planets seed 7 9 5 8 step 2 3 next planets. a 6.
+planets seed 7 9 5 8 step 2 4. time 2 5. planets 6. rocky 3. ice 1. gas 2. largest_mass 1 5 8. innermost_au 0 point 3 3. outermost_au 2 0 point 8. debris 0 point 0 0 7 9 1. gas_present no. stage done.
+q planets seed 7 9 5 8 step 2 4 ice. a 1.
+q planets seed 7 9 5 8 step 2 4 outermost_au. a 2 0 point 8.
+q planets seed 7 9 5 8 step 2 4 debris. a 0 point 0 0 7 9 1.
+planets seed 7 9 5 8 step 2 5. time 3 0. planets 6. rocky 3. ice 1. gas 2. largest_mass 1 5 8. innermost_au 0 point 3 3. outermost_au 2 0 point 8. debris 0 point 0 0 7 9 1. gas_present no. stage done.
+planets seed 7 9 5 8 step 2 6. time 3 5. planets 6. rocky 3. ice 1. gas 2. largest_mass 1 5 8. innermost_au 0 point 3 3. outermost_au 2 0 point 8. debris 0 point 0 0 7 9 1. gas_present no. stage done.
+q planets seed 7 9 5 8 step 2 6 next time. a 4 0.
+planets seed 7 9 5 8 step 2 7. time 4 0. planets 6. rocky 3. ice 1. gas 2. largest_mass 1 5 8. innermost_au 0 point 3 3. outermost_au 2 0 point 8. debris 0 point 0 0 7 9 1. gas_present no. stage done.
+q planets seed 7 9 5 8 step 2 7 next innermost_au. a 0 point 3 3.
+planets seed 7 9 5 8 step 2 8. time 4 5. planets 6. rocky 3. ice 1. gas 2. largest_mass 1 5 8. innermost_au 0 point 3 3. outermost_au 2 0 point 8. debris 0 point 0 0 7 9 1. gas_present no. stage done.
+q planets seed 7 9 5 8 step 2 8 rocky. a 3.
+planets seed 7 9 5 8 step 2 9. time 5 0. planets 6. rocky 3. ice 1. gas 2. largest_mass 1 5 8. innermost_au 0 point 3 3. outermost_au 2 0 point 8. debris 0 point 0 0 7 9 1. gas_present no. stage done.
+q planets seed 7 9 5 8 final planets. a 6.
+q planets seed 7 9 5 8 final rocky. a 3.
+q planets seed 7 9 5 8 final ice. a 1.
+q planets seed 7 9 5 8 final gas. a 2.
+q planets seed 7 9 5 8 final largest_mass. a 1 5 8.
+q planets seed 7 9 5 8 final habitable. a 1.
+q planets seed 7 9 5 8 final total_planet_mass. a 3 8 3.
+planets seed 8 3 5 4 params. m_star 0 point 8 9. disc_mass 2 7 6 point 5. t_gas 6 point 9 6. core_threshold 1 0. r_frost 2 point 2. luminosity 0 point 6 6 5.
+planets seed 8 3 5 4 step 0. time 0. planets 0. rocky 0. ice 0. gas 0. largest_mass 0. innermost_au 0. outermost_au 0. debris 0. gas_present yes. stage dust.
+q planets seed 8 3 5 4 step 0 largest_mass. a 0.
+q planets seed 8 3 5 4 step 0 next debris. a 0.
+q planets seed 8 3 5 4 step 0 next stage. a embryos.
+planets seed 8 3 5 4 step 1. time 0 point 0 5. planets 2 0. rocky 2 0. ice 0. gas 0. largest_mass 0 point 9 1 1. innermost_au 0 point 3 3. outermost_au 1 5 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 3 5 4 step 1 largest_mass. a 0 point 9 1 1.
+q planets seed 8 3 5 4 step 1 next largest_mass. a 1 point 4 7.
+q planets seed 8 3 5 4 step 1 next gas_present. a yes.
+planets seed 8 3 5 4 step 2. time 0 point 1. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 1 point 4 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 8 3 5 4 step 3. time 0 point 1 5. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 1 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 8 3 5 4 step 4. time 0 point 2. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 2 point 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 3 5 4 step 4 rocky. a 2 4.
+planets seed 8 3 5 4 step 5. time 0 point 3. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 3 point 7 4. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 8 3 5 4 step 6. time 0 point 4. planets 2 4. rocky 2 4. ice 0. gas 0. largest_mass 4 point 6 1. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+planets seed 8 3 5 4 step 7. time 0 point 5. planets 2 4. rocky 2 3. ice 1. gas 0. largest_mass 5 point 3 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 3 5 4 step 7 planets. a 2 4.
+q planets seed 8 3 5 4 step 7 next ice. a 1.
+planets seed 8 3 5 4 step 8. time 0 point 7. planets 2 4. rocky 2 3. ice 1. gas 0. largest_mass 6 point 6 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 3 5 4 step 8 next planets. a 2 4.
+planets seed 8 3 5 4 step 9. time 1. planets 2 4. rocky 2 1. ice 3. gas 0. largest_mass 7 point 9 3. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 3 5 4 step 9 gas_present. a yes.
+q planets seed 8 3 5 4 step 9 next outermost_au. a 2 7 point 3.
+planets seed 8 3 5 4 step 1 0. time 1 point 5. planets 2 4. rocky 1 6. ice 8. gas 0. largest_mass 9 point 2 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage embryos.
+q planets seed 8 3 5 4 step 1 0 next planets. a 2 3.
+planets seed 8 3 5 4 step 1 1. time 2. planets 2 3. rocky 1 5. ice 8. gas 0. largest_mass 1 7 point 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+planets seed 8 3 5 4 step 1 2. time 2 point 5. planets 2 3. rocky 1 4. ice 8. gas 1. largest_mass 9 8 point 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 8 3 5 4 step 1 2 outermost_au. a 2 7 point 3.
+planets seed 8 3 5 4 step 1 3. time 3. planets 2 2. rocky 1 3. ice 8. gas 1. largest_mass 2 4 5. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 8 3 5 4 step 1 3 ice. a 8.
+q planets seed 8 3 5 4 step 1 3 next stage. a giants_forming.
+planets seed 8 3 5 4 step 1 4. time 4. planets 1 9. rocky 1 1. ice 4. gas 4. largest_mass 2 9 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 8 3 5 4 step 1 4 next largest_mass. a 3 7 6.
+q planets seed 8 3 5 4 step 1 4 next gas_present. a yes.
+planets seed 8 3 5 4 step 1 5. time 5. planets 1 7. rocky 1 1. ice 3. gas 3. largest_mass 3 7 6. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+planets seed 8 3 5 4 step 1 6. time 6. planets 1 6. rocky 1 0. ice 2. gas 4. largest_mass 3 8 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present yes. stage giants_forming.
+q planets seed 8 3 5 4 step 1 6 next gas_present. a no.
+planets seed 8 3 5 4 step 1 7. time 7. planets 1 5. rocky 1 0. ice 1. gas 4. largest_mass 3 8 7. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0. gas_present no. stage clearing.
+q planets seed 8 3 5 4 step 1 7 next outermost_au. a 2 7 point 3.
+planets seed 8 3 5 4 step 1 8. time 8. planets 1 1. rocky 7. ice 1. gas 3. largest_mass 4 9 2. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 0 2 0 5. gas_present no. stage clearing.
+planets seed 8 3 5 4 step 1 9. time 9. planets 9. rocky 5. ice 1. gas 3. largest_mass 4 9 9. innermost_au 0 point 3 3. outermost_au 2 7 point 3. debris 0 point 0 0 2 0 5. gas_present no. stage clearing.
+planets seed 8 3 5 4 step 2 0. time 1 0. planets 7. rocky 4. ice 1. gas 2. largest_mass 6 5 3. innermost_au 0 point 4 0 8. outermost_au 2 7 point 3. debris 0 point 0 7 6 3. gas_present no. stage clearing.
+planets seed 8 3 5 4 step 2 1. time 1 2. planets 7. rocky 4. ice 1. gas 2. largest_mass 6 6 5. innermost_au 0 point 4 0 8. outermost_au 2 7 point 3. debris 0 point 0 7 6 3. gas_present no. stage clearing.
+q planets seed 8 3 5 4 step 2 1 rocky. a 4.
+planets seed 8 3 5 4 step 2 2. time 1 5. planets 7. rocky 4. ice 1. gas 2. largest_mass 6 7 7. innermost_au 0 point 4 0 8. outermost_au 2 7 point 3. debris 0 point 0 7 6 3. gas_present no. stage clearing.
+planets seed 8 3 5 4 step 2 3. time 2 0. planets 6. rocky 3. ice 1. gas 2. largest_mass 6 8 9. innermost_au 0 point 4 0 8. outermost_au 2 7 point 3. debris 0 point 0 9 3 9. gas_present no. stage done.
+q planets seed 8 3 5 4 step 2 3 next innermost_au. a 0 point 4 0 8.
+q planets seed 8 3 5 4 step 2 3 next outermost_au. a 2 7 point 3.
+planets seed 8 3 5 4 step 2 4. time 2 5. planets 6. rocky 3. ice 1. gas 2. largest_mass 6 9 5. innermost_au 0 point 4 0 8. outermost_au 2 7 point 3. debris 0 point 0 9 3 9. gas_present no. stage done.
+q planets seed 8 3 5 4 step 2 4 time. a 2 5.
+q planets seed 8 3 5 4 step 2 4 stage. a done.
+q planets seed 8 3 5 4 step 2 4 next debris. a 0 point 0 9 3 9.
+planets seed 8 3 5 4 step 2 5. time 3 0. planets 6. rocky 3. ice 1. gas 2. largest_mass 6 9 9. innermost_au 0 point 4 0 8. outermost_au 2 7 point 3. debris 0 point 0 9 3 9. gas_present no. stage done.
+planets seed 8 3 5 4 step 2 6. time 3 5. planets 6. rocky 3. ice 1. gas 2. largest_mass 7 0 0. innermost_au 0 point 4 0 8. outermost_au 2 7 point 3. debris 0 point 0 9 3 9. gas_present no. stage done.
+q planets seed 8 3 5 4 step 2 6 gas. a 2.
+q planets seed 8 3 5 4 step 2 6 next time. a 4 0.
+planets seed 8 3 5 4 step 2 7. time 4 0. planets 6. rocky 3. ice 1. gas 2. largest_mass 7 0 1. innermost_au 0 point 4 0 8. outermost_au 2 7 point 3. debris 0 point 0 9 3 9. gas_present no. stage done.
+q planets seed 8 3 5 4 step 2 7 gas_present. a no.
+q planets seed 8 3 5 4 step 2 7 stage. a done.
+q planets seed 8 3 5 4 step 2 7 next ice. a 1.
+planets seed 8 3 5 4 step 2 8. time 4 5. planets 6. rocky 3. ice 1. gas 2. largest_mass 7 0 2. innermost_au 0 point 4 0 8. outermost_au 2 7 point 3. debris 0 point 0 9 3 9. gas_present no. stage done.
+planets seed 8 3 5 4 step 2 9. time 5 0. planets 6. rocky 3. ice 1. gas 2. largest_mass 7 0 2. innermost_au 0 point 4 0 8. outermost_au 2 7 point 3. debris 0 point 0 9 3 9. gas_present no. stage done.
+q planets seed 8 3 5 4 step 2 9 time. a 5 0.
+q planets seed 8 3 5 4 final planets. a 6.
+q planets seed 8 3 5 4 final rocky. a 3.
+q planets seed 8 3 5 4 final ice. a 1.
+q planets seed 8 3 5 4 final gas. a 2.
+q planets seed 8 3 5 4 final largest_mass. a 7 0 2.
+q planets seed 8 3 5 4 final habitable. a 1.
+q planets seed 8 3 5 4 final total_planet_mass. a 1 0 6 0.

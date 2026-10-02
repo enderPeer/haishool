@@ -1,0 +1,451 @@
+q count_atoms 8 x ca 1 s 1 o 6 h 4 sulfur. a 8.
+q lithium_7_proton_capture products. a helium_4.
+q count_nuclear 4 1 x gamma mass_number. a 0.
+q check 1 2 x c 1 o 2 plus 1 2 x h 2 o 1 gives 2 x c 6 h 1 2 o 6 plus 1 2 x o 2 balanced. a yes.
+q steam_reforming reactants. a methane water.
+q ammonia_oxidation energy. a exothermic.
+q count_nuclear 5 5 x h2 mass_number. a 1 1 0.
+q calcium_carbonate_precipitation energy. a endothermic.
+q check 2 x k 1 plus 3 x h 2 o 1 gives 2 x k 1 o 1 h 1 plus 1 x h 2 balanced. a no.
+q check 2 x n13 gives 2 x c13 plus 2 x positron plus 2 x neutrino balanced. a yes.
+q plaster_setting kind. a synthesis.
+q count_atoms 6 x c 1 o 2 carbon. a 6.
+q balance h 1 n 1 o 3 plus cu 1 gives cu 1 n 2 o 6 plus n 1 o 2 plus h 2 o 1. a 4 1 1 2 2.
+q carbon_combustion energy. a exothermic.
+q count_atoms 9 x zn 1 zinc. a 9.
+q check 1 x o 2 plus 1 x n 2 gives 2 x n 1 o 1 balanced. a yes.
+q nuclide ne20 lepton_number. a 0.
+q count_atoms 8 x fe 1 iron. a 8.
+q ammonia_oxidation equation. a 4 x n 1 h 3 plus 5 x o 2 gives 4 x n 1 o 1 plus 6 x h 2 o 1.
+q check 2 x mg 1 cl 2 plus 2 x ca 1 o 2 h 2 gives 2 x mg 1 o 2 h 2 plus 2 x ca 1 cl 2 balanced. a yes.
+q check 2 x h 2 s 1 plus 3 x o 2 gives 4 x s 1 o 2 plus 2 x h 2 o 1 balanced. a no.
+q reactions where seawater. a magnesium_hydroxide_from_seawater.
+q count_atoms 7 x ca 1 c 1 o 3 plus 7 x h 1 cl 1 calcium. a 7.
+q count_atoms 9 x fe 1 iron. a 9.
+q check 4 x p 4 o 1 0 plus 2 4 x h 2 o 1 gives 1 6 x h 3 p 1 o 4 balanced. a yes.
+q balance zn 1 plus cu 1 s 1 o 4 gives zn 1 s 1 o 4 plus cu 1. a 1 1 1 1.
+q balance ba 1 cl 2 plus na 2 s 1 o 4 gives na 1 cl 1 plus ba 1 s 1 o 4. a 1 1 2 1.
+q reactions where atmosphere. a carbon_14_formation.
+q count_nuclear 1 x he3 plus 1 x n1 charge. a 2.
+q count_atoms 8 9 x c 1 o 2 carbon. a 8 9.
+q reactions where exit_signs. a tritium_decay.
+q count_atoms 1 x c 1 h 4 n 2 o 1 plus 1 x h 2 o 1 oxygen. a 2.
+q count_atoms 7 x cl 2 plus 8 x h 2 o 1 hydrogen. a 1 6.
+q check 2 x c 1 plus 1 x h 2 o 1 gives 1 x h 2 plus 1 x c 1 o 1 balanced. a no.
+q reactions reactant dinitrogen_tetroxide. a none.
+q count_nuclear 6 x pu239 plus 1 x e plus 4 x antineutrino lepton_number. a minus 3.
+q nuclide be8 mass_number. a 8.
+q sodium_peroxide_formation needs. a heat.
+q check 1 x ca 1 h 2 c 2 o 6 gives 1 x ca 1 c 1 o 3 plus 1 x h 2 o 1 plus 9 x c 1 o 2 balanced. a no.
+q count_atoms 9 x zn 1 o 1 oxygen. a 9.
+q count_atoms 5 x n 1 h 4 cl 1 chlorine. a 5.
+q balance o15 gives neutrino plus positron plus n15. a 1 1 1 1.
+q count_atoms 2 x al 1 plus 6 x h 1 cl 1 chlorine. a 6.
+q count_atoms 2 x n 1 o 1 plus 1 x o 2 nitrogen. a 2.
+q nuclide ra226 name. a radium_226.
+q reactions product magnesium. a none.
+q balance h2 gives n1 plus he3. a 2 1 1.
+q butane_combustion products. a carbon_dioxide water.
+q count_nuclear 9 x ar40 plus 4 x neutrino lepton_number. a 4.
+q check 2 x h2 gives 1 x o15 plus 1 x he3 balanced. a no.
+q count_atoms 4 0 x c 1 o 2 oxygen. a 8 0.
+q count_atoms 4 x n 1 h 3 nitrogen. a 4.
+q check 1 x h 2 plus 1 x cl 2 gives 2 x h 1 cl 1 balanced. a yes.
+q check 6 x c 1 o 2 plus 6 x h 2 o 1 gives 1 x c 6 h 1 2 o 6 plus 6 x o 2 balanced. a yes.
+q cesium_137 gives. a barium_137 electron antineutrino.
+q nuclide h2 lepton_number. a 0.
+q check 2 x na 1 plus 2 x h 2 o 1 gives 2 x na 1 o 1 h 1 plus 4 x h 2 balanced. a no.
+q check 2 x h 2 o 2 gives 2 x h 2 o 1 plus 2 x o 2 balanced. a no.
+q count_nuclear 8 x xe140 plus 9 x sr94 plus 1 x n1 mass_number. a 1 9 6 7.
+q count_atoms 2 x na 1 i 1 iodine. a 2.
+q count_atoms 1 x cu 1 c 1 o 3 oxygen. a 3.
+q balance h 1 cl 1 plus na 1 h 1 c 1 o 3 gives na 1 cl 1 plus h 2 o 1 plus c 1 o 2. a 1 1 1 1 1.
+q beryllium_8_formation where. a red_giants.
+q count_atoms 2 x ag 2 s 1 plus 2 x h 2 o 1 silver. a 4.
+q helium_3_formation products. a helium_3 gamma.
+q iron_and_copper_sulfate energy. a exothermic.
+q check 2 x h 2 o 2 gives 1 x o 2 plus 2 x h 2 o 1 balanced. a yes.
+q count_atoms 6 x s 8 sulfur. a 4 8.
+q kettle_scale_formation kind. a decomposition.
+q reactions product nitrous_oxide. a ammonium_nitrate_decomposition.
+q reactions reactant sulfurous_acid. a none.
+q hydrogen_peroxide_decomposition equation. a 2 x h 2 o 2 gives 2 x h 2 o 1 plus 1 x o 2.
+q beryllium_7_formation reactants. a helium_3 helium_4.
+q proton_neutron_capture where. a early_universe reactors.
+q iron_combustion where. a sparklers steel_wool.
+q hydrogen_combustion where. a rockets.
+q phosphorus_combustion kind. a combustion.
+q check 1 8 x c 1 o 2 plus 1 8 x h 2 o 1 gives 1 8 x o 2 plus 3 x c 6 h 1 2 o 6 balanced. a yes.
+q reactions where camping_stoves. a butane_combustion.
+q baking_soda_and_hydrochloric_acid where. a stomachs antacids.
+q nuclide antineutrino charge. a 0.
+q check 1 5 x h 2 o 1 plus 5 x ca 2 s 2 o 9 h 2 gives 1 0 x ca 1 s 1 o 6 h 4 balanced. a yes.
+q count_atoms 7 x c 1 carbon. a 7.
+q copper_and_nitric_acid equation. a 1 x cu 1 plus 4 x h 1 n 1 o 3 gives 1 x cu 1 n 2 o 6 plus 2 x n 1 o 2 plus 2 x h 2 o 1.
+q baking_soda_decomposition equation. a 2 x na 1 h 1 c 1 o 3 gives 1 x na 2 c 1 o 3 plus 1 x h 2 o 1 plus 1 x c 1 o 2.
+q check 1 x hg 1 o 1 plus 1 x o 2 gives 1 x n 2 plus 2 x h 2 o 1 balanced. a no.
+q check 2 x n 1 o 1 plus 5 x o 2 gives 2 x n 1 o 2 balanced. a no.
+q balance o 2 plus c 1 gives c 1 o 1. a 1 2 2.
+q nuclide n14 lepton_number. a 0.
+q ammonia_combustion equation. a 4 x n 1 h 3 plus 3 x o 2 gives 2 x n 2 plus 6 x h 2 o 1.
+q copper_hydroxide_precipitation energy. a exothermic.
+q methanol_synthesis reactants. a carbon_monoxide hydrogen.
+q check 5 x h1 gives 1 x he4 plus 2 x positron plus 2 x neutrino balanced. a no.
+q count_nuclear 5 3 x h1 charge. a 5 3.
+q acetylene_combustion kind. a combustion.
+q phosphorus_combustion equation. a 1 x p 4 plus 5 x o 2 gives 1 x p 4 o 1 0.
+q check 2 x n 1 o 1 plus 8 x o 2 gives 2 x n 1 o 2 balanced. a no.
+q plutonium_238_alpha_decay needs. a nothing.
+q check 1 x n15 plus 1 x h1 gives 1 x c12 plus 1 x he4 balanced. a yes.
+q check 1 x ca 1 o 2 h 2 plus 1 x mg 1 cl 2 gives 1 x mg 1 o 2 h 2 plus 1 x ca 1 cl 2 balanced. a yes.
+q count_atoms 7 x al 2 o 3 plus 9 x fe 1 iron. a 9.
+q count_atoms 1 x h 1 n 1 o 3 hydrogen. a 1.
+q reactions product potassium_iodide. a none.
+q count_atoms 7 x ca 1 c 1 o 3 carbon. a 7.
+q reactions where window_frames. a aluminum_passivation.
+q check 1 x c 1 o 1 plus 1 x h 2 o 1 gives 1 x c 1 o 2 plus 1 x h 2 balanced. a yes.
+q check 1 x h3 gives 1 x he3 plus 3 x e plus 1 x antineutrino balanced. a no.
+q balance h 2 o 1 plus n 1 o 2 gives h 1 n 1 o 3 plus n 1 o 1. a 1 3 2 1.
+q count_nuclear 1 x np237 plus 1 x he4 mass_number. a 2 4 1.
+q nuclide n13 name. a nitrogen_13.
+q neutralisation_h2so4_naoh equation. a 1 x h 2 s 1 o 4 plus 2 x na 1 o 1 h 1 gives 1 x na 2 s 1 o 4 plus 2 x h 2 o 1.
+q count_atoms 8 x h 1 n 1 o 3 plus 6 x k 1 o 1 h 1 nitrogen. a 8.
+q count_atoms 1 x c 2 h 6 o 1 plus 3 x o 2 carbon. a 2.
+q check 4 x ba 1 cl 2 plus 4 x na 2 s 1 o 4 gives 4 x ba 1 s 1 o 4 plus 8 x na 1 cl 1 balanced. a yes.
+q check 4 x h 2 o 1 plus 4 x c 2 h 4 gives 4 x c 2 h 6 o 1 balanced. a yes.
+q reactions reactant aluminum_hydroxide. a antacid_aluminum_hydroxide.
+q count_atoms 5 x n 2 h 4 o 3 nitrogen. a 1 0.
+q carbon_burning products. a neon_20 helium_4.
+q check 2 x k40 plus 1 x e gives 1 x ar40 plus 1 x neutrino balanced. a no.
+q check 1 x s 1 o 2 plus 1 x h 2 o 1 gives 8 x h 2 s 1 o 3 balanced. a no.
+q silicon_production kind. a redox.
+q check 4 x c 3 h 8 plus 2 0 x o 2 gives 1 2 x c 1 o 2 plus 1 6 x h 2 o 1 balanced. a yes.
+q count_atoms 3 x n 1 o 2 plus 1 x h 2 o 1 hydrogen. a 2.
+q check 3 x h 2 s 1 o 4 plus 6 x na 1 o 1 h 1 gives 3 x na 2 s 1 o 4 plus 6 x h 2 o 1 balanced. a yes.
+q balance ca 1 c 1 o 3 plus h 1 cl 1 gives h 2 o 1 plus ca 1 cl 2 plus c 1 o 2. a 1 2 1 1 1.
+q check 1 x n 2 plus 1 x o 2 gives 2 x n 1 o 1 balanced. a yes.
+q propane_combustion where. a grills heaters.
+q count_nuclear 1 x o15 charge. a 8.
+q iron_combustion products. a iron_oxide.
+q barium_sulfate_precipitation reactants. a barium_chloride sodium_sulfate.
+q count_atoms 2 x pb 1 s 1 o 4 sulfur. a 2.
+q count_atoms 6 x n 1 h 3 nitrogen. a 6.
+q uranium_235_fission energy. a exothermic.
+q nuclide ne20 charge. a 1 0.
+q count_atoms 1 x na 2 c 1 o 3 plus 1 x h 2 o 1 plus 1 x c 1 o 2 carbon. a 2.
+q check 6 x o 2 plus 1 x c 6 h 1 0 o 5 gives 1 x h 2 o 1 plus 6 x c 1 o 2 balanced. a no.
+q check 1 x pu238 gives 1 x cs137 plus 1 x he4 balanced. a no.
+q potassium_and_water reactants. a potassium water.
+q count_atoms 6 9 x c 3 h 6 o 3 oxygen. a 2 0 7.
+q check 2 x c 1 2 h 2 6 plus 6 7 x o 2 gives 2 6 x h 2 o 1 plus 2 4 x c 1 o 2 balanced. a no.
+q reactions reactant ammonium_nitrate. a ammonium_nitrate_decomposition.
+q check 1 x o 2 plus 1 x h 2 o 1 plus 1 x ca 1 o 1 plus 2 x cu 1 gives 1 x cu 2 c 1 o 5 h 2 balanced. a no.
+q reactions product beryllium_8. a beryllium_8_formation.
+q check 1 x ca 1 c 2 plus 2 x h 2 o 1 gives 6 x c 2 h 2 plus 1 x ca 1 o 2 h 2 balanced. a no.
+q check 1 x ca 1 plus 2 x h 2 o 1 gives 6 x ca 1 o 2 h 2 plus 1 x h 2 balanced. a no.
+q electrolysis_of_molten_salt needs. a electricity heat.
+q count_nuclear 1 x o18 plus 1 x positron plus 1 x neutrino charge. a 9.
+q count_atoms 1 x n 2 h 4 o 3 nitrogen. a 2.
+q count_atoms 5 x c 1 o 2 oxygen. a 1 0.
+q antacid_aluminum_hydroxide kind. a acid_base.
+q lead_iodide_precipitation kind. a precipitation.
+q count_nuclear 9 7 x u234 plus 4 6 x he4 lepton_number. a 0.
+q beryllium_7_electron_capture needs. a nothing.
+q count_atoms 5 8 x pb 1 s 1 o 4 sulfur. a 5 8.
+q check 1 x c 1 o 2 plus 2 x mg 1 gives 5 x mg 1 o 1 plus 1 x c 1 balanced. a no.
+q check 1 x be7 plus 1 x e gives 2 x li7 plus 1 x neutrino balanced. a no.
+q check 1 x u239 gives 1 x n15 plus 1 x neutrino plus 1 x positron balanced. a no.
+q count_atoms 8 x s 8 sulfur. a 6 4.
+q check 1 x al 1 o 3 h 3 plus 4 x h 1 cl 1 gives 1 x al 1 cl 3 plus 3 x h 2 o 1 balanced. a no.
+q carbonic_acid_decomposition kind. a decomposition.
+q check 2 x na 1 cl 1 plus 2 x h 2 o 1 gives 2 x na 1 o 1 h 1 plus 1 x h 2 plus 8 x cl 2 balanced. a no.
+q check 2 5 x o 2 plus 2 x c 8 h 1 8 gives 1 9 x h 2 o 1 plus 1 6 x c 1 o 2 balanced. a no.
+q reactions needs light. a hydrogen_chloride_synthesis ozone_decomposition ozone_formation photosynthesis.
+q iron_oxide_reduction equation. a 1 x fe 2 o 3 plus 3 x c 1 o 1 gives 2 x fe 1 plus 3 x c 1 o 2.
+q count_atoms 1 x i 2 iodine. a 2.
+q sulfur_dioxide plus water gives. a sulfurous_acid.
+q check 2 x h 2 o 2 gives 2 x h 2 o 1 plus 8 x o 2 balanced. a no.
+q check 2 x n1 gives 2 x h1 plus 2 x e plus 2 x antineutrino balanced. a yes.
+q check 1 x c 2 h 6 o 1 plus 3 x o 2 gives 3 x h 2 o 1 plus 2 x c 1 o 2 balanced. a yes.
+q count_atoms 6 x n 1 h 3 plus 8 x o 2 oxygen. a 1 6.
+q count_nuclear 1 x n14 plus 1 x gamma charge. a 7.
+q reactions where faulty_heaters. a methane_incomplete_combustion.
+q count_nuclear 1 x n15 plus 1 x positron plus 1 x neutrino mass_number. a 1 5.
+q reactions reactant hydrogen_chloride. a ammonium_chloride_formation.
+q count_atoms 1 x c 1 o 2 plus 4 x h 2 o 1 carbon. a 1.
+q nuclide k40 charge. a 1 9.
+q count_nuclear 8 5 x h2 plus 1 4 x he3 mass_number. a 2 1 2.
+q check 1 0 x n 1 o 2 gives 5 x n 2 o 4 balanced. a yes.
+q check 2 x na 2 o 2 gives 1 x o 2 plus 2 x hg 1 balanced. a no.
+q calcium_and_water kind. a single_replacement.
+q balance u239 gives np239 plus antineutrino plus e. a 1 1 1 1.
+q check 2 x h 2 s 1 o 4 plus 1 x pb 1 plus 1 x pb 1 o 2 gives 2 x c 3 h 6 o 3 plus 2 x h 2 o 1 balanced. a no.
+q count_atoms 1 x ca 1 o 2 h 2 hydrogen. a 2.
+q count_atoms 1 x n 2 h 4 nitrogen. a 2.
+q count_atoms 6 x ag 1 n 1 o 3 nitrogen. a 6.
+q ammonia plus sulfuric_acid gives. a ammonium_sulfate.
+q count_nuclear 1 x mg24 plus 1 x gamma charge. a 1 2.
+q check 6 x n 1 o 2 gives 1 x n 2 o 4 balanced. a no.
+q count_nuclear 1 x h2 plus 1 x h3 charge. a 2.
+q count_atoms 1 x mg 1 o 1 plus 1 x h 2 hydrogen. a 2.
+q count_atoms 4 x mg 1 o 2 h 2 plus 9 x ca 1 cl 2 hydrogen. a 8.
+q count_atoms 4 x c 1 plus 2 x o 2 oxygen. a 4.
+q check 2 5 x o 2 plus 2 x c 8 h 1 8 gives 2 7 x c 1 o 2 plus 1 8 x h 2 o 1 balanced. a no.
+q count_atoms 6 x cu 1 plus 8 x h 2 o 1 hydrogen. a 1 6.
+q reactions reactant methanol. a methanol_combustion.
+q count_nuclear 1 x ar40 plus 1 x neutrino lepton_number. a 1.
+q check 1 x zn 1 plus 2 x h 1 cl 1 gives 7 x zn 1 cl 2 plus 1 x h 2 balanced. a no.
+q count_atoms 9 x o 3 oxygen. a 2 7.
+q check 3 x cu 1 c 1 o 3 gives 1 x cu 1 o 1 plus 1 x c 1 o 2 balanced. a no.
+q count_atoms 7 x zn 1 zinc. a 7.
+q nitrogen_13_decay products. a carbon_13 positron neutrino.
+q check 1 x cu 1 c 1 o 3 gives 1 x c 1 o 2 plus 1 x cu 1 o 1 balanced. a yes.
+q count_atoms 1 x fe 1 s 1 o 4 sulfur. a 1.
+q check 2 x c 2 h 2 plus 5 x o 2 gives 4 x c 1 o 2 plus 3 x h 2 o 1 balanced. a no.
+q check 2 x c 1 plus 2 x o 2 gives 2 x c 1 o 2 balanced. a yes.
+q ammonium_nitrate_decomposition energy. a exothermic.
+q count_nuclear 5 x he4 charge. a 1 0.
+q check 1 x he3 plus 1 x h2 gives 1 x he4 plus 2 x h1 balanced. a no.
+q count_atoms 1 x zn 1 cl 2 plus 1 x h 2 hydrogen. a 2.
+q count_nuclear 1 x u238 plus 1 x n1 mass_number. a 2 3 9.
+q count_atoms 2 x zn 1 o 1 plus 2 x c 1 oxygen. a 2.
+q check 7 x fe 2 o 3 plus 3 x c 1 o 1 gives 3 x c 1 o 2 plus 2 x fe 1 balanced. a no.
+q count_nuclear 4 2 x h3 mass_number. a 1 2 6.
+q check 1 x he3 plus 1 x he4 gives 9 x be7 plus 1 x gamma balanced. a no.
+q check 1 x u235 plus 1 x n1 gives 2 x ba141 plus 1 x kr92 plus 3 x n1 balanced. a no.
+q water_gas_shift kind. a redox.
+q reactions where fireplaces. a cellulose_combustion.
+q count_nuclear 2 x f18 mass_number. a 3 6.
+q balance cl 2 plus na 1 gives na 1 cl 1. a 1 2 2.
+q check 5 x h 2 o 2 gives 2 x h 2 o 1 plus 1 x o 2 balanced. a no.
+q fluorine_18_decay products. a oxygen_18 positron neutrino.
+q count_atoms 5 x c 1 o 2 plus 4 x h 2 o 1 carbon. a 5.
+q nuclide he4 name. a helium_4.
+q count_atoms 4 x al 2 o 3 aluminum. a 8.
+q balance c 1 o 1 plus o 2 gives c 1 o 2. a 2 1 2.
+q check 1 x fe 2 o 3 plus 2 x al 1 gives 1 x al 2 o 3 balanced. a no.
+q reactions product propane. a none.
+q check 2 x al 2 o 3 plus 3 x c 1 gives 4 x al 1 plus 3 x c 1 o 2 balanced. a yes.
+q check 1 x zn 1 plus 2 x h 1 cl 1 gives 1 x k 1 o 1 h 1 plus 1 x h 2 balanced. a no.
+q check 1 x he4 gives 1 x be8 balanced. a no.
+q balance na 1 o 1 h 1 plus h 1 cl 1 gives na 1 cl 1 plus h 2 o 1. a 1 1 1 1.
+q check 2 x h1 gives 1 x h2 plus 1 x antineutrino plus 1 x positron balanced. a no.
+q count_atoms 1 x al 2 o 3 oxygen. a 3.
+q check 1 x he3 plus 1 x he4 gives 6 x be7 plus 1 x gamma balanced. a no.
+q count_atoms 8 x h 2 o 1 hydrogen. a 1 6.
+q count_atoms 1 x cu 1 o 1 plus 1 x c 1 o 2 oxygen. a 3.
+q nuclide u234 lepton_number. a 0.
+q check 1 x ca 1 c 1 o 3 plus 2 x ag 1 cl 1 gives 1 x ca 1 cl 2 plus 1 x h 2 o 1 plus 1 x c 1 o 2 balanced. a no.
+q baking_soda_and_vinegar needs. a nothing.
+q check 8 x na 1 cl 1 plus 1 x ag 1 n 1 o 3 gives 1 x na 1 n 1 o 3 plus 1 x ag 1 cl 1 balanced. a no.
+q check 1 0 x c 1 2 h 2 6 plus 1 8 5 x o 2 gives 1 2 0 x c 1 o 2 plus 1 3 0 x h 2 o 1 balanced. a yes.
+q count_atoms 3 x c 1 o 2 plus 4 x h 2 o 1 carbon. a 3.
+q nitrogen_dioxide_formation needs. a nothing.
+q balance fe 1 cl 3 plus na 1 o 1 h 1 gives fe 1 o 3 h 3 plus na 1 cl 1. a 1 3 1 3.
+q count_atoms 1 x c 1 o 1 plus 1 x h 2 o 1 carbon. a 1.
+q radon_222_alpha_decay products. a polonium_218 helium_4.
+q balance mg 1 plus c 1 o 2 gives c 1 plus mg 1 o 1. a 2 1 1 2.
+q check 1 x c12 gives 1 x o16 plus 1 x gamma balanced. a no.
+q check 1 x n1 gives 2 x h1 plus 1 x e plus 1 x antineutrino balanced. a no.
+q calcium_carbonate_and_hydrochloric_acid reactants. a calcium_carbonate hydrochloric_acid.
+q balance c 1 o 2 plus h 2 o 1 gives c 6 h 1 2 o 6 plus o 2. a 6 6 1 6.
+q reactions product glucose. a photosynthesis.
+q count_atoms 7 x na 1 n 3 sodium. a 7.
+q count_nuclear 5 x zr103 mass_number. a 5 1 5.
+q count_nuclear 9 x o15 charge. a 7 2.
+q reactions reactant carbonic_acid. a carbonic_acid_decomposition.
+q magnesium_hydroxide_from_seawater kind. a precipitation.
+q reactions product silver_nitrate. a none.
+q count_atoms 8 0 x ca 1 o 2 h 2 calcium. a 8 0.
+q check 8 x o15 gives 1 x positron plus 1 x n15 plus 1 x neutrino balanced. a no.
+q methane_incomplete_combustion where. a faulty_heaters.
+q calcium_carbonate_and_hydrochloric_acid energy. a exothermic.
+q zinc_and_copper_sulfate where. a batteries classrooms.
+q check 1 x h 2 o 1 plus 4 x s 1 o 3 gives 1 x h 2 s 1 o 4 balanced. a no.
+q count_atoms 4 x c 6 h 1 2 o 6 hydrogen. a 4 8.
+q reactions where water_works. a chlorine_and_water.
+q check 1 x ca 1 c 1 o 3 plus 2 x h 1 cl 1 gives 1 x ca 1 cl 2 plus 1 x h 2 o 1 plus 1 x c 1 o 2 balanced. a yes.
+q copper_hydroxide_precipitation products. a copper_hydroxide sodium_sulfate.
+q count_nuclear 8 x n1 charge. a 0.
+q balance na 2 c 1 o 3 plus ca 1 cl 2 gives na 1 cl 1 plus ca 1 c 1 o 3. a 1 1 2 1.
+q balance ag 1 plus h 2 s 1 plus o 2 gives ag 2 s 1 plus h 2 o 1. a 4 2 1 2 2.
+q count_nuclear 1 x rn222 mass_number. a 2 2 2.
+q check 1 0 x o 2 plus 4 x c 2 h 2 gives 8 x c 1 o 2 plus 4 x h 2 o 1 balanced. a yes.
+q triple_alpha_process where. a red_giants stars.
+q count_atoms 2 x c 1 o 2 oxygen. a 4.
+q helium_3_fusion q_mev. a 1 2 point 8 6.
+q count_atoms 1 x fe 2 o 3 plus 2 x al 1 aluminum. a 2.
+q reactions reactant potassium_chlorate. a potassium_chlorate_decomposition.
+q check 2 x k 1 cl 1 o 3 gives 3 x o 2 plus 7 x k 1 cl 1 balanced. a no.
+q cno_carbon_13_proton_capture q_mev. a 7 point 5 5 1.
+q balance h 1 cl 1 plus mg 1 gives mg 1 cl 2 plus h 2. a 2 1 1 1.
+q check 1 x ca 1 o 2 h 2 gives 1 x cu 1 o 1 plus 1 x c 1 o 2 balanced. a no.
+q water_gas_shift reactants. a carbon_monoxide water.
+q count_atoms 4 x ca 1 o 2 h 2 calcium. a 4.
+q balance o 2 plus c 6 h 1 2 o 6 gives c 1 o 2 plus h 2 o 1. a 6 1 6 6.
+q check 2 x c 6 h 1 2 o 6 plus 1 2 x o 2 gives 1 2 x h 2 o 1 plus 1 2 x c 1 o 2 balanced. a yes.
+q sabatier_reaction equation. a 1 x c 1 o 2 plus 4 x h 2 gives 1 x c 1 h 4 plus 2 x h 2 o 1.
+q check 1 x n13 gives 1 x c13 plus 1 x positron plus 1 x neutrino balanced. a yes.
+q nuclide am241 mass_number. a 2 4 1.
+q count_atoms 8 x c 1 o 2 carbon. a 8.
+q count_atoms 2 x pb 1 o 2 oxygen. a 4.
+q count_atoms 3 x n 1 o 2 plus 1 x h 2 o 1 nitrogen. a 3.
+q baking_soda_and_hydrochloric_acid products. a sodium_chloride water carbon_dioxide.
+q count_nuclear 1 x h3 charge. a 1.
+q check 5 x pb 1 plus 5 x pb 1 o 2 plus 1 0 x h 2 s 1 o 4 gives 1 0 x pb 1 s 1 o 4 plus 1 0 x h 2 o 1 balanced. a yes.
+q potassium_40_electron_capture products. a argon_40 neutrino.
+q hydrogen_sulfide_combustion energy. a exothermic.
+q count_nuclear 5 x pu238 mass_number. a 1 1 9 0.
+q reactions reactant potassium_chloride. a none.
+q aluminum_combustion needs. a heat.
+q check 5 x c14 gives 5 x n14 plus 5 x e plus 5 x antineutrino balanced. a yes.
+q americium_241_alpha_decay products. a neptunium_237 helium_4.
+q check 1 x fe 1 plus 1 x cu 1 s 1 o 4 gives 1 x fe 1 s 1 o 4 balanced. a no.
+q check 1 x ca40 plus 1 x h2 gives 1 x n1 plus 1 x he4 balanced. a no.
+q check 1 x c 1 2 h 2 2 o 1 1 plus 1 2 x o 2 gives 2 0 x c 1 o 2 plus 1 1 x h 2 o 1 balanced. a no.
+q balance cu 1 s 1 o 4 plus zn 1 gives cu 1 plus zn 1 s 1 o 4. a 1 1 1 1.
+q check 3 x u235 plus 1 x n1 gives 1 x xe140 plus 1 x sr94 plus 2 x n1 balanced. a no.
+q proton_neutron_capture q_mev. a 2 point 2 2 5.
+q lithium_and_water products. a lithium_hydroxide hydrogen.
+q count_nuclear 4 x u234 plus 1 x he4 mass_number. a 9 4 0.
+q reactions needs enzyme. a fermentation_of_glucose lactic_acid_fermentation respiration_of_glucose vinegar_fermentation.
+q thermite reactants. a iron_oxide aluminum.
+q balance o 2 plus c 1 h 4 gives h 2 o 1 plus c 1 o 2. a 2 1 2 1.
+q count_atoms 7 x k 1 n 1 o 3 oxygen. a 2 1.
+q carbon_dioxide_scrubbing_lioh products. a lithium_carbonate water.
+q check 1 x c 1 o 1 plus 5 x h 2 gives 1 x c 1 h 4 o 1 balanced. a no.
+q check 4 x np239 gives 4 x e plus 4 x pu239 plus 4 x antineutrino balanced. a yes.
+q electrolysis_of_brine needs. a electricity.
+q check 5 x cl 2 plus 1 0 x na 1 i 1 gives 1 0 x na 1 cl 1 plus 5 x i 2 balanced. a yes.
+q balance na 1 o 1 h 1 plus cl 2 gives na 1 cl 1 plus na 1 cl 1 o 1 plus h 2 o 1. a 2 1 1 1 1.
+q count_atoms 6 x n 2 h 4 o 3 hydrogen. a 2 4.
+q check 1 x n1 plus 1 x u235 gives 1 x sr94 plus 1 x xe140 balanced. a no.
+q check 1 x k40 gives 1 x ca40 plus 1 x antineutrino plus 1 x e balanced. a yes.
+q chlorine_and_water reactants. a chlorine water.
+q mercury_oxide gives. a mercury oxygen.
+q reactions product lead_dioxide. a none.
+q nuclide he4 mass_number. a 4.
+q count_nuclear 9 x po218 plus 5 x he4 charge. a 7 6 6.
+q count_nuclear 1 x c13 plus 1 x h1 mass_number. a 1 4.
+q check 1 x u235 plus 1 x n1 gives 1 x ba141 plus 1 x be7 plus 3 x n1 balanced. a no.
+q nuclide cs137 mass_number. a 1 3 7.
+q deuterium_deuterium_fusion energy. a exothermic.
+q count_atoms 2 x cu 1 plus 1 x o 2 plus 1 x c 1 o 2 plus 1 x h 2 o 1 hydrogen. a 2.
+q check 1 x c 6 h 1 2 o 6 gives 2 x h 2 s 1 balanced. a no.
+q balance h 2 o 1 plus na 1 gives na 1 o 1 h 1 plus h 2. a 2 2 2 1.
+q carbon_dioxide plus hydrogen gives. a methane water.
+q check 1 x n 1 o 2 gives 1 x n 2 o 4 balanced. a no.
+q check 2 x h1 gives 2 x h2 plus 1 x positron plus 1 x neutrino balanced. a no.
+q calcium_hydroxide_and_hydrochloric_acid equation. a 1 x ca 1 o 2 h 2 plus 2 x h 1 cl 1 gives 1 x ca 1 cl 2 plus 2 x h 2 o 1.
+q count_atoms 1 x h 2 s 1 o 3 sulfur. a 1.
+q count_atoms 3 x c 2 h 6 o 1 oxygen. a 3.
+q check 4 x ca 1 o 2 h 2 plus 1 x mg 1 cl 2 gives 1 x mg 1 o 2 h 2 plus 1 x ca 1 cl 2 balanced. a no.
+q check 2 x h 2 o 2 gives 2 x h 2 o 1 plus 1 x o 2 balanced. a yes.
+q check 7 x h1 plus 1 x n1 gives 1 x h2 plus 1 x gamma balanced. a no.
+q propane_combustion products. a carbon_dioxide water.
+q check 3 x k40 plus 3 x e gives 3 x ar40 plus 3 x neutrino balanced. a yes.
+q lithium_7_proton_capture needs. a heat pressure.
+q reactions where cells. a respiration_of_glucose.
+q check 2 x na 1 plus 2 x k 1 gives 2 x na 1 o 1 h 1 plus 1 x h 2 balanced. a no.
+q haber_process where. a fertilizer_plants.
+q reactions reactant nitrous_oxide. a none.
+q check 1 x c 1 o 2 plus 2 x li 1 o 1 h 1 gives 1 x li 2 c 1 o 3 plus 3 x h 2 o 1 balanced. a no.
+q carbon_burning kind. a fusion.
+q count_atoms 3 x c 1 carbon. a 3.
+q cesium_137_decay where. a reactor_waste.
+q balance h 2 o 1 plus c 1 h 4 gives h 2 plus c 1 o 1. a 1 1 3 1.
+q count_nuclear 1 x po218 mass_number. a 2 1 8.
+q vinegar_fermentation reactants. a ethanol oxygen.
+q check 2 x c 1 2 h 2 6 plus 3 7 x o 2 gives 2 6 x h 2 o 1 plus 2 4 x c 1 o 2 balanced. a yes.
+q reactions where cans. a aluminum_passivation.
+q check 1 x cu 1 s 1 o 4 plus 2 x na 1 o 1 h 1 gives 1 x cu 1 o 2 h 2 plus 1 x na 2 s 1 o 4 balanced. a yes.
+q balance h 1 cl 1 plus zn 1 gives zn 1 cl 2 plus h 2. a 2 1 1 1.
+q check 1 x c 1 o 1 plus 2 x h 2 gives 1 x c 1 h 4 o 1 balanced. a yes.
+q check 6 x he4 gives 3 x be8 balanced. a yes.
+q balance h 2 o 1 plus c 2 h 4 gives c 2 h 6 o 1. a 1 1 1.
+q sodium_peroxide_and_carbon_dioxide equation. a 2 x na 2 o 2 plus 2 x c 1 o 2 gives 2 x na 2 c 1 o 3 plus 1 x o 2.
+q count_atoms 1 3 x c 1 h 4 hydrogen. a 5 2.
+q check 2 x fe 2 o 3 plus 4 x al 1 gives 2 x al 2 o 3 plus 4 x fe 1 balanced. a yes.
+q count_atoms 7 x c 1 o 2 plus 9 x h 2 o 1 hydrogen. a 1 8.
+q check 1 x h3 gives 1 x he4 plus 1 x n1 balanced. a no.
+q count_atoms 7 x h 2 o 1 oxygen. a 7.
+q check 2 x c 1 h 4 plus 3 x o 2 gives 2 x c 1 o 1 plus 4 x h 2 o 1 balanced. a yes.
+q balance c 2 h 6 o 1 plus o 2 gives h 2 o 1 plus c 2 h 4 o 2. a 1 1 1 1.
+q count_nuclear 1 x he4 plus 1 x h1 mass_number. a 5.
+q check 1 x o15 gives 1 x neutrino plus 1 x positron plus 3 x n15 balanced. a no.
+q check 2 5 x o 2 plus 2 x c 8 h 1 8 gives 1 8 x hg 1 plus 1 6 x c 1 o 2 balanced. a no.
+q count_atoms 2 8 x h 2 s 1 plus 9 3 x o 2 sulfur. a 2 8.
+q check 1 x c 6 h 1 2 o 6 gives 2 x c 1 o 2 plus 2 x c 2 h 6 o 1 balanced. a yes.
+q balance c 1 plus al 2 o 3 gives c 1 o 2 plus al 1. a 3 2 3 4.
+q check 9 x c 2 h 2 plus 5 x o 2 gives 4 x c 1 o 2 plus 2 x h 2 o 1 balanced. a no.
+q count_atoms 4 1 x n 2 h 8 s 1 o 4 nitrogen. a 8 2.
+q limestone_dissolving where. a caves rainwater.
+q count_atoms 3 2 x h 1 cl 1 magnesium. a 0.
+q ethylene_hydration kind. a synthesis.
+q nuclide i131 name. a iodine_131.
+q nuclide n1 mass_number. a 1.
+q helium_3 plus helium_4 gives. a beryllium_7 gamma.
+q check 1 x c 1 o 2 plus 4 x h 2 gives 4 x h 2 o 1 plus 1 x c 1 h 4 balanced. a no.
+q check 1 x c 1 o 1 plus 1 x h 2 o 1 gives 1 x h 2 plus 1 x c 1 o 2 balanced. a yes.
+q check 1 x cl 2 plus 2 x na 1 o 1 h 1 gives 1 x na 1 cl 1 plus 1 x na 1 cl 1 o 1 plus 1 x h 2 o 1 balanced. a yes.
+q dodecane_combustion reactants. a dodecane oxygen.
+q limewater_test where. a classrooms.
+q count_nuclear 6 x u238 mass_number. a 1 4 2 8.
+q count_atoms 1 x ag 1 cl 1 chlorine. a 1.
+q count_atoms 9 8 x n 1 o 1 oxygen. a 9 8.
+q count_atoms 3 x n 2 o 4 nitrogen. a 6.
+q magnesium_and_carbon_dioxide products. a magnesium_oxide carbon.
+q check 1 x c 1 o 2 plus 1 x ca 1 o 2 h 2 gives 1 x ca 1 c 1 o 3 plus 1 x h 2 o 1 balanced. a yes.
+q check 1 x zn 1 plus 2 x h 1 cl 1 gives 5 x zn 1 cl 2 plus 1 x h 2 balanced. a no.
+q count_atoms 2 x n 2 plus 6 x h 2 o 1 oxygen. a 6.
+q count_atoms 2 x c 2 h 6 o 1 plus 2 x c 1 o 2 oxygen. a 6.
+q kettle_scale_formation where. a kettles boilers.
+q reactions where miners_lamps. a calcium_carbide_and_water.
+q count_nuclear 2 x h2 lepton_number. a 0.
+q count_atoms 9 x fe 1 s 1 sulfur. a 9.
+q nuclide ar40 charge. a 1 8.
+q reactions product magnesium_oxide. a magnesium_and_carbon_dioxide magnesium_and_steam magnesium_combustion.
+q check 4 x cu 1 o 1 plus 4 x h 2 gives 4 x h 2 o 1 plus 4 x cu 1 balanced. a yes.
+q cellulose_combustion needs. a spark.
+q balance h 1 cl 1 plus na 1 h 1 c 1 o 3 gives c 1 o 2 plus na 1 cl 1 plus h 2 o 1. a 1 1 1 1 1.
+q hydrogen_fuel_cell products. a water.
+q count_nuclear 8 6 x be7 charge. a 3 4 4.
+q check 3 x o 2 gives 2 x o 3 balanced. a yes.
+q check 1 x he3 plus 1 x h2 gives 1 x h1 plus 1 x he4 balanced. a yes.
+q balance al 1 plus fe 2 o 3 gives al 2 o 3 plus fe 1. a 2 1 1 2.
+q check 5 x e plus 5 x k40 gives 5 x ar40 plus 5 x neutrino balanced. a yes.
+q count_atoms 1 x ca 2 s 2 o 9 h 2 hydrogen. a 2.
+q check 8 x o 2 plus 1 x s 8 gives 8 x s 1 o 2 balanced. a yes.
+q balance cu 1 s 1 o 4 plus fe 1 gives cu 1 plus fe 1 s 1 o 4. a 1 1 1 1.
+q balance h 2 o 1 plus c 1 o 2 gives c 6 h 1 2 o 6 plus o 2. a 6 6 1 6.
+q check 3 x h 2 s 1 o 4 plus 6 x na 1 o 1 h 1 gives 6 x h 2 o 1 plus 3 x na 2 s 1 o 4 balanced. a yes.
+q aluminum_combustion kind. a combustion.
+q carbon_12_alpha_capture q_mev. a 7 point 1 6 2.
+q count_atoms 6 x ca 1 c 1 o 3 carbon. a 6.
+q nuclide pu239 charge. a 9 4.
+q check 1 x n 2 h 4 plus 1 x o 2 gives 2 x n 2 plus 2 x h 2 o 1 balanced. a no.
+q check 2 x k 1 o 1 h 1 plus 2 x h 1 n 1 o 3 gives 2 x k 1 n 1 o 3 plus 2 x h 2 o 1 balanced. a yes.
+q check 1 x n 2 h 4 plus 1 x o 2 gives 3 x n 2 plus 2 x h 2 o 1 balanced. a no.
+q ozone_formation products. a ozone.
+q nitrogen_13_decay needs. a nothing.
+q calcium_carbonate_precipitation needs. a nothing.
+q reactions product nitrogen_15. a oxygen_15_decay.
+q balance n 1 h 3 plus c 1 o 2 gives h 2 o 1 plus c 1 h 4 n 2 o 1. a 2 1 1 1.
+q helium_3_fusion products. a helium_4 proton.
+q proton_neutron_capture needs. a nothing.
+q count_nuclear 5 4 x he4 mass_number. a 2 1 6.
+q check 3 x o 2 plus 2 x s 1 o 2 gives 2 x s 1 o 3 balanced. a no.
+q check 2 x h2 gives 1 x n14 plus 1 x h1 balanced. a no.
+q balance na 1 h 1 c 1 o 3 plus h 1 cl 1 gives c 1 o 2 plus h 2 o 1 plus na 1 cl 1. a 1 1 1 1 1.
+q count_atoms 3 x p 4 o 1 0 plus 3 x h 2 o 1 phosphorus. a 1 2.
+q nuclide zr103 lepton_number. a 0.
+q check 3 x c 1 plus 2 x al 2 o 3 gives 3 x c 1 o 2 plus 8 x al 1 balanced. a no.
+q phosphoric_acid_formation kind. a synthesis.
+q electrolysis_of_molten_salt energy. a endothermic.
+q octane_combustion where. a engines cars.
+q check 1 x ca 1 o 2 h 2 plus 1 x c 1 o 2 gives 5 x ca 1 c 1 o 3 plus 1 x h 2 o 1 balanced. a no.
+q check 2 x k 1 cl 1 o 3 gives 2 x k 1 cl 1 plus 3 x o 2 balanced. a yes.
+q check 2 x k 1 cl 1 o 3 gives 3 x o 2 plus 2 x k 1 cl 1 balanced. a yes.
+q potassium_superoxide_and_carbon_dioxide products. a potassium_carbonate oxygen.
+q count_atoms 9 x cu 1 n 2 o 6 oxygen. a 5 4.
+q check 1 x h1 plus 1 x n14 gives 1 x gamma plus 7 x o15 balanced. a no.

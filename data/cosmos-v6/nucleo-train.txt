@@ -1,0 +1,1520 @@
+nucleo seed 5 4 4 0 params. eta_factor 0 point 3 5 2. tau_n 9 0 8. t_freeze 0 point 5 1 6. expansion_factor 1 point 2 7.
+q nucleo seed 5 4 4 0 param eta_factor. a 0 point 3 5 2.
+q nucleo seed 5 4 4 0 param tau_n. a 9 0 8.
+q nucleo seed 5 4 4 0 param t_freeze. a 0 point 5 1 6.
+q nucleo seed 5 4 4 0 param expansion_factor. a 1 point 2 7.
+nucleo seed 5 4 4 0 step 0. time 0 point 1. temperature 2 point 8 1 e 1 0. n_p_ratio 0 point 5 8 6. free_neutrons 0 point 3 6 9. hydrogen 0 point 6 3 1. helium 0. deuterium 0. stage plasma.
+nucleo seed 5 4 4 0 step 1. time 0 point 1 4 3. temperature 2 point 3 5 e 1 0. n_p_ratio 0 point 5 2 8. free_neutrons 0 point 3 4 5. hydrogen 0 point 6 5 5. helium 0. deuterium 0. stage plasma.
+q nucleo seed 5 4 4 0 step 1 free_neutrons. a 0 point 3 4 5.
+q nucleo seed 5 4 4 0 step 1 next free_neutrons. a 0 point 3 1 8.
+nucleo seed 5 4 4 0 step 2. time 0 point 2 0 4. temperature 1 point 9 6 e 1 0. n_p_ratio 0 point 4 6 6. free_neutrons 0 point 3 1 8. hydrogen 0 point 6 8 2. helium 0. deuterium 0. stage plasma.
+nucleo seed 5 4 4 0 step 3. time 0 point 2 9 1. temperature 1 point 6 4 e 1 0. n_p_ratio 0 point 4 0 2. free_neutrons 0 point 2 8 7. hydrogen 0 point 7 1 3. helium 0. deuterium 0. stage plasma.
+q nucleo seed 5 4 4 0 step 3 next temperature. a 1 point 3 8 e 1 0.
+q nucleo seed 5 4 4 0 step 3 next helium3. a 0.
+nucleo seed 5 4 4 0 step 4. time 0 point 4 1 5. temperature 1 point 3 8 e 1 0. n_p_ratio 0 point 3 6 9. free_neutrons 0 point 2 7. hydrogen 0 point 7 3. helium 0. deuterium 0. stage freeze_out.
+q nucleo seed 5 4 4 0 step 4 free_neutrons. a 0 point 2 7.
+q nucleo seed 5 4 4 0 step 4 next time. a 0 point 5 9 1.
+nucleo seed 5 4 4 0 step 5. time 0 point 5 9 1. temperature 1 point 1 5 e 1 0. n_p_ratio 0 point 3 6 9. free_neutrons 0 point 2 7. hydrogen 0 point 7 3. helium 0. deuterium 0. stage decay.
+nucleo seed 5 4 4 0 step 6. time 0 point 8 4 4. temperature 9 point 6 6 e 9. n_p_ratio 0 point 3 6 9. free_neutrons 0 point 2 7. hydrogen 0 point 7 3. helium 0. deuterium 0. stage decay.
+nucleo seed 5 4 4 0 step 7. time 1 point 2. temperature 8 point 1 e 9. n_p_ratio 0 point 3 6 9. free_neutrons 0 point 2 7. hydrogen 0 point 7 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 4 4 0 step 7 next time. a 1 point 7 2.
+nucleo seed 5 4 4 0 step 8. time 1 point 7 2. temperature 6 point 7 7 e 9. n_p_ratio 0 point 3 6 9. free_neutrons 0 point 2 6 9. hydrogen 0 point 7 3 1. helium 0. deuterium 0. stage decay.
+nucleo seed 5 4 4 0 step 9. time 2 point 4 5. temperature 5 point 6 7 e 9. n_p_ratio 0 point 3 6 8. free_neutrons 0 point 2 6 9. hydrogen 0 point 7 3 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 4 4 0 step 9 lithium. a 0.
+q nucleo seed 5 4 4 0 step 9 next deuterium. a 0.
+nucleo seed 5 4 4 0 step 1 0. time 3 point 5. temperature 4 point 7 4 e 9. n_p_ratio 0 point 3 6 8. free_neutrons 0 point 2 6 9. hydrogen 0 point 7 3 1. helium 0. deuterium 0. stage decay.
+nucleo seed 5 4 4 0 step 1 1. time 4 point 9 9. temperature 3 point 9 7 e 9. n_p_ratio 0 point 3 6 7. free_neutrons 0 point 2 6 8. hydrogen 0 point 7 3 2. helium 0. deuterium 0. stage decay.
+nucleo seed 5 4 4 0 step 1 2. time 7 point 1 2. temperature 3 point 3 3 e 9. n_p_ratio 0 point 3 6 6. free_neutrons 0 point 2 6 8. hydrogen 0 point 7 3 2. helium 0. deuterium 0. stage decay.
+nucleo seed 5 4 4 0 step 1 3. time 1 0 point 2. temperature 2 point 7 8 e 9. n_p_ratio 0 point 3 6 4. free_neutrons 0 point 2 6 7. hydrogen 0 point 7 3 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 4 4 0 step 1 3 next n_p_ratio. a 0 point 3 6 2.
+nucleo seed 5 4 4 0 step 1 4. time 1 4 point 5. temperature 2 point 3 3 e 9. n_p_ratio 0 point 3 6 2. free_neutrons 0 point 2 6 6. hydrogen 0 point 7 3 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 4 4 0 step 1 4 deuterium. a 0.
+nucleo seed 5 4 4 0 step 1 5. time 2 0 point 7. temperature 1 point 9 5 e 9. n_p_ratio 0 point 3 5 8. free_neutrons 0 point 2 6 4. hydrogen 0 point 7 3 6. helium 0. deuterium 0. stage decay.
+nucleo seed 5 4 4 0 step 1 6. time 2 9 point 5. temperature 1 point 6 3 e 9. n_p_ratio 0 point 3 5 4. free_neutrons 0 point 2 6 1. hydrogen 0 point 7 3 9. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 4 4 0 step 1 6 hydrogen. a 0 point 7 3 9.
+q nucleo seed 5 4 4 0 step 1 6 helium. a 0.
+q nucleo seed 5 4 4 0 step 1 6 next time. a 4 2 point 1.
+q nucleo seed 5 4 4 0 step 1 6 next helium3. a 0.
+q nucleo seed 5 4 4 0 step 1 6 next lithium. a 0.
+nucleo seed 5 4 4 0 step 1 7. time 4 2 point 1. temperature 1 point 3 7 e 9. n_p_ratio 0 point 3 4 7. free_neutrons 0 point 2 5 8. hydrogen 0 point 7 4 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 4 4 0 step 1 7 next time. a 6 0 point 1.
+q nucleo seed 5 4 4 0 step 1 7 next temperature. a 1 point 1 4 e 9.
+nucleo seed 5 4 4 0 step 1 8. time 6 0 point 1. temperature 1 point 1 4 e 9. n_p_ratio 0 point 3 3 8. free_neutrons 0 point 2 5 3. hydrogen 0 point 7 4 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 4 4 0 step 1 8 time. a 6 0 point 1.
+q nucleo seed 5 4 4 0 step 1 8 lithium. a 0.
+nucleo seed 5 4 4 0 step 1 9. time 8 5 point 8. temperature 9 point 5 8 e 8. n_p_ratio 0 point 3 2 6. free_neutrons 0 point 2 4 6. hydrogen 0 point 7 5 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 4 4 0 step 1 9 time. a 8 5 point 8.
+q nucleo seed 5 4 4 0 step 1 9 next helium. a 0.
+nucleo seed 5 4 4 0 step 2 0. time 1 2 2. temperature 8 point 0 3 e 8. n_p_ratio 0 point 3 0 9. free_neutrons 0 point 2 3 6. hydrogen 0 point 7 6 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 4 4 0 step 2 0 temperature. a 8 point 0 3 e 8.
+nucleo seed 5 4 4 0 step 2 1. time 1 7 5. temperature 6 point 7 1 e 8. n_p_ratio 0 point 2 9 5. free_neutrons 0 point 0 5 1 6. hydrogen 0 point 5 9 6. helium 0 point 3 5 2. deuterium 9 point 5 2 e minus 5. stage bottleneck.
+q nucleo seed 5 4 4 0 step 2 1 next lithium. a 6 point 0 5 e minus 1 1.
+nucleo seed 5 4 4 0 step 2 2. time 2 4 9. temperature 5 point 6 2 e 8. n_p_ratio 0 point 2 9 2. free_neutrons 0 point 0 0 4 0 3. hydrogen 0 point 5 5 1. helium 0 point 4 4 4. deuterium 1 point 3 e minus 4. stage helium_forming.
+q nucleo seed 5 4 4 0 step 2 2 time. a 2 4 9.
+nucleo seed 5 4 4 0 step 2 3. time 3 5 5. temperature 4 point 7 1 e 8. n_p_ratio 0 point 2 9 2. free_neutrons 1 point 0 5 e minus 4. hydrogen 0 point 5 4 8. helium 0 point 4 5 2. deuterium 1 point 3 3 e minus 4. stage helium_forming.
+q nucleo seed 5 4 4 0 step 2 3 next n_p_ratio. a 0 point 2 9 2.
+nucleo seed 5 4 4 0 step 2 4. time 5 0 7. temperature 3 point 9 4 e 8. n_p_ratio 0 point 2 9 2. free_neutrons 5 point 5 9 e minus 7. hydrogen 0 point 5 4 8. helium 0 point 4 5 2. deuterium 1 point 3 3 e minus 4. stage done.
+q nucleo seed 5 4 4 0 step 2 4 next hydrogen. a 0 point 5 4 8.
+nucleo seed 5 4 4 0 step 2 5. time 7 2 4. temperature 3 point 3 e 8. n_p_ratio 0 point 2 9 2. free_neutrons 3 point 1 8 e minus 1 0. hydrogen 0 point 5 4 8. helium 0 point 4 5 2. deuterium 1 point 3 3 e minus 4. stage done.
+nucleo seed 5 4 4 0 step 2 6. time 1 0 3 0. temperature 2 point 7 6 e 8. n_p_ratio 0 point 2 9 2. free_neutrons 0. hydrogen 0 point 5 4 8. helium 0 point 4 5 2. deuterium 1 point 3 3 e minus 4. stage done.
+q nucleo seed 5 4 4 0 step 2 6 helium. a 0 point 4 5 2.
+q nucleo seed 5 4 4 0 step 2 6 next lithium. a 6 point 2 e minus 1 1.
+nucleo seed 5 4 4 0 step 2 7. time 1 4 7 0. temperature 2 point 3 1 e 8. n_p_ratio 0 point 2 9 2. free_neutrons 0. hydrogen 0 point 5 4 8. helium 0 point 4 5 2. deuterium 1 point 3 3 e minus 4. stage done.
+q nucleo seed 5 4 4 0 step 2 7 next time. a 2 1 0 0.
+nucleo seed 5 4 4 0 step 2 8. time 2 1 0 0. temperature 1 point 9 4 e 8. n_p_ratio 0 point 2 9 2. free_neutrons 0. hydrogen 0 point 5 4 8. helium 0 point 4 5 2. deuterium 1 point 3 3 e minus 4. stage done.
+q nucleo seed 5 4 4 0 step 2 8 next time. a 3 0 0 0.
+nucleo seed 5 4 4 0 step 2 9. time 3 0 0 0. temperature 1 point 6 2 e 8. n_p_ratio 0 point 2 9 2. free_neutrons 0. hydrogen 0 point 5 4 8. helium 0 point 4 5 2. deuterium 1 point 3 3 e minus 4. stage done.
+q nucleo seed 5 4 4 0 step 2 9 helium. a 0 point 4 5 2.
+q nucleo seed 5 4 4 0 final helium. a 0 point 4 5 2.
+q nucleo seed 5 4 4 0 final hydrogen. a 0 point 5 4 8.
+q nucleo seed 5 4 4 0 final deuterium. a 1 point 3 3 e minus 4.
+q nucleo seed 5 4 4 0 final helium3. a 1 point 8 7 e minus 5.
+q nucleo seed 5 4 4 0 final lithium. a 6 point 2 e minus 1 1.
+q nucleo seed 5 4 4 0 final bottleneck_time. a 1 3 1.
+q nucleo seed 5 4 4 0 final bottleneck_n_p_ratio. a 0 point 3 0 5.
+q nucleo seed 5 4 4 0 final freeze_time. a 0 point 3 4 6.
+q nucleo seed 5 4 4 0 final peak_n_p_ratio. a 0 point 5 8 6.
+nucleo seed 6 8 9 2 params. eta_factor 1 point 8 7. tau_n 9 3 5. t_freeze 1 point 7 4. expansion_factor 0 point 7 3 1.
+q nucleo seed 6 8 9 2 param eta_factor. a 1 point 8 7.
+q nucleo seed 6 8 9 2 param tau_n. a 9 3 5.
+q nucleo seed 6 8 9 2 param t_freeze. a 1 point 7 4.
+q nucleo seed 6 8 9 2 param expansion_factor. a 0 point 7 3 1.
+nucleo seed 6 8 9 2 step 0. time 0 point 1. temperature 3 point 7 e 1 0. n_p_ratio 0 point 6 6 6. free_neutrons 0 point 4. hydrogen 0 point 6. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 8 9 2 step 0 n_p_ratio. a 0 point 6 6 6.
+nucleo seed 6 8 9 2 step 1. time 0 point 1 4 3. temperature 3 point 0 9 e 1 0. n_p_ratio 0 point 6 1 6. free_neutrons 0 point 3 8 1. hydrogen 0 point 6 1 9. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 8 9 2 step 1 next lithium. a 0.
+nucleo seed 6 8 9 2 step 2. time 0 point 2 0 4. temperature 2 point 5 9 e 1 0. n_p_ratio 0 point 5 6. free_neutrons 0 point 3 5 9. hydrogen 0 point 6 4 1. helium 0. deuterium 0. stage plasma.
+nucleo seed 6 8 9 2 step 3. time 0 point 2 9 1. temperature 2 point 1 7 e 1 0. n_p_ratio 0 point 5. free_neutrons 0 point 3 3 4. hydrogen 0 point 6 6 6. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 8 9 2 step 3 next temperature. a 1 point 8 2 e 1 0.
+q nucleo seed 6 8 9 2 step 3 next free_neutrons. a 0 point 3 0 4.
+q nucleo seed 6 8 9 2 step 3 next hydrogen. a 0 point 6 9 6.
+nucleo seed 6 8 9 2 step 4. time 0 point 4 1 5. temperature 1 point 8 2 e 1 0. n_p_ratio 0 point 4 3 8. free_neutrons 0 point 3 0 4. hydrogen 0 point 6 9 6. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 8 9 2 step 4 hydrogen. a 0 point 6 9 6.
+q nucleo seed 6 8 9 2 step 4 next helium3. a 0.
+nucleo seed 6 8 9 2 step 5. time 0 point 5 9 1. temperature 1 point 5 2 e 1 0. n_p_ratio 0 point 3 7 3. free_neutrons 0 point 2 7 2. hydrogen 0 point 7 2 8. helium 0. deuterium 0. stage plasma.
+nucleo seed 6 8 9 2 step 6. time 0 point 8 4 4. temperature 1 point 2 7 e 1 0. n_p_ratio 0 point 3 0 8. free_neutrons 0 point 2 3 5. hydrogen 0 point 7 6 5. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 8 9 2 step 6 n_p_ratio. a 0 point 3 0 8.
+nucleo seed 6 8 9 2 step 7. time 1 point 2. temperature 1 point 0 7 e 1 0. n_p_ratio 0 point 2 4 5. free_neutrons 0 point 1 9 7. hydrogen 0 point 8 0 3. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 8 9 2 step 7 time. a 1 point 2.
+q nucleo seed 6 8 9 2 step 7 next helium. a 0.
+nucleo seed 6 8 9 2 step 8. time 1 point 7 2. temperature 8 point 9 2 e 9. n_p_ratio 0 point 1 8 6. free_neutrons 0 point 1 5 7. hydrogen 0 point 8 4 3. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 8 9 2 step 8 next deuterium. a 0.
+nucleo seed 6 8 9 2 step 9. time 2 point 4 5. temperature 7 point 4 7 e 9. n_p_ratio 0 point 1 3 4. free_neutrons 0 point 1 1 8. hydrogen 0 point 8 8 2. helium 0. deuterium 0. stage plasma.
+nucleo seed 6 8 9 2 step 1 0. time 3 point 5. temperature 6 point 2 5 e 9. n_p_ratio 0 point 1 1 1. free_neutrons 0 point 0 9 9 9. hydrogen 0 point 9. helium 0. deuterium 0. stage freeze_out.
+q nucleo seed 6 8 9 2 step 1 0 next helium3. a 0.
+nucleo seed 6 8 9 2 step 1 1. time 4 point 9 9. temperature 5 point 2 4 e 9. n_p_ratio 0 point 1 1 1. free_neutrons 0 point 0 9 9 7. hydrogen 0 point 9. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 8 9 2 step 1 1 next lithium. a 0.
+nucleo seed 6 8 9 2 step 1 2. time 7 point 1 2. temperature 4 point 3 8 e 9. n_p_ratio 0 point 1 1 1. free_neutrons 0 point 0 9 9 5. hydrogen 0 point 9. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 8 9 2 step 1 2 next free_neutrons. a 0 point 0 9 9 2.
+nucleo seed 6 8 9 2 step 1 3. time 1 0 point 2. temperature 3 point 6 6 e 9. n_p_ratio 0 point 1 1. free_neutrons 0 point 0 9 9 2. hydrogen 0 point 9 0 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 8 9 2 step 1 3 next time. a 1 4 point 5.
+nucleo seed 6 8 9 2 step 1 4. time 1 4 point 5. temperature 3 point 0 7 e 9. n_p_ratio 0 point 1 1. free_neutrons 0 point 0 9 8 7. hydrogen 0 point 9 0 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 8 9 2 step 1 4 next helium. a 0.
+nucleo seed 6 8 9 2 step 1 5. time 2 0 point 7. temperature 2 point 5 7 e 9. n_p_ratio 0 point 1 0 9. free_neutrons 0 point 0 9 8 1. hydrogen 0 point 9 0 2. helium 0. deuterium 0. stage decay.
+nucleo seed 6 8 9 2 step 1 6. time 2 9 point 5. temperature 2 point 1 5 e 9. n_p_ratio 0 point 1 0 8. free_neutrons 0 point 0 9 7 2. hydrogen 0 point 9 0 3. helium 0. deuterium 0. stage decay.
+nucleo seed 6 8 9 2 step 1 7. time 4 2 point 1. temperature 1 point 8 e 9. n_p_ratio 0 point 1 0 6. free_neutrons 0 point 0 9 5 9. hydrogen 0 point 9 0 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 8 9 2 step 1 7 next time. a 6 0 point 1.
+nucleo seed 6 8 9 2 step 1 8. time 6 0 point 1. temperature 1 point 5 1 e 9. n_p_ratio 0 point 1 0 4. free_neutrons 0 point 0 9 4. hydrogen 0 point 9 0 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 8 9 2 step 1 8 next stage. a decay.
+nucleo seed 6 8 9 2 step 1 9. time 8 5 point 8. temperature 1 point 2 6 e 9. n_p_ratio 0 point 1 0 1. free_neutrons 0 point 0 9 1 5. hydrogen 0 point 9 0 9. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 8 9 2 step 1 9 time. a 8 5 point 8.
+q nucleo seed 6 8 9 2 step 1 9 next helium3. a 0.
+nucleo seed 6 8 9 2 step 2 0. time 1 2 2. temperature 1 point 0 6 e 9. n_p_ratio 0 point 0 9 6 5. free_neutrons 0 point 0 8 8. hydrogen 0 point 9 1 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 8 9 2 step 2 0 free_neutrons. a 0 point 0 8 8.
+q nucleo seed 6 8 9 2 step 2 0 next lithium. a 0.
+nucleo seed 6 8 9 2 step 2 1. time 1 7 5. temperature 8 point 8 4 e 8. n_p_ratio 0 point 0 9 0 7. free_neutrons 0 point 0 8 3 2. hydrogen 0 point 9 1 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 8 9 2 step 2 1 stage. a decay.
+nucleo seed 6 8 9 2 step 2 2. time 2 4 9. temperature 7 point 4 1 e 8. n_p_ratio 0 point 0 8 5 2. free_neutrons 0 point 0 1 8. hydrogen 0 point 8 6 1. helium 0 point 1 2 1. deuterium 6 point 9 8 e minus 6. stage bottleneck.
+q nucleo seed 6 8 9 2 step 2 2 next hydrogen. a 0 point 8 4 4.
+nucleo seed 6 8 9 2 step 2 3. time 3 5 5. temperature 6 point 2 1 e 8. n_p_ratio 0 point 0 8 4 6. free_neutrons 4 point 7 1 e minus 4. hydrogen 0 point 8 4 4. helium 0 point 1 5 5. deuterium 9 point 1 2 e minus 6. stage helium_forming.
+q nucleo seed 6 8 9 2 step 2 3 next helium. a 0 point 1 5 6.
+nucleo seed 6 8 9 2 step 2 4. time 5 0 7. temperature 5 point 1 9 e 8. n_p_ratio 0 point 0 8 4 6. free_neutrons 2 point 5 2 e minus 6. hydrogen 0 point 8 4 4. helium 0 point 1 5 6. deuterium 9 point 1 8 e minus 6. stage helium_forming.
+q nucleo seed 6 8 9 2 step 2 4 time. a 5 0 7.
+nucleo seed 6 8 9 2 step 2 5. time 7 2 4. temperature 4 point 3 5 e 8. n_p_ratio 0 point 0 8 4 6. free_neutrons 1 point 4 4 e minus 9. hydrogen 0 point 8 4 4. helium 0 point 1 5 6. deuterium 9 point 1 8 e minus 6. stage done.
+nucleo seed 6 8 9 2 step 2 6. time 1 0 3 0. temperature 3 point 6 4 e 8. n_p_ratio 0 point 0 8 4 6. free_neutrons 0. hydrogen 0 point 8 4 4. helium 0 point 1 5 6. deuterium 9 point 1 8 e minus 6. stage done.
+q nucleo seed 6 8 9 2 step 2 6 next n_p_ratio. a 0 point 0 8 4 6.
+nucleo seed 6 8 9 2 step 2 7. time 1 4 7 0. temperature 3 point 0 5 e 8. n_p_ratio 0 point 0 8 4 6. free_neutrons 0. hydrogen 0 point 8 4 4. helium 0 point 1 5 6. deuterium 9 point 1 8 e minus 6. stage done.
+q nucleo seed 6 8 9 2 step 2 7 hydrogen. a 0 point 8 4 4.
+nucleo seed 6 8 9 2 step 2 8. time 2 1 0 0. temperature 2 point 5 5 e 8. n_p_ratio 0 point 0 8 4 6. free_neutrons 0. hydrogen 0 point 8 4 4. helium 0 point 1 5 6. deuterium 9 point 1 8 e minus 6. stage done.
+q nucleo seed 6 8 9 2 step 2 8 n_p_ratio. a 0 point 0 8 4 6.
+q nucleo seed 6 8 9 2 step 2 8 next temperature. a 2 point 1 4 e 8.
+nucleo seed 6 8 9 2 step 2 9. time 3 0 0 0. temperature 2 point 1 4 e 8. n_p_ratio 0 point 0 8 4 6. free_neutrons 0. hydrogen 0 point 8 4 4. helium 0 point 1 5 6. deuterium 9 point 1 8 e minus 6. stage done.
+q nucleo seed 6 8 9 2 step 2 9 deuterium. a 9 point 1 8 e minus 6.
+q nucleo seed 6 8 9 2 step 2 9 stage. a done.
+q nucleo seed 6 8 9 2 final helium. a 0 point 1 5 6.
+q nucleo seed 6 8 9 2 final hydrogen. a 0 point 8 4 4.
+q nucleo seed 6 8 9 2 final deuterium. a 9 point 1 8 e minus 6.
+q nucleo seed 6 8 9 2 final helium3. a 6 point 8 7 e minus 6.
+q nucleo seed 6 8 9 2 final lithium. a 1 point 7 5 e minus 9.
+q nucleo seed 6 8 9 2 final bottleneck_time. a 2 0 6.
+q nucleo seed 6 8 9 2 final bottleneck_n_p_ratio. a 0 point 0 8 7 5.
+q nucleo seed 6 8 9 2 final freeze_time. a 2 point 9 3.
+q nucleo seed 6 8 9 2 final peak_n_p_ratio. a 0 point 6 6 6.
+nucleo seed 8 5 7 4 params. eta_factor 0 point 6 6. tau_n 8 1 0. t_freeze 0 point 8 2 7. expansion_factor 1 point 3 3.
+q nucleo seed 8 5 7 4 param eta_factor. a 0 point 6 6.
+q nucleo seed 8 5 7 4 param tau_n. a 8 1 0.
+q nucleo seed 8 5 7 4 param t_freeze. a 0 point 8 2 7.
+q nucleo seed 8 5 7 4 param expansion_factor. a 1 point 3 3.
+nucleo seed 8 5 7 4 step 0. time 0 point 1. temperature 2 point 7 4 e 1 0. n_p_ratio 0 point 5 7 8. free_neutrons 0 point 3 6 6. hydrogen 0 point 6 3 4. helium 0. deuterium 0. stage plasma.
+nucleo seed 8 5 7 4 step 1. time 0 point 1 4 3. temperature 2 point 2 9 e 1 0. n_p_ratio 0 point 5 2. free_neutrons 0 point 3 4 2. hydrogen 0 point 6 5 8. helium 0. deuterium 0. stage plasma.
+q nucleo seed 8 5 7 4 step 1 next time. a 0 point 2 0 4.
+nucleo seed 8 5 7 4 step 2. time 0 point 2 0 4. temperature 1 point 9 2 e 1 0. n_p_ratio 0 point 4 5 8. free_neutrons 0 point 3 1 4. hydrogen 0 point 6 8 6. helium 0. deuterium 0. stage plasma.
+q nucleo seed 8 5 7 4 step 2 time. a 0 point 2 0 4.
+q nucleo seed 8 5 7 4 step 2 helium. a 0.
+q nucleo seed 8 5 7 4 step 2 next n_p_ratio. a 0 point 3 9 3.
+nucleo seed 8 5 7 4 step 3. time 0 point 2 9 1. temperature 1 point 6 1 e 1 0. n_p_ratio 0 point 3 9 3. free_neutrons 0 point 2 8 2. hydrogen 0 point 7 1 8. helium 0. deuterium 0. stage plasma.
+q nucleo seed 8 5 7 4 step 3 deuterium. a 0.
+nucleo seed 8 5 7 4 step 4. time 0 point 4 1 5. temperature 1 point 3 5 e 1 0. n_p_ratio 0 point 3 2 8. free_neutrons 0 point 2 4 7. hydrogen 0 point 7 5 3. helium 0. deuterium 0. stage plasma.
+q nucleo seed 8 5 7 4 step 4 helium. a 0.
+q nucleo seed 8 5 7 4 step 4 deuterium. a 0.
+nucleo seed 8 5 7 4 step 5. time 0 point 5 9 1. temperature 1 point 1 3 e 1 0. n_p_ratio 0 point 2 8 9. free_neutrons 0 point 2 2 4. hydrogen 0 point 7 7 6. helium 0. deuterium 0. stage freeze_out.
+q nucleo seed 8 5 7 4 step 5 temperature. a 1 point 1 3 e 1 0.
+q nucleo seed 8 5 7 4 step 5 next n_p_ratio. a 0 point 2 8 9.
+q nucleo seed 8 5 7 4 step 5 next helium3. a 0.
+nucleo seed 8 5 7 4 step 6. time 0 point 8 4 4. temperature 9 point 4 4 e 9. n_p_ratio 0 point 2 8 9. free_neutrons 0 point 2 2 4. hydrogen 0 point 7 7 6. helium 0. deuterium 0. stage decay.
+nucleo seed 8 5 7 4 step 7. time 1 point 2. temperature 7 point 9 2 e 9. n_p_ratio 0 point 2 8 9. free_neutrons 0 point 2 2 4. hydrogen 0 point 7 7 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 7 4 step 7 next deuterium. a 0.
+q nucleo seed 8 5 7 4 step 7 next lithium. a 0.
+nucleo seed 8 5 7 4 step 8. time 1 point 7 2. temperature 6 point 6 1 e 9. n_p_ratio 0 point 2 8 9. free_neutrons 0 point 2 2 4. hydrogen 0 point 7 7 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 7 4 step 8 next hydrogen. a 0 point 7 7 6.
+nucleo seed 8 5 7 4 step 9. time 2 point 4 5. temperature 5 point 5 4 e 9. n_p_ratio 0 point 2 8 8. free_neutrons 0 point 2 2 4. hydrogen 0 point 7 7 6. helium 0. deuterium 0. stage decay.
+nucleo seed 8 5 7 4 step 1 0. time 3 point 5. temperature 4 point 6 3 e 9. n_p_ratio 0 point 2 8 8. free_neutrons 0 point 2 2 3. hydrogen 0 point 7 7 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 7 4 step 1 0 free_neutrons. a 0 point 2 2 3.
+q nucleo seed 8 5 7 4 step 1 0 hydrogen. a 0 point 7 7 7.
+q nucleo seed 8 5 7 4 step 1 0 next hydrogen. a 0 point 7 7 7.
+nucleo seed 8 5 7 4 step 1 1. time 4 point 9 9. temperature 3 point 8 8 e 9. n_p_ratio 0 point 2 8 7. free_neutrons 0 point 2 2 3. hydrogen 0 point 7 7 7. helium 0. deuterium 0. stage decay.
+nucleo seed 8 5 7 4 step 1 2. time 7 point 1 2. temperature 3 point 2 5 e 9. n_p_ratio 0 point 2 8 6. free_neutrons 0 point 2 2 2. hydrogen 0 point 7 7 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 7 4 step 1 2 deuterium. a 0.
+nucleo seed 8 5 7 4 step 1 3. time 1 0 point 2. temperature 2 point 7 2 e 9. n_p_ratio 0 point 2 8 5. free_neutrons 0 point 2 2 2. hydrogen 0 point 7 7 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 7 4 step 1 3 helium3. a 0.
+nucleo seed 8 5 7 4 step 1 4. time 1 4 point 5. temperature 2 point 2 8 e 9. n_p_ratio 0 point 2 8 3. free_neutrons 0 point 2 2. hydrogen 0 point 7 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 7 4 step 1 4 lithium. a 0.
+nucleo seed 8 5 7 4 step 1 5. time 2 0 point 7. temperature 1 point 9 1 e 9. n_p_ratio 0 point 2 8. free_neutrons 0 point 2 1 9. hydrogen 0 point 7 8 1. helium 0. deuterium 0. stage decay.
+nucleo seed 8 5 7 4 step 1 6. time 2 9 point 5. temperature 1 point 6 e 9. n_p_ratio 0 point 2 7 6. free_neutrons 0 point 2 1 6. hydrogen 0 point 7 8 4. helium 0. deuterium 0. stage decay.
+nucleo seed 8 5 7 4 step 1 7. time 4 2 point 1. temperature 1 point 3 4 e 9. n_p_ratio 0 point 2 7 1. free_neutrons 0 point 2 1 3. hydrogen 0 point 7 8 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 7 4 step 1 7 lithium. a 0.
+nucleo seed 8 5 7 4 step 1 8. time 6 0 point 1. temperature 1 point 1 2 e 9. n_p_ratio 0 point 2 6 3. free_neutrons 0 point 2 0 8. hydrogen 0 point 7 9 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 7 4 step 1 8 free_neutrons. a 0 point 2 0 8.
+nucleo seed 8 5 7 4 step 1 9. time 8 5 point 8. temperature 9 point 3 6 e 8. n_p_ratio 0 point 2 5 3. free_neutrons 0 point 2 0 2. hydrogen 0 point 7 9 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 7 4 step 1 9 next lithium. a 8 point 5 e minus 1 2.
+nucleo seed 8 5 7 4 step 2 0. time 1 2 2. temperature 7 point 8 5 e 8. n_p_ratio 0 point 2 3 9. free_neutrons 0 point 1 8 4. hydrogen 0 point 7 9 8. helium 0 point 0 1 8 5. deuterium 1 point 9 e minus 6. stage bottleneck.
+q nucleo seed 8 5 7 4 step 2 0 next n_p_ratio. a 0 point 2 3 1.
+nucleo seed 8 5 7 4 step 2 1. time 1 7 5. temperature 6 point 5 5 e 8. n_p_ratio 0 point 2 3 1. free_neutrons 0 point 0 2 9 4. hydrogen 0 point 6 5 4. helium 0 point 3 1 6. deuterium 3 point 9 5 e minus 5. stage helium_forming.
+nucleo seed 8 5 7 4 step 2 2. time 2 4 9. temperature 5 point 5 e 8. n_p_ratio 0 point 2 2 9. free_neutrons 0 point 0 0 2 2 8. hydrogen 0 point 6 2 9. helium 0 point 3 6 8. deuterium 4 point 7 9 e minus 5. stage helium_forming.
+q nucleo seed 8 5 7 4 step 2 2 hydrogen. a 0 point 6 2 9.
+nucleo seed 8 5 7 4 step 2 3. time 3 5 5. temperature 4 point 6 e 8. n_p_ratio 0 point 2 2 9. free_neutrons 5 point 8 4 e minus 5. hydrogen 0 point 6 2 7. helium 0 point 3 7 3. deuterium 4 point 8 6 e minus 5. stage helium_forming.
+q nucleo seed 8 5 7 4 step 2 3 stage. a helium_forming.
+q nucleo seed 8 5 7 4 step 2 3 next temperature. a 3 point 8 5 e 8.
+q nucleo seed 8 5 7 4 step 2 3 next n_p_ratio. a 0 point 2 2 9.
+nucleo seed 8 5 7 4 step 2 4. time 5 0 7. temperature 3 point 8 5 e 8. n_p_ratio 0 point 2 2 9. free_neutrons 3 point 0 5 e minus 7. hydrogen 0 point 6 2 7. helium 0 point 3 7 3. deuterium 4 point 8 6 e minus 5. stage done.
+q nucleo seed 8 5 7 4 step 2 4 temperature. a 3 point 8 5 e 8.
+nucleo seed 8 5 7 4 step 2 5. time 7 2 4. temperature 3 point 2 2 e 8. n_p_ratio 0 point 2 2 9. free_neutrons 1 point 6 9 e minus 1 0. hydrogen 0 point 6 2 7. helium 0 point 3 7 3. deuterium 4 point 8 6 e minus 5. stage done.
+nucleo seed 8 5 7 4 step 2 6. time 1 0 3 0. temperature 2 point 7 e 8. n_p_ratio 0 point 2 2 9. free_neutrons 0. hydrogen 0 point 6 2 7. helium 0 point 3 7 3. deuterium 4 point 8 6 e minus 5. stage done.
+nucleo seed 8 5 7 4 step 2 7. time 1 4 7 0. temperature 2 point 2 6 e 8. n_p_ratio 0 point 2 2 9. free_neutrons 0. hydrogen 0 point 6 2 7. helium 0 point 3 7 3. deuterium 4 point 8 6 e minus 5. stage done.
+q nucleo seed 8 5 7 4 step 2 7 next time. a 2 1 0 0.
+nucleo seed 8 5 7 4 step 2 8. time 2 1 0 0. temperature 1 point 8 9 e 8. n_p_ratio 0 point 2 2 9. free_neutrons 0. hydrogen 0 point 6 2 7. helium 0 point 3 7 3. deuterium 4 point 8 6 e minus 5. stage done.
+q nucleo seed 8 5 7 4 step 2 8 n_p_ratio. a 0 point 2 2 9.
+nucleo seed 8 5 7 4 step 2 9. time 3 0 0 0. temperature 1 point 5 8 e 8. n_p_ratio 0 point 2 2 9. free_neutrons 0. hydrogen 0 point 6 2 7. helium 0 point 3 7 3. deuterium 4 point 8 6 e minus 5. stage done.
+q nucleo seed 8 5 7 4 step 2 9 deuterium. a 4 point 8 6 e minus 5.
+q nucleo seed 8 5 7 4 step 2 9 helium3. a 1 point 2 8 e minus 5.
+q nucleo seed 8 5 7 4 final helium. a 0 point 3 7 3.
+q nucleo seed 8 5 7 4 final hydrogen. a 0 point 6 2 7.
+q nucleo seed 8 5 7 4 final deuterium. a 4 point 8 6 e minus 5.
+q nucleo seed 8 5 7 4 final helium3. a 1 point 2 8 e minus 5.
+q nucleo seed 8 5 7 4 final lithium. a 2 point 1 8 e minus 1 0.
+q nucleo seed 8 5 7 4 final bottleneck_time. a 1 2 1.
+q nucleo seed 8 5 7 4 final bottleneck_n_p_ratio. a 0 point 2 4.
+q nucleo seed 8 5 7 4 final freeze_time. a 0 point 5 1 4.
+q nucleo seed 8 5 7 4 final peak_n_p_ratio. a 0 point 5 7 8.
+nucleo seed 6 2 5 6 params. eta_factor 0 point 4 9 9. tau_n 8 6 7. t_freeze 0 point 9 4 5. expansion_factor 1 point 2 6.
+q nucleo seed 6 2 5 6 param eta_factor. a 0 point 4 9 9.
+q nucleo seed 6 2 5 6 param tau_n. a 8 6 7.
+q nucleo seed 6 2 5 6 param t_freeze. a 0 point 9 4 5.
+q nucleo seed 6 2 5 6 param expansion_factor. a 1 point 2 6.
+nucleo seed 6 2 5 6 step 0. time 0 point 1. temperature 2 point 8 2 e 1 0. n_p_ratio 0 point 5 8 7. free_neutrons 0 point 3 7. hydrogen 0 point 6 3. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 2 5 6 step 0 next free_neutrons. a 0 point 3 4 6.
+nucleo seed 6 2 5 6 step 1. time 0 point 1 4 3. temperature 2 point 3 6 e 1 0. n_p_ratio 0 point 5 2 9. free_neutrons 0 point 3 4 6. hydrogen 0 point 6 5 4. helium 0. deuterium 0. stage plasma.
+nucleo seed 6 2 5 6 step 2. time 0 point 2 0 4. temperature 1 point 9 7 e 1 0. n_p_ratio 0 point 4 6 7. free_neutrons 0 point 3 1 8. hydrogen 0 point 6 8 2. helium 0. deuterium 0. stage plasma.
+nucleo seed 6 2 5 6 step 3. time 0 point 2 9 1. temperature 1 point 6 5 e 1 0. n_p_ratio 0 point 4 0 3. free_neutrons 0 point 2 8 7. hydrogen 0 point 7 1 3. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 2 5 6 step 3 helium. a 0.
+q nucleo seed 6 2 5 6 step 3 next lithium. a 0.
+q nucleo seed 6 2 5 6 step 3 next stage. a plasma.
+nucleo seed 6 2 5 6 step 4. time 0 point 4 1 5. temperature 1 point 3 8 e 1 0. n_p_ratio 0 point 3 3 8. free_neutrons 0 point 2 5 3. hydrogen 0 point 7 4 7. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 2 5 6 step 4 next stage. a plasma.
+nucleo seed 6 2 5 6 step 5. time 0 point 5 9 1. temperature 1 point 1 6 e 1 0. n_p_ratio 0 point 2 7 4. free_neutrons 0 point 2 1 5. hydrogen 0 point 7 8 5. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 2 5 6 step 5 next hydrogen. a 0 point 7 9 4.
+nucleo seed 6 2 5 6 step 6. time 0 point 8 4 4. temperature 9 point 7 e 9. n_p_ratio 0 point 2 5 9. free_neutrons 0 point 2 0 6. hydrogen 0 point 7 9 4. helium 0. deuterium 0. stage freeze_out.
+nucleo seed 6 2 5 6 step 7. time 1 point 2. temperature 8 point 1 3 e 9. n_p_ratio 0 point 2 5 9. free_neutrons 0 point 2 0 6. hydrogen 0 point 7 9 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 2 5 6 step 7 helium. a 0.
+nucleo seed 6 2 5 6 step 8. time 1 point 7 2. temperature 6 point 7 9 e 9. n_p_ratio 0 point 2 5 9. free_neutrons 0 point 2 0 5. hydrogen 0 point 7 9 5. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 2 5 6 step 8 next n_p_ratio. a 0 point 2 5 8.
+q nucleo seed 6 2 5 6 step 8 next hydrogen. a 0 point 7 9 5.
+nucleo seed 6 2 5 6 step 9. time 2 point 4 5. temperature 5 point 6 9 e 9. n_p_ratio 0 point 2 5 8. free_neutrons 0 point 2 0 5. hydrogen 0 point 7 9 5. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 2 5 6 step 9 next temperature. a 4 point 7 6 e 9.
+nucleo seed 6 2 5 6 step 1 0. time 3 point 5. temperature 4 point 7 6 e 9. n_p_ratio 0 point 2 5 8. free_neutrons 0 point 2 0 5. hydrogen 0 point 7 9 5. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 2 5 6 step 1 0 next temperature. a 3 point 9 9 e 9.
+q nucleo seed 6 2 5 6 step 1 0 next n_p_ratio. a 0 point 2 5 7.
+q nucleo seed 6 2 5 6 step 1 0 next deuterium. a 0.
+nucleo seed 6 2 5 6 step 1 1. time 4 point 9 9. temperature 3 point 9 9 e 9. n_p_ratio 0 point 2 5 7. free_neutrons 0 point 2 0 5. hydrogen 0 point 7 9 5. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 2 5 6 step 1 1 helium3. a 0.
+nucleo seed 6 2 5 6 step 1 2. time 7 point 1 2. temperature 3 point 3 4 e 9. n_p_ratio 0 point 2 5 7. free_neutrons 0 point 2 0 4. hydrogen 0 point 7 9 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 2 5 6 step 1 2 n_p_ratio. a 0 point 2 5 7.
+nucleo seed 6 2 5 6 step 1 3. time 1 0 point 2. temperature 2 point 7 9 e 9. n_p_ratio 0 point 2 5 5. free_neutrons 0 point 2 0 3. hydrogen 0 point 7 9 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 2 5 6 step 1 3 next hydrogen. a 0 point 7 9 8.
+nucleo seed 6 2 5 6 step 1 4. time 1 4 point 5. temperature 2 point 3 4 e 9. n_p_ratio 0 point 2 5 4. free_neutrons 0 point 2 0 2. hydrogen 0 point 7 9 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 2 5 6 step 1 4 next hydrogen. a 0 point 7 9 9.
+q nucleo seed 6 2 5 6 step 1 4 next helium3. a 0.
+nucleo seed 6 2 5 6 step 1 5. time 2 0 point 7. temperature 1 point 9 6 e 9. n_p_ratio 0 point 2 5 2. free_neutrons 0 point 2 0 1. hydrogen 0 point 7 9 9. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 2 5 6 step 1 5 next hydrogen. a 0 point 8 0 1.
+nucleo seed 6 2 5 6 step 1 6. time 2 9 point 5. temperature 1 point 6 4 e 9. n_p_ratio 0 point 2 4 8. free_neutrons 0 point 1 9 9. hydrogen 0 point 8 0 1. helium 0. deuterium 0. stage decay.
+nucleo seed 6 2 5 6 step 1 7. time 4 2 point 1. temperature 1 point 3 7 e 9. n_p_ratio 0 point 2 4 4. free_neutrons 0 point 1 9 6. hydrogen 0 point 8 0 4. helium 0. deuterium 0. stage decay.
+nucleo seed 6 2 5 6 step 1 8. time 6 0 point 1. temperature 1 point 1 5 e 9. n_p_ratio 0 point 2 3 8. free_neutrons 0 point 1 9 2. hydrogen 0 point 8 0 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 2 5 6 step 1 8 time. a 6 0 point 1.
+q nucleo seed 6 2 5 6 step 1 8 temperature. a 1 point 1 5 e 9.
+q nucleo seed 6 2 5 6 step 1 8 next temperature. a 9 point 6 2 e 8.
+nucleo seed 6 2 5 6 step 1 9. time 8 5 point 8. temperature 9 point 6 2 e 8. n_p_ratio 0 point 2 2 9. free_neutrons 0 point 1 8 6. hydrogen 0 point 8 1 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 2 5 6 step 1 9 next temperature. a 8 point 0 7 e 8.
+q nucleo seed 6 2 5 6 step 1 9 next helium3. a 0.
+nucleo seed 6 2 5 6 step 2 0. time 1 2 2. temperature 8 point 0 7 e 8. n_p_ratio 0 point 2 1 8. free_neutrons 0 point 1 7 9. hydrogen 0 point 8 2 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 2 5 6 step 2 0 next time. a 1 7 5.
+nucleo seed 6 2 5 6 step 2 1. time 1 7 5. temperature 6 point 7 3 e 8. n_p_ratio 0 point 2 0 9. free_neutrons 0 point 0 3 6 8. hydrogen 0 point 6 9 2. helium 0 point 2 7 2. deuterium 5 point 7 3 e minus 5. stage bottleneck.
+q nucleo seed 6 2 5 6 step 2 1 lithium. a 9 point 3 8 e minus 1 1.
+q nucleo seed 6 2 5 6 step 2 1 next time. a 2 4 9.
+nucleo seed 6 2 5 6 step 2 2. time 2 4 9. temperature 5 point 6 5 e 8. n_p_ratio 0 point 2 0 7. free_neutrons 0 point 0 0 2 8 7. hydrogen 0 point 6 6. helium 0 point 3 3 7. deuterium 7 point 4 5 e minus 5. stage helium_forming.
+q nucleo seed 6 2 5 6 step 2 2 free_neutrons. a 0 point 0 0 2 8 7.
+nucleo seed 6 2 5 6 step 2 3. time 3 5 5. temperature 4 point 7 3 e 8. n_p_ratio 0 point 2 0 7. free_neutrons 7 point 4 1 e minus 5. hydrogen 0 point 6 5 7. helium 0 point 3 4 3. deuterium 7 point 6 e minus 5. stage helium_forming.
+nucleo seed 6 2 5 6 step 2 4. time 5 0 7. temperature 3 point 9 6 e 8. n_p_ratio 0 point 2 0 7. free_neutrons 3 point 9 2 e minus 7. hydrogen 0 point 6 5 7. helium 0 point 3 4 3. deuterium 7 point 6 e minus 5. stage done.
+q nucleo seed 6 2 5 6 step 2 4 helium. a 0 point 3 4 3.
+q nucleo seed 6 2 5 6 step 2 4 next lithium. a 1 point 2 5 e minus 1 0.
+nucleo seed 6 2 5 6 step 2 5. time 7 2 4. temperature 3 point 3 1 e 8. n_p_ratio 0 point 2 0 7. free_neutrons 2 point 2 e minus 1 0. hydrogen 0 point 6 5 7. helium 0 point 3 4 3. deuterium 7 point 6 e minus 5. stage done.
+nucleo seed 6 2 5 6 step 2 6. time 1 0 3 0. temperature 2 point 7 8 e 8. n_p_ratio 0 point 2 0 7. free_neutrons 0. hydrogen 0 point 6 5 7. helium 0 point 3 4 3. deuterium 7 point 6 e minus 5. stage done.
+nucleo seed 6 2 5 6 step 2 7. time 1 4 7 0. temperature 2 point 3 2 e 8. n_p_ratio 0 point 2 0 7. free_neutrons 0. hydrogen 0 point 6 5 7. helium 0 point 3 4 3. deuterium 7 point 6 e minus 5. stage done.
+q nucleo seed 6 2 5 6 step 2 7 next time. a 2 1 0 0.
+nucleo seed 6 2 5 6 step 2 8. time 2 1 0 0. temperature 1 point 9 4 e 8. n_p_ratio 0 point 2 0 7. free_neutrons 0. hydrogen 0 point 6 5 7. helium 0 point 3 4 3. deuterium 7 point 6 e minus 5. stage done.
+q nucleo seed 6 2 5 6 step 2 8 next time. a 3 0 0 0.
+nucleo seed 6 2 5 6 step 2 9. time 3 0 0 0. temperature 1 point 6 3 e 8. n_p_ratio 0 point 2 0 7. free_neutrons 0. hydrogen 0 point 6 5 7. helium 0 point 3 4 3. deuterium 7 point 6 e minus 5. stage done.
+q nucleo seed 6 2 5 6 final helium. a 0 point 3 4 3.
+q nucleo seed 6 2 5 6 final hydrogen. a 0 point 6 5 7.
+q nucleo seed 6 2 5 6 final deuterium. a 7 point 6 e minus 5.
+q nucleo seed 6 2 5 6 final helium3. a 1 point 5 2 e minus 5.
+q nucleo seed 6 2 5 6 final lithium. a 1 point 2 5 e minus 1 0.
+q nucleo seed 6 2 5 6 final bottleneck_time. a 1 2 9.
+q nucleo seed 6 2 5 6 final bottleneck_n_p_ratio. a 0 point 2 1 6.
+q nucleo seed 6 2 5 6 final freeze_time. a 0 point 6 4 3.
+q nucleo seed 6 2 5 6 final peak_n_p_ratio. a 0 point 5 8 7.
+nucleo seed 9 5 params. eta_factor 1 point 7 3. tau_n 8 8 2. t_freeze 1 point 9 9. expansion_factor 1 point 0 2.
+q nucleo seed 9 5 param eta_factor. a 1 point 7 3.
+q nucleo seed 9 5 param tau_n. a 8 8 2.
+q nucleo seed 9 5 param t_freeze. a 1 point 9 9.
+q nucleo seed 9 5 param expansion_factor. a 1 point 0 2.
+nucleo seed 9 5 step 0. time 0 point 1. temperature 3 point 1 3 e 1 0. n_p_ratio 0 point 6 1 9. free_neutrons 0 point 3 8 2. hydrogen 0 point 6 1 8. helium 0. deuterium 0. stage plasma.
+nucleo seed 9 5 step 1. time 0 point 1 4 3. temperature 2 point 6 2 e 1 0. n_p_ratio 0 point 5 6 4. free_neutrons 0 point 3 6. hydrogen 0 point 6 4. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 5 step 1 helium. a 0.
+nucleo seed 9 5 step 2. time 0 point 2 0 4. temperature 2 point 1 9 e 1 0. n_p_ratio 0 point 5 0 4. free_neutrons 0 point 3 3 5. hydrogen 0 point 6 6 5. helium 0. deuterium 0. stage plasma.
+nucleo seed 9 5 step 3. time 0 point 2 9 1. temperature 1 point 8 4 e 1 0. n_p_ratio 0 point 4 4 1. free_neutrons 0 point 3 0 6. hydrogen 0 point 6 9 4. helium 0. deuterium 0. stage plasma.
+nucleo seed 9 5 step 4. time 0 point 4 1 5. temperature 1 point 5 4 e 1 0. n_p_ratio 0 point 3 7 7. free_neutrons 0 point 2 7 4. hydrogen 0 point 7 2 6. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 5 step 4 deuterium. a 0.
+nucleo seed 9 5 step 5. time 0 point 5 9 1. temperature 1 point 2 9 e 1 0. n_p_ratio 0 point 3 1 2. free_neutrons 0 point 2 3 8. hydrogen 0 point 7 6 2. helium 0. deuterium 0. stage plasma.
+nucleo seed 9 5 step 6. time 0 point 8 4 4. temperature 1 point 0 8 e 1 0. n_p_ratio 0 point 2 4 8. free_neutrons 0 point 1 9 9. hydrogen 0 point 8 0 1. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 5 step 6 next free_neutrons. a 0 point 1 6.
+nucleo seed 9 5 step 7. time 1 point 2. temperature 9 point 0 4 e 9. n_p_ratio 0 point 1 9. free_neutrons 0 point 1 6. hydrogen 0 point 8 4. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 5 step 7 helium. a 0.
+q nucleo seed 9 5 step 7 next lithium. a 0.
+nucleo seed 9 5 step 8. time 1 point 7 2. temperature 7 point 5 5 e 9. n_p_ratio 0 point 1 3 7. free_neutrons 0 point 1 2. hydrogen 0 point 8 8. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 5 step 8 helium. a 0.
+q nucleo seed 9 5 step 8 next stage. a freeze_out.
+nucleo seed 9 5 step 9. time 2 point 4 5. temperature 6 point 3 3 e 9. n_p_ratio 0 point 1 2 2. free_neutrons 0 point 1 0 9. hydrogen 0 point 8 9 1. helium 0. deuterium 0. stage freeze_out.
+q nucleo seed 9 5 step 9 free_neutrons. a 0 point 1 0 9.
+nucleo seed 9 5 step 1 0. time 3 point 5. temperature 5 point 2 9 e 9. n_p_ratio 0 point 1 2 2. free_neutrons 0 point 1 0 9. hydrogen 0 point 8 9 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 5 step 1 0 next helium. a 0.
+nucleo seed 9 5 step 1 1. time 4 point 9 9. temperature 4 point 4 3 e 9. n_p_ratio 0 point 1 2 2. free_neutrons 0 point 1 0 8. hydrogen 0 point 8 9 2. helium 0. deuterium 0. stage decay.
+nucleo seed 9 5 step 1 2. time 7 point 1 2. temperature 3 point 7 1 e 9. n_p_ratio 0 point 1 2 1. free_neutrons 0 point 1 0 8. hydrogen 0 point 8 9 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 5 step 1 2 helium3. a 0.
+nucleo seed 9 5 step 1 3. time 1 0 point 2. temperature 3 point 1 e 9. n_p_ratio 0 point 1 2 1. free_neutrons 0 point 1 0 8. hydrogen 0 point 8 9 2. helium 0. deuterium 0. stage decay.
+nucleo seed 9 5 step 1 4. time 1 4 point 5. temperature 2 point 6 e 9. n_p_ratio 0 point 1 2. free_neutrons 0 point 1 0 7. hydrogen 0 point 8 9 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 5 step 1 4 temperature. a 2 point 6 e 9.
+q nucleo seed 9 5 step 1 4 lithium. a 0.
+nucleo seed 9 5 step 1 5. time 2 0 point 7. temperature 2 point 1 8 e 9. n_p_ratio 0 point 1 1 9. free_neutrons 0 point 1 0 6. hydrogen 0 point 8 9 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 5 step 1 5 time. a 2 0 point 7.
+q nucleo seed 9 5 step 1 5 helium. a 0.
+q nucleo seed 9 5 step 1 5 next free_neutrons. a 0 point 1 0 5.
+nucleo seed 9 5 step 1 6. time 2 9 point 5. temperature 1 point 8 2 e 9. n_p_ratio 0 point 1 1 8. free_neutrons 0 point 1 0 5. hydrogen 0 point 8 9 5. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 5 step 1 6 next free_neutrons. a 0 point 1 0 4.
+nucleo seed 9 5 step 1 7. time 4 2 point 1. temperature 1 point 5 3 e 9. n_p_ratio 0 point 1 1 6. free_neutrons 0 point 1 0 4. hydrogen 0 point 8 9 6. helium 0. deuterium 0. stage decay.
+nucleo seed 9 5 step 1 8. time 6 0 point 1. temperature 1 point 2 8 e 9. n_p_ratio 0 point 1 1 3. free_neutrons 0 point 1 0 2. hydrogen 0 point 8 9 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 5 step 1 8 hydrogen. a 0 point 8 9 8.
+q nucleo seed 9 5 step 1 8 helium3. a 0.
+q nucleo seed 9 5 step 1 8 next helium3. a 0.
+nucleo seed 9 5 step 1 9. time 8 5 point 8. temperature 1 point 0 7 e 9. n_p_ratio 0 point 1 1. free_neutrons 0 point 0 9 8 9. hydrogen 0 point 9 0 1. helium 0. deuterium 0. stage decay.
+nucleo seed 9 5 step 2 0. time 1 2 2. temperature 8 point 9 6 e 8. n_p_ratio 0 point 1 0 5. free_neutrons 0 point 0 9 4 9. hydrogen 0 point 9 0 5. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 5 step 2 0 next temperature. a 7 point 4 8 e 8.
+q nucleo seed 9 5 step 2 0 next n_p_ratio. a 0 point 0 9 9 3.
+nucleo seed 9 5 step 2 1. time 1 7 5. temperature 7 point 4 8 e 8. n_p_ratio 0 point 0 9 9 3. free_neutrons 0 point 0 3 6 4. hydrogen 0 point 8 5 6. helium 0 point 1 0 8. deuterium 6 point 0 5 e minus 6. stage bottleneck.
+q nucleo seed 9 5 step 2 1 hydrogen. a 0 point 8 5 6.
+nucleo seed 9 5 step 2 2. time 2 4 9. temperature 6 point 2 7 e 8. n_p_ratio 0 point 0 9 8. free_neutrons 0 point 0 0 2 8 4. hydrogen 0 point 8 2 4. helium 0 point 1 7 3. deuterium 1 e minus 5. stage helium_forming.
+nucleo seed 9 5 step 2 3. time 3 5 5. temperature 5 point 2 6 e 8. n_p_ratio 0 point 0 9 7 9. free_neutrons 7 point 3 5 e minus 5. hydrogen 0 point 8 2 2. helium 0 point 1 7 8. deuterium 1 point 0 4 e minus 5. stage helium_forming.
+q nucleo seed 9 5 step 2 3 next temperature. a 4 point 4 e 8.
+q nucleo seed 9 5 step 2 3 next free_neutrons. a 3 point 9 e minus 7.
+q nucleo seed 9 5 step 2 3 next lithium. a 1 point 5 e minus 9.
+q nucleo seed 9 5 step 2 3 next stage. a done.
+nucleo seed 9 5 step 2 4. time 5 0 7. temperature 4 point 4 e 8. n_p_ratio 0 point 0 9 7 9. free_neutrons 3 point 9 e minus 7. hydrogen 0 point 8 2 2. helium 0 point 1 7 8. deuterium 1 point 0 4 e minus 5. stage done.
+q nucleo seed 9 5 step 2 4 next n_p_ratio. a 0 point 0 9 7 9.
+q nucleo seed 9 5 step 2 4 next hydrogen. a 0 point 8 2 2.
+q nucleo seed 9 5 step 2 4 next helium3. a 7 point 2 e minus 6.
+nucleo seed 9 5 step 2 5. time 7 2 4. temperature 3 point 6 8 e 8. n_p_ratio 0 point 0 9 7 9. free_neutrons 2 point 2 e minus 1 0. hydrogen 0 point 8 2 2. helium 0 point 1 7 8. deuterium 1 point 0 4 e minus 5. stage done.
+q nucleo seed 9 5 step 2 5 temperature. a 3 point 6 8 e 8.
+nucleo seed 9 5 step 2 6. time 1 0 3 0. temperature 3 point 0 9 e 8. n_p_ratio 0 point 0 9 7 9. free_neutrons 0. hydrogen 0 point 8 2 2. helium 0 point 1 7 8. deuterium 1 point 0 4 e minus 5. stage done.
+q nucleo seed 9 5 step 2 6 next free_neutrons. a 0.
+nucleo seed 9 5 step 2 7. time 1 4 7 0. temperature 2 point 5 8 e 8. n_p_ratio 0 point 0 9 7 9. free_neutrons 0. hydrogen 0 point 8 2 2. helium 0 point 1 7 8. deuterium 1 point 0 4 e minus 5. stage done.
+nucleo seed 9 5 step 2 8. time 2 1 0 0. temperature 2 point 1 6 e 8. n_p_ratio 0 point 0 9 7 9. free_neutrons 0. hydrogen 0 point 8 2 2. helium 0 point 1 7 8. deuterium 1 point 0 4 e minus 5. stage done.
+nucleo seed 9 5 step 2 9. time 3 0 0 0. temperature 1 point 8 1 e 8. n_p_ratio 0 point 0 9 7 9. free_neutrons 0. hydrogen 0 point 8 2 2. helium 0 point 1 7 8. deuterium 1 point 0 4 e minus 5. stage done.
+q nucleo seed 9 5 step 2 9 temperature. a 1 point 8 1 e 8.
+q nucleo seed 9 5 final helium. a 0 point 1 7 8.
+q nucleo seed 9 5 final hydrogen. a 0 point 8 2 2.
+q nucleo seed 9 5 final deuterium. a 1 point 0 4 e minus 5.
+q nucleo seed 9 5 final helium3. a 7 point 2 e minus 6.
+q nucleo seed 9 5 final lithium. a 1 point 5 e minus 9.
+q nucleo seed 9 5 final bottleneck_time. a 1 4 8.
+q nucleo seed 9 5 final bottleneck_n_p_ratio. a 0 point 1 0 2.
+q nucleo seed 9 5 final freeze_time. a 1 point 9 3.
+q nucleo seed 9 5 final peak_n_p_ratio. a 0 point 6 1 9.
+nucleo seed 5 7 7 9 params. eta_factor 1 point 2. tau_n 9 0 2. t_freeze 0 point 9 5 2. expansion_factor 0 point 8 9 1.
+q nucleo seed 5 7 7 9 param eta_factor. a 1 point 2.
+q nucleo seed 5 7 7 9 param tau_n. a 9 0 2.
+q nucleo seed 5 7 7 9 param t_freeze. a 0 point 9 5 2.
+q nucleo seed 5 7 7 9 param expansion_factor. a 0 point 8 9 1.
+nucleo seed 5 7 7 9 step 0. time 0 point 1. temperature 3 point 3 5 e 1 0. n_p_ratio 0 point 6 3 9. free_neutrons 0 point 3 9. hydrogen 0 point 6 1. helium 0. deuterium 0. stage plasma.
+nucleo seed 5 7 7 9 step 1. time 0 point 1 4 3. temperature 2 point 8 e 1 0. n_p_ratio 0 point 5 8 5. free_neutrons 0 point 3 6 9. hydrogen 0 point 6 3 1. helium 0. deuterium 0. stage plasma.
+q nucleo seed 5 7 7 9 step 1 time. a 0 point 1 4 3.
+nucleo seed 5 7 7 9 step 2. time 0 point 2 0 4. temperature 2 point 3 5 e 1 0. n_p_ratio 0 point 5 2 7. free_neutrons 0 point 3 4 5. hydrogen 0 point 6 5 5. helium 0. deuterium 0. stage plasma.
+q nucleo seed 5 7 7 9 step 2 helium3. a 0.
+nucleo seed 5 7 7 9 step 3. time 0 point 2 9 1. temperature 1 point 9 6 e 1 0. n_p_ratio 0 point 4 6 6. free_neutrons 0 point 3 1 8. hydrogen 0 point 6 8 2. helium 0. deuterium 0. stage plasma.
+q nucleo seed 5 7 7 9 step 3 time. a 0 point 2 9 1.
+nucleo seed 5 7 7 9 step 4. time 0 point 4 1 5. temperature 1 point 6 4 e 1 0. n_p_ratio 0 point 4 0 1. free_neutrons 0 point 2 8 6. hydrogen 0 point 7 1 4. helium 0. deuterium 0. stage plasma.
+nucleo seed 5 7 7 9 step 5. time 0 point 5 9 1. temperature 1 point 3 8 e 1 0. n_p_ratio 0 point 3 3 7. free_neutrons 0 point 2 5 2. hydrogen 0 point 7 4 8. helium 0. deuterium 0. stage plasma.
+q nucleo seed 5 7 7 9 step 5 helium. a 0.
+q nucleo seed 5 7 7 9 step 5 next n_p_ratio. a 0 point 2 7 2.
+q nucleo seed 5 7 7 9 step 5 next helium3. a 0.
+nucleo seed 5 7 7 9 step 6. time 0 point 8 4 4. temperature 1 point 1 5 e 1 0. n_p_ratio 0 point 2 7 2. free_neutrons 0 point 2 1 4. hydrogen 0 point 7 8 6. helium 0. deuterium 0. stage plasma.
+q nucleo seed 5 7 7 9 step 6 n_p_ratio. a 0 point 2 7 2.
+nucleo seed 5 7 7 9 step 7. time 1 point 2. temperature 9 point 6 7 e 9. n_p_ratio 0 point 2 1 8. free_neutrons 0 point 1 7 9. hydrogen 0 point 8 2 1. helium 0. deuterium 0. stage freeze_out.
+nucleo seed 5 7 7 9 step 8. time 1 point 7 2. temperature 8 point 0 8 e 9. n_p_ratio 0 point 2 1 8. free_neutrons 0 point 1 7 9. hydrogen 0 point 8 2 1. helium 0. deuterium 0. stage decay.
+nucleo seed 5 7 7 9 step 9. time 2 point 4 5. temperature 6 point 7 7 e 9. n_p_ratio 0 point 2 1 8. free_neutrons 0 point 1 7 9. hydrogen 0 point 8 2 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 7 7 9 step 9 next lithium. a 0.
+nucleo seed 5 7 7 9 step 1 0. time 3 point 5. temperature 5 point 6 6 e 9. n_p_ratio 0 point 2 1 8. free_neutrons 0 point 1 7 9. hydrogen 0 point 8 2 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 7 7 9 step 1 0 next time. a 4 point 9 9.
+nucleo seed 5 7 7 9 step 1 1. time 4 point 9 9. temperature 4 point 7 4 e 9. n_p_ratio 0 point 2 1 7. free_neutrons 0 point 1 7 8. hydrogen 0 point 8 2 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 7 7 9 step 1 1 lithium. a 0.
+q nucleo seed 5 7 7 9 step 1 1 next n_p_ratio. a 0 point 2 1 7.
+nucleo seed 5 7 7 9 step 1 2. time 7 point 1 2. temperature 3 point 9 7 e 9. n_p_ratio 0 point 2 1 7. free_neutrons 0 point 1 7 8. hydrogen 0 point 8 2 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 7 7 9 step 1 2 time. a 7 point 1 2.
+q nucleo seed 5 7 7 9 step 1 2 stage. a decay.
+nucleo seed 5 7 7 9 step 1 3. time 1 0 point 2. temperature 3 point 3 2 e 9. n_p_ratio 0 point 2 1 6. free_neutrons 0 point 1 7 7. hydrogen 0 point 8 2 3. helium 0. deuterium 0. stage decay.
+nucleo seed 5 7 7 9 step 1 4. time 1 4 point 5. temperature 2 point 7 8 e 9. n_p_ratio 0 point 2 1 4. free_neutrons 0 point 1 7 7. hydrogen 0 point 8 2 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 7 7 9 step 1 4 deuterium. a 0.
+q nucleo seed 5 7 7 9 step 1 4 stage. a decay.
+q nucleo seed 5 7 7 9 step 1 4 next deuterium. a 0.
+nucleo seed 5 7 7 9 step 1 5. time 2 0 point 7. temperature 2 point 3 3 e 9. n_p_ratio 0 point 2 1 3. free_neutrons 0 point 1 7 5. hydrogen 0 point 8 2 5. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 7 7 9 step 1 5 hydrogen. a 0 point 8 2 5.
+nucleo seed 5 7 7 9 step 1 6. time 2 9 point 5. temperature 1 point 9 5 e 9. n_p_ratio 0 point 2 1. free_neutrons 0 point 1 7 4. hydrogen 0 point 8 2 6. helium 0. deuterium 0. stage decay.
+nucleo seed 5 7 7 9 step 1 7. time 4 2 point 1. temperature 1 point 6 3 e 9. n_p_ratio 0 point 2 0 7. free_neutrons 0 point 1 7 1. hydrogen 0 point 8 2 9. helium 0. deuterium 0. stage decay.
+nucleo seed 5 7 7 9 step 1 8. time 6 0 point 1. temperature 1 point 3 7 e 9. n_p_ratio 0 point 2 0 2. free_neutrons 0 point 1 6 8. hydrogen 0 point 8 3 2. helium 0. deuterium 0. stage decay.
+nucleo seed 5 7 7 9 step 1 9. time 8 5 point 8. temperature 1 point 1 4 e 9. n_p_ratio 0 point 1 9 5. free_neutrons 0 point 1 6 3. hydrogen 0 point 8 3 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 7 7 9 step 1 9 temperature. a 1 point 1 4 e 9.
+nucleo seed 5 7 7 9 step 2 0. time 1 2 2. temperature 9 point 5 9 e 8. n_p_ratio 0 point 1 8 6. free_neutrons 0 point 1 5 7. hydrogen 0 point 8 4 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 5 7 7 9 step 2 0 next n_p_ratio. a 0 point 1 7 3.
+nucleo seed 5 7 7 9 step 2 1. time 1 7 5. temperature 8 point 0 1 e 8. n_p_ratio 0 point 1 7 3. free_neutrons 0 point 1 4. hydrogen 0 point 8 4 4. helium 0 point 0 1 5 5. deuterium 8 point 5 2 e minus 7. stage bottleneck.
+q nucleo seed 5 7 7 9 step 2 1 deuterium. a 8 point 5 2 e minus 7.
+nucleo seed 5 7 7 9 step 2 2. time 2 4 9. temperature 6 point 7 1 e 8. n_p_ratio 0 point 1 6 8. free_neutrons 0 point 0 1 0 9. hydrogen 0 point 7 2 4. helium 0 point 2 6 5. deuterium 1 point 7 e minus 5. stage helium_forming.
+q nucleo seed 5 7 7 9 step 2 2 n_p_ratio. a 0 point 1 6 8.
+nucleo seed 5 7 7 9 step 2 3. time 3 5 5. temperature 5 point 6 2 e 8. n_p_ratio 0 point 1 6 7. free_neutrons 2 point 8 4 e minus 4. hydrogen 0 point 7 1 4. helium 0 point 2 8 6. deuterium 1 point 8 6 e minus 5. stage helium_forming.
+q nucleo seed 5 7 7 9 step 2 3 free_neutrons. a 2 point 8 4 e minus 4.
+q nucleo seed 5 7 7 9 step 2 3 next deuterium. a 1 point 8 7 e minus 5.
+nucleo seed 5 7 7 9 step 2 4. time 5 0 7. temperature 4 point 7 e 8. n_p_ratio 0 point 1 6 7. free_neutrons 1 point 5 1 e minus 6. hydrogen 0 point 7 1 3. helium 0 point 2 8 7. deuterium 1 point 8 7 e minus 5. stage helium_forming.
+q nucleo seed 5 7 7 9 step 2 4 n_p_ratio. a 0 point 1 6 7.
+nucleo seed 5 7 7 9 step 2 5. time 7 2 4. temperature 3 point 9 4 e 8. n_p_ratio 0 point 1 6 7. free_neutrons 8 point 6 e minus 1 0. hydrogen 0 point 7 1 3. helium 0 point 2 8 7. deuterium 1 point 8 7 e minus 5. stage done.
+q nucleo seed 5 7 7 9 step 2 5 next stage. a done.
+nucleo seed 5 7 7 9 step 2 6. time 1 0 3 0. temperature 3 point 3 e 8. n_p_ratio 0 point 1 6 7. free_neutrons 0. hydrogen 0 point 7 1 3. helium 0 point 2 8 7. deuterium 1 point 8 7 e minus 5. stage done.
+q nucleo seed 5 7 7 9 step 2 6 helium3. a 8 point 9 6 e minus 6.
+q nucleo seed 5 7 7 9 step 2 6 next time. a 1 4 7 0.
+q nucleo seed 5 7 7 9 step 2 6 next helium. a 0 point 2 8 7.
+nucleo seed 5 7 7 9 step 2 7. time 1 4 7 0. temperature 2 point 7 6 e 8. n_p_ratio 0 point 1 6 7. free_neutrons 0. hydrogen 0 point 7 1 3. helium 0 point 2 8 7. deuterium 1 point 8 7 e minus 5. stage done.
+q nucleo seed 5 7 7 9 step 2 7 next deuterium. a 1 point 8 7 e minus 5.
+nucleo seed 5 7 7 9 step 2 8. time 2 1 0 0. temperature 2 point 3 1 e 8. n_p_ratio 0 point 1 6 7. free_neutrons 0. hydrogen 0 point 7 1 3. helium 0 point 2 8 7. deuterium 1 point 8 7 e minus 5. stage done.
+q nucleo seed 5 7 7 9 step 2 8 free_neutrons. a 0.
+q nucleo seed 5 7 7 9 step 2 8 lithium. a 7 point 2 e minus 1 0.
+q nucleo seed 5 7 7 9 step 2 8 next helium3. a 8 point 9 6 e minus 6.
+nucleo seed 5 7 7 9 step 2 9. time 3 0 0 0. temperature 1 point 9 3 e 8. n_p_ratio 0 point 1 6 7. free_neutrons 0. hydrogen 0 point 7 1 3. helium 0 point 2 8 7. deuterium 1 point 8 7 e minus 5. stage done.
+q nucleo seed 5 7 7 9 final helium. a 0 point 2 8 7.
+q nucleo seed 5 7 7 9 final hydrogen. a 0 point 7 1 3.
+q nucleo seed 5 7 7 9 final deuterium. a 1 point 8 7 e minus 5.
+q nucleo seed 5 7 7 9 final helium3. a 8 point 9 6 e minus 6.
+q nucleo seed 5 7 7 9 final lithium. a 7 point 2 e minus 1 0.
+q nucleo seed 5 7 7 9 final bottleneck_time. a 1 7 3.
+q nucleo seed 5 7 7 9 final bottleneck_n_p_ratio. a 0 point 1 7 4.
+q nucleo seed 5 7 7 9 final freeze_time. a 1 point 1 5.
+q nucleo seed 5 7 7 9 final peak_n_p_ratio. a 0 point 6 3 9.
+nucleo seed 9 0 4 3 params. eta_factor 0 point 5 3 9. tau_n 8 4 0. t_freeze 1 point 8 2. expansion_factor 1 point 0 7.
+q nucleo seed 9 0 4 3 param eta_factor. a 0 point 5 3 9.
+q nucleo seed 9 0 4 3 param tau_n. a 8 4 0.
+q nucleo seed 9 0 4 3 param t_freeze. a 1 point 8 2.
+q nucleo seed 9 0 4 3 param expansion_factor. a 1 point 0 7.
+nucleo seed 9 0 4 3 step 0. time 0 point 1. temperature 3 point 0 6 e 1 0. n_p_ratio 0 point 6 1 2. free_neutrons 0 point 3 8. hydrogen 0 point 6 2. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 0 4 3 step 0 n_p_ratio. a 0 point 6 1 2.
+nucleo seed 9 0 4 3 step 1. time 0 point 1 4 3. temperature 2 point 5 6 e 1 0. n_p_ratio 0 point 5 5 6. free_neutrons 0 point 3 5 7. hydrogen 0 point 6 4 3. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 0 4 3 step 1 helium3. a 0.
+nucleo seed 9 0 4 3 step 2. time 0 point 2 0 4. temperature 2 point 1 4 e 1 0. n_p_ratio 0 point 4 9 6. free_neutrons 0 point 3 3 2. hydrogen 0 point 6 6 8. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 0 4 3 step 2 hydrogen. a 0 point 6 6 8.
+q nucleo seed 9 0 4 3 step 2 helium. a 0.
+nucleo seed 9 0 4 3 step 3. time 0 point 2 9 1. temperature 1 point 7 9 e 1 0. n_p_ratio 0 point 4 3 3. free_neutrons 0 point 3 0 2. hydrogen 0 point 6 9 8. helium 0. deuterium 0. stage plasma.
+nucleo seed 9 0 4 3 step 4. time 0 point 4 1 5. temperature 1 point 5 e 1 0. n_p_ratio 0 point 3 6 8. free_neutrons 0 point 2 6 9. hydrogen 0 point 7 3 1. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 0 4 3 step 4 next deuterium. a 0.
+nucleo seed 9 0 4 3 step 5. time 0 point 5 9 1. temperature 1 point 2 6 e 1 0. n_p_ratio 0 point 3 0 3. free_neutrons 0 point 2 3 3. hydrogen 0 point 7 6 7. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 0 4 3 step 5 time. a 0 point 5 9 1.
+q nucleo seed 9 0 4 3 step 5 stage. a plasma.
+nucleo seed 9 0 4 3 step 6. time 0 point 8 4 4. temperature 1 point 0 5 e 1 0. n_p_ratio 0 point 2 4. free_neutrons 0 point 1 9 4. hydrogen 0 point 8 0 6. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 0 4 3 step 6 next helium. a 0.
+q nucleo seed 9 0 4 3 step 6 next deuterium. a 0.
+nucleo seed 9 0 4 3 step 7. time 1 point 2. temperature 8 point 8 3 e 9. n_p_ratio 0 point 1 8 3. free_neutrons 0 point 1 5 4. hydrogen 0 point 8 4 6. helium 0. deuterium 0. stage plasma.
+nucleo seed 9 0 4 3 step 8. time 1 point 7 2. temperature 7 point 3 7 e 9. n_p_ratio 0 point 1 3 8. free_neutrons 0 point 1 2 1. hydrogen 0 point 8 7 9. helium 0. deuterium 0. stage freeze_out.
+nucleo seed 9 0 4 3 step 9. time 2 point 4 5. temperature 6 point 1 8 e 9. n_p_ratio 0 point 1 3 8. free_neutrons 0 point 1 2 1. hydrogen 0 point 8 7 9. helium 0. deuterium 0. stage decay.
+nucleo seed 9 0 4 3 step 1 0. time 3 point 5. temperature 5 point 1 7 e 9. n_p_ratio 0 point 1 3 8. free_neutrons 0 point 1 2 1. hydrogen 0 point 8 7 9. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 0 4 3 step 1 0 temperature. a 5 point 1 7 e 9.
+q nucleo seed 9 0 4 3 step 1 0 next stage. a decay.
+nucleo seed 9 0 4 3 step 1 1. time 4 point 9 9. temperature 4 point 3 3 e 9. n_p_ratio 0 point 1 3 7. free_neutrons 0 point 1 2 1. hydrogen 0 point 8 7 9. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 0 4 3 step 1 1 stage. a decay.
+q nucleo seed 9 0 4 3 step 1 1 next hydrogen. a 0 point 8 7 9.
+nucleo seed 9 0 4 3 step 1 2. time 7 point 1 2. temperature 3 point 6 2 e 9. n_p_ratio 0 point 1 3 7. free_neutrons 0 point 1 2 1. hydrogen 0 point 8 7 9. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 0 4 3 step 1 2 n_p_ratio. a 0 point 1 3 7.
+nucleo seed 9 0 4 3 step 1 3. time 1 0 point 2. temperature 3 point 0 3 e 9. n_p_ratio 0 point 1 3 7. free_neutrons 0 point 1 2. hydrogen 0 point 8 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 0 4 3 step 1 3 temperature. a 3 point 0 3 e 9.
+nucleo seed 9 0 4 3 step 1 4. time 1 4 point 5. temperature 2 point 5 4 e 9. n_p_ratio 0 point 1 3 6. free_neutrons 0 point 1 2. hydrogen 0 point 8 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 0 4 3 step 1 4 temperature. a 2 point 5 4 e 9.
+q nucleo seed 9 0 4 3 step 1 4 helium3. a 0.
+q nucleo seed 9 0 4 3 step 1 4 lithium. a 0.
+nucleo seed 9 0 4 3 step 1 5. time 2 0 point 7. temperature 2 point 1 2 e 9. n_p_ratio 0 point 1 3 5. free_neutrons 0 point 1 1 9. hydrogen 0 point 8 8 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 0 4 3 step 1 5 time. a 2 0 point 7.
+nucleo seed 9 0 4 3 step 1 6. time 2 9 point 5. temperature 1 point 7 8 e 9. n_p_ratio 0 point 1 3 3. free_neutrons 0 point 1 1 7. hydrogen 0 point 8 8 3. helium 0. deuterium 0. stage decay.
+nucleo seed 9 0 4 3 step 1 7. time 4 2 point 1. temperature 1 point 4 9 e 9. n_p_ratio 0 point 1 3 1. free_neutrons 0 point 1 1 6. hydrogen 0 point 8 8 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 0 4 3 step 1 7 next free_neutrons. a 0 point 1 1 3.
+nucleo seed 9 0 4 3 step 1 8. time 6 0 point 1. temperature 1 point 2 5 e 9. n_p_ratio 0 point 1 2 8. free_neutrons 0 point 1 1 3. hydrogen 0 point 8 8 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 0 4 3 step 1 8 deuterium. a 0.
+nucleo seed 9 0 4 3 step 1 9. time 8 5 point 8. temperature 1 point 0 4 e 9. n_p_ratio 0 point 1 2 3. free_neutrons 0 point 1 1. hydrogen 0 point 8 9. helium 0. deuterium 0. stage decay.
+nucleo seed 9 0 4 3 step 2 0. time 1 2 2. temperature 8 point 7 5 e 8. n_p_ratio 0 point 1 1 8. free_neutrons 0 point 1 0 5. hydrogen 0 point 8 9 5. helium 0. deuterium 0. stage decay.
+nucleo seed 9 0 4 3 step 2 1. time 1 7 5. temperature 7 point 3 1 e 8. n_p_ratio 0 point 1 1 1. free_neutrons 0 point 0 4 5 4. hydrogen 0 point 8 4 6. helium 0 point 1 0 8. deuterium 3 point 5 3 e minus 5. stage bottleneck.
+q nucleo seed 9 0 4 3 step 2 1 lithium. a 7 point 6 3 e minus 1 1.
+q nucleo seed 9 0 4 3 step 2 1 next temperature. a 6 point 1 3 e 8.
+nucleo seed 9 0 4 3 step 2 2. time 2 4 9. temperature 6 point 1 3 e 8. n_p_ratio 0 point 1 0 9. free_neutrons 0 point 0 0 3 5 3. hydrogen 0 point 8 0 7. helium 0 point 1 8 9. deuterium 6 point 4 6 e minus 5. stage helium_forming.
+q nucleo seed 9 0 4 3 step 2 2 time. a 2 4 9.
+q nucleo seed 9 0 4 3 step 2 2 next helium3. a 1 point 4 5 e minus 5.
+nucleo seed 9 0 4 3 step 2 3. time 3 5 5. temperature 5 point 1 3 e 8. n_p_ratio 0 point 1 0 9. free_neutrons 9 point 0 8 e minus 5. hydrogen 0 point 8 0 4. helium 0 point 1 9 6. deuterium 6 point 7 1 e minus 5. stage helium_forming.
+q nucleo seed 9 0 4 3 step 2 3 hydrogen. a 0 point 8 0 4.
+nucleo seed 9 0 4 3 step 2 4. time 5 0 7. temperature 4 point 2 9 e 8. n_p_ratio 0 point 1 0 9. free_neutrons 4 point 7 7 e minus 7. hydrogen 0 point 8 0 4. helium 0 point 1 9 6. deuterium 6 point 7 2 e minus 5. stage done.
+nucleo seed 9 0 4 3 step 2 5. time 7 2 4. temperature 3 point 5 9 e 8. n_p_ratio 0 point 1 0 9. free_neutrons 2 point 6 6 e minus 1 0. hydrogen 0 point 8 0 4. helium 0 point 1 9 6. deuterium 6 point 7 2 e minus 5. stage done.
+nucleo seed 9 0 4 3 step 2 6. time 1 0 3 0. temperature 3 point 0 1 e 8. n_p_ratio 0 point 1 0 9. free_neutrons 0. hydrogen 0 point 8 0 4. helium 0 point 1 9 6. deuterium 6 point 7 2 e minus 5. stage done.
+q nucleo seed 9 0 4 3 step 2 6 next temperature. a 2 point 5 2 e 8.
+nucleo seed 9 0 4 3 step 2 7. time 1 4 7 0. temperature 2 point 5 2 e 8. n_p_ratio 0 point 1 0 9. free_neutrons 0. hydrogen 0 point 8 0 4. helium 0 point 1 9 6. deuterium 6 point 7 2 e minus 5. stage done.
+q nucleo seed 9 0 4 3 step 2 7 n_p_ratio. a 0 point 1 0 9.
+q nucleo seed 9 0 4 3 step 2 7 next temperature. a 2 point 1 1 e 8.
+q nucleo seed 9 0 4 3 step 2 7 next helium. a 0 point 1 9 6.
+q nucleo seed 9 0 4 3 step 2 7 next helium3. a 1 point 4 5 e minus 5.
+nucleo seed 9 0 4 3 step 2 8. time 2 1 0 0. temperature 2 point 1 1 e 8. n_p_ratio 0 point 1 0 9. free_neutrons 0. hydrogen 0 point 8 0 4. helium 0 point 1 9 6. deuterium 6 point 7 2 e minus 5. stage done.
+q nucleo seed 9 0 4 3 step 2 8 helium. a 0 point 1 9 6.
+nucleo seed 9 0 4 3 step 2 9. time 3 0 0 0. temperature 1 point 7 7 e 8. n_p_ratio 0 point 1 0 9. free_neutrons 0. hydrogen 0 point 8 0 4. helium 0 point 1 9 6. deuterium 6 point 7 2 e minus 5. stage done.
+q nucleo seed 9 0 4 3 final helium. a 0 point 1 9 6.
+q nucleo seed 9 0 4 3 final hydrogen. a 0 point 8 0 4.
+q nucleo seed 9 0 4 3 final deuterium. a 6 point 7 2 e minus 5.
+q nucleo seed 9 0 4 3 final helium3. a 1 point 4 5 e minus 5.
+q nucleo seed 9 0 4 3 final lithium. a 1 point 4 5 e minus 1 0.
+q nucleo seed 9 0 4 3 final bottleneck_time. a 1 5 2.
+q nucleo seed 9 0 4 3 final bottleneck_n_p_ratio. a 0 point 1 1 3.
+q nucleo seed 9 0 4 3 final freeze_time. a 1 point 6 3.
+q nucleo seed 9 0 4 3 final peak_n_p_ratio. a 0 point 6 1 2.
+nucleo seed 6 6 5 1 params. eta_factor 0 point 3 5 5. tau_n 9 3 2. t_freeze 1 point 1. expansion_factor 0 point 7 4 5.
+q nucleo seed 6 6 5 1 param eta_factor. a 0 point 3 5 5.
+q nucleo seed 6 6 5 1 param tau_n. a 9 3 2.
+q nucleo seed 6 6 5 1 param t_freeze. a 1 point 1.
+q nucleo seed 6 6 5 1 param expansion_factor. a 0 point 7 4 5.
+nucleo seed 6 6 5 1 step 0. time 0 point 1. temperature 3 point 6 6 e 1 0. n_p_ratio 0 point 6 6 4. free_neutrons 0 point 3 9 9. hydrogen 0 point 6 0 1. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 6 5 1 step 0 next helium. a 0.
+nucleo seed 6 6 5 1 step 1. time 0 point 1 4 3. temperature 3 point 0 6 e 1 0. n_p_ratio 0 point 6 1 3. free_neutrons 0 point 3 8. hydrogen 0 point 6 2. helium 0. deuterium 0. stage plasma.
+nucleo seed 6 6 5 1 step 2. time 0 point 2 0 4. temperature 2 point 5 7 e 1 0. n_p_ratio 0 point 5 5 7. free_neutrons 0 point 3 5 8. hydrogen 0 point 6 4 2. helium 0. deuterium 0. stage plasma.
+nucleo seed 6 6 5 1 step 3. time 0 point 2 9 1. temperature 2 point 1 5 e 1 0. n_p_ratio 0 point 4 9 7. free_neutrons 0 point 3 3 2. hydrogen 0 point 6 6 8. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 6 5 1 step 3 lithium. a 0.
+nucleo seed 6 6 5 1 step 4. time 0 point 4 1 5. temperature 1 point 8 e 1 0. n_p_ratio 0 point 4 3 4. free_neutrons 0 point 3 0 3. hydrogen 0 point 6 9 7. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 6 5 1 step 4 helium3. a 0.
+q nucleo seed 6 6 5 1 step 4 next n_p_ratio. a 0 point 3 6 9.
+nucleo seed 6 6 5 1 step 5. time 0 point 5 9 1. temperature 1 point 5 1 e 1 0. n_p_ratio 0 point 3 6 9. free_neutrons 0 point 2 7. hydrogen 0 point 7 3. helium 0. deuterium 0. stage plasma.
+nucleo seed 6 6 5 1 step 6. time 0 point 8 4 4. temperature 1 point 2 6 e 1 0. n_p_ratio 0 point 3 0 4. free_neutrons 0 point 2 3 3. hydrogen 0 point 7 6 7. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 6 5 1 step 6 next temperature. a 1 point 0 6 e 1 0.
+nucleo seed 6 6 5 1 step 7. time 1 point 2. temperature 1 point 0 6 e 1 0. n_p_ratio 0 point 2 4 2. free_neutrons 0 point 1 9 5. hydrogen 0 point 8 0 5. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 6 5 1 step 7 next helium. a 0.
+nucleo seed 6 6 5 1 step 8. time 1 point 7 2. temperature 8 point 8 3 e 9. n_p_ratio 0 point 1 8 3. free_neutrons 0 point 1 5 5. hydrogen 0 point 8 4 5. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 6 5 1 step 8 next deuterium. a 0.
+nucleo seed 6 6 5 1 step 9. time 2 point 4 5. temperature 7 point 4 e 9. n_p_ratio 0 point 1 7 6. free_neutrons 0 point 1 5. hydrogen 0 point 8 5. helium 0. deuterium 0. stage freeze_out.
+nucleo seed 6 6 5 1 step 1 0. time 3 point 5. temperature 6 point 1 9 e 9. n_p_ratio 0 point 1 7 6. free_neutrons 0 point 1 4 9. hydrogen 0 point 8 5 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 6 5 1 step 1 0 helium. a 0.
+q nucleo seed 6 6 5 1 step 1 0 stage. a decay.
+q nucleo seed 6 6 5 1 step 1 0 next time. a 4 point 9 9.
+nucleo seed 6 6 5 1 step 1 1. time 4 point 9 9. temperature 5 point 1 9 e 9. n_p_ratio 0 point 1 7 5. free_neutrons 0 point 1 4 9. hydrogen 0 point 8 5 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 6 5 1 step 1 1 next helium. a 0.
+nucleo seed 6 6 5 1 step 1 2. time 7 point 1 2. temperature 4 point 3 4 e 9. n_p_ratio 0 point 1 7 5. free_neutrons 0 point 1 4 9. hydrogen 0 point 8 5 1. helium 0. deuterium 0. stage decay.
+nucleo seed 6 6 5 1 step 1 3. time 1 0 point 2. temperature 3 point 6 3 e 9. n_p_ratio 0 point 1 7 4. free_neutrons 0 point 1 4 8. hydrogen 0 point 8 5 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 6 5 1 step 1 3 deuterium. a 0.
+nucleo seed 6 6 5 1 step 1 4. time 1 4 point 5. temperature 3 point 0 4 e 9. n_p_ratio 0 point 1 7 3. free_neutrons 0 point 1 4 8. hydrogen 0 point 8 5 2. helium 0. deuterium 0. stage decay.
+nucleo seed 6 6 5 1 step 1 5. time 2 0 point 7. temperature 2 point 5 5 e 9. n_p_ratio 0 point 1 7 2. free_neutrons 0 point 1 4 7. hydrogen 0 point 8 5 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 6 5 1 step 1 5 next hydrogen. a 0 point 8 5 5.
+nucleo seed 6 6 5 1 step 1 6. time 2 9 point 5. temperature 2 point 1 3 e 9. n_p_ratio 0 point 1 7. free_neutrons 0 point 1 4 5. hydrogen 0 point 8 5 5. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 6 5 1 step 1 6 n_p_ratio. a 0 point 1 7.
+q nucleo seed 6 6 5 1 step 1 6 next hydrogen. a 0 point 8 5 7.
+nucleo seed 6 6 5 1 step 1 7. time 4 2 point 1. temperature 1 point 7 9 e 9. n_p_ratio 0 point 1 6 7. free_neutrons 0 point 1 4 3. hydrogen 0 point 8 5 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 6 5 1 step 1 7 free_neutrons. a 0 point 1 4 3.
+q nucleo seed 6 6 5 1 step 1 7 next free_neutrons. a 0 point 1 4 1.
+nucleo seed 6 6 5 1 step 1 8. time 6 0 point 1. temperature 1 point 4 9 e 9. n_p_ratio 0 point 1 6 4. free_neutrons 0 point 1 4 1. hydrogen 0 point 8 5 9. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 6 5 1 step 1 8 next free_neutrons. a 0 point 1 3 7.
+q nucleo seed 6 6 5 1 step 1 8 next hydrogen. a 0 point 8 6 3.
+nucleo seed 6 6 5 1 step 1 9. time 8 5 point 8. temperature 1 point 2 5 e 9. n_p_ratio 0 point 1 5 9. free_neutrons 0 point 1 3 7. hydrogen 0 point 8 6 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 6 5 1 step 1 9 time. a 8 5 point 8.
+q nucleo seed 6 6 5 1 step 1 9 next temperature. a 1 point 0 5 e 9.
+q nucleo seed 6 6 5 1 step 1 9 next lithium. a 0.
+nucleo seed 6 6 5 1 step 2 0. time 1 2 2. temperature 1 point 0 5 e 9. n_p_ratio 0 point 1 5 2. free_neutrons 0 point 1 3 2. hydrogen 0 point 8 6 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 6 5 1 step 2 0 helium. a 0.
+nucleo seed 6 6 5 1 step 2 1. time 1 7 5. temperature 8 point 7 6 e 8. n_p_ratio 0 point 1 4 2. free_neutrons 0 point 1 2 4. hydrogen 0 point 8 7 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 6 5 1 step 2 1 next helium3. a 1 point 0 3 e minus 5.
+nucleo seed 6 6 5 1 step 2 2. time 2 4 9. temperature 7 point 3 4 e 8. n_p_ratio 0 point 1 3 1. free_neutrons 0 point 0 4 9. hydrogen 0 point 8 1 7. helium 0 point 1 3 4. deuterium 7 point 2 4 e minus 5. stage bottleneck.
+nucleo seed 6 6 5 1 step 2 3. time 3 5 5. temperature 6 point 1 5 e 8. n_p_ratio 0 point 1 2 9. free_neutrons 0 point 0 0 1 2 8. hydrogen 0 point 7 7 2. helium 0 point 2 2 6. deuterium 1 point 2 9 e minus 4. stage helium_forming.
+nucleo seed 6 6 5 1 step 2 4. time 5 0 7. temperature 5 point 1 5 e 8. n_p_ratio 0 point 1 2 9. free_neutrons 6 point 8 3 e minus 6. hydrogen 0 point 7 7 1. helium 0 point 2 2 9. deuterium 1 point 3 1 e minus 4. stage helium_forming.
+q nucleo seed 6 6 5 1 step 2 4 helium3. a 1 point 8 6 e minus 5.
+q nucleo seed 6 6 5 1 step 2 4 next hydrogen. a 0 point 7 7 1.
+q nucleo seed 6 6 5 1 step 2 4 next helium. a 0 point 2 2 9.
+nucleo seed 6 6 5 1 step 2 5. time 7 2 4. temperature 4 point 3 1 e 8. n_p_ratio 0 point 1 2 9. free_neutrons 3 point 9 1 e minus 9. hydrogen 0 point 7 7 1. helium 0 point 2 2 9. deuterium 1 point 3 1 e minus 4. stage done.
+q nucleo seed 6 6 5 1 step 2 5 time. a 7 2 4.
+q nucleo seed 6 6 5 1 step 2 5 free_neutrons. a 3 point 9 1 e minus 9.
+nucleo seed 6 6 5 1 step 2 6. time 1 0 3 0. temperature 3 point 6 1 e 8. n_p_ratio 0 point 1 2 9. free_neutrons 0. hydrogen 0 point 7 7 1. helium 0 point 2 2 9. deuterium 1 point 3 1 e minus 4. stage done.
+q nucleo seed 6 6 5 1 step 2 6 helium. a 0 point 2 2 9.
+q nucleo seed 6 6 5 1 step 2 6 next helium. a 0 point 2 2 9.
+nucleo seed 6 6 5 1 step 2 7. time 1 4 7 0. temperature 3 point 0 2 e 8. n_p_ratio 0 point 1 2 9. free_neutrons 0. hydrogen 0 point 7 7 1. helium 0 point 2 2 9. deuterium 1 point 3 1 e minus 4. stage done.
+nucleo seed 6 6 5 1 step 2 8. time 2 1 0 0. temperature 2 point 5 3 e 8. n_p_ratio 0 point 1 2 9. free_neutrons 0. hydrogen 0 point 7 7 1. helium 0 point 2 2 9. deuterium 1 point 3 1 e minus 4. stage done.
+q nucleo seed 6 6 5 1 step 2 8 next temperature. a 2 point 1 2 e 8.
+nucleo seed 6 6 5 1 step 2 9. time 3 0 0 0. temperature 2 point 1 2 e 8. n_p_ratio 0 point 1 2 9. free_neutrons 0. hydrogen 0 point 7 7 1. helium 0 point 2 2 9. deuterium 1 point 3 1 e minus 4. stage done.
+q nucleo seed 6 6 5 1 final helium. a 0 point 2 2 9.
+q nucleo seed 6 6 5 1 final hydrogen. a 0 point 7 7 1.
+q nucleo seed 6 6 5 1 final deuterium. a 1 point 3 1 e minus 4.
+q nucleo seed 6 6 5 1 final helium3. a 1 point 8 6 e minus 5.
+q nucleo seed 6 6 5 1 final lithium. a 6 point 3 e minus 1 1.
+q nucleo seed 6 6 5 1 final bottleneck_time. a 2 2 3.
+q nucleo seed 6 6 5 1 final bottleneck_n_p_ratio. a 0 point 1 3 4.
+q nucleo seed 6 6 5 1 final freeze_time. a 1 point 8.
+q nucleo seed 6 6 5 1 final peak_n_p_ratio. a 0 point 6 6 4.
+nucleo seed 6 9 2 2 params. eta_factor 2 point 3 8. tau_n 9 3 9. t_freeze 1 point 3 9. expansion_factor 0 point 8 4 7.
+q nucleo seed 6 9 2 2 param eta_factor. a 2 point 3 8.
+q nucleo seed 6 9 2 2 param tau_n. a 9 3 9.
+q nucleo seed 6 9 2 2 param t_freeze. a 1 point 3 9.
+q nucleo seed 6 9 2 2 param expansion_factor. a 0 point 8 4 7.
+nucleo seed 6 9 2 2 step 0. time 0 point 1. temperature 3 point 4 4 e 1 0. n_p_ratio 0 point 6 4 6. free_neutrons 0 point 3 9 3. hydrogen 0 point 6 0 7. helium 0. deuterium 0. stage plasma.
+nucleo seed 6 9 2 2 step 1. time 0 point 1 4 3. temperature 2 point 8 7 e 1 0. n_p_ratio 0 point 5 9 3. free_neutrons 0 point 3 7 2. hydrogen 0 point 6 2 8. helium 0. deuterium 0. stage plasma.
+nucleo seed 6 9 2 2 step 2. time 0 point 2 0 4. temperature 2 point 4 1 e 1 0. n_p_ratio 0 point 5 3 6. free_neutrons 0 point 3 4 9. hydrogen 0 point 6 5 1. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 9 2 2 step 2 time. a 0 point 2 0 4.
+q nucleo seed 6 9 2 2 step 2 next hydrogen. a 0 point 6 7 8.
+nucleo seed 6 9 2 2 step 3. time 0 point 2 9 1. temperature 2 point 0 1 e 1 0. n_p_ratio 0 point 4 7 5. free_neutrons 0 point 3 2 2. hydrogen 0 point 6 7 8. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 9 2 2 step 3 free_neutrons. a 0 point 3 2 2.
+q nucleo seed 6 9 2 2 step 3 next free_neutrons. a 0 point 2 9 1.
+nucleo seed 6 9 2 2 step 4. time 0 point 4 1 5. temperature 1 point 6 9 e 1 0. n_p_ratio 0 point 4 1 1. free_neutrons 0 point 2 9 1. hydrogen 0 point 7 0 9. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 9 2 2 step 4 time. a 0 point 4 1 5.
+q nucleo seed 6 9 2 2 step 4 next lithium. a 0.
+nucleo seed 6 9 2 2 step 5. time 0 point 5 9 1. temperature 1 point 4 1 e 1 0. n_p_ratio 0 point 3 4 6. free_neutrons 0 point 2 5 7. hydrogen 0 point 7 4 3. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 9 2 2 step 5 free_neutrons. a 0 point 2 5 7.
+nucleo seed 6 9 2 2 step 6. time 0 point 8 4 4. temperature 1 point 1 8 e 1 0. n_p_ratio 0 point 2 8 1. free_neutrons 0 point 2 1 9. hydrogen 0 point 7 8 1. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 9 2 2 step 6 n_p_ratio. a 0 point 2 8 1.
+nucleo seed 6 9 2 2 step 7. time 1 point 2. temperature 9 point 9 2 e 9. n_p_ratio 0 point 2 2. free_neutrons 0 point 1 8. hydrogen 0 point 8 2. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 9 2 2 step 7 deuterium. a 0.
+nucleo seed 6 9 2 2 step 8. time 1 point 7 2. temperature 8 point 2 9 e 9. n_p_ratio 0 point 1 6 3. free_neutrons 0 point 1 4. hydrogen 0 point 8 6. helium 0. deuterium 0. stage plasma.
+q nucleo seed 6 9 2 2 step 8 next helium. a 0.
+nucleo seed 6 9 2 2 step 9. time 2 point 4 5. temperature 6 point 9 4 e 9. n_p_ratio 0 point 1 5 4. free_neutrons 0 point 1 3 3. hydrogen 0 point 8 6 7. helium 0. deuterium 0. stage freeze_out.
+q nucleo seed 6 9 2 2 step 9 next time. a 3 point 5.
+q nucleo seed 6 9 2 2 step 9 next hydrogen. a 0 point 8 6 7.
+nucleo seed 6 9 2 2 step 1 0. time 3 point 5. temperature 5 point 8 1 e 9. n_p_ratio 0 point 1 5 4. free_neutrons 0 point 1 3 3. hydrogen 0 point 8 6 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 9 2 2 step 1 0 lithium. a 0.
+q nucleo seed 6 9 2 2 step 1 0 next free_neutrons. a 0 point 1 3 3.
+nucleo seed 6 9 2 2 step 1 1. time 4 point 9 9. temperature 4 point 8 6 e 9. n_p_ratio 0 point 1 5 3. free_neutrons 0 point 1 3 3. hydrogen 0 point 8 6 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 9 2 2 step 1 1 helium. a 0.
+nucleo seed 6 9 2 2 step 1 2. time 7 point 1 2. temperature 4 point 0 7 e 9. n_p_ratio 0 point 1 5 3. free_neutrons 0 point 1 3 3. hydrogen 0 point 8 6 7. helium 0. deuterium 0. stage decay.
+nucleo seed 6 9 2 2 step 1 3. time 1 0 point 2. temperature 3 point 4 e 9. n_p_ratio 0 point 1 5 3. free_neutrons 0 point 1 3 2. hydrogen 0 point 8 6 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 9 2 2 step 1 3 next time. a 1 4 point 5.
+nucleo seed 6 9 2 2 step 1 4. time 1 4 point 5. temperature 2 point 8 5 e 9. n_p_ratio 0 point 1 5 2. free_neutrons 0 point 1 3 2. hydrogen 0 point 8 6 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 9 2 2 step 1 4 next deuterium. a 0.
+q nucleo seed 6 9 2 2 step 1 4 next stage. a decay.
+nucleo seed 6 9 2 2 step 1 5. time 2 0 point 7. temperature 2 point 3 9 e 9. n_p_ratio 0 point 1 5 1. free_neutrons 0 point 1 3 1. hydrogen 0 point 8 6 9. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 9 2 2 step 1 5 lithium. a 0.
+nucleo seed 6 9 2 2 step 1 6. time 2 9 point 5. temperature 2 e 9. n_p_ratio 0 point 1 4 9. free_neutrons 0 point 1 3. hydrogen 0 point 8 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 9 2 2 step 1 6 next temperature. a 1 point 6 7 e 9.
+q nucleo seed 6 9 2 2 step 1 6 next free_neutrons. a 0 point 1 2 8.
+nucleo seed 6 9 2 2 step 1 7. time 4 2 point 1. temperature 1 point 6 7 e 9. n_p_ratio 0 point 1 4 7. free_neutrons 0 point 1 2 8. hydrogen 0 point 8 7 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 9 2 2 step 1 7 next n_p_ratio. a 0 point 1 4 3.
+nucleo seed 6 9 2 2 step 1 8. time 6 0 point 1. temperature 1 point 4 e 9. n_p_ratio 0 point 1 4 3. free_neutrons 0 point 1 2 5. hydrogen 0 point 8 7 5. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 9 2 2 step 1 8 n_p_ratio. a 0 point 1 4 3.
+nucleo seed 6 9 2 2 step 1 9. time 8 5 point 8. temperature 1 point 1 7 e 9. n_p_ratio 0 point 1 3 9. free_neutrons 0 point 1 2 2. hydrogen 0 point 8 7 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 6 9 2 2 step 1 9 next hydrogen. a 0 point 8 8 3.
+nucleo seed 6 9 2 2 step 2 0. time 1 2 2. temperature 9 point 8 4 e 8. n_p_ratio 0 point 1 3 3. free_neutrons 0 point 1 1 7. hydrogen 0 point 8 8 3. helium 0. deuterium 0. stage decay.
+nucleo seed 6 9 2 2 step 2 1. time 1 7 5. temperature 8 point 2 1 e 8. n_p_ratio 0 point 1 2 5. free_neutrons 0 point 1 1. hydrogen 0 point 8 8 8. helium 0 point 0 0 2 2 6. deuterium 5 point 7 8 e minus 8. stage bottleneck.
+q nucleo seed 6 9 2 2 step 2 1 helium3. a 5 point 5 1 e minus 8.
+q nucleo seed 6 9 2 2 step 2 1 next hydrogen. a 0 point 7 9 3.
+nucleo seed 6 9 2 2 step 2 2. time 2 4 9. temperature 6 point 8 9 e 8. n_p_ratio 0 point 1 2 1. free_neutrons 0 point 0 0 8 6 2. hydrogen 0 point 7 9 3. helium 0 point 1 9 9. deuterium 5 point 7 e minus 6. stage helium_forming.
+q nucleo seed 6 9 2 2 step 2 2 helium3. a 5 point 4 3 e minus 6.
+nucleo seed 6 9 2 2 step 2 3. time 3 5 5. temperature 5 point 7 7 e 8. n_p_ratio 0 point 1 2 1. free_neutrons 2 point 2 5 e minus 4. hydrogen 0 point 7 8 5. helium 0 point 2 1 5. deuterium 6 point 2 3 e minus 6. stage helium_forming.
+nucleo seed 6 9 2 2 step 2 4. time 5 0 7. temperature 4 point 8 3 e 8. n_p_ratio 0 point 1 2 1. free_neutrons 1 point 2 1 e minus 6. hydrogen 0 point 7 8 5. helium 0 point 2 1 5. deuterium 6 point 2 4 e minus 6. stage helium_forming.
+nucleo seed 6 9 2 2 step 2 5. time 7 2 4. temperature 4 point 0 4 e 8. n_p_ratio 0 point 1 2 1. free_neutrons 6 point 9 1 e minus 1 0. hydrogen 0 point 7 8 5. helium 0 point 2 1 5. deuterium 6 point 2 4 e minus 6. stage done.
+nucleo seed 6 9 2 2 step 2 6. time 1 0 3 0. temperature 3 point 3 9 e 8. n_p_ratio 0 point 1 2 1. free_neutrons 0. hydrogen 0 point 7 8 5. helium 0 point 2 1 5. deuterium 6 point 2 4 e minus 6. stage done.
+q nucleo seed 6 9 2 2 step 2 6 temperature. a 3 point 3 9 e 8.
+q nucleo seed 6 9 2 2 step 2 6 deuterium. a 6 point 2 4 e minus 6.
+nucleo seed 6 9 2 2 step 2 7. time 1 4 7 0. temperature 2 point 8 3 e 8. n_p_ratio 0 point 1 2 1. free_neutrons 0. hydrogen 0 point 7 8 5. helium 0 point 2 1 5. deuterium 6 point 2 4 e minus 6. stage done.
+q nucleo seed 6 9 2 2 step 2 7 next helium3. a 5 point 9 4 e minus 6.
+nucleo seed 6 9 2 2 step 2 8. time 2 1 0 0. temperature 2 point 3 7 e 8. n_p_ratio 0 point 1 2 1. free_neutrons 0. hydrogen 0 point 7 8 5. helium 0 point 2 1 5. deuterium 6 point 2 4 e minus 6. stage done.
+q nucleo seed 6 9 2 2 step 2 8 time. a 2 1 0 0.
+q nucleo seed 6 9 2 2 step 2 8 next helium3. a 5 point 9 4 e minus 6.
+nucleo seed 6 9 2 2 step 2 9. time 3 0 0 0. temperature 1 point 9 8 e 8. n_p_ratio 0 point 1 2 1. free_neutrons 0. hydrogen 0 point 7 8 5. helium 0 point 2 1 5. deuterium 6 point 2 4 e minus 6. stage done.
+q nucleo seed 6 9 2 2 final helium. a 0 point 2 1 5.
+q nucleo seed 6 9 2 2 final hydrogen. a 0 point 7 8 5.
+q nucleo seed 6 9 2 2 final deuterium. a 6 point 2 4 e minus 6.
+q nucleo seed 6 9 2 2 final helium3. a 5 point 9 4 e minus 6.
+q nucleo seed 6 9 2 2 final lithium. a 2 point 8 3 e minus 9.
+q nucleo seed 6 9 2 2 final bottleneck_time. a 1 7 5.
+q nucleo seed 6 9 2 2 final bottleneck_n_p_ratio. a 0 point 1 2 5.
+q nucleo seed 6 9 2 2 final freeze_time. a 1 point 8 3.
+q nucleo seed 6 9 2 2 final peak_n_p_ratio. a 0 point 6 4 6.
+nucleo seed 9 2 9 6 params. eta_factor 1 point 1 6. tau_n 8 3 1. t_freeze 1 point 7 7. expansion_factor 0 point 8 5 6.
+q nucleo seed 9 2 9 6 param eta_factor. a 1 point 1 6.
+q nucleo seed 9 2 9 6 param tau_n. a 8 3 1.
+q nucleo seed 9 2 9 6 param t_freeze. a 1 point 7 7.
+q nucleo seed 9 2 9 6 param expansion_factor. a 0 point 8 5 6.
+nucleo seed 9 2 9 6 step 0. time 0 point 1. temperature 3 point 4 2 e 1 0. n_p_ratio 0 point 6 4 5. free_neutrons 0 point 3 9 2. hydrogen 0 point 6 0 8. helium 0. deuterium 0. stage plasma.
+nucleo seed 9 2 9 6 step 1. time 0 point 1 4 3. temperature 2 point 8 6 e 1 0. n_p_ratio 0 point 5 9 1. free_neutrons 0 point 3 7 2. hydrogen 0 point 6 2 8. helium 0. deuterium 0. stage plasma.
+nucleo seed 9 2 9 6 step 2. time 0 point 2 0 4. temperature 2 point 3 9 e 1 0. n_p_ratio 0 point 5 3 4. free_neutrons 0 point 3 4 8. hydrogen 0 point 6 5 2. helium 0. deuterium 0. stage plasma.
+nucleo seed 9 2 9 6 step 3. time 0 point 2 9 1. temperature 2 e 1 0. n_p_ratio 0 point 4 7 3. free_neutrons 0 point 3 2 1. hydrogen 0 point 6 7 9. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 2 9 6 step 3 next hydrogen. a 0 point 7 1.
+nucleo seed 9 2 9 6 step 4. time 0 point 4 1 5. temperature 1 point 6 8 e 1 0. n_p_ratio 0 point 4 0 9. free_neutrons 0 point 2 9. hydrogen 0 point 7 1. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 2 9 6 step 4 next free_neutrons. a 0 point 2 5 6.
+q nucleo seed 9 2 9 6 step 4 next stage. a plasma.
+nucleo seed 9 2 9 6 step 5. time 0 point 5 9 1. temperature 1 point 4 1 e 1 0. n_p_ratio 0 point 3 4 4. free_neutrons 0 point 2 5 6. hydrogen 0 point 7 4 4. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 2 9 6 step 5 time. a 0 point 5 9 1.
+q nucleo seed 9 2 9 6 step 5 free_neutrons. a 0 point 2 5 6.
+q nucleo seed 9 2 9 6 step 5 next helium. a 0.
+nucleo seed 9 2 9 6 step 6. time 0 point 8 4 4. temperature 1 point 1 8 e 1 0. n_p_ratio 0 point 2 7 9. free_neutrons 0 point 2 1 8. hydrogen 0 point 7 8 2. helium 0. deuterium 0. stage plasma.
+nucleo seed 9 2 9 6 step 7. time 1 point 2. temperature 9 point 8 7 e 9. n_p_ratio 0 point 2 1 8. free_neutrons 0 point 1 7 9. hydrogen 0 point 8 2 1. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 2 9 6 step 7 free_neutrons. a 0 point 1 7 9.
+nucleo seed 9 2 9 6 step 8. time 1 point 7 2. temperature 8 point 2 4 e 9. n_p_ratio 0 point 1 6 2. free_neutrons 0 point 1 3 9. hydrogen 0 point 8 6 1. helium 0. deuterium 0. stage plasma.
+q nucleo seed 9 2 9 6 step 8 next n_p_ratio. a 0 point 1 2 2.
+nucleo seed 9 2 9 6 step 9. time 2 point 4 5. temperature 6 point 9 1 e 9. n_p_ratio 0 point 1 2 2. free_neutrons 0 point 1 0 9. hydrogen 0 point 8 9 1. helium 0. deuterium 0. stage freeze_out.
+q nucleo seed 9 2 9 6 step 9 time. a 2 point 4 5.
+nucleo seed 9 2 9 6 step 1 0. time 3 point 5. temperature 5 point 7 8 e 9. n_p_ratio 0 point 1 2 2. free_neutrons 0 point 1 0 9. hydrogen 0 point 8 9 1. helium 0. deuterium 0. stage decay.
+nucleo seed 9 2 9 6 step 1 1. time 4 point 9 9. temperature 4 point 8 4 e 9. n_p_ratio 0 point 1 2 2. free_neutrons 0 point 1 0 8. hydrogen 0 point 8 9 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 2 9 6 step 1 1 hydrogen. a 0 point 8 9 2.
+nucleo seed 9 2 9 6 step 1 2. time 7 point 1 2. temperature 4 point 0 5 e 9. n_p_ratio 0 point 1 2 1. free_neutrons 0 point 1 0 8. hydrogen 0 point 8 9 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 2 9 6 step 1 2 helium. a 0.
+q nucleo seed 9 2 9 6 step 1 2 deuterium. a 0.
+q nucleo seed 9 2 9 6 step 1 2 next temperature. a 3 point 3 8 e 9.
+nucleo seed 9 2 9 6 step 1 3. time 1 0 point 2. temperature 3 point 3 8 e 9. n_p_ratio 0 point 1 2 1. free_neutrons 0 point 1 0 8. hydrogen 0 point 8 9 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 2 9 6 step 1 3 helium. a 0.
+q nucleo seed 9 2 9 6 step 1 3 next lithium. a 0.
+nucleo seed 9 2 9 6 step 1 4. time 1 4 point 5. temperature 2 point 8 4 e 9. n_p_ratio 0 point 1 2. free_neutrons 0 point 1 0 7. hydrogen 0 point 8 9 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 2 9 6 step 1 4 lithium. a 0.
+q nucleo seed 9 2 9 6 step 1 4 next temperature. a 2 point 3 8 e 9.
+q nucleo seed 9 2 9 6 step 1 4 next n_p_ratio. a 0 point 1 1 9.
+nucleo seed 9 2 9 6 step 1 5. time 2 0 point 7. temperature 2 point 3 8 e 9. n_p_ratio 0 point 1 1 9. free_neutrons 0 point 1 0 6. hydrogen 0 point 8 9 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 2 9 6 step 1 5 time. a 2 0 point 7.
+nucleo seed 9 2 9 6 step 1 6. time 2 9 point 5. temperature 1 point 9 9 e 9. n_p_ratio 0 point 1 1 8. free_neutrons 0 point 1 0 5. hydrogen 0 point 8 9 5. helium 0. deuterium 0. stage decay.
+nucleo seed 9 2 9 6 step 1 7. time 4 2 point 1. temperature 1 point 6 7 e 9. n_p_ratio 0 point 1 1 6. free_neutrons 0 point 1 0 4. hydrogen 0 point 8 9 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 2 9 6 step 1 7 free_neutrons. a 0 point 1 0 4.
+q nucleo seed 9 2 9 6 step 1 7 next helium. a 0.
+q nucleo seed 9 2 9 6 step 1 7 next lithium. a 0.
+nucleo seed 9 2 9 6 step 1 8. time 6 0 point 1. temperature 1 point 3 9 e 9. n_p_ratio 0 point 1 1 3. free_neutrons 0 point 1 0 1. hydrogen 0 point 8 9 9. helium 0. deuterium 0. stage decay.
+nucleo seed 9 2 9 6 step 1 9. time 8 5 point 8. temperature 1 point 1 7 e 9. n_p_ratio 0 point 1 0 9. free_neutrons 0 point 0 9 8 4. hydrogen 0 point 9 0 2. helium 0. deuterium 0. stage decay.
+nucleo seed 9 2 9 6 step 2 0. time 1 2 2. temperature 9 point 7 9 e 8. n_p_ratio 0 point 1 0 4. free_neutrons 0 point 0 9 4 2. hydrogen 0 point 9 0 6. helium 0. deuterium 0. stage decay.
+nucleo seed 9 2 9 6 step 2 1. time 1 7 5. temperature 8 point 1 7 e 8. n_p_ratio 0 point 0 9 7. free_neutrons 0 point 0 8 8 4. hydrogen 0 point 9 1 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 9 2 9 6 step 2 1 free_neutrons. a 0 point 0 8 8 4.
+nucleo seed 9 2 9 6 step 2 2. time 2 4 9. temperature 6 point 8 5 e 8. n_p_ratio 0 point 0 9 2 9. free_neutrons 0 point 0 0 8 3 4. hydrogen 0 point 8 3 8. helium 0 point 1 5 3. deuterium 1 point 7 7 e minus 5. stage bottleneck.
+q nucleo seed 9 2 9 6 step 2 2 next helium3. a 9 point 1 2 e minus 6.
+nucleo seed 9 2 9 6 step 2 3. time 3 5 5. temperature 5 point 7 4 e 8. n_p_ratio 0 point 0 9 2 6. free_neutrons 2 point 1 4 e minus 4. hydrogen 0 point 8 3 1. helium 0 point 1 6 9. deuterium 1 point 9 7 e minus 5. stage helium_forming.
+q nucleo seed 9 2 9 6 step 2 3 free_neutrons. a 2 point 1 4 e minus 4.
+q nucleo seed 9 2 9 6 step 2 3 next deuterium. a 1 point 9 7 e minus 5.
+nucleo seed 9 2 9 6 step 2 4. time 5 0 7. temperature 4 point 8 e 8. n_p_ratio 0 point 0 9 2 6. free_neutrons 1 point 1 3 e minus 6. hydrogen 0 point 8 3 1. helium 0 point 1 6 9. deuterium 1 point 9 7 e minus 5. stage helium_forming.
+q nucleo seed 9 2 9 6 step 2 4 next deuterium. a 1 point 9 7 e minus 5.
+nucleo seed 9 2 9 6 step 2 5. time 7 2 4. temperature 4 point 0 2 e 8. n_p_ratio 0 point 0 9 2 6. free_neutrons 6 point 2 6 e minus 1 0. hydrogen 0 point 8 3 1. helium 0 point 1 6 9. deuterium 1 point 9 7 e minus 5. stage done.
+nucleo seed 9 2 9 6 step 2 6. time 1 0 3 0. temperature 3 point 3 7 e 8. n_p_ratio 0 point 0 9 2 6. free_neutrons 0. hydrogen 0 point 8 3 1. helium 0 point 1 6 9. deuterium 1 point 9 7 e minus 5. stage done.
+q nucleo seed 9 2 9 6 step 2 6 free_neutrons. a 0.
+q nucleo seed 9 2 9 6 step 2 6 helium. a 0 point 1 6 9.
+nucleo seed 9 2 9 6 step 2 7. time 1 4 7 0. temperature 2 point 8 2 e 8. n_p_ratio 0 point 0 9 2 6. free_neutrons 0. hydrogen 0 point 8 3 1. helium 0 point 1 6 9. deuterium 1 point 9 7 e minus 5. stage done.
+q nucleo seed 9 2 9 6 step 2 7 helium3. a 9 point 1 5 e minus 6.
+nucleo seed 9 2 9 6 step 2 8. time 2 1 0 0. temperature 2 point 3 6 e 8. n_p_ratio 0 point 0 9 2 6. free_neutrons 0. hydrogen 0 point 8 3 1. helium 0 point 1 6 9. deuterium 1 point 9 7 e minus 5. stage done.
+nucleo seed 9 2 9 6 step 2 9. time 3 0 0 0. temperature 1 point 9 7 e 8. n_p_ratio 0 point 0 9 2 6. free_neutrons 0. hydrogen 0 point 8 3 1. helium 0 point 1 6 9. deuterium 1 point 9 7 e minus 5. stage done.
+q nucleo seed 9 2 9 6 step 2 9 free_neutrons. a 0.
+q nucleo seed 9 2 9 6 step 2 9 lithium. a 6 point 7 3 e minus 1 0.
+q nucleo seed 9 2 9 6 final helium. a 0 point 1 6 9.
+q nucleo seed 9 2 9 6 final hydrogen. a 0 point 8 3 1.
+q nucleo seed 9 2 9 6 final deuterium. a 1 point 9 7 e minus 5.
+q nucleo seed 9 2 9 6 final helium3. a 9 point 1 5 e minus 6.
+q nucleo seed 9 2 9 6 final lithium. a 6 point 7 3 e minus 1 0.
+q nucleo seed 9 2 9 6 final bottleneck_time. a 1 8 1.
+q nucleo seed 9 2 9 6 final bottleneck_n_p_ratio. a 0 point 0 9 6 2.
+q nucleo seed 9 2 9 6 final freeze_time. a 2 point 2 9.
+q nucleo seed 9 2 9 6 final peak_n_p_ratio. a 0 point 6 4 5.
+nucleo seed 3 1 9 6 params. eta_factor 2 point 8 5. tau_n 9 4 6. t_freeze 0 point 7 8. expansion_factor 1 point 0 4.
+q nucleo seed 3 1 9 6 param eta_factor. a 2 point 8 5.
+q nucleo seed 3 1 9 6 param tau_n. a 9 4 6.
+q nucleo seed 3 1 9 6 param t_freeze. a 0 point 7 8.
+q nucleo seed 3 1 9 6 param expansion_factor. a 1 point 0 4.
+nucleo seed 3 1 9 6 step 0. time 0 point 1. temperature 3 point 1 e 1 0. n_p_ratio 0 point 6 1 6. free_neutrons 0 point 3 8 1. hydrogen 0 point 6 1 9. helium 0. deuterium 0. stage plasma.
+q nucleo seed 3 1 9 6 step 0 next time. a 0 point 1 4 3.
+nucleo seed 3 1 9 6 step 1. time 0 point 1 4 3. temperature 2 point 5 9 e 1 0. n_p_ratio 0 point 5 6 1. free_neutrons 0 point 3 5 9. hydrogen 0 point 6 4 1. helium 0. deuterium 0. stage plasma.
+q nucleo seed 3 1 9 6 step 1 lithium. a 0.
+nucleo seed 3 1 9 6 step 2. time 0 point 2 0 4. temperature 2 point 1 7 e 1 0. n_p_ratio 0 point 5 0 1. free_neutrons 0 point 3 3 4. hydrogen 0 point 6 6 6. helium 0. deuterium 0. stage plasma.
+nucleo seed 3 1 9 6 step 3. time 0 point 2 9 1. temperature 1 point 8 2 e 1 0. n_p_ratio 0 point 4 3 8. free_neutrons 0 point 3 0 5. hydrogen 0 point 6 9 5. helium 0. deuterium 0. stage plasma.
+nucleo seed 3 1 9 6 step 4. time 0 point 4 1 5. temperature 1 point 5 2 e 1 0. n_p_ratio 0 point 3 7 3. free_neutrons 0 point 2 7 2. hydrogen 0 point 7 2 8. helium 0. deuterium 0. stage plasma.
+q nucleo seed 3 1 9 6 step 4 hydrogen. a 0 point 7 2 8.
+nucleo seed 3 1 9 6 step 5. time 0 point 5 9 1. temperature 1 point 2 8 e 1 0. n_p_ratio 0 point 3 0 8. free_neutrons 0 point 2 3 6. hydrogen 0 point 7 6 4. helium 0. deuterium 0. stage plasma.
+q nucleo seed 3 1 9 6 step 5 hydrogen. a 0 point 7 6 4.
+nucleo seed 3 1 9 6 step 6. time 0 point 8 4 4. temperature 1 point 0 7 e 1 0. n_p_ratio 0 point 2 7. free_neutrons 0 point 2 1 3. hydrogen 0 point 7 8 7. helium 0. deuterium 0. stage freeze_out.
+q nucleo seed 3 1 9 6 step 6 n_p_ratio. a 0 point 2 7.
+q nucleo seed 3 1 9 6 step 6 next free_neutrons. a 0 point 2 1 3.
+nucleo seed 3 1 9 6 step 7. time 1 point 2. temperature 8 point 9 5 e 9. n_p_ratio 0 point 2 7. free_neutrons 0 point 2 1 3. hydrogen 0 point 7 8 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 1 9 6 step 7 helium3. a 0.
+nucleo seed 3 1 9 6 step 8. time 1 point 7 2. temperature 7 point 4 8 e 9. n_p_ratio 0 point 2 7. free_neutrons 0 point 2 1 3. hydrogen 0 point 7 8 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 1 9 6 step 8 next time. a 2 point 4 5.
+nucleo seed 3 1 9 6 step 9. time 2 point 4 5. temperature 6 point 2 6 e 9. n_p_ratio 0 point 2 7. free_neutrons 0 point 2 1 2. hydrogen 0 point 7 8 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 1 9 6 step 9 next time. a 3 point 5.
+nucleo seed 3 1 9 6 step 1 0. time 3 point 5. temperature 5 point 2 4 e 9. n_p_ratio 0 point 2 6 9. free_neutrons 0 point 2 1 2. hydrogen 0 point 7 8 8. helium 0. deuterium 0. stage decay.
+nucleo seed 3 1 9 6 step 1 1. time 4 point 9 9. temperature 4 point 3 9 e 9. n_p_ratio 0 point 2 6 9. free_neutrons 0 point 2 1 2. hydrogen 0 point 7 8 8. helium 0. deuterium 0. stage decay.
+nucleo seed 3 1 9 6 step 1 2. time 7 point 1 2. temperature 3 point 6 7 e 9. n_p_ratio 0 point 2 6 8. free_neutrons 0 point 2 1 1. hydrogen 0 point 7 8 9. helium 0. deuterium 0. stage decay.
+nucleo seed 3 1 9 6 step 1 3. time 1 0 point 2. temperature 3 point 0 7 e 9. n_p_ratio 0 point 2 6 7. free_neutrons 0 point 2 1 1. hydrogen 0 point 7 8 9. helium 0. deuterium 0. stage decay.
+nucleo seed 3 1 9 6 step 1 4. time 1 4 point 5. temperature 2 point 5 8 e 9. n_p_ratio 0 point 2 6 5. free_neutrons 0 point 2 1. hydrogen 0 point 7 9. helium 0. deuterium 0. stage decay.
+nucleo seed 3 1 9 6 step 1 5. time 2 0 point 7. temperature 2 point 1 6 e 9. n_p_ratio 0 point 2 6 3. free_neutrons 0 point 2 0 8. hydrogen 0 point 7 9 2. helium 0. deuterium 0. stage decay.
+nucleo seed 3 1 9 6 step 1 6. time 2 9 point 5. temperature 1 point 8 1 e 9. n_p_ratio 0 point 2 6. free_neutrons 0 point 2 0 6. hydrogen 0 point 7 9 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 1 9 6 step 1 6 lithium. a 0.
+q nucleo seed 3 1 9 6 step 1 6 next time. a 4 2 point 1.
+nucleo seed 3 1 9 6 step 1 7. time 4 2 point 1. temperature 1 point 5 1 e 9. n_p_ratio 0 point 2 5 6. free_neutrons 0 point 2 0 4. hydrogen 0 point 7 9 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 1 9 6 step 1 7 free_neutrons. a 0 point 2 0 4.
+q nucleo seed 3 1 9 6 step 1 7 next helium. a 0.
+nucleo seed 3 1 9 6 step 1 8. time 6 0 point 1. temperature 1 point 2 6 e 9. n_p_ratio 0 point 2 5. free_neutrons 0 point 2. hydrogen 0 point 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 1 9 6 step 1 8 next helium3. a 0.
+nucleo seed 3 1 9 6 step 1 9. time 8 5 point 8. temperature 1 point 0 6 e 9. n_p_ratio 0 point 2 4 1. free_neutrons 0 point 1 9 4. hydrogen 0 point 8 0 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 1 9 6 step 1 9 lithium. a 0.
+q nucleo seed 3 1 9 6 step 1 9 next helium. a 0.
+q nucleo seed 3 1 9 6 step 1 9 next deuterium. a 0.
+q nucleo seed 3 1 9 6 step 1 9 next helium3. a 0.
+nucleo seed 3 1 9 6 step 2 0. time 1 2 2. temperature 8 point 8 8 e 8. n_p_ratio 0 point 2 3. free_neutrons 0 point 1 8 7. hydrogen 0 point 8 1 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 1 9 6 step 2 0 next time. a 1 7 5.
+q nucleo seed 3 1 9 6 step 2 0 next free_neutrons. a 0 point 0 5 6 3.
+nucleo seed 3 1 9 6 step 2 1. time 1 7 5. temperature 7 point 4 1 e 8. n_p_ratio 0 point 2 1 9. free_neutrons 0 point 0 5 6 3. hydrogen 0 point 6 9 7. helium 0 point 2 4 7. deuterium 3 e minus 6. stage bottleneck.
+q nucleo seed 3 1 9 6 step 2 1 time. a 1 7 5.
+q nucleo seed 3 1 9 6 step 2 1 lithium. a 2 point 6 e minus 9.
+q nucleo seed 3 1 9 6 step 2 1 next temperature. a 6 point 2 1 e 8.
+nucleo seed 3 1 9 6 step 2 2. time 2 4 9. temperature 6 point 2 1 e 8. n_p_ratio 0 point 2 1 7. free_neutrons 0 point 0 0 4 4 2. hydrogen 0 point 6 4 8. helium 0 point 3 4 7. deuterium 4 point 5 4 e minus 6. stage helium_forming.
+nucleo seed 3 1 9 6 step 2 3. time 3 5 5. temperature 5 point 2 e 8. n_p_ratio 0 point 2 1 6. free_neutrons 1 point 1 5 e minus 4. hydrogen 0 point 6 4 4. helium 0 point 3 5 6. deuterium 4 point 6 8 e minus 6. stage helium_forming.
+nucleo seed 3 1 9 6 step 2 4. time 5 0 7. temperature 4 point 3 5 e 8. n_p_ratio 0 point 2 1 6. free_neutrons 6 point 1 9 e minus 7. hydrogen 0 point 6 4 4. helium 0 point 3 5 6. deuterium 4 point 6 8 e minus 6. stage done.
+nucleo seed 3 1 9 6 step 2 5. time 7 2 4. temperature 3 point 6 4 e 8. n_p_ratio 0 point 2 1 6. free_neutrons 3 point 5 6 e minus 1 0. hydrogen 0 point 6 4 4. helium 0 point 3 5 6. deuterium 4 point 6 8 e minus 6. stage done.
+q nucleo seed 3 1 9 6 step 2 5 lithium. a 4 point 0 6 e minus 9.
+q nucleo seed 3 1 9 6 step 2 5 next time. a 1 0 3 0.
+q nucleo seed 3 1 9 6 step 2 5 next n_p_ratio. a 0 point 2 1 6.
+q nucleo seed 3 1 9 6 step 2 5 next hydrogen. a 0 point 6 4 4.
+nucleo seed 3 1 9 6 step 2 6. time 1 0 3 0. temperature 3 point 0 6 e 8. n_p_ratio 0 point 2 1 6. free_neutrons 0. hydrogen 0 point 6 4 4. helium 0 point 3 5 6. deuterium 4 point 6 8 e minus 6. stage done.
+q nucleo seed 3 1 9 6 step 2 6 time. a 1 0 3 0.
+q nucleo seed 3 1 9 6 step 2 6 helium3. a 5 point 3 3 e minus 6.
+q nucleo seed 3 1 9 6 step 2 6 stage. a done.
+q nucleo seed 3 1 9 6 step 2 6 next helium3. a 5 point 3 3 e minus 6.
+nucleo seed 3 1 9 6 step 2 7. time 1 4 7 0. temperature 2 point 5 6 e 8. n_p_ratio 0 point 2 1 6. free_neutrons 0. hydrogen 0 point 6 4 4. helium 0 point 3 5 6. deuterium 4 point 6 8 e minus 6. stage done.
+nucleo seed 3 1 9 6 step 2 8. time 2 1 0 0. temperature 2 point 1 4 e 8. n_p_ratio 0 point 2 1 6. free_neutrons 0. hydrogen 0 point 6 4 4. helium 0 point 3 5 6. deuterium 4 point 6 8 e minus 6. stage done.
+nucleo seed 3 1 9 6 step 2 9. time 3 0 0 0. temperature 1 point 7 9 e 8. n_p_ratio 0 point 2 1 6. free_neutrons 0. hydrogen 0 point 6 4 4. helium 0 point 3 5 6. deuterium 4 point 6 8 e minus 6. stage done.
+q nucleo seed 3 1 9 6 step 2 9 deuterium. a 4 point 6 8 e minus 6.
+q nucleo seed 3 1 9 6 final helium. a 0 point 3 5 6.
+q nucleo seed 3 1 9 6 final hydrogen. a 0 point 6 4 4.
+q nucleo seed 3 1 9 6 final deuterium. a 4 point 6 8 e minus 6.
+q nucleo seed 3 1 9 6 final helium3. a 5 point 3 3 e minus 6.
+q nucleo seed 3 1 9 6 final lithium. a 4 point 0 6 e minus 9.
+q nucleo seed 3 1 9 6 final bottleneck_time. a 1 4 1.
+q nucleo seed 3 1 9 6 final bottleneck_n_p_ratio. a 0 point 2 2 5.
+q nucleo seed 3 1 9 6 final freeze_time. a 0 point 7 3 1.
+q nucleo seed 3 1 9 6 final peak_n_p_ratio. a 0 point 6 1 6.
+nucleo seed 4 8 8 params. eta_factor 0 point 3 8 8. tau_n 9 1 6. t_freeze 1 point 6 9. expansion_factor 1 point 0 1.
+q nucleo seed 4 8 8 param eta_factor. a 0 point 3 8 8.
+q nucleo seed 4 8 8 param tau_n. a 9 1 6.
+q nucleo seed 4 8 8 param t_freeze. a 1 point 6 9.
+q nucleo seed 4 8 8 param expansion_factor. a 1 point 0 1.
+nucleo seed 4 8 8 step 0. time 0 point 1. temperature 3 point 1 5 e 1 0. n_p_ratio 0 point 6 2 1. free_neutrons 0 point 3 8 3. hydrogen 0 point 6 1 7. helium 0. deuterium 0. stage plasma.
+nucleo seed 4 8 8 step 1. time 0 point 1 4 3. temperature 2 point 6 3 e 1 0. n_p_ratio 0 point 5 6 5. free_neutrons 0 point 3 6 1. hydrogen 0 point 6 3 9. helium 0. deuterium 0. stage plasma.
+q nucleo seed 4 8 8 step 1 lithium. a 0.
+q nucleo seed 4 8 8 step 1 next time. a 0 point 2 0 4.
+q nucleo seed 4 8 8 step 1 next hydrogen. a 0 point 6 6 4.
+nucleo seed 4 8 8 step 2. time 0 point 2 0 4. temperature 2 point 2 e 1 0. n_p_ratio 0 point 5 0 6. free_neutrons 0 point 3 3 6. hydrogen 0 point 6 6 4. helium 0. deuterium 0. stage plasma.
+nucleo seed 4 8 8 step 3. time 0 point 2 9 1. temperature 1 point 8 4 e 1 0. n_p_ratio 0 point 4 4 3. free_neutrons 0 point 3 0 7. hydrogen 0 point 6 9 3. helium 0. deuterium 0. stage plasma.
+q nucleo seed 4 8 8 step 3 helium3. a 0.
+nucleo seed 4 8 8 step 4. time 0 point 4 1 5. temperature 1 point 5 4 e 1 0. n_p_ratio 0 point 3 7 8. free_neutrons 0 point 2 7 5. hydrogen 0 point 7 2 5. helium 0. deuterium 0. stage plasma.
+q nucleo seed 4 8 8 step 4 deuterium. a 0.
+q nucleo seed 4 8 8 step 4 next helium. a 0.
+nucleo seed 4 8 8 step 5. time 0 point 5 9 1. temperature 1 point 2 9 e 1 0. n_p_ratio 0 point 3 1 4. free_neutrons 0 point 2 3 9. hydrogen 0 point 7 6 1. helium 0. deuterium 0. stage plasma.
+nucleo seed 4 8 8 step 6. time 0 point 8 4 4. temperature 1 point 0 8 e 1 0. n_p_ratio 0 point 2 5. free_neutrons 0 point 2. hydrogen 0 point 8. helium 0. deuterium 0. stage plasma.
+q nucleo seed 4 8 8 step 6 lithium. a 0.
+q nucleo seed 4 8 8 step 6 next stage. a plasma.
+nucleo seed 4 8 8 step 7. time 1 point 2. temperature 9 point 0 8 e 9. n_p_ratio 0 point 1 9 2. free_neutrons 0 point 1 6 1. hydrogen 0 point 8 3 9. helium 0. deuterium 0. stage plasma.
+q nucleo seed 4 8 8 step 7 next time. a 1 point 7 2.
+nucleo seed 4 8 8 step 8. time 1 point 7 2. temperature 7 point 5 9 e 9. n_p_ratio 0 point 1 4 3. free_neutrons 0 point 1 2 5. hydrogen 0 point 8 7 5. helium 0. deuterium 0. stage freeze_out.
+nucleo seed 4 8 8 step 9. time 2 point 4 5. temperature 6 point 3 6 e 9. n_p_ratio 0 point 1 4 3. free_neutrons 0 point 1 2 5. hydrogen 0 point 8 7 5. helium 0. deuterium 0. stage decay.
+nucleo seed 4 8 8 step 1 0. time 3 point 5. temperature 5 point 3 2 e 9. n_p_ratio 0 point 1 4 3. free_neutrons 0 point 1 2 5. hydrogen 0 point 8 7 5. helium 0. deuterium 0. stage decay.
+q nucleo seed 4 8 8 step 1 0 next hydrogen. a 0 point 8 7 5.
+nucleo seed 4 8 8 step 1 1. time 4 point 9 9. temperature 4 point 4 5 e 9. n_p_ratio 0 point 1 4 2. free_neutrons 0 point 1 2 5. hydrogen 0 point 8 7 5. helium 0. deuterium 0. stage decay.
+q nucleo seed 4 8 8 step 1 1 next time. a 7 point 1 2.
+q nucleo seed 4 8 8 step 1 1 next temperature. a 3 point 7 3 e 9.
+nucleo seed 4 8 8 step 1 2. time 7 point 1 2. temperature 3 point 7 3 e 9. n_p_ratio 0 point 1 4 2. free_neutrons 0 point 1 2 4. hydrogen 0 point 8 7 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 4 8 8 step 1 2 next temperature. a 3 point 1 2 e 9.
+q nucleo seed 4 8 8 step 1 2 next helium3. a 0.
+q nucleo seed 4 8 8 step 1 2 next stage. a decay.
+nucleo seed 4 8 8 step 1 3. time 1 0 point 2. temperature 3 point 1 2 e 9. n_p_ratio 0 point 1 4 2. free_neutrons 0 point 1 2 4. hydrogen 0 point 8 7 6. helium 0. deuterium 0. stage decay.
+nucleo seed 4 8 8 step 1 4. time 1 4 point 5. temperature 2 point 6 1 e 9. n_p_ratio 0 point 1 4 1. free_neutrons 0 point 1 2 3. hydrogen 0 point 8 7 7. helium 0. deuterium 0. stage decay.
+nucleo seed 4 8 8 step 1 5. time 2 0 point 7. temperature 2 point 1 9 e 9. n_p_ratio 0 point 1 4. free_neutrons 0 point 1 2 3. hydrogen 0 point 8 7 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 4 8 8 step 1 5 next temperature. a 1 point 8 3 e 9.
+q nucleo seed 4 8 8 step 1 5 next lithium. a 0.
+nucleo seed 4 8 8 step 1 6. time 2 9 point 5. temperature 1 point 8 3 e 9. n_p_ratio 0 point 1 3 8. free_neutrons 0 point 1 2 1. hydrogen 0 point 8 7 9. helium 0. deuterium 0. stage decay.
+nucleo seed 4 8 8 step 1 7. time 4 2 point 1. temperature 1 point 5 3 e 9. n_p_ratio 0 point 1 3 6. free_neutrons 0 point 1 2. hydrogen 0 point 8 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 4 8 8 step 1 7 next hydrogen. a 0 point 8 8 3.
+q nucleo seed 4 8 8 step 1 7 next helium3. a 0.
+nucleo seed 4 8 8 step 1 8. time 6 0 point 1. temperature 1 point 2 8 e 9. n_p_ratio 0 point 1 3 3. free_neutrons 0 point 1 1 7. hydrogen 0 point 8 8 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 4 8 8 step 1 8 next free_neutrons. a 0 point 1 1 4.
+q nucleo seed 4 8 8 step 1 8 next lithium. a 0.
+nucleo seed 4 8 8 step 1 9. time 8 5 point 8. temperature 1 point 0 7 e 9. n_p_ratio 0 point 1 2 9. free_neutrons 0 point 1 1 4. hydrogen 0 point 8 8 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 4 8 8 step 1 9 stage. a decay.
+q nucleo seed 4 8 8 step 1 9 next deuterium. a 0.
+nucleo seed 4 8 8 step 2 0. time 1 2 2. temperature 9 point 0 1 e 8. n_p_ratio 0 point 1 2 3. free_neutrons 0 point 1 1. hydrogen 0 point 8 9. helium 0. deuterium 0. stage decay.
+nucleo seed 4 8 8 step 2 1. time 1 7 5. temperature 7 point 5 2 e 8. n_p_ratio 0 point 1 1 6. free_neutrons 0 point 0 7 1 6. hydrogen 0 point 8 6 4. helium 0 point 0 6 4 3. deuterium 3 point 3 3 e minus 5. stage bottleneck.
+q nucleo seed 4 8 8 step 2 1 helium3. a 5 point 1 6 e minus 6.
+nucleo seed 4 8 8 step 2 2. time 2 4 9. temperature 6 point 3 1 e 8. n_p_ratio 0 point 1 1 3. free_neutrons 0 point 0 0 5 6. hydrogen 0 point 8 0 2. helium 0 point 1 9 2. deuterium 1 point 0 7 e minus 4. stage helium_forming.
+q nucleo seed 4 8 8 step 2 2 next temperature. a 5 point 2 8 e 8.
+q nucleo seed 4 8 8 step 2 2 next stage. a helium_forming.
+nucleo seed 4 8 8 step 2 3. time 3 5 5. temperature 5 point 2 8 e 8. n_p_ratio 0 point 1 1 3. free_neutrons 1 point 4 6 e minus 4. hydrogen 0 point 7 9 7. helium 0 point 2 0 3. deuterium 1 point 1 4 e minus 4. stage helium_forming.
+q nucleo seed 4 8 8 step 2 3 stage. a helium_forming.
+q nucleo seed 4 8 8 step 2 3 next time. a 5 0 7.
+nucleo seed 4 8 8 step 2 4. time 5 0 7. temperature 4 point 4 2 e 8. n_p_ratio 0 point 1 1 3. free_neutrons 7 point 7 8 e minus 7. hydrogen 0 point 7 9 7. helium 0 point 2 0 3. deuterium 1 point 1 4 e minus 4. stage done.
+q nucleo seed 4 8 8 step 2 4 free_neutrons. a 7 point 7 8 e minus 7.
+nucleo seed 4 8 8 step 2 5. time 7 2 4. temperature 3 point 7 e 8. n_p_ratio 0 point 1 1 3. free_neutrons 4 point 4 3 e minus 1 0. hydrogen 0 point 7 9 7. helium 0 point 2 0 3. deuterium 1 point 1 4 e minus 4. stage done.
+q nucleo seed 4 8 8 step 2 5 next stage. a done.
+nucleo seed 4 8 8 step 2 6. time 1 0 3 0. temperature 3 point 1 e 8. n_p_ratio 0 point 1 1 3. free_neutrons 0. hydrogen 0 point 7 9 7. helium 0 point 2 0 3. deuterium 1 point 1 4 e minus 4. stage done.
+q nucleo seed 4 8 8 step 2 6 next n_p_ratio. a 0 point 1 1 3.
+nucleo seed 4 8 8 step 2 7. time 1 4 7 0. temperature 2 point 6 e 8. n_p_ratio 0 point 1 1 3. free_neutrons 0. hydrogen 0 point 7 9 7. helium 0 point 2 0 3. deuterium 1 point 1 4 e minus 4. stage done.
+nucleo seed 4 8 8 step 2 8. time 2 1 0 0. temperature 2 point 1 7 e 8. n_p_ratio 0 point 1 1 3. free_neutrons 0. hydrogen 0 point 7 9 7. helium 0 point 2 0 3. deuterium 1 point 1 4 e minus 4. stage done.
+nucleo seed 4 8 8 step 2 9. time 3 0 0 0. temperature 1 point 8 2 e 8. n_p_ratio 0 point 1 1 3. free_neutrons 0. hydrogen 0 point 7 9 7. helium 0 point 2 0 3. deuterium 1 point 1 4 e minus 4. stage done.
+q nucleo seed 4 8 8 step 2 9 time. a 3 0 0 0.
+q nucleo seed 4 8 8 final helium. a 0 point 2 0 3.
+q nucleo seed 4 8 8 final hydrogen. a 0 point 7 9 7.
+q nucleo seed 4 8 8 final deuterium. a 1 point 1 4 e minus 4.
+q nucleo seed 4 8 8 final helium3. a 1 point 7 6 e minus 5.
+q nucleo seed 4 8 8 final lithium. a 7 point 5 3 e minus 1 1.
+q nucleo seed 4 8 8 final bottleneck_time. a 1 6 4.
+q nucleo seed 4 8 8 final bottleneck_n_p_ratio. a 0 point 1 1 7.
+q nucleo seed 4 8 8 final freeze_time. a 1 point 6 6.
+q nucleo seed 4 8 8 final peak_n_p_ratio. a 0 point 6 2 1.
+nucleo seed 2 0 8 7 params. eta_factor 0 point 4 0 3. tau_n 8 2 4. t_freeze 0 point 9 4 8. expansion_factor 1 point 0 3.
+q nucleo seed 2 0 8 7 param eta_factor. a 0 point 4 0 3.
+q nucleo seed 2 0 8 7 param tau_n. a 8 2 4.
+q nucleo seed 2 0 8 7 param t_freeze. a 0 point 9 4 8.
+q nucleo seed 2 0 8 7 param expansion_factor. a 1 point 0 3.
+nucleo seed 2 0 8 7 step 0. time 0 point 1. temperature 3 point 1 2 e 1 0. n_p_ratio 0 point 6 1 8. free_neutrons 0 point 3 8 2. hydrogen 0 point 6 1 8. helium 0. deuterium 0. stage plasma.
+q nucleo seed 2 0 8 7 step 0 next deuterium. a 0.
+q nucleo seed 2 0 8 7 step 0 next lithium. a 0.
+nucleo seed 2 0 8 7 step 1. time 0 point 1 4 3. temperature 2 point 6 1 e 1 0. n_p_ratio 0 point 5 6 2. free_neutrons 0 point 3 6. hydrogen 0 point 6 4. helium 0. deuterium 0. stage plasma.
+q nucleo seed 2 0 8 7 step 1 free_neutrons. a 0 point 3 6.
+nucleo seed 2 0 8 7 step 2. time 0 point 2 0 4. temperature 2 point 1 8 e 1 0. n_p_ratio 0 point 5 0 3. free_neutrons 0 point 3 3 4. hydrogen 0 point 6 6 6. helium 0. deuterium 0. stage plasma.
+nucleo seed 2 0 8 7 step 3. time 0 point 2 9 1. temperature 1 point 8 3 e 1 0. n_p_ratio 0 point 4 4. free_neutrons 0 point 3 0 5. hydrogen 0 point 6 9 5. helium 0. deuterium 0. stage plasma.
+nucleo seed 2 0 8 7 step 4. time 0 point 4 1 5. temperature 1 point 5 3 e 1 0. n_p_ratio 0 point 3 7 5. free_neutrons 0 point 2 7 3. hydrogen 0 point 7 2 7. helium 0. deuterium 0. stage plasma.
+nucleo seed 2 0 8 7 step 5. time 0 point 5 9 1. temperature 1 point 2 8 e 1 0. n_p_ratio 0 point 3 1. free_neutrons 0 point 2 3 7. hydrogen 0 point 7 6 3. helium 0. deuterium 0. stage plasma.
+nucleo seed 2 0 8 7 step 6. time 0 point 8 4 4. temperature 1 point 0 7 e 1 0. n_p_ratio 0 point 2 4 7. free_neutrons 0 point 1 9 8. hydrogen 0 point 8 0 2. helium 0. deuterium 0. stage plasma.
+nucleo seed 2 0 8 7 step 7. time 1 point 2. temperature 8 point 9 9 e 9. n_p_ratio 0 point 2 3 5. free_neutrons 0 point 1 9. hydrogen 0 point 8 1. helium 0. deuterium 0. stage freeze_out.
+q nucleo seed 2 0 8 7 step 7 n_p_ratio. a 0 point 2 3 5.
+q nucleo seed 2 0 8 7 step 7 next temperature. a 7 point 5 1 e 9.
+nucleo seed 2 0 8 7 step 8. time 1 point 7 2. temperature 7 point 5 1 e 9. n_p_ratio 0 point 2 3 5. free_neutrons 0 point 1 9. hydrogen 0 point 8 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 0 8 7 step 8 next time. a 2 point 4 5.
+q nucleo seed 2 0 8 7 step 8 next free_neutrons. a 0 point 1 9.
+nucleo seed 2 0 8 7 step 9. time 2 point 4 5. temperature 6 point 3 e 9. n_p_ratio 0 point 2 3 5. free_neutrons 0 point 1 9. hydrogen 0 point 8 1. helium 0. deuterium 0. stage decay.
+nucleo seed 2 0 8 7 step 1 0. time 3 point 5. temperature 5 point 2 7 e 9. n_p_ratio 0 point 2 3 4. free_neutrons 0 point 1 9. hydrogen 0 point 8 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 0 8 7 step 1 0 helium3. a 0.
+q nucleo seed 2 0 8 7 step 1 0 next n_p_ratio. a 0 point 2 3 4.
+q nucleo seed 2 0 8 7 step 1 0 next free_neutrons. a 0 point 1 9.
+nucleo seed 2 0 8 7 step 1 1. time 4 point 9 9. temperature 4 point 4 1 e 9. n_p_ratio 0 point 2 3 4. free_neutrons 0 point 1 9. hydrogen 0 point 8 1. helium 0. deuterium 0. stage decay.
+nucleo seed 2 0 8 7 step 1 2. time 7 point 1 2. temperature 3 point 6 9 e 9. n_p_ratio 0 point 2 3 3. free_neutrons 0 point 1 8 9. hydrogen 0 point 8 1 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 0 8 7 step 1 2 next helium3. a 0.
+nucleo seed 2 0 8 7 step 1 3. time 1 0 point 2. temperature 3 point 0 9 e 9. n_p_ratio 0 point 2 3 2. free_neutrons 0 point 1 8 8. hydrogen 0 point 8 1 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 0 8 7 step 1 3 free_neutrons. a 0 point 1 8 8.
+nucleo seed 2 0 8 7 step 1 4. time 1 4 point 5. temperature 2 point 5 9 e 9. n_p_ratio 0 point 2 3 1. free_neutrons 0 point 1 8 7. hydrogen 0 point 8 1 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 0 8 7 step 1 4 next n_p_ratio. a 0 point 2 2 8.
+nucleo seed 2 0 8 7 step 1 5. time 2 0 point 7. temperature 2 point 1 7 e 9. n_p_ratio 0 point 2 2 8. free_neutrons 0 point 1 8 6. hydrogen 0 point 8 1 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 0 8 7 step 1 5 time. a 2 0 point 7.
+q nucleo seed 2 0 8 7 step 1 5 lithium. a 0.
+nucleo seed 2 0 8 7 step 1 6. time 2 9 point 5. temperature 1 point 8 1 e 9. n_p_ratio 0 point 2 2 5. free_neutrons 0 point 1 8 4. hydrogen 0 point 8 1 6. helium 0. deuterium 0. stage decay.
+nucleo seed 2 0 8 7 step 1 7. time 4 2 point 1. temperature 1 point 5 2 e 9. n_p_ratio 0 point 2 2 1. free_neutrons 0 point 1 8 1. hydrogen 0 point 8 1 9. helium 0. deuterium 0. stage decay.
+nucleo seed 2 0 8 7 step 1 8. time 6 0 point 1. temperature 1 point 2 7 e 9. n_p_ratio 0 point 2 1 5. free_neutrons 0 point 1 7 7. hydrogen 0 point 8 2 3. helium 0. deuterium 0. stage decay.
+nucleo seed 2 0 8 7 step 1 9. time 8 5 point 8. temperature 1 point 0 6 e 9. n_p_ratio 0 point 2 0 7. free_neutrons 0 point 1 7 2. hydrogen 0 point 8 2 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 0 8 7 step 1 9 next stage. a decay.
+nucleo seed 2 0 8 7 step 2 0. time 1 2 2. temperature 8 point 9 2 e 8. n_p_ratio 0 point 1 9 7. free_neutrons 0 point 1 6 4. hydrogen 0 point 8 3 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 0 8 7 step 2 0 next n_p_ratio. a 0 point 1 8 3.
+q nucleo seed 2 0 8 7 step 2 0 next helium. a 0 point 1 2.
+nucleo seed 2 0 8 7 step 2 1. time 1 7 5. temperature 7 point 4 5 e 8. n_p_ratio 0 point 1 8 3. free_neutrons 0 point 0 9 4 7. hydrogen 0 point 7 8 5. helium 0 point 1 2. deuterium 3 point 7 7 e minus 5. stage bottleneck.
+q nucleo seed 2 0 8 7 step 2 1 deuterium. a 3 point 7 7 e minus 5.
+nucleo seed 2 0 8 7 step 2 2. time 2 4 9. temperature 6 point 2 4 e 8. n_p_ratio 0 point 1 7 9. free_neutrons 0 point 0 0 7 3 4. hydrogen 0 point 7 0 4. helium 0 point 2 8 9. deuterium 1 point 0 1 e minus 4. stage helium_forming.
+nucleo seed 2 0 8 7 step 2 3. time 3 5 5. temperature 5 point 2 3 e 8. n_p_ratio 0 point 1 7 8. free_neutrons 1 point 8 9 e minus 4. hydrogen 0 point 6 9 7. helium 0 point 3 0 2. deuterium 1 point 0 7 e minus 4. stage helium_forming.
+q nucleo seed 2 0 8 7 step 2 3 free_neutrons. a 1 point 8 9 e minus 4.
+q nucleo seed 2 0 8 7 step 2 3 helium3. a 1 point 7 2 e minus 5.
+q nucleo seed 2 0 8 7 step 2 3 next lithium. a 8 point 1 2 e minus 1 1.
+nucleo seed 2 0 8 7 step 2 4. time 5 0 7. temperature 4 point 3 8 e 8. n_p_ratio 0 point 1 7 8. free_neutrons 9 point 8 9 e minus 7. hydrogen 0 point 6 9 7. helium 0 point 3 0 3. deuterium 1 point 0 7 e minus 4. stage done.
+q nucleo seed 2 0 8 7 step 2 4 deuterium. a 1 point 0 7 e minus 4.
+q nucleo seed 2 0 8 7 step 2 4 next n_p_ratio. a 0 point 1 7 8.
+q nucleo seed 2 0 8 7 step 2 4 next helium3. a 1 point 7 3 e minus 5.
+nucleo seed 2 0 8 7 step 2 5. time 7 2 4. temperature 3 point 6 6 e 8. n_p_ratio 0 point 1 7 8. free_neutrons 5 point 4 9 e minus 1 0. hydrogen 0 point 6 9 7. helium 0 point 3 0 3. deuterium 1 point 0 7 e minus 4. stage done.
+q nucleo seed 2 0 8 7 step 2 5 next n_p_ratio. a 0 point 1 7 8.
+nucleo seed 2 0 8 7 step 2 6. time 1 0 3 0. temperature 3 point 0 7 e 8. n_p_ratio 0 point 1 7 8. free_neutrons 0. hydrogen 0 point 6 9 7. helium 0 point 3 0 3. deuterium 1 point 0 7 e minus 4. stage done.
+q nucleo seed 2 0 8 7 step 2 6 helium. a 0 point 3 0 3.
+nucleo seed 2 0 8 7 step 2 7. time 1 4 7 0. temperature 2 point 5 7 e 8. n_p_ratio 0 point 1 7 8. free_neutrons 0. hydrogen 0 point 6 9 7. helium 0 point 3 0 3. deuterium 1 point 0 7 e minus 4. stage done.
+q nucleo seed 2 0 8 7 step 2 7 next n_p_ratio. a 0 point 1 7 8.
+q nucleo seed 2 0 8 7 step 2 7 next helium3. a 1 point 7 3 e minus 5.
+q nucleo seed 2 0 8 7 step 2 7 next stage. a done.
+nucleo seed 2 0 8 7 step 2 8. time 2 1 0 0. temperature 2 point 1 5 e 8. n_p_ratio 0 point 1 7 8. free_neutrons 0. hydrogen 0 point 6 9 7. helium 0 point 3 0 3. deuterium 1 point 0 7 e minus 4. stage done.
+q nucleo seed 2 0 8 7 step 2 8 free_neutrons. a 0.
+q nucleo seed 2 0 8 7 step 2 8 next helium. a 0 point 3 0 3.
+nucleo seed 2 0 8 7 step 2 9. time 3 0 0 0. temperature 1 point 8 e 8. n_p_ratio 0 point 1 7 8. free_neutrons 0. hydrogen 0 point 6 9 7. helium 0 point 3 0 3. deuterium 1 point 0 7 e minus 4. stage done.
+q nucleo seed 2 0 8 7 final helium. a 0 point 3 0 3.
+q nucleo seed 2 0 8 7 final hydrogen. a 0 point 6 9 7.
+q nucleo seed 2 0 8 7 final deuterium. a 1 point 0 7 e minus 4.
+q nucleo seed 2 0 8 7 final helium3. a 1 point 7 3 e minus 5.
+q nucleo seed 2 0 8 7 final lithium. a 8 point 1 2 e minus 1 1.
+q nucleo seed 2 0 8 7 final bottleneck_time. a 1 6 0.
+q nucleo seed 2 0 8 7 final bottleneck_n_p_ratio. a 0 point 1 8 6.
+q nucleo seed 2 0 8 7 final freeze_time. a 0 point 9 0 2.
+q nucleo seed 2 0 8 7 final peak_n_p_ratio. a 0 point 6 1 8.
+nucleo seed 1 1 8 6 params. eta_factor 0 point 5 5 1. tau_n 9 0 5. t_freeze 1 point 2 7. expansion_factor 0 point 7 5.
+q nucleo seed 1 1 8 6 param eta_factor. a 0 point 5 5 1.
+q nucleo seed 1 1 8 6 param tau_n. a 9 0 5.
+q nucleo seed 1 1 8 6 param t_freeze. a 1 point 2 7.
+q nucleo seed 1 1 8 6 param expansion_factor. a 0 point 7 5.
+nucleo seed 1 1 8 6 step 0. time 0 point 1. temperature 3 point 6 5 e 1 0. n_p_ratio 0 point 6 6 3. free_neutrons 0 point 3 9 9. hydrogen 0 point 6 0 1. helium 0. deuterium 0. stage plasma.
+q nucleo seed 1 1 8 6 step 0 next temperature. a 3 point 0 5 e 1 0.
+nucleo seed 1 1 8 6 step 1. time 0 point 1 4 3. temperature 3 point 0 5 e 1 0. n_p_ratio 0 point 6 1 2. free_neutrons 0 point 3 8. hydrogen 0 point 6 2. helium 0. deuterium 0. stage plasma.
+q nucleo seed 1 1 8 6 step 1 temperature. a 3 point 0 5 e 1 0.
+q nucleo seed 1 1 8 6 step 1 next deuterium. a 0.
+q nucleo seed 1 1 8 6 step 1 next lithium. a 0.
+nucleo seed 1 1 8 6 step 2. time 0 point 2 0 4. temperature 2 point 5 6 e 1 0. n_p_ratio 0 point 5 5 6. free_neutrons 0 point 3 5 7. hydrogen 0 point 6 4 3. helium 0. deuterium 0. stage plasma.
+nucleo seed 1 1 8 6 step 3. time 0 point 2 9 1. temperature 2 point 1 4 e 1 0. n_p_ratio 0 point 4 9 6. free_neutrons 0 point 3 3 2. hydrogen 0 point 6 6 8. helium 0. deuterium 0. stage plasma.
+nucleo seed 1 1 8 6 step 4. time 0 point 4 1 5. temperature 1 point 7 9 e 1 0. n_p_ratio 0 point 4 3 3. free_neutrons 0 point 3 0 2. hydrogen 0 point 6 9 8. helium 0. deuterium 0. stage plasma.
+q nucleo seed 1 1 8 6 step 4 next free_neutrons. a 0 point 2 6 9.
+nucleo seed 1 1 8 6 step 5. time 0 point 5 9 1. temperature 1 point 5 e 1 0. n_p_ratio 0 point 3 6 8. free_neutrons 0 point 2 6 9. hydrogen 0 point 7 3 1. helium 0. deuterium 0. stage plasma.
+nucleo seed 1 1 8 6 step 6. time 0 point 8 4 4. temperature 1 point 2 6 e 1 0. n_p_ratio 0 point 3 0 3. free_neutrons 0 point 2 3 3. hydrogen 0 point 7 6 7. helium 0. deuterium 0. stage plasma.
+q nucleo seed 1 1 8 6 step 6 next free_neutrons. a 0 point 1 9 4.
+q nucleo seed 1 1 8 6 step 6 next stage. a plasma.
+nucleo seed 1 1 8 6 step 7. time 1 point 2. temperature 1 point 0 5 e 1 0. n_p_ratio 0 point 2 4 1. free_neutrons 0 point 1 9 4. hydrogen 0 point 8 0 6. helium 0. deuterium 0. stage plasma.
+q nucleo seed 1 1 8 6 step 7 helium. a 0.
+q nucleo seed 1 1 8 6 step 7 next temperature. a 8 point 8 e 9.
+nucleo seed 1 1 8 6 step 8. time 1 point 7 2. temperature 8 point 8 e 9. n_p_ratio 0 point 1 8 2. free_neutrons 0 point 1 5 4. hydrogen 0 point 8 4 6. helium 0. deuterium 0. stage plasma.
+q nucleo seed 1 1 8 6 step 8 next temperature. a 7 point 3 8 e 9.
+nucleo seed 1 1 8 6 step 9. time 2 point 4 5. temperature 7 point 3 8 e 9. n_p_ratio 0 point 1 5 5. free_neutrons 0 point 1 3 4. hydrogen 0 point 8 6 6. helium 0. deuterium 0. stage freeze_out.
+nucleo seed 1 1 8 6 step 1 0. time 3 point 5. temperature 6 point 1 7 e 9. n_p_ratio 0 point 1 5 5. free_neutrons 0 point 1 3 4. hydrogen 0 point 8 6 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 1 1 8 6 step 1 0 next n_p_ratio. a 0 point 1 5 5.
+nucleo seed 1 1 8 6 step 1 1. time 4 point 9 9. temperature 5 point 1 7 e 9. n_p_ratio 0 point 1 5 5. free_neutrons 0 point 1 3 4. hydrogen 0 point 8 6 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 1 1 8 6 step 1 1 next temperature. a 4 point 3 3 e 9.
+nucleo seed 1 1 8 6 step 1 2. time 7 point 1 2. temperature 4 point 3 3 e 9. n_p_ratio 0 point 1 5 4. free_neutrons 0 point 1 3 4. hydrogen 0 point 8 6 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 1 1 8 6 step 1 2 next helium3. a 0.
+nucleo seed 1 1 8 6 step 1 3. time 1 0 point 2. temperature 3 point 6 2 e 9. n_p_ratio 0 point 1 5 4. free_neutrons 0 point 1 3 3. hydrogen 0 point 8 6 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 1 1 8 6 step 1 3 next helium. a 0.
+nucleo seed 1 1 8 6 step 1 4. time 1 4 point 5. temperature 3 point 0 3 e 9. n_p_ratio 0 point 1 5 3. free_neutrons 0 point 1 3 3. hydrogen 0 point 8 6 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 1 1 8 6 step 1 4 stage. a decay.
+nucleo seed 1 1 8 6 step 1 5. time 2 0 point 7. temperature 2 point 5 4 e 9. n_p_ratio 0 point 1 5 2. free_neutrons 0 point 1 3 2. hydrogen 0 point 8 6 8. helium 0. deuterium 0. stage decay.
+nucleo seed 1 1 8 6 step 1 6. time 2 9 point 5. temperature 2 point 1 3 e 9. n_p_ratio 0 point 1 5. free_neutrons 0 point 1 3. hydrogen 0 point 8 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 1 1 8 6 step 1 6 time. a 2 9 point 5.
+q nucleo seed 1 1 8 6 step 1 6 next helium3. a 0.
+nucleo seed 1 1 8 6 step 1 7. time 4 2 point 1. temperature 1 point 7 8 e 9. n_p_ratio 0 point 1 4 8. free_neutrons 0 point 1 2 9. hydrogen 0 point 8 7 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 1 1 8 6 step 1 7 time. a 4 2 point 1.
+q nucleo seed 1 1 8 6 step 1 7 n_p_ratio. a 0 point 1 4 8.
+q nucleo seed 1 1 8 6 step 1 7 deuterium. a 0.
+q nucleo seed 1 1 8 6 step 1 7 stage. a decay.
+nucleo seed 1 1 8 6 step 1 8. time 6 0 point 1. temperature 1 point 4 9 e 9. n_p_ratio 0 point 1 4 4. free_neutrons 0 point 1 2 6. hydrogen 0 point 8 7 4. helium 0. deuterium 0. stage decay.
+nucleo seed 1 1 8 6 step 1 9. time 8 5 point 8. temperature 1 point 2 5 e 9. n_p_ratio 0 point 1 4. free_neutrons 0 point 1 2 3. hydrogen 0 point 8 7 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 1 1 8 6 step 1 9 next temperature. a 1 point 0 5 e 9.
+nucleo seed 1 1 8 6 step 2 0. time 1 2 2. temperature 1 point 0 5 e 9. n_p_ratio 0 point 1 3 4. free_neutrons 0 point 1 1 8. hydrogen 0 point 8 8 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 1 1 8 6 step 2 0 next helium. a 0.
+q nucleo seed 1 1 8 6 step 2 0 next lithium. a 0.
+nucleo seed 1 1 8 6 step 2 1. time 1 7 5. temperature 8 point 7 3 e 8. n_p_ratio 0 point 1 2 5. free_neutrons 0 point 1 1 1. hydrogen 0 point 8 8 9. helium 0. deuterium 0. stage decay.
+q nucleo seed 1 1 8 6 step 2 1 stage. a decay.
+q nucleo seed 1 1 8 6 step 2 1 next time. a 2 4 9.
+q nucleo seed 1 1 8 6 step 2 1 next helium3. a 9 point 3 2 e minus 6.
+nucleo seed 1 1 8 6 step 2 2. time 2 4 9. temperature 7 point 3 2 e 8. n_p_ratio 0 point 1 1 6. free_neutrons 0 point 0 3 4 2. hydrogen 0 point 8 2 6. helium 0 point 1 3 9. deuterium 4 point 2 3 e minus 5. stage bottleneck.
+nucleo seed 1 1 8 6 step 2 3. time 3 5 5. temperature 6 point 1 3 e 8. n_p_ratio 0 point 1 1 5. free_neutrons 8 point 8 8 e minus 4. hydrogen 0 point 7 9 5. helium 0 point 2 0 4. deuterium 6 point 4 3 e minus 5. stage helium_forming.
+nucleo seed 1 1 8 6 step 2 4. time 5 0 7. temperature 5 point 1 3 e 8. n_p_ratio 0 point 1 1 5. free_neutrons 4 point 7 3 e minus 6. hydrogen 0 point 7 9 4. helium 0 point 2 0 5. deuterium 6 point 4 9 e minus 5. stage helium_forming.
+q nucleo seed 1 1 8 6 step 2 4 stage. a helium_forming.
+nucleo seed 1 1 8 6 step 2 5. time 7 2 4. temperature 4 point 2 9 e 8. n_p_ratio 0 point 1 1 5. free_neutrons 2 point 6 9 e minus 9. hydrogen 0 point 7 9 4. helium 0 point 2 0 5. deuterium 6 point 4 9 e minus 5. stage done.
+q nucleo seed 1 1 8 6 step 2 5 helium. a 0 point 2 0 5.
+nucleo seed 1 1 8 6 step 2 6. time 1 0 3 0. temperature 3 point 6 e 8. n_p_ratio 0 point 1 1 5. free_neutrons 0. hydrogen 0 point 7 9 4. helium 0 point 2 0 5. deuterium 6 point 4 9 e minus 5. stage done.
+q nucleo seed 1 1 8 6 step 2 6 time. a 1 0 3 0.
+q nucleo seed 1 1 8 6 step 2 6 next lithium. a 1 point 5 2 e minus 1 0.
+nucleo seed 1 1 8 6 step 2 7. time 1 4 7 0. temperature 3 point 0 1 e 8. n_p_ratio 0 point 1 1 5. free_neutrons 0. hydrogen 0 point 7 9 4. helium 0 point 2 0 5. deuterium 6 point 4 9 e minus 5. stage done.
+nucleo seed 1 1 8 6 step 2 8. time 2 1 0 0. temperature 2 point 5 2 e 8. n_p_ratio 0 point 1 1 5. free_neutrons 0. hydrogen 0 point 7 9 4. helium 0 point 2 0 5. deuterium 6 point 4 9 e minus 5. stage done.
+nucleo seed 1 1 8 6 step 2 9. time 3 0 0 0. temperature 2 point 1 1 e 8. n_p_ratio 0 point 1 1 5. free_neutrons 0. hydrogen 0 point 7 9 4. helium 0 point 2 0 5. deuterium 6 point 4 9 e minus 5. stage done.
+q nucleo seed 1 1 8 6 step 2 9 stage. a done.
+q nucleo seed 1 1 8 6 final helium. a 0 point 2 0 5.
+q nucleo seed 1 1 8 6 final hydrogen. a 0 point 7 9 4.
+q nucleo seed 1 1 8 6 final deuterium. a 6 point 4 9 e minus 5.
+q nucleo seed 1 1 8 6 final helium3. a 1 point 4 3 e minus 5.
+q nucleo seed 1 1 8 6 final lithium. a 1 point 5 2 e minus 1 0.
+q nucleo seed 1 1 8 6 final bottleneck_time. a 2 1 6.
+q nucleo seed 1 1 8 6 final bottleneck_n_p_ratio. a 0 point 1 1 9.
+q nucleo seed 1 1 8 6 final freeze_time. a 2 point 0 5.
+q nucleo seed 1 1 8 6 final peak_n_p_ratio. a 0 point 6 6 3.
+nucleo seed 3 8 9 1 params. eta_factor 1 point 3 6. tau_n 8 8 7. t_freeze 1 point 4 5. expansion_factor 0 point 7 9 9.
+q nucleo seed 3 8 9 1 param eta_factor. a 1 point 3 6.
+q nucleo seed 3 8 9 1 param tau_n. a 8 8 7.
+q nucleo seed 3 8 9 1 param t_freeze. a 1 point 4 5.
+q nucleo seed 3 8 9 1 param expansion_factor. a 0 point 7 9 9.
+nucleo seed 3 8 9 1 step 0. time 0 point 1. temperature 3 point 5 4 e 1 0. n_p_ratio 0 point 6 5 4. free_neutrons 0 point 3 9 6. hydrogen 0 point 6 0 4. helium 0. deuterium 0. stage plasma.
+q nucleo seed 3 8 9 1 step 0 next temperature. a 2 point 9 6 e 1 0.
+nucleo seed 3 8 9 1 step 1. time 0 point 1 4 3. temperature 2 point 9 6 e 1 0. n_p_ratio 0 point 6 0 2. free_neutrons 0 point 3 7 6. hydrogen 0 point 6 2 4. helium 0. deuterium 0. stage plasma.
+q nucleo seed 3 8 9 1 step 1 next temperature. a 2 point 4 8 e 1 0.
+nucleo seed 3 8 9 1 step 2. time 0 point 2 0 4. temperature 2 point 4 8 e 1 0. n_p_ratio 0 point 5 4 6. free_neutrons 0 point 3 5 3. hydrogen 0 point 6 4 7. helium 0. deuterium 0. stage plasma.
+nucleo seed 3 8 9 1 step 3. time 0 point 2 9 1. temperature 2 point 0 7 e 1 0. n_p_ratio 0 point 4 8 5. free_neutrons 0 point 3 2 7. hydrogen 0 point 6 7 3. helium 0. deuterium 0. stage plasma.
+q nucleo seed 3 8 9 1 step 3 hydrogen. a 0 point 6 7 3.
+nucleo seed 3 8 9 1 step 4. time 0 point 4 1 5. temperature 1 point 7 4 e 1 0. n_p_ratio 0 point 4 2 1. free_neutrons 0 point 2 9 6. hydrogen 0 point 7 0 4. helium 0. deuterium 0. stage plasma.
+q nucleo seed 3 8 9 1 step 4 next helium. a 0.
+q nucleo seed 3 8 9 1 step 4 next helium3. a 0.
+nucleo seed 3 8 9 1 step 5. time 0 point 5 9 1. temperature 1 point 4 6 e 1 0. n_p_ratio 0 point 3 5 7. free_neutrons 0 point 2 6 3. hydrogen 0 point 7 3 7. helium 0. deuterium 0. stage plasma.
+nucleo seed 3 8 9 1 step 6. time 0 point 8 4 4. temperature 1 point 2 2 e 1 0. n_p_ratio 0 point 2 9 2. free_neutrons 0 point 2 2 6. hydrogen 0 point 7 7 4. helium 0. deuterium 0. stage plasma.
+nucleo seed 3 8 9 1 step 7. time 1 point 2. temperature 1 point 0 2 e 1 0. n_p_ratio 0 point 2 3. free_neutrons 0 point 1 8 7. hydrogen 0 point 8 1 3. helium 0. deuterium 0. stage plasma.
+q nucleo seed 3 8 9 1 step 7 stage. a plasma.
+nucleo seed 3 8 9 1 step 8. time 1 point 7 2. temperature 8 point 5 3 e 9. n_p_ratio 0 point 1 7 2. free_neutrons 0 point 1 4 7. hydrogen 0 point 8 5 3. helium 0. deuterium 0. stage plasma.
+q nucleo seed 3 8 9 1 step 8 stage. a plasma.
+nucleo seed 3 8 9 1 step 9. time 2 point 4 5. temperature 7 point 1 5 e 9. n_p_ratio 0 point 1 4 3. free_neutrons 0 point 1 2 5. hydrogen 0 point 8 7 5. helium 0. deuterium 0. stage freeze_out.
+q nucleo seed 3 8 9 1 step 9 hydrogen. a 0 point 8 7 5.
+q nucleo seed 3 8 9 1 step 9 deuterium. a 0.
+nucleo seed 3 8 9 1 step 1 0. time 3 point 5. temperature 5 point 9 8 e 9. n_p_ratio 0 point 1 4 2. free_neutrons 0 point 1 2 5. hydrogen 0 point 8 7 5. helium 0. deuterium 0. stage decay.
+nucleo seed 3 8 9 1 step 1 1. time 4 point 9 9. temperature 5 point 0 1 e 9. n_p_ratio 0 point 1 4 2. free_neutrons 0 point 1 2 4. hydrogen 0 point 8 7 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 8 9 1 step 1 1 next hydrogen. a 0 point 8 7 6.
+nucleo seed 3 8 9 1 step 1 2. time 7 point 1 2. temperature 4 point 1 9 e 9. n_p_ratio 0 point 1 4 2. free_neutrons 0 point 1 2 4. hydrogen 0 point 8 7 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 8 9 1 step 1 2 stage. a decay.
+nucleo seed 3 8 9 1 step 1 3. time 1 0 point 2. temperature 3 point 5 e 9. n_p_ratio 0 point 1 4 1. free_neutrons 0 point 1 2 4. hydrogen 0 point 8 7 6. helium 0. deuterium 0. stage decay.
+nucleo seed 3 8 9 1 step 1 4. time 1 4 point 5. temperature 2 point 9 4 e 9. n_p_ratio 0 point 1 4. free_neutrons 0 point 1 2 3. hydrogen 0 point 8 7 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 8 9 1 step 1 4 stage. a decay.
+q nucleo seed 3 8 9 1 step 1 4 next lithium. a 0.
+nucleo seed 3 8 9 1 step 1 5. time 2 0 point 7. temperature 2 point 4 6 e 9. n_p_ratio 0 point 1 3 9. free_neutrons 0 point 1 2 2. hydrogen 0 point 8 7 8. helium 0. deuterium 0. stage decay.
+nucleo seed 3 8 9 1 step 1 6. time 2 9 point 5. temperature 2 point 0 6 e 9. n_p_ratio 0 point 1 3 8. free_neutrons 0 point 1 2 1. hydrogen 0 point 8 7 9. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 8 9 1 step 1 6 time. a 2 9 point 5.
+q nucleo seed 3 8 9 1 step 1 6 next lithium. a 0.
+nucleo seed 3 8 9 1 step 1 7. time 4 2 point 1. temperature 1 point 7 2 e 9. n_p_ratio 0 point 1 3 5. free_neutrons 0 point 1 1 9. hydrogen 0 point 8 8 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 8 9 1 step 1 7 free_neutrons. a 0 point 1 1 9.
+q nucleo seed 3 8 9 1 step 1 7 next free_neutrons. a 0 point 1 1 7.
+nucleo seed 3 8 9 1 step 1 8. time 6 0 point 1. temperature 1 point 4 4 e 9. n_p_ratio 0 point 1 3 2. free_neutrons 0 point 1 1 7. hydrogen 0 point 8 8 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 8 9 1 step 1 8 temperature. a 1 point 4 4 e 9.
+q nucleo seed 3 8 9 1 step 1 8 stage. a decay.
+q nucleo seed 3 8 9 1 step 1 8 next free_neutrons. a 0 point 1 1 4.
+nucleo seed 3 8 9 1 step 1 9. time 8 5 point 8. temperature 1 point 2 1 e 9. n_p_ratio 0 point 1 2 8. free_neutrons 0 point 1 1 4. hydrogen 0 point 8 8 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 8 9 1 step 1 9 next temperature. a 1 point 0 1 e 9.
+nucleo seed 3 8 9 1 step 2 0. time 1 2 2. temperature 1 point 0 1 e 9. n_p_ratio 0 point 1 2 2. free_neutrons 0 point 1 0 9. hydrogen 0 point 8 9 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 8 9 1 step 2 0 next helium. a 0.
+nucleo seed 3 8 9 1 step 2 1. time 1 7 5. temperature 8 point 4 6 e 8. n_p_ratio 0 point 1 1 4. free_neutrons 0 point 1 0 3. hydrogen 0 point 8 9 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 3 8 9 1 step 2 1 free_neutrons. a 0 point 1 0 3.
+q nucleo seed 3 8 9 1 step 2 1 deuterium. a 0.
+q nucleo seed 3 8 9 1 step 2 1 next free_neutrons. a 0 point 0 1 4 1.
+nucleo seed 3 8 9 1 step 2 2. time 2 4 9. temperature 7 point 0 9 e 8. n_p_ratio 0 point 1 0 9. free_neutrons 0 point 0 1 4 1. hydrogen 0 point 8 1 8. helium 0 point 1 6 8. deuterium 1 point 2 9 e minus 5. stage bottleneck.
+nucleo seed 3 8 9 1 step 2 3. time 3 5 5. temperature 5 point 9 4 e 8. n_p_ratio 0 point 1 0 8. free_neutrons 3 point 6 4 e minus 4. hydrogen 0 point 8 0 5. helium 0 point 1 9 4. deuterium 1 point 5 2 e minus 5. stage helium_forming.
+q nucleo seed 3 8 9 1 step 2 3 deuterium. a 1 point 5 2 e minus 5.
+nucleo seed 3 8 9 1 step 2 4. time 5 0 7. temperature 4 point 9 7 e 8. n_p_ratio 0 point 1 0 8. free_neutrons 1 point 9 4 e minus 6. hydrogen 0 point 8 0 5. helium 0 point 1 9 5. deuterium 1 point 5 3 e minus 5. stage helium_forming.
+q nucleo seed 3 8 9 1 step 2 4 next n_p_ratio. a 0 point 1 0 8.
+nucleo seed 3 8 9 1 step 2 5. time 7 2 4. temperature 4 point 1 6 e 8. n_p_ratio 0 point 1 0 8. free_neutrons 1 point 0 9 e minus 9. hydrogen 0 point 8 0 5. helium 0 point 1 9 5. deuterium 1 point 5 3 e minus 5. stage done.
+q nucleo seed 3 8 9 1 step 2 5 temperature. a 4 point 1 6 e 8.
+q nucleo seed 3 8 9 1 step 2 5 next time. a 1 0 3 0.
+q nucleo seed 3 8 9 1 step 2 5 next deuterium. a 1 point 5 3 e minus 5.
+nucleo seed 3 8 9 1 step 2 6. time 1 0 3 0. temperature 3 point 4 9 e 8. n_p_ratio 0 point 1 0 8. free_neutrons 0. hydrogen 0 point 8 0 5. helium 0 point 1 9 5. deuterium 1 point 5 3 e minus 5. stage done.
+q nucleo seed 3 8 9 1 step 2 6 next stage. a done.
+nucleo seed 3 8 9 1 step 2 7. time 1 4 7 0. temperature 2 point 9 2 e 8. n_p_ratio 0 point 1 0 8. free_neutrons 0. hydrogen 0 point 8 0 5. helium 0 point 1 9 5. deuterium 1 point 5 3 e minus 5. stage done.
+q nucleo seed 3 8 9 1 step 2 7 hydrogen. a 0 point 8 0 5.
+nucleo seed 3 8 9 1 step 2 8. time 2 1 0 0. temperature 2 point 4 4 e 8. n_p_ratio 0 point 1 0 8. free_neutrons 0. hydrogen 0 point 8 0 5. helium 0 point 1 9 5. deuterium 1 point 5 3 e minus 5. stage done.
+nucleo seed 3 8 9 1 step 2 9. time 3 0 0 0. temperature 2 point 0 4 e 8. n_p_ratio 0 point 1 0 8. free_neutrons 0. hydrogen 0 point 8 0 5. helium 0 point 1 9 5. deuterium 1 point 5 3 e minus 5. stage done.
+q nucleo seed 3 8 9 1 final helium. a 0 point 1 9 5.
+q nucleo seed 3 8 9 1 final hydrogen. a 0 point 8 0 5.
+q nucleo seed 3 8 9 1 final deuterium. a 1 point 5 3 e minus 5.
+q nucleo seed 3 8 9 1 final helium3. a 8 point 3 2 e minus 6.
+q nucleo seed 3 8 9 1 final lithium. a 9 point 2 5 e minus 1 0.
+q nucleo seed 3 8 9 1 final bottleneck_time. a 1 9 2.
+q nucleo seed 3 8 9 1 final bottleneck_n_p_ratio. a 0 point 1 1 2.
+q nucleo seed 3 8 9 1 final freeze_time. a 2 point 1 1.
+q nucleo seed 3 8 9 1 final peak_n_p_ratio. a 0 point 6 5 4.
+nucleo seed 2 8 4 9 params. eta_factor 0 point 8 3 5. tau_n 8 0 4. t_freeze 1 point 6. expansion_factor 0 point 9 5 2.
+q nucleo seed 2 8 4 9 param eta_factor. a 0 point 8 3 5.
+q nucleo seed 2 8 4 9 param tau_n. a 8 0 4.
+q nucleo seed 2 8 4 9 param t_freeze. a 1 point 6.
+q nucleo seed 2 8 4 9 param expansion_factor. a 0 point 9 5 2.
+nucleo seed 2 8 4 9 step 0. time 0 point 1. temperature 3 point 2 4 e 1 0. n_p_ratio 0 point 6 2 9. free_neutrons 0 point 3 8 6. hydrogen 0 point 6 1 4. helium 0. deuterium 0. stage plasma.
+q nucleo seed 2 8 4 9 step 0 lithium. a 0.
+nucleo seed 2 8 4 9 step 1. time 0 point 1 4 3. temperature 2 point 7 1 e 1 0. n_p_ratio 0 point 5 7 5. free_neutrons 0 point 3 6 5. hydrogen 0 point 6 3 5. helium 0. deuterium 0. stage plasma.
+q nucleo seed 2 8 4 9 step 1 next hydrogen. a 0 point 6 6.
+nucleo seed 2 8 4 9 step 2. time 0 point 2 0 4. temperature 2 point 2 7 e 1 0. n_p_ratio 0 point 5 1 6. free_neutrons 0 point 3 4. hydrogen 0 point 6 6. helium 0. deuterium 0. stage plasma.
+q nucleo seed 2 8 4 9 step 2 next stage. a plasma.
+nucleo seed 2 8 4 9 step 3. time 0 point 2 9 1. temperature 1 point 9 e 1 0. n_p_ratio 0 point 4 5 4. free_neutrons 0 point 3 1 2. hydrogen 0 point 6 8 8. helium 0. deuterium 0. stage plasma.
+nucleo seed 2 8 4 9 step 4. time 0 point 4 1 5. temperature 1 point 5 9 e 1 0. n_p_ratio 0 point 3 8 9. free_neutrons 0 point 2 8. hydrogen 0 point 7 2. helium 0. deuterium 0. stage plasma.
+q nucleo seed 2 8 4 9 step 4 stage. a plasma.
+nucleo seed 2 8 4 9 step 5. time 0 point 5 9 1. temperature 1 point 3 3 e 1 0. n_p_ratio 0 point 3 2 4. free_neutrons 0 point 2 4 5. hydrogen 0 point 7 5 5. helium 0. deuterium 0. stage plasma.
+q nucleo seed 2 8 4 9 step 5 next free_neutrons. a 0 point 2 0 7.
+nucleo seed 2 8 4 9 step 6. time 0 point 8 4 4. temperature 1 point 1 2 e 1 0. n_p_ratio 0 point 2 6. free_neutrons 0 point 2 0 7. hydrogen 0 point 7 9 3. helium 0. deuterium 0. stage plasma.
+q nucleo seed 2 8 4 9 step 6 next helium. a 0.
+nucleo seed 2 8 4 9 step 7. time 1 point 2. temperature 9 point 3 6 e 9. n_p_ratio 0 point 2 0 1. free_neutrons 0 point 1 6 7. hydrogen 0 point 8 3 3. helium 0. deuterium 0. stage plasma.
+q nucleo seed 2 8 4 9 step 7 helium3. a 0.
+nucleo seed 2 8 4 9 step 8. time 1 point 7 2. temperature 7 point 8 1 e 9. n_p_ratio 0 point 1 4 7. free_neutrons 0 point 1 2 8. hydrogen 0 point 8 7 2. helium 0. deuterium 0. stage plasma.
+q nucleo seed 2 8 4 9 step 8 lithium. a 0.
+q nucleo seed 2 8 4 9 step 8 next lithium. a 0.
+nucleo seed 2 8 4 9 step 9. time 2 point 4 5. temperature 6 point 5 5 e 9. n_p_ratio 0 point 1 4 5. free_neutrons 0 point 1 2 7. hydrogen 0 point 8 7 3. helium 0. deuterium 0. stage freeze_out.
+q nucleo seed 2 8 4 9 step 9 time. a 2 point 4 5.
+nucleo seed 2 8 4 9 step 1 0. time 3 point 5. temperature 5 point 4 8 e 9. n_p_ratio 0 point 1 4 5. free_neutrons 0 point 1 2 6. hydrogen 0 point 8 7 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 8 4 9 step 1 0 next stage. a decay.
+nucleo seed 2 8 4 9 step 1 1. time 4 point 9 9. temperature 4 point 5 9 e 9. n_p_ratio 0 point 1 4 5. free_neutrons 0 point 1 2 6. hydrogen 0 point 8 7 4. helium 0. deuterium 0. stage decay.
+nucleo seed 2 8 4 9 step 1 2. time 7 point 1 2. temperature 3 point 8 4 e 9. n_p_ratio 0 point 1 4 4. free_neutrons 0 point 1 2 6. hydrogen 0 point 8 7 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 8 4 9 step 1 2 helium3. a 0.
+nucleo seed 2 8 4 9 step 1 3. time 1 0 point 2. temperature 3 point 2 1 e 9. n_p_ratio 0 point 1 4 3. free_neutrons 0 point 1 2 5. hydrogen 0 point 8 7 5. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 8 4 9 step 1 3 time. a 1 0 point 2.
+q nucleo seed 2 8 4 9 step 1 3 free_neutrons. a 0 point 1 2 5.
+q nucleo seed 2 8 4 9 step 1 3 deuterium. a 0.
+nucleo seed 2 8 4 9 step 1 4. time 1 4 point 5. temperature 2 point 6 9 e 9. n_p_ratio 0 point 1 4 3. free_neutrons 0 point 1 2 5. hydrogen 0 point 8 7 5. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 8 4 9 step 1 4 next free_neutrons. a 0 point 1 2 4.
+nucleo seed 2 8 4 9 step 1 5. time 2 0 point 7. temperature 2 point 2 5 e 9. n_p_ratio 0 point 1 4 1. free_neutrons 0 point 1 2 4. hydrogen 0 point 8 7 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 8 4 9 step 1 5 next hydrogen. a 0 point 8 7 8.
+q nucleo seed 2 8 4 9 step 1 5 next helium. a 0.
+nucleo seed 2 8 4 9 step 1 6. time 2 9 point 5. temperature 1 point 8 9 e 9. n_p_ratio 0 point 1 4. free_neutrons 0 point 1 2 2. hydrogen 0 point 8 7 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 8 4 9 step 1 6 next helium3. a 0.
+q nucleo seed 2 8 4 9 step 1 6 next lithium. a 0.
+q nucleo seed 2 8 4 9 step 1 6 next stage. a decay.
+nucleo seed 2 8 4 9 step 1 7. time 4 2 point 1. temperature 1 point 5 8 e 9. n_p_ratio 0 point 1 3 7. free_neutrons 0 point 1 2 1. hydrogen 0 point 8 7 9. helium 0. deuterium 0. stage decay.
+nucleo seed 2 8 4 9 step 1 8. time 6 0 point 1. temperature 1 point 3 2 e 9. n_p_ratio 0 point 1 3 4. free_neutrons 0 point 1 1 8. hydrogen 0 point 8 8 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 8 4 9 step 1 8 helium. a 0.
+nucleo seed 2 8 4 9 step 1 9. time 8 5 point 8. temperature 1 point 1 1 e 9. n_p_ratio 0 point 1 2 9. free_neutrons 0 point 1 1 4. hydrogen 0 point 8 8 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 2 8 4 9 step 1 9 deuterium. a 0.
+q nucleo seed 2 8 4 9 step 1 9 next time. a 1 2 2.
+q nucleo seed 2 8 4 9 step 1 9 next free_neutrons. a 0 point 1 0 9.
+nucleo seed 2 8 4 9 step 2 0. time 1 2 2. temperature 9 point 2 8 e 8. n_p_ratio 0 point 1 2 3. free_neutrons 0 point 1 0 9. hydrogen 0 point 8 9 1. helium 0. deuterium 0. stage decay.
+nucleo seed 2 8 4 9 step 2 1. time 1 7 5. temperature 7 point 7 5 e 8. n_p_ratio 0 point 1 1 4. free_neutrons 0 point 0 7 5 6. hydrogen 0 point 8 7 1. helium 0 point 0 5 3 4. deuterium 8 point 2 3 e minus 6. stage bottleneck.
+nucleo seed 2 8 4 9 step 2 2. time 2 4 9. temperature 6 point 5 e 8. n_p_ratio 0 point 1 1 1. free_neutrons 0 point 0 0 5 8 5. hydrogen 0 point 8 0 6. helium 0 point 1 8 8. deuterium 3 point 1 3 e minus 5. stage helium_forming.
+q nucleo seed 2 8 4 9 step 2 2 deuterium. a 3 point 1 3 e minus 5.
+nucleo seed 2 8 4 9 step 2 3. time 3 5 5. temperature 5 point 4 4 e 8. n_p_ratio 0 point 1 1 1. free_neutrons 1 point 5 e minus 4. hydrogen 0 point 8 0 1. helium 0 point 1 9 9. deuterium 3 point 3 3 e minus 5. stage helium_forming.
+q nucleo seed 2 8 4 9 step 2 3 deuterium. a 3 point 3 3 e minus 5.
+q nucleo seed 2 8 4 9 step 2 3 next hydrogen. a 0 point 8 0 1.
+nucleo seed 2 8 4 9 step 2 4. time 5 0 7. temperature 4 point 5 5 e 8. n_p_ratio 0 point 1 1 1. free_neutrons 7 point 8 2 e minus 7. hydrogen 0 point 8 0 1. helium 0 point 1 9 9. deuterium 3 point 3 4 e minus 5. stage done.
+nucleo seed 2 8 4 9 step 2 5. time 7 2 4. temperature 3 point 8 1 e 8. n_p_ratio 0 point 1 1 1. free_neutrons 4 point 3 1 e minus 1 0. hydrogen 0 point 8 0 1. helium 0 point 1 9 9. deuterium 3 point 3 4 e minus 5. stage done.
+q nucleo seed 2 8 4 9 step 2 5 next deuterium. a 3 point 3 4 e minus 5.
+nucleo seed 2 8 4 9 step 2 6. time 1 0 3 0. temperature 3 point 1 9 e 8. n_p_ratio 0 point 1 1 1. free_neutrons 0. hydrogen 0 point 8 0 1. helium 0 point 1 9 9. deuterium 3 point 3 4 e minus 5. stage done.
+q nucleo seed 2 8 4 9 step 2 6 n_p_ratio. a 0 point 1 1 1.
+q nucleo seed 2 8 4 9 step 2 6 next helium. a 0 point 1 9 9.
+nucleo seed 2 8 4 9 step 2 7. time 1 4 7 0. temperature 2 point 6 7 e 8. n_p_ratio 0 point 1 1 1. free_neutrons 0. hydrogen 0 point 8 0 1. helium 0 point 1 9 9. deuterium 3 point 3 4 e minus 5. stage done.
+q nucleo seed 2 8 4 9 step 2 7 time. a 1 4 7 0.
+nucleo seed 2 8 4 9 step 2 8. time 2 1 0 0. temperature 2 point 2 4 e 8. n_p_ratio 0 point 1 1 1. free_neutrons 0. hydrogen 0 point 8 0 1. helium 0 point 1 9 9. deuterium 3 point 3 4 e minus 5. stage done.
+nucleo seed 2 8 4 9 step 2 9. time 3 0 0 0. temperature 1 point 8 7 e 8. n_p_ratio 0 point 1 1 1. free_neutrons 0. hydrogen 0 point 8 0 1. helium 0 point 1 9 9. deuterium 3 point 3 4 e minus 5. stage done.
+q nucleo seed 2 8 4 9 final helium. a 0 point 1 9 9.
+q nucleo seed 2 8 4 9 final hydrogen. a 0 point 8 0 1.
+q nucleo seed 2 8 4 9 final deuterium. a 3 point 3 4 e minus 5.
+q nucleo seed 2 8 4 9 final helium3. a 1 point 1 1 e minus 5.
+q nucleo seed 2 8 4 9 final lithium. a 3 point 4 9 e minus 1 0.
+q nucleo seed 2 8 4 9 final bottleneck_time. a 1 6 6.
+q nucleo seed 2 8 4 9 final bottleneck_n_p_ratio. a 0 point 1 1 5.
+q nucleo seed 2 8 4 9 final freeze_time. a 1 point 7 4.
+q nucleo seed 2 8 4 9 final peak_n_p_ratio. a 0 point 6 2 9.
+nucleo seed 8 5 4 1 params. eta_factor 0 point 7 2 7. tau_n 8 3 9. t_freeze 1 point 6 9. expansion_factor 0 point 7 8 5.
+q nucleo seed 8 5 4 1 param eta_factor. a 0 point 7 2 7.
+q nucleo seed 8 5 4 1 param tau_n. a 8 3 9.
+q nucleo seed 8 5 4 1 param t_freeze. a 1 point 6 9.
+q nucleo seed 8 5 4 1 param expansion_factor. a 0 point 7 8 5.
+nucleo seed 8 5 4 1 step 0. time 0 point 1. temperature 3 point 5 7 e 1 0. n_p_ratio 0 point 6 5 7. free_neutrons 0 point 3 9 6. hydrogen 0 point 6 0 4. helium 0. deuterium 0. stage plasma.
+q nucleo seed 8 5 4 1 step 0 lithium. a 0.
+nucleo seed 8 5 4 1 step 1. time 0 point 1 4 3. temperature 2 point 9 8 e 1 0. n_p_ratio 0 point 6 0 5. free_neutrons 0 point 3 7 7. hydrogen 0 point 6 2 3. helium 0. deuterium 0. stage plasma.
+nucleo seed 8 5 4 1 step 2. time 0 point 2 0 4. temperature 2 point 5 e 1 0. n_p_ratio 0 point 5 4 8. free_neutrons 0 point 3 5 4. hydrogen 0 point 6 4 6. helium 0. deuterium 0. stage plasma.
+nucleo seed 8 5 4 1 step 3. time 0 point 2 9 1. temperature 2 point 0 9 e 1 0. n_p_ratio 0 point 4 8 8. free_neutrons 0 point 3 2 8. hydrogen 0 point 6 7 2. helium 0. deuterium 0. stage plasma.
+q nucleo seed 8 5 4 1 step 3 temperature. a 2 point 0 9 e 1 0.
+q nucleo seed 8 5 4 1 step 3 next n_p_ratio. a 0 point 4 2 5.
+q nucleo seed 8 5 4 1 step 3 next stage. a plasma.
+nucleo seed 8 5 4 1 step 4. time 0 point 4 1 5. temperature 1 point 7 5 e 1 0. n_p_ratio 0 point 4 2 5. free_neutrons 0 point 2 9 8. hydrogen 0 point 7 0 2. helium 0. deuterium 0. stage plasma.
+q nucleo seed 8 5 4 1 step 4 next lithium. a 0.
+nucleo seed 8 5 4 1 step 5. time 0 point 5 9 1. temperature 1 point 4 7 e 1 0. n_p_ratio 0 point 3 6. free_neutrons 0 point 2 6 5. hydrogen 0 point 7 3 5. helium 0. deuterium 0. stage plasma.
+q nucleo seed 8 5 4 1 step 5 next helium3. a 0.
+q nucleo seed 8 5 4 1 step 5 next lithium. a 0.
+nucleo seed 8 5 4 1 step 6. time 0 point 8 4 4. temperature 1 point 2 3 e 1 0. n_p_ratio 0 point 2 9 5. free_neutrons 0 point 2 2 8. hydrogen 0 point 7 7 2. helium 0. deuterium 0. stage plasma.
+nucleo seed 8 5 4 1 step 7. time 1 point 2. temperature 1 point 0 3 e 1 0. n_p_ratio 0 point 2 3 3. free_neutrons 0 point 1 8 9. hydrogen 0 point 8 1 1. helium 0. deuterium 0. stage plasma.
+q nucleo seed 8 5 4 1 step 7 n_p_ratio. a 0 point 2 3 3.
+q nucleo seed 8 5 4 1 step 7 next n_p_ratio. a 0 point 1 7 5.
+q nucleo seed 8 5 4 1 step 7 next free_neutrons. a 0 point 1 4 9.
+nucleo seed 8 5 4 1 step 8. time 1 point 7 2. temperature 8 point 6 1 e 9. n_p_ratio 0 point 1 7 5. free_neutrons 0 point 1 4 9. hydrogen 0 point 8 5 1. helium 0. deuterium 0. stage plasma.
+q nucleo seed 8 5 4 1 step 8 next time. a 2 point 4 5.
+nucleo seed 8 5 4 1 step 9. time 2 point 4 5. temperature 7 point 2 1 e 9. n_p_ratio 0 point 1 2 5. free_neutrons 0 point 1 1 1. hydrogen 0 point 8 8 9. helium 0. deuterium 0. stage plasma.
+q nucleo seed 8 5 4 1 step 9 free_neutrons. a 0 point 1 1 1.
+q nucleo seed 8 5 4 1 step 9 lithium. a 0.
+nucleo seed 8 5 4 1 step 1 0. time 3 point 5. temperature 6 point 0 3 e 9. n_p_ratio 0 point 1 2. free_neutrons 0 point 1 0 8. hydrogen 0 point 8 9 2. helium 0. deuterium 0. stage freeze_out.
+q nucleo seed 8 5 4 1 step 1 0 free_neutrons. a 0 point 1 0 8.
+nucleo seed 8 5 4 1 step 1 1. time 4 point 9 9. temperature 5 point 0 5 e 9. n_p_ratio 0 point 1 2. free_neutrons 0 point 1 0 7. hydrogen 0 point 8 9 3. helium 0. deuterium 0. stage decay.
+nucleo seed 8 5 4 1 step 1 2. time 7 point 1 2. temperature 4 point 2 3 e 9. n_p_ratio 0 point 1 2. free_neutrons 0 point 1 0 7. hydrogen 0 point 8 9 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 4 1 step 1 2 lithium. a 0.
+nucleo seed 8 5 4 1 step 1 3. time 1 0 point 2. temperature 3 point 5 3 e 9. n_p_ratio 0 point 1 1 9. free_neutrons 0 point 1 0 7. hydrogen 0 point 8 9 3. helium 0. deuterium 0. stage decay.
+nucleo seed 8 5 4 1 step 1 4. time 1 4 point 5. temperature 2 point 9 6 e 9. n_p_ratio 0 point 1 1 9. free_neutrons 0 point 1 0 6. hydrogen 0 point 8 9 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 4 1 step 1 4 temperature. a 2 point 9 6 e 9.
+nucleo seed 8 5 4 1 step 1 5. time 2 0 point 7. temperature 2 point 4 8 e 9. n_p_ratio 0 point 1 1 8. free_neutrons 0 point 1 0 5. hydrogen 0 point 8 9 5. helium 0. deuterium 0. stage decay.
+nucleo seed 8 5 4 1 step 1 6. time 2 9 point 5. temperature 2 point 0 8 e 9. n_p_ratio 0 point 1 1 6. free_neutrons 0 point 1 0 4. hydrogen 0 point 8 9 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 4 1 step 1 6 deuterium. a 0.
+q nucleo seed 8 5 4 1 step 1 6 next helium3. a 0.
+nucleo seed 8 5 4 1 step 1 7. time 4 2 point 1. temperature 1 point 7 4 e 9. n_p_ratio 0 point 1 1 4. free_neutrons 0 point 1 0 3. hydrogen 0 point 8 9 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 4 1 step 1 7 next free_neutrons. a 0 point 1 0 1.
+q nucleo seed 8 5 4 1 step 1 7 next stage. a decay.
+nucleo seed 8 5 4 1 step 1 8. time 6 0 point 1. temperature 1 point 4 6 e 9. n_p_ratio 0 point 1 1 2. free_neutrons 0 point 1 0 1. hydrogen 0 point 8 9 9. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 4 1 step 1 8 deuterium. a 0.
+nucleo seed 8 5 4 1 step 1 9. time 8 5 point 8. temperature 1 point 2 2 e 9. n_p_ratio 0 point 1 0 8. free_neutrons 0 point 0 9 7 5. hydrogen 0 point 9 0 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 4 1 step 1 9 stage. a decay.
+nucleo seed 8 5 4 1 step 2 0. time 1 2 2. temperature 1 point 0 2 e 9. n_p_ratio 0 point 1 0 3. free_neutrons 0 point 0 9 3 4. hydrogen 0 point 9 0 7. helium 0. deuterium 0. stage decay.
+nucleo seed 8 5 4 1 step 2 1. time 1 7 5. temperature 8 point 5 3 e 8. n_p_ratio 0 point 0 9 6 1. free_neutrons 0 point 0 8 7 6. hydrogen 0 point 9 1 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 5 4 1 step 2 1 hydrogen. a 0 point 9 1 2.
+q nucleo seed 8 5 4 1 step 2 1 next stage. a bottleneck.
+nucleo seed 8 5 4 1 step 2 2. time 2 4 9. temperature 7 point 1 5 e 8. n_p_ratio 0 point 0 8 9 8. free_neutrons 0 point 0 1 7 3. hydrogen 0 point 8 5 2. helium 0 point 1 3. deuterium 3 point 2 5 e minus 5. stage bottleneck.
+nucleo seed 8 5 4 1 step 2 3. time 3 5 5. temperature 5 point 9 9 e 8. n_p_ratio 0 point 0 8 9 1. free_neutrons 4 point 4 6 e minus 4. hydrogen 0 point 8 3 7. helium 0 point 1 6 3. deuterium 4 point 1 4 e minus 5. stage helium_forming.
+q nucleo seed 8 5 4 1 step 2 3 next temperature. a 5 point 0 1 e 8.
+q nucleo seed 8 5 4 1 step 2 3 next hydrogen. a 0 point 8 3 6.
+nucleo seed 8 5 4 1 step 2 4. time 5 0 7. temperature 5 point 0 1 e 8. n_p_ratio 0 point 0 8 9 1. free_neutrons 2 point 3 4 e minus 6. hydrogen 0 point 8 3 6. helium 0 point 1 6 4. deuterium 4 point 1 6 e minus 5. stage helium_forming.
+q nucleo seed 8 5 4 1 step 2 4 next free_neutrons. a 1 point 3 1 e minus 9.
+q nucleo seed 8 5 4 1 step 2 4 next stage. a done.
+nucleo seed 8 5 4 1 step 2 5. time 7 2 4. temperature 4 point 1 9 e 8. n_p_ratio 0 point 0 8 9 1. free_neutrons 1 point 3 1 e minus 9. hydrogen 0 point 8 3 6. helium 0 point 1 6 4. deuterium 4 point 1 6 e minus 5. stage done.
+nucleo seed 8 5 4 1 step 2 6. time 1 0 3 0. temperature 3 point 5 2 e 8. n_p_ratio 0 point 0 8 9 1. free_neutrons 0. hydrogen 0 point 8 3 6. helium 0 point 1 6 4. deuterium 4 point 1 6 e minus 5. stage done.
+nucleo seed 8 5 4 1 step 2 7. time 1 4 7 0. temperature 2 point 9 4 e 8. n_p_ratio 0 point 0 8 9 1. free_neutrons 0. hydrogen 0 point 8 3 6. helium 0 point 1 6 4. deuterium 4 point 1 6 e minus 5. stage done.
+q nucleo seed 8 5 4 1 step 2 7 next time. a 2 1 0 0.
+q nucleo seed 8 5 4 1 step 2 7 next lithium. a 2 point 6 4 e minus 1 0.
+nucleo seed 8 5 4 1 step 2 8. time 2 1 0 0. temperature 2 point 4 6 e 8. n_p_ratio 0 point 0 8 9 1. free_neutrons 0. hydrogen 0 point 8 3 6. helium 0 point 1 6 4. deuterium 4 point 1 6 e minus 5. stage done.
+q nucleo seed 8 5 4 1 step 2 8 hydrogen. a 0 point 8 3 6.
+nucleo seed 8 5 4 1 step 2 9. time 3 0 0 0. temperature 2 point 0 6 e 8. n_p_ratio 0 point 0 8 9 1. free_neutrons 0. hydrogen 0 point 8 3 6. helium 0 point 1 6 4. deuterium 4 point 1 6 e minus 5. stage done.
+q nucleo seed 8 5 4 1 step 2 9 temperature. a 2 point 0 6 e 8.
+q nucleo seed 8 5 4 1 final helium. a 0 point 1 6 4.
+q nucleo seed 8 5 4 1 final hydrogen. a 0 point 8 3 6.
+q nucleo seed 8 5 4 1 final deuterium. a 4 point 1 6 e minus 5.
+q nucleo seed 8 5 4 1 final helium3. a 1 point 2 1 e minus 5.
+q nucleo seed 8 5 4 1 final lithium. a 2 point 6 4 e minus 1 0.
+q nucleo seed 8 5 4 1 final bottleneck_time. a 2 0 3.
+q nucleo seed 8 5 4 1 final bottleneck_n_p_ratio. a 0 point 0 9 2 6.
+q nucleo seed 8 5 4 1 final freeze_time. a 2 point 5 3.
+q nucleo seed 8 5 4 1 final peak_n_p_ratio. a 0 point 6 5 7.
+nucleo seed 7 0 4 0 params. eta_factor 0 point 3. tau_n 8 7 0. t_freeze 0 point 6 3 2. expansion_factor 1 point 3 5.
+q nucleo seed 7 0 4 0 param eta_factor. a 0 point 3.
+q nucleo seed 7 0 4 0 param tau_n. a 8 7 0.
+q nucleo seed 7 0 4 0 param t_freeze. a 0 point 6 3 2.
+q nucleo seed 7 0 4 0 param expansion_factor. a 1 point 3 5.
+nucleo seed 7 0 4 0 step 0. time 0 point 1. temperature 2 point 7 2 e 1 0. n_p_ratio 0 point 5 7 6. free_neutrons 0 point 3 6 6. hydrogen 0 point 6 3 4. helium 0. deuterium 0. stage plasma.
+q nucleo seed 7 0 4 0 step 0 next free_neutrons. a 0 point 3 4 1.
+nucleo seed 7 0 4 0 step 1. time 0 point 1 4 3. temperature 2 point 2 8 e 1 0. n_p_ratio 0 point 5 1 7. free_neutrons 0 point 3 4 1. hydrogen 0 point 6 5 9. helium 0. deuterium 0. stage plasma.
+q nucleo seed 7 0 4 0 step 1 deuterium. a 0.
+q nucleo seed 7 0 4 0 step 1 stage. a plasma.
+q nucleo seed 7 0 4 0 step 1 next time. a 0 point 2 0 4.
+q nucleo seed 7 0 4 0 step 1 next deuterium. a 0.
+nucleo seed 7 0 4 0 step 2. time 0 point 2 0 4. temperature 1 point 9 1 e 1 0. n_p_ratio 0 point 4 5 5. free_neutrons 0 point 3 1 3. hydrogen 0 point 6 8 7. helium 0. deuterium 0. stage plasma.
+q nucleo seed 7 0 4 0 step 2 temperature. a 1 point 9 1 e 1 0.
+q nucleo seed 7 0 4 0 step 2 next helium3. a 0.
+q nucleo seed 7 0 4 0 step 2 next lithium. a 0.
+nucleo seed 7 0 4 0 step 3. time 0 point 2 9 1. temperature 1 point 6 e 1 0. n_p_ratio 0 point 3 9. free_neutrons 0 point 2 8 1. hydrogen 0 point 7 1 9. helium 0. deuterium 0. stage plasma.
+nucleo seed 7 0 4 0 step 4. time 0 point 4 1 5. temperature 1 point 3 4 e 1 0. n_p_ratio 0 point 3 4. free_neutrons 0 point 2 5 4. hydrogen 0 point 7 4 6. helium 0. deuterium 0. stage freeze_out.
+q nucleo seed 7 0 4 0 step 4 helium3. a 0.
+nucleo seed 7 0 4 0 step 5. time 0 point 5 9 1. temperature 1 point 1 2 e 1 0. n_p_ratio 0 point 3 4. free_neutrons 0 point 2 5 4. hydrogen 0 point 7 4 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 0 4 0 step 5 hydrogen. a 0 point 7 4 6.
+q nucleo seed 7 0 4 0 step 5 next hydrogen. a 0 point 7 4 7.
+q nucleo seed 7 0 4 0 step 5 next helium3. a 0.
+nucleo seed 7 0 4 0 step 6. time 0 point 8 4 4. temperature 9 point 3 7 e 9. n_p_ratio 0 point 3 4. free_neutrons 0 point 2 5 3. hydrogen 0 point 7 4 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 0 4 0 step 6 deuterium. a 0.
+nucleo seed 7 0 4 0 step 7. time 1 point 2. temperature 7 point 8 6 e 9. n_p_ratio 0 point 3 3 9. free_neutrons 0 point 2 5 3. hydrogen 0 point 7 4 7. helium 0. deuterium 0. stage decay.
+nucleo seed 7 0 4 0 step 8. time 1 point 7 2. temperature 6 point 5 6 e 9. n_p_ratio 0 point 3 3 9. free_neutrons 0 point 2 5 3. hydrogen 0 point 7 4 7. helium 0. deuterium 0. stage decay.
+nucleo seed 7 0 4 0 step 9. time 2 point 4 5. temperature 5 point 5 e 9. n_p_ratio 0 point 3 3 9. free_neutrons 0 point 2 5 3. hydrogen 0 point 7 4 7. helium 0. deuterium 0. stage decay.
+nucleo seed 7 0 4 0 step 1 0. time 3 point 5. temperature 4 point 6 e 9. n_p_ratio 0 point 3 3 8. free_neutrons 0 point 2 5 3. hydrogen 0 point 7 4 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 0 4 0 step 1 0 time. a 3 point 5.
+q nucleo seed 7 0 4 0 step 1 0 temperature. a 4 point 6 e 9.
+nucleo seed 7 0 4 0 step 1 1. time 4 point 9 9. temperature 3 point 8 5 e 9. n_p_ratio 0 point 3 3 7. free_neutrons 0 point 2 5 2. hydrogen 0 point 7 4 8. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 0 4 0 step 1 1 next temperature. a 3 point 2 3 e 9.
+q nucleo seed 7 0 4 0 step 1 1 next stage. a decay.
+nucleo seed 7 0 4 0 step 1 2. time 7 point 1 2. temperature 3 point 2 3 e 9. n_p_ratio 0 point 3 3 6. free_neutrons 0 point 2 5 2. hydrogen 0 point 7 4 8. helium 0. deuterium 0. stage decay.
+nucleo seed 7 0 4 0 step 1 3. time 1 0 point 2. temperature 2 point 6 9 e 9. n_p_ratio 0 point 3 3 5. free_neutrons 0 point 2 5 1. hydrogen 0 point 7 4 9. helium 0. deuterium 0. stage decay.
+nucleo seed 7 0 4 0 step 1 4. time 1 4 point 5. temperature 2 point 2 6 e 9. n_p_ratio 0 point 3 3 2. free_neutrons 0 point 2 5. hydrogen 0 point 7 5. helium 0. deuterium 0. stage decay.
+nucleo seed 7 0 4 0 step 1 5. time 2 0 point 7. temperature 1 point 8 9 e 9. n_p_ratio 0 point 3 2 9. free_neutrons 0 point 2 4 8. hydrogen 0 point 7 5 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 0 4 0 step 1 5 helium3. a 0.
+q nucleo seed 7 0 4 0 step 1 5 lithium. a 0.
+nucleo seed 7 0 4 0 step 1 6. time 2 9 point 5. temperature 1 point 5 8 e 9. n_p_ratio 0 point 3 2 5. free_neutrons 0 point 2 4 5. hydrogen 0 point 7 5 5. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 0 4 0 step 1 6 temperature. a 1 point 5 8 e 9.
+q nucleo seed 7 0 4 0 step 1 6 stage. a decay.
+q nucleo seed 7 0 4 0 step 1 6 next stage. a decay.
+nucleo seed 7 0 4 0 step 1 7. time 4 2 point 1. temperature 1 point 3 3 e 9. n_p_ratio 0 point 3 1 9. free_neutrons 0 point 2 4 2. hydrogen 0 point 7 5 8. helium 0. deuterium 0. stage decay.
+nucleo seed 7 0 4 0 step 1 8. time 6 0 point 1. temperature 1 point 1 1 e 9. n_p_ratio 0 point 3 1. free_neutrons 0 point 2 3 7. hydrogen 0 point 7 6 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 0 4 0 step 1 8 hydrogen. a 0 point 7 6 3.
+nucleo seed 7 0 4 0 step 1 9. time 8 5 point 8. temperature 9 point 2 9 e 8. n_p_ratio 0 point 2 9 8. free_neutrons 0 point 2 3. hydrogen 0 point 7 7. helium 0. deuterium 0. stage decay.
+nucleo seed 7 0 4 0 step 2 0. time 1 2 2. temperature 7 point 7 9 e 8. n_p_ratio 0 point 2 8 3. free_neutrons 0 point 2 2 1. hydrogen 0 point 7 7 9. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 0 4 0 step 2 0 time. a 1 2 2.
+q nucleo seed 7 0 4 0 step 2 0 next stage. a bottleneck.
+nucleo seed 7 0 4 0 step 2 1. time 1 7 5. temperature 6 point 5 1 e 8. n_p_ratio 0 point 2 7 2. free_neutrons 0 point 0 3 8 6. hydrogen 0 point 6 1 1. helium 0 point 3 5. deuterium 1 point 3 3 e minus 4. stage bottleneck.
+nucleo seed 7 0 4 0 step 2 2. time 2 4 9. temperature 5 point 4 5 e 8. n_p_ratio 0 point 2 7. free_neutrons 0 point 0 0 3 0 1. hydrogen 0 point 5 7 8. helium 0 point 4 1 9. deuterium 1 point 6 8 e minus 4. stage helium_forming.
+q nucleo seed 7 0 4 0 step 2 2 next free_neutrons. a 7 point 7 8 e minus 5.
+q nucleo seed 7 0 4 0 step 2 2 next deuterium. a 1 point 7 2 e minus 4.
+q nucleo seed 7 0 4 0 step 2 2 next stage. a helium_forming.
+nucleo seed 7 0 4 0 step 2 3. time 3 5 5. temperature 4 point 5 7 e 8. n_p_ratio 0 point 2 7. free_neutrons 7 point 7 8 e minus 5. hydrogen 0 point 5 7 5. helium 0 point 4 2 5. deuterium 1 point 7 2 e minus 4. stage helium_forming.
+q nucleo seed 7 0 4 0 step 2 3 next n_p_ratio. a 0 point 2 7.
+nucleo seed 7 0 4 0 step 2 4. time 5 0 7. temperature 3 point 8 2 e 8. n_p_ratio 0 point 2 7. free_neutrons 4 point 1 2 e minus 7. hydrogen 0 point 5 7 5. helium 0 point 4 2 5. deuterium 1 point 7 2 e minus 4. stage done.
+nucleo seed 7 0 4 0 step 2 5. time 7 2 4. temperature 3 point 2 e 8. n_p_ratio 0 point 2 7. free_neutrons 2 point 3 2 e minus 1 0. hydrogen 0 point 5 7 5. helium 0 point 4 2 5. deuterium 1 point 7 2 e minus 4. stage done.
+q nucleo seed 7 0 4 0 step 2 5 time. a 7 2 4.
+nucleo seed 7 0 4 0 step 2 6. time 1 0 3 0. temperature 2 point 6 8 e 8. n_p_ratio 0 point 2 7. free_neutrons 0. hydrogen 0 point 5 7 5. helium 0 point 4 2 5. deuterium 1 point 7 2 e minus 4. stage done.
+nucleo seed 7 0 4 0 step 2 7. time 1 4 7 0. temperature 2 point 2 4 e 8. n_p_ratio 0 point 2 7. free_neutrons 0. hydrogen 0 point 5 7 5. helium 0 point 4 2 5. deuterium 1 point 7 2 e minus 4. stage done.
+nucleo seed 7 0 4 0 step 2 8. time 2 1 0 0. temperature 1 point 8 8 e 8. n_p_ratio 0 point 2 7. free_neutrons 0. hydrogen 0 point 5 7 5. helium 0 point 4 2 5. deuterium 1 point 7 2 e minus 4. stage done.
+q nucleo seed 7 0 4 0 step 2 8 temperature. a 1 point 8 8 e 8.
+q nucleo seed 7 0 4 0 step 2 8 next helium3. a 2 point 0 6 e minus 5.
+nucleo seed 7 0 4 0 step 2 9. time 3 0 0 0. temperature 1 point 5 7 e 8. n_p_ratio 0 point 2 7. free_neutrons 0. hydrogen 0 point 5 7 5. helium 0 point 4 2 5. deuterium 1 point 7 2 e minus 4. stage done.
+q nucleo seed 7 0 4 0 final helium. a 0 point 4 2 5.
+q nucleo seed 7 0 4 0 final hydrogen. a 0 point 5 7 5.
+q nucleo seed 7 0 4 0 final deuterium. a 1 point 7 2 e minus 4.
+q nucleo seed 7 0 4 0 final helium3. a 2 point 0 6 e minus 5.
+q nucleo seed 7 0 4 0 final lithium. a 4 point 5 e minus 1 1.
+q nucleo seed 7 0 4 0 final bottleneck_time. a 1 2 5.
+q nucleo seed 7 0 4 0 final bottleneck_n_p_ratio. a 0 point 2 8 2.
+q nucleo seed 7 0 4 0 final freeze_time. a 0 point 3 8 3.
+q nucleo seed 7 0 4 0 final peak_n_p_ratio. a 0 point 5 7 6.
+nucleo seed 7 9 5 8 params. eta_factor 0 point 9 5 8. tau_n 9 2 6. t_freeze 0 point 9 6 3. expansion_factor 1 point 1 9.
+q nucleo seed 7 9 5 8 param eta_factor. a 0 point 9 5 8.
+q nucleo seed 7 9 5 8 param tau_n. a 9 2 6.
+q nucleo seed 7 9 5 8 param t_freeze. a 0 point 9 6 3.
+q nucleo seed 7 9 5 8 param expansion_factor. a 1 point 1 9.
+nucleo seed 7 9 5 8 step 0. time 0 point 1. temperature 2 point 9 e 1 0. n_p_ratio 0 point 5 9 6. free_neutrons 0 point 3 7 3. hydrogen 0 point 6 2 7. helium 0. deuterium 0. stage plasma.
+q nucleo seed 7 9 5 8 step 0 stage. a plasma.
+q nucleo seed 7 9 5 8 step 0 next hydrogen. a 0 point 6 5.
+q nucleo seed 7 9 5 8 step 0 next lithium. a 0.
+nucleo seed 7 9 5 8 step 1. time 0 point 1 4 3. temperature 2 point 4 2 e 1 0. n_p_ratio 0 point 5 3 8. free_neutrons 0 point 3 5. hydrogen 0 point 6 5. helium 0. deuterium 0. stage plasma.
+nucleo seed 7 9 5 8 step 2. time 0 point 2 0 4. temperature 2 point 0 3 e 1 0. n_p_ratio 0 point 4 7 7. free_neutrons 0 point 3 2 3. hydrogen 0 point 6 7 7. helium 0. deuterium 0. stage plasma.
+q nucleo seed 7 9 5 8 step 2 next hydrogen. a 0 point 7 0 7.
+nucleo seed 7 9 5 8 step 3. time 0 point 2 9 1. temperature 1 point 7 e 1 0. n_p_ratio 0 point 4 1 3. free_neutrons 0 point 2 9 3. hydrogen 0 point 7 0 7. helium 0. deuterium 0. stage plasma.
+q nucleo seed 7 9 5 8 step 3 hydrogen. a 0 point 7 0 7.
+q nucleo seed 7 9 5 8 step 3 next temperature. a 1 point 4 2 e 1 0.
+q nucleo seed 7 9 5 8 step 3 next helium. a 0.
+nucleo seed 7 9 5 8 step 4. time 0 point 4 1 5. temperature 1 point 4 2 e 1 0. n_p_ratio 0 point 3 4 8. free_neutrons 0 point 2 5 8. hydrogen 0 point 7 4 2. helium 0. deuterium 0. stage plasma.
+nucleo seed 7 9 5 8 step 5. time 0 point 5 9 1. temperature 1 point 1 9 e 1 0. n_p_ratio 0 point 2 8 4. free_neutrons 0 point 2 2 1. hydrogen 0 point 7 7 9. helium 0. deuterium 0. stage plasma.
+nucleo seed 7 9 5 8 step 6. time 0 point 8 4 4. temperature 9 point 9 8 e 9. n_p_ratio 0 point 2 4 9. free_neutrons 0 point 1 9 9. hydrogen 0 point 8 0 1. helium 0. deuterium 0. stage freeze_out.
+nucleo seed 7 9 5 8 step 7. time 1 point 2. temperature 8 point 3 7 e 9. n_p_ratio 0 point 2 4 9. free_neutrons 0 point 1 9 9. hydrogen 0 point 8 0 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 9 5 8 step 7 n_p_ratio. a 0 point 2 4 9.
+q nucleo seed 7 9 5 8 step 7 next helium3. a 0.
+nucleo seed 7 9 5 8 step 8. time 1 point 7 2. temperature 6 point 9 9 e 9. n_p_ratio 0 point 2 4 9. free_neutrons 0 point 1 9 9. hydrogen 0 point 8 0 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 9 5 8 step 8 lithium. a 0.
+q nucleo seed 7 9 5 8 step 8 next helium3. a 0.
+q nucleo seed 7 9 5 8 step 8 next lithium. a 0.
+nucleo seed 7 9 5 8 step 9. time 2 point 4 5. temperature 5 point 8 6 e 9. n_p_ratio 0 point 2 4 9. free_neutrons 0 point 1 9 9. hydrogen 0 point 8 0 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 9 5 8 step 9 time. a 2 point 4 5.
+nucleo seed 7 9 5 8 step 1 0. time 3 point 5. temperature 4 point 9 e 9. n_p_ratio 0 point 2 4 8. free_neutrons 0 point 1 9 9. hydrogen 0 point 8 0 1. helium 0. deuterium 0. stage decay.
+nucleo seed 7 9 5 8 step 1 1. time 4 point 9 9. temperature 4 point 1 e 9. n_p_ratio 0 point 2 4 8. free_neutrons 0 point 1 9 9. hydrogen 0 point 8 0 1. helium 0. deuterium 0. stage decay.
+nucleo seed 7 9 5 8 step 1 2. time 7 point 1 2. temperature 3 point 4 4 e 9. n_p_ratio 0 point 2 4 7. free_neutrons 0 point 1 9 8. hydrogen 0 point 8 0 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 9 5 8 step 1 2 lithium. a 0.
+q nucleo seed 7 9 5 8 step 1 2 next deuterium. a 0.
+nucleo seed 7 9 5 8 step 1 3. time 1 0 point 2. temperature 2 point 8 7 e 9. n_p_ratio 0 point 2 4 6. free_neutrons 0 point 1 9 7. hydrogen 0 point 8 0 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 9 5 8 step 1 3 deuterium. a 0.
+nucleo seed 7 9 5 8 step 1 4. time 1 4 point 5. temperature 2 point 4 1 e 9. n_p_ratio 0 point 2 4 5. free_neutrons 0 point 1 9 6. hydrogen 0 point 8 0 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 9 5 8 step 1 4 time. a 1 4 point 5.
+q nucleo seed 7 9 5 8 step 1 4 n_p_ratio. a 0 point 2 4 5.
+nucleo seed 7 9 5 8 step 1 5. time 2 0 point 7. temperature 2 point 0 1 e 9. n_p_ratio 0 point 2 4 3. free_neutrons 0 point 1 9 5. hydrogen 0 point 8 0 5. helium 0. deuterium 0. stage decay.
+nucleo seed 7 9 5 8 step 1 6. time 2 9 point 5. temperature 1 point 6 9 e 9. n_p_ratio 0 point 2 4. free_neutrons 0 point 1 9 3. hydrogen 0 point 8 0 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 9 5 8 step 1 6 deuterium. a 0.
+q nucleo seed 7 9 5 8 step 1 6 next lithium. a 0.
+nucleo seed 7 9 5 8 step 1 7. time 4 2 point 1. temperature 1 point 4 1 e 9. n_p_ratio 0 point 2 3 6. free_neutrons 0 point 1 9 1. hydrogen 0 point 8 0 9. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 9 5 8 step 1 7 next hydrogen. a 0 point 8 1 3.
+nucleo seed 7 9 5 8 step 1 8. time 6 0 point 1. temperature 1 point 1 8 e 9. n_p_ratio 0 point 2 3. free_neutrons 0 point 1 8 7. hydrogen 0 point 8 1 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 7 9 5 8 step 1 8 temperature. a 1 point 1 8 e 9.
+q nucleo seed 7 9 5 8 step 1 8 next stage. a decay.
+nucleo seed 7 9 5 8 step 1 9. time 8 5 point 8. temperature 9 point 9 e 8. n_p_ratio 0 point 2 2 2. free_neutrons 0 point 1 8 2. hydrogen 0 point 8 1 8. helium 0. deuterium 0. stage decay.
+nucleo seed 7 9 5 8 step 2 0. time 1 2 2. temperature 8 point 3 e 8. n_p_ratio 0 point 2 1 2. free_neutrons 0 point 1 7 5. hydrogen 0 point 8 2 5. helium 0. deuterium 0. stage decay.
+nucleo seed 7 9 5 8 step 2 1. time 1 7 5. temperature 6 point 9 3 e 8. n_p_ratio 0 point 2 0 3. free_neutrons 0 point 0 3 9. hydrogen 0 point 7 0 1. helium 0 point 2 6. deuterium 1 point 9 7 e minus 5. stage bottleneck.
+nucleo seed 7 9 5 8 step 2 2. time 2 4 9. temperature 5 point 8 1 e 8. n_p_ratio 0 point 2 0 2. free_neutrons 0 point 0 0 3 0 5. hydrogen 0 point 6 6 7. helium 0 point 3 2 9. deuterium 2 point 6 2 e minus 5. stage helium_forming.
+q nucleo seed 7 9 5 8 step 2 2 time. a 2 4 9.
+q nucleo seed 7 9 5 8 step 2 2 next lithium. a 4 point 5 9 e minus 1 0.
+nucleo seed 7 9 5 8 step 2 3. time 3 5 5. temperature 4 point 8 7 e 8. n_p_ratio 0 point 2 0 1. free_neutrons 7 point 9 5 e minus 5. hydrogen 0 point 6 6 5. helium 0 point 3 3 5. deuterium 2 point 6 8 e minus 5. stage helium_forming.
+q nucleo seed 7 9 5 8 step 2 3 temperature. a 4 point 8 7 e 8.
+q nucleo seed 7 9 5 8 step 2 3 next deuterium. a 2 point 6 8 e minus 5.
+nucleo seed 7 9 5 8 step 2 4. time 5 0 7. temperature 4 point 0 7 e 8. n_p_ratio 0 point 2 0 1. free_neutrons 4 point 2 5 e minus 7. hydrogen 0 point 6 6 5. helium 0 point 3 3 5. deuterium 2 point 6 8 e minus 5. stage done.
+q nucleo seed 7 9 5 8 step 2 4 lithium. a 4 point 5 9 e minus 1 0.
+nucleo seed 7 9 5 8 step 2 5. time 7 2 4. temperature 3 point 4 1 e 8. n_p_ratio 0 point 2 0 1. free_neutrons 2 point 4 3 e minus 1 0. hydrogen 0 point 6 6 5. helium 0 point 3 3 5. deuterium 2 point 6 8 e minus 5. stage done.
+q nucleo seed 7 9 5 8 step 2 5 next n_p_ratio. a 0 point 2 0 1.
+nucleo seed 7 9 5 8 step 2 6. time 1 0 3 0. temperature 2 point 8 6 e 8. n_p_ratio 0 point 2 0 1. free_neutrons 0. hydrogen 0 point 6 6 5. helium 0 point 3 3 5. deuterium 2 point 6 8 e minus 5. stage done.
+q nucleo seed 7 9 5 8 step 2 6 free_neutrons. a 0.
+nucleo seed 7 9 5 8 step 2 7. time 1 4 7 0. temperature 2 point 3 9 e 8. n_p_ratio 0 point 2 0 1. free_neutrons 0. hydrogen 0 point 6 6 5. helium 0 point 3 3 5. deuterium 2 point 6 8 e minus 5. stage done.
+nucleo seed 7 9 5 8 step 2 8. time 2 1 0 0. temperature 2 e 8. n_p_ratio 0 point 2 0 1. free_neutrons 0. hydrogen 0 point 6 6 5. helium 0 point 3 3 5. deuterium 2 point 6 8 e minus 5. stage done.
+q nucleo seed 7 9 5 8 step 2 8 free_neutrons. a 0.
+nucleo seed 7 9 5 8 step 2 9. time 3 0 0 0. temperature 1 point 6 7 e 8. n_p_ratio 0 point 2 0 1. free_neutrons 0. hydrogen 0 point 6 6 5. helium 0 point 3 3 5. deuterium 2 point 6 8 e minus 5. stage done.
+q nucleo seed 7 9 5 8 step 2 9 temperature. a 1 point 6 7 e 8.
+q nucleo seed 7 9 5 8 final helium. a 0 point 3 3 5.
+q nucleo seed 7 9 5 8 final hydrogen. a 0 point 6 6 5.
+q nucleo seed 7 9 5 8 final deuterium. a 2 point 6 8 e minus 5.
+q nucleo seed 7 9 5 8 final helium3. a 1 point 0 3 e minus 5.
+q nucleo seed 7 9 5 8 final lithium. a 4 point 5 9 e minus 1 0.
+q nucleo seed 7 9 5 8 final bottleneck_time. a 1 3 2.
+q nucleo seed 7 9 5 8 final bottleneck_n_p_ratio. a 0 point 2 0 9.
+q nucleo seed 7 9 5 8 final freeze_time. a 0 point 7 2 1.
+q nucleo seed 7 9 5 8 final peak_n_p_ratio. a 0 point 5 9 6.
+nucleo seed 8 3 5 4 params. eta_factor 0 point 7 3 7. tau_n 9 4 7. t_freeze 1 point 2 5. expansion_factor 1 point 0 3.
+q nucleo seed 8 3 5 4 param eta_factor. a 0 point 7 3 7.
+q nucleo seed 8 3 5 4 param tau_n. a 9 4 7.
+q nucleo seed 8 3 5 4 param t_freeze. a 1 point 2 5.
+q nucleo seed 8 3 5 4 param expansion_factor. a 1 point 0 3.
+nucleo seed 8 3 5 4 step 0. time 0 point 1. temperature 3 point 1 2 e 1 0. n_p_ratio 0 point 6 1 8. free_neutrons 0 point 3 8 2. hydrogen 0 point 6 1 8. helium 0. deuterium 0. stage plasma.
+q nucleo seed 8 3 5 4 step 0 stage. a plasma.
+nucleo seed 8 3 5 4 step 1. time 0 point 1 4 3. temperature 2 point 6 1 e 1 0. n_p_ratio 0 point 5 6 2. free_neutrons 0 point 3 6. hydrogen 0 point 6 4. helium 0. deuterium 0. stage plasma.
+q nucleo seed 8 3 5 4 step 1 temperature. a 2 point 6 1 e 1 0.
+q nucleo seed 8 3 5 4 step 1 deuterium. a 0.
+q nucleo seed 8 3 5 4 step 1 next n_p_ratio. a 0 point 5 0 3.
+q nucleo seed 8 3 5 4 step 1 next free_neutrons. a 0 point 3 3 4.
+nucleo seed 8 3 5 4 step 2. time 0 point 2 0 4. temperature 2 point 1 8 e 1 0. n_p_ratio 0 point 5 0 3. free_neutrons 0 point 3 3 4. hydrogen 0 point 6 6 6. helium 0. deuterium 0. stage plasma.
+nucleo seed 8 3 5 4 step 3. time 0 point 2 9 1. temperature 1 point 8 3 e 1 0. n_p_ratio 0 point 4 4. free_neutrons 0 point 3 0 5. hydrogen 0 point 6 9 5. helium 0. deuterium 0. stage plasma.
+q nucleo seed 8 3 5 4 step 3 lithium. a 0.
+q nucleo seed 8 3 5 4 step 3 next temperature. a 1 point 5 3 e 1 0.
+nucleo seed 8 3 5 4 step 4. time 0 point 4 1 5. temperature 1 point 5 3 e 1 0. n_p_ratio 0 point 3 7 5. free_neutrons 0 point 2 7 3. hydrogen 0 point 7 2 7. helium 0. deuterium 0. stage plasma.
+nucleo seed 8 3 5 4 step 5. time 0 point 5 9 1. temperature 1 point 2 8 e 1 0. n_p_ratio 0 point 3 1. free_neutrons 0 point 2 3 7. hydrogen 0 point 7 6 3. helium 0. deuterium 0. stage plasma.
+nucleo seed 8 3 5 4 step 6. time 0 point 8 4 4. temperature 1 point 0 7 e 1 0. n_p_ratio 0 point 2 4 7. free_neutrons 0 point 1 9 8. hydrogen 0 point 8 0 2. helium 0. deuterium 0. stage plasma.
+nucleo seed 8 3 5 4 step 7. time 1 point 2. temperature 8 point 9 9 e 9. n_p_ratio 0 point 1 9. free_neutrons 0 point 1 6. hydrogen 0 point 8 4. helium 0. deuterium 0. stage freeze_out.
+q nucleo seed 8 3 5 4 step 7 stage. a freeze_out.
+q nucleo seed 8 3 5 4 step 7 next free_neutrons. a 0 point 1 5 9.
+q nucleo seed 8 3 5 4 step 7 next hydrogen. a 0 point 8 4 1.
+nucleo seed 8 3 5 4 step 8. time 1 point 7 2. temperature 7 point 5 1 e 9. n_p_ratio 0 point 1 9. free_neutrons 0 point 1 5 9. hydrogen 0 point 8 4 1. helium 0. deuterium 0. stage decay.
+nucleo seed 8 3 5 4 step 9. time 2 point 4 5. temperature 6 point 3 e 9. n_p_ratio 0 point 1 9. free_neutrons 0 point 1 5 9. hydrogen 0 point 8 4 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 3 5 4 step 9 lithium. a 0.
+q nucleo seed 8 3 5 4 step 9 next time. a 3 point 5.
+nucleo seed 8 3 5 4 step 1 0. time 3 point 5. temperature 5 point 2 7 e 9. n_p_ratio 0 point 1 8 9. free_neutrons 0 point 1 5 9. hydrogen 0 point 8 4 1. helium 0. deuterium 0. stage decay.
+nucleo seed 8 3 5 4 step 1 1. time 4 point 9 9. temperature 4 point 4 1 e 9. n_p_ratio 0 point 1 8 9. free_neutrons 0 point 1 5 9. hydrogen 0 point 8 4 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 3 5 4 step 1 1 next helium3. a 0.
+nucleo seed 8 3 5 4 step 1 2. time 7 point 1 2. temperature 3 point 6 9 e 9. n_p_ratio 0 point 1 8 8. free_neutrons 0 point 1 5 9. hydrogen 0 point 8 4 1. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 3 5 4 step 1 2 hydrogen. a 0 point 8 4 1.
+q nucleo seed 8 3 5 4 step 1 2 next helium3. a 0.
+nucleo seed 8 3 5 4 step 1 3. time 1 0 point 2. temperature 3 point 0 9 e 9. n_p_ratio 0 point 1 8 8. free_neutrons 0 point 1 5 8. hydrogen 0 point 8 4 2. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 3 5 4 step 1 3 next free_neutrons. a 0 point 1 5 7.
+nucleo seed 8 3 5 4 step 1 4. time 1 4 point 5. temperature 2 point 5 9 e 9. n_p_ratio 0 point 1 8 7. free_neutrons 0 point 1 5 7. hydrogen 0 point 8 4 3. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 3 5 4 step 1 4 helium3. a 0.
+nucleo seed 8 3 5 4 step 1 5. time 2 0 point 7. temperature 2 point 1 7 e 9. n_p_ratio 0 point 1 8 5. free_neutrons 0 point 1 5 6. hydrogen 0 point 8 4 4. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 3 5 4 step 1 5 hydrogen. a 0 point 8 4 4.
+q nucleo seed 8 3 5 4 step 1 5 next helium. a 0.
+nucleo seed 8 3 5 4 step 1 6. time 2 9 point 5. temperature 1 point 8 1 e 9. n_p_ratio 0 point 1 8 3. free_neutrons 0 point 1 5 5. hydrogen 0 point 8 4 5. helium 0. deuterium 0. stage decay.
+nucleo seed 8 3 5 4 step 1 7. time 4 2 point 1. temperature 1 point 5 2 e 9. n_p_ratio 0 point 1 8. free_neutrons 0 point 1 5 3. hydrogen 0 point 8 4 7. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 3 5 4 step 1 7 next temperature. a 1 point 2 7 e 9.
+nucleo seed 8 3 5 4 step 1 8. time 6 0 point 1. temperature 1 point 2 7 e 9. n_p_ratio 0 point 1 7 6. free_neutrons 0 point 1 5. hydrogen 0 point 8 5. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 3 5 4 step 1 8 next deuterium. a 0.
+nucleo seed 8 3 5 4 step 1 9. time 8 5 point 8. temperature 1 point 0 6 e 9. n_p_ratio 0 point 1 7 1. free_neutrons 0 point 1 4 6. hydrogen 0 point 8 5 4. helium 0. deuterium 0. stage decay.
+nucleo seed 8 3 5 4 step 2 0. time 1 2 2. temperature 8 point 9 2 e 8. n_p_ratio 0 point 1 6 3. free_neutrons 0 point 1 4. hydrogen 0 point 8 6. helium 0. deuterium 0. stage decay.
+q nucleo seed 8 3 5 4 step 2 0 lithium. a 0.
+nucleo seed 8 3 5 4 step 2 1. time 1 7 5. temperature 7 point 4 5 e 8. n_p_ratio 0 point 1 5 4. free_neutrons 0 point 0 6 7 2. hydrogen 0 point 8. helium 0 point 1 3 3. deuterium 1 point 8 9 e minus 5. stage bottleneck.
+q nucleo seed 8 3 5 4 step 2 1 next time. a 2 4 9.
+q nucleo seed 8 3 5 4 step 2 1 next helium. a 0 point 2 5 3.
+nucleo seed 8 3 5 4 step 2 2. time 2 4 9. temperature 6 point 2 4 e 8. n_p_ratio 0 point 1 5 2. free_neutrons 0 point 0 0 5 2 8. hydrogen 0 point 7 4 2. helium 0 point 2 5 3. deuterium 3 point 8 9 e minus 5. stage helium_forming.
+q nucleo seed 8 3 5 4 step 2 2 next helium3. a 1 point 2 e minus 5.
+nucleo seed 8 3 5 4 step 2 3. time 3 5 5. temperature 5 point 2 3 e 8. n_p_ratio 0 point 1 5 1. free_neutrons 1 point 3 8 e minus 4. hydrogen 0 point 7 3 7. helium 0 point 2 6 3. deuterium 4 point 0 7 e minus 5. stage helium_forming.
+q nucleo seed 8 3 5 4 step 2 3 helium. a 0 point 2 6 3.
+nucleo seed 8 3 5 4 step 2 4. time 5 0 7. temperature 4 point 3 8 e 8. n_p_ratio 0 point 1 5 1. free_neutrons 7 point 4 e minus 7. hydrogen 0 point 7 3 7. helium 0 point 2 6 3. deuterium 4 point 0 7 e minus 5. stage done.
+q nucleo seed 8 3 5 4 step 2 4 next deuterium. a 4 point 0 7 e minus 5.
+nucleo seed 8 3 5 4 step 2 5. time 7 2 4. temperature 3 point 6 6 e 8. n_p_ratio 0 point 1 5 1. free_neutrons 4 point 2 5 e minus 1 0. hydrogen 0 point 7 3 7. helium 0 point 2 6 3. deuterium 4 point 0 7 e minus 5. stage done.
+q nucleo seed 8 3 5 4 step 2 5 deuterium. a 4 point 0 7 e minus 5.
+nucleo seed 8 3 5 4 step 2 6. time 1 0 3 0. temperature 3 point 0 7 e 8. n_p_ratio 0 point 1 5 1. free_neutrons 0. hydrogen 0 point 7 3 7. helium 0 point 2 6 3. deuterium 4 point 0 7 e minus 5. stage done.
+q nucleo seed 8 3 5 4 step 2 6 helium. a 0 point 2 6 3.
+nucleo seed 8 3 5 4 step 2 7. time 1 4 7 0. temperature 2 point 5 7 e 8. n_p_ratio 0 point 1 5 1. free_neutrons 0. hydrogen 0 point 7 3 7. helium 0 point 2 6 3. deuterium 4 point 0 7 e minus 5. stage done.
+q nucleo seed 8 3 5 4 step 2 7 helium. a 0 point 2 6 3.
+nucleo seed 8 3 5 4 step 2 8. time 2 1 0 0. temperature 2 point 1 5 e 8. n_p_ratio 0 point 1 5 1. free_neutrons 0. hydrogen 0 point 7 3 7. helium 0 point 2 6 3. deuterium 4 point 0 7 e minus 5. stage done.
+q nucleo seed 8 3 5 4 step 2 8 deuterium. a 4 point 0 7 e minus 5.
+q nucleo seed 8 3 5 4 step 2 8 next hydrogen. a 0 point 7 3 7.
+nucleo seed 8 3 5 4 step 2 9. time 3 0 0 0. temperature 1 point 8 e 8. n_p_ratio 0 point 1 5 1. free_neutrons 0. hydrogen 0 point 7 3 7. helium 0 point 2 6 3. deuterium 4 point 0 7 e minus 5. stage done.
+q nucleo seed 8 3 5 4 final helium. a 0 point 2 6 3.
+q nucleo seed 8 3 5 4 final hydrogen. a 0 point 7 3 7.
+q nucleo seed 8 3 5 4 final deuterium. a 4 point 0 7 e minus 5.
+q nucleo seed 8 3 5 4 final helium3. a 1 point 2 e minus 5.
+q nucleo seed 8 3 5 4 final lithium. a 2 point 7 2 e minus 1 0.
+q nucleo seed 8 3 5 4 final bottleneck_time. a 1 5 5.
+q nucleo seed 8 3 5 4 final bottleneck_n_p_ratio. a 0 point 1 5 7.
+q nucleo seed 8 3 5 4 final freeze_time. a 1 point 1 9.
+q nucleo seed 8 3 5 4 final peak_n_p_ratio. a 0 point 6 1 8.

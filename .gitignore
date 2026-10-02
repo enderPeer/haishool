@@ -5,3 +5,6 @@ runs/
 data/objects.txt
 data/all.jsonl
 genesis.txt
+
+# float32 exports of the v5 runs are archived on falke64 (~/haishool-archive), fp16 copies are in model/
+model/final-v5/*.pt

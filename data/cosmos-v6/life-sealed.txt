@@ -1,0 +1,176 @@
+q life seed 3 3 9 8 final replicators. a 1 7 8 0.
+q life seed 3 3 9 8 final diversity. a 1 4 2.
+q life seed 3 3 9 8 final dominant_share. a 0 point 3 9 2.
+q life seed 3 3 9 8 final first_replicator_step. a 6.
+q life seed 3 3 9 8 final peak_replicators. a 1 7 8 0.
+q life seed 3 3 9 8 final outcome. a coexist.
+q life seed 3 3 9 8 param monomers. a 1 7 4 5 2.
+q life seed 3 3 9 8 param inflow. a 1 4 0.
+q life seed 3 3 9 8 param poly_rate. a 0 point 0 0 5.
+q life seed 3 3 9 8 param decay. a 0 point 2.
+q life seed 3 3 9 8 param mu. a 0 point 0 5.
+q life seed 3 3 9 8 param gap. a 2.
+q life seed 3 3 9 8 step 3 free_monomers. a 1 7 6 2 9.
+q life seed 3 3 9 8 step 3 next polymers. a 7 9.
+q life seed 3 3 9 8 step 3 next longest. a 1 3.
+q life seed 3 3 9 8 step 5 next replicators. a 2.
+q life seed 3 3 9 8 step 6 bound. a 4 6 6.
+q life seed 3 3 9 8 step 6 replicators. a 2.
+q life seed 3 3 9 8 step 8 free_monomers. a 1 7 9 3 9.
+q life seed 3 3 9 8 step 8 next longest. a 1 6.
+q life seed 3 3 9 8 step 8 next mean_length. a 4 point 6 6.
+q life seed 3 3 9 8 step 1 1 mean_length. a 5 point 0 5.
+q life seed 3 3 9 8 step 1 1 stage. a dominated.
+q life seed 3 3 9 8 step 1 2 bound. a 1 4 4 7.
+q life seed 3 3 9 8 step 1 2 next free_monomers. a 1 7 2 2 4.
+q life seed 3 3 9 8 step 1 2 next polymers. a 3 5 9.
+q life seed 3 3 9 8 step 1 4 longest. a 1 6.
+q life seed 3 3 9 8 step 1 5 next dominant_share. a 0 point 5 2 4.
+q life seed 3 3 9 8 step 1 6 next replicators. a 1 3 0 2.
+q life seed 3 3 9 8 step 1 6 next dominant_share. a 0 point 4 7 1.
+q life seed 3 3 9 8 step 2 2 mean_length. a 7 point 6 9.
+q life seed 3 3 9 8 step 2 2 next dominant_share. a 0 point 4 4 4.
+q life seed 3 3 9 8 step 2 4 bound. a 1 6 4 1 5.
+q life seed 3 3 9 8 step 2 7 next stage. a competition.
+q life seed 3 3 9 8 step 2 8 generations. a 2 6 4 5.
+q life seed 3 3 9 8 step 2 8 next polymers. a 2 2 2 3.
+q life seed 3 3 9 8 step 2 8 next longest. a 1 6.
+q life seed 3 3 9 8 step 2 9 next free_monomers. a 4 1 3 2.
+q life seed 3 3 9 8 step 3 0 dominant_share. a 0 point 4 1 9.
+q life seed 3 3 9 8 step 3 0 next bound. a 1 7 6 5 9.
+q life seed 3 3 9 8 step 3 5 next stage. a competition.
+q life seed 3 3 9 8 step 3 9 generations. a 3 4 5 3.
+q life seed 3 3 9 8 step 3 9 next dominant_share. a 0 point 3 9 2.
+q life seed 3 3 9 8 step 4 0 bound. a 1 8 9 1 9.
+q life seed 8 8 0 7 final replicators. a 1 2 5 6.
+q life seed 8 8 0 7 final diversity. a 4 4.
+q life seed 8 8 0 7 final dominant_share. a 0 point 6 3.
+q life seed 8 8 0 7 final first_replicator_step. a 1.
+q life seed 8 8 0 7 final peak_replicators. a 1 2 5 6.
+q life seed 8 8 0 7 final outcome. a dominated.
+q life seed 8 8 0 7 param monomers. a 1 5 8 0 4.
+q life seed 8 8 0 7 param inflow. a 1 4 8.
+q life seed 8 8 0 7 param poly_rate. a 0 point 0 1.
+q life seed 8 8 0 7 param decay. a 0 point 1.
+q life seed 8 8 0 7 param mu. a 0 point 0 0 5.
+q life seed 8 8 0 7 param gap. a 1.
+q life seed 8 8 0 7 step 1 next bound. a 3 5 5.
+q life seed 8 8 0 7 step 2 next dominant_share. a 0 point 8.
+q life seed 8 8 0 7 step 4 next replicators. a 4 1.
+q life seed 8 8 0 7 step 4 next generations. a 3 9.
+q life seed 8 8 0 7 step 6 polymers. a 2 8 2.
+q life seed 8 8 0 7 step 6 longest. a 1 5.
+q life seed 8 8 0 7 step 8 diversity. a 1 7.
+q life seed 8 8 0 7 step 1 1 next stage. a dominated.
+q life seed 8 8 0 7 step 1 3 longest. a 1 6.
+q life seed 8 8 0 7 step 1 5 free_monomers. a 3 8 5 5.
+q life seed 8 8 0 7 step 1 6 next mean_length. a 1 0 point 9.
+q life seed 8 8 0 7 step 1 7 next bound. a 1 4 5 8 0.
+q life seed 8 8 0 7 step 1 8 diversity. a 3 5.
+q life seed 8 8 0 7 step 1 8 next stage. a dominated.
+q life seed 8 8 0 7 step 2 1 next free_monomers. a 3 8 7 0.
+q life seed 8 8 0 7 step 2 2 free_monomers. a 3 8 7 0.
+q life seed 8 8 0 7 step 2 5 polymers. a 1 4 0 9.
+q life seed 8 8 0 7 step 2 5 next longest. a 1 6.
+q life seed 8 8 0 7 step 2 6 polymers. a 1 4 2 0.
+q life seed 8 8 0 7 step 2 6 next bound. a 1 5 8 7 0.
+q life seed 8 8 0 7 step 2 9 next mean_length. a 1 1 point 1.
+q life seed 8 8 0 7 step 3 0 next longest. a 1 6.
+q life seed 8 8 0 7 step 3 1 free_monomers. a 3 9 8 6.
+q life seed 8 8 0 7 step 3 4 next bound. a 1 6 9 9 3.
+q life seed 8 8 0 7 step 3 4 next polymers. a 1 5 2 1.
+q life seed 8 8 0 7 step 3 7 longest. a 1 6.
+q life seed 8 8 0 7 step 3 8 bound. a 1 7 4 2 3.
+q life seed 8 8 0 7 step 3 8 next dominant_share. a 0 point 6 2 8.
+q life seed 8 8 0 7 step 3 8 next generations. a 1 5 5 3.
+q life seed 8 8 0 7 step 3 9 free_monomers. a 4 0 0 2.
+q life seed 8 8 0 7 step 3 9 next generations. a 1 5 7 7.
+q life seed 8 8 0 7 step 4 0 replicators. a 1 2 5 6.
+q life seed 2 5 7 4 final replicators. a 0.
+q life seed 2 5 7 4 final diversity. a 0.
+q life seed 2 5 7 4 final dominant_share. a 0.
+q life seed 2 5 7 4 final first_replicator_step. a minus 1.
+q life seed 2 5 7 4 final peak_replicators. a 0.
+q life seed 2 5 7 4 final outcome. a none.
+q life seed 2 5 7 4 param monomers. a 5 6 3 2.
+q life seed 2 5 7 4 param inflow. a 5 2.
+q life seed 2 5 7 4 param poly_rate. a 0 point 0 0 2.
+q life seed 2 5 7 4 param decay. a 0 point 8.
+q life seed 2 5 7 4 param mu. a 0 point 0 0 1.
+q life seed 2 5 7 4 param gap. a 1.
+q life seed 2 5 7 4 step 4 next free_monomers. a 5 8 6 7.
+q life seed 2 5 7 4 step 4 next generations. a 0.
+q life seed 2 5 7 4 step 7 generations. a 0.
+q life seed 2 5 7 4 step 8 next mean_length. a 5 point 5 7.
+q life seed 2 5 7 4 step 1 0 generations. a 0.
+q life seed 2 5 7 4 step 1 0 next bound. a 3 5.
+q life seed 2 5 7 4 step 1 1 next diversity. a 0.
+q life seed 2 5 7 4 step 1 2 mean_length. a 7 point 2.
+q life seed 2 5 7 4 step 1 2 next polymers. a 4.
+q life seed 2 5 7 4 step 1 3 next mean_length. a 5 point 8.
+q life seed 2 5 7 4 step 1 6 next replicators. a 0.
+q life seed 2 5 7 4 step 1 7 next free_monomers. a 6 5 1 6.
+q life seed 2 5 7 4 step 1 9 next bound. a 5 3.
+q life seed 2 5 7 4 step 2 0 dominant_share. a 0.
+q life seed 2 5 7 4 step 2 0 next generations. a 0.
+q life seed 2 5 7 4 step 2 1 next mean_length. a 3 point 5 6.
+q life seed 2 5 7 4 step 2 2 next bound. a 3 3.
+q life seed 2 5 7 4 step 2 2 next stage. a soup.
+q life seed 2 5 7 4 step 2 4 mean_length. a 3 point 3.
+q life seed 2 5 7 4 step 2 4 next generations. a 0.
+q life seed 2 5 7 4 step 2 5 next stage. a soup.
+q life seed 2 5 7 4 step 2 6 next mean_length. a 3 point 3 3.
+q life seed 2 5 7 4 step 2 8 bound. a 4 1.
+q life seed 2 5 7 4 step 2 9 next polymers. a 1 2.
+q life seed 2 5 7 4 step 3 1 replicators. a 0.
+q life seed 2 5 7 4 step 3 1 longest. a 1 2.
+q life seed 2 5 7 4 step 3 1 next dominant_share. a 0.
+q life seed 2 5 7 4 step 3 4 replicators. a 0.
+q life seed 2 5 7 4 step 3 5 next bound. a 4 4.
+q life seed 2 5 7 4 step 3 5 next polymers. a 8.
+q life seed 2 5 7 4 step 3 8 stage. a soup.
+q life seed 2 5 7 4 step 3 8 next dominant_share. a 0.
+q life seed 8 0 4 3 final replicators. a 2 3 1 9.
+q life seed 8 0 4 3 final diversity. a 2 0 3.
+q life seed 8 0 4 3 final dominant_share. a 0 point 1 9 8.
+q life seed 8 0 4 3 final first_replicator_step. a 6.
+q life seed 8 0 4 3 final peak_replicators. a 2 3 1 9.
+q life seed 8 0 4 3 final outcome. a coexist.
+q life seed 8 0 4 3 param monomers. a 1 7 4 5 3.
+q life seed 8 0 4 3 param inflow. a 2 9 2.
+q life seed 8 0 4 3 param poly_rate. a 0 point 0 0 5.
+q life seed 8 0 4 3 param decay. a 0 point 4.
+q life seed 8 0 4 3 param mu. a 0 point 0 5.
+q life seed 8 0 4 3 param gap. a 3.
+q life seed 8 0 4 3 step 0 next mean_length. a 4 point 8 8.
+q life seed 8 0 4 3 step 4 generations. a 0.
+q life seed 8 0 4 3 step 4 next free_monomers. a 1 8 5 1 3.
+q life seed 8 0 4 3 step 5 bound. a 4 0 0.
+q life seed 8 0 4 3 step 6 replicators. a 2.
+q life seed 8 0 4 3 step 7 next bound. a 5 9 4.
+q life seed 8 0 4 3 step 9 next replicators. a 1 2.
+q life seed 8 0 4 3 step 1 0 next generations. a 2 4.
+q life seed 8 0 4 3 step 1 1 next mean_length. a 5 point 3 6.
+q life seed 8 0 4 3 step 1 2 next diversity. a 1 0.
+q life seed 8 0 4 3 step 1 4 mean_length. a 6 point 2 3.
+q life seed 8 0 4 3 step 1 7 polymers. a 8 9 5.
+q life seed 8 0 4 3 step 1 8 next dominant_share. a 0 point 2 4 1.
+q life seed 8 0 4 3 step 1 9 next longest. a 1 5.
+q life seed 8 0 4 3 step 2 1 next dominant_share. a 0 point 2 3.
+q life seed 8 0 4 3 step 2 2 next diversity. a 1 3 5.
+q life seed 8 0 4 3 step 2 4 generations. a 2 9 3 8.
+q life seed 8 0 4 3 step 2 5 polymers. a 2 4 2 3.
+q life seed 8 0 4 3 step 2 5 next longest. a 1 5.
+q life seed 8 0 4 3 step 2 6 stage. a competition.
+q life seed 8 0 4 3 step 2 7 stage. a competition.
+q life seed 8 0 4 3 step 2 7 next stage. a competition.
+q life seed 8 0 4 3 step 2 8 stage. a competition.
+q life seed 8 0 4 3 step 2 8 next longest. a 1 5.
+q life seed 8 0 4 3 step 2 8 next generations. a 3 7 3 8.
+q life seed 8 0 4 3 step 2 9 next mean_length. a 7 point 7 7.
+q life seed 8 0 4 3 step 3 1 stage. a competition.
+q life seed 8 0 4 3 step 3 2 next stage. a competition.
+q life seed 8 0 4 3 step 3 7 diversity. a 1 8 8.
+q life seed 8 0 4 3 step 3 7 dominant_share. a 0 point 2 0 4.
+q life seed 8 0 4 3 step 3 7 next bound. a 2 2 4 5 3.
+q life seed 8 0 4 3 step 4 0 dominant_share. a 0 point 1 9 8.

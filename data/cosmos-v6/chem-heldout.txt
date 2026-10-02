@@ -1,0 +1,608 @@
+q chem seed 5 4 4 0 step 1 molecules. a 0.
+q chem seed 5 4 4 0 step 2 next h2o. a 0.
+q chem seed 5 4 4 0 step 3 co2. a 0.
+q chem seed 5 4 4 0 step 6 next temperature. a 3 3 6 1.
+q chem seed 5 4 4 0 step 8 next temperature. a 2 9 8 3.
+q chem seed 5 4 4 0 step 9 next nh3. a 0.
+q chem seed 5 4 4 0 step 9 next biggest. a 3.
+q chem seed 5 4 4 0 step 1 0 nacl. a 0.
+q chem seed 5 4 4 0 step 1 2 biggest. a 4.
+q chem seed 5 4 4 0 step 1 3 molecules. a 1 2 6.
+q chem seed 5 4 4 0 step 1 3 biggest. a 5.
+q chem seed 5 4 4 0 step 1 4 free_atoms. a 0 point 9 7 9.
+q chem seed 5 4 4 0 step 1 4 organic. a 0.
+q chem seed 5 4 4 0 step 1 6 n2. a 1.
+q chem seed 5 4 4 0 step 1 6 next n2. a 1.
+q chem seed 5 4 4 0 step 1 7 h2. a 9 6 8 1.
+q chem seed 5 4 4 0 step 1 7 biggest. a 1 5.
+q chem seed 5 4 4 0 step 1 7 next free_atoms. a 0 point 0 9 1 2.
+q chem seed 5 4 4 0 step 1 7 next mgo. a 0.
+q chem seed 5 4 4 0 step 1 8 next free_atoms. a 0 point 0 9 1 2.
+q chem seed 5 4 4 0 step 1 8 next biggest. a 1 5.
+q chem seed 5 4 4 0 step 2 0 n2. a 1.
+q chem seed 5 4 4 0 step 2 1 next ch4. a 4 8.
+q chem seed 5 4 4 0 step 2 2 h2. a 9 6 8 1.
+q chem seed 5 4 4 0 step 2 2 h2o. a 7 6.
+q chem seed 5 4 4 0 step 2 2 next n2. a 1.
+q chem seed 5 4 4 0 step 2 3 co. a 0.
+q chem seed 5 4 4 0 step 2 3 next n2. a 1.
+q chem seed 5 4 4 0 step 2 3 next nacl. a 0.
+q chem seed 5 4 4 0 step 2 4 n2. a 1.
+q chem seed 5 4 4 0 step 2 5 molecules. a 9 8 4 2.
+q chem seed 5 4 4 0 step 2 5 co. a 0.
+q chem seed 6 8 9 2 step 3 temperature. a 4 9 2 5.
+q chem seed 6 8 9 2 step 4 stage. a plasma.
+q chem seed 6 8 9 2 step 4 co2. a 0.
+q chem seed 6 8 9 2 step 5 h2o. a 0.
+q chem seed 6 8 9 2 step 6 h2o. a 0.
+q chem seed 6 8 9 2 step 1 1 mgo. a 0.
+q chem seed 6 8 9 2 step 1 2 next ch4. a 0.
+q chem seed 6 8 9 2 step 1 4 next stage. a atomic.
+q chem seed 6 8 9 2 step 1 5 next mgo. a 0.
+q chem seed 6 8 9 2 step 1 6 next molecules. a 6 5.
+q chem seed 6 8 9 2 step 1 6 next sio2. a 0.
+q chem seed 6 8 9 2 step 1 7 organic. a 0.
+q chem seed 6 8 9 2 step 1 8 co. a 1.
+q chem seed 6 8 9 2 step 1 9 o2. a 0.
+q chem seed 6 8 9 2 step 2 0 next co. a 0.
+q chem seed 6 8 9 2 step 2 1 stage. a atomic.
+q chem seed 6 8 9 2 step 2 1 next co2. a 0.
+q chem seed 6 8 9 2 step 2 2 next free_atoms. a 0 point 9 7 5.
+q chem seed 6 8 9 2 step 2 2 next sio2. a 0.
+q chem seed 6 8 9 2 step 2 3 next mgo. a 0.
+q chem seed 6 8 9 2 step 2 4 next molecules. a 8 0 6 2.
+q chem seed 6 8 9 2 step 2 5 next temperature. a 1 8 3 8.
+q chem seed 6 8 9 2 step 2 6 feo. a 0.
+q chem seed 6 8 9 2 step 2 8 next co2. a 0.
+q chem seed 6 8 9 2 step 3 0 n2. a 0.
+q chem seed 6 8 9 2 step 3 0 biggest. a 1 0.
+q chem seed 6 8 9 2 step 3 0 next co2. a 0.
+q chem seed 6 8 9 2 step 3 0 next mgo. a 0.
+q chem seed 6 8 9 2 step 3 1 next nacl. a 0.
+q chem seed 6 8 9 2 step 3 3 n2. a 0.
+q chem seed 6 8 9 2 step 3 3 next nacl. a 0.
+q chem seed 6 8 9 2 step 3 5 ch4. a 3 5.
+q chem seed 8 5 7 4 step 0 co. a 0.
+q chem seed 8 5 7 4 step 1 feo. a 0.
+q chem seed 8 5 7 4 step 2 organic. a 0.
+q chem seed 8 5 7 4 step 2 next co. a 2 3.
+q chem seed 8 5 7 4 step 2 next n2. a 1 0.
+q chem seed 8 5 7 4 step 2 next nacl. a 0.
+q chem seed 8 5 7 4 step 3 h2o. a 3 5 0 4.
+q chem seed 8 5 7 4 step 3 organic. a 0.
+q chem seed 8 5 7 4 step 4 h2. a 0.
+q chem seed 8 5 7 4 step 4 next free_atoms. a 0 point 0 7 4 2.
+q chem seed 8 5 7 4 step 4 next o2. a 0.
+q chem seed 8 5 7 4 step 5 next ch4. a 0.
+q chem seed 8 5 7 4 step 6 mgo. a 9 0.
+q chem seed 8 5 7 4 step 8 stage. a molecular.
+q chem seed 8 5 7 4 step 8 next o2. a 0.
+q chem seed 8 5 7 4 step 8 next organic. a 0.
+q chem seed 8 5 7 4 step 1 0 stage. a molecular.
+q chem seed 8 5 7 4 step 1 2 next temperature. a 2 2 7 1.
+q chem seed 8 5 7 4 step 1 3 stage. a molecular.
+q chem seed 8 5 7 4 step 1 4 o2. a 0.
+q chem seed 8 5 7 4 step 1 4 feo. a 0.
+q chem seed 8 5 7 4 step 1 7 next mgo. a 9 0.
+q chem seed 8 5 7 4 step 1 8 next organic. a 0.
+q chem seed 8 5 7 4 step 1 9 next ch4. a 0.
+q chem seed 8 5 7 4 step 1 9 next biggest. a 1 1.
+q chem seed 8 5 7 4 step 2 1 nh3. a 1.
+q chem seed 8 5 7 4 step 2 2 next h2. a 4.
+q chem seed 8 5 7 4 step 2 3 sio2. a 0.
+q chem seed 8 5 7 4 step 2 4 molecules. a 6 6 9 7.
+q chem seed 8 5 7 4 step 2 4 next nacl. a 0.
+q chem seed 8 5 7 4 step 2 7 next organic. a 0.
+q chem seed 8 5 7 4 step 2 9 free_atoms. a 0 point 0 0 3 7 1.
+q chem seed 6 2 5 6 step 0 next stage. a plasma.
+q chem seed 6 2 5 6 step 0 next mgo. a 0.
+q chem seed 6 2 5 6 step 3 next molecules. a 3.
+q chem seed 6 2 5 6 step 3 next ch4. a 0.
+q chem seed 6 2 5 6 step 3 next feo. a 0.
+q chem seed 6 2 5 6 step 7 next stage. a molecular.
+q chem seed 6 2 5 6 step 8 co. a 1 1.
+q chem seed 6 2 5 6 step 8 feo. a 0.
+q chem seed 6 2 5 6 step 9 mgo. a 1 8 0 9.
+q chem seed 6 2 5 6 step 1 0 nh3. a 0.
+q chem seed 6 2 5 6 step 1 0 mgo. a 1 8 4 3.
+q chem seed 6 2 5 6 step 1 0 next organic. a 0.
+q chem seed 6 2 5 6 step 1 2 h2. a 0.
+q chem seed 6 2 5 6 step 1 5 co2. a 4 1 0.
+q chem seed 6 2 5 6 step 1 6 biggest. a 1 6.
+q chem seed 6 2 5 6 step 1 6 next temperature. a 1 5 9 3.
+q chem seed 6 2 5 6 step 1 7 next h2o. a 3 8.
+q chem seed 6 2 5 6 step 1 8 next nacl. a 1 4.
+q chem seed 6 2 5 6 step 1 9 co. a 0.
+q chem seed 6 2 5 6 step 1 9 mgo. a 1 8 5 5.
+q chem seed 6 2 5 6 step 1 9 next temperature. a 1 2 9 7.
+q chem seed 6 2 5 6 step 2 0 biggest. a 1 6.
+q chem seed 6 2 5 6 step 2 0 next n2. a 6 9.
+q chem seed 6 2 5 6 step 2 1 sio2. a 2 9 3 0.
+q chem seed 6 2 5 6 step 2 3 n2. a 6 9.
+q chem seed 6 2 5 6 step 2 4 mgo. a 1 8 5 5.
+q chem seed 6 2 5 6 step 2 6 co. a 0.
+q chem seed 6 2 5 6 step 2 6 nacl. a 1 4.
+q chem seed 6 2 5 6 step 2 6 next temperature. a 8 0 3.
+q chem seed 6 2 5 6 step 2 6 next h2. a 0.
+q chem seed 6 2 5 6 step 2 7 next organic. a 0.
+q chem seed 6 2 5 6 step 2 8 sio2. a 2 9 3 0.
+q chem seed 9 5 step 1 co. a 0.
+q chem seed 9 5 step 1 next nacl. a 0.
+q chem seed 9 5 step 3 h2o. a 0.
+q chem seed 9 5 step 3 co. a 0.
+q chem seed 9 5 step 3 next sio2. a 0.
+q chem seed 9 5 step 4 n2. a 0.
+q chem seed 9 5 step 4 organic. a 0.
+q chem seed 9 5 step 4 next molecules. a 0.
+q chem seed 9 5 step 5 next sio2. a 1 4 1 6.
+q chem seed 9 5 step 6 free_atoms. a 0 point 6 7 6.
+q chem seed 9 5 step 6 molecules. a 2 3 7 1.
+q chem seed 9 5 step 9 next biggest. a 9.
+q chem seed 9 5 step 1 0 next co. a 2.
+q chem seed 9 5 step 1 1 temperature. a 2 5 3 9.
+q chem seed 9 5 step 1 1 feo. a 0.
+q chem seed 9 5 step 1 1 next sio2. a 2 6 5 2.
+q chem seed 9 5 step 1 2 next n2. a 4 9.
+q chem seed 9 5 step 1 4 nacl. a 0.
+q chem seed 9 5 step 1 4 next temperature. a 1 8 5 7.
+q chem seed 9 5 step 1 5 next biggest. a 1 6.
+q chem seed 9 5 step 1 6 molecules. a 6 6 2 7.
+q chem seed 9 5 step 1 6 co. a 0.
+q chem seed 9 5 step 1 6 nacl. a 0.
+q chem seed 9 5 step 1 8 next co2. a 3 7 1.
+q chem seed 9 5 step 1 9 ch4. a 0.
+q chem seed 9 5 step 1 9 next mgo. a 1 7 5 2.
+q chem seed 9 5 step 2 0 o2. a 0.
+q chem seed 9 5 step 2 1 next molecules. a 6 6 4 2.
+q chem seed 9 5 step 2 2 h2. a 0.
+q chem seed 9 5 step 2 2 next mgo. a 1 7 5 2.
+q chem seed 9 5 step 2 3 feo. a 6 5 5.
+q chem seed 9 5 step 2 4 molecules. a 6 7 6 1.
+q chem seed 5 7 7 9 step 0 molecules. a 0.
+q chem seed 5 7 7 9 step 0 co2. a 0.
+q chem seed 5 7 7 9 step 0 n2. a 0.
+q chem seed 5 7 7 9 step 1 next free_atoms. a 0 point 6 7 6.
+q chem seed 5 7 7 9 step 3 next temperature. a 2 8 0 4.
+q chem seed 5 7 7 9 step 3 next organic. a 0.
+q chem seed 5 7 7 9 step 4 nacl. a 0.
+q chem seed 5 7 7 9 step 5 temperature. a 2 5 0 5.
+q chem seed 5 7 7 9 step 5 next mgo. a 1 9 3 4.
+q chem seed 5 7 7 9 step 6 next molecules. a 7 4 9 2.
+q chem seed 5 7 7 9 step 8 co2. a 3 9 0.
+q chem seed 5 7 7 9 step 9 temperature. a 1 5 9 7.
+q chem seed 5 7 7 9 step 9 next co. a 0.
+q chem seed 5 7 7 9 step 1 0 h2. a 0.
+q chem seed 5 7 7 9 step 1 0 next sio2. a 3 0 3 1.
+q chem seed 5 7 7 9 step 1 5 nacl. a 2 4.
+q chem seed 5 7 7 9 step 1 6 n2. a 5 6.
+q chem seed 5 7 7 9 step 1 7 next molecules. a 7 6 4 0.
+q chem seed 5 7 7 9 step 1 9 free_atoms. a 0.
+q chem seed 5 7 7 9 step 1 9 sio2. a 3 0 3 1.
+q chem seed 5 7 7 9 step 2 0 next temperature. a 4 1 3.
+q chem seed 5 7 7 9 step 2 0 next organic. a 1.
+q chem seed 5 7 7 9 step 2 1 organic. a 1.
+q chem seed 5 7 7 9 step 2 1 next ch4. a 0.
+q chem seed 5 7 7 9 step 2 4 free_atoms. a 0.
+q chem seed 5 7 7 9 step 2 4 next h2. a 0.
+q chem seed 5 7 7 9 step 2 7 stage. a frozen.
+q chem seed 5 7 7 9 step 2 7 next molecules. a 7 6 4 0.
+q chem seed 5 7 7 9 step 2 7 next ch4. a 0.
+q chem seed 5 7 7 9 step 2 8 biggest. a 1 8.
+q chem seed 5 7 7 9 step 2 9 next h2o. a 3 7.
+q chem seed 5 7 7 9 step 3 0 o2. a 0.
+q chem seed 9 0 4 3 step 1 biggest. a 1.
+q chem seed 9 0 4 3 step 1 next temperature. a 4 6 1 3.
+q chem seed 9 0 4 3 step 2 free_atoms. a 1.
+q chem seed 9 0 4 3 step 3 next o2. a 0.
+q chem seed 9 0 4 3 step 6 nacl. a 0.
+q chem seed 9 0 4 3 step 6 next n2. a 8.
+q chem seed 9 0 4 3 step 7 temperature. a 3 2 6 0.
+q chem seed 9 0 4 3 step 8 h2. a 0.
+q chem seed 9 0 4 3 step 8 biggest. a 3.
+q chem seed 9 0 4 3 step 1 0 nacl. a 0.
+q chem seed 9 0 4 3 step 1 0 organic. a 0.
+q chem seed 9 0 4 3 step 1 3 next nh3. a 2.
+q chem seed 9 0 4 3 step 1 3 next biggest. a 9.
+q chem seed 9 0 4 3 step 1 4 next biggest. a 9.
+q chem seed 9 0 4 3 step 1 5 next molecules. a 6 3 4 3.
+q chem seed 9 0 4 3 step 1 7 temperature. a 1 6 2 8.
+q chem seed 9 0 4 3 step 1 7 nh3. a 3.
+q chem seed 9 0 4 3 step 1 8 molecules. a 6 3 4 7.
+q chem seed 9 0 4 3 step 1 9 co. a 0.
+q chem seed 9 0 4 3 step 2 1 next nacl. a 2 8 5.
+q chem seed 9 0 4 3 step 2 2 next free_atoms. a 1 e minus 4.
+q chem seed 9 0 4 3 step 2 3 next n2. a 6 7.
+q chem seed 9 0 4 3 step 2 4 o2. a 0.
+q chem seed 9 0 4 3 step 2 4 organic. a 0.
+q chem seed 9 0 4 3 step 2 4 biggest. a 9.
+q chem seed 9 0 4 3 step 2 8 h2. a 2 8.
+q chem seed 9 0 4 3 step 2 8 next nh3. a 3.
+q chem seed 9 0 4 3 step 3 0 next co2. a 2 1 7.
+q chem seed 9 0 4 3 step 3 1 biggest. a 9.
+q chem seed 9 0 4 3 step 3 1 next nacl. a 2 8 5.
+q chem seed 9 0 4 3 step 3 2 next o2. a 0.
+q chem seed 9 0 4 3 step 3 3 next temperature. a 5 0 0.
+q chem seed 6 6 5 1 step 1 next ch4. a 0.
+q chem seed 6 6 5 1 step 3 next co2. a 0.
+q chem seed 6 6 5 1 step 4 h2o. a 0.
+q chem seed 6 6 5 1 step 5 next stage. a atomic.
+q chem seed 6 6 5 1 step 7 o2. a 0.
+q chem seed 6 6 5 1 step 7 next ch4. a 0.
+q chem seed 6 6 5 1 step 7 next biggest. a 2.
+q chem seed 6 6 5 1 step 8 h2o. a 0.
+q chem seed 6 6 5 1 step 8 next free_atoms. a 0 point 9 9 9.
+q chem seed 6 6 5 1 step 1 0 molecules. a 7.
+q chem seed 6 6 5 1 step 1 0 next o2. a 0.
+q chem seed 6 6 5 1 step 1 5 h2. a 0.
+q chem seed 6 6 5 1 step 1 5 next molecules. a 6 8.
+q chem seed 6 6 5 1 step 1 5 next ch4. a 0.
+q chem seed 6 6 5 1 step 1 6 next ch4. a 0.
+q chem seed 6 6 5 1 step 1 7 h2. a 0.
+q chem seed 6 6 5 1 step 1 7 mgo. a 0.
+q chem seed 6 6 5 1 step 1 7 next free_atoms. a 0 point 9 8.
+q chem seed 6 6 5 1 step 1 8 co. a 0.
+q chem seed 6 6 5 1 step 1 9 co. a 0.
+q chem seed 6 6 5 1 step 1 9 nacl. a 0.
+q chem seed 6 6 5 1 step 2 0 nacl. a 0.
+q chem seed 6 6 5 1 step 2 1 next o2. a 0.
+q chem seed 6 6 5 1 step 2 2 temperature. a 2 0 6 3.
+q chem seed 6 6 5 1 step 2 5 next temperature. a 1 8 1 3.
+q chem seed 6 6 5 1 step 2 8 next temperature. a 1 6 4 5.
+q chem seed 6 6 5 1 step 2 8 next biggest. a 9.
+q chem seed 6 6 5 1 step 2 9 co2. a 0.
+q chem seed 6 6 5 1 step 3 1 temperature. a 1 5 4 3.
+q chem seed 6 6 5 1 step 3 1 co. a 0.
+q chem seed 6 6 5 1 step 3 2 next h2o. a 5 9.
+q chem seed 6 6 5 1 step 3 4 co. a 0.
+q chem seed 6 9 2 2 step 2 stage. a plasma.
+q chem seed 6 9 2 2 step 2 n2. a 0.
+q chem seed 6 9 2 2 step 2 feo. a 0.
+q chem seed 6 9 2 2 step 3 co. a 0.
+q chem seed 6 9 2 2 step 3 organic. a 0.
+q chem seed 6 9 2 2 step 4 next h2. a 0.
+q chem seed 6 9 2 2 step 4 next ch4. a 0.
+q chem seed 6 9 2 2 step 6 n2. a 6.
+q chem seed 6 9 2 2 step 6 next o2. a 0.
+q chem seed 6 9 2 2 step 7 ch4. a 0.
+q chem seed 6 9 2 2 step 1 0 stage. a molecular.
+q chem seed 6 9 2 2 step 1 0 next ch4. a 0.
+q chem seed 6 9 2 2 step 1 2 ch4. a 0.
+q chem seed 6 9 2 2 step 1 2 next nh3. a 0.
+q chem seed 6 9 2 2 step 1 2 next feo. a 6 8 4.
+q chem seed 6 9 2 2 step 1 3 nacl. a 0.
+q chem seed 6 9 2 2 step 1 5 next nacl. a 0.
+q chem seed 6 9 2 2 step 1 6 next free_atoms. a 0 point 0 2 1.
+q chem seed 6 9 2 2 step 1 7 feo. a 7 9 0.
+q chem seed 6 9 2 2 step 1 7 next co. a 0.
+q chem seed 6 9 2 2 step 1 8 free_atoms. a 0 point 0 1 9 3.
+q chem seed 6 9 2 2 step 1 8 next molecules. a 7 5 8 2.
+q chem seed 6 9 2 2 step 2 1 next molecules. a 7 6 3 0.
+q chem seed 6 9 2 2 step 2 1 next nacl. a 4 0.
+q chem seed 6 9 2 2 step 2 4 free_atoms. a 0 point 0 1 2 1.
+q chem seed 6 9 2 2 step 2 4 next n2. a 7 7.
+q chem seed 6 9 2 2 step 2 5 free_atoms. a 0 point 0 1 2 1.
+q chem seed 6 9 2 2 step 2 6 biggest. a 1 7.
+q chem seed 6 9 2 2 step 2 6 next h2. a 0.
+q chem seed 6 9 2 2 step 2 7 temperature. a 1 0 2 2.
+q chem seed 6 9 2 2 step 2 7 next h2. a 0.
+q chem seed 6 9 2 2 step 2 8 temperature. a 9 5 9.
+q chem seed 9 2 9 6 step 0 next mgo. a 0.
+q chem seed 9 2 9 6 step 1 co. a 1.
+q chem seed 9 2 9 6 step 1 next h2. a 0.
+q chem seed 9 2 9 6 step 1 next h2o. a 0.
+q chem seed 9 2 9 6 step 1 next co2. a 0.
+q chem seed 9 2 9 6 step 3 next h2. a 0.
+q chem seed 9 2 9 6 step 3 next o2. a 0.
+q chem seed 9 2 9 6 step 4 nacl. a 0.
+q chem seed 9 2 9 6 step 5 molecules. a 1 1 2.
+q chem seed 9 2 9 6 step 5 h2. a 0.
+q chem seed 9 2 9 6 step 5 co2. a 0.
+q chem seed 9 2 9 6 step 5 n2. a 0.
+q chem seed 9 2 9 6 step 5 next o2. a 0.
+q chem seed 9 2 9 6 step 6 ch4. a 4 1.
+q chem seed 9 2 9 6 step 6 n2. a 0.
+q chem seed 9 2 9 6 step 6 next sio2. a 0.
+q chem seed 9 2 9 6 step 7 next co. a 0.
+q chem seed 9 2 9 6 step 8 h2o. a 6 9.
+q chem seed 9 2 9 6 step 8 o2. a 0.
+q chem seed 9 2 9 6 step 8 next molecules. a 8 9 5 0.
+q chem seed 9 2 9 6 step 8 next h2. a 8 8 0 2.
+q chem seed 9 2 9 6 step 9 next molecules. a 8 9 5 0.
+q chem seed 9 2 9 6 step 9 next o2. a 0.
+q chem seed 9 2 9 6 step 1 3 next sio2. a 0.
+q chem seed 9 2 9 6 step 1 5 o2. a 0.
+q chem seed 9 2 9 6 step 1 6 n2. a 0.
+q chem seed 9 2 9 6 step 1 6 next co2. a 0.
+q chem seed 9 2 9 6 step 2 0 free_atoms. a 0 point 0 9 1 2.
+q chem seed 9 2 9 6 step 2 0 nacl. a 0.
+q chem seed 9 2 9 6 step 2 2 next co. a 0.
+q chem seed 9 2 9 6 step 2 4 next temperature. a 5 2 5.
+q chem seed 9 2 9 6 step 2 5 next ch4. a 4 1.
+q chem seed 3 1 9 6 step 0 next o2. a 0.
+q chem seed 3 1 9 6 step 2 next biggest. a 3.
+q chem seed 3 1 9 6 step 3 biggest. a 3.
+q chem seed 3 1 9 6 step 3 next h2o. a 0.
+q chem seed 3 1 9 6 step 1 0 next ch4. a 0.
+q chem seed 3 1 9 6 step 1 1 h2. a 0.
+q chem seed 3 1 9 6 step 1 1 co. a 0.
+q chem seed 3 1 9 6 step 1 1 next co2. a 3 7 3.
+q chem seed 3 1 9 6 step 1 1 next n2. a 5 8.
+q chem seed 3 1 9 6 step 1 4 h2o. a 3 5.
+q chem seed 3 1 9 6 step 1 5 temperature. a 1 6 6 7.
+q chem seed 3 1 9 6 step 1 6 molecules. a 6 5 1 4.
+q chem seed 3 1 9 6 step 1 6 co. a 0.
+q chem seed 3 1 9 6 step 1 7 next mgo. a 1 6 8 1.
+q chem seed 3 1 9 6 step 1 8 nh3. a 0.
+q chem seed 3 1 9 6 step 1 8 sio2. a 2 6 5 8.
+q chem seed 3 1 9 6 step 1 8 biggest. a 1 6.
+q chem seed 3 1 9 6 step 1 8 next o2. a 0.
+q chem seed 3 1 9 6 step 1 9 next stage. a molecular.
+q chem seed 3 1 9 6 step 2 0 next stage. a molecular.
+q chem seed 3 1 9 6 step 2 2 n2. a 5 8.
+q chem seed 3 1 9 6 step 2 3 organic. a 0.
+q chem seed 3 1 9 6 step 2 3 next co. a 0.
+q chem seed 3 1 9 6 step 2 4 stage. a frozen.
+q chem seed 3 1 9 6 step 2 6 next h2. a 0.
+q chem seed 3 1 9 6 step 2 8 next stage. a frozen.
+q chem seed 3 1 9 6 step 2 9 temperature. a 7 3 6.
+q chem seed 3 1 9 6 step 2 9 next mgo. a 1 6 8 1.
+q chem seed 3 1 9 6 step 2 9 next organic. a 0.
+q chem seed 3 1 9 6 step 3 0 co2. a 3 7 3.
+q chem seed 3 1 9 6 step 3 0 nacl. a 1 0.
+q chem seed 3 1 9 6 step 3 0 next stage. a frozen.
+q chem seed 4 8 8 step 0 temperature. a 4 6 0 0.
+q chem seed 4 8 8 step 1 next free_atoms. a 1.
+q chem seed 4 8 8 step 1 next feo. a 0.
+q chem seed 4 8 8 step 2 co. a 0.
+q chem seed 4 8 8 step 2 next h2. a 0.
+q chem seed 4 8 8 step 3 feo. a 0.
+q chem seed 4 8 8 step 4 n2. a 0.
+q chem seed 4 8 8 step 5 temperature. a 3 7 0 2.
+q chem seed 4 8 8 step 5 sio2. a 0.
+q chem seed 4 8 8 step 6 next temperature. a 3 3 9 4.
+q chem seed 4 8 8 step 7 n2. a 0.
+q chem seed 4 8 8 step 7 next organic. a 0.
+q chem seed 4 8 8 step 8 h2o. a 0.
+q chem seed 4 8 8 step 1 0 next co2. a 0.
+q chem seed 4 8 8 step 1 1 next biggest. a 3.
+q chem seed 4 8 8 step 1 4 next co. a 0.
+q chem seed 4 8 8 step 1 5 h2o. a 7 6.
+q chem seed 4 8 8 step 1 8 mgo. a 0.
+q chem seed 4 8 8 step 1 8 next temperature. a 2 0 1 6.
+q chem seed 4 8 8 step 1 8 next nacl. a 0.
+q chem seed 4 8 8 step 1 9 next nh3. a 2 0.
+q chem seed 4 8 8 step 2 0 next free_atoms. a 0 point 0 9 1 2.
+q chem seed 4 8 8 step 2 2 molecules. a 9 8 4 4.
+q chem seed 4 8 8 step 2 2 co2. a 0.
+q chem seed 4 8 8 step 2 2 n2. a 1.
+q chem seed 4 8 8 step 2 2 next h2o. a 7 6.
+q chem seed 4 8 8 step 2 7 stage. a molecular.
+q chem seed 4 8 8 step 2 7 next stage. a molecular.
+q chem seed 4 8 8 step 2 7 next mgo. a 0.
+q chem seed 4 8 8 step 2 8 stage. a molecular.
+q chem seed 4 8 8 step 2 8 next sio2. a 0.
+q chem seed 4 8 8 step 2 9 next nh3. a 2 0.
+q chem seed 2 0 8 7 step 1 next n2. a 6.
+q chem seed 2 0 8 7 step 2 molecules. a 3 2 9 8.
+q chem seed 2 0 8 7 step 3 co2. a 4 1 3.
+q chem seed 2 0 8 7 step 4 next nh3. a 0.
+q chem seed 2 0 8 7 step 5 sio2. a 2 8 8 5.
+q chem seed 2 0 8 7 step 5 next h2o. a 3 1.
+q chem seed 2 0 8 7 step 8 o2. a 0.
+q chem seed 2 0 8 7 step 9 h2. a 0.
+q chem seed 2 0 8 7 step 1 1 organic. a 0.
+q chem seed 2 0 8 7 step 1 1 next h2o. a 3 1.
+q chem seed 2 0 8 7 step 1 2 n2. a 6 5.
+q chem seed 2 0 8 7 step 1 3 sio2. a 2 8 8 6.
+q chem seed 2 0 8 7 step 1 5 co. a 0.
+q chem seed 2 0 8 7 step 1 5 next h2. a 0.
+q chem seed 2 0 8 7 step 1 5 next sio2. a 2 8 8 6.
+q chem seed 2 0 8 7 step 1 7 molecules. a 7 2 8 4.
+q chem seed 2 0 8 7 step 1 7 organic. a 0.
+q chem seed 2 0 8 7 step 1 7 next nacl. a 3 0.
+q chem seed 2 0 8 7 step 1 8 molecules. a 7 2 8 4.
+q chem seed 2 0 8 7 step 1 9 biggest. a 1 6.
+q chem seed 2 0 8 7 step 2 0 h2. a 0.
+q chem seed 2 0 8 7 step 2 1 ch4. a 0.
+q chem seed 2 0 8 7 step 2 3 next ch4. a 0.
+q chem seed 2 0 8 7 step 2 5 next ch4. a 0.
+q chem seed 2 0 8 7 step 2 5 next nacl. a 3 0.
+q chem seed 2 0 8 7 step 2 7 next h2o. a 3 1.
+q chem seed 2 0 8 7 step 2 9 h2. a 0.
+q chem seed 2 0 8 7 step 3 2 next co2. a 4 1 7.
+q chem seed 2 0 8 7 step 3 3 nh3. a 0.
+q chem seed 2 0 8 7 step 3 4 nh3. a 0.
+q chem seed 2 0 8 7 step 3 4 next organic. a 0.
+q chem seed 2 0 8 7 step 3 5 h2o. a 3 1.
+q chem seed 1 1 8 6 step 3 co2. a 1 4 4.
+q chem seed 1 1 8 6 step 3 next h2. a 0.
+q chem seed 1 1 8 6 step 3 next sio2. a 0.
+q chem seed 1 1 8 6 step 4 nh3. a 0.
+q chem seed 1 1 8 6 step 4 co2. a 1 8 3.
+q chem seed 1 1 8 6 step 4 next h2o. a 3 0 0 6.
+q chem seed 1 1 8 6 step 6 organic. a 0.
+q chem seed 1 1 8 6 step 6 next free_atoms. a 0 point 0 7 1 8.
+q chem seed 1 1 8 6 step 9 next sio2. a 0.
+q chem seed 1 1 8 6 step 1 0 next o2. a 0.
+q chem seed 1 1 8 6 step 1 1 molecules. a 5 6 6 7.
+q chem seed 1 1 8 6 step 1 1 next co2. a 1 9 4.
+q chem seed 1 1 8 6 step 1 3 nh3. a 0.
+q chem seed 1 1 8 6 step 1 3 o2. a 0.
+q chem seed 1 1 8 6 step 1 3 next co. a 0.
+q chem seed 1 1 8 6 step 1 3 next mgo. a 8 2.
+q chem seed 1 1 8 6 step 1 4 h2. a 6.
+q chem seed 1 1 8 6 step 1 4 nacl. a 0.
+q chem seed 1 1 8 6 step 1 8 o2. a 0.
+q chem seed 1 1 8 6 step 1 9 h2o. a 5 1 1 6.
+q chem seed 1 1 8 6 step 1 9 co2. a 1 9 4.
+q chem seed 1 1 8 6 step 1 9 next molecules. a 5 9 7 8.
+q chem seed 1 1 8 6 step 2 1 co2. a 1 9 4.
+q chem seed 1 1 8 6 step 2 1 next organic. a 0.
+q chem seed 1 1 8 6 step 2 2 next free_atoms. a 0.
+q chem seed 1 1 8 6 step 2 3 co. a 0.
+q chem seed 1 1 8 6 step 2 3 next co2. a 1 9 4.
+q chem seed 1 1 8 6 step 2 4 h2. a 2 6.
+q chem seed 1 1 8 6 step 2 4 nh3. a 0.
+q chem seed 1 1 8 6 step 2 4 co. a 0.
+q chem seed 1 1 8 6 step 2 5 free_atoms. a 0.
+q chem seed 1 1 8 6 step 2 5 ch4. a 0.
+q chem seed 3 8 9 1 step 1 n2. a 0.
+q chem seed 3 8 9 1 step 3 free_atoms. a 1.
+q chem seed 3 8 9 1 step 3 sio2. a 0.
+q chem seed 3 8 9 1 step 6 next ch4. a 0.
+q chem seed 3 8 9 1 step 8 h2o. a 2 8.
+q chem seed 3 8 9 1 step 9 molecules. a 6 4 9 2.
+q chem seed 3 8 9 1 step 1 0 free_atoms. a 0 point 0 2 1 4.
+q chem seed 3 8 9 1 step 1 1 next h2o. a 2 8.
+q chem seed 3 8 9 1 step 1 3 next n2. a 5 5.
+q chem seed 3 8 9 1 step 1 4 biggest. a 1 9.
+q chem seed 3 8 9 1 step 1 4 next stage. a molecular.
+q chem seed 3 8 9 1 step 1 5 co2. a 3 6 8.
+q chem seed 3 8 9 1 step 1 5 next organic. a 0.
+q chem seed 3 8 9 1 step 1 6 next temperature. a 8 3 6.
+q chem seed 3 8 9 1 step 1 6 next co. a 0.
+q chem seed 3 8 9 1 step 1 6 next co2. a 3 6 8.
+q chem seed 3 8 9 1 step 1 9 molecules. a 6 6 2 9.
+q chem seed 3 8 9 1 step 1 9 o2. a 0.
+q chem seed 3 8 9 1 step 1 9 next h2. a 0.
+q chem seed 3 8 9 1 step 2 1 h2o. a 2 8.
+q chem seed 3 8 9 1 step 2 1 ch4. a 0.
+q chem seed 3 8 9 1 step 2 1 next stage. a frozen.
+q chem seed 3 8 9 1 step 2 1 next sio2. a 2 5 9 9.
+q chem seed 3 8 9 1 step 2 2 organic. a 0.
+q chem seed 3 8 9 1 step 2 4 next mgo. a 1 6 6 0.
+q chem seed 3 8 9 1 step 2 4 next organic. a 0.
+q chem seed 3 8 9 1 step 2 5 co. a 0.
+q chem seed 3 8 9 1 step 2 5 n2. a 5 5.
+q chem seed 3 8 9 1 step 2 5 next co. a 0.
+q chem seed 3 8 9 1 step 2 6 o2. a 0.
+q chem seed 3 8 9 1 step 2 7 co. a 0.
+q chem seed 3 8 9 1 step 2 7 next temperature. a 2 5 0.
+q chem seed 2 8 4 9 step 1 next molecules. a 1 3 1.
+q chem seed 2 8 4 9 step 2 n2. a 7 2.
+q chem seed 2 8 4 9 step 4 co. a 4 4 8.
+q chem seed 2 8 4 9 step 4 mgo. a 0.
+q chem seed 2 8 4 9 step 4 next temperature. a 2 5 6 3.
+q chem seed 2 8 4 9 step 4 next co. a 2 7 5.
+q chem seed 2 8 4 9 step 5 biggest. a 7.
+q chem seed 2 8 4 9 step 7 next o2. a 0.
+q chem seed 2 8 4 9 step 9 next biggest. a 1 8.
+q chem seed 2 8 4 9 step 1 0 next stage. a molecular.
+q chem seed 2 8 4 9 step 1 5 free_atoms. a 0.
+q chem seed 2 8 4 9 step 1 5 nacl. a 0.
+q chem seed 2 8 4 9 step 1 6 next co2. a 2 5.
+q chem seed 2 8 4 9 step 1 6 next o2. a 0.
+q chem seed 2 8 4 9 step 1 6 next mgo. a 0.
+q chem seed 2 8 4 9 step 1 6 next biggest. a 1 8.
+q chem seed 2 8 4 9 step 1 7 next temperature. a 6 2 8.
+q chem seed 2 8 4 9 step 1 8 sio2. a 1 2.
+q chem seed 2 8 4 9 step 1 8 next molecules. a 5 2 4 9.
+q chem seed 2 8 4 9 step 2 0 next co2. a 2 5.
+q chem seed 2 8 4 9 step 2 1 nh3. a 3 1 5.
+q chem seed 2 8 4 9 step 2 1 co. a 0.
+q chem seed 2 8 4 9 step 2 1 o2. a 0.
+q chem seed 2 8 4 9 step 2 3 free_atoms. a 0.
+q chem seed 2 8 4 9 step 2 4 next feo. a 0.
+q chem seed 2 8 4 9 step 2 5 stage. a frozen.
+q chem seed 2 8 4 9 step 2 5 sio2. a 1 2.
+q chem seed 2 8 4 9 step 2 6 co. a 0.
+q chem seed 2 8 4 9 step 2 6 mgo. a 0.
+q chem seed 2 8 4 9 step 2 6 next nh3. a 3 1 5.
+q chem seed 2 8 4 9 step 3 0 next biggest. a 1 8.
+q chem seed 2 8 4 9 step 3 5 co2. a 2 5.
+q chem seed 8 5 4 1 step 0 nh3. a 0.
+q chem seed 8 5 4 1 step 1 sio2. a 1.
+q chem seed 8 5 4 1 step 2 next feo. a 0.
+q chem seed 8 5 4 1 step 4 next molecules. a 1 1 6 1.
+q chem seed 8 5 4 1 step 5 next organic. a 1 2 7.
+q chem seed 8 5 4 1 step 6 h2. a 0.
+q chem seed 8 5 4 1 step 7 next mgo. a 0.
+q chem seed 8 5 4 1 step 9 stage. a forming.
+q chem seed 8 5 4 1 step 9 next temperature. a 2 1 0 4.
+q chem seed 8 5 4 1 step 1 1 next temperature. a 1 8 6 0.
+q chem seed 8 5 4 1 step 1 1 next free_atoms. a 2 point 6 3 e minus 4.
+q chem seed 8 5 4 1 step 1 4 n2. a 2 1 2.
+q chem seed 8 5 4 1 step 1 4 next biggest. a 2 4.
+q chem seed 8 5 4 1 step 1 5 ch4. a 5 2 3.
+q chem seed 8 5 4 1 step 1 6 next free_atoms. a 0.
+q chem seed 8 5 4 1 step 1 9 next molecules. a 6 1 2 1.
+q chem seed 8 5 4 1 step 2 3 sio2. a 2 7.
+q chem seed 8 5 4 1 step 2 3 next feo. a 0.
+q chem seed 8 5 4 1 step 2 4 next sio2. a 2 7.
+q chem seed 8 5 4 1 step 2 5 organic. a 3 3 1.
+q chem seed 8 5 4 1 step 2 6 h2. a 3 6 4 2.
+q chem seed 8 5 4 1 step 2 7 molecules. a 6 1 2 1.
+q chem seed 8 5 4 1 step 2 9 next h2. a 3 6 4 2.
+q chem seed 8 5 4 1 step 3 2 stage. a frozen.
+q chem seed 8 5 4 1 step 3 2 h2. a 3 6 4 2.
+q chem seed 8 5 4 1 step 3 2 next h2. a 3 6 4 2.
+q chem seed 8 5 4 1 step 3 2 next co. a 0.
+q chem seed 8 5 4 1 step 3 3 stage. a frozen.
+q chem seed 8 5 4 1 step 3 3 mgo. a 0.
+q chem seed 8 5 4 1 step 3 3 next n2. a 2 1 2.
+q chem seed 8 5 4 1 step 3 4 feo. a 0.
+q chem seed 8 5 4 1 step 3 4 next co. a 0.
+q chem seed 7 0 4 0 step 0 next stage. a plasma.
+q chem seed 7 0 4 0 step 0 next co. a 0.
+q chem seed 7 0 4 0 step 2 next nacl. a 0.
+q chem seed 7 0 4 0 step 2 next feo. a 0.
+q chem seed 7 0 4 0 step 3 o2. a 0.
+q chem seed 7 0 4 0 step 3 next h2. a 0.
+q chem seed 7 0 4 0 step 4 next stage. a atomic.
+q chem seed 7 0 4 0 step 4 next ch4. a 0.
+q chem seed 7 0 4 0 step 4 next nh3. a 0.
+q chem seed 7 0 4 0 step 8 next stage. a atomic.
+q chem seed 7 0 4 0 step 8 next nacl. a 0.
+q chem seed 7 0 4 0 step 9 o2. a 0.
+q chem seed 7 0 4 0 step 9 next stage. a atomic.
+q chem seed 7 0 4 0 step 9 next feo. a 0.
+q chem seed 7 0 4 0 step 9 next biggest. a 5.
+q chem seed 7 0 4 0 step 1 0 next free_atoms. a 0 point 9 7 5.
+q chem seed 7 0 4 0 step 1 1 next o2. a 0.
+q chem seed 7 0 4 0 step 1 3 o2. a 0.
+q chem seed 7 0 4 0 step 1 4 next free_atoms. a 0 point 0 9 1 2.
+q chem seed 7 0 4 0 step 1 6 molecules. a 8 5 0 1.
+q chem seed 7 0 4 0 step 1 8 molecules. a 8 5 0 1.
+q chem seed 7 0 4 0 step 1 8 h2. a 8 3 6 0.
+q chem seed 7 0 4 0 step 2 0 next h2o. a 6 4.
+q chem seed 7 0 4 0 step 2 1 biggest. a 8.
+q chem seed 7 0 4 0 step 2 1 next o2. a 0.
+q chem seed 7 0 4 0 step 2 2 biggest. a 8.
+q chem seed 7 0 4 0 step 2 3 molecules. a 8 5 0 1.
+q chem seed 7 0 4 0 step 2 3 next temperature. a 8 5 6.
+q chem seed 7 0 4 0 step 2 3 next o2. a 0.
+q chem seed 7 0 4 0 step 2 3 next nacl. a 0.
+q chem seed 7 0 4 0 step 2 4 next mgo. a 0.
+q chem seed 7 0 4 0 step 2 5 co. a 0.
+q chem seed 7 9 5 8 step 0 o2. a 0.
+q chem seed 7 9 5 8 step 0 next molecules. a 0.
+q chem seed 7 9 5 8 step 2 next temperature. a 4 4 3 2.
+q chem seed 7 9 5 8 step 3 biggest. a 1.
+q chem seed 7 9 5 8 step 6 organic. a 0.
+q chem seed 7 9 5 8 step 8 nh3. a 0.
+q chem seed 7 9 5 8 step 8 n2. a 1 6.
+q chem seed 7 9 5 8 step 8 sio2. a 2 8 7 6.
+q chem seed 7 9 5 8 step 9 molecules. a 6 1 0 0.
+q chem seed 7 9 5 8 step 1 0 next molecules. a 7 1 5 6.
+q chem seed 7 9 5 8 step 1 1 next molecules. a 7 1 9 7.
+q chem seed 7 9 5 8 step 1 2 co. a 1.
+q chem seed 7 9 5 8 step 1 2 next nacl. a 0.
+q chem seed 7 9 5 8 step 1 4 free_atoms. a 0 point 0 3 7 5.
+q chem seed 7 9 5 8 step 1 4 next temperature. a 1 8 6 9.
+q chem seed 7 9 5 8 step 1 5 h2o. a 4 6.
+q chem seed 7 9 5 8 step 1 5 next free_atoms. a 0 point 0 1 8 2.
+q chem seed 7 9 5 8 step 1 6 o2. a 0.
+q chem seed 7 9 5 8 step 2 1 next temperature. a 1 1 2 9.
+q chem seed 7 9 5 8 step 2 2 next stage. a molecular.
+q chem seed 7 9 5 8 step 2 6 feo. a 7 7 3.
+q chem seed 7 9 5 8 step 2 7 next stage. a frozen.
+q chem seed 7 9 5 8 step 2 8 o2. a 0.
+q chem seed 7 9 5 8 step 2 8 next ch4. a 0.
+q chem seed 7 9 5 8 step 2 9 free_atoms. a 0.
+q chem seed 7 9 5 8 step 2 9 organic. a 0.
+q chem seed 7 9 5 8 step 2 9 biggest. a 1 9.
+q chem seed 7 9 5 8 step 2 9 next biggest. a 1 9.
+q chem seed 7 9 5 8 step 3 0 nh3. a 0.
+q chem seed 7 9 5 8 step 3 1 stage. a frozen.
+q chem seed 7 9 5 8 step 3 1 next co2. a 4 1 0.
+q chem seed 7 9 5 8 step 3 2 co2. a 4 1 0.

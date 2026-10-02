@@ -1,0 +1,751 @@
+q potassium_chlorate composition. a potassium 1 chlorine 1 oxygen 3.
+q molar_mass i 2 ti 3. a 3 9 7 point 4 1.
+q ammonium_chloride composition. a nitrogen 1 hydrogen 4 chlorine 1.
+q magnesium_perchlorate bonds. a ionic.
+q molar_mass s 1 o 3. a 8 0 point 0 5 7.
+q element_count c 1 0 h 2 1 carbon. a 1 0.
+q galactose occurs_in. a animals food.
+q molar_mass c 1 h 1 4. a 2 6 point 1 2 3.
+q ribose mixture. a no.
+q element_count c 1 7 h 2 5 s 1 br 7 hydrogen. a 2 5.
+q molar_mass s 8. a 2 5 6 point 4 8.
+q check mass_percent carbon_tetrachloride carbon 7 point 8 0 9. a yes.
+q check mass_percent fe 2 o 3 oxygen 3 0 point 0 6. a yes.
+q mercury formula. a hg 1.
+q molar_mass ba 1 cl 2. a 2 0 8 point 2 3.
+q mass_percent c 2 h 3 cl 1 carbon. a 3 8 point 4 4.
+q atoms mg 3 s 1 1 na 1 1. a 2 5.
+q heavier_molecule alanine octane. a octane.
+q element_count mg 1 s 1 o 4 sulfur. a 1.
+q copper_nitrate formula. a cu 1 n 2 o 6.
+q substance formula c 1 8 h 2 1 n 1 o 3. a codeine.
+q substance formula ca 1 ti 1 o 3. a perovskite.
+q check heavier_molecule salicylic_acid vitamin_d3. a no.
+q fullerene occurs_in. a industry interstellar_clouds.
+q check magnesite occurs_in sun. a no.
+q element_count c 8 h 8 o 3 carbon. a 8.
+q mass_percent c 1 0 h 1 cl 3 carbon. a 5 2 point 8.
+q atoms si 1 o 2. a 3.
+q iron_oxide formula. a fe 2 o 3.
+q check element_count aspartic_acid nitrogen 4. a no.
+q mass_percent c 5 h 3 6 p 4 o 7 phosphorus. a 3 7 point 2 9.
+q gold mixture. a no.
+q molar_mass c 8 h 8 o 3. a 1 5 2 point 1 5.
+q aspirin occurs_in. a medicine.
+q check heavier_molecule palmitic_acid cytidine. a yes.
+q check mass_percent tryptophan oxygen 1 5 point 6 7. a yes.
+q check heavier_molecule hydrogen nitrogen. a no.
+q starch class. a polymer_unit.
+q tungsten_carbide molar_mass. a 1 9 5 point 8 5.
+q atoms u 6 fe 6. a 1 2.
+q atoms c 1 9 h 1 1 o 1. a 3 1.
+q isopropanol mixture. a no.
+q substance formula c 1 0 h 1 6 n 5 o 1 4 p 3. a gtp.
+q silver_chloride occurs_in. a industry.
+q element_count nicotine nitrogen. a 2.
+q sun state. a gas.
+q check heavier_molecule hydrogen_peroxide glutamine. a no.
+q check squalene elements 3. a no.
+q mass_percent s 6 mn 7 sulfur. a 3 3 point 3 4.
+q uracil mass_percent. a carbon 4 2 point 8 6 hydrogen 3 point 5 9 7 nitrogen 2 4 point 9 9 oxygen 2 8 point 5 5.
+q mass_percent c 4 h 7 n 1 o 4 hydrogen. a 5 point 3 0 1.
+q mass_percent silicon silicon. a 1 0 0.
+q molar_mass cr 1 0 i 3. a 9 0 0 point 6 7.
+q molar_mass c 4 h 3 7 br 1 s 6. a 3 5 7 point 6.
+q heavier_molecule butadiene carbon_monoxide. a butadiene.
+q atoms c 2 7 h 4 4 o 1. a 7 2.
+q heavier_molecule serine sulfur_trioxide. a serine.
+q element_count c 1 h 1 cl 3 chlorine. a 3.
+q check leucite class element. a no.
+q check monosodium_glutamate formula c 5 n 1 na 1 o 4 ge 8. a no.
+q mass_percent sodium_peroxide oxygen. a 4 1 point 0 3.
+q saccharin state. a solid.
+q substance formula c 1 8 h 2 6 cl 1 n 3. a chloroquine.
+q calcium_carbide molar_mass. a 6 4 point 1.
+q mass_percent phosphorus_pentoxide phosphorus. a 4 3 point 6 4.
+q molar_mass c 1 8 h 2 4 o 2. a 2 7 2 point 3 9.
+q check heavier_molecule cyanoacetylene nadh. a no.
+q heavier_molecule ethane melatonin. a melatonin.
+q element_count iron iron. a 1.
+q malachite bonds. a ionic.
+q check sodium_azide bonds metallic. a no.
+q atoms c 9 h 3 0. a 3 9.
+q glycine occurs_in. a cells plants animals blood food.
+q tartaric_acid class. a acid.
+q heavier_molecule pentane retinol. a retinol.
+q heavier_molecule cholesterol rdx. a cholesterol.
+q element_count c 8 h 8 s 2 sulfur. a 2.
+q cerussite mixture. a no.
+q element_count c 1 9 h 4 0 br 4 sulfur. a 0.
+q element_count na 1 cl 1 o 1 gold. a 0.
+q sucralose mixture. a no.
+q substance formula c 6 h 1 2 o 6. a fructose galactose glucose.
+q mass_percent sodium_chloride chlorine. a 6 0 point 6 6.
+q check element_count c 1 6 h 1 4 p 6 cl 3 hydrogen 1 4. a yes.
+q check heavier_molecule thymine cytosine. a yes.
+q mass_percent zr 1 si 1 o 4 zirconium. a 4 9 point 7 7.
+q check heavier_molecule hydrazine cortisol. a no.
+q heavier_molecule valine diazepam. a diazepam.
+q molar_mass c 4 h 7 br 1 f 2. a 1 7 3.
+q mass_percent i 5 au 1 1 k 6 potassium. a 7 point 7 2 8.
+q metformin state. a solid.
+q iron_hydroxide formula. a fe 1 o 3 h 3.
+q molar_mass c 3 h 3 6 s 7. a 2 9 6 point 7 4.
+q mass_percent cu 2 s 1 sulfur. a 2 0 point 1 4.
+q check naphthalene molar_mass 1 2 8 point 1 7. a yes.
+q element_count linoleic_acid hydrogen. a 3 2.
+q oleic_acid molar_mass. a 2 8 2 point 4 7.
+q thymidine elements. a 4.
+q atoms c 1 2 h 1 2 f 6. a 3 0.
+q element_count sodium_hydroxide oxygen. a 1.
+q mass_percent nickel_hydroxide gold. a 0.
+q phosphine atoms. a 4.
+q salicylic_acid molar_mass. a 1 3 8 point 1 2.
+q retinol state. a solid.
+q check mass_percent fe 1 cl 3 iron 3 4 point 4 1. a no.
+q magnesium_perchlorate molar_mass. a 2 2 3 point 2.
+q cfc_12 state. a gas.
+q serine mass_percent. a carbon 3 4 point 2 9 hydrogen 6 point 7 1 4 nitrogen 1 3 point 3 3 oxygen 4 5 point 6 7.
+q cobalt mixture. a no.
+q mass_percent c 8 h 1 9 s 8 f 6 hydrogen. a 3 point 9 4 3.
+q mass_percent c 2 h 6 hydrogen. a 2 0 point 1 1.
+q heavier_molecule water tripalmitin. a tripalmitin.
+q adenosine mass_percent. a carbon 4 4 point 9 4 hydrogen 4 point 9 0 3 nitrogen 2 6 point 2 1 oxygen 2 3 point 9 5.
+q molar_mass c 2 f 4. a 1 0 0 point 0 2.
+q petn class. a explosive.
+q check cinnabar elements 2. a yes.
+q check histidine molar_mass 1 5 5 point 1 6. a yes.
+q phenol mixture. a no.
+q atoms c 1 9 h 4 0 cl 7. a 6 6.
+q substance formula c 6 h 1 4 n 2 o 2. a lysine.
+q melatonin mixture. a no.
+q sylvite atoms. a 2.
+q testosterone mixture. a no.
+q sylvite formula. a k 1 cl 1.
+q check mass_percent c 3 h 2 o 1 oxygen 2 9 point 6. a yes.
+q check element_count dolomite calcium 1. a yes.
+q molar_mass c 1 4 h 7. a 1 7 5 point 2 1.
+q mullite formula. a al 6 si 2 o 1 3.
+q silver state. a solid.
+q belite occurs_in. a buildings industry.
+q magnesium_chloride class. a salt.
+q heavier_molecule glutamic_acid tristearin. a tristearin.
+q molar_mass c 1 8 h 6. a 2 2 2 point 2 5.
+q mass_percent chitin hydrogen. a 6 point 4 4 9.
+q iodine composition. a iodine 2.
+q sodium_bicarbonate state. a solid.
+q nad occurs_in. a cells.
+q air main_parts. a nitrogen 7 8 point 1 oxygen 2 0 point 9 argon 0 point 9 3 carbon_dioxide 0 point 0 4.
+q magnesium occurs_in. a industry.
+q molar_mass c 4 h 3 5 p 8. a 3 3 1 point 1 1.
+q substance formula na 1 al 1 si 1 o 4. a nepheline.
+q mass_percent c 5 h 8 n 4 o 1 2 carbon. a 1 9.
+q mass_percent wustite iron. a 7 7 point 7 3.
+q check gtp formula c 1 0 h 1 6 n 5 o 1 4 p 3. a yes.
+q dopamine bonds. a covalent.
+q calcium_hydroxide bonds. a ionic.
+q check heavier_molecule uric_acid methionine. a yes.
+q amoxicillin elements. a 5.
+q check mass_percent polydimethylsiloxane oxygen 2 1 point 5 8. a yes.
+q mass_percent c 1 7 h 1 s 8 hydrogen. a 0 point 2 1 8 3.
+q element_count copper_nitrate bromine. a 0.
+q check titan_atmosphere basis volume. a yes.
+q biotin atoms. a 3 2.
+q element_count sucralose chlorine. a 3.
+q check element_count codeine hydrogen 2 3. a no.
+q atoms c 1 6 h 5 o 4. a 2 5.
+q interstellar_medium state. a gas.
+q gtp class. a organic.
+q check portland_cement occurs_in buildings. a yes.
+q molar_mass c 8 h 2 3 f 5. a 2 1 4 point 2 6.
+q mass_percent gtp carbon. a 2 2 point 9 6.
+q molar_mass c 8 h 9 n 1 o 2. a 1 5 1 point 1 7.
+q element_count ga 1 as 1 arsenic. a 1.
+q check anorthite bonds metallic. a no.
+q mass_percent silver_chloride silver. a 7 5 point 2 6.
+q atoms c 1 7 h 2 4. a 4 1.
+q heavier_molecule warfarin realgar. a realgar.
+q element_count c 1 8 h 2 4 o 2 carbon. a 1 8.
+q check stishovite bonds metallic. a no.
+q element_count ammonium_chloride nitrogen. a 1.
+q butter state. a solid.
+q toluene mixture. a no.
+q element_count zr 1 o 2 oxygen. a 2.
+q mullite molar_mass. a 4 2 6 point 0 5.
+q mass_percent guanine hydrogen. a 3 point 3 3 5.
+q molar_mass c 5 h 2 5. a 8 5 point 2 5 5.
+q atoms sr 1 s 1 o 4. a 6.
+q mass_percent li 1 2 ti 1 fe 3 lithium. a 2 7 point 8 8.
+q pyrite elements. a 2.
+q substance formula na 2 s 1 o 4. a sodium_sulfate.
+q check heavier_molecule white_phosphorus phosphoric_acid. a yes.
+q substance formula c 5 h 9 n 1 o 4. a glutamic_acid.
+q atoms cr 9 f 1 0 au 4. a 2 3.
+q heavier_molecule acetone bromine. a bromine.
+q check lithium_iron_phosphate class element. a no.
+q substance formula c 6 h 1 4. a hexane.
+q molar_mass c 3 h 1 6 cl 4. a 1 9 3 point 9 6.
+q atoms c 1 3 h 3 6 o 7. a 5 6.
+q check element_count phosphorus_pentoxide oxygen 1 1. a no.
+q sodium molar_mass. a 2 2 point 9 9.
+q heavier_molecule glucose acetyl_coa. a acetyl_coa.
+q mass_percent cl 1 1 w 7 k 3 tungsten. a 7 1 point 7 3.
+q molar_mass c 1 5 h 8. a 1 8 8 point 2 3.
+q mass_percent muscovite hydrogen. a 0 point 5 0 6 1.
+q heavier_molecule xylene biotin. a biotin.
+q sodium_carbonate molar_mass. a 1 0 5 point 9 9.
+q serpentine elements. a 4.
+q mass_percent c 1 h 1 5 n 6 p 1 nitrogen. a 5 9 point 1 2.
+q element_count squalene sodium. a 0.
+q element_count adp phosphorus. a 2.
+q check nickel formula ni 1. a yes.
+q heavier_molecule tyrosine nitroglycerin. a nitroglycerin.
+q check heavier_molecule capsaicin butane. a yes.
+q atoms c 2 0 h 3 3. a 5 3.
+q check diethyl_ether occurs_in core. a no.
+q substance formula cl 2. a chlorine.
+q gunpowder part charcoal. a 1 5.
+q molar_mass c 3 h 2 1. a 5 7 point 2 0 1.
+q silver_nitrate bonds. a ionic.
+q fluorite atoms. a 3.
+q check heavier_molecule vanillin phosphoric_acid. a yes.
+q post_perovskite occurs_in. a mantle.
+q mass_percent c 4 h 6 o 5 hydrogen. a 4 point 5 1 1.
+q blood_plasma part water. a 9 2.
+q nitrogen atoms. a 2.
+q molar_mass c 5 h 3 7 br 1 p 7. a 3 9 4 point 0 7.
+q topaz mixture. a no.
+q heavier_molecule rdx linoleic_acid. a linoleic_acid.
+q check chlorine atoms 2. a yes.
+q check element_count ca 1 si 1 o 3 silicon 3. a no.
+q palmitic_acid formula. a c 1 6 h 3 2 o 2.
+q check oleic_acid elements 5. a no.
+q sodium_chloride molar_mass. a 5 8 point 4 4.
+q thyroxine molar_mass. a 7 7 6 point 8 7.
+q diazepam mixture. a no.
+q check formaldehyde occurs_in sun. a no.
+q molar_mass c 4 h 1 0 o 1. a 7 4 point 1 2 3.
+q mass_percent c 2 0 h 1 cl 4 chlorine. a 3 7 point 0 2.
+q oestradiol formula. a c 1 8 h 2 4 o 2.
+q check vitamin_d3 elements 3. a yes.
+q check mass_percent ammonia_ice nitrogen 8 2 point 2 4. a yes.
+q nitrogen composition. a nitrogen 2.
+q check methane atoms 3. a no.
+q element_count chloroquine nitrogen. a 3.
+q check uranium state gas. a no.
+q check mass_percent c 3 h 6 o 3 oxygen 5 3 point 2 8. a yes.
+q wollastonite bonds. a network.
+q tryptophan occurs_in. a cells plants animals blood food.
+q topaz atoms. a 9.
+q apatite elements. a 4.
+q check helium occurs_in stars. a yes.
+q galena atoms. a 2.
+q check mass_percent c 1 h 3 7 o 4 s 1 carbon 4 point 1 3 2. a no.
+q check mass_percent tnt oxygen 3 8 point 0 3. a no.
+q hornblende state. a solid.
+q gallium_nitride bonds. a network.
+q sulfur composition. a sulfur 8.
+q check heavier_molecule diazepam ethyl_acetate. a yes.
+q upper_mantle part forsterite. a 6 0.
+q heavier_molecule sulfuric_acid biotin. a biotin.
+q atoms n 1 2 au 1. a 1 3.
+q check mass_percent c 1 7 h 2 1 p 6 br 4 bromine 8 7 point 4 6. a no.
+q nickel_hydroxide class. a base.
+q substance formula c 8 h 1 0. a xylene.
+q wollastonite mass_percent. a calcium 3 4 point 5 silicon 2 4 point 1 8 oxygen 4 1 point 3 2.
+q aniline occurs_in. a industry.
+q atoms k 1 al 3 si 3 o 1 2 h 2. a 2 1.
+q mass_percent h 3 ba 9 hydrogen. a 0 point 2 4 4 1.
+q wustite occurs_in. a mantle industry.
+q check mass_percent testosterone hydrogen 9 point 7 8 5. a yes.
+q check heavier_molecule valine pyridoxine. a no.
+q cortisol class. a lipid.
+q check mass_percent kyanite silicon 3 4 point 6 6. a no.
+q heavier_molecule valine phenol. a valine.
+q mass_percent cl 3 al 1 mg 2 magnesium. a 2 6 point 7 2.
+q molar_mass ca 1 s 1 o 6 h 4. a 1 7 2 point 1 6.
+q check lactose bonds covalent. a yes.
+q atoms i 4 u 1 2. a 1 6.
+q phosphine molar_mass. a 3 3 point 9 9 8.
+q check sodium_iodide occurs_in medicine. a yes.
+q check element_count ag 1 ba 2 si 8 silver 2. a no.
+q check mass_percent spinel aluminum 1 8 point 9 7. a no.
+q check mass_percent halite sodium 3 9 point 3 4. a yes.
+q mass_percent testosterone oxygen. a 1 1 point 0 9.
+q check biotin atoms 3 0. a no.
+q potassium_hydroxide molar_mass. a 5 6 point 1 0 5.
+q substance formula c 1 9 h 1 6 o 4. a warfarin.
+q silicon_carbide molar_mass. a 4 0 point 0 9 6.
+q check thymidine atoms 3 1. a yes.
+q isoleucine molar_mass. a 1 3 1 point 1 8.
+q nadh atoms. a 7 3.
+q cementite state. a solid.
+q check heavier_molecule aniline atp. a no.
+q check fullerene formula c 6 0. a yes.
+q spinel elements. a 3.
+q substance formula c 1 8 h 3 2 o 2. a linoleic_acid.
+q atoms si 1 b 9. a 1 0.
+q substance formula c 2 h 6 o 1. a ethanol.
+q element_count c 1 5 h 3 9 f 3 p 7 phosphorus. a 7.
+q wollastonite composition. a calcium 1 silicon 1 oxygen 3.
+q lactic_acid mass_percent. a carbon 4 0 hydrogen 6 point 7 1 4 oxygen 5 3 point 2 8.
+q calcium_sulfate formula. a ca 1 s 1 o 4.
+q element_count c 1 6 h 3 4 carbon. a 1 6.
+q fluorine formula. a f 2.
+q molar_mass c 4 h 3 0 f 5. a 1 7 3 point 2 8.
+q check silicon_nitride state solid. a yes.
+q iron molar_mass. a 5 5 point 8 4 5.
+q check iodine molar_mass 3 2 9 point 9 5. a no.
+q check nitroglycerin atoms 2 0. a yes.
+q check galactose occurs_in animals. a yes.
+q iron_sulfate mixture. a no.
+q molar_mass c 1 1 h 2 6 br 7. a 7 1 7 point 6 6.
+q check element_count c 7 h 3 6 cl 6 n 2 nitrogen 2. a yes.
+q atoms w 8 pb 6. a 1 4.
+q amoxicillin composition. a carbon 1 6 hydrogen 1 9 nitrogen 3 oxygen 5 sulfur 1.
+q heavier_molecule lidocaine riboflavin. a riboflavin.
+q atoms c 2 0 h 2 1 s 6 f 6. a 5 3.
+q cupronickel state. a solid.
+q mass_percent c 1 5 h 2 1 n 4 nitrogen. a 2 1 point 7 7.
+q mass_percent cu 1 0 zn 3 k 3 potassium. a 1 2 point 3 6.
+q cassiterite composition. a tin 1 oxygen 2.
+q zinc_oxide composition. a zinc 1 oxygen 1.
+q heavier_molecule lactose diethyl_ether. a lactose.
+q check magnesium_sulfate formula mg 1 s 1 o 4. a yes.
+q heavier_molecule isopropanol glutamine. a glutamine.
+q leucine molar_mass. a 1 3 1 point 1 8.
+q check mass_percent c 9 h 2 3 p 1 cl 8 carbon 2 4 point 2 5. a yes.
+q check heavier_molecule penicillin_g propylene. a yes.
+q heavier_molecule lysine metformin. a lysine.
+q sucrose elements. a 3.
+q check sulfur_dioxide molar_mass 6 4 point 0 5 8. a yes.
+q cysteine composition. a carbon 3 hydrogen 7 nitrogen 1 oxygen 2 sulfur 1.
+q gold_18k occurs_in. a industry.
+q check naphthalene composition carbon 1 0 hydrogen 8. a yes.
+q fullerene state. a solid.
+q nylon_6 mixture. a no.
+q molar_mass c 9 h 3 8 n 2 o 4. a 2 3 8 point 4 1.
+q molar_mass br 6 c 3 mn 1 1. a 1 1 1 9 point 8.
+q copper_carbonate mass_percent. a copper 5 1 point 4 3 carbon 9 point 7 2 1 oxygen 3 8 point 8 5.
+q check galactose state solid. a yes.
+q heavier_molecule noradrenaline phosphoric_acid. a noradrenaline.
+q check heavier_molecule uridine melatonin. a yes.
+q hexadecane composition. a carbon 1 6 hydrogen 3 4.
+q check mass_percent zn 1 cl 2 zinc 4 7 point 9 5. a no.
+q element_count au 1 gold. a 1.
+q graphite bonds. a network.
+q mercury_oxide state. a solid.
+q glycogen composition. a carbon 6 hydrogen 1 0 oxygen 5.
+q element_count serpentine magnesium. a 3.
+q molar_mass c 2 h 6. a 3 0 point 0 7.
+q heavier_molecule acetone saccharin. a saccharin.
+q atoms ca 9. a 9.
+q check nitrogen_dioxide elements 5. a no.
+q molar_mass ca 1 o 2 h 2. a 7 4 point 0 9 2.
+q heavier_molecule maltose carbonyl_sulfide. a maltose.
+q check heavier_molecule histidine hexadecane. a no.
+q manganese_dioxide occurs_in. a batteries crust industry.
+q element_count muscovite potassium. a 1.
+q honey mixture. a yes.
+q tremolite mixture. a no.
+q mass_percent apatite calcium. a 3 9 point 7 4.
+q check heavier_molecule omeprazole retinol. a yes.
+q mass_percent fluorine fluorine. a 1 0 0.
+q element_count k 1 al 1 si 2 o 6 silicon. a 2.
+q check heavier_molecule stearic_acid ethylene. a yes.
+q heavier_molecule glutamine toluene. a glutamine.
+q methanol bonds. a covalent.
+q universe occurs_in. a stars interstellar_clouds.
+q mass_percent maltose oxygen. a 5 1 point 4 1.
+q element_count na 1 n 1 o 2 nitrogen. a 1.
+q tricalcium_aluminate molar_mass. a 2 7 0 point 1 9.
+q check heavier_molecule rdx retinol. a no.
+q mass_percent c 4 h 2 o 8 n 4 nitrogen. a 2 3 point 9 4.
+q calcium_chloride atoms. a 3.
+q heavier_molecule retinol iodine. a retinol.
+q heavier_molecule cfc_12 phosphine. a cfc_12.
+q niacin mass_percent. a carbon 5 8 point 5 4 hydrogen 4 point 0 9 4 nitrogen 1 1 point 3 8 oxygen 2 5 point 9 9.
+q check mass_percent magnesium_perchlorate magnesium 1 0 point 8 9. a yes.
+q silver_chloride state. a solid.
+q atoms c 1 7 h 1 9 n 1 o 3. a 4 0.
+q check heavier_molecule phenol vitamin_b12. a no.
+q mass_percent lead_sulfate lithium. a 0.
+q molar_mass pb 1 o 2. a 2 3 9 point 2.
+q heavier_molecule alanine cytidine. a cytidine.
+q molar_mass c 1 1 h 4 br 3. a 3 7 5 point 8 7.
+q threonine class. a amino_acid.
+q coal part sulfur. a 1 point 5.
+q atoms c 7. a 7.
+q mass_percent isopropanol carbon. a 5 9 point 9 6.
+q check mass_percent c 2 0 h 1 0 p 8 n 4 phosphorus 4 4 point 7 2. a yes.
+q molar_mass sn 7 ag 2 fe 6. a 1 3 8 1 point 8.
+q dinitrogen_tetroxide bonds. a covalent.
+q mass_percent c 1 7 h 2 6 carbon. a 8 8 point 6 2.
+q heavier_molecule lysine phenol. a lysine.
+q check vitamin_e class mineral. a no.
+q atoms c 1 3 h 1 6 n 2 o 2. a 3 3.
+q biotite mixture. a no.
+q mass_percent barite barium. a 5 8 point 8 4.
+q pyrite molar_mass. a 1 1 9 point 9 7.
+q silicon_monoxide mass_percent. a silicon 6 3 point 7 1 oxygen 3 6 point 2 9.
+q molar_mass c 1 5 h 1 6 p 5 cl 7. a 5 9 9 point 3 1.
+q check dichloromethane occurs_in industry. a yes.
+q molybdenite class. a mineral.
+q iron atoms. a 1.
+q check serpentine state gas. a no.
+q mass_percent biotin nitrogen. a 1 1 point 4 7.
+q heavier_molecule menthol butane. a menthol.
+q heavier_molecule chlorine indole_3_acetic_acid. a indole_3_acetic_acid.
+q molar_mass ti 8 zn 1 1 f 9. a 1 2 7 3 point 1.
+q molar_mass c 2 1 h 2 9 n 7 o 1 4 p 2. a 6 6 5 point 4 5.
+q polypropylene occurs_in. a industry.
+q stainless_steel occurs_in. a industry buildings.
+q check mass_percent k 1 br 1 potassium 6 5 point 7 2. a no.
+q styrene elements. a 2.
+q check periclase bonds ionic. a yes.
+q molar_mass c 6 h 2 6 br 8 cl 5. a 9 1 4 point 7 6.
+q atoms c 2 h 2 5 f 2. a 2 9.
+q check starch composition carbon 6 hydrogen 1 0 oxygen 7. a no.
+q sodium_oxide occurs_in. a industry buildings.
+q check element_count sodium_chloride chlorine 4. a no.
+q check heavier_molecule hydrogen_sulfide theobromine. a no.
+q cassiterite occurs_in. a crust industry.
+q check stainless_steel basis mass. a yes.
+q substance formula na 1. a sodium.
+q cinnabar mixture. a no.
+q check element_count c 5 h 1 1 n 1 o 2 carbon 5. a yes.
+q molar_mass c 4 0 h 5 6. a 5 3 6 point 8 9.
+q check ammonium_nitrate state gas. a no.
+q atoms c 1 8 h 2 1 n 1 o 3. a 4 3.
+q substance formula c 5 7 h 1 0 4 o 6. a triolein.
+q molar_mass c 6 h 1 1 n 1 o 1. a 1 1 3 point 1 6.
+q check heavier_molecule palmitic_acid benzene. a yes.
+q check element_count spinel oxygen 3. a no.
+q check element_count ca 1 c 1 o 3 oxygen 5. a no.
+q mass_percent barium_sulfate fluorine. a 0.
+q check air part nitrogen 7 8 point 1. a yes.
+q carbonyl_sulfide formula. a c 1 o 1 s 1.
+q element_count cu 6 k 3 potassium. a 3.
+q mass_percent titanium titanium. a 1 0 0.
+q check element_count co 9 cobalt 9. a yes.
+q substance formula c 1 3 h 1 6 n 2 o 2. a melatonin.
+q heavier_molecule nitric_acid deoxyribose. a deoxyribose.
+q atoms mn 1 c 1 o 3. a 5.
+q aluminum occurs_in. a industry buildings.
+q element_count cr 5 na 1 n 9 chromium. a 5.
+q atoms c 7 h 7 n 3 o 8. a 2 5.
+q atoms ca 3 al 2 o 6. a 1 1.
+q zinc composition. a zinc 1.
+q substance formula c 1 cl 2 f 2. a cfc_12.
+q molar_mass cl 6 f 6 sn 7. a 1 1 5 7 point 7.
+q check uridine composition carbon 9 hydrogen 1 2 nitrogen 2 oxygen 8. a no.
+q mass_percent rdx hydrogen. a 2 point 7 2 3.
+q aluminum mixture. a no.
+q element_count glycogen nickel. a 0.
+q check interstellar_medium state gas. a yes.
+q atoms ba 1 cl 2. a 3.
+q calcium_phosphate composition. a calcium 3 phosphorus 2 oxygen 8.
+q molar_mass h 3 p 1 o 4. a 9 7 point 9 9 4.
+q mass_percent riboflavin nitrogen. a 1 4 point 8 9.
+q heavier_molecule biotin cocaine. a cocaine.
+q atoms pt 1. a 1.
+q sandstone mixture. a yes.
+q calcium_phosphate elements. a 3.
+q heavier_molecule citric_acid chlorine. a citric_acid.
+q element_count quartz silicon. a 1.
+q check heavier_molecule sulfur_dioxide tartaric_acid. a no.
+q check heavier_molecule ribose sulfur_dioxide. a yes.
+q check heavier_molecule diethyl_ether sulfur_trioxide. a no.
+q element_count fe 2 si 1 o 4 oxygen. a 4.
+q ammonium_nitrate elements. a 3.
+q check chitin formula c 8 h 1 5 n 1 o 5. a no.
+q check element_count c 2 h 3 cl 1 hydrogen 4. a no.
+q element_count creatine carbon. a 4.
+q check mass_percent cu 1 o 2 h 2 hydrogen 2 point 0 6 6. a yes.
+q mass_percent chalcopyrite copper. a 3 4 point 6 3.
+q calcium_sulfate atoms. a 6.
+q progesterone mixture. a no.
+q heavier_molecule aspirin oestradiol. a oestradiol.
+q heavier_molecule hydrazine adp. a adp.
+q atoms co 6 si 5 sn 1 2. a 2 3.
+q molar_mass p 1 2 pb 2 au 3 mg 1. a 1 4 0 1 point 3.
+q galena bonds. a ionic.
+q element_count c 1 8 h 1 carbon. a 1 8.
+q fluorite mixture. a no.
+q check ammonia_ice state gas. a no.
+q check mass_percent ca 1 si 1 o 3 calcium 3 4 point 5. a yes.
+q heavier_molecule ozone benzoic_acid. a benzoic_acid.
+q heavier_molecule white_phosphorus warfarin. a warfarin.
+q element_count anorthite oxygen. a 8.
+q uranium composition. a uranium 1.
+q check calcium_carbide elements 2. a yes.
+q check mass_percent c 1 9 h 3 3 cl 2 chlorine 2 1 point 3 3. a yes.
+q atoms u 1 o 2. a 3.
+q check lithium_hydroxide elements 3. a yes.
+q butane occurs_in. a fuel industry.
+q molar_mass cl 1 1 o 2 ca 1. a 4 6 2 point 0 3.
+q sun mixture. a yes.
+q heavier_molecule fullerene phenol. a fullerene.
+q check benzoic_acid atoms 1 5. a yes.
+q check mass_percent n 6 pb 1 2 ca 4 si 8 lead 8 4 point 1 4. a no.
+q nickel_hydroxide mixture. a no.
+q mass_percent kr 1 krypton. a 1 0 0.
+q molar_mass c 1 0 h 5 o 6. a 2 2 1 point 1 4.
+q magnesium_oxide elements. a 2.
+q sulfur_dioxide formula. a s 1 o 2.
+q hexadecane molar_mass. a 2 2 6 point 4 5.
+q threonine elements. a 4.
+q element_count c 1 5 h 2 5 s 7 carbon. a 1 5.
+q butane class. a hydrocarbon.
+q sodium_fluoride molar_mass. a 4 1 point 9 8 8.
+q mass_percent sucralose hydrogen. a 4 point 8 1 7.
+q check sodium_bromide formula na 1 be 1. a no.
+q atoms c 4 h 1 2 s 6. a 2 2.
+q molar_mass c 1 4 h 4 0 f 2. a 2 4 6 point 4 7.
+q melatonin occurs_in. a animals blood medicine.
+q molar_mass c 2 0 h 3. a 2 4 3 point 2 4.
+q histamine elements. a 3.
+q atoms c 8 h 1 4. a 2 2.
+q venus_atmosphere main_parts. a carbon_dioxide 9 6 point 5 nitrogen 3 point 5.
+q tremolite molar_mass. a 8 1 2 point 3 5.
+q atoms c 2 1 h 3 0 o 5. a 5 6.
+q lead_dioxide state. a solid.
+q mass_percent cyanoacetylene hydrogen. a 1 point 9 7 5.
+q check iron_oxide formula fe 2 o 3. a yes.
+q heavier_molecule cortisol tnt. a cortisol.
+q molar_mass na 1 cl 1 o 1. a 7 4 point 4 3 9.
+q check element_count c 5 7 h 1 1 0 o 6 oxygen 4. a no.
+q check citric_acid composition carbon 6 hydrogen 8 oxygen 9. a no.
+q check argon occurs_in industry. a yes.
+q check element_count fructose hydrogen 1 3. a no.
+q mass_percent al 1 o 3 h 3 oxygen. a 6 1 point 5 3.
+q substance formula c 6 h 8 o 6. a vitamin_c.
+q lidocaine state. a solid.
+q chlorine bonds. a covalent.
+q molar_mass sn 9. a 1 0 6 8 point 4.
+q bromine occurs_in. a industry.
+q element_count guanosine nitrogen. a 5.
+q check mass_percent c 1 h 5 f 5 carbon 1 0 point 7 1. a no.
+q gold_18k main_parts. a gold 7 5 silver 1 2 point 5 copper 1 2 point 5.
+q molar_mass pb 7 cr 8. a 1 8 6 6 point 4.
+q element_count fe 2 o 3 iron. a 2.
+q atoms c 3 h 2 4 p 6 f 1. a 3 4.
+q sulfur_trioxide state. a liquid.
+q element_count antimony oxygen. a 0.
+q check heavier_molecule thymidine ammonia_ice. a yes.
+q maltose state. a solid.
+q molar_mass fe 3 o 4. a 2 3 1 point 5 3.
+q carbon_monoxide occurs_in. a atmosphere interstellar_clouds comets industry fuel.
+q wood main_parts. a cellulose 4 5 hemicellulose 2 5 lignin 2 5 extractives 5.
+q atoms si 3 s 1 2 sn 7. a 2 2.
+q substance formula c 2 0 h 3 0 o 1. a retinol.
+q heavier_molecule methanol toluene. a toluene.
+q heavier_molecule metformin thymidine. a thymidine.
+q stibnite occurs_in. a crust industry.
+q acetone mass_percent. a carbon 6 2 point 0 4 hydrogen 1 0 point 4 1 oxygen 2 7 point 5 5.
+q check duralumin part magnesium 0 point 7 5. a no.
+q heavier_molecule pentane heptane. a heptane.
+q check mass_percent c 3 h 1 n 1 carbon 7 0 point 5 9. a yes.
+q atoms fe 3 c 1. a 4.
+q check element_count potassium_nitrate oxygen 3. a yes.
+q serpentine class. a mineral.
+q sulfur_dioxide mixture. a no.
+q mass_percent troilite iron. a 6 3 point 5 3.
+q monosodium_glutamate state. a solid.
+q element_count li 1 lithium. a 1.
+q uridine bonds. a covalent.
+q bromine molar_mass. a 1 5 9 point 8 1.
+q check heavier_molecule nitrogen_dioxide carbon_tetrachloride. a no.
+q rhodochrosite occurs_in. a crust.
+q check element_count phosphine phosphorus 3. a no.
+q molar_mass mn 8 n 1 0 ca 3. a 6 9 9 point 8 1.
+q xylene mass_percent. a carbon 9 0 point 5 1 hydrogen 9 point 4 9 4.
+q adenine molar_mass. a 1 3 5 point 1 3.
+q check element_count n 2 h 4 nitrogen 2. a yes.
+q uracil mixture. a no.
+q substance formula c 5 1 h 9 8 o 6. a tripalmitin.
+q atoms b 3. a 3.
+q chitin bonds. a covalent.
+q wine mixture. a yes.
+q element_count cr 4 u 6 cobalt. a 0.
+q check heavier_molecule testosterone water_ice. a yes.
+q molar_mass i 9 au 6 k 1 0. a 2 7 1 4 point 9.
+q heavier_molecule vitamin_d3 methane_ice. a vitamin_d3.
+q mass_percent asparagine nitrogen. a 2 1 point 2.
+q mass_percent c 1 9 h 7 br 8 carbon. a 2 6 point 1.
+q heavier_molecule thyroxine adenosine. a thyroxine.
+q element_count tristearin oxygen. a 6.
+q check niacin occurs_in sun. a no.
+q acetone molar_mass. a 5 8 point 0 8.
+q potassium_nitrate elements. a 3.
+q check element_count cr 7 ba 8 ti 1 1 barium 1 0. a no.
+q check mass_percent ba 1 2 ag 1 cl 1 2 u 7 silver 2 point 8 0 6. a no.
+q lidocaine elements. a 4.
+q heavier_molecule oxalic_acid tripalmitin. a tripalmitin.
+q molar_mass c 8 h 1 1 n 1 o 3. a 1 6 9 point 1 8.
+q iron formula. a fe 1.
+q check jupiter_atmosphere occurs_in jupiter. a yes.
+q mass_percent diamond carbon. a 1 0 0.
+q pyrope atoms. a 2 0.
+q mass_percent ca 3 cu 1 ni 1 0 calcium. a 1 5 point 6.
+q molar_mass c 4 h 9 n 3 o 2. a 1 3 1 point 1 4.
+q atoms br 8 i 1 1 n 6. a 2 5.
+q check heavier_molecule phosphoric_acid bromine. a no.
+q check amoxicillin class salt. a no.
+q heavier_molecule salicylic_acid warfarin. a warfarin.
+q molar_mass cr 6 h 2 au 3 s 1 0. a 1 2 2 5 point 5.
+q mass_percent histidine carbon. a 4 6 point 4 5.
+q mass_percent aspartame carbon. a 5 7 point 1 4.
+q check rutile molar_mass 7 9 point 8 6 7. a no.
+q element_count ethanol hydrogen. a 6.
+q check glutamine elements 2. a no.
+q check proline elements 4. a yes.
+q metformin occurs_in. a medicine.
+q check cocaine composition carbon 1 7 hydrogen 2 1 nitrogen 1 oxygen 4. a yes.
+q periclase composition. a magnesium 1 oxygen 1.
+q earth_core main_parts. a iron 8 5 nickel 5 silicon 4 oxygen 3 sulfur 2.
+q zinc formula. a zn 1.
+q substance formula c 1 8 h 2 7 n 1 o 3. a capsaicin.
+q potassium_bromide atoms. a 2.
+q isopropanol state. a liquid.
+q dinitrogen_tetroxide mass_percent. a nitrogen 3 0 point 4 5 oxygen 6 9 point 5 5.
+q mass_percent linoleic_acid carbon. a 7 7 point 0 9.
+q check belite occurs_in sun. a no.
+q substance formula k 1 mg 2 fe 1 al 1 si 3 o 1 2 h 2. a biotite.
+q tyrosine formula. a c 9 h 1 1 n 1 o 3.
+q check mass_percent calcium_carbonate oxygen 4 7 point 9 6. a yes.
+q mass_percent cocaine hydrogen. a 6 point 9 7 8.
+q molar_mass si 1. a 2 8 point 0 8 5.
+q heavier_molecule isoprene hydrazine. a isoprene.
+q check heavier_molecule chlorine linolenic_acid. a no.
+q mass_percent c 1 h 5 cl 2 carbon. a 1 3 point 6 6.
+q heavier_molecule vitamin_k1 chlorophyll_a. a chlorophyll_a.
+q element_count c 1 8 h 3 6 p 8 o 6 hydrogen. a 3 6.
+q phosphoric_acid molar_mass. a 9 7 point 9 9 4.
+q lead_sulfate class. a salt.
+q check sucrose atoms 4 5. a yes.
+q element_count c 1 5 h 3 2 lead. a 0.
+q mass_percent mullite silicon. a 1 3 point 1 8.
+q bridgmanite bonds. a network.
+q atoms c 2 h 5 n 1 o 2. a 1 0.
+q element_count c 1 2 h 7 s 7 carbon. a 1 2.
+q mass_percent phosphine chromium. a 0.
+q limestone mixture. a yes.
+q nitrogen_dioxide occurs_in. a atmosphere industry.
+q mass_percent c 1 2 h 2 6 hydrogen. a 1 5 point 3 9.
+q check guanine occurs_in dna. a yes.
+q mass_percent hydrogen potassium. a 0.
+q check mass_percent magnesium_sulfate sulfur 2 6 point 6 4. a yes.
+q molar_mass c 1 2 h 2 2 o 1 1. a 3 4 2 point 3.
+q molar_mass n 1 o 2. a 4 6 point 0 0 5.
+q indium_phosphide molar_mass. a 1 4 5 point 7 9.
+q heavier_molecule threonine uric_acid. a uric_acid.
+q mass_percent c 1 6 h 1 8 carbon. a 9 1 point 3 7.
+q molar_mass u 9 na 5 ni 8. a 2 7 2 6 point 8.
+q molar_mass c 1 8 h 3 4 o 2. a 2 8 2 point 4 7.
+q atoms c 1 2 h 2 2 o 1 1. a 4 5.
+q propane mass_percent. a carbon 8 1 point 7 1 hydrogen 1 8 point 2 9.
+q molar_mass n 1 h 4 cl 1. a 5 3 point 4 8 9.
+q substance formula ca 2 al 1 fe 1 o 5. a brownmillerite.
+q mass_percent na 5 i 1 1 iodine. a 9 2 point 3 9.
+q folic_acid molar_mass. a 4 4 1 point 4.
+q calcium_carbide atoms. a 3.
+q limonene elements. a 2.
+q atoms c 5 h 9 n 1 o 4. a 1 9.
+q check air part argon 0 point 9 3. a yes.
+q threonine mixture. a no.
+q magnesium_chloride occurs_in. a ocean industry.
+q check lactic_acid bonds covalent. a yes.
+q check diazepam formula c 1 6 h 1 3 cl 1 n 2 o 1. a yes.
+q mass_percent c 1 o 1 potassium. a 0.
+q molar_mass c 9 h 3 6 f 6 cl 3. a 3 6 4 point 7 3.
+q molar_mass c 1 2 h 1 3. a 1 5 7 point 2 4.
+q check olive_oil basis volume. a no.
+q check fayalite bonds none. a no.
+q molar_mass c 1 sn 1 0. a 1 1 9 9 point 1.
+q molar_mass c 1 h 1 2 p 8. a 2 7 1 point 9.
+q lead_dioxide mass_percent. a lead 8 6 point 6 2 oxygen 1 3 point 3 8.
+q sulfur_trioxide molar_mass. a 8 0 point 0 5 7.
+q element_count c 1 5 h 1 p 2 br 8 bromine. a 8.
+q retinol formula. a c 2 0 h 3 0 o 1.
+q check manganese_dioxide bonds none. a no.
+q element_count h 1 0 li 5 ba 5 barium. a 5.
+q check heavier_molecule proline oestradiol. a no.
+q element_count c 2 h 3 na 1 o 2 hydrogen. a 3.
+q mass_percent sodium_peroxide sodium. a 5 8 point 9 7.
+q element_count c 7 h 1 2 br 1 bromine. a 1.
+q tin mass_percent. a tin 1 0 0.
+q potassium_bromide molar_mass. a 1 1 9.
+q heavier_molecule butane glutamic_acid. a glutamic_acid.
+q element_count u 2 mg 2 i 7 iodine. a 7.
+q progesterone atoms. a 5 3.
+q fullerene mixture. a no.
+q heavier_molecule glucose metformin. a glucose.
+q mass_percent c 1 5 h 6 f 2 p 2 phosphorus. a 2 1 point 6 5.
+q copper_hydroxide state. a solid.
+q molar_mass c 1 h 3 2 o 7 n 2. a 1 8 4 point 2 7.
+q butane mixture. a no.
+q calcite state. a solid.
+q sterling_silver part copper. a 7 point 5.
+q check mass_percent tyrosine carbon 4 4 point 7 5. a no.
+q histamine formula. a c 5 h 9 n 3.
+q mass_percent k 1 0 mg 3 h 1 2 sulfur. a 0.
+q check portland_cement occurs_in industry. a yes.
+q methane_ice formula. a c 1 h 4.
+q mass_percent ca 1 c 2 calcium. a 6 2 point 5 2.
+q check zinc elements 1. a yes.
+q molar_mass c 1 3 h 3 9. a 1 9 5 point 4 6.
+q substance formula c 1 6 h 3 4. a hexadecane.
+q check sandstone state liquid. a no.
+q earth_crust occurs_in. a crust.
+q check apatite composition calcium 5 phosphorus 3 oxygen 1 2 fluorine 1. a yes.
+q mass_percent c 5 h 1 2 carbon. a 8 3 point 2 4.
+q molar_mass i 7 co 1 2 au 9. a 3 3 6 8 point 2.
+q zinc_chloride atoms. a 3.
+q dodecane mass_percent. a carbon 8 4 point 6 1 hydrogen 1 5 point 3 9.
+q atoms c 1 2 h 1 9 cl 3 o 8. a 4 2.
+q heavier_molecule tyrosine oxygen. a tyrosine.
+q gibbsite state. a solid.
+q mass_percent gaba chromium. a 0.
+q check dental_amalgam part mercury 3 7 point 5. a no.
+q substance formula c 2 h 2 o 4. a oxalic_acid.
+q nylon_6 mass_percent. a carbon 6 3 point 6 9 hydrogen 9 point 7 9 9 nitrogen 1 2 point 3 8 oxygen 1 4 point 1 4.
+q molar_mass c 2 0 h 1 7 cl 5. a 4 3 4 point 6 1.
+q check mass_percent ca 1 s 1 o 4 oxygen 4 7 point 0 1. a yes.
+q mass_percent zn 5 zinc. a 1 0 0.
+q mass_percent c 1 4 h 1 6 o 2 br 5 carbon. a 2 7 point 3 1.
+q atoms ca 1 2. a 1 2.
+q element_count ca 1 cl 2 chlorine. a 2.
+q dichloromethane mixture. a no.
+q mass_percent u 1 o 2 uranium. a 8 8 point 1 5.
+q heavier_molecule carbonyl_sulfide carbon_dioxide. a carbonyl_sulfide.
+q check butane occurs_in dna. a no.
+q element_count al 2 si 1 o 4 f 2 fluorine. a 2.
+q molar_mass c 1 1 h 3 7 cl 6 f 7. a 5 1 5 point 1 1.
+q silicon_monoxide state. a solid.
+q beta_carotene formula. a c 4 0 h 5 6.
+q molar_mass c 1 9 h 1 4 f 3. a 2 9 9 point 3 2.
+q molar_mass b 1 0 si 8 u 9. a 2 4 7 5.
+q magnesium_oxide composition. a magnesium 1 oxygen 1.
+q hydrogen mixture. a no.
+q element_count c 3 h 5 p 2 br 6 carbon. a 3.
+q mass_percent mn 5 n 6 mg 3 pb 9 manganese. a 1 1 point 9 6.
+q check ibuprofen occurs_in sun. a no.
+q iodine formula. a i 2.
+q silver_sulfide occurs_in. a industry.
+q dichloromethane molar_mass. a 8 4 point 9 2 7.
+q molar_mass c 1 7 h 2 4 br 5. a 6 2 7 point 9.
+q check element_count c 1 5 h 1 0 carbon 1 4. a no.
+q mass_percent fe 2 o 3 oxygen. a 3 0 point 0 6.
+q element_count c 1 4 h 5 carbon. a 1 4.
+q heavier_molecule diethyl_ether lidocaine. a lidocaine.
+q serpentine state. a solid.
+q petn elements. a 4.
+q mass_percent c 1 h 7 br 8 s 8 hydrogen. a 0 point 7 7 1 3.
+q element_count c 9 h 1 2 o 3 hydrogen. a 1 2.
+q perovskite molar_mass. a 1 3 5 point 9 4.
+q acetone mixture. a no.
+q heavier_molecule sucrose leucine. a sucrose.
+q check troilite molar_mass 8 7 point 9 0 5. a yes.
+q molar_mass ag 9 mg 2 mn 8. a 1 4 5 8 point 9.
+q atoms cr 2. a 2.

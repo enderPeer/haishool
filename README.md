@@ -186,6 +186,234 @@ python -m pytest tests                                                          
 | `tests/` | rule tests for parser, translator and merge |
 | `LESSONS.md` | what we learned before this, and why it is built this way |
 
+## Rounds 5–6: checked calculations and toy worlds
+
+The local follow-up adds five truth gates (`haishool/truth`) and a six-level toy
+simulation chain (`haishool/cosmos`). The simulations produce reproducible training
+examples; they are not a physical forecast of the universe or an explanation of
+the real origin of life. The browser's `docs/world.html` contains saved example
+worlds, not a model generating a live world.
+
+`python -m haishool.round5 build` builds the compact integration dataset, including
+per-topic training and sealed files, rollout records, token counts and prompt lists.
+Direct calculations, worked calculations, checks and judgments share a semantic
+split key, so one form cannot reveal a held-out answer in another form.
+
+The final curriculum adds checked worked steps for all 18 force formulas and for
+molar masses and mass percentages. `haishool.cosmos.predict` supplies explicit-input
+questions about analytical substeps and conditional expectations: cooling,
+accretion, chemical temperature schedules, replication probabilities, conserved
+resources and world handoffs. Seed-only rollout questions remain separate recall
+tasks; they are not counted as generalization to new physical states.
+
+On the training host, run:
+
+```bash
+python -m pip install -r requirements.txt
+python -m haishool.final_run pipeline --root runs/final-v5 --data data/final-v5 --workers 12
+```
+
+This builds a bounded corpus targeting 1.5 million unique maths lessons, 300,000
+force lessons, additional table/chemistry lessons, explicit-input prediction
+lessons and 3,456 rollouts. Actual counts, saturation, hashes and exclusions are
+reported in `data/final-v5/report.json`. It is a large generated corpus streamed
+from disk, not an infinite online generator. Only training files enter the model's
+vocabulary and token cache. Development and sealed question families are reserved
+by semantic hash; simulation seeds are disjoint across splits and levels.
+
+`haishool.train_final` uses one disk-backed token copy per source and a fixed token
+mixture: 40% old facts/links, 40% truth topics, 15% explicit-input predictions and
+5% legacy rollout recall. Within a topic, feedback receives 20% of its existing
+allocation. Training uses 256-token context for worked chemistry, bf16 on CUDA,
+atomic checkpoints every 1,000 steps, and configuration/data/RNG checks on resume.
+
+The pipeline trains both 6-layer/384-width and 8-layer/512-width models for 30,000
+steps with old-data holdouts. Each gets a verified feedback pass and 3,000 further
+steps. Development accuracy and old-fact retention select the candidate before
+one sealed evaluation. A separate 3,000-step production refinement restores old
+held-out facts; its results are kept distinct from the evaluated checkpoint.
+The pipeline does not update the public chat. It writes progress and failures to
+`runs/final-v5/status.json`, phase logs/checkpoints under that directory, and a
+`summary.json` when complete. Running the same command resumes completed phases
+and valid checkpoints; it rejects changed inputs rather than silently mixing runs.
+
+The saved earlier maths-only experiments scored 93.0% (6×384) and 95.6% (8×512)
+on 3,000 held-out questions. These are not final combined-model scores; those are
+reported separately below because the dataset and training objective differ.
+
+### Final combined run, completed 2026-10-01
+
+The successful Adler pipeline ran from 18:09:53 to 18:59:35 UTC (49 minutes 42
+seconds); the dataset build took another 4 minutes 31 seconds. It completed both
+model sizes, verified feedback, candidate selection, sealed evaluation, and separate
+production refinements. There were 2,272,426 training lines / 60,871,214 tokens,
+4,352 development and 4,352 sealed questions across 17 topics, and 3,456 rollouts.
+Independent file and semantic-split audits found no mismatches or leakage.
+
+The main score below covers eleven truth/input-conditioned topics, 256 sealed
+questions each (2,816 total). Six legacy seed-recall topics are separate in the
+reports. Exact accuracy is the primary comparison: gate acceptance allows each
+topic's own numerical tolerance and is not a uniform precision standard.
+
+| Selected evaluation checkpoint | 6×384 | 8×512 |
+|---|---:|---:|
+| Parameters | 16.25 M | 32.68 M |
+| Sealed exact accuracy | 34.48% (971/2,816) | **39.42% (1,110/2,816)** |
+| Sealed gate acceptance | 39.88% | **44.78%** |
+| Old trained facts recalled | 929/1,000 | **969/1,000** |
+| Feedback checkpoint selected | No: development acceptance fell 40.80% → 40.20% | Yes: 43.79% → 44.32% |
+
+| Sealed topic, exact (256 questions per row) | 6×384 | 8×512 |
+|---|---:|---:|
+| Maths | 63.67% | 74.61% |
+| Elements | 73.05% | 75.00% |
+| Substances | 32.42% | 40.23% |
+| Reactions | 81.64% | 80.08% |
+| Forces | 25.00% | 37.11% |
+| Nucleosynthesis inputs | 0.78% | 0.00% |
+| Gravity inputs | 1.17% | 1.56% |
+| Planet inputs | 0.78% | 1.56% |
+| Chemistry inputs | 12.11% | 11.72% |
+| Life inputs | 60.55% | 73.05% |
+| World handoff inputs | 28.13% | 38.67% |
+
+Worked maths was 34/36 correct for the small model and 36/36 for the wide model.
+Worked forces remained 22/128 and 37/128; worked substances 38/141 and 49/141.
+World handoffs accepted 87.50% and 97.66% under a 5% numerical tolerance, which
+explains their large gap from exact accuracy. This is approximate calculation of
+the specified handoff formulas, not reliable prediction of whole worlds.
+
+Each feedback pass asked 2,816 fresh questions and wrote 5,632 answer/judgment
+lines, correcting 1,647 small-model answers and 1,542 wide-model answers. Feedback
+helped only the larger candidate under the declared selection rule.
+
+Production checkpoints are separate. Their development exact/accepted scores were
+35.30%/40.52% (small) and 40.06%/44.67% (wide); old-fact recall was 90.7% and 95.2%.
+Restoring held-out material changes that recall sample, so these are not paired
+recall drops from the evaluation checkpoints. Both production refinements used
+correction files, including the small run whose feedback candidate was rejected.
+Neither production checkpoint inherits its selected candidate's sealed score.
+The pooled old held-out scores (47.57% and 50.51%) combine 1,877 fact questions and
+3,862 hop questions and must not be compared with historical fact-only inference.
+
+All four float32 exports in [model/final-v5](model/final-v5) were checked tensor for
+tensor against their original checkpoints, loaded and generation-tested on Adler,
+then hash-verified locally along with 36 reports. The [comparison](model/final-v5/comparison.json)
+and [artifact manifest](model/final-v5/manifest.json) identify every model and score.
+The strongest measured result is `haishool-v5-8x512-selected.pt`. The public chat
+remains v4b: the new models are experimental and have not preserved its near-perfect
+recall of trained facts. Next priorities are explicit fact-retention targets,
+worked intermediate calculations for weak numeric predictions, and a production
+selection rule that does not reintroduce rejected feedback without verification.
+
+### V5 maths/science chat preview
+
+The separate v5 preview now routes supported English maths and science questions
+before the legacy fact/link parser. `haishool/science_routes.py` translates input
+into an existing gate-owned prompt; `haishool/v5_app.py` asks the neural model,
+checks its answer, and returns the rule result separately. No model retraining or
+public v4b service change is needed. Unsupported calculations fail explicitly
+instead of turning into an unrelated nearest-record answer.
+
+```bash
+python -m haishool.v5_app --model model/final-v5/haishool-v5-8x512-selected.pt \
+  --records data/records-r3-all.jsonl --hops data/hops-v4b --port 8652
+```
+
+Examples: `What is 12 plus 7?`, `How many protons does carbon have?`,
+`Molar mass of water`, `Balance H2 + O2 -> H2O`, `pressure f=100 area=2`,
+and `calc 4 7 times 6 steps`. Explicit-input simulation forms are also supported,
+for example `life predict expected_mutations length 8 mu 0 point 2`.
+Named force operands use SI units; unsupported units are rejected, not silently
+converted. Each question is independent. The UI in `docs/v5-chat.html` preserves
+the model's raw output and labels agreement or disagreement with the gate.
+
+The live LAN preview is `http://192.168.178.171:8652/`, running in the isolated
+`/home/ender/haishool-v5-preview-20261001` directory on Adler. Its launcher is
+`scripts/run-v5-preview-adler.sh`. The completed training directory and both public
+v4b services remain separate. Router and API verification: 100 tests passed on
+Adler, followed by live API and browser checks. The routing fix exposes capabilities;
+it does not make a wrong model prediction correct.
+
+### Render and inspect inhabitants from a world run
+
+`haishool.inspect_world` is an optional observer for round 7. It does not change
+the simulator's dynamics or training lines. Each run captures a stable source
+snapshot, runs the engine in a fresh subprocess, checks world consistency, and
+saves `world.json`, `inhabitants.json`, `manifest.json`, and an offline `viewer.html`.
+The archive includes effective parameters, attempt seeds, dependency versions,
+source hashes and the versioned drawing geometry.
+
+```bash
+python -m haishool.inspect_world run --seed 85 --out runs/inhabitants/my-world-85
+python -m haishool.inspect_world verify runs/inhabitants/my-world-85
+python -m haishool.inspect_world serve --root runs/inhabitants --port 8653
+```
+
+The local inspector at `http://127.0.0.1:8653/` can run another seed and browse
+planets, saved generations, genotypes, individual snapshot records and body
+lineages. On Windows, `scripts/start-inhabitant-inspector.ps1` starts it hidden
+and avoids duplicate servers. An existing archive is never overwritten.
+
+Drawings are deterministic schematics of recorded traits: zero eye/calling genes
+produce no eye/calling marker; sensor levels remain capacities rather than organ
+counts. Body size is a cell count, not a physical length. Colours, outlines and
+marker placement are explicitly versioned display choices, not evolved anatomy.
+The same saved phenotype renders the same way without image generation.
+
+Body lineages preserve the simulator's real lineage and parent IDs. Senses IDs
+are local to a snapshot because the simulator records genomes, not lifelong
+individual identities; generation 295 is the last pre-reproduction snapshot in
+the current level. Society remains aggregate context, not fabricated citizens.
+Empty or extinct worlds are shown without invented inhabitants. Other builders
+can call `haishool.evo.inhabitants.export_inhabitants(world)` on a stored world
+without rerunning it. Keep display-only geometry separate from biological
+training targets.
+
+Validation: 47 exporter/archive tests passed on Adler (45 passed and two
+Windows-symlink tests skipped locally). A real World 85 export passed world
+conservation and archive checks; it retained 60 sensory snapshots, 200 final agents
+and ten final genotypes. Live and offline viewer interactions were checked in the
+browser. The observer and viewer are separate from Opus's active biology files
+and the completed v5 runtime.
+
+### Stored cell anatomy before rendering
+
+`haishool.anatomy_run` adds a developmental stage conditioned on a phenotype
+already saved by the world inspector. It grows an exact cell count through
+recorded binary divisions, relaxes the cells in three dimensions, and saves
+their positions, radii, ancestry, tissue assignments, measured contacts and an
+explicit growth-volume ledger in `anatomy.json`. Source and renderer code,
+parameters, seed, dependency versions and hashes are archived for verification.
+
+```bash
+python -m haishool.anatomy_run build --archive runs/inhabitants/world-85-render-v1 \
+  --out runs/anatomy/world85-dominant-v2 --seed 85
+python -m haishool.anatomy_run verify runs/anatomy/world85-dominant-v2
+python -m haishool.anatomy_run render runs/anatomy/world85-dominant-v2 --samples 64 --threads 8
+```
+
+The source archive must already exist. Choose a new output directory for a new
+build; existing archives and render destinations are not overwritten. The cell
+model uses NumPy and SciPy. Rendering uses Blender on the CPU; use `--blender`
+to specify its executable when the default Windows installation path differs.
+The renderer can produce `render/anatomy-4k.png` (3840 × 2160),
+`render/saved.blend` and `render/surface.glb`, with receipts linking each output
+to the stored cells. The surface comes from those cells, with no added anatomical
+features. Lighting and material finish remain rendering choices.
+
+The archived World 85 specimen preserves **256 cells, 64 neural cells, seven cell
+types and zero eyes**. Spatial layout, tissue functions, unnamed subtype
+identities and neural connection choices are new model assumptions. This is not
+recovered historical anatomy, atom positions or a society citizen's identity.
+Lengths use mature-cell-radius units, not metres. Anatomy is not yet connected
+to world survival, selection or training, and no core evolution rules are changed.
+Validation: 52 anatomy and archive tests passed. The first full render in
+`runs/anatomy/world85-dominant-v2` was verified at 3840 × 2160, with matching
+output hashes and all 256 cell instances checked after reopening the Blender
+scene. Rendering took 220 seconds on eight CPU threads. The derived surface is
+a voxel approximation; its volume diagnostics are recorded in the render receipt.
+
 ## Licence
 
 Code: MIT (`LICENSE`). Model weights and data: CC BY 4.0. The facts were generated with

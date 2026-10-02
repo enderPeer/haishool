@@ -1,0 +1,195 @@
+q planets seed 3 3 9 8 step 3 next gas. a 0.
+q planets seed 3 3 9 8 step 6 outermost_au. a 2 7 point 3.
+q planets seed 3 3 9 8 step 6 next planets. a 2 4.
+q planets seed 3 3 9 8 step 7 innermost_au. a 0 point 3 3.
+q planets seed 3 3 9 8 step 8 ice. a 0.
+q planets seed 3 3 9 8 step 8 next outermost_au. a 2 7 point 3.
+q planets seed 3 3 9 8 step 1 0 planets. a 2 4.
+q planets seed 3 3 9 8 step 1 0 debris. a 0.
+q planets seed 3 3 9 8 step 1 0 next largest_mass. a 3 point 6 3.
+q planets seed 3 3 9 8 step 1 1 next innermost_au. a 0 point 3 3.
+q planets seed 3 3 9 8 step 1 2 gas. a 0.
+q planets seed 3 3 9 8 step 1 2 next gas_present. a yes.
+q planets seed 3 3 9 8 step 1 4 next rocky. a 2 4.
+q planets seed 3 3 9 8 step 1 4 next innermost_au. a 0 point 3 3.
+q planets seed 3 3 9 8 step 1 5 time. a 5.
+q planets seed 3 3 9 8 step 1 5 innermost_au. a 0 point 3 3.
+q planets seed 3 3 9 8 step 1 5 next debris. a 0 point 0 1 1 7.
+q planets seed 3 3 9 8 step 1 8 outermost_au. a 2 4 point 9.
+q planets seed 3 3 9 8 step 2 0 next planets. a 8.
+q planets seed 3 3 9 8 step 2 1 gas. a 0.
+q planets seed 3 3 9 8 step 2 1 largest_mass. a 2 6 point 8.
+q planets seed 3 3 9 8 step 2 2 gas_present. a no.
+q planets seed 3 3 9 8 step 2 2 next innermost_au. a 0 point 5 2 1.
+q planets seed 3 3 9 8 step 2 3 time. a 2 0.
+q planets seed 3 3 9 8 step 2 3 outermost_au. a 2 4 point 9.
+q planets seed 3 3 9 8 step 2 3 next largest_mass. a 3 3 point 9.
+q planets seed 3 3 9 8 step 2 6 time. a 3 5.
+q planets seed 3 3 9 8 step 2 6 planets. a 6.
+q planets seed 3 3 9 8 step 2 7 innermost_au. a 0 point 5 2 1.
+q planets seed 3 3 9 8 step 2 7 next gas. a 0.
+q planets seed 3 3 9 8 step 2 7 next largest_mass. a 3 5 point 3.
+q planets seed 3 3 9 8 step 2 7 next innermost_au. a 0 point 5 2 1.
+q planets seed 3 3 9 8 final planets. a 6.
+q planets seed 3 3 9 8 final rocky. a 3.
+q planets seed 3 3 9 8 final ice. a 3.
+q planets seed 3 3 9 8 final gas. a 0.
+q planets seed 3 3 9 8 final largest_mass. a 3 5 point 4.
+q planets seed 3 3 9 8 final habitable. a 0.
+q planets seed 3 3 9 8 final total_planet_mass. a 8 1 point 8.
+q planets seed 8 8 0 7 step 0 planets. a 0.
+q planets seed 8 8 0 7 step 0 next planets. a 2 2.
+q planets seed 8 8 0 7 step 0 next rocky. a 2 2.
+q planets seed 8 8 0 7 step 1 debris. a 0.
+q planets seed 8 8 0 7 step 2 next gas_present. a yes.
+q planets seed 8 8 0 7 step 6 rocky. a 2 4.
+q planets seed 8 8 0 7 step 7 innermost_au. a 0 point 3 3.
+q planets seed 8 8 0 7 step 7 next gas_present. a yes.
+q planets seed 8 8 0 7 step 9 gas_present. a yes.
+q planets seed 8 8 0 7 step 1 0 largest_mass. a 8 point 1 7.
+q planets seed 8 8 0 7 step 1 1 next largest_mass. a 3 1 point 3.
+q planets seed 8 8 0 7 step 1 2 stage. a giants_forming.
+q planets seed 8 8 0 7 step 1 3 largest_mass. a 5 8 point 8.
+q planets seed 8 8 0 7 step 1 3 debris. a 0.
+q planets seed 8 8 0 7 step 1 5 gas. a 0.
+q planets seed 8 8 0 7 step 1 5 outermost_au. a 2 7 point 3.
+q planets seed 8 8 0 7 step 1 5 stage. a clearing.
+q planets seed 8 8 0 7 step 1 5 next planets. a 7.
+q planets seed 8 8 0 7 step 1 5 next largest_mass. a 1 6 2.
+q planets seed 8 8 0 7 step 1 6 debris. a 0 point 0 1 9 3.
+q planets seed 8 8 0 7 step 1 8 gas. a 0.
+q planets seed 8 8 0 7 step 1 8 next gas_present. a no.
+q planets seed 8 8 0 7 step 1 9 ice. a 2.
+q planets seed 8 8 0 7 step 1 9 gas_present. a no.
+q planets seed 8 8 0 7 step 2 1 next planets. a 6.
+q planets seed 8 8 0 7 step 2 1 next gas. a 0.
+q planets seed 8 8 0 7 step 2 4 largest_mass. a 1 8 2.
+q planets seed 8 8 0 7 step 2 4 debris. a 0 point 0 6 1 5.
+q planets seed 8 8 0 7 step 2 4 stage. a done.
+q planets seed 8 8 0 7 step 2 5 outermost_au. a 1 8 point 3.
+q planets seed 8 8 0 7 step 2 6 next outermost_au. a 1 8 point 3.
+q planets seed 8 8 0 7 step 2 8 debris. a 0 point 0 6 1 5.
+q planets seed 8 8 0 7 final planets. a 6.
+q planets seed 8 8 0 7 final rocky. a 4.
+q planets seed 8 8 0 7 final ice. a 2.
+q planets seed 8 8 0 7 final gas. a 0.
+q planets seed 8 8 0 7 final largest_mass. a 1 8 2.
+q planets seed 8 8 0 7 final habitable. a 1.
+q planets seed 8 8 0 7 final total_planet_mass. a 3 3 3.
+q planets seed 2 5 7 4 step 0 gas_present. a yes.
+q planets seed 2 5 7 4 step 0 next innermost_au. a 0 point 3 3.
+q planets seed 2 5 7 4 step 1 next debris. a 0.
+q planets seed 2 5 7 4 step 2 rocky. a 1 4.
+q planets seed 2 5 7 4 step 4 rocky. a 1 8.
+q planets seed 2 5 7 4 step 5 planets. a 2 1.
+q planets seed 2 5 7 4 step 5 next planets. a 2 4.
+q planets seed 2 5 7 4 step 5 next largest_mass. a 1 point 2 5.
+q planets seed 2 5 7 4 step 6 gas_present. a yes.
+q planets seed 2 5 7 4 step 7 outermost_au. a 2 7 point 3.
+q planets seed 2 5 7 4 step 9 innermost_au. a 0 point 3 3.
+q planets seed 2 5 7 4 step 1 0 time. a 1 point 5.
+q planets seed 2 5 7 4 step 1 0 gas_present. a yes.
+q planets seed 2 5 7 4 step 1 0 next gas. a 0.
+q planets seed 2 5 7 4 step 1 2 ice. a 0.
+q planets seed 2 5 7 4 step 1 6 next planets. a 2 4.
+q planets seed 2 5 7 4 step 1 7 next stage. a embryos.
+q planets seed 2 5 7 4 step 1 8 gas_present. a yes.
+q planets seed 2 5 7 4 step 1 9 next ice. a 4.
+q planets seed 2 5 7 4 step 2 0 planets. a 1 4.
+q planets seed 2 5 7 4 step 2 0 next outermost_au. a 2 7 point 3.
+q planets seed 2 5 7 4 step 2 0 next debris. a 0 point 0 4 8 7.
+q planets seed 2 5 7 4 step 2 1 debris. a 0 point 0 4 8 7.
+q planets seed 2 5 7 4 step 2 1 next ice. a 5.
+q planets seed 2 5 7 4 step 2 3 rocky. a 2.
+q planets seed 2 5 7 4 step 2 3 stage. a done.
+q planets seed 2 5 7 4 step 2 5 gas. a 0.
+q planets seed 2 5 7 4 step 2 5 largest_mass. a 2 4 point 6.
+q planets seed 2 5 7 4 step 2 6 rocky. a 2.
+q planets seed 2 5 7 4 step 2 7 rocky. a 2.
+q planets seed 2 5 7 4 step 2 8 innermost_au. a 0 point 3 6 7.
+q planets seed 2 5 7 4 step 2 9 rocky. a 2.
+q planets seed 2 5 7 4 final planets. a 7.
+q planets seed 2 5 7 4 final rocky. a 2.
+q planets seed 2 5 7 4 final ice. a 5.
+q planets seed 2 5 7 4 final gas. a 0.
+q planets seed 2 5 7 4 final largest_mass. a 2 8 point 7.
+q planets seed 2 5 7 4 final habitable. a 1.
+q planets seed 2 5 7 4 final total_planet_mass. a 6 3 point 9.
+q planets seed 8 0 4 3 step 0 innermost_au. a 0.
+q planets seed 8 0 4 3 step 1 planets. a 1 5.
+q planets seed 8 0 4 3 step 1 gas_present. a yes.
+q planets seed 8 0 4 3 step 1 next stage. a embryos.
+q planets seed 8 0 4 3 step 3 innermost_au. a 0 point 3 3.
+q planets seed 8 0 4 3 step 3 next outermost_au. a 2 7 point 3.
+q planets seed 8 0 4 3 step 3 next gas_present. a yes.
+q planets seed 8 0 4 3 step 4 next gas_present. a yes.
+q planets seed 8 0 4 3 step 5 stage. a embryos.
+q planets seed 8 0 4 3 step 6 innermost_au. a 0 point 3 3.
+q planets seed 8 0 4 3 step 7 outermost_au. a 2 7 point 3.
+q planets seed 8 0 4 3 step 9 gas_present. a yes.
+q planets seed 8 0 4 3 step 1 0 next planets. a 2 4.
+q planets seed 8 0 4 3 step 1 2 next gas. a 0.
+q planets seed 8 0 4 3 step 1 4 next gas_present. a no.
+q planets seed 8 0 4 3 step 1 5 gas. a 0.
+q planets seed 8 0 4 3 step 1 5 gas_present. a no.
+q planets seed 8 0 4 3 step 1 6 next stage. a clearing.
+q planets seed 8 0 4 3 step 1 7 largest_mass. a 2 1 point 2.
+q planets seed 8 0 4 3 step 1 8 time. a 8.
+q planets seed 8 0 4 3 step 1 8 gas_present. a no.
+q planets seed 8 0 4 3 step 2 2 gas. a 0.
+q planets seed 8 0 4 3 step 2 3 next ice. a 2.
+q planets seed 8 0 4 3 step 2 3 next outermost_au. a 1 9 point 6.
+q planets seed 8 0 4 3 step 2 4 largest_mass. a 4 9 point 4.
+q planets seed 8 0 4 3 step 2 4 next rocky. a 4.
+q planets seed 8 0 4 3 step 2 6 next gas. a 0.
+q planets seed 8 0 4 3 step 2 6 next outermost_au. a 1 9 point 6.
+q planets seed 8 0 4 3 step 2 6 next gas_present. a no.
+q planets seed 8 0 4 3 step 2 7 largest_mass. a 5 7 point 1.
+q planets seed 8 0 4 3 step 2 8 debris. a 0 point 0 4 5 4.
+q planets seed 8 0 4 3 step 2 8 next innermost_au. a 0 point 3 3.
+q planets seed 8 0 4 3 final planets. a 6.
+q planets seed 8 0 4 3 final rocky. a 4.
+q planets seed 8 0 4 3 final ice. a 2.
+q planets seed 8 0 4 3 final gas. a 0.
+q planets seed 8 0 4 3 final largest_mass. a 5 9 point 3.
+q planets seed 8 0 4 3 final habitable. a 1.
+q planets seed 8 0 4 3 final total_planet_mass. a 1 1 4.
+q planets seed 8 8 9 0 step 0 time. a 0.
+q planets seed 8 8 9 0 step 1 next debris. a 0.
+q planets seed 8 8 9 0 step 2 next outermost_au. a 2 7 point 3.
+q planets seed 8 8 9 0 step 4 time. a 0 point 2.
+q planets seed 8 8 9 0 step 4 next time. a 0 point 3.
+q planets seed 8 8 9 0 step 4 next largest_mass. a 1 point 5 5.
+q planets seed 8 8 9 0 step 5 debris. a 0.
+q planets seed 8 8 9 0 step 6 next outermost_au. a 2 7 point 3.
+q planets seed 8 8 9 0 step 7 next gas_present. a yes.
+q planets seed 8 8 9 0 step 8 ice. a 0.
+q planets seed 8 8 9 0 step 9 next rocky. a 2 2.
+q planets seed 8 8 9 0 step 9 next debris. a 0.
+q planets seed 8 8 9 0 step 1 0 next gas_present. a yes.
+q planets seed 8 8 9 0 step 1 1 outermost_au. a 2 7 point 3.
+q planets seed 8 8 9 0 step 1 2 next ice. a 6.
+q planets seed 8 8 9 0 step 1 3 debris. a 0.
+q planets seed 8 8 9 0 step 1 3 next gas_present. a yes.
+q planets seed 8 8 9 0 step 1 4 rocky. a 1 8.
+q planets seed 8 8 9 0 step 1 4 gas. a 0.
+q planets seed 8 8 9 0 step 1 5 next rocky. a 1 5.
+q planets seed 8 8 9 0 step 1 5 next outermost_au. a 2 7 point 3.
+q planets seed 8 8 9 0 step 1 7 gas_present. a yes.
+q planets seed 8 8 9 0 step 1 7 next planets. a 1 6.
+q planets seed 8 8 9 0 step 1 9 rocky. a 1 0.
+q planets seed 8 8 9 0 step 1 9 next outermost_au. a 2 4 point 4.
+q planets seed 8 8 9 0 step 2 0 next outermost_au. a 2 4 point 4.
+q planets seed 8 8 9 0 step 2 3 rocky. a 4.
+q planets seed 8 8 9 0 step 2 3 next rocky. a 4.
+q planets seed 8 8 9 0 step 2 3 next innermost_au. a 0 point 3 3.
+q planets seed 8 8 9 0 step 2 5 next rocky. a 4.
+q planets seed 8 8 9 0 step 2 6 next stage. a done.
+q planets seed 8 8 9 0 step 2 8 largest_mass. a 3 1 3.
+q planets seed 8 8 9 0 final planets. a 6.
+q planets seed 8 8 9 0 final rocky. a 4.
+q planets seed 8 8 9 0 final ice. a 1.
+q planets seed 8 8 9 0 final gas. a 1.
+q planets seed 8 8 9 0 final largest_mass. a 3 1 3.
+q planets seed 8 8 9 0 final habitable. a 1.
+q planets seed 8 8 9 0 final total_planet_mass. a 3 9 4.

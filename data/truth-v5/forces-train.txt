@@ -1,0 +1,3067 @@
+gravity force. kind fundamental. carrier graviton_hypothetical. acts_on mass_energy. range_m infinite. relative_strength 1 e minus 3 9. holds_together planets stars galaxies. described_by newton einstein. discovered 1 6 8 7. formula big_g m_1 m_2 over r squared. constant 6 point 6 7 4 e minus 1 1. unit newton. examples falling_apple ocean_tides moon_orbit. attractive attractive. direction toward_mass. acts_at_distance yes.
+electromagnetism force. kind fundamental. carrier photon. acts_on electric_charge. range_m infinite. relative_strength 0 point 0 1. holds_together atoms molecules. described_by maxwell faraday. discovered 1 8 6 5. formula charge e_field plus charge v b. constant 0 point 0 0 7 2 9 7 4. unit newton. examples light radio electric_motor. attractive both. direction along_field. acts_at_distance yes.
+strong force. kind fundamental. carrier gluon. acts_on colour_charge. range_m 1 e minus 1 5. relative_strength 1. holds_together protons neutrons. described_by gell_mann. discovered 1 9 7 3. unit newton. examples proton neutron atomic_nucleus. attractive attractive. direction between_quarks. acts_at_distance yes.
+weak force. kind fundamental. carrier w_boson z_boson. acts_on quarks_leptons. range_m 1 e minus 1 8. relative_strength 1 e minus 6. described_by fermi glashow weinberg salam. discovered 1 9 3 3. constant 1 point 1 6 6 4 e minus 5. unit newton. examples beta_decay sun_fusion neutrino_scattering. attractive neither. direction none. acts_at_distance yes.
+electrostatic force. kind effective. arises_from electromagnetism. acts_on electric_charge. range_m infinite. holds_together atoms ionic_crystals. described_by coulomb. discovered 1 7 8 5. formula k_e charge_1 charge_2 over r squared. constant 8 point 9 8 8 e 9. unit newton. examples static_cling balloon_on_hair lightning. attractive both. direction along_line_of_charges. acts_at_distance yes.
+magnetic force. kind effective. arises_from electromagnetism. acts_on moving_charge currents magnets. range_m infinite. described_by oersted ampere lorentz. discovered 1 8 2 0. formula charge v b. constant 1 point 2 5 6 6 e minus 6. unit newton. examples compass fridge_magnet electric_motor. attractive both. direction perpendicular_to_velocity_and_field. acts_at_distance yes.
+friction force. kind effective. arises_from electromagnetism. acts_on surfaces. range_m contact. described_by amontons coulomb. discovered 1 6 9 9. formula mu n. unit newton. examples walking brakes striking_a_match. attractive neither. direction opposes_motion. acts_at_distance no.
+static_friction force. kind effective. arises_from electromagnetism. acts_on surfaces. range_m contact. described_by amontons coulomb. formula mu_s n. unit newton. examples parked_car box_at_rest walking. attractive neither. direction opposes_impending_motion. acts_at_distance no.
+kinetic_friction force. kind effective. arises_from electromagnetism. acts_on surfaces. range_m contact. described_by coulomb. formula mu_k n. unit newton. examples sliding_box skidding_tyre sledge. attractive neither. direction opposes_motion. acts_at_distance no.
+normal force. kind effective. arises_from electromagnetism. acts_on surfaces. range_m contact. described_by newton. unit newton. examples book_on_table standing_on_floor chair. attractive repulsive. direction perpendicular_to_surface. acts_at_distance no.
+tension force. kind effective. arises_from electromagnetism. acts_on ropes strings cables. range_m contact. described_by newton. unit newton. examples rope crane_cable guitar_string. attractive attractive. direction along_rope. acts_at_distance no.
+drag force. kind effective. arises_from electromagnetism. acts_on bodies_in_fluids. range_m contact. described_by newton stokes. formula half rho v squared c_d area. unit newton. examples air_resistance parachute swimming. attractive neither. direction opposes_motion. acts_at_distance no.
+lift force. kind effective. arises_from electromagnetism. acts_on wings bodies_in_fluids. range_m contact. described_by bernoulli kutta joukowski. formula half rho v squared c_l area. unit newton. examples airplane_wing helicopter_rotor sail. attractive neither. direction perpendicular_to_flow. acts_at_distance no.
+buoyancy force. kind effective. arises_from gravity electromagnetism. acts_on bodies_in_fluids. range_m contact. described_by archimedes. discovered ancient. formula rho g vol. constant 9 point 8 1. unit newton. examples ship hot_air_balloon iceberg. attractive neither. direction upward. acts_at_distance no.
+spring force. kind effective. arises_from electromagnetism. acts_on springs elastic_solids. range_m contact. described_by hooke. discovered 1 6 7 8. formula k x. unit newton. examples trampoline mattress car_suspension. attractive both. direction toward_rest_length. acts_at_distance no.
+pressure_force force. kind effective. arises_from electromagnetism. acts_on surfaces fluids. range_m contact. described_by pascal bernoulli. discovered 1 6 5 3. formula pressure area. unit newton. examples tyre balloon hydraulic_press. attractive repulsive. direction perpendicular_to_surface. acts_at_distance no.
+surface_tension force. kind effective. arises_from electromagnetism. acts_on liquid_surfaces. range_m contact. holds_together droplets bubbles. described_by young laplace. discovered 1 8 0 5. formula gamma l. unit newton. examples water_strider raindrop soap_bubble. attractive attractive. direction along_surface. acts_at_distance no.
+capillary force. kind effective. arises_from electromagnetism. acts_on liquids narrow_tubes. range_m contact. described_by jurin young laplace. discovered 1 7 1 8. formula 2 pi r gamma cos theta. unit newton. examples paper_towel candle_wick plant_xylem. attractive both. direction along_wall. acts_at_distance no.
+tidal force. kind effective. arises_from gravity. acts_on extended_bodies. range_m infinite. described_by newton. discovered 1 6 8 7. formula 2 big_g m_1 m_2 r over d cubed. constant 6 point 6 7 4 e minus 1 1. unit newton. examples ocean_tides io_volcanoes roche_limit. attractive both. direction along_line_to_mass. acts_at_distance yes.
+radiation_pressure force. kind effective. arises_from electromagnetism. acts_on surfaces dust. range_m infinite. described_by maxwell lebedev. discovered 1 9 0 1. formula power over c. constant 2 point 9 9 7 9 e 8. unit newton. examples comet_tail solar_sail laser_cooling. attractive repulsive. direction away_from_source. acts_at_distance yes.
+nuclear_binding force. kind effective. arises_from strong. acts_on protons neutrons. range_m 1 point 4 1 e minus 1 5. holds_together nuclei. described_by yukawa. discovered 1 9 3 5. unit newton. examples atomic_nucleus nuclear_fusion nuclear_fission. attractive both. direction toward_nucleon. acts_at_distance yes.
+van_der_waals force. kind effective. arises_from electromagnetism. acts_on atoms molecules. range_m 1 e minus 9. holds_together molecular_solids liquids. described_by van_der_waals london. discovered 1 8 7 3. formula 6 c_6 over r pow 7. unit newton. examples gecko_feet graphite_layers condensation. attractive attractive. direction toward_molecule. acts_at_distance yes.
+hydrogen_bond force. kind effective. arises_from electromagnetism. acts_on polar_molecules. range_m 2 point 7 6 e minus 1 0. holds_together water ice dna_strands proteins. described_by latimer rodebush pauling. discovered 1 9 2 0. unit newton. examples water ice dna_double_helix. attractive attractive. direction donor_to_acceptor. acts_at_distance yes.
+ionic_bond force. kind effective. arises_from electromagnetism. acts_on ions. range_m 2 point 8 2 e minus 1 0. holds_together salt_crystals. described_by coulomb kossel born. discovered 1 9 1 6. formula k_e charge_1 charge_2 over r squared. constant 8 point 9 8 8 e 9. unit newton. examples table_salt magnesium_oxide calcium_fluoride. attractive attractive. direction toward_opposite_ion. acts_at_distance yes.
+covalent_bond force. kind effective. arises_from electromagnetism. acts_on atoms. range_m 1 point 5 4 e minus 1 0. holds_together molecules diamond. described_by lewis heitler london pauling. discovered 1 9 1 6. unit newton. examples hydrogen_molecule water_molecule diamond. attractive attractive. direction between_nuclei. acts_at_distance yes.
+metallic_bond force. kind effective. arises_from electromagnetism. acts_on metal_atoms electrons. range_m 2 point 5 6 e minus 1 0. holds_together metals. described_by drude sommerfeld. discovered 1 9 0 0. unit newton. examples copper_wire iron_beam gold_ring. attractive attractive. direction toward_electron_sea. acts_at_distance yes.
+centripetal force. kind role. arises_from any. acts_on circling_bodies. described_by huygens newton. discovered 1 6 7 3. formula m v squared over r. unit newton. examples moon_orbit car_turning spin_dryer. attractive attractive. direction toward_centre.
+thrust force. kind effective. arises_from electromagnetism. acts_on rockets jets propellers. range_m contact. described_by newton tsiolkovsky. formula m_dot v_e. unit newton. examples rocket_engine jet_engine propeller. attractive neither. direction opposite_to_exhaust. acts_at_distance no.
+weight force. kind effective. arises_from gravity. acts_on bodies_near_a_planet. described_by newton. discovered 1 6 8 7. formula m g. constant 9 point 8 1. unit newton. examples bathroom_scale falling_apple heavy_suitcase. attractive attractive. direction toward_planet_centre. acts_at_distance yes.
+centrifugal force. kind inertial. acts_on bodies_in_rotating_frames. described_by huygens. discovered 1 6 7 3. formula m v squared over r. unit newton. examples carousel centrifuge salad_spinner. direction away_from_axis.
+coriolis force. kind inertial. acts_on moving_bodies_in_rotating_frames. described_by coriolis. discovered 1 8 3 5. formula 2 m omega v. unit newton. examples hurricane_rotation trade_winds foucault_pendulum. direction perpendicular_to_velocity_and_axis.
+q spring_force k 1 7 2 x 0 point 6 1. a 1 0 4 point 9.
+q normal attractive. a repulsive.
+q spring discovered. a 1 6 7 8.
+q lift rho 1 v 3 8 c 0 point 5 area 1 0. a 3 6 1 0.
+q spring_force k 4 3 x 0 point 7 7. a 3 3 point 1 1.
+q check forces described_by bernoulli equals lift pressure_force spring. a no.
+q kinetic_friction formula. a mu_k n.
+q magnetic_force charge 0 point 0 0 5 v 8 4 b 1. a 0 point 4 2.
+q stronger electromagnetism strong. a strong.
+q nuclear_binding holds_together. a nuclei.
+q weight m 2 4 on mars. a 8 9 point 5 2.
+q drag rho 1 v 2 3 c 1 area 0 point 2 5. a 6 6 point 1 2.
+q tension range_m. a contact.
+q longer_range covalent_bond electromagnetism. a electromagnetism.
+q orbital_speed m 1 point 2 e 2 7 r 3 point 6 e 7. a 4 7 1 7 0.
+q check covalent_bond arises_from electromagnetism. a yes.
+q weak kind. a fundamental.
+q check orbital_speed m 1 point 0 2 e 2 6 r 3 point 4 6 e 7 equals 1 4 0 3 0 0. a no.
+q stronger electromagnetism weak. a electromagnetism.
+q friction mu 0 point 1 4 n 2 0 0. a 2 8.
+q van_der_waals unit. a newton.
+q check thrust mdot 4 4 0 ve 1 3 0 0 equals 5 7 2 0 0 0. a yes.
+q centripetal m 1 8 v 1 6 r 1 0 0. a 4 6 point 0 8.
+q check gravity_force m 8 7 0 m 9 5 0 r 1 0 0 equals 5 point 5 1 6 e minus 9. a yes.
+q spring_force k 1 9 5 0 x 0 point 1 4. a 2 7 3.
+q gravity formula. a big_g m_1 m_2 over r squared.
+q tension attractive. a attractive.
+q gravity_force m 5 3 0 0 m 3 r 1 0 0. a 1 point 0 6 1 e minus 1 0.
+q stronger gravity weak. a weak.
+q thrust attractive. a neither.
+q pressure_force described_by. a pascal bernoulli.
+q gravity_force m 1 6 0 0 m 3 7 0 0 0 r 1. a 0 point 0 0 3 9 5 1.
+q net_force f 2 7 0 f 8 6 opposite. a 1 8 4.
+q check gravity constant 3 point 3 3 7 e minus 1 1. a no.
+q drag rho 1 0 0 0 v 3 1 c 0 point 2 5 area 0 point 2 5. a 3 0 0 3 0.
+q surface_tension arises_from. a electromagnetism.
+q acceleration f 3 1 m 1 2. a 2 point 5 8 3.
+q tidal m 7 point 3 5 e 2 2 m 4 2 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 4 point 6 3 6 e minus 5.
+q net_force f 9 8 0 f 8 2 0 opposite. a 1 6 0.
+q stronger gravity electromagnetism. a electromagnetism.
+q longer_range friction capillary. a same.
+q centripetal m 4 9 v 3 r 3. a 1 4 7.
+q check electromagnetism carrier photon. a yes.
+q surface_gravity m 1 point 0 2 e 2 6 r 2 point 4 6 e 7. a 1 1 point 2 5.
+q static_friction acts_on. a surfaces.
+q surface_tension acts_at_distance. a no.
+q acceleration f 3 1 m 7 1. a 0 point 4 3 6 6.
+q electromagnetism acts_at_distance. a yes.
+q tidal m 3 point 2 e 2 2 m 5 1 r 7 point 9 e 7 d 8 point 1 e 9. a 3 point 2 3 8 e minus 8.
+q forces examples hydrogen_molecule. a covalent_bond.
+q check tidal arises_from strong. a no.
+q centripetal acts_on. a circling_bodies.
+q friction mu 0 point 0 8 n 9 1. a 7 point 2 8.
+q surface_gravity m 4 point 8 7 e 2 4 r 6 point 0 5 e 6. a 8 point 8 8.
+q escape_speed m 9 point 7 e 2 5 r 9 point 5 e 7. a 1 1 6 7 0.
+q buoyancy unit. a newton.
+q check forces examples paper_towel equals capillary. a yes.
+q escape_speed m 6 point 4 2 e 2 3 r 3 point 4 9 e 6. a 4 9 5 5.
+q centripetal m 4 9 v 9 r 2. a 1 9 8 4.
+q escape_speed m 6 point 4 2 e 2 3 r 5 point 3 9 e 6. a 3 9 8 7.
+q drag rho 1 point 2 v 5 2 c 1 point 2 area 1 0. a 1 9 4 7 0.
+q check buoyancy attractive neither. a yes.
+q acceleration f 3 9 0 m 5. a 7 8.
+q forces described_by archimedes. a buoyancy.
+q lift rho 1 v 2 5 c 0 point 2 area 5 0. a 3 1 2 5.
+q check forces examples trade_winds equals coriolis. a yes.
+q drag rho 1 0 2 5 v 2 9 c 1 area 0 point 2 5. a 1 0 7 8 0 0.
+q stronger weak gravity. a weak.
+q check gravity_force m 5 7 m 5 6 0 0 0 r 1 point 5 equals 1 point 8 9 4 e minus 4. a no.
+q van_der_waals arises_from. a electromagnetism.
+q tidal m 1 point 9 9 e 3 0 m 4 6 r 6 point 3 7 e 6 d 1 point 5 e 1 1. a 2 point 3 0 6 e minus 5.
+q buoyancy rho 7 1 0 vol 1. a 6 9 6 5.
+q surface_gravity m 8 point 2 e 2 5 r 9 3 0 0 0 0. a 6 3 2 8.
+q acceleration f 6 0 m 4. a 1 5.
+q magnetic_force charge 1 v 9 0 b 0 point 2. a 1 8.
+q surface_tension formula. a gamma l.
+q lift direction. a perpendicular_to_flow.
+q drag rho 1 0 0 0 v 9 c 1 point 2 area 5. a 2 4 3 0 0 0.
+q strong range_m. a 1 e minus 1 5.
+q static_friction kind. a effective.
+q coulomb_force charge 6 e minus 6 charge 7 e minus 6 r 1. a 0 point 3 7 7 5.
+q buoyancy rho 1 0 2 5 vol 7 point 1. a 7 1 3 9 0.
+q check forces examples falling_apple equals gravity weight surface_tension. a no.
+q weak examples. a beta_decay sun_fusion neutrino_scattering.
+q thrust arises_from. a electromagnetism.
+q check stronger strong weak equals strong. a yes.
+q strong attractive. a attractive.
+q ionic_bond arises_from. a electromagnetism.
+q check magnetic_force charge 1 e minus 6 v 4 0 0 b 0 point 0 1 equals 4 e minus 6. a yes.
+q check nuclear_binding described_by amontons coulomb. a no.
+q check pressure f 1 6 area 0 point 5 9 equals 2 9 point 8 3. a no.
+q escape_speed m 5 point 9 e 2 7 r 2 point 2 e 6. a 5 9 8 3 0 0.
+q hydrogen_bond described_by. a latimer rodebush pauling.
+q drag rho 1 v 4 9 c 1 area 5. a 6 0 0 2.
+q check orbital_speed m 7 point 3 5 e 2 2 r 6 point 7 4 e 6 equals 8 5 3 point 1. a yes.
+q forces examples rocket_engine. a thrust.
+q thrust direction. a opposite_to_exhaust.
+q covalent_bond range_m. a 1 point 5 4 e minus 1 0.
+q electrostatic attractive. a both.
+q thrust unit. a newton.
+q electrostatic acts_on. a electric_charge.
+q forces described_by newton. a gravity normal tension drag tidal centripetal thrust weight.
+q stronger strong gravity. a strong.
+q acceleration f 3 4 m 3 0. a 1 point 1 3 3.
+q drag rho 1 point 2 v 2 4 c 1 point 2 area 0 point 5. a 2 0 7 point 4.
+q stronger gravity strong. a strong.
+q thrust mdot 2 3 2 ve 2 8 0 0. a 6 4 9 6 0 0.
+q covalent_bond acts_at_distance. a yes.
+q forces examples propeller. a thrust.
+q covalent_bond holds_together. a molecules diamond.
+q orbital_speed m 2 point 9 e 2 2 r 8 point 7 e 7. a 1 4 9 point 2.
+q gravity acts_at_distance. a yes.
+q pressure_force formula. a pressure area.
+q coulomb_force charge 4 e minus 9 charge 5 e minus 9 r 0 point 2 5. a 2 point 8 7 6 e minus 6.
+q net_force f 4 0 f 8 2 same. a 1 2 2.
+q check surface_gravity m 7 point 4 e 2 8 r 4 point 4 e 8 equals 2 8 point 0 6. a no.
+q gravity_force m 7 9 m 9 1 r 3. a 5 point 3 3 1 e minus 8.
+q static_friction formula. a mu_s n.
+q net_force f 6 4 f 3 1 0 same. a 3 7 4.
+q acceleration f 3 3 m 5 7. a 0 point 5 7 8 9.
+q surface_gravity m 7 point 3 5 e 2 2 r 1 point 7 4 e 6. a 1 point 6 2.
+q stronger weak electromagnetism. a electromagnetism.
+q buoyancy acts_on. a bodies_in_fluids.
+q friction mu 0 point 1 3 n 4 5 5. a 5 9 point 1 5.
+q longer_range weak drag. a drag.
+q tidal m 7 point 3 5 e 2 2 m 3 8 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 4 point 1 9 4 e minus 5.
+q forces direction along_line_to_mass. a tidal.
+q gravity relative_strength. a 1 e minus 3 9.
+q orbital_speed m 4 point 8 7 e 2 4 r 1 point 1 0 5 e 7. a 5 4 2 3.
+q net_force f 6 4 0 f 2 5 opposite. a 6 1 5.
+q check static_friction arises_from strong. a no.
+q drag rho 1 0 0 0 v 2 4 c 0 point 2 5 area 0 point 5. a 3 6 0 0 0.
+q weak unit. a newton.
+q tidal m 2 point 2 e 2 6 m 2 5 0 r 4 2 0 0 0 0 d 1 point 8 e 6. a 5 2 8 7 0 0.
+q spring kind. a effective.
+q magnetic_force charge 0 point 0 0 8 v 4 2 0 b 0 point 0 1. a 0 point 0 3 3 6.
+q lift kind. a effective.
+q forces direction away_from_axis. a centrifugal.
+q forces holds_together galaxies. a gravity.
+q check forces direction toward_rest_length equals spring weak. a no.
+q stronger weak strong. a strong.
+q weight m 4 7 3 on mars. a 1 7 6 4.
+q thrust mdot 2 9 7 0 ve 2 9 0 0. a 8 point 6 1 3 e 6.
+q spring_force k 1 7 4 x 0 point 3 3. a 5 7 point 4 2.
+q covalent_bond attractive. a attractive.
+q forces acts_at_distance yes. a gravity electromagnetism strong weak electrostatic magnetic tidal radiation_pressure nuclear_binding van_der_waals hydrogen_bond ionic_bond covalent_bond metallic_bond weight.
+q spring_force k 1 2 9 x 0 point 8 8. a 1 1 3 point 5.
+q tidal arises_from. a gravity.
+q radiation_pressure range_m. a infinite.
+q longer_range weak magnetic. a magnetic.
+q longer_range magnetic metallic_bond. a magnetic.
+q longer_range spring electromagnetism. a electromagnetism.
+q check acceleration f 7 1 m 3 4 equals 1 point 8 7 9. a no.
+q acceleration f 9 0 m 1 2. a 7 point 5.
+q stronger strong weak. a strong.
+q magnetic discovered. a 1 8 2 0.
+q stronger strong electromagnetism. a strong.
+q orbital_speed m 5 point 1 e 2 4 r 7 point 8 e 7. a 2 0 8 9.
+q tidal m 9 point 4 e 2 7 m 2 6 r 8 9 0 0 0 0 d 5 point 9 e 7. a 1 4 1 point 4.
+q nuclear_binding direction. a toward_nucleon.
+q coulomb_force charge 1 e minus 6 charge 1 e minus 6 r 2. a 0 point 0 0 2 2 4 7.
+q pressure f 3 4 area 0 point 9 9. a 3 4 point 3 4.
+q static_friction direction. a opposes_impending_motion.
+q surface_gravity m 5 point 6 8 e 2 6 r 5 point 8 2 e 7. a 1 1 point 1 9.
+q centrifugal direction. a away_from_axis.
+q acceleration f 5 4 m 6 9. a 0 point 7 8 2 6.
+q radiation_pressure discovered. a 1 9 0 1.
+q gravity_force m 4 9 0 m 8 9 r 1 point 5. a 1 point 2 9 4 e minus 6.
+q weight m 9 7. a 9 5 1 point 6.
+q magnetic_force charge 7 v 6 8 0 0 b 0 point 0 1. a 4 7 6.
+q capillary formula. a 2 pi r gamma cos theta.
+q tension arises_from. a electromagnetism.
+q pressure f 8 2 0 area 5 3. a 1 5 point 4 7.
+q check covalent_bond discovered 1 9 1 6. a yes.
+q escape_speed m 9 point 1 e 2 9 r 1 point 1 e 6. a 1 point 0 5 1 e 7.
+q check weak range_m 2 point 5 6 e minus 1 0. a no.
+q check gravity formula big_g m_1 m_2 over r squared. a yes.
+q spring_force k 4 3 5 x 0 point 1 4. a 6 0 point 9.
+q gravity_force m 4 9 m 4 5 r 1 0. a 1 point 4 7 2 e minus 9.
+q kinetic_friction kind. a effective.
+q acceleration f 4 2 0 m 3 6. a 1 1 point 6 7.
+q tension described_by. a newton.
+q stronger electromagnetism gravity. a electromagnetism.
+q electromagnetism attractive. a both.
+q coulomb_force charge minus 8 e minus 6 charge 4 e minus 9 r 0 point 1 5. a minus 0 point 0 1 2 7 8.
+q forces acts_on atoms. a van_der_waals covalent_bond.
+q tidal m 4 point 8 e 2 2 m 6 5 0 0 0 r 9 point 5 e 7 d 1 point 7 e 1 0. a 8 point 0 5 3 e minus 6.
+q centripetal direction. a toward_centre.
+q surface_tension kind. a effective.
+q nuclear_binding kind. a effective.
+q weight m 7 1. a 6 9 6 point 5.
+q orbital_speed m 4 point 2 e 2 3 r 1 point 2 e 8. a 4 8 3 point 3.
+q coulomb_force charge minus 7 e minus 6 charge 7 e minus 6 r 5. a minus 0 point 0 1 7 6 2.
+q check normal described_by newton. a yes.
+q longer_range electromagnetism metallic_bond. a electromagnetism.
+q spring unit. a newton.
+q check longer_range weak pressure_force equals same. a no.
+q check electrostatic arises_from strong. a no.
+q longer_range radiation_pressure ionic_bond. a radiation_pressure.
+q escape_speed m 1 point 0 2 e 2 6 r 2 point 4 6 e 7. a 2 3 5 3 0.
+q check capillary arises_from strong. a no.
+q static_friction arises_from. a electromagnetism.
+q strong described_by. a gell_mann.
+q buoyancy rho 1 0 0 0 vol 0 point 9 4. a 9 2 2 1.
+q check stronger electromagnetism weak equals same. a no.
+q check buoyancy rho 1 3 6 0 0 vol 7 point 6 equals 1 point 0 1 4 e 6. a yes.
+q gravity_force m 1 5 0 0 0 m 4 9 r 1 0 0. a 4 point 9 0 5 e minus 9.
+q van_der_waals discovered. a 1 8 7 3.
+q radiation_pressure acts_on. a surfaces dust.
+q longer_range normal kinetic_friction. a same.
+q lift rho 1 0 0 0 v 8 4 c 0 point 2 area 2 0. a 1 point 4 1 1 e 7.
+q ionic_bond formula. a k_e charge_1 charge_2 over r squared.
+q magnetic formula. a charge v b.
+q coulomb_force charge 9 e minus 6 charge 4 e minus 9 r 0 point 2 5. a 0 point 0 0 5 1 7 7.
+q check tension described_by newton. a yes.
+q tidal m 6 e 2 3 m 8 8 r 4 4 0 0 0 0 d 3 point 9 e 6. a 5 2 point 2 8.
+q acceleration f 6 9 m 8 1. a 0 point 8 5 1 9.
+q magnetic kind. a effective.
+q forces described_by coriolis. a coriolis.
+q forces described_by salam. a weak.
+q buoyancy rho 1 point 2 vol 5 point 9. a 6 9 point 4 5.
+q centripetal m 6 v 2 2 r 5 0. a 5 8 point 0 8.
+q surface_tension unit. a newton.
+q friction mu 0 point 6 1 n 4 8. a 2 9 point 2 8.
+q longer_range drag tension. a same.
+q drag rho 1 0 2 5 v 4 7 c 0 point 5 area 5. a 2 point 8 3 e 6.
+q check orbital_speed m 2 point 7 e 2 7 r 1 e 7 equals 1 3 4 2 0 0. a yes.
+q covalent_bond arises_from. a electromagnetism.
+q longer_range tension spring. a same.
+q longer_range normal electromagnetism. a electromagnetism.
+q check magnetic unit newton. a yes.
+q net_force f 2 5 0 f 2 1 same. a 2 7 1.
+q longer_range surface_tension lift. a same.
+q forces range_m contact. a friction static_friction kinetic_friction normal tension drag lift buoyancy spring pressure_force surface_tension capillary thrust.
+q coriolis acts_on. a moving_bodies_in_rotating_frames.
+q thrust mdot 3 5 ve 3 5 0 0. a 1 2 2 5 0 0.
+q drag rho 1 point 2 v 5 1 c 0 point 2 5 area 2. a 7 8 0 point 3.
+q lift rho 1 point 2 v 4 3 c 1 point 2 area 1 0. a 1 3 3 1 0.
+q tension acts_on. a ropes strings cables.
+q friction arises_from. a electromagnetism.
+q check drag rho 1 point 2 v 5 7 c 1 area 5 equals 8 7 7 2. a no.
+q check hydrogen_bond discovered 1 9 1 9. a no.
+q gravity_force m 6 point 6 e 2 5 m 8 5 0 0 0 r 7 1 0 0 0 0. a 7 point 4 2 7 e 8.
+q net_force f 3 f 2 1 same. a 2 4.
+q weak constant. a 1 point 1 6 6 4 e minus 5.
+q buoyancy kind. a effective.
+q longer_range electromagnetism covalent_bond. a electromagnetism.
+q check centrifugal formula m v squared over r. a yes.
+q centripetal m 2 2 v 6 r 5 0. a 1 5 point 8 4.
+q coriolis direction. a perpendicular_to_velocity_and_axis.
+q weight m 9 7 5. a 9 5 6 5.
+q orbital_speed m 3 point 9 e 2 8 r 6 point 6 e 7. a 1 9 8 6 0 0.
+q check tidal unit watt. a no.
+q surface_gravity m 7 point 2 e 2 8 r 3 9 0 0 0 0. a 3 point 1 5 9 e 7.
+q electrostatic constant. a 8 point 9 8 8 e 9.
+q lift rho 1 point 2 v 8 2 c 1 area 5 0. a 2 0 1 7 2 0.
+q orbital_speed m 4 point 8 7 e 2 4 r 6 point 0 5 e 6. a 7 3 3 0.
+q centripetal attractive. a attractive.
+q forces examples proton. a strong.
+q normal acts_on. a surfaces.
+q check stronger gravity weak equals weak. a yes.
+q pressure_force examples. a tyre balloon hydraulic_press.
+q check longer_range tidal covalent_bond equals tidal. a yes.
+q longer_range static_friction kinetic_friction. a same.
+q thrust mdot 3 7 6 ve 3 0 0. a 1 1 2 8 0 0.
+q check radiation_pressure unit pascal. a no.
+q weight m 1 5 8 on earth. a 1 5 5 0.
+q longer_range nuclear_binding capillary. a capillary.
+q tidal m 7 point 3 5 e 2 2 m 1 5 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 1 point 6 5 6 e minus 5.
+q radiation_pressure unit. a newton.
+q capillary examples. a paper_towel candle_wick plant_xylem.
+q weak direction. a none.
+q longer_range gravity buoyancy. a gravity.
+q gravity unit. a newton.
+q check nuclear_binding range_m 1 point 4 1 e minus 1 5. a yes.
+q coulomb_force charge minus 1 e minus 9 charge 9 e minus 6 r 0 point 0 1. a minus 0 point 8 0 8 9.
+q radiation_pressure kind. a effective.
+q weight acts_on. a bodies_near_a_planet.
+q weight m 4 3 3 on earth. a 4 2 4 8.
+q van_der_waals attractive. a attractive.
+q nuclear_binding unit. a newton.
+q check strong discovered 1 9 7 3. a yes.
+q lift rho 1 0 2 5 v 2 1 c 0 point 2 area 0 point 5. a 2 2 6 0 0.
+q check surface_tension attractive neither. a no.
+q magnetic_force charge 8 v 5 8 b 0 point 0 1. a 4 point 6 4.
+q escape_speed m 1 e 2 9 r 9 point 1 e 6. a 1 point 2 1 1 e 6.
+q lift acts_on. a wings bodies_in_fluids.
+q radiation_pressure formula. a power over c.
+q friction examples. a walking brakes striking_a_match.
+q acceleration f 6 8 0 m 2. a 3 4 0.
+q tidal attractive. a both.
+q magnetic_force charge 5 e minus 6 v 5 5 0 0 b 1. a 0 point 0 2 7 5.
+q check tidal m 5 point 2 e 2 2 m 6 8 0 0 r 7 point 4 e 6 d 7 point 7 e 8 equals 7 point 6 5 e minus 4. a yes.
+q weight examples. a bathroom_scale falling_apple heavy_suitcase.
+q lift described_by. a bernoulli kutta joukowski.
+q longer_range strong ionic_bond. a ionic_bond.
+q centripetal m 2 7 v 2 r 5 0. a 2 point 1 6.
+q centripetal discovered. a 1 6 7 3.
+q longer_range weak tension. a tension.
+q surface_tension acts_on. a liquid_surfaces.
+q spring_force k 1 0 x 0 point 9 8. a 9 point 8.
+q weight m 3 1 point 7. a 3 1 1.
+q friction mu 0 point 1 n 5. a 0 point 5.
+q check radiation_pressure arises_from strong. a no.
+q tidal m 5 point 2 e 2 3 m 2 6 0 0 r 4 point 8 e 6 d 5 point 8 e 8. a 0 point 0 0 4 4 4.
+q gravity constant. a 6 point 6 7 4 e minus 1 1.
+q forces arises_from strong. a nuclear_binding.
+q ionic_bond constant. a 8 point 9 8 8 e 9.
+q acceleration f 9 0 m 2 1. a 4 point 2 8 6.
+q drag rho 1 0 0 0 v 2 c 0 point 2 5 area 0 point 1. a 5 0.
+q electrostatic acts_at_distance. a yes.
+q check lift rho 1 point 2 v 9 1 c 1 point 2 area 2 equals 1 0 7 2 8. a no.
+q drag attractive. a neither.
+q radiation_pressure acts_at_distance. a yes.
+q check stronger strong electromagnetism equals same. a no.
+q forces examples skidding_tyre. a kinetic_friction.
+q nuclear_binding acts_at_distance. a yes.
+q gravity acts_on. a mass_energy.
+q coulomb_force charge 9 e minus 9 charge 5 e minus 9 r 2. a 1 point 0 1 1 e minus 7.
+q coulomb_force charge minus 7 e minus 6 charge 2 e minus 6 r 0 point 5. a minus 0 point 5 0 3 3.
+q gravity_force m 9 3 0 0 m 7 2 0 0 0 r 1. a 0 point 0 4 4 6 9.
+q check forces described_by weinberg equals weak. a yes.
+q drag rho 1 point 2 v 5 4 c 0 point 5 area 0 point 2 5. a 2 1 8 point 7.
+q check forces acts_on liquids equals capillary. a yes.
+q check gravity holds_together planets stars galaxies. a yes.
+q check longer_range capillary electromagnetism equals capillary. a no.
+q surface_tension direction. a along_surface.
+q spring_force k 5 4 0 x 0 point 5 5. a 2 9 7.
+q surface_gravity m 5 point 4 e 2 8 r 8 point 4 e 6. a 5 1 0 8 0.
+q orbital_speed m 6 point 4 2 e 2 3 r 3 point 8 9 e 6. a 3 3 1 9.
+q spring described_by. a hooke.
+q check surface_tension described_by young laplace. a yes.
+q gravity_force m 7 4 m 9 r 2. a 1 point 1 1 1 e minus 8.
+q longer_range capillary friction. a same.
+q tidal unit. a newton.
+q hydrogen_bond direction. a donor_to_acceptor.
+q magnetic_force charge 0 point 0 0 3 v 8 b 1. a 0 point 0 2 4.
+q weak attractive. a neither.
+q check surface_tension unit joule. a no.
+q check centripetal m 3 4 v 1 9 r 5 equals 2 4 5 5. a yes.
+q strong relative_strength. a 1.
+q weight unit. a newton.
+q check longer_range friction radiation_pressure equals radiation_pressure. a yes.
+q nuclear_binding attractive. a both.
+q check kinetic_friction attractive neither. a yes.
+q capillary arises_from. a electromagnetism.
+q longer_range capillary weak. a capillary.
+q forces examples spin_dryer. a centripetal.
+q check surface_tension discovered 1 7 9 5. a no.
+q check gravity attractive neither. a no.
+q tidal m 9 point 1 e 2 9 m 4 2 r 1 point 6 e 6 d 2 point 7 e 8. a 4 1 4 point 7.
+q check centripetal m 2 7 v 3 0 r 5 0 equals 5 3 4 point 6. a no.
+q tension kind. a effective.
+q check buoyancy rho 1 0 0 0 vol 0 point 4 3 equals 4 2 1 8. a yes.
+q orbital_speed m 6 point 4 e 2 2 r 9 7 0 0 0 0. a 2 0 9 8.
+q orbital_speed m 2 point 3 e 2 4 r 9 point 7 e 6. a 3 9 7 8.
+q forces examples copper_wire. a metallic_bond.
+q capillary discovered. a 1 7 1 8.
+q pressure_force acts_on. a surfaces fluids.
+q spring_force k 8 3 0 x 0 point 1 6. a 1 3 2 point 8.
+q longer_range tidal buoyancy. a tidal.
+q forces direction toward_planet_centre. a weight.
+q static_friction attractive. a neither.
+q longer_range nuclear_binding static_friction. a static_friction.
+q covalent_bond acts_on. a atoms.
+q centripetal m 3 8 v 2 1 r 2 0. a 8 3 7 point 9.
+q check coriolis unit newton. a yes.
+q magnetic arises_from. a electromagnetism.
+q check thrust mdot 3 2 9 ve 2 2 0 0 equals 5 7 9 0 4 0. a no.
+q tidal m 6 point 6 e 2 9 m 3 4 r 9 point 8 e 6 d 2 point 7 e 7. a 1 point 4 9 1 e 6.
+q thrust mdot 2 5 9 0 ve 3 5 0 0. a 9 point 0 6 5 e 6.
+q longer_range spring capillary. a same.
+q hydrogen_bond holds_together. a water ice dna_strands proteins.
+q electrostatic examples. a static_cling balloon_on_hair lightning.
+q acceleration f 8 4 m 5. a 1 6 point 8.
+q electrostatic arises_from. a electromagnetism.
+q gravity_force m 1 3 m 8 2 r 0 point 5. a 2 point 8 4 6 e minus 7.
+q thrust kind. a effective.
+q metallic_bond described_by. a drude sommerfeld.
+q longer_range tidal hydrogen_bond. a tidal.
+q electrostatic unit. a newton.
+q electromagnetism kind. a fundamental.
+q centripetal m 2 8 v 2 1 r 2. a 6 1 7 4.
+q check forces described_by sommerfeld equals metallic_bond drag. a no.
+q longer_range electrostatic kinetic_friction. a electrostatic.
+q lift rho 1 0 2 5 v 4 3 c 1 point 2 area 2 0. a 2 point 2 7 4 e 7.
+q drag examples. a air_resistance parachute swimming.
+q centripetal m 3 6 v 2 4 r 1 0. a 2 0 7 4.
+q spring direction. a toward_rest_length.
+q check gravity_force m 9 1 m 7 r 1 0 equals 4 point 2 5 1 e minus 1 0. a yes.
+q tidal m 1 point 9 9 e 3 0 m 4 2 r 6 point 3 7 e 6 d 1 point 5 e 1 1. a 2 point 1 0 6 e minus 5.
+q longer_range radiation_pressure nuclear_binding. a radiation_pressure.
+q tension acts_at_distance. a no.
+q escape_speed m 2 point 5 e 2 2 r 1 point 9 e 7. a 4 1 9 point 1.
+q weight m 8 1 4 on jupiter. a 2 0 1 8 0.
+q surface_tension attractive. a attractive.
+q longer_range ionic_bond weak. a ionic_bond.
+q drag rho 1 0 2 5 v 5 7 c 1 point 2 area 5. a 9 point 9 9 1 e 6.
+q longer_range pressure_force surface_tension. a same.
+q drag acts_on. a bodies_in_fluids.
+q magnetic_force charge 5 e minus 6 v 1 0 0 b 0 point 0 1. a 5 e minus 6.
+q drag direction. a opposes_motion.
+q normal arises_from. a electromagnetism.
+q surface_gravity m 7 point 4 e 2 5 r 5 point 3 e 8. a 0 point 0 1 7 5 8.
+q escape_speed m 3 point 6 e 2 5 r 3 point 5 e 7. a 1 1 7 2 0.
+q tidal m 8 e 2 7 m 7 8 0 r 1 4 0 0 0 0 d 4 point 6 e 7. a 1 1 9 8.
+q covalent_bond direction. a between_nuclei.
+q check centrifugal unit joule. a no.
+q pressure_force arises_from. a electromagnetism.
+q check forces described_by van_der_waals equals van_der_waals tidal. a no.
+q covalent_bond unit. a newton.
+q escape_speed m 7 point 3 5 e 2 2 r 2 point 7 4 e 6. a 1 8 9 2.
+q strong carrier. a gluon.
+q magnetic_force charge 6 e minus 6 v 8 5 0 0 b 0 point 2. a 0 point 0 1 0 2.
+q spring_force k 5 2 5 x 0 point 8 1. a 4 2 5 point 2.
+q pressure_force discovered. a 1 6 5 3.
+q tidal m 9 point 2 e 2 4 m 2 6 r 5 2 0 0 0 0 d 5 point 7 e 9. a 8 point 9 6 5 e minus 8.
+q buoyancy described_by. a archimedes.
+q coriolis kind. a inertial.
+q centripetal m 5 0 v 2 9 r 1 point 5. a 2 8 0 3 0.
+q check covalent_bond unit newton. a yes.
+q longer_range capillary drag. a same.
+q spring examples. a trampoline mattress car_suspension.
+q buoyancy rho 1 3 6 0 0 vol 0 point 0 2 1. a 2 8 0 2.
+q check forces examples candle_wick equals capillary. a yes.
+q forces examples graphite_layers. a van_der_waals.
+q drag rho 1 v 2 7 c 0 point 3 area 2. a 2 1 8 point 7.
+q centripetal m 2 4 v 9 r 2 0. a 9 7 point 2.
+q drag rho 1 0 0 0 v 2 7 c 0 point 2 5 area 0 point 2 5. a 2 2 7 8 0.
+q surface_tension holds_together. a droplets bubbles.
+q pressure_force range_m. a contact.
+q check lift rho 1 0 0 0 v 7 7 c 1 area 0 point 5 equals 1 point 3 3 4 e 6. a no.
+q forces attractive attractive. a gravity strong tension surface_tension van_der_waals hydrogen_bond ionic_bond covalent_bond metallic_bond centripetal weight.
+q electrostatic described_by. a coulomb.
+q check stronger gravity strong equals strong. a yes.
+q gravity range_m. a infinite.
+q friction mu 0 point 0 4 n 6 9. a 2 point 7 6.
+q thrust mdot 3 0 8 ve 8 0 0. a 2 4 6 4 0 0.
+q surface_gravity m 8 e 2 5 r 4 point 4 e 7. a 2 point 7 5 8.
+q pressure f 6 area 0 point 6 8. a 8 point 8 2 4.
+q check covalent_bond described_by lewis heitler london pauling. a yes.
+q drag arises_from. a electromagnetism.
+q pressure f 2 9 area 2 6. a 1 point 1 1 5.
+q friction mu 0 point 7 9 n 3 0 0. a 2 3 7.
+q coriolis described_by. a coriolis.
+q orbital_speed m 1 point 2 e 2 8 r 3 point 4 e 8. a 4 8 5 3 0.
+q tidal acts_at_distance. a yes.
+q check capillary formula m g. a no.
+q tidal range_m. a infinite.
+q tension examples. a rope crane_cable guitar_string.
+q acceleration f 6 6 m 3 5. a 1 point 8 8 6.
+q tidal kind. a effective.
+q check thrust mdot 3 7 3 ve 1 3 0 0 equals 4 8 4 9 0 0. a yes.
+q buoyancy discovered. a ancient.
+q check forces direction perpendicular_to_velocity_and_axis equals coriolis weight. a no.
+q centripetal examples. a moon_orbit car_turning spin_dryer.
+q longer_range tidal capillary. a tidal.
+q thrust described_by. a newton tsiolkovsky.
+q pressure f 9 4 area 1 point 1. a 8 5 point 4 5.
+q acceleration f 6 4 m 3 0. a 2 point 1 3 3.
+q check pressure f 3 4 0 area 4 point 3 equals 7 1 point 1 6. a no.
+q ionic_bond described_by. a coulomb kossel born.
+q check centripetal discovered 1 7 7 3. a no.
+q longer_range tidal gravity. a same.
+q magnetic examples. a compass fridge_magnet electric_motor.
+q magnetic_force charge 1 e minus 6 v 7 5 0 0 b 0 point 0 5. a 3 point 7 5 e minus 4.
+q weight m 3 4 6 on mars. a 1 2 9 1.
+q pressure f 4 7 area 5. a 9 point 4.
+q nuclear_binding range_m. a 1 point 4 1 e minus 1 5.
+q forces holds_together droplets. a surface_tension.
+q longer_range electrostatic pressure_force. a electrostatic.
+q covalent_bond discovered. a 1 9 1 6.
+q thrust mdot 2 6 0 ve 1 7 0 0. a 4 4 2 0 0 0.
+q lift rho 1 point 2 v 9 3 c 1 area 5 0. a 2 5 9 4 7 0.
+q drag described_by. a newton stokes.
+q kinetic_friction arises_from. a electromagnetism.
+q check buoyancy rho 1 0 0 0 vol 0 point 8 equals 7 8 4 8 0. a no.
+q tidal direction. a along_line_to_mass.
+q check magnetic_force charge 0 point 0 0 1 v 1 8 0 0 b 0 point 1 equals 0 point 1 8. a yes.
+q friction mu 0 point 9 8 n 1 6. a 1 5 point 6 8.
+q electrostatic range_m. a infinite.
+q weight m 8 2 7 on moon. a 1 3 4 0.
+q lift rho 1 point 2 v 6 0 c 0 point 8 area 2. a 3 4 5 6.
+q check spring_force k 9 9 5 x 0 point 7 9 equals 1 5 7 2. a no.
+q check forces described_by ampere equals magnetic. a yes.
+q tidal m 1 point 9 e 2 7 m 6 9 r 1 point 8 2 e 6 d 4 point 2 2 e 8. a 0 point 4 2 3 8.
+q check thrust arises_from electromagnetism. a yes.
+q kinetic_friction acts_on. a surfaces.
+q check friction mu 0 point 9 8 n 8 6 equals 8 4 point 2 8. a yes.
+q lift range_m. a contact.
+q spring attractive. a both.
+q spring_force k 1 7 2 0 x 0 point 9 2. a 1 5 8 2.
+q pressure f 3 0 0 0 area 5 point 6. a 5 3 5 point 7.
+q strong discovered. a 1 9 7 3.
+q strong unit. a newton.
+q check nuclear_binding discovered 1 9 3 5. a yes.
+q check tension arises_from strong. a no.
+q radiation_pressure direction. a away_from_source.
+q net_force f 7 1 f 8 1 same. a 1 5 2.
+q magnetic_force charge 0 point 0 0 6 v 3 0 b 0 point 0 5. a 0 point 0 0 9.
+q hydrogen_bond kind. a effective.
+q buoyancy rho 1 3 6 0 0 vol 0 point 5 3. a 7 0 7 1 0.
+q check capillary described_by jurin young laplace. a yes.
+q electromagnetism constant. a 0 point 0 0 7 2 9 7 4.
+q thrust mdot 3 3 0 ve 3 9 0 0. a 1 point 2 8 7 e 6.
+q thrust mdot 2 7 4 0 ve 2 4 0 0. a 6 point 5 7 6 e 6.
+q pressure f 3 8 0 0 area 9 6. a 3 9 point 5 8.
+q spring_force k 1 5 0 x 0 point 8 4. a 1 2 6.
+q buoyancy rho 7 4 0 vol 0 point 4 5. a 3 2 6 7.
+q coulomb_force charge 1 e minus 6 charge 7 e minus 6 r 0 point 0 3. a 6 9 point 9 1.
+q friction described_by. a amontons coulomb.
+q gravity_force m 3 point 3 e 2 3 m 5 6 0 r 2 point 4 4 e 6. a 2 0 7 2.
+q escape_speed m 9 point 8 e 2 3 r 6 point 8 e 6. a 4 3 8 6.
+q spring_force k 1 0 x 0 point 6 3. a 6 point 3.
+q ionic_bond holds_together. a salt_crystals.
+q thrust mdot 1 1 0 ve 4 3 0 0. a 4 7 3 0 0 0.
+q forces direction toward_nucleon. a nuclear_binding.
+q orbital_speed m 3 point 5 e 2 5 r 5 point 4 e 8. a 2 0 8 0.
+q centrifugal acts_on. a bodies_in_rotating_frames.
+q tidal m 4 point 5 e 2 2 m 8 8 r 9 point 2 e 7 d 4 point 9 e 9. a 4 point 1 3 3 e minus 7.
+q friction mu 0 point 9 4 n 3 3. a 3 1 point 0 2.
+q buoyancy rho 1 3 6 0 0 vol 0 point 8 9. a 1 1 8 7 0 0.
+q lift rho 1 point 2 v 2 0 c 1 point 2 area 0 point 5. a 1 4 4.
+q check capillary discovered 1 8 1 8. a no.
+q escape_speed m 5 point 9 7 e 2 4 r 6 point 8 7 e 6. a 1 0 7 7 0.
+q coulomb_force charge 6 e minus 9 charge 4 e minus 9 r 1 0. a 2 point 1 5 7 e minus 9.
+q capillary acts_at_distance. a no.
+q buoyancy rho 4 8 0 vol 0 point 8 1. a 3 8 1 4.
+q magnetic_force charge 1 e minus 6 v 3 8 b 0 point 0 5. a 1 point 9 e minus 6.
+q coulomb_force charge 6 e minus 6 charge 5 e minus 6 r 1 0. a 0 point 0 0 2 6 9 6.
+q longer_range strong radiation_pressure. a radiation_pressure.
+q capillary attractive. a both.
+q check capillary range_m 1 e minus 1 5. a no.
+q check longer_range static_friction electrostatic equals static_friction. a no.
+q kinetic_friction unit. a newton.
+q buoyancy rho 1 0 2 5 vol 0 point 6 6. a 6 6 3 6.
+q check tidal m 1 point 9 e 2 6 m 2 7 r 8 3 0 0 0 0 d 3 point 3 e 9 equals 1 point 5 8 2 e minus 5. a yes.
+q magnetic_force charge 0 point 0 0 3 v 6 4 0 0 b 1. a 1 9 point 2.
+q hydrogen_bond discovered. a 1 9 2 0.
+q forces examples chair. a normal.
+q buoyancy rho 1 0 2 5 vol 0 point 0 0 6. a 6 0 point 3 3.
+q orbital_speed m 8 point 6 8 e 2 5 r 2 point 5 5 e 7. a 1 5 0 7 0.
+q weight m 7 8 3 on jupiter. a 1 9 4 1 0.
+q check pressure f 2 6 area 8 4 equals 0 point 2 7 8 6. a no.
+q electromagnetism relative_strength. a 0 point 0 1.
+q buoyancy rho 1 3 6 0 0 vol 0 point 4 2. a 5 6 0 3 0.
+q metallic_bond discovered. a 1 9 0 0.
+q longer_range tidal metallic_bond. a tidal.
+q van_der_waals holds_together. a molecular_solids liquids.
+q magnetic acts_at_distance. a yes.
+q gravity_force m 7 2 0 m 3 2 r 5 0. a 6 point 1 5 1 e minus 1 0.
+q check escape_speed m 4 point 5 e 2 2 r 9 4 0 0 0 0 equals 2 5 2 8. a yes.
+q longer_range friction tidal. a tidal.
+q magnetic_force charge 0 point 0 0 8 v 4 0 b 0 point 2. a 0 point 0 6 4.
+q acceleration f 9 7 m 2 8. a 3 point 4 6 4.
+q electrostatic kind. a effective.
+q weight m 8 7 point 5 on jupiter. a 2 1 6 9.
+q forces examples atomic_nucleus. a strong nuclear_binding.
+q kinetic_friction attractive. a neither.
+q net_force f 3 0 f 5 5 opposite. a 2 5.
+q check tidal m 2 point 9 e 2 3 m 7 4 r 9 point 1 e 6 d 9 point 8 e 7 equals 0 point 0 2 4 9 3. a no.
+q lift rho 1 point 2 v 9 9 c 1 point 2 area 1 0 0. a 7 0 5 6 7 2.
+q longer_range hydrogen_bond tidal. a tidal.
+q forces acts_on moving_bodies_in_rotating_frames. a coriolis.
+q forces acts_on protons. a nuclear_binding.
+q friction discovered. a 1 6 9 9.
+q check drag formula half rho v squared c_d area. a yes.
+q longer_range tidal kinetic_friction. a tidal.
+q buoyancy formula. a rho g vol.
+q centripetal kind. a role.
+q check tidal kind inertial. a no.
+q centripetal m 7 v 2 6 r 4. a 1 1 8 3.
+q longer_range gravity electrostatic. a same.
+q friction mu 0 point 6 n 6 0. a 3 6.
+q surface_gravity m 6 point 3 e 2 8 r 1 4 0 0 0 0. a 2 point 1 4 5 e 8.
+q check lift acts_at_distance no. a yes.
+q net_force f 8 2 f 7 1 same. a 1 5 3.
+q check longer_range surface_tension capillary equals surface_tension. a no.
+q radiation_pressure attractive. a repulsive.
+q spring_force k 6 4 0 x 0 point 7 9. a 5 0 5 point 6.
+q acceleration f 9 2 0 m 8 7. a 1 0 point 5 7.
+q electromagnetism holds_together. a atoms molecules.
+q van_der_waals examples. a gecko_feet graphite_layers condensation.
+q longer_range lift kinetic_friction. a same.
+q normal range_m. a contact.
+q hydrogen_bond acts_on. a polar_molecules.
+q van_der_waals formula. a 6 c_6 over r pow 7.
+q check friction mu 0 point 3 1 n 8 4 equals 2 6 0 point 4. a no.
+q coulomb_force charge 8 e minus 6 charge 3 e minus 6 r 1 0. a 0 point 0 0 2 1 5 7.
+q spring_force k 7 9 0 x 0 point 4 5. a 3 5 5 point 5.
+q magnetic attractive. a both.
+q friction mu 0 point 0 6 n 8 8. a 5 point 2 8.
+q gravity discovered. a 1 6 8 7.
+q magnetic direction. a perpendicular_to_velocity_and_field.
+q static_friction range_m. a contact.
+q orbital_speed m 5 point 8 e 2 9 r 9 6 0 0 0 0. a 6 point 3 5 e 6.
+q centripetal m 5 v 2 4 r 2 0. a 1 4 4.
+q check magnetic_force charge 4 v 9 1 0 0 b 0 point 1 equals 3 6 4 0. a yes.
+q buoyancy rho 9 8 0 vol 6. a 5 7 6 8 0.
+q check radiation_pressure attractive repulsive. a yes.
+q lift unit. a newton.
+q net_force f 1 2 f 7 4 same. a 8 6.
+q friction mu 0 point 6 6 n 7 1. a 4 6 point 8 6.
+q longer_range radiation_pressure capillary. a radiation_pressure.
+q kinetic_friction range_m. a contact.
+q check longer_range electromagnetism pressure_force equals electromagnetism. a yes.
+q check surface_gravity m 9 point 3 e 2 2 r 7 point 9 e 7 equals 9 point 9 4 5 e minus 4. a yes.
+q weight m 1 3 on earth. a 1 2 7 point 5.
+q longer_range normal electrostatic. a electrostatic.
+q tension unit. a newton.
+q hydrogen_bond acts_at_distance. a yes.
+q kinetic_friction acts_at_distance. a no.
+q centripetal m 3 2 v 1 6 r 1 0 0. a 8 1 point 9 2.
+q forces described_by heitler. a covalent_bond.
+q orbital_speed m 1 point 9 e 2 7 r 7 point 6 5 e 7. a 4 0 7 1 0.
+q centripetal m 4 1 v 5 r 4. a 2 5 6 point 2.
+q lift arises_from. a electromagnetism.
+q spring_force k 6 9 x 0 point 5 5. a 3 7 point 9 5.
+q metallic_bond acts_at_distance. a yes.
+q magnetic_force charge 4 e minus 6 v 1 5 b 0 point 5. a 3 e minus 5.
+q check van_der_waals attractive repulsive. a no.
+q tidal m 1 point 9 9 e 3 0 m 4 6 0 0 0 r 6 point 3 7 e 6 d 1 point 5 e 1 1. a 0 point 0 2 3 0 6.
+q ionic_bond direction. a toward_opposite_ion.
+q longer_range friction spring. a same.
+q magnetic_force charge 2 e minus 6 v 1 6 b 0 point 0 5. a 1 point 6 e minus 6.
+q spring_force k 4 5 x 0 point 2 9. a 1 3 point 0 5.
+q centripetal described_by. a huygens newton.
+q check stronger strong gravity equals strong. a yes.
+q check orbital_speed m 5 point 9 7 e 2 4 r 6 point 4 7 e 6 equals 6 2 7 8. a no.
+q drag range_m. a contact.
+q forces examples carousel. a centrifugal.
+q orbital_speed m 3 point 3 e 2 3 r 2 point 6 4 e 6. a 2 8 8 8.
+q check electrostatic attractive both. a yes.
+q weight formula. a m g.
+q longer_range tension weak. a tension.
+q spring_force k 5 0 0 x 0 point 7. a 3 5 0.
+q check gravity carrier w_boson z_boson. a no.
+q acceleration f 2 4 0 m 7 8. a 3 point 0 7 7.
+q normal described_by. a newton.
+q pressure f 6 8 area 2 point 5. a 2 7 point 2.
+q check orbital_speed m 1 point 9 9 e 3 0 r 6 point 9 6 e 8 equals 3 4 9 4 4 0. a no.
+q longer_range electromagnetism spring. a electromagnetism.
+q longer_range friction surface_tension. a same.
+q radiation_pressure described_by. a maxwell lebedev.
+q weight m 1 5 1. a 1 4 8 1.
+q weight acts_at_distance. a yes.
+q orbital_speed m 1 point 1 e 2 6 r 8 1 0 0 0 0. a 9 5 2 0 0.
+q spring_force k 7 3 0 x 0 point 8 9. a 6 4 9 point 7.
+q tidal m 2 point 5 e 2 3 m 4 6 0 r 8 9 0 0 0 0 d 8 point 5 e 8. a 2 point 2 2 5 e minus 5.
+q capillary unit. a newton.
+q spring_force k 1 0 8 0 x 1. a 1 0 8 0.
+q hydrogen_bond examples. a water ice dna_double_helix.
+q coriolis examples. a hurricane_rotation trade_winds foucault_pendulum.
+q surface_gravity m 3 point 6 e 2 4 r 7 point 8 e 7. a 0 point 0 3 9 4 9.
+q magnetic_force charge 0 point 0 0 8 v 8 6 b 2. a 1 point 3 7 6.
+q orbital_speed m 8 point 3 e 2 9 r 6 point 2 e 6. a 2 point 9 8 9 e 6.
+q longer_range nuclear_binding pressure_force. a pressure_force.
+q tidal m 2 point 3 e 2 7 m 1 4 r 8 point 5 e 6 d 4 point 4 e 1 0. a 4 point 2 8 9 e minus 7.
+q strong holds_together. a protons neutrons.
+q check tidal m 1 point 9 9 e 3 0 m 1 5 r 6 point 3 7 e 6 d 1 point 5 e 1 1 equals 7 point 5 2 e minus 6. a yes.
+q centripetal arises_from. a any.
+q coulomb_force charge 6 e minus 6 charge 6 e minus 6 r 0 point 0 1. a 3 2 3 6.
+q check buoyancy rho 1 0 0 0 vol 0 point 6 equals 5 8 8 6. a yes.
+q weak acts_on. a quarks_leptons.
+q tidal examples. a ocean_tides io_volcanoes roche_limit.
+q check forces acts_on surfaces equals friction static_friction normal pressure_force radiation_pressure. a no.
+q gravity_force m 3 point 1 e 2 6 m 1 r 7 point 6 e 8. a 0 point 0 3 5 8 2.
+q check hydrogen_bond attractive attractive. a yes.
+q check stronger gravity electromagnetism equals same. a no.
+q strong kind. a fundamental.
+q acceleration f 7 6 m 2 5. a 3 point 0 4.
+q gravity_force m 5 3 m 3 4 0 0 0 r 0 point 5. a 4 point 8 1 1 e minus 4.
+q longer_range tidal covalent_bond. a tidal.
+q drag rho 1 v 7 c 0 point 5 area 0 point 2 5. a 3 point 0 6 2.
+q check spring formula m g. a no.
+q check forces examples sail equals lift. a yes.
+q net_force f 5 8 f 3 7 same. a 9 5.
+q electrostatic direction. a along_line_of_charges.
+q thrust formula. a m_dot v_e.
+q check magnetic constant 2 point 5 1 3 2 e minus 6. a no.
+q pressure_force unit. a newton.
+q ionic_bond acts_at_distance. a yes.
+q weight m 5 4 point 6. a 5 3 5 point 6.
+q pressure_force direction. a perpendicular_to_surface.
+q normal unit. a newton.
+q ionic_bond unit. a newton.
+q longer_range nuclear_binding buoyancy. a buoyancy.
+q thrust mdot 2 0 8 ve 2 0 0. a 4 1 6 0 0.
+q pressure f 9 4 area 2 9. a 3 point 2 4 1.
+q escape_speed m 6 point 8 e 3 0 r 8 e 6. a 1 point 0 6 5 e 7.
+q check longer_range metallic_bond electromagnetism equals same. a no.
+q thrust mdot 3 1 4 ve 1 6 0 0. a 5 0 2 4 0 0.
+q surface_gravity m 9 e 2 7 r 1 point 4 e 8. a 3 0 point 6 5.
+q check surface_tension acts_at_distance no. a yes.
+q check spring_force k 1 2 5 0 x 0 point 1 1 equals 2 7 5. a no.
+q pressure_force attractive. a repulsive.
+q electromagnetism direction. a along_field.
+q magnetic constant. a 1 point 2 5 6 6 e minus 6.
+q electromagnetism unit. a newton.
+q surface_tension examples. a water_strider raindrop soap_bubble.
+q coulomb_force charge 7 e minus 6 charge 4 e minus 6 r 0 point 0 1. a 2 5 1 7.
+q longer_range normal buoyancy. a same.
+q orbital_speed m 6 point 4 2 e 2 3 r 3 point 6 9 e 6. a 3 4 0 8.
+q buoyancy acts_at_distance. a no.
+q friction acts_on. a surfaces.
+q lift rho 1 point 2 v 4 9 c 1 area 1. a 1 4 4 1.
+q net_force f 1 6 0 f 1 5 opposite. a 1 4 5.
+q escape_speed m 5 point 6 8 e 2 6 r 5 point 8 7 e 7. a 3 5 9 4 0.
+q gravity_force m 3 0 0 m 5 1 0 r 2. a 2 point 5 5 3 e minus 6.
+q check forces described_by london equals van_der_waals covalent_bond. a yes.
+q acceleration f 8 1 m 8 6. a 0 point 9 4 1 9.
+q surface_tension range_m. a contact.
+q centrifugal examples. a carousel centrifuge salad_spinner.
+q ionic_bond discovered. a 1 9 1 6.
+q check gravity described_by newton einstein. a yes.
+q surface_gravity m 3 point 8 e 2 2 r 7 0 0 0 0 0. a 5 point 1 7 6.
+q normal acts_at_distance. a no.
+q friction formula. a mu n.
+q friction mu 0 point 3 9 n 1 0 5. a 4 0 point 9 5.
+q coulomb_force charge 2 e minus 6 charge 8 e minus 6 r 0 point 2. a 3 point 5 9 5.
+q ionic_bond attractive. a attractive.
+q surface_tension described_by. a young laplace.
+q check stronger electromagnetism strong equals strong. a yes.
+q friction mu 0 point 2 8 n 9 5 0. a 2 6 6.
+q coulomb_force charge minus 1 e minus 6 charge minus 8 e minus 6 r 0 point 1 5. a 3 point 1 9 6.
+q tidal m 2 point 4 e 2 5 m 1 5 0 0 0 r 5 1 0 0 0 0 d 4 point 9 e 8. a 0 point 2 0 8 3.
+q check spring_force k 1 0 x 0 point 7 9 equals 7 point 9. a yes.
+q static_friction described_by. a amontons coulomb.
+q check gravity_force m 1 point 8 e 2 5 m 4 9 0 r 9 point 9 e 6 equals 6 0 0 6 0. a no.
+q longer_range normal surface_tension. a same.
+q forces acts_on propellers. a thrust.
+q forces described_by sommerfeld. a metallic_bond.
+q check acceleration f 3 9 m 2 4 equals 0 point 1 6 2 5. a no.
+q longer_range electrostatic static_friction. a electrostatic.
+q check centrifugal unit pascal. a no.
+q longer_range pressure_force tension. a same.
+q longer_range thrust capillary. a same.
+q check weight attractive attractive. a yes.
+q check forces acts_on dust equals radiation_pressure lift. a no.
+q longer_range weak gravity. a gravity.
+q electromagnetism described_by. a maxwell faraday.
+q net_force f 4 4 0 f 6 8 opposite. a 3 7 2.
+q drag kind. a effective.
+q thrust acts_at_distance. a no.
+q check pressure f 6 5 0 area 0 point 9 9 equals 6 5 6 point 6. a yes.
+q forces acts_on circling_bodies. a centripetal.
+q drag rho 1 point 2 v 3 4 c 0 point 5 area 5. a 1 7 3 4.
+q orbital_speed m 7 e 2 9 r 6 e 6. a 2 point 7 9 e 6.
+q magnetic_force charge 0 point 0 0 2 v 6 3 b 0 point 1. a 0 point 0 1 2 6.
+q weak carrier. a w_boson z_boson.
+q coulomb_force charge 3 e minus 9 charge 4 e minus 6 r 1 0. a 1 point 0 7 9 e minus 6.
+q check net_force f 3 2 f 8 6 opposite equals 4 3 point 2. a no.
+q van_der_waals range_m. a 1 e minus 9.
+q buoyancy direction. a upward.
+q longer_range pressure_force thrust. a same.
+q metallic_bond range_m. a 2 point 5 6 e minus 1 0.
+q check forces direction along_rope equals tension hydrogen_bond. a no.
+q longer_range drag radiation_pressure. a radiation_pressure.
+q metallic_bond examples. a copper_wire iron_beam gold_ring.
+q friction mu 0 point 3 3 n 3 3. a 1 0 point 8 9.
+q pressure f 4 3 0 0 area 0 point 6 1. a 7 0 4 9.
+q escape_speed m 8 point 6 8 e 2 5 r 3 point 0 4 e 7. a 1 9 5 2 0.
+q check nuclear_binding discovered 1 9 2 5. a no.
+q longer_range nuclear_binding drag. a drag.
+q longer_range friction normal. a same.
+q drag formula. a half rho v squared c_d area.
+q net_force f 4 1 f 9 opposite. a 3 2.
+q ionic_bond acts_on. a ions.
+q drag rho 1 point 2 v 1 4 c 0 point 5 area 5. a 2 9 4.
+q check stronger gravity electromagnetism equals gravity. a no.
+q capillary acts_on. a liquids narrow_tubes.
+q weight attractive. a attractive.
+q acceleration f 4 4 m 5 4. a 0 point 8 1 4 8.
+q check acceleration f 7 8 0 m 9 5 equals 8 point 2 1 1. a yes.
+q buoyancy constant. a 9 point 8 1.
+q gravity described_by. a newton einstein.
+q lift acts_at_distance. a no.
+q electromagnetism acts_on. a electric_charge.
+q normal kind. a effective.
+q pressure f 2 6 area 5 point 5. a 4 point 7 2 7.
+q centrifugal discovered. a 1 6 7 3.
+q lift rho 1 0 2 5 v 5 2 c 1 area 5. a 6 point 9 2 9 e 6.
+q tidal m 3 point 3 e 2 4 m 4 0 0 0 r 6 point 7 e 6 d 7 point 8 e 8. a 0 point 0 2 4 8 8.
+q check coulomb_force charge 8 e minus 9 charge 4 e minus 6 r 0 point 0 3 equals 0 point 4 7 9 4. a no.
+q centripetal m 3 5 v 2 3 r 2. a 9 2 5 8.
+q forces examples water. a hydrogen_bond.
+q weight m 9 8 point 5. a 9 6 6 point 3.
+q thrust mdot 9 3 0 ve 3 4 0 0. a 3 point 1 6 2 e 6.
+q check pressure_force arises_from electromagnetism. a yes.
+q longer_range tidal magnetic. a same.
+q coulomb_force charge minus 4 e minus 9 charge 7 e minus 6 r 2. a minus 6 point 2 9 2 e minus 5.
+q lift attractive. a neither.
+q escape_speed m 5 point 8 e 2 5 r 5 point 8 e 6. a 3 6 5 3 0.
+q electrostatic formula. a k_e charge_1 charge_2 over r squared.
+q longer_range thrust tension. a same.
+q check weight m 5 0 on jupiter equals 1 2 4 0. a yes.
+q check gravity_force m 6 8 0 0 m 6 1 0 r 2 0 equals 8 point 6 5 1 e minus 7. a no.
+q buoyancy rho 1 0 9 0 vol 5. a 5 3 4 6 0.
+q gravity examples. a falling_apple ocean_tides moon_orbit.
+q centrifugal formula. a m v squared over r.
+q tidal m 1 point 9 9 e 3 0 m 3 2 r 6 point 3 7 e 6 d 1 point 5 e 1 1. a 1 point 6 0 4 e minus 5.
+q coriolis discovered. a 1 8 3 5.
+q pressure f 8 5 0 0 area 0 point 7 7. a 1 1 0 4 0.
+q spring formula. a k x.
+q forces holds_together molecules. a electromagnetism covalent_bond.
+q kinetic_friction described_by. a coulomb.
+q thrust range_m. a contact.
+q gravity_force m 5 2 m 5 2 r 1 point 5. a 8 point 0 2 1 e minus 8.
+q strong acts_at_distance. a yes.
+q buoyancy rho 1 0 0 0 vol 0 point 0 1 1. a 1 0 7 point 9.
+q tidal discovered. a 1 6 8 7.
+q check longer_range kinetic_friction surface_tension equals same. a yes.
+q hydrogen_bond unit. a newton.
+q centrifugal described_by. a huygens.
+q spring_force k 1 4 4 x 0 point 3 8. a 5 4 point 7 2.
+q magnetic_force charge 3 v 3 0 0 b 2. a 1 8 0 0.
+q weight discovered. a 1 6 8 7.
+q check weight m 4 5 point 7 on jupiter equals 1 1 3 3. a yes.
+q weak relative_strength. a 1 e minus 6.
+q lift examples. a airplane_wing helicopter_rotor sail.
+q electrostatic discovered. a 1 7 8 5.
+q friction mu 0 point 9 1 n 6 0 0. a 5 4 6.
+q forces acts_on moving_charge. a magnetic.
+q lift rho 1 v 2 4 c 0 point 2 area 5. a 2 8 8.
+q longer_range strong weak. a strong.
+q coulomb_force charge minus 7 e minus 9 charge minus 6 e minus 6 r 0 point 1 5. a 0 point 0 1 6 7 8.
+q weak acts_at_distance. a yes.
+q orbital_speed m 4 point 2 e 2 6 r 3 point 3 e 6. a 9 2 1 6 0.
+q longer_range tension gravity. a gravity.
+q surface_tension discovered. a 1 8 0 5.
+q longer_range surface_tension kinetic_friction. a same.
+q check buoyancy arises_from strong. a no.
+q escape_speed m 2 point 3 e 2 7 r 7 point 7 e 6. a 1 9 9 7 0 0.
+q longer_range thrust magnetic. a magnetic.
+q buoyancy rho 1 0 0 0 vol 0 point 0 3 5. a 3 4 3 point 4.
+q coriolis unit. a newton.
+q magnetic acts_on. a moving_charge currents magnets.
+q spring_force k 8 6 x 0 point 1 8. a 1 5 point 4 8.
+q radiation_pressure examples. a comet_tail solar_sail laser_cooling.
+q magnetic_force charge 0 point 0 0 6 v 3 6 b 0 point 2. a 0 point 0 4 3 2.
+q spring_force k 6 7 0 x 0 point 2 2. a 1 4 7 point 4.
+q radiation_pressure arises_from. a electromagnetism.
+q forces examples sail. a lift.
+q coulomb_force charge 5 e minus 9 charge 1 e minus 9 r 1. a 4 point 4 9 4 e minus 8.
+q centripetal m 4 v 2 3 r 0 point 5. a 4 2 3 2.
+q buoyancy rho 1 2 9 0 vol 2 point 9. a 3 6 7 0 0.
+q drag rho 1 0 0 0 v 1 3 c 0 point 3 area 2. a 5 0 7 0 0.
+q lift rho 1 point 2 v 1 0 0 c 0 point 5 area 1. a 3 0 0 0.
+q net_force f 6 0 0 f 7 3 0 opposite. a 1 3 0.
+q kinetic_friction examples. a sliding_box skidding_tyre sledge.
+q metallic_bond holds_together. a metals.
+q thrust mdot 2 6 0 ve 3 0 0. a 7 8 0 0 0.
+q pressure f 4 0 area 8 point 9. a 4 point 4 9 4.
+q nuclear_binding described_by. a yukawa.
+q escape_speed m 1 point 9 e 2 9 r 6 8 0 0 0 0. a 6 point 1 0 7 e 6.
+q surface_gravity m 9 point 6 e 2 8 r 3 point 6 e 7. a 4 9 4 4.
+q net_force f 6 f 4 2 same. a 4 8.
+q buoyancy rho 1 0 2 5 vol 3 point 1. a 3 1 1 7 0.
+q centripetal unit. a newton.
+q magnetic unit. a newton.
+q check tidal m 7 point 3 5 e 2 2 m 9 2 r 6 point 3 7 e 6 d 3 point 8 4 e 8 equals 1 point 0 1 5 e minus 4. a yes.
+q tidal acts_on. a extended_bodies.
+q capillary direction. a along_wall.
+q tidal m 2 point 2 e 2 9 m 2 4 0 0 r 9 point 7 e 7 d 3 point 7 e 8. a 1 3 5 0 0 0.
+q weight m 7 6. a 7 4 5 point 6.
+q tidal m 1 point 9 9 e 3 0 m 3 8 r 6 point 3 7 e 6 d 1 point 5 e 1 1. a 1 point 9 0 5 e minus 5.
+q tension direction. a along_rope.
+q check forces described_by pauling equals hydrogen_bond covalent_bond. a yes.
+q drag rho 1 0 2 5 v 3 5 c 1 point 2 area 1. a 7 5 3 3 7 5.
+q check forces holds_together protons equals strong magnetic. a no.
+q metallic_bond arises_from. a electromagnetism.
+q forces direction away_from_source. a radiation_pressure.
+q magnetic range_m. a infinite.
+q strong acts_on. a colour_charge.
+q surface_gravity m 1 point 8 e 2 2 r 3 point 6 e 8. a 9 point 2 6 9 e minus 6.
+q electromagnetism range_m. a infinite.
+q weak range_m. a 1 e minus 1 8.
+q tidal m 5 point 9 7 e 2 4 m 4 2 r 1 point 7 4 e 6 d 3 point 8 4 e 8. a 0 point 0 0 1 0 2 8.
+q nuclear_binding examples. a atomic_nucleus nuclear_fusion nuclear_fission.
+q nuclear_binding discovered. a 1 9 3 5.
+q drag rho 1 point 2 v 2 2 c 0 point 1 area 1 0. a 2 9 0 point 4.
+q longer_range buoyancy gravity. a gravity.
+q thrust mdot 3 4 4 ve 1 5 0 0. a 5 1 6 0 0 0.
+q van_der_waals acts_on. a atoms molecules.
+q gravity_force m 3 point 8 e 2 8 m 6 5 0 0 r 7 point 8 e 8. a 2 7 1 0 0.
+q gravity direction. a toward_mass.
+q forces direction along_line_of_charges. a electrostatic.
+q buoyancy examples. a ship hot_air_balloon iceberg.
+q longer_range gravity pressure_force. a gravity.
+q forces described_by bernoulli. a lift pressure_force.
+q capillary kind. a effective.
+q gravity carrier. a graviton_hypothetical.
+q forces acts_on springs. a spring.
+q pressure f 2 0 0 area 0 point 8 2. a 2 4 3 point 9.
+q weight m 9 9 2 on earth. a 9 7 3 2.
+q check stronger gravity weak equals same. a no.
+q spring acts_at_distance. a no.
+q centrifugal unit. a newton.
+q longer_range pressure_force strong. a pressure_force.
+q acceleration f 7 3 0 m 9. a 8 1 point 1 1.
+q van_der_waals described_by. a van_der_waals london.
+q coulomb_force charge minus 3 e minus 6 charge 6 e minus 6 r 0 point 5. a minus 0 point 6 4 7 1.
+q capillary range_m. a contact.
+q forces examples swimming. a drag.
+q check stronger strong electromagnetism equals strong. a yes.
+q net_force f 8 3 f 7 same. a 9 0.
+q nuclear_binding arises_from. a strong.
+q lift formula. a half rho v squared c_l area.
+q check acceleration f 2 5 0 m 2 6 equals 7 point 6 9 2. a no.
+q longer_range ionic_bond electromagnetism. a electromagnetism.
+q metallic_bond unit. a newton.
+q weight m 9 4 point 5 on earth. a 9 2 7.
+q coulomb_force charge minus 2 e minus 6 charge 4 e minus 9 r 0 point 2. a minus 0 point 0 0 1 7 9 8.
+q hydrogen_bond range_m. a 2 point 7 6 e minus 1 0.
+q escape_speed m 9 point 8 e 2 5 r 8 point 3 e 6. a 3 9 7 0 0.
+q magnetic_force charge 9 v 5 6 0 0 b 2. a 1 0 0 8 0 0.
+q friction unit. a newton.
+q thrust mdot 4 3 4 ve 5 0 0. a 2 1 7 0 0 0.
+q ionic_bond examples. a table_salt magnesium_oxide calcium_fluoride.
+q static_friction acts_at_distance. a no.
+q check centripetal discovered 1 6 7 2. a no.
+q check friction range_m contact. a yes.
+q buoyancy rho 1 0 0 0 vol 7 point 9. a 7 7 4 9 9.
+q net_force f 1 0 f 7 9 0 opposite. a 7 8 0.
+q net_force f 2 6 0 f 8 1 0 opposite. a 5 5 0.
+q acceleration f 1 4 m 8 0. a 0 point 1 7 5.
+q acceleration f 6 2 m 2 0. a 3 point 1.
+q pressure f 4 5 area 6 point 3. a 7 point 1 4 3.
+q gravity_force m 6 5 m 7 3 r 0 point 5. a 1 point 2 6 7 e minus 6.
+q check forces examples book_on_table equals normal. a yes.
+q magnetic_force charge 4 v 3 2 0 b 0 point 1. a 1 2 8.
+q longer_range gravity van_der_waals. a gravity.
+q radiation_pressure constant. a 2 point 9 9 7 9 e 8.
+q check friction acts_at_distance no. a yes.
+q longer_range covalent_bond magnetic. a magnetic.
+q electromagnetism carrier. a photon.
+q check static_friction described_by gell_mann. a no.
+q centripetal m 2 4 v 1 0 r 2. a 1 2 0 0.
+q gravity attractive. a attractive.
+q longer_range van_der_waals electrostatic. a electrostatic.
+q lift rho 1 0 0 0 v 8 2 c 1 area 1 0 0. a 3 point 3 6 2 e 8.
+q tidal m 1 point 9 9 e 3 0 m 2 9 0 0 0 r 6 point 3 7 e 6 d 1 point 5 e 1 1. a 0 point 0 1 4 5 4.
+q longer_range lift friction. a same.
+q static_friction unit. a newton.
+q magnetic described_by. a oersted ampere lorentz.
+q friction direction. a opposes_motion.
+q drag rho 1 0 2 5 v 7 c 1 point 2 area 0 point 1. a 3 0 1 4.
+q forces examples laser_cooling. a radiation_pressure.
+q tidal described_by. a newton.
+q forces examples paper_towel. a capillary.
+q surface_gravity m 5 point 9 7 e 2 4 r 6 point 3 7 e 6. a 9 point 8 1 9.
+q thrust mdot 1 4 6 ve 1 8 0 0. a 2 6 2 8 0 0.
+q drag unit. a newton.
+q weight described_by. a newton.
+q centripetal m 2 2 v 2 4 r 2 point 5. a 5 0 6 9.
+q friction range_m. a contact.
+q thrust acts_on. a rockets jets propellers.
+q check radiation_pressure formula 2 big_g m_1 m_2 r over d cubed. a no.
+q orbital_speed m 4 point 8 e 2 9 r 3 point 7 e 8. a 2 9 4 2 0 0.
+q covalent_bond examples. a hydrogen_molecule water_molecule diamond.
+q metallic_bond attractive. a attractive.
+q check electromagnetism range_m infinite. a yes.
+q electromagnetism discovered. a 1 8 6 5.
+q check stronger weak electromagnetism equals electromagnetism. a yes.
+q pressure f 9 7 0 0 area 9 point 3. a 1 0 4 3.
+q orbital_speed m 5 point 6 e 2 8 r 7 0 0 0 0 0. a 2 point 3 1 1 e 6.
+q gravity holds_together. a planets stars galaxies.
+q gravity_force m 7 3 0 m 4 3 r 5 0. a 8 point 3 8 e minus 1 0.
+q longer_range tidal ionic_bond. a tidal.
+q check longer_range capillary magnetic equals capillary. a no.
+q buoyancy range_m. a contact.
+q forces direction donor_to_acceptor. a hydrogen_bond.
+q forces examples calcium_fluoride. a ionic_bond.
+q gravity_force m 8 m 8 6 r 2 0. a 1 point 1 4 8 e minus 1 0.
+q check coulomb_force charge minus 1 e minus 9 charge minus 9 e minus 9 r 1 0 equals 1 point 0 1 1 e minus 9. a no.
+q check electrostatic range_m 1 point 5 4 e minus 1 0. a no.
+q buoyancy attractive. a neither.
+q friction attractive. a neither.
+q forces described_by faraday. a electromagnetism.
+q longer_range tidal strong. a tidal.
+q forces direction along_field. a electromagnetism.
+q forces examples hurricane_rotation. a coriolis.
+q longer_range nuclear_binding normal. a normal.
+q longer_range electromagnetism surface_tension. a electromagnetism.
+q forces described_by coulomb. a electrostatic friction static_friction kinetic_friction ionic_bond.
+q weight m 4 6 point 7. a 4 5 8 point 1.
+q strong direction. a between_quarks.
+q gravity_force m 2 point 6 e 3 0 m 1 6 r 2 point 8 e 7. a 3 point 5 4 1 e 6.
+q check metallic_bond unit newton. a yes.
+q tidal m 7 point 4 e 2 9 m 5 4 0 0 0 r 9 e 7 d 6 point 2 e 1 1. a 0 point 0 0 2 0 1 4.
+q buoyancy rho 1 0 2 5 vol 5 point 9. a 5 9 3 3 0.
+q forces examples rope. a tension.
+q check coriolis described_by coriolis. a yes.
+q friction mu 0 point 8 9 n 8 3 0. a 7 3 8 point 7.
+q longer_range hydrogen_bond gravity. a gravity.
+q lift rho 1 0 0 0 v 4 6 c 0 point 2 area 0 point 5. a 1 0 5 8 0 0.
+q normal examples. a book_on_table standing_on_floor chair.
+q strong examples. a proton neutron atomic_nucleus.
+q forces examples ship. a buoyancy.
+q pressure f 9 2 area 0 point 7. a 1 3 1 point 4.
+q check thrust acts_at_distance yes. a no.
+q spring arises_from. a electromagnetism.
+q weak discovered. a 1 9 3 3.
+q longer_range ionic_bond radiation_pressure. a radiation_pressure.
+q pressure f 7 2 0 area 4 point 7. a 1 5 3 point 2.
+q magnetic_force charge 7 v 4 7 0 b 0 point 1. a 3 2 9.
+q centrifugal kind. a inertial.
+q check longer_range tidal van_der_waals equals tidal. a yes.
+q buoyancy rho 1 3 6 0 0 vol 0 point 0 2 5. a 3 3 3 5.
+q spring acts_on. a springs elastic_solids.
+q weight constant. a 9 point 8 1.
+q electromagnetism formula. a charge e_field plus charge v b.
+q orbital_speed m 4 point 9 e 2 5 r 6 0 0 0 0 0. a 7 3 8 3 0.
+q metallic_bond acts_on. a metal_atoms electrons.
+q capillary described_by. a jurin young laplace.
+q pressure f 6 area 4 point 7. a 1 point 2 7 7.
+q longer_range magnetic normal. a magnetic.
+q check forces described_by oersted equals magnetic. a yes.
+q static_friction examples. a parked_car box_at_rest walking.
+q friction mu 0 point 5 4 n 1 0 0. a 5 4.
+q tidal m 5 point 9 7 e 2 4 m 9 2 r 1 point 7 4 e 6 d 3 point 8 4 e 8. a 0 point 0 0 2 2 5 3.
+q ionic_bond range_m. a 2 point 8 2 e minus 1 0.
+q longer_range lift tension. a same.
+q check electromagnetism relative_strength 0 point 0 1. a yes.
+q buoyancy arises_from. a gravity electromagnetism.
+q longer_range electrostatic thrust. a electrostatic.
+q electrostatic holds_together. a atoms ionic_crystals.
+q tidal constant. a 6 point 6 7 4 e minus 1 1.
+q check longer_range friction electrostatic equals same. a no.
+q forces attractive repulsive. a normal pressure_force radiation_pressure.
+q spring range_m. a contact.
+q hydrogen_bond attractive. a attractive.
+q check escape_speed m 5 point 3 e 2 5 r 4 point 1 e 8 equals 4 1 5 4. a yes.
+q hydrogen_bond arises_from. a electromagnetism.
+q weak described_by. a fermi glashow weinberg salam.
+q normal direction. a perpendicular_to_surface.
+q covalent_bond described_by. a lewis heitler london pauling.
+q weight direction. a toward_planet_centre.
+q centripetal formula. a m v squared over r.
+q lift rho 1 point 2 v 8 2 c 0 point 2 area 2. a 1 6 1 4.
+q kinetic_friction direction. a opposes_motion.
+q pressure f 8 1 area 5 8. a 1 point 3 9 7.
+q check net_force f 7 2 0 f 5 same equals 7 2 5. a yes.
+q orbital_speed m 5 point 9 7 e 2 4 r 6 point 3 7 e 6. a 7 9 0 9.
+q weight arises_from. a gravity.
+q coriolis formula. a 2 m omega v.
+q van_der_waals kind. a effective.
+q pressure_force kind. a effective.
+q thrust examples. a rocket_engine jet_engine propeller.
+q thrust mdot 3 0 6 0 ve 3 7 0 0. a 1 point 1 3 2 e 7.
+q tidal m 2 point 7 e 2 8 m 8 4 0 r 2 point 8 e 7 d 4 point 5 e 1 0. a 9 point 3 0 2 e minus 4.
+q pressure f 8 4 area 2 point 2. a 3 8 point 1 8.
+q magnetic_force charge 5 e minus 6 v 2 7 b 0 point 2. a 2 point 7 e minus 5.
+q friction acts_at_distance. a no.
+q van_der_waals direction. a toward_molecule.
+q spring_force k 5 6 x 0 point 8 5. a 4 7 point 6.
+q pressure_force acts_at_distance. a no.
+q forces examples foucault_pendulum. a coriolis.
+q nuclear_binding acts_on. a protons neutrons.
+q tidal formula. a 2 big_g m_1 m_2 r over d cubed.
+q forces holds_together ionic_crystals. a electrostatic.
+q metallic_bond direction. a toward_electron_sea.
+q electromagnetism examples. a light radio electric_motor.
+q gravity_force m 3 point 3 e 2 3 m 5 6 0 0 0 r 7 point 4 4 e 6. a 2 2 2 8 0.
+q orbital_speed m 2 point 2 e 2 8 r 1 point 8 e 8. a 9 0 3 2 0.
+q weight m 9 8 8. a 9 6 9 2.
+q van_der_waals acts_at_distance. a yes.
+q drag acts_at_distance. a no.
+q thrust mdot 2 2 9 0 ve 3 0 0. a 6 8 7 0 0 0.
+q check forces examples hurricane_rotation equals coriolis van_der_waals. a no.
+q drag rho 1 0 0 0 v 1 6 c 0 point 5 area 0 point 0 1. a 6 4 0.
+q centripetal m 4 7 v 9 r 2 point 5. a 1 5 2 3.
+q friction mu 0 point 9 8 n 1 7. a 1 6 point 6 6.
+q longer_range gravity nuclear_binding. a gravity.
+q escape_speed m 4 point 8 7 e 2 4 r 4 point 1 8 5 e 7. a 3 9 4 1.
+q surface_gravity m 2 point 1 e 2 9 r 8 point 1 e 6. a 2 1 3 6 0 0.
+q spring_force k 7 0 0 x 0 point 7 8. a 5 4 6.
+q check forces described_by bernoulli equals lift pressure_force strong. a no.
+q forces described_by huygens. a centripetal centrifugal.
+q check static_friction acts_at_distance yes. a no.
+q friction mu 0 point 7 7 n 1. a 0 point 7 7.
+q check ionic_bond range_m 1 e minus 1 5. a no.
+q acceleration f 4 8 m 1. a 4 8.
+q check spring_force k 8 1 0 x 0 point 3 2 equals 2 0 7 point 4. a no.
+q spring_force k 1 4 4 0 x 0 point 6 7. a 9 6 4 point 8.
+q orbital_speed m 8 point 1 e 2 5 r 4 point 7 e 7. a 1 0 7 2 0.
+q centripetal m 4 4 v 2 3 r 2 point 5. a 9 3 1 0.
+q check longer_range strong capillary equals strong. a no.
+q centripetal m 8 v 1 8 r 1 0. a 2 5 9 point 2.
+q check forces examples light equals electromagnetism. a yes.
+q lift rho 1 0 2 5 v 1 5 c 1 point 2 area 1 0. a 1 point 3 8 4 e 6.
+q friction mu 0 point 8 9 n 3 9 0. a 3 4 7 point 1.
+q surface_gravity m 2 point 2 e 2 9 r 8 3 0 0 0 0. a 2 point 1 3 1 e 7.
+q forces holds_together protons. a strong.
+q check electrostatic constant 8 point 9 8 8 e 9. a yes.
+q acceleration f 8 2 0 m 8 2. a 1 0.
+q check weak discovered 1 8 8 3. a no.
+q longer_range radiation_pressure normal. a radiation_pressure.
+q friction mu 0 point 6 2 n 3 1 5. a 1 9 5 point 3.
+q gravity_force m 9 point 7 e 2 4 m 7 9 0 0 r 7 point 2 e 8. a 9 point 8 6 6.
+q lift rho 1 point 2 v 2 c 1 point 2 area 2 0. a 5 7 point 6.
+q centripetal m 8 v 1 2 r 4. a 2 8 8.
+q thrust mdot 2 3 4 0 ve 3 1 0 0. a 7 point 2 5 4 e 6.
+q centripetal m 5 v 2 8 r 5. a 7 8 4.
+q forces holds_together stars. a gravity.
+q escape_speed m 4 point 8 7 e 2 4 r 8 point 0 5 e 6. a 8 9 8 6.
+q longer_range gravity lift. a gravity.
+q orbital_speed m 3 point 3 e 2 3 r 2 point 8 4 e 6. a 2 7 8 5.
+q check tidal m 7 point 5 e 2 9 m 9 8 0 0 r 1 0 0 0 0 0 d 8 point 3 e 9 equals 0 point 3 4 3 2. a no.
+q acceleration f 9 1 0 m 7 4. a 1 2 point 3.
+q forces examples water_strider. a surface_tension.
+q weight m 9 1 point 5 on mars. a 3 4 1 point 3.
+q escape_speed m 3 point 9 e 2 9 r 6 point 5 e 7. a 8 9 4 9 0 0.
+q longer_range pressure_force electromagnetism. a electromagnetism.
+q spring_force k 7 7 5 x 0 point 1 6. a 1 2 4.
+q longer_range kinetic_friction buoyancy. a same.
+q longer_range static_friction electrostatic. a electrostatic.
+q friction mu 0 point 0 5 n 3 4 0. a 1 7.
+q tidal m 6 point 9 e 2 7 m 5 4 0 0 r 7 point 1 e 7 d 4 point 3 e 8. a 4 4 4 1.
+q surface_gravity m 7 point 4 e 2 2 r 9 point 2 e 8. a 5 point 8 3 5 e minus 6.
+q check gravity_force m 9 point 4 e 2 9 m 9 3 r 4 point 1 e 8 equals 3 4 7 1 0. a yes.
+q thrust mdot 9 0 ve 4 0 0 0. a 3 6 0 0 0 0.
+q lift rho 1 0 0 0 v 2 3 c 0 point 8 area 0 point 5. a 1 0 5 8 0 0.
+q lift rho 1 point 2 v 3 c 1 area 5 0. a 2 7 0.
+q check net_force f 2 8 f 6 7 same equals 8 5 point 5. a no.
+q net_force f 8 8 0 f 9 0 opposite. a 7 9 0.
+q gravity_force m 8 7 m 5 4 0 0 r 3. a 3 point 4 8 4 e minus 6.
+q pressure f 5 2 0 0 area 5 2. a 1 0 0.
+q escape_speed m 6 point 8 e 2 4 r 6 9 0 0 0 0. a 3 6 2 7 0.
+q pressure f 3 2 area 1 1. a 2 point 9 0 9.
+q magnetic_force charge 1 e minus 6 v 8 4 b 1. a 8 point 4 e minus 5.
+q net_force f 9 2 f 2 5 0 same. a 3 4 2.
+q longer_range tension lift. a same.
+q lift rho 1 v 9 9 c 0 point 5 area 1 0. a 2 4 5 0 0.
+q longer_range lift thrust. a same.
+q magnetic_force charge 9 v 5 1 b 0 point 1. a 4 5 point 9.
+q check radiation_pressure acts_at_distance yes. a yes.
+q check strong carrier gluon. a yes.
+q tidal m 7 point 3 5 e 2 2 m 6 8 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 7 point 5 0 5 e minus 5.
+q tidal m 6 point 5 e 2 9 m 6 3 r 3 e 6 d 3 point 8 e 1 0. a 2 point 9 8 8 e minus 4.
+q longer_range electrostatic surface_tension. a electrostatic.
+q lift rho 1 point 2 v 9 3 c 1 area 0 point 5. a 2 5 9 5.
+q check orbital_speed m 3 point 5 e 2 8 r 9 point 7 e 7 equals 1 5 5 2 0 0. a yes.
+q thrust mdot 1 6 7 ve 1 3 0 0. a 2 1 7 1 0 0.
+q forces holds_together liquids. a van_der_waals.
+q longer_range weak strong. a strong.
+q check acceleration f 5 7 m 4 8 equals 1 point 1 8 8. a yes.
+q coulomb_force charge 2 e minus 6 charge 9 e minus 6 r 5. a 0 point 0 0 6 4 7 1.
+q escape_speed m 2 point 9 e 2 8 r 6 point 7 e 7. a 2 4 0 4 0 0.
+q gravity_force m 8 9 0 0 0 m 5 8 r 0 point 5. a 0 point 0 0 1 3 7 8.
+q longer_range pressure_force drag. a same.
+q longer_range magnetic tension. a magnetic.
+q weight m 7 4 point 6 on moon. a 1 2 0 point 9.
+q check stronger weak strong equals strong. a yes.
+q spring_force k 1 5 x 0 point 9. a 1 3 point 5.
+q weight m 7 3 point 5. a 7 2 1.
+q acceleration f 1 1 0 m 9 1. a 1 point 2 0 9.
+q check strong unit joule. a no.
+q coulomb_force charge 1 e minus 9 charge 4 e minus 6 r 5. a 1 point 4 3 8 e minus 6.
+q acceleration f 4 7 0 m 4 5. a 1 0 point 4 4.
+q check magnetic acts_at_distance no. a no.
+q acceleration f 1 9 m 5 8. a 0 point 3 2 7 6.
+q drag rho 1 v 4 2 c 1 point 2 area 0 point 0 1. a 1 0 point 5 8.
+q forces acts_on ropes. a tension.
+q thrust mdot 1 6 7 ve 1 9 0 0. a 3 1 7 3 0 0.
+q acceleration f 3 9 m 9 6. a 0 point 4 0 6 2.
+q friction mu 0 point 1 8 n 3 9 5. a 7 1 point 1.
+q thrust mdot 1 5 ve 4 0 0. a 6 0 0 0.
+q longer_range strong friction. a friction.
+q net_force f 4 3 0 f 1 7 opposite. a 4 1 3.
+q forces described_by lebedev. a radiation_pressure.
+q drag rho 1 point 2 v 1 1 c 0 point 3 area 5. a 1 0 8 point 9.
+q lift rho 1 point 2 v 4 2 c 1 area 1 0. a 1 0 5 8 4.
+q longer_range drag magnetic. a magnetic.
+q forces described_by laplace. a surface_tension capillary.
+q thrust mdot 1 3 3 ve 2 6 0 0. a 3 4 5 8 0 0.
+q orbital_speed m 4 point 2 e 2 7 r 9 point 8 e 7. a 5 3 4 8 0.
+q tidal m 6 point 8 e 2 3 m 2 7 r 3 7 0 0 0 0 d 7 point 2 e 9. a 2 point 4 2 9 e minus 9.
+q coulomb_force charge 1 e minus 9 charge 5 e minus 9 r 0 point 0 5. a 1 point 7 9 8 e minus 5.
+q check friction discovered 1 6 9 9. a yes.
+q forces direction perpendicular_to_velocity_and_axis. a coriolis.
+q surface_gravity m 5 point 4 e 3 0 r 9 point 3 e 8. a 4 1 6 point 7.
+q pressure f 9 5 0 0 area 2 point 9. a 3 2 7 6.
+q net_force f 6 7 0 f 7 2 0 opposite. a 5 0.
+q thrust mdot 3 0 2 ve 3 5 0 0. a 1 point 0 5 7 e 6.
+q longer_range static_friction tension. a same.
+q magnetic_force charge 0 point 0 0 5 v 2 5 0 0 b 0 point 0 5. a 0 point 6 2 5.
+q tidal m 1 point 5 e 2 4 m 7 6 0 r 4 point 9 e 7 d 4 point 2 e 9. a 1 point 0 0 6 e minus 4.
+q check spring_force k 1 6 4 x 0 point 9 9 equals 1 6 2 4. a no.
+q longer_range magnetic static_friction. a magnetic.
+q lift rho 1 0 0 0 v 1 7 c 0 point 5 area 1. a 7 2 2 5 0.
+q lift rho 1 v 9 0 c 0 point 8 area 1 0. a 3 2 4 0 0.
+q check longer_range lift electrostatic equals electrostatic. a yes.
+q check surface_gravity m 8 point 6 e 2 4 r 5 point 4 e 6 equals 3 9 point 3 6. a no.
+q magnetic_force charge 6 e minus 6 v 3 1 b 0 point 0 1. a 1 point 8 6 e minus 6.
+q forces described_by amontons. a friction static_friction.
+q check stronger electromagnetism strong equals same. a no.
+q buoyancy rho 1 2 4 0 vol 0 point 4 6. a 5 5 9 6.
+q magnetic_force charge 5 v 3 8 0 0 b 0 point 5. a 9 5 0 0.
+q longer_range pressure_force radiation_pressure. a radiation_pressure.
+q net_force f 6 0 f 6 6 same. a 1 2 6.
+q thrust mdot 2 6 1 ve 2 4 0 0. a 6 2 6 4 0 0.
+q check centripetal m 9 v 2 3 r 4 equals 1 1 9 0. a yes.
+q forces attractive neither. a weak friction static_friction kinetic_friction drag lift buoyancy thrust.
+q check magnetic constant 1 point 2 5 6 6 e minus 6. a yes.
+q pressure f 1 5 0 0 area 5 8. a 2 5 point 8 6.
+q acceleration f 6 3 m 3 2. a 1 point 9 6 9.
+q thrust mdot 1 8 1 ve 1 9 0 0. a 3 4 3 9 0 0.
+q net_force f 2 0 f 4 3 same. a 6 3.
+q friction mu 0 point 5 9 n 2 4 0. a 1 4 1 point 6.
+q thrust mdot 4 5 0 ve 2 4 0 0. a 1 point 0 8 e 6.
+q drag rho 1 v 5 0 c 0 point 1 area 0 point 1. a 1 2 point 5.
+q check capillary discovered 1 7 1 7. a no.
+q coulomb_force charge 1 e minus 9 charge 7 e minus 9 r 0 point 0 1. a 6 point 2 9 2 e minus 4.
+q spring_force k 7 5 x 0 point 3 1. a 2 3 point 2 5.
+q drag rho 1 point 2 v 4 0 c 0 point 5 area 5. a 2 4 0 0.
+q tidal m 7 point 3 5 e 2 2 m 1 0 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 1 point 1 0 4 e minus 5.
+q pressure f 7 3 0 area 0 point 6 9. a 1 0 5 8.
+q lift rho 1 0 0 0 v 2 3 c 1 point 5 area 1 0. a 3 point 9 6 8 e 6.
+q friction mu 0 point 0 3 n 7 5. a 2 point 2 5.
+q longer_range spring strong. a spring.
+q longer_range gravity capillary. a gravity.
+q check forces acts_on rockets equals thrust van_der_waals. a no.
+q buoyancy rho 1 0 2 5 vol 0 point 0 7 2. a 7 2 4.
+q check gravity_force m 4 2 0 0 0 m 2 1 0 r 4 equals 3 point 6 7 9 e minus 5. a yes.
+q check tension described_by gell_mann. a no.
+q weight m 1 8 on earth. a 1 7 6 point 6.
+q check hydrogen_bond range_m 2 point 7 6 e minus 1 0. a yes.
+q acceleration f 3 1 m 3. a 1 0 point 3 3.
+q magnetic_force charge 7 v 9 5 0 0 b 0 point 1. a 6 6 5 0.
+q check ionic_bond formula m g. a no.
+q coulomb_force charge minus 5 e minus 9 charge 8 e minus 9 r 0 point 2 5. a minus 5 point 7 5 2 e minus 6.
+q check strong unit newton. a yes.
+q drag rho 1 point 2 v 4 c 0 point 3 area 0 point 2 5. a 0 point 7 2.
+q gravity_force m 9 point 6 e 2 9 m 7 2 r 7 point 5 e 7. a 8 2 0 1 0 0.
+q check kinetic_friction arises_from electromagnetism. a yes.
+q net_force f 4 9 0 f 1 1 0 same. a 6 0 0.
+q longer_range tension tidal. a tidal.
+q check thrust attractive attractive. a no.
+q check hydrogen_bond attractive neither. a no.
+q centripetal m 3 0 v 2 0 r 5 0. a 2 4 0.
+q tidal m 7 point 1 e 2 5 m 2 9 0 0 r 9 point 1 e 6 d 4 point 9 e 7. a 2 1 2 6.
+q check weight acts_at_distance yes. a yes.
+q orbital_speed m 7 point 7 e 3 0 r 8 point 8 e 7. a 2 point 4 1 7 e 6.
+q surface_gravity m 4 point 7 e 2 6 r 3 point 2 e 6. a 3 0 6 3.
+q escape_speed m 1 point 9 e 2 7 r 7 point 2 5 e 7. a 5 9 1 4 0.
+q orbital_speed m 1 point 1 e 2 8 r 9 point 9 e 6. a 2 7 2 3 0 0.
+q magnetic_force charge 0 point 0 0 7 v 6 0 b 0 point 1. a 0 point 0 4 2.
+q buoyancy rho 1 0 0 0 vol 0 point 3 5. a 3 4 3 4.
+q check orbital_speed m 4 point 4 e 3 0 r 5 e 8 equals 6 8 9 7 6 0. a no.
+q forces direction along_surface. a surface_tension.
+q drag rho 1 v 1 6 c 0 point 1 area 2. a 2 5 point 6.
+q lift rho 1 0 0 0 v 2 8 c 0 point 8 area 2 0. a 6 point 2 7 2 e 6.
+q gravity_force m 6 7 0 0 m 1 0 r 2. a 1 point 1 1 8 e minus 6.
+q longer_range kinetic_friction radiation_pressure. a radiation_pressure.
+q forces examples static_cling. a electrostatic.
+q check centripetal m 1 2 v 7 r 1 point 5 equals 1 9 6. a no.
+q net_force f 8 1 0 f 7 9 0 same. a 1 6 0 0.
+q surface_gravity m 6 e 2 3 r 1 point 6 e 8. a 0 point 0 0 1 5 6 4.
+q net_force f 4 9 f 5 7 0 same. a 6 1 9.
+q weight m 4 2 1. a 4 1 3 0.
+q longer_range strong spring. a spring.
+q check static_friction acts_at_distance no. a yes.
+q lift rho 1 point 2 v 7 7 c 0 point 8 area 1. a 2 8 4 6.
+q spring_force k 5 5 0 x 0 point 1 6. a 8 8.
+q centripetal m 4 2 v 2 r 0 point 5. a 3 3 6.
+q longer_range pressure_force spring. a same.
+q magnetic_force charge 5 v 7 4 b 0 point 0 5. a 1 8 point 5.
+q spring_force k 1 2 0 x 0 point 0 7. a 8 point 4.
+q longer_range strong pressure_force. a pressure_force.
+q lift rho 1 v 7 4 c 0 point 5 area 5 0. a 6 8 4 5 0.
+q magnetic_force charge 5 e minus 6 v 2 3 b 0 point 0 1. a 1 point 1 5 e minus 6.
+q pressure f 9 area 4 4. a 0 point 2 0 4 5.
+q check stronger weak gravity equals gravity. a no.
+q check forces examples swimming equals drag. a yes.
+q longer_range weak spring. a spring.
+q longer_range drag electrostatic. a electrostatic.
+q buoyancy rho 1 0 0 0 vol 0 point 0 0 2. a 1 9 point 6 2.
+q drag rho 1 point 2 v 1 c 0 point 5 area 1 0. a 3.
+q centripetal m 1 6 v 6 r 0 point 5. a 1 1 5 2.
+q check friction mu 0 point 3 2 n 9 1 equals 2 9 point 1 2. a yes.
+q acceleration f 6 3 0 m 7 8. a 8 point 0 7 7.
+q longer_range weak friction. a friction.
+q forces described_by born. a ionic_bond.
+q drag rho 1 v 4 3 c 0 point 2 5 area 0 point 5. a 1 1 5 point 6.
+q lift rho 1 point 2 v 5 c 0 point 8 area 2. a 2 4.
+q longer_range surface_tension thrust. a same.
+q longer_range kinetic_friction surface_tension. a same.
+q friction mu 0 point 8 9 n 5 5. a 4 8 point 9 5.
+q friction mu 0 point 5 3 n 2 5. a 1 3 point 2 5.
+q centripetal m 3 3 v 2 4 r 1 0 0. a 1 9 0 point 1.
+q tidal m 2 point 9 e 2 5 m 1 5 r 3 9 0 0 0 0 d 4 point 4 e 8. a 2 point 6 5 8 e minus 4.
+q net_force f 6 2 0 f 7 1 0 opposite. a 9 0.
+q check acceleration f 1 3 m 7 6 equals 0 point 1 7 1 1. a yes.
+q drag rho 1 point 2 v 5 7 c 1 point 2 area 0 point 1. a 2 3 3 point 9.
+q pressure f 3 6 0 0 area 1. a 3 6 0 0.
+q spring_force k 4 5 0 x 0 point 5 4. a 2 4 3.
+q spring_force k 2 3 5 x 0 point 2 3. a 5 4 point 0 5.
+q magnetic_force charge 3 e minus 6 v 6 8 b 0 point 2. a 4 point 0 8 e minus 5.
+q drag rho 1 point 2 v 4 0 c 1 area 0 point 2 5. a 2 4 0.
+q check thrust mdot 4 1 1 ve 2 1 0 0 equals 9 4 9 4 1 0. a no.
+q check forces acts_on springs equals spring. a yes.
+q check pressure_force attractive attractive. a no.
+q gravity_force m 4 m 7 6 0 r 5. a 8 point 1 1 6 e minus 9.
+q thrust mdot 2 2 5 ve 2 7 0 0. a 6 0 7 5 0 0.
+q magnetic_force charge 5 v 7 b 0 point 1. a 3 point 5.
+q forces acts_on elastic_solids. a spring.
+q tidal m 1 point 9 9 e 3 0 m 1 6 0 0 0 r 6 point 3 7 e 6 d 1 point 5 e 1 1. a 0 point 0 0 8 0 2 1.
+q pressure f 1 2 0 area 7 6. a 1 point 5 7 9.
+q check friction arises_from electromagnetism. a yes.
+q check pressure f 7 3 area 7 2 equals 1 point 2 6 8. a no.
+q tidal m 5 point 9 7 e 2 4 m 4 6 0 0 r 1 point 7 4 e 6 d 3 point 8 4 e 8. a 0 point 1 1 2 6.
+q weight m 6 6 0 on jupiter. a 1 6 3 6 0.
+q longer_range magnetic spring. a magnetic.
+q thrust mdot 4 9 5 ve 1 6 0 0. a 7 9 2 0 0 0.
+q buoyancy rho 1 3 6 0 0 vol 0 point 9 6. a 1 2 8 1 0 0.
+q check coulomb_force charge 7 e minus 6 charge 6 e minus 9 r 0 point 0 2 equals 0 point 9 4 3 7. a yes.
+q acceleration f 9 9 m 9 8. a 1 point 0 1.
+q gravity_force m 7 8 m 2 0 0 0 r 0 point 5. a 4 point 1 6 5 e minus 5.
+q longer_range spring tension. a same.
+q spring_force k 4 4 5 x 0 point 5 8. a 2 5 8 point 1.
+q magnetic_force charge 1 e minus 6 v 1 4 0 0 b 0 point 2. a 2 point 8 e minus 4.
+q gravity_force m 6 5 0 0 0 m 9 6 r 3. a 4 point 6 2 7 e minus 5.
+q escape_speed m 9 point 6 e 2 9 r 6 point 7 e 8. a 4 3 7 3 0 0.
+q acceleration f 6 0 0 m 1 5. a 4 0.
+q pressure f 7 8 area 7 point 7. a 1 0 point 1 3.
+q thrust mdot 5 8 0 ve 1 3 0 0. a 7 5 4 0 0 0.
+q net_force f 1 2 f 3 4 opposite. a 2 2.
+q longer_range surface_tension spring. a same.
+q centripetal m 3 5 v 1 7 r 1 point 5. a 6 7 4 3.
+q longer_range weak lift. a lift.
+q check coulomb_force charge 9 e minus 9 charge 8 e minus 6 r 1 0 equals 6 point 4 7 1 e minus 7. a no.
+q gravity_force m 2 7 m 5 6 0 r 5. a 4 point 0 3 6 e minus 8.
+q drag rho 1 0 0 0 v 3 9 c 1 point 2 area 1. a 9 1 2 6 0 0.
+q check kinetic_friction attractive repulsive. a no.
+q centripetal m 1 1 v 2 9 r 1 0 0. a 9 2 point 5 1.
+q check friction mu 0 point 2 5 n 7 2 0 equals 1 8 0. a yes.
+q check coriolis kind effective. a no.
+q check weight m 8 2 point 5 equals 8 0 9 point 3. a yes.
+q acceleration f 7 4 m 4 8. a 1 point 5 4 2.
+q weight m 5 2 on moon. a 8 4 point 2 4.
+q thrust mdot 5 7 ve 2 8 0 0. a 1 5 9 6 0 0.
+q check weak acts_at_distance yes. a yes.
+q gravity_force m 3 6 m 2 1 r 1 point 5. a 2 point 2 4 2 e minus 8.
+q longer_range hydrogen_bond weak. a hydrogen_bond.
+q escape_speed m 4 point 4 e 2 4 r 9 point 7 e 8. a 7 7 8 point 1.
+q escape_speed m 1 point 9 e 2 5 r 4 e 7. a 7 9 6 3.
+q pressure f 8 1 area 6 point 1. a 1 3 point 2 8.
+q longer_range radiation_pressure strong. a radiation_pressure.
+q forces described_by fermi. a weak.
+q check forces acts_on metal_atoms equals metallic_bond covalent_bond. a no.
+q magnetic_force charge 0 point 0 0 3 v 6 b 0 point 2. a 0 point 0 0 3 6.
+q buoyancy rho 1 point 2 vol 0 point 8 5. a 1 0 point 0 1.
+q forces acts_on rockets. a thrust.
+q check hydrogen_bond unit newton. a yes.
+q longer_range strong buoyancy. a buoyancy.
+q check longer_range tension static_friction equals same. a yes.
+q longer_range pressure_force nuclear_binding. a pressure_force.
+q forces kind inertial. a centrifugal coriolis.
+q lift rho 1 0 0 0 v 1 4 c 0 point 2 area 5 0. a 9 8 0 0 0 0.
+q net_force f 3 7 f 5 9 same. a 9 6.
+q longer_range magnetic covalent_bond. a magnetic.
+q check acceleration f 7 3 m 7 1 equals 1 point 2 8 5. a no.
+q tidal m 8 point 1 e 3 0 m 1 4 0 0 r 8 6 0 0 0 0 d 1 point 6 e 6. a 3 point 1 7 8 e 1 1.
+q longer_range electrostatic magnetic. a same.
+q check ionic_bond arises_from strong. a no.
+q longer_range strong magnetic. a magnetic.
+q escape_speed m 9 point 9 e 2 6 r 4 point 6 e 7. a 5 3 6 0 0.
+q lift rho 1 0 2 5 v 2 0 c 1 point 2 area 1. a 2 4 6 0 0 0.
+q surface_gravity m 4 point 7 e 2 8 r 4 4 0 0 0 0. a 1 point 6 2 e 7.
+q orbital_speed m 5 point 6 8 e 2 6 r 6 point 8 2 e 7. a 2 3 5 8 0.
+q orbital_speed m 8 point 5 e 2 2 r 3 point 2 e 7. a 4 2 1.
+q net_force f 5 2 f 6 opposite. a 4 6.
+q friction mu 0 point 7 5 n 4 8 0. a 3 6 0.
+q lift rho 1 point 2 v 8 9 c 0 point 3 area 0 point 5. a 7 1 2 point 9.
+q check acceleration f 5 2 m 7 2 equals 0 point 7 2 2 2. a yes.
+q orbital_speed m 3 point 8 e 3 0 r 8 0 0 0 0 0. a 1 point 7 8 e 7.
+q weight m 7 4 4. a 7 2 9 9.
+q buoyancy rho 1 0 2 5 vol 0 point 0 7. a 7 0 3 point 9.
+q longer_range electrostatic normal. a electrostatic.
+q check electromagnetism acts_at_distance yes. a yes.
+q buoyancy rho 1 0 2 5 vol 0 point 0 6 6. a 6 6 3 point 6.
+q surface_gravity m 7 point 7 e 2 3 r 5 point 2 e 7. a 0 point 0 1 9 0 1.
+q magnetic_force charge 3 v 5 6 b 0 point 2. a 3 3 point 6.
+q check tidal formula k x. a no.
+q thrust mdot 3 2 0 ve 2 8 0 0. a 8 9 6 0 0 0.
+q surface_gravity m 7 point 1 e 2 2 r 1 point 4 e 6. a 2 point 4 1 8.
+q acceleration f 6 3 m 1 3. a 4 point 8 4 6.
+q check acceleration f 9 2 m 1 3 equals 5 point 6 6 2. a no.
+q longer_range spring pressure_force. a same.
+q acceleration f 7 7 m 8 9. a 0 point 8 6 5 2.
+q check electrostatic unit newton. a yes.
+q surface_gravity m 2 point 3 e 2 4 r 1 point 6 e 7. a 0 point 5 9 9 6.
+q forces described_by pascal. a pressure_force.
+q tidal m 8 point 7 e 2 6 m 8 8 0 r 3 point 8 e 7 d 2 point 7 e 8. a 1 9 7 point 3.
+q escape_speed m 3 point 3 e 2 3 r 7 point 4 4 e 6. a 2 4 3 3.
+q pressure f 9 3 0 0 area 0 point 8 8. a 1 0 5 7 0.
+q check stronger gravity electromagnetism equals electromagnetism. a yes.
+q longer_range nuclear_binding tension. a tension.
+q tidal m 1 point 9 e 2 7 m 1 6 r 1 point 8 2 e 6 d 4 point 2 2 e 8. a 0 point 0 9 8 2 7.
+q gravity_force m 8 0 m 7 r 2 0. a 9 point 3 4 4 e minus 1 1.
+q gravity_force m 5 m 4 5 0 r 3. a 1 point 6 6 9 e minus 8.
+q check coulomb_force charge 2 e minus 6 charge 5 e minus 9 r 0 point 1 5 equals 0 point 0 0 3 9 9 5. a yes.
+q escape_speed m 1 point 9 e 2 7 r 7 point 3 5 e 7. a 5 8 7 4 0.
+q escape_speed m 7 point 8 e 2 7 r 7 point 7 e 6. a 3 6 7 7 0 0.
+q tidal m 6 point 9 e 2 3 m 5 0 0 r 8 point 4 e 7 d 4 point 9 e 9. a 3 point 2 8 8 e minus 5.
+q check kinetic_friction range_m 1 e minus 1 8. a no.
+q acceleration f 1 2 m 4 9. a 0 point 2 4 4 9.
+q net_force f 2 7 0 f 5 1 same. a 3 2 1.
+q pressure f 6 8 area 4 point 3. a 1 5 point 8 1.
+q spring_force k 1 7 7 x 0 point 3 4. a 6 0 point 1 8.
+q longer_range thrust normal. a same.
+q check lift described_by gell_mann. a no.
+q surface_gravity m 7 point 7 e 2 5 r 8 point 1 e 8. a 0 point 0 0 7 8 3 3.
+q check pressure f 6 9 area 8 6 equals 0 point 6 4 1 8. a no.
+q check tidal m 1 point 9 e 2 7 m 3 9 0 r 1 point 8 2 e 6 d 4 point 2 2 e 8 equals 1 point 9 1 6. a no.
+q check centripetal described_by huygens newton. a yes.
+q centripetal m 1 8 v 1 1 r 1 0 0. a 2 1 point 7 8.
+q tidal m 2 point 9 e 2 9 m 7 5 0 0 r 4 5 0 0 0 0 d 7 point 5 e 6. a 3 point 0 9 7 e 8.
+q acceleration f 1 3 0 m 1 0. a 1 3.
+q check thrust attractive neither. a yes.
+q escape_speed m 1 point 9 9 e 3 0 r 7 point 0 6 e 8. a 6 1 3 4 0 0.
+q centripetal m 3 3 v 2 7 r 3. a 8 0 1 9.
+q magnetic_force charge 4 e minus 6 v 4 0 0 0 b 0 point 0 5. a 8 e minus 4.
+q orbital_speed m 8 point 1 e 2 9 r 6 point 2 e 8. a 2 9 5 3 0 0.
+q orbital_speed m 5 point 9 7 e 2 4 r 6 point 8 7 e 6. a 7 6 1 6.
+q net_force f 6 6 f 5 3 opposite. a 1 3.
+q centripetal m 3 v 1 2 r 2. a 2 1 6.
+q longer_range static_friction capillary. a same.
+q forces holds_together atoms. a electromagnetism electrostatic.
+q longer_range van_der_waals tidal. a tidal.
+q forces direction toward_rest_length. a spring.
+q friction mu 0 point 8 7 n 9 7. a 8 4 point 3 9.
+q friction mu 0 point 0 2 n 6. a 0 point 1 2.
+q gravity_force m 3 5 m 1 1 0 0 0 r 4. a 1 point 6 0 6 e minus 6.
+q check gravity_force m 1 6 m 9 4 0 r 5 0 equals 4 point 0 1 5 e minus 1 0. a yes.
+q check forces acts_on metal_atoms equals metallic_bond hydrogen_bond. a no.
+q thrust mdot 1 0 ve 2 2 0 0. a 2 2 0 0 0.
+q lift rho 1 v 2 1 c 1 point 2 area 5 0. a 1 3 2 3 0.
+q friction mu 0 point 2 4 n 4 7 0. a 1 1 2 point 8.
+q thrust mdot 3 8 6 0 ve 4 2 0 0. a 1 point 6 2 1 e 7.
+q gravity_force m 1 4 m 6 0 0 0 0 r 3. a 6 point 2 2 9 e minus 6.
+q friction mu 0 point 0 6 n 3 8 5. a 2 3 point 1.
+q net_force f 7 7 f 9 2 0 opposite. a 8 4 3.
+q tidal m 8 point 8 e 2 3 m 6 0 0 0 r 5 point 5 e 6 d 2 point 4 e 8. a 0 point 2 8 0 4.
+q gravity_force m 7 7 0 0 0 m 7 9 r 1 0 0. a 4 point 0 6 e minus 8.
+q net_force f 1 9 f 2 7 opposite. a 8.
+q weight m 9 7 8 on moon. a 1 5 8 4.
+q longer_range magnetic ionic_bond. a magnetic.
+q tidal m 1 point 1 e 2 2 m 6 0 r 9 2 0 0 0 0 d 8 point 1 e 8. a 1 point 5 2 5 e minus 7.
+q check pressure_force unit pascal. a no.
+q surface_gravity m 4 point 1 e 2 3 r 8 point 4 e 6. a 0 point 3 8 7 8.
+q check nuclear_binding described_by yukawa. a yes.
+q net_force f 6 4 f 3 7 opposite. a 2 7.
+q coulomb_force charge 9 e minus 6 charge 5 e minus 6 r 0 point 2. a 1 0 point 1 1.
+q tidal m 9 point 9 e 2 3 m 7 6 0 0 0 r 6 point 5 e 7 d 9 point 7 e 1 0. a 7 point 1 5 3 e minus 7.
+q coulomb_force charge 4 e minus 9 charge 2 e minus 6 r 0 point 3. a 7 point 9 8 9 e minus 4.
+q gravity_force m 6 6 0 0 m 2 3 0 r 5. a 4 point 0 5 2 e minus 6.
+q friction mu 0 point 7 5 n 6 8. a 5 1.
+q tidal m 9 point 6 e 2 9 m 7 6 0 0 r 7 point 8 e 7 d 5 point 4 e 9. a 4 8 2 point 4.
+q orbital_speed m 3 point 3 e 2 3 r 3 point 4 4 e 6. a 2 5 3 0.
+q buoyancy rho 2 7 0 vol 0 point 0 0 7. a 1 8 point 5 4.
+q check thrust described_by fermi glashow weinberg salam. a no.
+q check buoyancy rho 5 6 0 vol 1 point 5 equals 8 2 4 0. a yes.
+q magnetic_force charge 0 point 0 0 5 v 4 1 b 0 point 2. a 0 point 0 4 1.
+q longer_range capillary tidal. a tidal.
+q net_force f 2 8 f 7 6 0 same. a 7 8 8.
+q longer_range static_friction tidal. a tidal.
+q longer_range kinetic_friction gravity. a gravity.
+q longer_range normal thrust. a same.
+q gravity_force m 4 9 m 8 7 0 r 1. a 2 point 8 4 5 e minus 6.
+q thrust mdot 5 2 0 ve 4 0 0. a 2 0 8 0 0 0.
+q check longer_range magnetic friction equals same. a no.
+q tidal m 1 point 8 e 3 0 m 9 7 0 r 8 e 6 d 7 point 3 e 7. a 4 point 7 9 3 e 6.
+q check forces examples ice equals hydrogen_bond. a yes.
+q longer_range metallic_bond electrostatic. a electrostatic.
+q surface_gravity m 3 point 5 e 2 3 r 2 point 5 e 8. a 3 point 7 3 7 e minus 4.
+q escape_speed m 8 point 3 e 2 4 r 5 point 3 e 7. a 4 5 7 2.
+q tidal m 1 point 9 9 e 3 0 m 6 1 r 6 point 3 7 e 6 d 1 point 5 e 1 1. a 3 point 0 5 8 e minus 5.
+q check tidal attractive neither. a no.
+q longer_range van_der_waals electromagnetism. a electromagnetism.
+q check net_force f 4 f 7 4 opposite equals 8 7 point 5. a no.
+q net_force f 6 7 f 6 4 same. a 1 3 1.
+q check van_der_waals holds_together molecular_solids liquids. a yes.
+q spring_force k 6 3 5 x 0 point 7 9. a 5 0 1 point 7.
+q longer_range kinetic_friction static_friction. a same.
+q escape_speed m 6 point 4 2 e 2 3 r 3 point 5 9 e 6. a 4 8 8 6.
+q surface_gravity m 1 point 9 e 2 7 r 7 point 1 5 e 7. a 2 4 point 8.
+q forces described_by gell_mann. a strong.
+q longer_range magnetic friction. a magnetic.
+q friction mu 0 point 2 9 n 9 4 0. a 2 7 2 point 6.
+q net_force f 4 7 f 2 4 opposite. a 2 3.
+q check gravity_force m 2 5 m 8 2 0 r 3 equals 1 point 5 2 e minus 7. a yes.
+q check surface_tension discovered 1 7 0 5. a no.
+q drag rho 1 0 0 0 v 4 4 c 0 point 5 area 1 0. a 4 point 8 4 e 6.
+q check tidal m 1 point 5 e 2 5 m 8 2 0 0 0 r 6 point 4 e 7 d 3 point 4 e 9 equals 2 point 6 7 3. a no.
+q gravity_force m 7 point 3 5 e 2 2 m 4 2 r 1 point 1 7 4 e 7. a 1 point 4 9 5.
+q longer_range spring magnetic. a magnetic.
+q drag rho 1 point 2 v 4 4 c 0 point 3 area 1. a 3 4 8 point 5.
+q longer_range electrostatic tidal. a same.
+q centripetal m 3 v 1 r 1. a 3.
+q surface_gravity m 7 point 5 e 2 7 r 5 point 2 e 6. a 1 8 5 1 0.
+q drag rho 1 point 2 v 1 3 c 0 point 2 5 area 2. a 5 0 point 7.
+q gravity_force m 5 2 m 8 4 0 r 1 0. a 2 point 9 1 5 e minus 8.
+q magnetic_force charge 6 v 2 0 b 1. a 1 2 0.
+q orbital_speed m 6 point 4 2 e 2 3 r 5 point 3 9 e 6. a 2 8 1 9.
+q centripetal m 3 3 v 3 r 1 0. a 2 9 point 7.
+q orbital_speed m 1 point 6 e 2 2 r 5 point 7 e 6. a 4 3 2 point 8.
+q check spring described_by hooke. a yes.
+q acceleration f 2 5 0 m 8 6. a 2 point 9 0 7.
+q magnetic_force charge 0 point 0 0 1 v 8 0 0 b 0 point 0 1. a 0 point 0 0 8.
+q friction mu 0 point 1 5 n 2 1 0. a 3 1 point 5.
+q check acceleration f 9 0 0 m 8 6 equals 1 point 0 4 7. a no.
+q magnetic_force charge 2 v 9 3 b 0 point 2. a 3 7 point 2.
+q weight m 4 2 3. a 4 1 5 0.
+q friction mu 0 point 2 7 n 9 1. a 2 4 point 5 7.
+q longer_range tension strong. a tension.
+q check net_force f 7 6 f 1 3 same equals 8 9. a yes.
+q check drag rho 1 point 2 v 4 c 0 point 2 5 area 1 0 equals 2 4. a yes.
+q magnetic_force charge 0 point 0 0 2 v 9 9 b 0 point 1. a 0 point 0 1 9 8.
+q check surface_tension discovered 1 8 0 5. a yes.
+q weight m 9 9 point 9 on mars. a 3 7 2 point 6.
+q check capillary formula big_g m_1 m_2 over r squared. a no.
+q longer_range weak static_friction. a static_friction.
+q thrust mdot 1 5 7 0 ve 2 2 0 0. a 3 point 4 5 4 e 6.
+q magnetic_force charge 6 v 9 4 0 0 b 1. a 5 6 4 0 0.
+q weight m 1 5 on earth. a 1 4 7 point 2.
+q lift rho 1 0 2 5 v 5 4 c 0 point 3 area 1 0. a 4 point 4 8 3 e 6.
+q weight m 1 2 5 on mars. a 4 6 6 point 2.
+q centripetal m 2 8 v 2 8 r 1. a 2 1 9 5 2.
+q pressure f 7 2 area 0 point 8 1. a 8 8 point 8 9.
+q check buoyancy kind effective. a yes.
+q centripetal m 3 4 v 1 2 r 1 point 5. a 3 2 6 4.
+q centripetal m 3 1 v 2 9 r 4. a 6 5 1 8.
+q check friction arises_from strong. a no.
+q check buoyancy rho 1 0 0 0 vol 0 point 0 4 1 equals 5 0 2 point 8. a no.
+q thrust mdot 1 7 4 0 ve 8 0 0. a 1 point 3 9 2 e 6.
+q net_force f 9 1 f 8 7 opposite. a 4.
+q longer_range tension nuclear_binding. a tension.
+q acceleration f 5 9 m 6 9. a 0 point 8 5 5 1.
+q magnetic_force charge 0 point 0 0 9 v 2 4 0 0 b 0 point 2. a 4 point 3 2.
+q check weak constant 1 point 1 6 6 4 e minus 5. a yes.
+q weight m 0 point 2 on mars. a 0 point 7 4 6.
+q check net_force f 6 9 0 f 3 0 opposite equals 6 6 0 0. a no.
+q longer_range pressure_force kinetic_friction. a same.
+q acceleration f 4 9 m 1 3. a 3 point 7 6 9.
+q longer_range capillary buoyancy. a same.
+q check ionic_bond formula 2 big_g m_1 m_2 r over d cubed. a no.
+q lift rho 1 point 2 v 2 4 c 0 point 5 area 0 point 5. a 8 6 point 4.
+q friction mu 0 point 3 4 n 2 9. a 9 point 8 6.
+q forces examples sledge. a kinetic_friction.
+q forces described_by kossel. a ionic_bond.
+q check gravity constant 6 point 6 7 4 e minus 1 1. a yes.
+q thrust mdot 1 5 9 ve 4 5 0 0. a 7 1 5 5 0 0.
+q check forces holds_together metals equals metallic_bond centrifugal. a no.
+q coulomb_force charge 6 e minus 6 charge 7 e minus 6 r 0 point 0 2. a 9 4 3 point 7.
+q escape_speed m 9 point 9 e 2 8 r 2 point 4 e 7. a 7 4 2 0 0 0.
+q check hydrogen_bond described_by yukawa. a no.
+q forces examples iron_beam. a metallic_bond.
+q check buoyancy rho 1 point 2 vol 0 point 7 7 equals 9 point 0 6 4. a yes.
+q magnetic_force charge 2 v 1 9 b 0 point 1. a 3 point 8.
+q buoyancy rho 1 3 6 0 0 vol 0 point 0 5 8. a 7 7 3 8.
+q buoyancy rho 1 0 2 5 vol 0 point 0 0 9. a 9 0 point 5.
+q weight m 9 6. a 9 4 1 point 8.
+q tidal m 9 point 1 e 2 9 m 4 2 0 r 2 point 2 e 6 d 1 point 8 e 9. a 1 9 point 2 4.
+q coulomb_force charge 6 e minus 6 charge 4 e minus 9 r 0 point 3. a 0 point 0 0 2 3 9 7.
+q pressure f 7 4 area 0 point 2 5. a 2 9 6.
+q check buoyancy rho 1 point 2 vol 0 point 0 4 1 equals 0 point 4 8 2 7. a yes.
+q lift rho 1 0 2 5 v 5 8 c 0 point 8 area 1. a 1 point 3 7 9 e 6.
+q pressure f 4 5 0 area 8 6. a 5 point 2 3 3.
+q centripetal m 1 5 v 1 9 r 3. a 1 8 0 5.
+q net_force f 8 5 0 f 8 1 0 same. a 1 6 6 0.
+q check forces holds_together molecules equals electromagnetism covalent_bond. a yes.
+q check ionic_bond discovered 1 9 6 6. a no.
+q acceleration f 2 1 m 2 7. a 0 point 7 7 7 8.
+q centripetal m 7 v 4 r 3. a 3 7 point 3 3.
+q magnetic_force charge 0 point 0 0 4 v 3 7 0 b 1. a 1 point 4 8.
+q escape_speed m 6 point 8 e 2 9 r 3 point 3 e 8. a 5 2 4 5 0 0.
+q check tension acts_at_distance no. a yes.
+q forces examples book_on_table. a normal.
+q forces holds_together planets. a gravity.
+q check weight m 9 point 4 on jupiter equals 2 0 9 point 7. a no.
+q longer_range kinetic_friction friction. a same.
+q net_force f 5 4 0 f 6 5 0 opposite. a 1 1 0.
+q net_force f 1 3 0 f 1 1 opposite. a 1 1 9.
+q centripetal m 1 7 v 2 2 r 1 0 0. a 8 2 point 2 8.
+q magnetic_force charge 0 point 0 0 9 v 3 6 b 0 point 5. a 0 point 1 6 2.
+q escape_speed m 4 point 5 e 2 4 r 5 e 6. a 1 0 9 6 0.
+q tidal m 1 point 7 e 2 2 m 9 6 r 5 point 6 e 6 d 4 point 1 e 8. a 1 point 7 7 e minus 5.
+q drag rho 1 0 2 5 v 3 c 0 point 2 5 area 0 point 0 1. a 1 1 point 5 3.
+q check normal attractive neither. a no.
+q drag rho 1 point 2 v 6 0 c 0 point 3 area 5. a 3 2 4 0.
+q lift rho 1 point 2 v 7 4 c 1 area 1 0 0. a 3 2 8 5 6 0.
+q tidal m 5 point 6 e 2 7 m 5 8 0 0 r 4 e 6 d 9 point 5 e 9. a 0 point 0 2 0 2 3.
+q check covalent_bond attractive attractive. a yes.
+q surface_gravity m 2 point 8 e 2 2 r 5 2 0 0 0 0. a 6 point 9 1 1.
+q forces described_by joukowski. a lift.
+q surface_gravity m 8 point 5 e 2 6 r 9 3 0 0 0 0. a 6 5 5 9 0.
+q centripetal m 1 0 v 1 8 r 4. a 8 1 0.
+q check van_der_waals attractive both. a no.
+q friction mu 0 point 2 9 n 4 3 5. a 1 2 6 point 1.
+q weight m 7 8 point 7. a 7 7 2.
+q longer_range surface_tension tension. a same.
+q orbital_speed m 3 e 2 8 r 1 point 3 e 6. a 1 point 2 4 1 e 6.
+q weight m 3 6 on mars. a 1 3 4 point 3.
+q net_force f 4 6 f 6 9 same. a 1 1 5.
+q net_force f 3 7 f 6 8 opposite. a 3 1.
+q check forces holds_together stars equals gravity. a yes.
+q friction mu 0 point 5 9 n 1 3. a 7 point 6 7.
+q longer_range van_der_waals gravity. a gravity.
+q check forces carrier photon equals electromagnetism buoyancy. a no.
+q weight m 8 6 point 9 on moon. a 1 4 0 point 8.
+q centripetal m 3 3 v 1 4 r 1 point 5. a 4 3 1 2.
+q centripetal m 2 5 v 2 1 r 4. a 2 7 5 6.
+q net_force f 6 0 f 4 7 same. a 1 0 7.
+q lift rho 1 point 2 v 5 5 c 0 point 8 area 1 0. a 1 4 5 2 0.
+q coulomb_force charge 2 e minus 9 charge minus 8 e minus 6 r 0 point 5. a minus 5 point 7 5 2 e minus 4.
+q acceleration f 5 1 m 4 4. a 1 point 1 5 9.
+q forces examples car_suspension. a spring.
+q check spring unit newton. a yes.
+q check tidal attractive both. a yes.
+q pressure f 6 5 0 0 area 0 point 3 8. a 1 7 1 1 0.
+q check capillary unit pascal. a no.
+q longer_range friction pressure_force. a same.
+q net_force f 5 3 f 7 9 opposite. a 2 6.
+q thrust mdot 3 7 3 0 ve 3 0 0. a 1 point 1 1 9 e 6.
+q lift rho 1 0 0 0 v 2 9 c 0 point 5 area 1 0. a 2 point 1 0 2 e 6.
+q centripetal m 1 9 v 2 6 r 5 0. a 2 5 6 point 9.
+q check radiation_pressure discovered 1 9 0 2. a no.
+q check longer_range tidal van_der_waals equals same. a no.
+q longer_range electrostatic nuclear_binding. a electrostatic.
+q check buoyancy rho 1 3 6 0 0 vol 0 point 0 7 3 equals 8 7 6 5. a no.
+q spring_force k 1 4 3 0 x 0 point 1 7. a 2 4 3 point 1.
+q surface_gravity m 6 point 4 2 e 2 3 r 3 point 3 9 e 6. a 3 point 7 2 8.
+q drag rho 1 v 2 3 c 0 point 1 area 0 point 2 5. a 6 point 6 1 3.
+q check gravity range_m infinite. a yes.
+q longer_range buoyancy kinetic_friction. a same.
+q forces direction between_quarks. a strong.
+q check van_der_waals described_by yukawa. a no.
+q buoyancy rho 1 3 6 0 0 vol 0 point 4. a 5 3 3 7 0.
+q centripetal m 1 9 v 2 7 r 3. a 4 6 1 7.
+q orbital_speed m 6 point 4 2 e 2 3 r 1 point 3 3 9 e 7. a 1 7 8 9.
+q centripetal m 3 8 v 2 7 r 0 point 5. a 5 5 4 0 4.
+q thrust mdot 2 6 0 ve 2 0 0. a 5 2 0 0 0.
+q friction mu 0 point 7 5 n 5 3 0. a 3 9 7 point 5.
+q check buoyancy rho 8 0 0 vol 0 point 0 7 equals 5 4 9 point 4. a yes.
+q gravity_force m 2 5 0 0 0 m 8 6 r 2 0. a 3 point 5 8 7 e minus 7.
+q lift rho 1 point 2 v 7 2 c 1 point 2 area 5 0. a 1 8 6 6 2 4.
+q forces examples falling_apple. a gravity weight.
+q magnetic_force charge 2 v 3 2 b 0 point 0 1. a 0 point 6 4.
+q centripetal m 1 4 v 6 r 1. a 5 0 4.
+q net_force f 1 2 f 5 0 opposite. a 3 8.
+q escape_speed m 9 point 9 e 2 3 r 1 point 7 e 7. a 2 7 8 8.
+q acceleration f 5 m 2. a 2 point 5.
+q check weak unit newton. a yes.
+q centripetal m 1 v 2 7 r 5. a 1 4 5 point 8.
+q tidal m 7 point 3 5 e 2 2 m 9 1 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 1 point 0 0 4 e minus 4.
+q thrust mdot 2 3 4 ve 1 4 0 0. a 3 2 7 6 0 0.
+q centripetal m 1 8 v 1 1 r 3. a 7 2 6.
+q centripetal m 3 0 v 4 r 2 0. a 2 4.
+q check surface_gravity m 2 point 5 e 2 6 r 9 point 9 e 8 equals 0 point 0 1 3 6 2. a no.
+q centripetal m 4 4 v 2 1 r 5. a 3 8 8 1.
+q longer_range tidal spring. a tidal.
+q longer_range lift radiation_pressure. a radiation_pressure.
+q forces direction toward_opposite_ion. a ionic_bond.
+q friction mu 0 point 6 3 n 6 7. a 4 2 point 2 1.
+q friction mu 0 point 4 3 n 5 1 0. a 2 1 9 point 3.
+q check forces described_by glashow equals weak. a yes.
+q forces acts_on currents. a magnetic.
+q coulomb_force charge 2 e minus 6 charge 1 e minus 9 r 1 0. a 1 point 7 9 8 e minus 7.
+q longer_range buoyancy magnetic. a magnetic.
+q coulomb_force charge 2 e minus 6 charge minus 2 e minus 6 r 0 point 0 1. a minus 3 5 9 point 5.
+q spring_force k 5 9 x 0 point 3 5. a 2 0 point 6 5.
+q buoyancy rho 1 0 2 5 vol 0 point 0 5 3. a 5 3 2 point 9.
+q centripetal m 3 0 v 1 3 r 2 0. a 2 5 3 point 5.
+q check tidal m 8 point 5 e 2 6 m 7 6 0 0 0 r 2 point 3 e 7 d 6 point 4 e 8 equals 7 5 6 point 5. a yes.
+q surface_gravity m 5 point 4 e 2 9 r 3 point 7 e 8. a 2 6 3 point 3.
+q friction mu 0 point 8 5 n 5 8. a 4 9 point 3.
+q forces acts_on colour_charge. a strong.
+q forces acts_on extended_bodies. a tidal.
+q orbital_speed m 6 point 8 e 2 7 r 1 point 5 e 8. a 5 5 0 0 0.
+q forces examples airplane_wing. a lift.
+q check gravity carrier graviton_hypothetical. a yes.
+q friction mu 0 point 3 4 n 8 2. a 2 7 point 8 8.
+q surface_gravity m 6 point 4 e 2 6 r 5 point 9 e 7. a 1 2 point 2 7.
+q longer_range strong surface_tension. a surface_tension.
+q longer_range capillary strong. a capillary.
+q gravity_force m 2 9 m 8 4 r 5 0. a 6 point 5 0 3 e minus 1 1.
+q escape_speed m 5 point 9 7 e 2 4 r 1 point 1 3 7 e 7. a 8 3 7 2.
+q surface_gravity m 7 point 3 e 3 0 r 4 point 5 e 6. a 2 point 4 0 6 e 7.
+q check static_friction kind role. a no.
+q check spring kind inertial. a no.
+q acceleration f 1 3 0 m 4 0. a 3 point 2 5.
+q longer_range static_friction pressure_force. a same.
+q surface_gravity m 7 point 1 e 2 2 r 9 point 9 e 8. a 4 point 8 3 5 e minus 6.
+q check centrifugal unit newton. a yes.
+q centripetal m 2 5 v 1 2 r 5. a 7 2 0.
+q longer_range weak capillary. a capillary.
+q net_force f 8 5 0 f 5 5 same. a 9 0 5.
+q forces described_by london. a van_der_waals covalent_bond.
+q check forces carrier w_boson equals weak spring. a no.
+q magnetic_force charge 4 e minus 6 v 3 7 b 0 point 5. a 7 point 4 e minus 5.
+q check coulomb_force charge 4 e minus 6 charge 3 e minus 6 r 0 point 0 2 equals 2 1 5 point 7. a no.
+q forces examples condensation. a van_der_waals.
+q net_force f 1 f 1 5 same. a 1 6.
+q longer_range radiation_pressure drag. a radiation_pressure.
+q centripetal m 4 3 v 1 7 r 2 point 5. a 4 9 7 1.
+q thrust mdot 2 6 7 0 ve 4 0 0 0. a 1 point 0 6 8 e 7.
+q buoyancy rho 1 0 0 0 vol 7 point 5. a 7 3 5 7 5.
+q centripetal m 5 v 2 5 r 2 0. a 1 5 6 point 2.
+q magnetic_force charge 6 v 6 4 b 0 point 0 5. a 1 9 point 2.
+q check tidal m 1 point 9 e 2 7 m 1 9 r 1 point 8 2 e 6 d 4 point 2 2 e 8 equals 0 point 1 1 6 7. a yes.
+q check magnetic discovered 1 8 2 0. a yes.
+q orbital_speed m 3 point 1 e 2 6 r 6 6 0 0 0 0. a 1 7 7 1 0 0.
+q check tension range_m infinite. a no.
+q check gravity discovered 1 7 8 7. a no.
+q acceleration f 9 5 m 1 6. a 5 point 9 3 8.
+q forces described_by lewis. a covalent_bond.
+q check stronger electromagnetism gravity equals electromagnetism. a yes.
+q thrust mdot 2 9 9 ve 1 1 0 0. a 3 2 8 9 0 0.
+q forces examples beta_decay. a weak.
+q escape_speed m 3 point 4 e 2 5 r 6 point 8 e 7. a 8 1 6 9.
+q check longer_range lift nuclear_binding equals nuclear_binding. a no.
+q centripetal m 4 1 v 2 5 r 5. a 5 1 2 5.
+q lift rho 1 v 9 5 c 1 point 2 area 1 0. a 5 4 1 5 0.
+q buoyancy rho 1 0 0 0 vol 0 point 0 4 1. a 4 0 2 point 2.
+q orbital_speed m 2 point 3 e 2 4 r 3 point 5 e 8. a 6 6 2 point 3.
+q gravity_force m 8 point 5 e 3 0 m 4 2 0 0 0 r 1 point 9 e 6. a 6 point 6 e 1 2.
+q drag rho 1 point 2 v 4 4 c 1 area 0 point 0 1. a 1 1 point 6 2.
+q orbital_speed m 8 point 6 e 2 8 r 4 point 4 e 8. a 1 1 4 2 0 0.
+q drag rho 1 0 0 0 v 2 1 c 1 area 1 0. a 2 point 2 0 5 e 6.
+q check longer_range static_friction pressure_force equals same. a yes.
+q buoyancy rho 1 0 2 5 vol 0 point 0 3 5. a 3 5 1 point 9.
+q check net_force f 6 6 0 f 6 2 0 same equals 1 4 0 8. a no.
+q coulomb_force charge 3 e minus 6 charge 5 e minus 6 r 1. a 0 point 1 3 4 8.
+q forces examples brakes. a friction.
+q friction mu 0 point 1 2 n 4 3 0. a 5 1 point 6.
+q longer_range hydrogen_bond radiation_pressure. a radiation_pressure.
+q surface_gravity m 3 point 3 e 2 3 r 2 point 4 4 e 6. a 3 point 6 9 9.
+q check tidal constant 6 point 6 7 4 e minus 1 1. a yes.
+q longer_range electrostatic hydrogen_bond. a electrostatic.
+q magnetic_force charge 0 point 0 0 6 v 7 2 0 0 b 2. a 8 6 point 4.
+q spring_force k 6 5 0 x 0 point 1 5. a 9 7 point 5.
+q spring_force k 2 9 x 0 point 0 6. a 1 point 7 4.
+q acceleration f 1 5 m 5 8. a 0 point 2 5 8 6.
+q acceleration f 5 2 m 1 2. a 4 point 3 3 3.
+q weight m 7 point 8 on mars. a 2 9 point 0 9.
+q acceleration f 5 4 m 9 7. a 0 point 5 5 6 7.
+q thrust mdot 3 8 3 0 ve 3 9 0 0. a 1 point 4 9 4 e 7.
+q coulomb_force charge 8 e minus 9 charge minus 6 e minus 9 r 0 point 5. a minus 1 point 7 2 6 e minus 6.
+q check hydrogen_bond discovered 1 9 2 1. a no.
+q thrust mdot 1 9 7 ve 3 4 0 0. a 6 6 9 8 0 0.
+q forces acts_on ions. a ionic_bond.
+q net_force f 7 9 f 4 5 same. a 1 2 4.
+q check metallic_bond holds_together metals. a yes.
+q magnetic_force charge 9 v 4 1 b 0 point 5. a 1 8 4 point 5.
+q net_force f 7 0 0 f 5 6 opposite. a 6 4 4.
+q longer_range weak covalent_bond. a covalent_bond.
+q net_force f 5 3 f 7 0 opposite. a 1 7.
+q check surface_tension kind effective. a yes.
+q check lift rho 1 0 0 0 v 1 4 c 1 point 2 area 0 point 5 equals 5 8 8 0 0. a yes.
+q weight m 4 9 2 on mars. a 1 8 3 5.
+q check lift rho 1 0 0 0 v 6 7 c 0 point 2 area 1 0 0 equals 4 point 4 8 9 e 7. a yes.
+q check friction mu 0 point 6 n 9 7 0 equals 2 9 1. a no.
+q check acceleration f 1 1 m 6 9 equals 0 point 0 1 5 9 4. a no.
+q longer_range static_friction friction. a same.
+q net_force f 7 7 f 7 8 opposite. a 1.
+q check forces holds_together protons equals strong. a yes.
+q net_force f 1 0 f 6 0 0 same. a 6 1 0.
+q longer_range electromagnetism van_der_waals. a electromagnetism.
+q magnetic_force charge 9 e minus 6 v 3 4 0 b 1. a 0 point 0 0 3 0 6.
+q coulomb_force charge 9 e minus 6 charge 5 e minus 6 r 2. a 0 point 1 0 1 1.
+q friction mu 0 point 6 6 n 6 0. a 3 9 point 6.
+q coulomb_force charge 1 e minus 6 charge 6 e minus 9 r 0 point 0 5. a 0 point 0 2 1 5 7.
+q check drag rho 1 0 2 5 v 3 7 c 1 point 2 area 1 0 equals 8 point 4 1 9 e 6. a yes.
+q lift rho 1 point 2 v 9 5 c 0 point 5 area 1 0. a 2 7 0 7 5.
+q check gravity relative_strength 1 e minus 6. a no.
+q check forces examples water equals hydrogen_bond ionic_bond. a no.
+q check nuclear_binding arises_from gravity. a no.
+q spring_force k 1 1 7 x 0 point 6 3. a 7 3 point 7 1.
+q longer_range static_friction normal. a same.
+q forces examples neutron. a strong.
+q spring_force k 2 3 0 x 0 point 1 7. a 3 9 point 1.
+q check coriolis kind inertial. a yes.
+q orbital_speed m 4 point 8 7 e 2 4 r 6 point 5 5 e 6. a 7 0 4 4.
+q gravity_force m 5 0 m 4 4 r 2. a 3 point 6 7 1 e minus 8.
+q check forces examples foucault_pendulum equals coriolis. a yes.
+q longer_range normal strong. a normal.
+q longer_range radiation_pressure tidal. a same.
+q net_force f 5 7 f 5 4 0 same. a 5 9 7.
+q tidal m 4 point 4 e 2 9 m 9 6 0 0 r 9 point 1 e 6 d 3 e 9. a 1 9 0.
+q friction mu 0 point 9 1 n 8 3 0. a 7 5 5 point 3.
+q gravity_force m 7 1 0 m 2 1 r 5 0. a 3 point 9 8 e minus 1 0.
+q gravity_force m 2 7 m 1 8 0 0 0 r 3. a 3 point 6 0 4 e minus 6.
+q longer_range strong electromagnetism. a electromagnetism.
+q longer_range thrust electromagnetism. a electromagnetism.
+q drag rho 1 0 2 5 v 5 3 c 0 point 1 area 1. a 1 4 4 0 0 0.
+q longer_range surface_tension buoyancy. a same.
+q check orbital_speed m 5 point 9 7 e 2 4 r 7 point 3 7 e 6 equals 7 3 5 3. a yes.
+q net_force f 5 1 f 1 0 opposite. a 4 1.
+q gravity_force m 1 point 9 9 e 3 0 m 9 4 0 0 0 r 6 point 9 6 e 8. a 2 point 5 7 7 e 7.
+q check lift rho 1 0 2 5 v 2 3 c 0 point 8 area 5 0 equals 9 point 7 5 6 e 6. a no.
+q escape_speed m 4 point 8 7 e 2 4 r 7 point 0 5 e 6. a 9 6 0 2.
+q longer_range covalent_bond nuclear_binding. a covalent_bond.
+q check pressure_force acts_at_distance no. a yes.
+q acceleration f 2 5 m 8 6. a 0 point 2 9 0 7.
+q check kinetic_friction arises_from strong. a no.
+q drag rho 1 0 2 5 v 1 6 c 1 area 0 point 5. a 6 5 6 0 0.
+q gravity_force m 8 0 0 0 m 3 8 r 1. a 2 point 0 2 9 e minus 5.
+q thrust mdot 4 7 2 0 ve 2 5 0 0. a 1 point 1 8 e 7.
+q forces acts_at_distance no. a friction static_friction kinetic_friction normal tension drag lift buoyancy spring pressure_force surface_tension capillary thrust.
+q tidal m 7 point 3 5 e 2 2 m 6 8 0 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 7 point 5 0 5 e minus 4.
+q pressure f 4 3 area 6 4. a 0 point 6 7 1 9.
+q drag rho 1 point 2 v 4 7 c 0 point 1 area 0 point 0 1. a 1 point 3 2 5.
+q weight m 7 8 point 6. a 7 7 1 point 1.
+q acceleration f 1 0 m 4 7. a 0 point 2 1 2 8.
+q buoyancy rho 1 0 0 0 vol 9 point 5. a 9 3 1 9 5.
+q friction mu 0 point 2 3 n 2 9 0. a 6 6 point 7.
+q acceleration f 7 0 m 6. a 1 1 point 6 7.
+q check tidal m 8 point 4 e 2 4 m 9 4 0 0 0 r 5 8 0 0 0 0 d 1 point 5 e 8 equals 9 point 0 5 5. a no.
+q longer_range tidal radiation_pressure. a same.
+q forces examples radio. a electromagnetism.
+q longer_range spring surface_tension. a same.
+q check surface_gravity m 4 point 3 e 2 9 r 1 point 7 e 6 equals 9 point 9 3 e 6. a yes.
+q magnetic_force charge 0 point 0 0 3 v 8 7 0 0 b 0 point 0 1. a 0 point 2 6 1.
+q gravity_force m 9 5 0 m 3 8 0 0 r 1 point 5. a 1 point 0 7 1 e minus 4.
+q pressure f 8 8 0 0 area 7. a 1 2 5 7.
+q lift rho 1 0 2 5 v 1 0 0 c 1 area 1 0. a 5 point 1 2 5 e 7.
+q acceleration f 4 0 m 3 2. a 1 point 2 5.
+q check tension acts_at_distance yes. a no.
+q check forces holds_together salt_crystals equals ionic_bond strong. a no.
+q lift rho 1 point 2 v 8 8 c 1 area 1 0. a 4 6 4 6 4.
+q check acceleration f 6 4 m 7 6 equals 0 point 9 2 6 3. a no.
+q surface_gravity m 1 point 9 9 e 3 0 r 6 point 9 6 e 8. a 2 7 4 point 2.
+q forces acts_on surfaces. a friction static_friction kinetic_friction normal pressure_force radiation_pressure.
+q spring_force k 3 7 0 x 0 point 0 2. a 7 point 4.
+q check electrostatic kind effective. a yes.
+q longer_range static_friction spring. a same.
+q orbital_speed m 6 point 1 e 2 3 r 6 point 2 e 8. a 2 5 6 point 2.
+q drag rho 1 point 2 v 5 2 c 0 point 5 area 0 point 5. a 4 0 5 point 6.
+q orbital_speed m 5 point 8 e 3 0 r 9 e 6. a 6 point 5 5 8 e 6.
+q check tension unit pascal. a no.
+q check spring discovered 1 6 7 8. a yes.
+q check longer_range weak drag equals weak. a no.
+q centripetal m 4 v 2 2 r 1 0. a 1 9 3 point 6.
+q drag rho 1 0 0 0 v 4 1 c 0 point 5 area 0 point 1. a 4 2 0 2 5.
+q friction mu 0 point 7 6 n 4 6 5. a 3 5 3 point 4.
+q weight m 9 9 point 5. a 9 7 6 point 1.
+q escape_speed m 9 point 3 e 2 8 r 2 point 9 e 7. a 6 5 4 3 0 0.
+q thrust mdot 4 4 8 0 ve 5 0 0. a 2 point 2 4 e 6.
+q buoyancy rho 1 1 1 0 vol 0 point 2 4. a 2 6 1 3.
+q centripetal m 3 3 v 5 r 0 point 5. a 1 6 5 0.
+q thrust mdot 2 3 ve 3 2 0 0. a 7 3 6 0 0.
+q coulomb_force charge 7 e minus 6 charge 2 e minus 6 r 5. a 0 point 0 0 5 0 3 3.
+q check electromagnetism kind fundamental. a yes.
+q lift rho 1 point 2 v 5 3 c 1 area 0 point 5. a 8 4 2 point 7.
+q pressure f 5 1 0 area 8 0. a 6 point 3 7 5.
+q buoyancy rho 1 3 6 0 0 vol 0 point 0 1 5. a 2 0 0 1.
+q forces examples sliding_box. a kinetic_friction.
+q net_force f 7 5 0 f 6 9 same. a 8 1 9.
+q orbital_speed m 9 point 5 e 2 2 r 1 point 4 e 7. a 6 7 3.
+q check magnetic_force charge 0 point 0 0 5 v 8 6 0 0 b 0 point 5 equals 2 1 point 5. a yes.
+q check tidal kind fundamental. a no.
+q forces carrier z_boson. a weak.
+q check pressure_force attractive repulsive. a yes.
+q check van_der_waals range_m 1 point 4 1 e minus 1 5. a no.
+q magnetic_force charge 0 point 0 0 1 v 4 3 b 0 point 1. a 0 point 0 0 4 3.
+q longer_range surface_tension friction. a same.
+q coulomb_force charge 5 e minus 6 charge minus 4 e minus 9 r 0 point 2 5. a minus 0 point 0 0 2 8 7 6.
+q forces examples walking. a friction static_friction.
+q drag rho 1 0 0 0 v 5 4 c 0 point 2 5 area 1 0. a 3 point 6 4 5 e 6.
+q pressure f 3 1 0 0 area 9 point 4. a 3 2 9 point 8.
+q orbital_speed m 2 e 2 9 r 1 point 5 e 8. a 2 9 8 3 0 0.
+q weight m 6 8 3 on moon. a 1 1 0 6.
+q longer_range kinetic_friction spring. a same.
+q forces holds_together bubbles. a surface_tension.
+q check drag described_by yukawa. a no.
+q escape_speed m 1 point 7 e 3 0 r 6 point 6 e 7. a 1 point 8 5 4 e 6.
+q forces acts_on bodies_in_fluids. a drag lift buoyancy.
+q thrust mdot 2 0 0 ve 1 2 0 0. a 2 4 0 0 0 0.
+q buoyancy rho 1 0 2 5 vol 0 point 9 2. a 9 2 5 1.
+q lift rho 1 0 0 0 v 8 8 c 0 point 8 area 1 0. a 3 point 0 9 8 e 7.
+q check pressure f 8 8 area 2 9 equals 3 point 0 3 4. a yes.
+q escape_speed m 3 e 2 7 r 4 point 2 e 6. a 3 0 8 8 0 0.
+q check longer_range radiation_pressure metallic_bond equals radiation_pressure. a yes.
+q drag rho 1 0 0 0 v 3 3 c 0 point 3 area 5. a 8 1 6 7 5 0.
+q longer_range thrust pressure_force. a same.
+q buoyancy rho 1 1 0 0 vol 0 point 0 5 9. a 6 3 6 point 7.
+q longer_range lift gravity. a gravity.
+q longer_range magnetic kinetic_friction. a magnetic.
+q coulomb_force charge 1 e minus 6 charge 8 e minus 6 r 1 0. a 7 point 1 9 e minus 4.
+q gravity_force m 9 2 0 0 0 m 1 9 0 0 0 r 5 0. a 4 point 6 6 6 e minus 5.
+q drag rho 1 point 2 v 3 3 c 0 point 5 area 1. a 3 2 6 point 7.
+q check weak range_m 1 e minus 1 8. a yes.
+q friction mu 0 point 6 5 n 1 7 0. a 1 1 0 point 5.
+q forces direction opposes_impending_motion. a static_friction.
+q coulomb_force charge 7 e minus 9 charge 1 e minus 6 r 0 point 3. a 6 point 9 9 1 e minus 4.
+q forces examples gold_ring. a metallic_bond.
+q check strong attractive repulsive. a no.
+q net_force f 8 6 f 9 7 0 opposite. a 8 8 4.
+q gravity_force m 1 point 9 e 2 7 m 2 7 r 7 point 1 5 e 7. a 6 6 9 point 7.
+q check static_friction attractive neither. a yes.
+q orbital_speed m 8 e 2 7 r 8 3 0 0 0 0. a 8 0 2 0 0 0.
+q friction mu 0 point 2 2 n 4 9. a 1 0 point 7 8.
+q tidal m 4 point 1 e 2 5 m 1 5 0 0 0 r 4 point 8 e 6 d 7 point 2 e 8. a 1 point 0 5 6.
+q orbital_speed m 6 e 2 5 r 9 point 8 e 8. a 2 0 2 1.
+q gravity_force m 8 1 0 m 4 0 0 0 r 2 0. a 5 point 4 0 6 e minus 7.
+q check tension unit newton. a yes.
+q net_force f 2 3 f 8 7 same. a 1 1 0.
+q lift rho 1 point 2 v 6 0 c 1 area 2 0. a 4 3 2 0 0.
+q lift rho 1 0 0 0 v 9 2 c 1 point 5 area 5. a 3 point 1 7 4 e 7.
+q acceleration f 8 0 0 m 4 7. a 1 7 point 0 2.
+q magnetic_force charge 0 point 0 0 6 v 8 1 b 0 point 1. a 0 point 0 4 8 6.
+q forces direction opposes_motion. a friction kinetic_friction drag.
+q coulomb_force charge 1 e minus 9 charge 1 e minus 6 r 0 point 3. a 9 point 9 8 7 e minus 5.
+q orbital_speed m 5 point 9 7 e 2 4 r 1 point 6 3 7 e 7. a 4 9 3 4.
+q coulomb_force charge 6 e minus 6 charge minus 3 e minus 6 r 0 point 3. a minus 1 point 7 9 8.
+q drag rho 1 point 2 v 5 6 c 1 area 5. a 9 4 0 8.
+q tidal m 7 point 3 5 e 2 2 m 7 0 0 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 7 point 7 2 6 e minus 4.
+q longer_range tidal normal. a tidal.
+q check pressure_force kind role. a no.
+q longer_range nuclear_binding magnetic. a magnetic.
+q check weak carrier graviton_hypothetical. a no.
+q longer_range normal tension. a same.
+q coulomb_force charge 3 e minus 6 charge 6 e minus 6 r 0 point 2 5. a 2 point 5 8 9.
+q check drag rho 1 0 2 5 v 5 2 c 0 point 2 5 area 0 point 2 5 equals 1 2 9 9 1 5. a no.
+q net_force f 4 3 f 7 1 opposite. a 2 8.
+q magnetic_force charge 7 v 5 3 0 b 0 point 0 1. a 3 7 point 1.
+q centripetal m 2 5 v 5 r 3. a 2 0 8 point 3.
+q spring_force k 2 4 0 x 0 point 5 1. a 1 2 2 point 4.
+q spring_force k 1 6 4 x 0 point 8. a 1 3 1 point 2.
+q check orbital_speed m 1 point 9 e 2 7 r 1 point 0 7 3 e 8 equals 3 4 3 8. a no.
+q weight m 4 9 point 6 on jupiter. a 1 2 3 0.
+q check ionic_bond described_by coulomb kossel born. a yes.
+q longer_range radiation_pressure metallic_bond. a radiation_pressure.
+q check tension kind effective. a yes.
+q net_force f 3 6 0 f 9 3 0 opposite. a 5 7 0.
+q friction mu 0 point 1 4 n 9 6. a 1 3 point 4 4.
+q magnetic_force charge 8 e minus 6 v 3 8 0 b 0 point 2. a 6 point 0 8 e minus 4.
+q tidal m 2 e 2 8 m 2 4 0 0 r 9 7 0 0 0 0 d 5 point 4 e 9. a 0 point 0 3 9 4 7.
+q check hydrogen_bond described_by fermi glashow weinberg salam. a no.
+q check net_force f 9 4 f 1 9 0 opposite equals 9 6. a yes.
+q centripetal m 2 7 v 2 7 r 2 point 5. a 7 8 7 3.
+q orbital_speed m 5 e 2 7 r 2 e 6. a 4 0 8 5 0 0.
+q longer_range gravity friction. a gravity.
+q orbital_speed m 1 point 0 2 e 2 6 r 2 point 5 e 7. a 1 6 5 0 0.
+q spring_force k 1 2 6 0 x 0 point 2 6. a 3 2 7 point 6.
+q pressure f 4 2 0 area 0 point 7 5. a 5 6 0.
+q check spring formula k x. a yes.
+q drag rho 1 v 2 4 c 1 area 0 point 0 1. a 2 point 8 8.
+q thrust mdot 1 0 9 ve 2 2 0 0. a 2 3 9 8 0 0.
+q lift rho 1 point 2 v 7 c 0 point 8 area 2. a 4 7 point 0 4.
+q longer_range gravity ionic_bond. a gravity.
+q thrust mdot 3 3 9 0 ve 1 3 0 0. a 4 point 4 0 7 e 6.
+q net_force f 1 3 f 3 3 same. a 4 6.
+q forces examples hydraulic_press. a pressure_force.
+q centripetal m 2 7 v 1 r 1 point 5. a 1 8.
+q check drag rho 1 point 2 v 5 4 c 1 area 0 point 5 equals 1 0 9 4. a no.
+q buoyancy rho 1 0 0 0 vol 2 point 3. a 2 2 5 6 3.
+q check longer_range thrust capillary equals capillary. a no.
+q forces acts_on bodies_near_a_planet. a weight.
+q check weight described_by oersted ampere lorentz. a no.
+q escape_speed m 1 point 9 e 2 9 r 4 1 0 0 0 0. a 7 point 8 6 5 e 6.
+q longer_range electrostatic electromagnetism. a same.
+q escape_speed m 2 point 1 e 2 4 r 5 6 0 0 0 0. a 2 2 3 7 0.
+q longer_range normal spring. a same.
+q longer_range gravity drag. a gravity.
+q tidal m 1 point 9 9 e 3 0 m 4 7 r 6 point 3 7 e 6 d 1 point 5 e 1 1. a 2 point 3 5 6 e minus 5.
+q thrust mdot 4 4 1 ve 2 3 0 0. a 1 point 0 1 4 e 6.
+q drag rho 1 v 1 7 c 1 area 0 point 0 1. a 1 point 4 4 5.
+q weight m 6 6 point 5 on mars. a 2 4 8.
+q check weight unit newton. a yes.
+q longer_range gravity electromagnetism. a same.
+q orbital_speed m 2 e 2 8 r 4 point 4 e 7. a 1 7 4 2 0 0.
+q friction mu 0 point 2 2 n 2 0. a 4 point 4.
+q check normal acts_at_distance yes. a no.
+q pressure f 1 1 0 area 2 1. a 5 point 2 3 8.
+q check friction acts_at_distance yes. a no.
+q check normal range_m contact. a yes.
+q coulomb_force charge minus 2 e minus 6 charge 4 e minus 9 r 0 point 2 5. a minus 0 point 0 0 1 1 5.
+q centripetal m 1 1 v 1 1 r 2 point 5. a 5 3 2 point 4.
+q magnetic_force charge 0 point 0 0 5 v 8 5 b 1. a 0 point 4 2 5.
+q forces described_by hooke. a spring.
+q check electrostatic holds_together nuclei. a no.
+q acceleration f 5 3 m 3 8. a 1 point 3 9 5.
+q thrust mdot 4 1 4 ve 3 2 0 0. a 1 point 3 2 5 e 6.
+q escape_speed m 8 e 2 8 r 5 1 0 0 0 0. a 4 point 5 7 6 e 6.
+q drag rho 1 point 2 v 1 9 c 1 point 2 area 5. a 1 3 0 0.
+q drag rho 1 0 2 5 v 1 9 c 0 point 5 area 0 point 1. a 9 2 5 1.
+q check gravity acts_at_distance yes. a yes.
+q weight m 3 7 point 6 on mars. a 1 4 0 point 2.
+q check tidal m 1 point 9 e 2 7 m 4 3 r 1 point 8 2 e 6 d 4 point 2 2 e 8 equals 0 point 2 6 4 1. a yes.
+q escape_speed m 9 point 6 e 2 3 r 2 point 4 e 8. a 7 3 0 point 7.
+q lift rho 1 0 2 5 v 2 8 c 1 point 5 area 1 0. a 6 point 0 2 7 e 6.
+q longer_range kinetic_friction tension. a same.
+q check spring_force k 2 7 5 x 0 point 4 2 equals 1 1 5 point 5. a yes.
+q longer_range tension magnetic. a magnetic.
+q forces acts_on mass_energy. a gravity.
+q thrust mdot 3 3 6 ve 4 2 0 0. a 1 point 4 1 1 e 6.
+q coulomb_force charge minus 8 e minus 9 charge 9 e minus 9 r 1. a minus 6 point 4 7 1 e minus 7.
+q surface_gravity m 6 point 5 e 2 4 r 8 point 6 e 6. a 5 point 8 6 5.
+q acceleration f 4 4 m 6 0. a 0 point 7 3 3 3.
+q buoyancy rho 1 0 0 0 vol 0 point 6 2. a 6 0 8 2.
+q buoyancy rho 1 point 2 vol 4 point 7. a 5 5 point 3 3.
+q check magnetic formula charge v b. a yes.
+q forces described_by lorentz. a magnetic.
+q acceleration f 8 4 0 m 7 4. a 1 1 point 3 5.
+q check metallic_bond attractive repulsive. a no.
+q acceleration f 8 8 m 9. a 9 point 7 7 8.
+q check gravity discovered 1 6 8 7. a yes.
+q escape_speed m 1 e 2 6 r 8 point 8 e 6. a 3 8 9 5 0.
+q longer_range gravity hydrogen_bond. a gravity.
+q buoyancy rho 1 0 2 5 vol 7 point 3. a 7 3 4 0 0.
+q friction mu 0 point 0 7 n 2 2. a 1 point 5 4.
+q thrust mdot 1 2 8 0 ve 4 4 0 0. a 5 point 6 3 2 e 6.
+q buoyancy rho 1 point 2 vol 0 point 9 5. a 1 1 point 1 8.
+q forces direction perpendicular_to_velocity_and_field. a magnetic.
+q longer_range electromagnetism strong. a electromagnetism.
+q coulomb_force charge 4 e minus 9 charge 4 e minus 6 r 0 point 5. a 5 point 7 5 2 e minus 4.
+q drag rho 1 v 6 c 0 point 3 area 0 point 2 5. a 1 point 3 5.
+q gravity_force m 1 point 9 e 2 7 m 4 6 0 0 0 r 7 point 1 9 e 7. a 1 point 1 2 8 e 6.
+q centripetal m 2 1 v 1 1 r 1 0. a 2 5 4 point 1.
+q check static_friction attractive repulsive. a no.
+q orbital_speed m 6 point 4 2 e 2 3 r 3 point 4 9 e 6. a 3 5 0 4.
+q orbital_speed m 1 point 9 e 2 7 r 7 point 1 9 e 7. a 4 2 0 0 0.
+q pressure f 4 7 area 2 2. a 2 point 1 3 6.
+q acceleration f 8 8 m 1 7. a 5 point 1 7 6.
+q longer_range gravity thrust. a gravity.
+q check escape_speed m 7 point 8 e 2 2 r 6 point 7 e 8 equals 1 2 4 7. a no.
+q check orbital_speed m 1 point 9 e 2 7 r 7 point 2 e 7 equals 6 2 9 5 5. a no.
+q forces described_by latimer. a hydrogen_bond.
+q escape_speed m 8 point 8 e 2 7 r 7 2 0 0 0 0. a 1 point 2 7 7 e 6.
+q pressure f 1 2 area 0 point 1. a 1 2 0.
+q weight m 8 2 on moon. a 1 3 2 point 8.
+q check van_der_waals unit newton. a yes.
+q centripetal m 3 v 1 4 r 5. a 1 1 7 point 6.
+q pressure f 1 0 0 0 area 6 point 7. a 1 4 9 point 3.
+q tidal m 7 point 1 e 2 4 m 9 2 r 1 point 8 e 7 d 9 point 2 e 9. a 2 point 0 1 5 e minus 6.
+q check weight m 9 7 on earth equals 9 5 1 point 6. a yes.
+q buoyancy rho 4 3 0 vol 0 point 5 1. a 2 1 5 1.
+q buoyancy rho 1 point 2 vol 0 point 7 6. a 8 point 9 4 7.
+q net_force f 4 8 f 6 5 0 same. a 6 9 8.
+q longer_range nuclear_binding radiation_pressure. a radiation_pressure.
+q weight m 1 2 point 9. a 1 2 6 point 5.
+q surface_gravity m 7 point 7 e 2 7 r 1 point 2 e 7. a 3 5 6 9.
+q forces examples light. a electromagnetism.
+q buoyancy rho 1 0 0 0 vol 0 point 0 3 4. a 3 3 3 point 5.
+q orbital_speed m 1 point 2 e 2 6 r 8 point 4 e 6. a 3 0 8 8 0.
+q drag rho 1 0 2 5 v 4 1 c 1 area 1. a 8 6 1 5 0 0.
+q check hydrogen_bond arises_from strong. a no.
+q check normal attractive repulsive. a yes.
+q pressure f 6 0 0 0 area 2 8. a 2 1 4 point 3.
+q longer_range magnetic nuclear_binding. a magnetic.
+q longer_range radiation_pressure electromagnetism. a same.
+q magnetic_force charge 3 v 7 3 b 1. a 2 1 9.
+q check nuclear_binding discovered 1 8 3 5. a no.
+q longer_range buoyancy drag. a same.
+q check buoyancy rho 1 0 0 0 vol 0 point 9 4 equals 9 2 2 point 1. a no.
+q longer_range radiation_pressure covalent_bond. a radiation_pressure.
+q gravity_force m 1 point 9 e 2 5 m 9 3 0 0 0 r 4 point 2 e 7. a 6 6 8 5 0.
+q weight m 3 1 point 5 on mars. a 1 1 7 point 5.
+q coulomb_force charge 4 e minus 6 charge 5 e minus 6 r 0 point 0 3. a 1 9 9 point 7.
+q longer_range lift surface_tension. a same.
+q check stronger electromagnetism weak equals electromagnetism. a yes.
+q magnetic_force charge 8 v 9 7 b 0 point 2. a 1 5 5 point 2.
+q centripetal m 1 7 v 2 r 5. a 1 3 point 6.
+q magnetic_force charge 0 point 0 0 8 v 4 8 0 0 b 0 point 1. a 3 point 8 4.
+q pressure f 8 4 area 0 point 8 8. a 9 5 point 4 5.
+q buoyancy rho 1 3 6 0 0 vol 4. a 5 3 3 6 6 4.
+q check longer_range thrust friction equals same. a yes.
+q longer_range thrust spring. a same.
+q forces described_by yukawa. a nuclear_binding.
+q longer_range ionic_bond gravity. a gravity.
+q acceleration f 8 1 0 m 7 4. a 1 0 point 9 5.
+q spring_force k 1 4 2 x 0 point 5 7. a 8 0 point 9 4.
+q drag rho 1 v 4 9 c 0 point 5 area 1. a 6 0 0 point 2.
+q check van_der_waals attractive attractive. a yes.
+q check spring_force k 7 9 0 x 0 point 3 equals 2 3 7. a yes.
+q longer_range hydrogen_bond strong. a hydrogen_bond.
+q check thrust mdot 4 2 6 ve 2 0 0 0 equals 8 5 2 0 0 0. a yes.
+q escape_speed m 8 point 8 e 2 3 r 1 point 1 e 6. a 1 0 3 3 0.
+q check friction attractive attractive. a no.
+q longer_range static_friction radiation_pressure. a radiation_pressure.
+q weight m 3 8 point 5 on moon. a 6 2 point 3 7.
+q check electrostatic kind role. a no.
+q check spring acts_at_distance no. a yes.
+q check gravity_force m 3 0 m 2 8 r 2 equals 1 point 7 5 2 e minus 8. a no.
+q longer_range metallic_bond gravity. a gravity.
+q check strong range_m infinite. a no.
+q pressure f 4 1 0 area 7. a 5 8 point 5 7.
+q check buoyancy range_m contact. a yes.
+q check centripetal unit newton. a yes.
+q lift rho 1 0 2 5 v 2 5 c 1 point 5 area 5 0. a 2 point 4 0 2 e 7.
+q pressure f 3 7 area 6 5. a 0 point 5 6 9 2.
+q thrust mdot 1 6 7 0 ve 2 9 0 0. a 4 point 8 4 3 e 6.
+q check forces examples graphite_layers equals van_der_waals. a yes.
+q net_force f 8 7 f 8 7 opposite. a 0.
+q longer_range lift static_friction. a same.
+q magnetic_force charge 5 e minus 6 v 3 3 b 0 point 5. a 8 point 2 5 e minus 5.
+q weight m 6 8 point 8 on moon. a 1 1 1 point 5.
+q spring_force k 3 3 x 0 point 7 5. a 2 4 point 7 5.
+q thrust mdot 2 9 4 ve 2 1 0 0. a 6 1 7 4 0 0.
+q check stronger gravity weak equals gravity. a no.
+q gravity_force m 4 7 m 7 1 r 2. a 5 point 5 6 8 e minus 8.
+q escape_speed m 6 point 1 e 2 4 r 4 9 0 0 0 0. a 4 0 7 6 0.
+q friction mu 0 point 1 6 n 1 2 0. a 1 9 point 2.
+q centripetal m 4 9 v 2 7 r 3. a 1 1 9 0 7.
+q orbital_speed m 1 point 0 2 e 2 6 r 2 point 4 8 e 7. a 1 6 5 7 0.
+q longer_range pressure_force lift. a same.
+q forces direction toward_centre. a centripetal.
+q longer_range spring static_friction. a same.
+q thrust mdot 2 0 7 ve 3 5 0 0. a 7 2 4 5 0 0.
+q check longer_range electromagnetism ionic_bond equals electromagnetism. a yes.
+q check magnetic_force charge 4 v 2 b 0 point 2 equals 1 point 6. a yes.
+q net_force f 6 2 f 4 6 opposite. a 1 6.
+q drag rho 1 v 1 0 c 0 point 1 area 1 0. a 5 0.
+q longer_range friction tension. a same.
+q check forces examples fridge_magnet equals magnetic static_friction. a no.
+q check escape_speed m 4 point 7 e 2 6 r 4 7 0 0 0 0 equals 3 6 5 3 0. a no.
+q orbital_speed m 6 point 6 e 2 4 r 6 point 6 e 8. a 8 1 6 point 9.
+q check tidal m 7 point 5 e 2 9 m 9 8 0 r 9 0 0 0 0 0 d 1 point 1 e 6 equals 6 point 6 3 4 e 9. a no.
+q check electromagnetism relative_strength 1 e minus 6. a no.
+q pressure f 9 1 area 0 point 8 7. a 1 0 4 point 6.
+q spring_force k 3 1 0 x 0 point 4 3. a 1 3 3 point 3.
+q thrust mdot 4 8 0 0 ve 5 0 0. a 2 point 4 e 6.
+q tidal m 1 point 9 e 2 7 m 7 4 r 1 point 8 2 e 6 d 4 point 2 2 e 8. a 0 point 4 5 4 5.
+q orbital_speed m 5 point 9 7 e 2 4 r 8 point 3 7 e 6. a 6 8 9 9.
+q friction mu 0 point 3 9 n 1 7 5. a 6 8 point 2 5.
+q acceleration f 3 1 m 8 1. a 0 point 3 8 2 7.
+q friction mu 0 point 6 7 n 1 8 0. a 1 2 0 point 6.
+q net_force f 4 5 f 2 8 same. a 7 3.
+q forces examples fridge_magnet. a magnetic.
+q weight m 9 1 on mars. a 3 3 9 point 4.
+q longer_range surface_tension pressure_force. a same.
+q escape_speed m 6 point 2 e 2 3 r 5 6 0 0 0 0. a 1 2 1 6 0.
+q forces kind role. a centripetal.
+q check electromagnetism described_by maxwell faraday. a yes.
+q check net_force f 4 7 f 8 0 opposite equals 3 3. a yes.
+q magnetic_force charge 6 v 8 7 0 b 0 point 1. a 5 2 2.
+q net_force f 2 0 0 f 3 7 same. a 2 3 7.
+q magnetic_force charge 6 v 6 1 0 0 b 2. a 7 3 2 0 0.
+q acceleration f 5 4 0 m 2 5. a 2 1 point 6.
+q gravity_force m 9 m 5 6 r 5. a 1 point 3 4 5 e minus 9.
+q lift rho 1 0 2 5 v 6 6 c 1 area 1 0 0. a 2 point 2 3 2 e 8.
+q friction mu 0 point 3 9 n 8 1 0. a 3 1 5 point 9.
+q check magnetic_force charge 0 point 0 0 9 v 9 4 b 0 point 0 1 equals 0 point 0 0 8 4 6. a yes.
+q check weight acts_at_distance no. a no.
+q escape_speed m 5 point 9 7 e 2 4 r 6 point 6 7 e 6. a 1 0 9 3 0.
+q longer_range kinetic_friction normal. a same.
+q friction mu 0 point 4 6 n 8 0. a 3 6 point 8.
+q pressure f 8 0 0 area 5 0. a 1 6.
+q check centripetal m 2 3 v 3 0 r 2 0 equals 9 3 1 point 5. a no.
+q orbital_speed m 4 point 2 e 2 3 r 3 point 3 e 6. a 2 9 1 4.
+q net_force f 6 0 0 f 5 8 opposite. a 5 4 2.
+q friction mu 0 point 7 8 n 8 9. a 6 9 point 4 2.
+q weight m 7 3 on jupiter. a 1 8 1 0.
+q check orbital_speed m 5 e 2 6 r 2 point 3 e 8 equals 1 2 0 5 0. a yes.
+q longer_range thrust weak. a thrust.
+q magnetic_force charge 0 point 0 0 5 v 8 3 b 0 point 0 1. a 0 point 0 0 4 1 5.
+q check longer_range gravity static_friction equals static_friction. a no.
+q check surface_tension unit newton. a yes.
+q longer_range friction buoyancy. a same.
+q forces acts_on bodies_in_rotating_frames. a centrifugal.
+q drag rho 1 0 0 0 v 3 2 c 0 point 5 area 2. a 5 1 2 0 0 0.
+q longer_range drag normal. a same.
+q weight m 8 5 2. a 8 3 5 8.
+q pressure f 9 0 area 0 point 3 9. a 2 3 0 point 8.
+q forces acts_on dust. a radiation_pressure.
+q escape_speed m 7 point 7 e 2 6 r 8 9 0 0 0 0. a 3 3 9 8 0 0.
+q thrust mdot 4 7 8 ve 4 4 0 0. a 2 point 1 0 3 e 6.
+q longer_range lift nuclear_binding. a lift.
+q buoyancy rho 1 3 6 0 0 vol 8 point 1. a 1 point 0 8 1 e 6.
+q weight m 9 8 6. a 9 6 7 3.
+q longer_range nuclear_binding metallic_bond. a metallic_bond.
+q longer_range covalent_bond strong. a covalent_bond.
+q drag rho 1 0 2 5 v 5 1 c 0 point 3 area 2. a 7 9 9 8 0 0.
+q tidal m 7 point 3 5 e 2 2 m 5 3 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 5 point 8 5 e minus 5.
+q friction mu 0 point 5 6 n 4 1 0. a 2 2 9 point 6.
+q longer_range surface_tension nuclear_binding. a surface_tension.
+q thrust mdot 9 1 ve 2 9 0 0. a 2 6 3 9 0 0.
+q coulomb_force charge 6 e minus 9 charge 3 e minus 6 r 0 point 1 5. a 0 point 0 0 7 1 9.
+q net_force f 3 4 f 4 3 opposite. a 9.
+q magnetic_force charge 5 v 9 3 0 0 b 0 point 5. a 2 3 2 5 0.
+q check electromagnetism attractive neither. a no.
+q check weak acts_at_distance no. a no.
+q longer_range electrostatic lift. a electrostatic.
+q spring_force k 1 8 2 0 x 0 point 5 8. a 1 0 5 6.
+q longer_range electromagnetism tension. a electromagnetism.
+q spring_force k 1 1 6 0 x 0 point 7. a 8 1 2.
+q longer_range nuclear_binding kinetic_friction. a kinetic_friction.
+q check buoyancy formula rho g vol. a yes.
+q check surface_gravity m 8 point 6 8 e 2 5 r 2 point 5 4 e 7 equals 4 point 4 8 9. a no.
+q friction mu 0 point 8 4 n 8 6. a 7 2 point 2 4.
+q check capillary discovered 1 6 6 8. a no.
+q longer_range buoyancy nuclear_binding. a buoyancy.
+q check pressure f 1 0 0 area 6 3 equals 1 point 5 8 7. a yes.
+q longer_range ionic_bond strong. a ionic_bond.
+q tidal m 1 point 9 e 2 7 m 7 4 0 r 1 point 8 2 e 6 d 4 point 2 2 e 8. a 4 point 5 4 5.
+q friction mu 0 point 7 9 n 5 1. a 4 0 point 2 9.
+q longer_range surface_tension magnetic. a magnetic.
+q acceleration f 4 2 m 1 5. a 2 point 8.
+q pressure f 5 6 area 6 9. a 0 point 8 1 1 6.
+q gravity_force m 9 8 m 6 r 1. a 3 point 9 2 4 e minus 8.
+q centripetal m 2 4 v 2 r 2. a 4 8.
+q longer_range radiation_pressure weak. a radiation_pressure.
+q check friction mu 0 point 9 5 n 4 7 0 equals 4 4 6 5. a no.
+q gravity_force m 5 0 0 m 7 1 r 3. a 2 point 6 3 3 e minus 7.
+q centripetal m 2 0 v 1 9 r 0 point 5. a 1 4 4 4 0.
+q net_force f 3 0 0 f 3 0 opposite. a 2 7 0.
+q escape_speed m 1 point 8 e 2 4 r 3 point 9 e 8. a 7 8 4 point 9.
+q check weak attractive neither. a yes.
+q centripetal m 1 8 v 2 6 r 5. a 2 4 3 4.
+q check drag formula big_g m_1 m_2 over r squared. a no.
+q check thrust unit newton. a yes.
+q escape_speed m 5 point 9 7 e 2 4 r 1 point 6 3 7 e 7. a 6 9 7 7.
+q check electrostatic arises_from gravity. a no.
+q thrust mdot 3 4 1 ve 3 0 0. a 1 0 2 3 0 0.
+q check forces examples car_turning equals centripetal. a yes.
+q thrust mdot 2 7 5 ve 4 5 0 0. a 1 point 2 3 8 e 6.
+q check capillary formula 2 pi r gamma cos theta. a yes.
+q net_force f 6 6 f 5 opposite. a 6 1.
+q check normal arises_from strong. a no.
+q gravity_force m 3 point 3 e 2 3 m 2 9 0 0 0 r 2 point 5 4 e 6. a 9 9 0 0 0.
+q lift rho 1 v 7 2 c 1 area 2 0. a 5 1 8 4 0.
+q surface_gravity m 6 point 4 e 2 6 r 9 point 4 e 6. a 4 8 3 point 4.
+q check forces examples moon_orbit equals gravity. a no.
+q longer_range lift pressure_force. a same.
+q net_force f 1 2 0 f 8 0 same. a 2 0 0.
+q friction mu 0 point 5 5 n 6 1. a 3 3 point 5 5.
+q acceleration f 9 7 0 m 8 9. a 1 0 point 9.
+q centripetal m 3 1 v 1 5 r 1. a 6 9 7 5.
+q magnetic_force charge 9 e minus 6 v 5 5 b 1. a 4 point 9 5 e minus 4.
+q check thrust described_by newton tsiolkovsky. a yes.
+q spring_force k 7 9 x 0 point 8 7. a 6 8 point 7 3.
+q drag rho 1 0 2 5 v 1 c 0 point 1 area 1 0. a 5 1 2 point 5.
+q buoyancy rho 1 0 0 0 vol 0 point 4. a 3 9 2 4.
+q friction mu 0 point 3 3 n 2 9 5. a 9 7 point 3 5.
+q tidal m 1 point 9 9 e 3 0 m 6 0 0 0 r 6 point 3 7 e 6 d 1 point 5 e 1 1. a 0 point 0 0 3 0 0 8.
+q check forces direction along_line_of_charges equals electrostatic. a yes.
+q thrust mdot 2 2 0 ve 4 5 0 0. a 9 9 0 0 0 0.
+q buoyancy rho 1 0 0 0 vol 5 point 4. a 5 2 9 7 4.
+q gravity_force m 2 4 m 8 r 0 point 5. a 5 point 1 2 6 e minus 8.
+q spring_force k 4 0 0 x 0 point 8 9. a 3 5 6.
+q check buoyancy rho 1 3 6 0 0 vol 0 point 0 4 1 equals 4 3 7 6. a no.
+q tidal m 4 point 7 e 2 2 m 2 7 r 8 point 8 e 6 d 4 point 2 e 7. a 0 point 0 2 0 1 2.
+q net_force f 2 0 f 4 5 opposite. a 2 5.
+q check ionic_bond unit newton. a yes.
+q thrust mdot 8 9 ve 2 1 0 0. a 1 8 6 9 0 0.
+q longer_range drag buoyancy. a same.
+q thrust mdot 3 4 9 ve 3 6 0 0. a 1 point 2 5 6 e 6.
+q gravity_force m 6 point 4 e 2 9 m 9 5 0 0 r 5 point 1 e 8. a 1 point 5 6 e 6.
+q longer_range capillary gravity. a gravity.
+q pressure f 4 4 0 0 area 7 6. a 5 7 point 8 9.
+q check van_der_waals kind inertial. a no.
+q drag rho 1 v 1 3 c 0 point 5 area 1. a 4 2 point 2 5.
+q check tidal arises_from gravity. a yes.
+q forces examples guitar_string. a tension.
+q weight m 7 2 point 5 on earth. a 7 1 1 point 2.
+q orbital_speed m 8 point 6 8 e 2 5 r 6 point 1 2 e 7. a 9 7 2 9.
+q centripetal m 6 v 8 r 2 point 5. a 1 5 3 point 6.
+q longer_range kinetic_friction electrostatic. a electrostatic.
+q surface_gravity m 9 point 2 e 2 6 r 8 3 0 0 0 0. a 8 9 1 3 0.
+q friction mu 0 point 4 3 n 2 6. a 1 1 point 1 8.
+q orbital_speed m 4 point 6 e 3 0 r 7 7 0 0 0 0. a 1 point 9 9 7 e 7.
+q surface_gravity m 4 point 4 e 2 2 r 2 point 5 e 7. a 0 point 0 0 4 6 9 8.
+q check pressure f 8 0 area 0 point 0 1 equals 8 0 0 0. a yes.
+q escape_speed m 9 point 6 e 2 8 r 5 7 0 0 0 0. a 4 point 7 4 1 e 6.
+q weight m 1 4 2 on moon. a 2 3 0.
+q net_force f 4 7 f 8 0 same. a 1 2 7.
+q check net_force f 5 5 f 7 0 opposite equals 1 5. a yes.
+q check drag rho 1 0 2 5 v 2 3 c 0 point 2 5 area 2 equals 1 2 2 0 4 0. a no.
+q check drag rho 1 v 1 5 c 1 area 0 point 0 1 equals 2 point 2 5. a no.
+q gravity_force m 4 1 0 0 m 4 7 0 0 r 2. a 3 point 2 1 5 e minus 4.
+q acceleration f 7 2 m 2 3. a 3 point 1 3.
+q weight m 4 2 5. a 4 1 6 9.
+q buoyancy rho 1 point 2 vol 1. a 1 1 point 7 7.
+q gravity_force m 9 0 m 4 1 0 r 0 point 5. a 9 point 8 5 1 e minus 6.
+q pressure f 4 6 area 6 2. a 0 point 7 4 1 9.
+q acceleration f 5 m 6 1. a 0 point 0 8 1 9 7.
+q orbital_speed m 1 point 9 9 e 3 0 r 6 point 9 6 e 8. a 4 3 6 8 0 0.
+q centripetal m 3 6 v 1 0 r 4. a 9 0 0.
+q check centripetal m 4 v 9 r 3 equals 1 0 8. a yes.
+q buoyancy rho 1 point 2 vol 8 point 4. a 9 8 point 8 8.
+q longer_range thrust buoyancy. a same.
+q check lift rho 1 point 2 v 6 1 c 0 point 8 area 2 equals 3 5 7 2. a yes.
+q friction mu 0 point 0 2 n 4 8. a 0 point 9 6.
+q weight m 1 9 5 on moon. a 3 1 5 point 9.
+q orbital_speed m 8 point 1 e 2 9 r 6 point 9 e 6. a 2 point 7 9 9 e 6.
+q acceleration f 6 3 m 5 4. a 1 point 1 6 7.
+q longer_range weak pressure_force. a pressure_force.
+q drag rho 1 0 2 5 v 2 2 c 1 area 2. a 4 9 6 1 0 0.
+q acceleration f 9 7 m 6 0. a 1 point 6 1 7.
+q coulomb_force charge 5 e minus 6 charge 9 e minus 6 r 1 0. a 0 point 0 0 4 0 4 5.
+q check spring kind role. a no.
+q thrust mdot 1 3 4 ve 7 0 0. a 9 3 8 0 0.
+q magnetic_force charge 4 e minus 6 v 7 3 0 b 2. a 0 point 0 0 5 8 4.
+q check coulomb_force charge 3 e minus 6 charge 1 e minus 6 r 1 equals 0 point 0 1 3 4 8. a no.
+q orbital_speed m 8 point 6 8 e 2 5 r 2 point 5 7 e 7. a 1 5 0 1 0.
+q longer_range covalent_bond weak. a covalent_bond.
+q friction mu 0 point 8 4 n 1 9. a 1 5 point 9 6.
+q check forces acts_on bodies_in_rotating_frames equals centrifugal tidal. a no.
+q net_force f 4 8 f 5 7 0 same. a 6 1 8.
+q check escape_speed m 1 point 7 e 2 3 r 8 point 1 e 8 equals 2 5 1 point 1. a no.
+q magnetic_force charge 0 point 0 0 3 v 8 8 0 0 b 2. a 5 2 point 8.
+q forces carrier photon. a electromagnetism.
+q lift rho 1 point 2 v 1 9 c 1 area 5. a 1 0 8 3.
+q check spring_force k 4 8 5 x 0 point 6 equals 2 9 1. a yes.
+q check covalent_bond holds_together nuclei. a no.
+q tidal m 7 point 3 5 e 2 2 m 5 0 0 0 0 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 0 point 0 5 5 1 8.
+q check spring_force k 2 9 5 x 0 point 0 6 equals 1 7 point 7. a yes.
+q tidal m 3 point 8 e 2 8 m 6 2 r 9 point 2 e 6 d 7 point 4 e 9. a 0 point 0 0 7 1 4.
+q check lift attractive neither. a yes.
+q centripetal m 4 v 1 7 r 5. a 2 3 1 point 2.
+q magnetic_force charge 0 point 0 0 1 v 2 2 b 0 point 0 5. a 0 point 0 0 1 1.
+q pressure f 6 5 0 0 area 0 point 6 6. a 9 8 4 8.
+q check van_der_waals range_m 1 e minus 9. a yes.
+q centripetal m 2 2 v 8 r 0 point 5. a 2 8 1 6.
+q check nuclear_binding arises_from gravity electromagnetism. a no.
+q check buoyancy unit newton. a yes.
+q longer_range drag surface_tension. a same.
+q escape_speed m 5 point 6 8 e 2 6 r 5 point 9 2 e 7. a 3 5 7 9 0.
+q check longer_range capillary gravity equals capillary. a no.
+q buoyancy rho 1 point 2 vol 6 point 8. a 8 0 point 0 5.
+q surface_gravity m 9 point 5 e 2 8 r 4 point 9 e 7. a 2 6 4 1.
+q check acceleration f 3 2 m 3 1 equals 0 point 9 2 8 8. a no.
+q forces examples raindrop. a surface_tension.
+q longer_range thrust electrostatic. a electrostatic.
+q check forces described_by latimer equals hydrogen_bond. a yes.
+q longer_range friction weak. a friction.
+q acceleration f 2 4 0 m 4. a 6 0.
+q longer_range ionic_bond electrostatic. a electrostatic.
+q forces holds_together diamond. a covalent_bond.
+q magnetic_force charge 0 point 0 0 9 v 2 9 b 0 point 1. a 0 point 0 2 6 1.
+q longer_range spring gravity. a gravity.
+q lift rho 1 0 2 5 v 9 7 c 0 point 8 area 2. a 7 point 7 1 5 e 6.
+q thrust mdot 1 7 ve 9 0 0. a 1 5 3 0 0.
+q check orbital_speed m 9 point 6 e 2 6 r 7 point 7 e 6 equals 1 3 6 8 3 0. a no.
+q drag rho 1 0 0 0 v 5 7 c 1 area 1. a 1 point 6 2 4 e 6.
+q check spring_force k 1 9 2 0 x 0 point 5 2 equals 9 9 8 point 4. a yes.
+q forces holds_together metals. a metallic_bond.
+q check centrifugal kind effective. a no.
+q forces acts_on fluids. a pressure_force.
+q buoyancy rho 1 point 2 vol 0 point 8. a 9 point 4 1 8.
+q lift rho 1 v 3 6 c 0 point 3 area 1. a 1 9 4 point 4.
+q pressure f 5 area 0 point 1 1. a 4 5 point 4 5.
+q check coulomb_force charge 5 e minus 6 charge 7 e minus 6 r 0 point 1 5 equals 1 3 point 9 8. a yes.
+q centripetal m 4 9 v 3 0 r 5. a 8 8 2 0.
+q check surface_tension formula 2 big_g m_1 m_2 r over d cubed. a no.
+q longer_range lift electrostatic. a electrostatic.
+q check metallic_bond discovered 1 9 0 0. a yes.
+q check tidal m 5 point 9 7 e 2 4 m 9 5 0 0 0 r 1 point 7 4 e 6 d 3 point 8 4 e 8 equals 4 point 6 5 2. a no.
+q drag rho 1 0 2 5 v 7 c 1 point 2 area 0 point 5. a 1 5 0 7 0.
+q centripetal m 4 2 v 1 7 r 5. a 2 4 2 8.
+q gravity_force m 8 5 m 1 7 r 2. a 2 point 4 1 1 e minus 8.
+q pressure f 2 0 area 8 1. a 0 point 2 4 6 9.
+q pressure f 4 9 0 0 area 8 9. a 5 5 point 0 6.
+q acceleration f 2 2 m 6 1. a 0 point 3 6 0 7.
+q buoyancy rho 1 point 2 vol 0 point 7 1. a 8 point 3 5 8.
+q pressure f 4 0 0 area 4 point 6. a 8 6 point 9 6.
+q friction mu 0 point 7 2 n 1 6. a 1 1 point 5 2.
+q pressure f 5 0 0 0 area 8 point 3. a 6 0 2 point 4.
+q longer_range static_friction buoyancy. a same.
+q lift rho 1 0 0 0 v 6 6 c 0 point 2 area 1 0 0. a 4 point 3 5 6 e 7.
+q check kinetic_friction described_by gell_mann. a no.
+q check drag rho 1 v 3 4 c 0 point 3 area 2 equals 3 1 2 point 1. a no.
+q forces examples neutrino_scattering. a weak.
+q coulomb_force charge minus 2 e minus 6 charge 2 e minus 6 r 0 point 0 2. a minus 8 9 point 8 8.
+q tidal m 1 point 9 9 e 3 0 m 4 0 0 0 r 6 point 3 7 e 6 d 1 point 5 e 1 1. a 0 point 0 0 2 0 0 5.
+q longer_range strong tidal. a tidal.
+q longer_range strong van_der_waals. a van_der_waals.
+q check radiation_pressure unit newton. a yes.
+q forces acts_on liquids. a capillary.
+q longer_range thrust static_friction. a same.
+q tidal m 3 point 6 e 2 2 m 3 8 r 8 e 6 d 2 point 1 e 1 0. a 1 point 5 7 7 e minus 1 0.
+q gravity_force m 3 4 0 m 8 4 0 0 r 4. a 1 point 1 9 1 e minus 5.
+q escape_speed m 6 point 4 2 e 2 3 r 3 point 3 9 e 6. a 5 0 2 8.
+q check spring_force k 5 3 0 x 0 point 8 9 equals 4 7 1 point 7. a yes.
+q check surface_gravity m 1 point 9 9 e 3 0 r 6 point 9 6 e 8 equals 2 7 4 point 2. a yes.
+q check strong relative_strength 1. a yes.
+q check electrostatic acts_at_distance no. a no.
+q centripetal m 3 1 v 1 8 r 1 0. a 1 0 0 4.
+q check metallic_bond acts_at_distance yes. a yes.
+q longer_range normal friction. a same.
+q orbital_speed m 3 point 6 e 2 8 r 6 point 4 e 7. a 1 9 3 8 0 0.
+q check electrostatic formula m g. a no.
+q forces examples water_molecule. a covalent_bond.
+q longer_range radiation_pressure gravity. a same.
+q escape_speed m 1 point 9 e 2 7 r 1 point 0 7 3 e 8. a 4 8 6 2 0.
+q surface_gravity m 7 point 7 e 2 4 r 6 8 0 0 0 0. a 1 1 1 1.
+q tidal m 3 point 8 e 2 7 m 4 9 r 3 point 3 e 6 d 8 point 2 e 8. a 0 point 1 4 8 8.
+q buoyancy rho 1 0 0 0 vol 6 point 4. a 6 2 7 8 4.
+q lift rho 1 point 2 v 7 c 1 area 1 0. a 2 9 4.
+q magnetic_force charge 0 point 0 0 1 v 3 9 0 0 b 1. a 3 point 9.
+q buoyancy rho 1 3 6 0 0 vol 0 point 0 2 2. a 2 9 3 5.
+q spring_force k 6 9 0 x 0 point 5 2. a 3 5 8 point 8.
+q net_force f 7 9 f 9 2 opposite. a 1 3.
+q longer_range magnetic thrust. a magnetic.
+q centripetal m 3 9 v 1 2 r 0 point 5. a 1 1 2 3 2.
+q longer_range buoyancy pressure_force. a same.
+q lift rho 1 0 0 0 v 5 5 c 0 point 3 area 1 0. a 4 point 5 3 8 e 6.
+q check drag rho 1 v 4 6 c 0 point 5 area 0 point 5 equals 2 3 8 point 1. a no.
+q magnetic_force charge 4 e minus 6 v 8 3 0 b 1. a 0 point 0 0 3 3 2.
+q check forces acts_on liquids equals capillary drag. a no.
+q orbital_speed m 4 point 7 e 2 3 r 1 point 9 e 6. a 4 0 6 3.
+q pressure f 9 7 0 0 area 6 point 4. a 1 5 1 6.
+q check static_friction described_by amontons coulomb. a yes.
+q longer_range electromagnetism static_friction. a electromagnetism.
+q friction mu 0 point 1 8 n 2 4 0. a 4 3 point 2.
+q coulomb_force charge 3 e minus 6 charge 3 e minus 6 r 1. a 0 point 0 8 0 8 9.
+q lift rho 1 point 2 v 9 7 c 0 point 8 area 5 0. a 2 2 5 8 1 6.
+q longer_range static_friction magnetic. a magnetic.
+q buoyancy rho 1 point 2 vol 0 point 0 2 4. a 0 point 2 8 2 5.
+q longer_range electromagnetism lift. a electromagnetism.
+q check forces range_m contact equals friction static_friction kinetic_friction normal tension drag lift buoyancy spring pressure_force surface_tension capillary thrust. a yes.
+q forces acts_on cables. a tension.
+q lift rho 1 point 2 v 7 c 0 point 3 area 5. a 4 4 point 1.
+q longer_range static_friction lift. a same.
+q drag rho 1 point 2 v 1 c 0 point 5 area 0 point 1. a 0 point 0 3.
+q thrust mdot 2 4 2 ve 5 0 0. a 1 2 1 0 0 0.
+q check capillary acts_at_distance yes. a no.
+q spring_force k 1 3 0 x 0 point 6 9. a 8 9 point 7.
+q check forces examples balloon_on_hair equals electrostatic hydrogen_bond. a no.
+q escape_speed m 8 point 2 e 2 3 r 8 5 0 0 0 0. a 1 1 3 5 0.
+q coulomb_force charge 3 e minus 6 charge 4 e minus 6 r 0 point 1 5. a 4 point 7 9 4.
+q thrust mdot 2 0 4 ve 2 9 0 0. a 5 9 1 6 0 0.
+q tidal m 7 point 3 5 e 2 2 m 6 5 0 0 0 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 0 point 0 7 1 7 4.
+q longer_range drag capillary. a same.
+q escape_speed m 8 point 6 8 e 2 5 r 2 point 5 5 e 7. a 2 1 3 2 0.
+q acceleration f 6 0 m 1. a 6 0.
+q longer_range electrostatic capillary. a electrostatic.
+q drag rho 1 v 3 2 c 1 point 2 area 1. a 6 1 4 point 4.
+q lift rho 1 0 0 0 v 8 4 c 0 point 8 area 0 point 5. a 1 point 4 1 1 e 6.
+q check escape_speed m 1 point 1 e 2 8 r 1 1 0 0 0 0 equals 2 point 9 2 2 e 6. a no.
+q magnetic_force charge 9 v 4 3 b 0 point 0 1. a 3 point 8 7.
+q weight m 1 7 on mars. a 6 3 point 4 1.
+q coulomb_force charge 7 e minus 6 charge minus 5 e minus 6 r 0 point 0 5. a minus 1 2 5 point 8.
+q friction mu 0 point 1 8 n 7 5 0. a 1 3 5.
+q longer_range metallic_bond radiation_pressure. a radiation_pressure.
+q check lift rho 1 point 2 v 1 1 c 1 point 2 area 2 equals 1 7 4 point 2. a yes.
+q weight m 3 0 point 6. a 3 0 0 point 2.
+q gravity_force m 4 point 8 e 2 6 m 4 0 r 4 point 2 e 8. a 7 point 2 6 4.
+q check covalent_bond described_by gell_mann. a no.
+q spring_force k 1 9 1 0 x 0 point 0 4. a 7 6 point 4.
+q longer_range spring drag. a same.
+q check tension range_m contact. a yes.
+q centripetal m 7 v 1 4 r 2 point 5. a 5 4 8 point 8.
+q check centripetal m 7 v 8 r 2 equals 1 7 9 point 2. a no.
+q check thrust mdot 2 0 2 ve 2 0 0 equals 4 0 4 0 0. a yes.
+q check lift rho 1 0 0 0 v 3 2 c 1 area 0 point 5 equals 2 point 5 6 e 6. a no.
+q friction mu 0 point 3 1 n 3 3 0. a 1 0 2 point 3.
+q buoyancy rho 9 9 0 vol 0 point 8 2. a 7 9 6 4.
+q check longer_range weak gravity equals gravity. a yes.
+q escape_speed m 7 point 3 5 e 2 2 r 1 point 1 7 4 e 7. a 9 1 4 point 2.
+q thrust mdot 3 ve 1 3 0 0. a 3 9 0 0.
+q tidal m 9 point 5 e 2 6 m 3 7 r 3 0 0 0 0 0 d 4 point 5 e 7. a 1 5 point 4 5.
+q centripetal m 1 v 9 r 1 0 0. a 0 point 8 1.
+q check ionic_bond attractive attractive. a yes.
+q acceleration f 1 4 0 m 6 1. a 2 point 2 9 5.
+q orbital_speed m 2 point 5 e 2 9 r 2 point 5 e 8. a 2 5 8 3 0 0.
+q acceleration f 2 m 7 4. a 0 point 0 2 7 0 3.
+q buoyancy rho 1 3 6 0 0 vol 0 point 0 9 7. a 1 2 9 4 0.
+q acceleration f 1 0 0 m 1 6. a 6 point 2 5.
+q net_force f 4 0 f 1 9 opposite. a 2 1.
+q coulomb_force charge 5 e minus 9 charge 4 e minus 6 r 0 point 0 1. a 1 point 7 9 8.
+q thrust mdot 3 6 3 ve 9 0 0. a 3 2 6 7 0 0.
+q weight m 9 2 3 on earth. a 9 0 5 5.
+q spring_force k 1 6 3 x 0 point 2 2. a 3 5 point 8 6.
+q net_force f 3 7 f 3 4 0 opposite. a 3 0 3.
+q longer_range weak thrust. a thrust.
+q forces examples soap_bubble. a surface_tension.
+q check ionic_bond range_m 1 point 4 1 e minus 1 5. a no.
+q coulomb_force charge 2 e minus 6 charge minus 3 e minus 6 r 1. a minus 0 point 0 5 3 9 3.
+q check forces acts_on atoms equals van_der_waals covalent_bond. a yes.
+q surface_gravity m 3 point 1 e 2 3 r 2 point 3 e 8. a 3 point 9 1 1 e minus 4.
+q spring_force k 1 2 7 x 0 point 9 1. a 1 1 5 point 6.
+q lift rho 1 0 2 5 v 1 1 c 0 point 3 area 1 0 0. a 1 point 8 6 e 6.
+q drag rho 1 point 2 v 3 4 c 0 point 1 area 0 point 0 1. a 0 point 6 9 3 6.
+q centripetal m 4 7 v 1 5 r 2. a 5 2 8 8.
+q check longer_range normal capillary equals same. a yes.
+q check pressure f 8 8 area 4 point 5 equals 1 9 point 5 6. a yes.
+q check metallic_bond unit pascal. a no.
+q buoyancy rho 1 0 0 0 vol 0 point 0 5 6. a 5 4 9 point 4.
+q centripetal m 2 4 v 2 3 r 1 0. a 1 2 7 0.
+q longer_range normal capillary. a same.
+q net_force f 1 6 0 f 6 3 0 same. a 7 9 0.
+q forces examples trade_winds. a coriolis.
+q weight m 8 4 on moon. a 1 3 6 point 1.
+q forces examples plant_xylem. a capillary.
+q spring_force k 3 0 5 x 0 point 1 1. a 3 3 point 5 5.
+q weight m 3 3 point 5 on mars. a 1 2 5.
+q check electromagnetism holds_together atoms molecules. a yes.
+q magnetic_force charge 6 v 4 3 b 0 point 0 1. a 2 point 5 8.
+q drag rho 1 0 0 0 v 3 9 c 0 point 5 area 1. a 3 8 0 2 5 0.
+q gravity_force m 5 point 8 e 2 4 m 9 7 r 4 point 5 e 7. a 1 8 point 5 4.
+q escape_speed m 2 point 3 e 2 8 r 1 point 5 e 6. a 1 point 4 3 1 e 6.
+q net_force f 9 8 f 7 1 opposite. a 2 7.
+q forces described_by einstein. a gravity.
+q forces examples balloon. a pressure_force.
+q check nuclear_binding unit newton. a yes.
+q centripetal m 4 5 v 1 6 r 1 point 5. a 7 6 8 0.
+q coulomb_force charge 6 e minus 6 charge 7 e minus 6 r 0 point 0 5. a 1 5 1.
+q lift rho 1 v 7 1 c 0 point 8 area 1. a 2 0 1 6.
+q escape_speed m 8 point 6 8 e 2 5 r 2 point 6 4 e 7. a 2 0 9 5 0.
+q check electromagnetism discovered 1 9 1 5. a no.
+q check radiation_pressure kind effective. a yes.
+q surface_gravity m 8 point 6 8 e 2 5 r 2 point 5 4 e 7. a 8 point 9 7 9.
+q thrust mdot 3 3 ve 1 1 0 0. a 3 6 3 0 0.
+q longer_range drag pressure_force. a same.
+q thrust mdot 2 8 8 ve 2 8 0 0. a 8 0 6 4 0 0.
+q orbital_speed m 1 point 2 e 2 3 r 9 3 0 0 0 0. a 2 9 3 5.
+q longer_range surface_tension electrostatic. a electrostatic.
+q check centripetal m 1 2 v 2 7 r 2 point 5 equals 6 9 9 8. a no.
+q longer_range nuclear_binding weak. a nuclear_binding.
+q centripetal m 1 4 v 1 3 r 1 point 5. a 1 5 7 7.
+q spring_force k 1 9 4 0 x 0 point 7 5. a 1 4 5 5.
+q buoyancy rho 1 point 2 vol 0 point 7. a 8 point 2 4.
+q surface_gravity m 6 point 2 e 2 4 r 2 6 0 0 0 0. a 6 1 2 1.
+q orbital_speed m 8 point 6 e 2 6 r 9 9 0 0 0 0. a 2 4 0 8 0 0.
+q check coulomb_force charge 6 e minus 6 charge 4 e minus 6 r 5 equals 0 point 0 0 8 6 2 8. a yes.
+q coulomb_force charge 8 e minus 6 charge 8 e minus 6 r 0 point 2. a 1 4 point 3 8.
+q check weight m 1 4 4 on moon equals 2 3 3 point 3. a yes.
+q check magnetic_force charge 4 e minus 6 v 6 0 b 0 point 1 equals 2 point 6 4 e minus 5. a no.
+q check ionic_bond unit joule. a no.
+q lift rho 1 point 2 v 5 3 c 1 area 1 0 0. a 1 6 8 5 4 0.
+q centripetal m 2 7 v 1 9 r 3. a 3 2 4 9.
+q forces acts_on polar_molecules. a hydrogen_bond.
+q friction mu 0 point 5 1 n 3 0 0. a 1 5 3.
+q pressure f 5 7 area 1 7. a 3 point 3 5 3.
+q tidal m 3 point 5 e 2 7 m 8 8 0 r 7 6 0 0 0 0 d 7 point 9 e 6. a 6 3 3 7 0 0.
+q coulomb_force charge 3 e minus 6 charge 8 e minus 6 r 0 point 2. a 5 point 3 9 3.
+q acceleration f 8 7 m 5 9. a 1 point 4 7 5.
+q check capillary kind effective. a yes.
+q check weight m 0 point 5 equals 0 point 4 9 0 5. a no.
+q escape_speed m 6 point 4 2 e 2 3 r 1 point 3 3 9 e 7. a 2 5 3 0.
+q check drag attractive repulsive. a no.
+q check nuclear_binding acts_at_distance no. a no.
+q longer_range magnetic tidal. a same.
+q acceleration f 6 m 6 8. a 0 point 0 8 8 2 4.
+q magnetic_force charge 0 point 0 0 1 v 4 1 0 0 b 1. a 4 point 1.
+q pressure f 6 4 area 2 point 5. a 2 5 point 6.
+q check forces examples ocean_tides equals gravity tidal coriolis. a no.
+q check thrust mdot 2 1 9 ve 4 0 0 0 equals 8 7 6 0 0 0. a yes.
+q weight m 5 8 5. a 5 7 3 9.
+q acceleration f 8 5 m 9. a 9 point 4 4 4.
+q orbital_speed m 4 point 2 e 2 9 r 5 point 8 e 6. a 2 point 1 9 8 e 6.
+q forces carrier gluon. a strong.
+q check surface_gravity m 4 point 8 7 e 2 4 r 6 point 0 5 e 6 equals 1 7 point 7 6. a no.
+q forces acts_on electric_charge. a electromagnetism electrostatic.
+q friction mu 0 point 2 2 n 4 2. a 9 point 2 4.
+q drag rho 1 0 0 0 v 2 6 c 0 point 3 area 2. a 2 0 2 8 0 0.
+q check weight discovered 1 6 8 7. a yes.
+q coulomb_force charge 6 e minus 6 charge 1 e minus 6 r 1. a 0 point 0 5 3 9 3.
+q pressure f 5 7 area 5 8. a 0 point 9 8 2 8.
+q check weak kind effective. a no.
+q check forces direction between_nuclei equals covalent_bond van_der_waals. a no.
+q longer_range radiation_pressure lift. a radiation_pressure.
+q acceleration f 5 5 0 m 7 4. a 7 point 4 3 2.
+q escape_speed m 9 point 4 e 2 3 r 8 4 0 0 0 0. a 1 2 2 2 0.
+q longer_range electromagnetism normal. a electromagnetism.
+q spring_force k 1 4 4 x 0 point 5 2. a 7 4 point 8 8.
+q check magnetic arises_from electromagnetism. a yes.
+q spring_force k 1 4 0 x 0 point 2 1. a 2 9 point 4.
+q longer_range capillary electrostatic. a electrostatic.
+q lift rho 1 point 2 v 4 8 c 1 point 5 area 0 point 5. a 1 0 3 7.
+q longer_range radiation_pressure hydrogen_bond. a radiation_pressure.
+q magnetic_force charge 7 e minus 6 v 7 9 b 0 point 1. a 5 point 5 3 e minus 5.
+q tidal m 1 point 9 9 e 3 0 m 3 1 0 r 6 point 3 7 e 6 d 1 point 5 e 1 1. a 1 point 5 5 4 e minus 4.
+q check acceleration f 1 9 0 m 3 4 equals 5 point 5 8 8. a yes.
+q pressure f 1 0 0 area 1 7. a 5 point 8 8 2.
+q forces described_by pauling. a hydrogen_bond covalent_bond.
+q pressure f 2 2 0 area 1. a 2 2 0.
+q thrust mdot 3 2 0 0 ve 2 1 0 0. a 6 point 7 2 e 6.
+q magnetic_force charge 1 e minus 6 v 3 6 b 0 point 1. a 3 point 6 e minus 6.
+q orbital_speed m 1 point 9 e 2 8 r 7 point 4 e 8. a 4 1 4 0 0.
+q gravity_force m 5 point 9 7 e 2 4 m 9 9 r 8 point 3 7 e 6. a 5 6 3.
+q check escape_speed m 8 point 6 8 e 2 5 r 2 point 5 4 e 7 equals 2 1 3 6 0. a yes.
+q gravity_force m 1 2 0 0 m 2 6 0 0 r 1 point 5. a 9 point 2 5 5 e minus 5.
+q acceleration f 1 3 m 4 7. a 0 point 2 7 6 6.
+q pressure f 3 9 0 0 area 5 point 2. a 7 5 0.
+q longer_range electrostatic friction. a electrostatic.
+q escape_speed m 3 e 2 5 r 7 point 5 e 6. a 2 3 1 1 0.
+q gravity_force m 4 0 0 m 2 0 0 0 0 r 3. a 5 point 9 3 2 e minus 5.
+q check surface_gravity m 7 point 4 e 2 6 r 8 point 1 e 6 equals 1 1 2 9. a no.
+q longer_range kinetic_friction magnetic. a magnetic.
+q check acceleration f 8 2 0 m 3 1 equals 2 9 point 1. a no.
+q magnetic_force charge 4 v 1 1 0 b 0 point 0 5. a 2 2.
+q drag rho 1 0 2 5 v 5 0 c 0 point 1 area 0 point 0 1. a 1 2 8 1.
+q magnetic_force charge 7 e minus 6 v 6 2 0 b 1. a 0 point 0 0 4 3 4.
+q check friction formula mu n. a yes.
+q tidal m 7 point 4 e 2 8 m 5 2 r 9 1 0 0 0 0 d 8 point 6 e 7. a 7 3 4 point 8.
+q check longer_range surface_tension normal equals normal. a no.
+q coulomb_force charge 2 e minus 9 charge 7 e minus 6 r 1. a 1 point 2 5 8 e minus 4.
+q drag rho 1 v 2 1 c 1 point 2 area 2. a 5 2 9 point 2.
+q acceleration f 8 4 0 m 7 1. a 1 1 point 8 3.
+q longer_range spring friction. a same.
+q thrust mdot 2 5 ve 3 0 0. a 7 5 0 0.
+q forces direction perpendicular_to_flow. a lift.
+q friction mu 0 point 7 2 n 1 0 0. a 7 2.
+q check covalent_bond unit joule. a no.
+q tidal m 4 point 2 e 3 0 m 1 2 r 3 point 9 e 7 d 1 point 1 e 1 1. a 1 point 9 7 1 e minus 4.
+q longer_range normal gravity. a gravity.
+q longer_range kinetic_friction strong. a kinetic_friction.
+q friction mu 0 point 6 1 n 4 9 0. a 2 9 8 point 9.
+q buoyancy rho 9 0 vol 1 point 1. a 9 7 1 point 2.
+q tidal m 7 point 3 5 e 2 2 m 7 1 0 0 0 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 0 point 0 7 8 3 6.
+q check thrust arises_from strong. a no.
+q centripetal m 4 1 v 8 r 5. a 5 2 4 point 8.
+q longer_range normal tidal. a tidal.
+q check thrust mdot 4 3 4 0 ve 2 8 0 0 equals 1 point 2 1 5 e 7. a yes.
+q thrust mdot 1 9 9 0 ve 2 8 0 0. a 5 point 5 7 2 e 6.
+q acceleration f 3 1 0 m 7 2. a 4 point 3 0 6.
+q thrust mdot 1 4 6 ve 1 9 0 0. a 2 7 7 4 0 0.
+q check drag unit newton. a yes.
+q pressure f 1 1 area 9 point 8. a 1 point 1 2 2.
+q check acceleration f 2 m 3 5 equals 0 point 0 0 5 7 1 4. a no.
+q check longer_range buoyancy lift equals lift. a no.
+q friction mu 0 point 2 7 n 2 2. a 5 point 9 4.
+q weight m 2 4 6 on moon. a 3 9 8 point 5.
+q drag rho 1 point 2 v 5 6 c 0 point 5 area 2. a 1 8 8 2.
+q escape_speed m 1 point 0 2 e 2 6 r 2 point 5 1 e 7. a 2 3 2 9 0.
+q lift rho 1 0 2 5 v 4 c 0 point 3 area 5. a 1 2 3 0 0.
+q longer_range magnetic weak. a magnetic.
+q check gravity attractive attractive. a yes.
+q centripetal m 2 v 2 7 r 5. a 2 9 1 point 6.
+q check spring_force k 1 1 0 x 0 point 5 6 equals 6 1 point 6. a yes.
+q orbital_speed m 5 point 5 e 2 8 r 6 point 2 e 6. a 7 6 9 4 0 0.
+q forces described_by oersted. a magnetic.
+q lift rho 1 0 0 0 v 1 c 0 point 8 area 2 0. a 8 0 0 0.
+q longer_range electromagnetism radiation_pressure. a same.
+q pressure f 8 8 area 9 6. a 0 point 9 1 6 7.
+q spring_force k 1 3 4 0 x 0 point 5 4. a 7 2 3 point 6.
+q gravity_force m 4 0 m 9 9 r 1 point 5. a 1 point 1 7 5 e minus 7.
+q forces carrier w_boson. a weak.
+q drag rho 1 0 2 5 v 1 1 c 0 point 2 5 area 0 point 1. a 1 5 5 0.
+q orbital_speed m 8 point 1 e 2 2 r 2 point 7 e 6. a 1 4 1 5.
+q coulomb_force charge 1 e minus 6 charge 7 e minus 6 r 0 point 0 5. a 2 5 point 1 7.
+q drag rho 1 0 2 5 v 1 3 c 1 area 1. a 8 6 6 1 0.
+q longer_range weak hydrogen_bond. a hydrogen_bond.
+q check buoyancy unit pascal. a no.
+q drag rho 1 point 2 v 1 9 c 0 point 2 5 area 0 point 0 1. a 0 point 5 4 1 5.
+q friction mu 1 n 6 0. a 6 0.
+q friction mu 0 point 5 4 n 4. a 2 point 1 6.
+q check coulomb_force charge 1 e minus 6 charge 2 e minus 6 r 0 point 0 1 equals 1 7 9 point 8. a yes.
+q friction mu 0 point 2 8 n 5. a 1 point 4.
+q longer_range surface_tension normal. a same.
+q forces described_by rodebush. a hydrogen_bond.
+q weight m 2 5 point 8. a 2 5 3 point 1.
+q longer_range magnetic radiation_pressure. a same.
+q spring_force k 7 2 5 x 0 point 7 1. a 5 1 4 point 8.
+q gravity_force m 6 point 4 2 e 2 3 m 9 5 0 0 r 3 point 3 9 e 6. a 3 5 4 2 0.
+q magnetic_force charge 0 point 0 0 5 v 8 b 1. a 0 point 0 4.
+q lift rho 1 0 0 0 v 4 7 c 1 area 2. a 2 point 2 0 9 e 6.
+q check nuclear_binding kind inertial. a no.
+q forces described_by stokes. a drag.
+q tidal m 1 point 7 e 2 2 m 4 r 6 point 8 e 7 d 3 point 6 e 1 1. a 1 point 3 2 3 e minus 1 4.
+q check drag range_m contact. a yes.
+q check drag described_by fermi glashow weinberg salam. a no.
+q magnetic_force charge 9 e minus 6 v 4 5 0 0 b 0 point 1. a 0 point 0 0 4 0 5.
+q buoyancy rho 1 2 0 vol 0 point 3 4. a 4 0 0 point 2.
+q spring_force k 8 3 5 x 0 point 4 5. a 3 7 5 point 8.
+q check radiation_pressure arises_from electromagnetism. a yes.
+q magnetic_force charge 7 e minus 6 v 2 7 0 b 2. a 0 point 0 0 3 7 8.
+q longer_range static_friction drag. a same.
+q check spring_force k 5 5 0 x 0 point 9 8 equals 4 8 5 point 1. a no.
+q gravity_force m 1 6 0 0 0 m 4 7 0 0 r 0 point 5. a 0 point 0 2 0 0 8.
+q check gravity unit watt. a no.
+q orbital_speed m 7 point 3 e 2 4 r 8 point 6 e 6. a 7 5 2 7.
+q longer_range kinetic_friction nuclear_binding. a kinetic_friction.
+q check stronger weak gravity equals weak. a yes.
+q forces direction toward_molecule. a van_der_waals.
+q lift rho 1 0 0 0 v 4 c 0 point 3 area 5 0. a 1 2 0 0 0 0.
+q acceleration f 2 1 0 m 3 2. a 6 point 5 6 2.
+q longer_range ionic_bond magnetic. a magnetic.
+q weight m 5 4 9. a 5 3 8 6.
+q acceleration f 4 m 3. a 1 point 3 3 3.
+q thrust mdot 4 0 3 ve 4 3 0 0. a 1 point 7 3 3 e 6.
+q longer_range tidal static_friction. a tidal.
+q check forces examples water_strider equals surface_tension. a yes.
+q orbital_speed m 3 point 1 e 2 4 r 1 8 0 0 0 0. a 3 3 9 0 0.
+q check thrust range_m contact. a yes.
+q check thrust mdot 2 2 8 ve 2 6 0 0 equals 5 9 2 8 0 0. a yes.
+q surface_gravity m 9 point 8 e 2 2 r 4 5 0 0 0 0. a 3 2 point 3.
+q longer_range magnetic electrostatic. a same.
+q longer_range radiation_pressure thrust. a radiation_pressure.
+q pressure f 2 9 0 0 area 9. a 3 2 2 point 2.
+q orbital_speed m 1 point 9 9 e 3 0 r 7 point 0 1 e 8. a 4 3 5 3 0 0.
+q centripetal m 2 v 8 r 2 point 5. a 5 1 point 2.
+q check surface_gravity m 3 point 3 e 2 3 r 2 point 4 4 e 6 equals 0 point 3 6 9 9. a no.
+q acceleration f 3 m 4 7. a 0 point 0 6 3 8 3.
+q check drag rho 1 v 1 8 c 0 point 1 area 0 point 1 equals 1 point 2 9 6. a no.
+q forces described_by glashow. a weak.
+q check kinetic_friction described_by fermi glashow weinberg salam. a no.
+q acceleration f 3 8 m 2 5. a 1 point 5 2.
+q longer_range static_friction strong. a static_friction.
+q check tidal formula 2 big_g m_1 m_2 r over d cubed. a yes.
+q net_force f 8 6 0 f 1 0 opposite. a 8 5 0.
+q buoyancy rho 9 4 0 vol 6 point 8. a 6 2 7 1 0.
+q tidal m 2 point 7 e 2 7 m 7 9 0 0 0 r 3 point 8 e 6 d 4 point 4 e 7. a 1 point 2 7 e 6.
+q buoyancy rho 2 5 0 vol 0 point 0 0 6. a 1 4 point 7 1.
+q check friction attractive both. a no.
+q check pressure f 1 0 area 9 9 equals 0 point 1 0 1. a yes.
+q check tidal discovered 1 6 8 7. a yes.
+q forces examples tyre. a pressure_force.
+q orbital_speed m 1 point 9 e 2 7 r 7 point 2 e 7. a 4 1 9 7 0.
+q lift rho 1 0 0 0 v 3 1 c 1 point 5 area 5 0. a 3 point 6 0 4 e 7.
+q friction mu 0 point 6 4 n 6 9 0. a 4 4 1 point 6.
+q friction mu 0 point 0 6 n 3 8. a 2 point 2 8.
+q tidal m 1 point 7 e 2 8 m 9 2 r 2 point 5 e 7 d 6 point 1 e 1 1. a 2 point 2 9 9 e minus 8.
+q check spring_force k 1 6 2 x 0 point 5 equals 8 1 0. a no.
+q check normal range_m infinite. a no.
+q longer_range radiation_pressure pressure_force. a radiation_pressure.
+q check lift described_by bernoulli kutta joukowski. a yes.
+q gravity_force m 6 point 4 2 e 2 3 m 6 7 r 3 point 4 9 e 6. a 2 3 5 point 7.
+q magnetic_force charge 8 v 4 5 0 0 b 0 point 2. a 7 2 0 0.
+q forces holds_together water. a hydrogen_bond.
+q check van_der_waals described_by gell_mann. a no.
+q check friction described_by amontons coulomb. a yes.
+q thrust mdot 3 7 6 ve 2 9 0 0. a 1 point 0 9 e 6.
+q check escape_speed m 8 point 3 e 2 8 r 1 5 0 0 0 0 equals 8 point 5 9 4 e 6. a yes.
+q check drag rho 1 point 2 v 3 3 c 0 point 5 area 0 point 5 equals 1 6 3 point 3. a yes.
+q check lift rho 1 v 4 3 c 1 point 5 area 5 equals 6 9 3 point 4. a no.
+q check buoyancy rho 1 3 6 0 0 vol 0 point 0 3 4 equals 4 5 3 6. a yes.
+q check drag arises_from gravity. a no.
+q longer_range friction electromagnetism. a electromagnetism.
+q check coriolis formula 2 m omega v. a yes.
+q net_force f 6 6 0 f 5 8 same. a 7 1 8.
+q acceleration f 9 0 m 5 8. a 1 point 5 5 2.
+q thrust mdot 4 5 4 0 ve 2 5 0 0. a 1 point 1 3 5 e 7.
+q longer_range tidal surface_tension. a tidal.
+q check buoyancy discovered ancient. a yes.
+q check longer_range radiation_pressure pressure_force equals radiation_pressure. a yes.
+q longer_range pressure_force static_friction. a same.
+q longer_range van_der_waals strong. a van_der_waals.
+q centripetal m 1 5 v 3 r 0 point 5. a 2 7 0.
+q forces acts_on liquid_surfaces. a surface_tension.
+q check drag unit pascal. a no.
+q check capillary arises_from gravity. a no.
+q check pressure_force formula pressure area. a yes.
+q magnetic_force charge 0 point 0 0 7 v 6 2 b 0 point 0 1. a 0 point 0 0 4 3 4.
+q spring_force k 2 9 0 x 0 point 7 4. a 2 1 4 point 6.
+q coulomb_force charge 3 e minus 9 charge 3 e minus 9 r 0 point 0 3. a 8 point 9 8 8 e minus 5.
+q spring_force k 5 0 5 x 0 point 8 4. a 4 2 4 point 2.
+q lift rho 1 point 2 v 9 9 c 1 point 2 area 2 0. a 1 4 1 1 0 0.
+q longer_range gravity magnetic. a same.
+q escape_speed m 6 point 4 2 e 2 3 r 3 point 7 9 e 6. a 4 7 5 5.
+q net_force f 5 3 f 3 1 opposite. a 2 2.
+q thrust mdot 1 5 1 0 ve 2 9 0 0. a 4 point 3 7 9 e 6.
+q check longer_range van_der_waals nuclear_binding equals same. a no.
+q longer_range metallic_bond strong. a metallic_bond.
+q check coulomb_force charge 7 e minus 6 charge minus 9 e minus 6 r 0 point 0 2 equals minus 1 2 7 4. a no.
+q acceleration f 1 1 0 m 6 7. a 1 point 6 4 2.
+q surface_gravity m 8 point 6 e 3 0 r 7 point 6 e 7. a 9 9 3 7 0.
+q centripetal m 2 3 v 1 8 r 1 0. a 7 4 5 point 2.
+q forces examples compass. a magnetic.
+q check spring_force k 1 5 0 x 0 point 7 6 equals 1 1 4. a yes.
+q magnetic_force charge 1 e minus 6 v 5 7 b 2. a 1 point 1 4 e minus 4.
+q forces acts_on strings. a tension.
+q check tidal m 8 point 6 e 2 9 m 3 3 r 9 point 6 e 6 d 6 point 8 e 8 equals 5 7 point 8 5. a no.
+q check centripetal unit pascal. a no.
+q orbital_speed m 8 point 7 e 2 7 r 9 point 1 e 7. a 7 9 8 8 0.
+q gravity_force m 7 point 1 e 2 5 m 3 0 0 0 r 7 4 0 0 0 0. a 2 point 5 9 6 e 7.
+q centripetal m 1 9 v 2 2 r 4. a 2 2 9 9.
+q longer_range gravity normal. a gravity.
+q longer_range tidal drag. a tidal.
+q longer_range buoyancy surface_tension. a same.
+q escape_speed m 8 point 5 e 2 2 r 3 point 5 e 7. a 5 6 9 point 4.
+q acceleration f 1 4 m 5 8. a 0 point 2 4 1 4.
+q longer_range tension normal. a same.
+q check buoyancy rho 1 0 0 0 vol 0 point 8 6 equals 8 4 3 7. a yes.
+q longer_range spring normal. a same.
+q longer_range spring weak. a spring.
+q check hydrogen_bond discovered 1 9 2 0. a yes.
+q check van_der_waals arises_from electromagnetism. a yes.
+q friction mu 0 point 3 4 n 7 1 0. a 2 4 1 point 4.
+q magnetic_force charge 8 v 7 8 b 0 point 1. a 6 2 point 4.
+q spring_force k 1 6 6 0 x 0 point 9 8. a 1 6 2 7.
+q net_force f 1 0 0 f 4 9 same. a 1 4 9.
+q longer_range surface_tension gravity. a gravity.
+q gravity_force m 9 4 m 4 6 r 2. a 7 point 2 1 5 e minus 8.
+q magnetic_force charge 6 e minus 6 v 4 9 0 0 b 2. a 0 point 0 5 8 8.
+q magnetic_force charge 1 v 9 3 0 0 b 0 point 5. a 4 6 5 0.
+q check weight arises_from electromagnetism. a no.
+q coulomb_force charge 9 e minus 9 charge 1 e minus 6 r 0 point 3. a 8 point 9 8 8 e minus 4.
+q drag rho 1 point 2 v 1 9 c 0 point 5 area 1 0. a 1 0 8 3.
+q check weight m 8 2 4 on earth equals 7 2 7 5. a no.
+q check electrostatic holds_together atoms ionic_crystals. a yes.
+q check longer_range weak van_der_waals equals same. a no.
+q friction mu 0 point 6 5 n 3 0 5. a 1 9 8 point 2.
+q friction mu 0 point 9 4 n 6 3 0. a 5 9 2 point 2.
+q magnetic_force charge 6 v 9 5 b 1. a 5 7 0.
+q check strong kind inertial. a no.
+q check thrust mdot 3 4 0 ve 2 5 0 0 equals 8 5 0 0 0 0. a yes.
+q check drag rho 1 point 2 v 3 7 c 0 point 5 area 2 equals 1 0 2 7. a no.
+q tidal m 4 point 9 e 2 7 m 4 1 r 6 point 6 e 6 d 7 point 5 e 1 0. a 4 point 1 9 5 e minus 7.
+q longer_range pressure_force capillary. a same.
+q check net_force f 8 6 f 2 9 same equals 1 1 5. a yes.
+q thrust mdot 3 0 1 ve 1 8 0 0. a 5 4 1 8 0 0.
+q check forces examples walking equals friction static_friction. a yes.
+q forces examples ocean_tides. a gravity tidal.
+q spring_force k 1 9 3 x 0 point 2 6. a 5 0 point 1 8.
+q check forces described_by coriolis equals coriolis thrust. a no.
+q buoyancy rho 1 0 2 5 vol 1. a 1 0 0 6 0.
+q gravity_force m 2 m 4 8 0 0 r 2. a 1 point 6 0 2 e minus 7.
+q lift rho 1 0 2 5 v 7 0 c 0 point 5 area 2. a 2 point 5 1 1 e 6.
+q lift rho 1 point 2 v 7 4 c 1 point 5 area 0 point 5. a 2 4 6 4.
+q pressure f 5 1 0 area 8 point 7. a 5 8 point 6 2.
+q escape_speed m 3 point 6 e 2 4 r 6 point 4 e 7. a 2 7 4 0.
+q coulomb_force charge 1 e minus 9 charge 3 e minus 6 r 5. a 1 point 0 7 9 e minus 6.
+q thrust mdot 2 8 6 ve 2 7 0 0. a 7 7 2 2 0 0.
+q coulomb_force charge 7 e minus 6 charge 4 e minus 9 r 0 point 3. a 0 point 0 0 2 7 9 6.
+q check pressure f 2 8 0 area 7 point 5 equals 5 5 point 9 9. a no.
+q tidal m 7 point 3 5 e 2 2 m 2 9 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 3 point 2 0 1 e minus 5.
+q coulomb_force charge minus 2 e minus 6 charge 6 e minus 6 r 0 point 0 3. a minus 1 1 9 point 8.
+q check capillary arises_from electromagnetism. a yes.
+q check drag rho 1 0 0 0 v 3 7 c 0 point 5 area 0 point 5 equals 1 3 6 9 0 0. a no.
+q acceleration f 2 6 m 9. a 2 point 8 8 9.
+q net_force f 9 f 7 7 opposite. a 6 8.
+q acceleration f 6 7 m 7. a 9 point 5 7 1.
+q orbital_speed m 2 point 3 e 2 7 r 8 point 2 e 8. a 1 3 6 8 0.
+q check magnetic constant 1 point 2 5 6 6 e minus 5. a no.
+q thrust mdot 7 0 ve 3 0 0 0. a 2 1 0 0 0 0.
+q gravity_force m 7 1 m 8 4 r 5 0. a 1 point 5 9 2 e minus 1 0.
+q buoyancy rho 1 3 0 0 vol 0 point 0 5 6. a 7 1 4 point 2.
+q centripetal m 2 2 v 2 1 r 2 point 5. a 3 8 8 1.
+q longer_range electrostatic drag. a electrostatic.
+q coulomb_force charge 6 e minus 6 charge 4 e minus 6 r 0 point 0 5. a 8 6 point 2 8.
+q check ionic_bond described_by gell_mann. a no.
+q longer_range strong kinetic_friction. a kinetic_friction.
+q pressure f 6 area 3 5. a 0 point 1 7 1 4.
+q forces holds_together nuclei. a nuclear_binding.
+q acceleration f 8 1 0 m 9. a 9 0.
+q check acceleration f 3 3 m 2 9 equals 1 point 1 3 8. a yes.
+q magnetic_force charge 1 e minus 6 v 5 0 0 0 b 0 point 5. a 0 point 0 0 2 5.
+q friction mu 0 point 6 8 n 4 6. a 3 1 point 2 8.
+q spring_force k 3 2 0 x 0 point 8 3. a 2 6 5 point 6.
+q gravity_force m 9 9 0 m 8 7 0 r 1 point 5. a 2 point 5 5 5 e minus 5.
+q magnetic_force charge 0 point 0 0 6 v 4 3 b 0 point 0 5. a 0 point 0 1 2 9.
+q forces examples iceberg. a buoyancy.
+q tidal m 4 point 5 e 2 5 m 4 2 0 0 r 2 point 9 e 6 d 9 point 9 e 8. a 0 point 0 7 5 4.
+q forces described_by tsiolkovsky. a thrust.
+q drag rho 1 v 3 9 c 0 point 3 area 0 point 2 5. a 5 7 point 0 4.
+q surface_gravity m 1 point 3 e 2 3 r 1 point 3 e 7. a 0 point 0 5 1 3 4.
+q thrust mdot 2 8 2 ve 1 3 0 0. a 3 6 6 6 0 0.
+q magnetic_force charge 6 v 6 9 b 0 point 0 5. a 2 0 point 7.
+q gravity_force m 8 point 6 8 e 2 5 m 2 0 0 0 0 r 2 point 5 5 e 7. a 1 7 8 2 0 0.
+q escape_speed m 6 point 3 e 2 7 r 1 point 1 e 7. a 2 7 6 5 0 0.
+q centripetal m 2 3 v 1 4 r 2 0. a 2 2 5 point 4.
+q buoyancy rho 1 3 6 0 0 vol 0 point 0 0 3. a 4 0 0 point 2.
+q check forces described_by lebedev equals radiation_pressure friction. a no.
+q spring_force k 6 0 x 0 point 8 2. a 4 9 point 2.
+q lift rho 1 point 2 v 3 3 c 1 area 5 0. a 3 2 6 7 0.
+q pressure f 4 8 area 0 point 6 7. a 7 1 point 6 4.
+q longer_range electrostatic covalent_bond. a electrostatic.
+q longer_range static_friction nuclear_binding. a static_friction.
+q thrust mdot 1 9 4 ve 2 7 0 0. a 5 2 3 8 0 0.
+q pressure f 3 9 0 area 9 point 8. a 3 9 point 8.
+q check forces direction opposite_to_exhaust equals thrust. a yes.
+q magnetic_force charge 0 point 0 0 6 v 4 b 0 point 0 1. a 2 point 4 e minus 4.
+q check weak kind fundamental. a yes.
+q weight m 6 3 4 on mars. a 2 3 6 5.
+q drag rho 1 point 2 v 4 3 c 1 area 0 point 0 1. a 1 1 point 0 9.
+q pressure f 7 2 0 0 area 7 point 2. a 1 0 0 0.
+q check net_force f 7 2 0 f 7 1 same equals 7 9 1. a yes.
+q thrust mdot 4 0 6 0 ve 3 0 0. a 1 point 2 1 8 e 6.
+q longer_range magnetic pressure_force. a magnetic.
+q longer_range electrostatic metallic_bond. a electrostatic.
+q check buoyancy acts_at_distance yes. a no.
+q net_force f 6 2 0 f 6 6 opposite. a 5 5 4.
+q tidal m 1 point 9 9 e 3 0 m 7 3 r 6 point 3 7 e 6 d 1 point 5 e 1 1. a 3 point 6 6 e minus 5.
+q centripetal m 2 7 v 2 4 r 3. a 5 1 8 4.
+q check thrust acts_at_distance no. a yes.
+q escape_speed m 8 point 4 e 2 4 r 4 point 6 e 6. a 1 5 6 1 0.
+q check net_force f 1 1 f 4 8 opposite equals 5 5 point 5. a no.
+q check tidal m 3 point 2 e 2 6 m 8 3 0 0 0 r 1 point 9 e 6 d 5 point 9 e 7 equals 3 2 8 0. a no.
+q escape_speed m 2 point 6 e 3 0 r 2 point 9 e 7. a 3 point 4 5 9 e 6.
+q forces examples heavy_suitcase. a weight.
+q coulomb_force charge minus 8 e minus 9 charge 6 e minus 6 r 1. a minus 4 point 3 1 4 e minus 4.
+q check forces examples gold_ring equals metallic_bond. a yes.
+q forces acts_on jets. a thrust.
+q forces examples salad_spinner. a centrifugal.
+q longer_range covalent_bond radiation_pressure. a radiation_pressure.
+q spring_force k 3 x 0 point 2. a 0 point 6.
+q net_force f 5 1 f 2 9 opposite. a 2 2.
+q lift rho 1 v 3 7 c 1 point 5 area 1 0 0. a 1 0 2 6 7 5.
+q tidal m 8 point 6 e 2 6 m 7 5 0 r 1 2 0 0 0 0 d 7 point 3 e 6. a 2 6 5 6 0.
+q surface_gravity m 3 point 8 e 3 0 r 5 e 7. a 1 0 1 4 0 0.
+q thrust mdot 4 4 4 ve 2 6 0 0. a 1 point 1 5 4 e 6.
+q buoyancy rho 1 0 0 0 vol 7 point 2. a 7 0 6 3 2.
+q check pressure f 5 7 0 0 area 5 4 equals 1 0 5 point 6. a yes.
+q check capillary range_m contact. a yes.
+q check drag rho 1 point 2 v 2 2 c 0 point 2 5 area 0 point 5 equals 3 9 point 9 3. a no.
+q forces examples ice. a hydrogen_bond.
+q acceleration f 8 4 m 3 8. a 2 point 2 1 1.
+q check coulomb_force charge 2 e minus 9 charge 9 e minus 6 r 0 point 1 5 equals 0 point 0 0 7 1 9. a yes.
+q check centripetal m 1 v 2 9 r 3 equals 2 8 0 point 3. a yes.
+q weight m 9 3 point 2 on earth. a 9 1 4 point 3.
+q escape_speed m 2 point 2 e 2 5 r 5 point 1 e 6. a 2 4 0 0 0.
+q check longer_range static_friction buoyancy equals same. a yes.
+q longer_range kinetic_friction thrust. a same.
+q longer_range pressure_force buoyancy. a same.
+q gravity_force m 8 5 0 m 2 4 r 1. a 1 point 3 6 1 e minus 6.
+q spring_force k 1 9 2 x 0 point 5 3. a 1 0 1 point 8.
+q forces examples gecko_feet. a van_der_waals.
+q check surface_tension kind inertial. a no.
+q longer_range electrostatic ionic_bond. a electrostatic.
+q check metallic_bond attractive neither. a no.
+q longer_range covalent_bond tidal. a tidal.
+q lift rho 1 v 6 5 c 1 point 5 area 1 0. a 3 1 6 9 0.
+q orbital_speed m 3 point 1 e 2 3 r 2 point 2 e 7. a 9 6 9 point 8.
+q longer_range nuclear_binding friction. a friction.
+q surface_gravity m 4 point 5 e 2 8 r 7 point 2 e 7. a 5 7 9 point 3.
+q magnetic_force charge 0 point 0 0 2 v 1 2 b 1. a 0 point 0 2 4.
+q check longer_range buoyancy magnetic equals buoyancy. a no.
+q check magnetic_force charge 3 v 5 9 b 2 equals 3 8 9 point 4. a no.
+q longer_range covalent_bond electrostatic. a electrostatic.
+q check drag described_by newton stokes. a yes.
+q longer_range lift tidal. a tidal.
+q orbital_speed m 8 point 6 8 e 2 5 r 2 point 6 4 e 7. a 1 4 8 1 0.
+q net_force f 5 3 f 6 2 opposite. a 9.
+q forces examples candle_wick. a capillary.
+q lift rho 1 0 0 0 v 9 3 c 0 point 2 area 0 point 5. a 4 3 2 4 5 0.
+q drag rho 1 point 2 v 6 0 c 1 area 0 point 5. a 1 0 8 0.
+q buoyancy rho 1 point 2 vol 8. a 9 4 point 1 8.
+q longer_range van_der_waals weak. a van_der_waals.
+q buoyancy rho 1 0 0 0 vol 0 point 5. a 4 9 0 5.
+q longer_range lift drag. a same.
+q surface_gravity m 1 point 8 e 2 3 r 2 point 1 e 7. a 0 point 0 2 7 2 4.
+q drag rho 1 point 2 v 5 2 c 0 point 3 area 0 point 5. a 2 4 3 point 4.
+q check static_friction attractive both. a no.
+q check capillary unit newton. a yes.
+q thrust mdot 1 2 ve 4 0 0. a 4 8 0 0.
+q check hydrogen_bond described_by latimer rodebush pauling. a yes.
+q centripetal m 9 v 2 r 1 point 5. a 2 4.
+q check hydrogen_bond holds_together planets stars galaxies. a no.
+q check magnetic formula m g. a no.
+q check normal kind effective. a yes.
+q check longer_range electromagnetism hydrogen_bond equals electromagnetism. a yes.
+q check forces acts_on neutrons equals nuclear_binding friction. a no.
+q net_force f 9 0 0 f 2 0 same. a 9 2 0.
+q check weight m 9 8 on moon equals 1 4 2 point 9. a no.
+q longer_range tidal pressure_force. a tidal.
+q forces examples nuclear_fission. a nuclear_binding.
+q longer_range kinetic_friction pressure_force. a same.
+q gravity_force m 4 0 m 1 6 0 0 r 1 0. a 4 point 2 7 1 e minus 8.
+q forces examples centrifuge. a centrifugal.
+q forces examples parachute. a drag.
+q gravity_force m 6 point 8 e 2 7 m 2 9 0 0 r 1 8 0 0 0 0. a 4 point 0 6 2 e 1 0.
+q check escape_speed m 9 point 5 e 2 7 r 3 point 5 e 8 equals 6 0 1 9 0. a yes.
+q longer_range kinetic_friction tidal. a tidal.
+q buoyancy rho 1 0 0 0 vol 0 point 6 1. a 5 9 8 4.
+q net_force f 8 5 0 f 7 4 0 same. a 1 5 9 0.
+q forces examples bathroom_scale. a weight.
+q net_force f 7 3 0 f 8 9 same. a 8 1 9.
+q coulomb_force charge 5 e minus 6 charge minus 6 e minus 9 r 0 point 1 5. a minus 0 point 0 1 1 9 8.
+q forces examples standing_on_floor. a normal.
+q acceleration f 3 6 m 1 5. a 2 point 4.
+q check weight unit pascal. a no.
+q check weight m 1 6 equals 1 5 7. a yes.
+q orbital_speed m 3 point 3 e 2 3 r 2 point 4 4 e 6. a 3 0 0 4.
+q longer_range electromagnetism electrostatic. a same.
+q forces described_by van_der_waals. a van_der_waals.
+q weight m 1 4 6. a 1 4 3 2.
+q check lift rho 1 point 2 v 3 8 c 1 point 2 area 5 equals 5 1 9 point 8. a no.
+q thrust mdot 5 5 ve 3 1 0 0. a 1 7 0 5 0 0.
+q check pressure_force described_by pascal bernoulli. a yes.
+q check forces examples falling_apple equals gravity weight. a yes.
+q spring_force k 4 7 5 x 0 point 3 5. a 1 6 6 point 2.
+q longer_range tidal electromagnetism. a same.
+q orbital_speed m 4 point 8 e 2 6 r 3 e 8. a 1 0 3 3 0.
+q longer_range buoyancy tension. a same.
+q thrust mdot 4 6 5 0 ve 4 3 0 0. a 2 e 7.
+q drag rho 1 0 2 5 v 6 0 c 0 point 3 area 0 point 5. a 2 7 6 7 5 0.
+q check pressure f 9 2 0 area 3 6 equals 2 5 point 5 6. a yes.
+q check thrust mdot 1 8 4 ve 2 5 0 0 equals 4 6 0 0 0. a no.
+q acceleration f 7 6 m 9 6. a 0 point 7 9 1 7.
+q check drag rho 1 point 2 v 4 8 c 0 point 2 5 area 1 equals 3 4 5 point 6. a yes.
+q longer_range lift electromagnetism. a electromagnetism.
+q check tidal m 5 point 1 e 2 7 m 9 5 r 8 2 0 0 0 0 d 4 point 8 e 9 equals 5 point 2 7 5 e minus 4. a no.
+q check thrust formula m g. a no.
+q surface_gravity m 5 point 1 e 2 2 r 8 point 3 e 7. a 4 point 9 4 1 e minus 4.
+q coulomb_force charge 9 e minus 6 charge minus 1 e minus 6 r 2. a minus 0 point 0 2 0 2 2.
+q gravity_force m 4 2 0 0 0 m 2 5 0 0 0 r 5. a 0 point 0 0 2 8 0 3.
+q gravity_force m 7 9 0 m 6 5 0 0 0 r 4. a 2 point 1 4 2 e minus 4.
+q thrust mdot 1 2 3 ve 1 1 0 0. a 1 3 5 3 0 0.
+q check stronger strong weak equals weak. a no.
+q net_force f 4 3 f 3 0 opposite. a 1 3.
+q check escape_speed m 5 point 9 e 2 8 r 3 6 0 0 0 0 equals 4 point 6 7 7 e 6. a yes.
+q drag rho 1 point 2 v 5 3 c 1 point 2 area 1. a 2 0 2 2.
+q longer_range thrust tidal. a tidal.
+q weight m 8 8 4 on jupiter. a 2 1 9 1 0.
+q longer_range electromagnetism thrust. a electromagnetism.
+q check thrust mdot 3 3 7 ve 4 5 0 0 equals 3 point 0 3 2 e 6. a no.
+q net_force f 6 f 1 2 opposite. a 6.
+q check forces acts_on magnets equals magnetic tension. a no.
+q surface_gravity m 7 point 3 e 2 8 r 2 9 0 0 0 0. a 5 point 7 9 3 e 7.
+q gravity_force m 1 0 0 0 m 6 r 1 0. a 4 point 0 0 4 e minus 9.
+q longer_range friction radiation_pressure. a radiation_pressure.
+q longer_range buoyancy normal. a same.
+q spring_force k 6 9 x 0 point 7 9. a 5 4 point 5 1.
+q check magnetic kind effective. a yes.
+q orbital_speed m 1 point 3 e 3 0 r 1 point 4 e 6. a 7 point 8 7 2 e 6.
+q escape_speed m 2 point 8 e 2 3 r 4 7 0 0 0 0. a 8 9 1 7.
+q gravity_force m 3 point 3 e 2 3 m 1 9 r 2 point 4 4 e 6. a 7 0 point 2 9.
+q lift rho 1 v 6 8 c 1 point 2 area 1. a 2 7 7 4.
+q escape_speed m 1 point 2 e 2 4 r 5 point 3 e 8. a 5 4 9 point 7.
+q orbital_speed m 9 point 4 e 2 8 r 9 point 8 e 6. a 8 0 0 1 0 0.
+q gravity_force m 2 9 m 2 0 r 5 0. a 1 point 5 4 8 e minus 1 1.
+q check net_force f 3 8 f 8 2 opposite equals 5 5. a no.
+q tidal m 7 point 3 5 e 2 2 m 3 7 0 0 0 r 6 point 3 7 e 6 d 3 point 8 4 e 8. a 0 point 0 4 0 8 4.
+q longer_range capillary radiation_pressure. a radiation_pressure.
+q centripetal m 1 1 v 7 r 1. a 5 3 9.
+q net_force f 9 2 f 8 4 same. a 1 7 6.
+q acceleration f 4 8 m 3 2. a 1 point 5.
+q check weak discovered 2 0 3 3. a no.
+q check pressure_force unit newton. a yes.
+q pressure f 6 2 area 0 point 0 3. a 2 0 6 7.
+q forces holds_together salt_crystals. a ionic_bond.
+q buoyancy rho 1 0 2 5 vol 0 point 0 4 7. a 4 7 2 point 6.
+q forces direction toward_electron_sea. a metallic_bond.
+q gravity_force m 5 6 0 m 8 5 r 2. a 7 point 9 4 2 e minus 7.
+q longer_range capillary electromagnetism. a electromagnetism.
+q spring_force k 1 0 9 0 x 0 point 4 6. a 5 0 1 point 4.
+q net_force f 3 8 f 1 8 0 opposite. a 1 4 2.
+q weight m 5 9. a 5 7 8 point 8.
+q buoyancy rho 1 0 0 0 vol 0 point 0 2 9. a 2 8 4 point 5.
+q spring_force k 5 1 5 x 0 point 0 6. a 3 0 point 9.
+q net_force f 3 3 f 2 7 opposite. a 6.
+q friction mu 0 point 1 8 n 9 0 0. a 1 6 2.
+q magnetic_force charge 0 point 0 0 7 v 9 9 0 b 2. a 1 3 point 8 6.
+q longer_range drag static_friction. a same.
+q friction mu 0 point 5 9 n 8 8. a 5 1 point 9 2.
+q buoyancy rho 1 0 0 0 vol 0 point 1 4. a 1 3 7 3.
+q drag rho 1 0 0 0 v 1 c 0 point 3 area 0 point 1. a 1 5.
+q forces examples parked_car. a static_friction.
+q orbital_speed m 2 point 6 e 2 4 r 9 point 8 e 7. a 1 3 3 1.
+q centripetal m 3 6 v 1 7 r 5. a 2 0 8 1.

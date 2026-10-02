@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "host": "adler40",
+  "workspace": "/home/ender/haishool-final-20261001",
+  "python": "/home/ender/homunculi/.venv/bin/python",
+  "launcher": "scripts/run-final-adler.sh",
+  "pipeline_status": "runs/final-v5/status.json",
+  "pipeline_log": "final-run.log",
+  "dataset_report": "data/final-v5/report.json",
+  "local_dataset_report": "model/final-build-report.json",
+  "automation_id": "finish-haishool-training",
+  "models": [
+    "6x384",
+    "8x512"
+  ],
+  "steps_per_model": {
+    "heldout_training": 30000,
+    "feedback": 3000,
+    "production_refinement": 3000
+  },
+  "context_tokens": 256,
+  "batch": 48,
+  "token_mix": {
+    "old_facts_and_links": 0.4,
+    "truth": 0.4,
+    "input_conditioned_predictions": 0.15,
+    "legacy_rollout_recall": 0.05
+  },
+  "preflight": {
+    "local_suite_passed": 1015,
+    "local_suite_skipped": 5,
+    "adler_trainer_tests_passed": 7,
+    "adler_pipeline_tests_passed": 6,
+    "adler_new_gate_and_split_tests_passed": 91,
+    "cuda_training_and_feedback_smokes": "passed",
+    "all_17_topic_hashes_counts_and_split_audit": "passed",
+    "semantic_split_overlaps": 0,
+    "prior_answer_conflicts": 0
+  },
+  "evaluation_policy": "Development selects before the one-time sealed evaluation; production refinements are separate checkpoints and do not inherit the sealed score.",
+  "public_chat": "unchanged; version 4b",
+  "note": "Completed research run. See comparison and reports; public chat remains version4b.",
+  "completed_utc": "2026-10-01T18:59:35Z",
+  "successful_pipeline_seconds": 2982,
+  "local_artifacts": "model/final-v5",
+  "local_comparison": "model/final-v5/comparison.json",
+  "verification": "Four float32 exports equal original checkpoint tensors, load/generation smokes passed on Adler, and local hashes match four models plus36 reports."
+}

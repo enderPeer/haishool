@@ -1,0 +1,6 @@
+{
+  "status": "completed",
+  "step": 30000,
+  "fingerprint": "257666362f62706231b6e2d2a40447972793ef96f8d88d23ce89aaa180d5c4ed",
+  "checkpoint": "/home/ender/haishool-final-20261001/runs/final-v5/6x384-eval/student.pt"
+}

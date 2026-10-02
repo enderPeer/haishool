@@ -1,0 +1,609 @@
+{
+ "heldout calc:minus": {
+  "n": 265,
+  "exact": 0.992,
+  "gate_ok": 0.992
+ },
+ "heldout calc:minus+point": {
+  "n": 146,
+  "exact": 0.986,
+  "gate_ok": 0.986
+ },
+ "heldout calc:minus+times": {
+  "n": 41,
+  "exact": 0.659,
+  "gate_ok": 0.659
+ },
+ "heldout calc:minus+times+open": {
+  "n": 23,
+  "exact": 0.652,
+  "gate_ok": 0.652
+ },
+ "heldout calc:percent": {
+  "n": 9,
+  "exact": 0.778,
+  "gate_ok": 0.778
+ },
+ "heldout calc:plus": {
+  "n": 178,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout calc:plus+minus": {
+  "n": 150,
+  "exact": 0.993,
+  "gate_ok": 0.993
+ },
+ "heldout calc:plus+minus+point": {
+  "n": 25,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout calc:plus+over": {
+  "n": 46,
+  "exact": 0.848,
+  "gate_ok": 0.848
+ },
+ "heldout calc:plus+point": {
+  "n": 111,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout calc:plus+power": {
+  "n": 4,
+  "exact": 0.25,
+  "gate_ok": 0.25
+ },
+ "heldout calc:plus+steps": {
+  "n": 254,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout calc:plus+times": {
+  "n": 47,
+  "exact": 0.809,
+  "gate_ok": 0.809
+ },
+ "heldout calc:plus+times+open": {
+  "n": 31,
+  "exact": 0.548,
+  "gate_ok": 0.548
+ },
+ "heldout calc:times": {
+  "n": 71,
+  "exact": 0.493,
+  "gate_ok": 0.493
+ },
+ "heldout calc:times+over": {
+  "n": 29,
+  "exact": 0.69,
+  "gate_ok": 0.69
+ },
+ "heldout calc:times+steps": {
+  "n": 67,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:minus": {
+  "n": 64,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:minus+over+x": {
+  "n": 24,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:minus+percent": {
+  "n": 2,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:minus+point": {
+  "n": 29,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:minus+times": {
+  "n": 14,
+  "exact": 0.857,
+  "gate_ok": 0.857
+ },
+ "heldout check:minus+times+open": {
+  "n": 7,
+  "exact": 0.857,
+  "gate_ok": 0.857
+ },
+ "heldout check:minus+times+open+x": {
+  "n": 20,
+  "exact": 0.95,
+  "gate_ok": 0.95
+ },
+ "heldout check:minus+times+over": {
+  "n": 1,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:minus+x": {
+  "n": 73,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:over": {
+  "n": 32,
+  "exact": 0.969,
+  "gate_ok": 0.969
+ },
+ "heldout check:percent": {
+  "n": 31,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:percent+point": {
+  "n": 3,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:plus": {
+  "n": 40,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:plus+minus": {
+  "n": 48,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:plus+minus+over+x": {
+  "n": 7,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:plus+minus+point": {
+  "n": 4,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:plus+minus+power": {
+  "n": 1,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:plus+minus+times+open": {
+  "n": 1,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:plus+minus+times+open+x": {
+  "n": 10,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:plus+minus+x": {
+  "n": 51,
+  "exact": 0.902,
+  "gate_ok": 0.902
+ },
+ "heldout check:plus+over": {
+  "n": 8,
+  "exact": 0.875,
+  "gate_ok": 0.875
+ },
+ "heldout check:plus+over+x": {
+  "n": 8,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:plus+point": {
+  "n": 22,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:plus+power": {
+  "n": 5,
+  "exact": 0.8,
+  "gate_ok": 0.8
+ },
+ "heldout check:plus+times": {
+  "n": 11,
+  "exact": 0.818,
+  "gate_ok": 0.818
+ },
+ "heldout check:plus+times+open": {
+  "n": 12,
+  "exact": 0.917,
+  "gate_ok": 0.917
+ },
+ "heldout check:plus+times+open+x": {
+  "n": 13,
+  "exact": 0.923,
+  "gate_ok": 0.923
+ },
+ "heldout check:plus+x": {
+  "n": 21,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout check:times": {
+  "n": 36,
+  "exact": 0.972,
+  "gate_ok": 0.972
+ },
+ "heldout check:times+over": {
+  "n": 7,
+  "exact": 0.857,
+  "gate_ok": 0.857
+ },
+ "heldout check:x": {
+  "n": 8,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout compare:": {
+  "n": 71,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout compare:minus": {
+  "n": 117,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout compare:minus+point": {
+  "n": 137,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout compare:point": {
+  "n": 67,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout solve:minus+over+x": {
+  "n": 16,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout solve:minus+times+open+x": {
+  "n": 66,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout solve:minus+x": {
+  "n": 154,
+  "exact": 0.987,
+  "gate_ok": 0.987
+ },
+ "heldout solve:plus+minus+times+open+x": {
+  "n": 1,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout solve:plus+minus+x": {
+  "n": 110,
+  "exact": 0.991,
+  "gate_ok": 0.991
+ },
+ "heldout solve:plus+over+x": {
+  "n": 22,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "heldout solve:plus+times+open+x": {
+  "n": 42,
+  "exact": 0.929,
+  "gate_ok": 0.929
+ },
+ "heldout solve:plus+x": {
+  "n": 87,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained calc:minus": {
+  "n": 101,
+  "exact": 0.99,
+  "gate_ok": 0.99
+ },
+ "trained calc:minus+point": {
+  "n": 34,
+  "exact": 0.971,
+  "gate_ok": 0.971
+ },
+ "trained calc:minus+times": {
+  "n": 23,
+  "exact": 0.826,
+  "gate_ok": 0.826
+ },
+ "trained calc:minus+times+open": {
+  "n": 7,
+  "exact": 0.714,
+  "gate_ok": 0.714
+ },
+ "trained calc:over": {
+  "n": 7,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained calc:percent": {
+  "n": 16,
+  "exact": 0.938,
+  "gate_ok": 0.938
+ },
+ "trained calc:plus": {
+  "n": 61,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained calc:plus+minus": {
+  "n": 43,
+  "exact": 0.977,
+  "gate_ok": 0.977
+ },
+ "trained calc:plus+minus+point": {
+  "n": 5,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained calc:plus+over": {
+  "n": 19,
+  "exact": 0.947,
+  "gate_ok": 0.947
+ },
+ "trained calc:plus+point": {
+  "n": 38,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained calc:plus+power": {
+  "n": 5,
+  "exact": 0.8,
+  "gate_ok": 0.8
+ },
+ "trained calc:plus+steps": {
+  "n": 78,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained calc:plus+times": {
+  "n": 17,
+  "exact": 0.941,
+  "gate_ok": 0.941
+ },
+ "trained calc:plus+times+open": {
+  "n": 14,
+  "exact": 0.5,
+  "gate_ok": 0.5
+ },
+ "trained calc:power": {
+  "n": 1,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained calc:times": {
+  "n": 34,
+  "exact": 0.588,
+  "gate_ok": 0.588
+ },
+ "trained calc:times+over": {
+  "n": 8,
+  "exact": 0.375,
+  "gate_ok": 0.375
+ },
+ "trained calc:times+steps": {
+  "n": 34,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:minus": {
+  "n": 17,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:minus+over+x": {
+  "n": 10,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:minus+point": {
+  "n": 5,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:minus+times+open": {
+  "n": 1,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:minus+times+open+x": {
+  "n": 7,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:minus+x": {
+  "n": 21,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:over": {
+  "n": 9,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:percent": {
+  "n": 8,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:percent+point": {
+  "n": 1,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:plus": {
+  "n": 14,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:plus+minus": {
+  "n": 9,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:plus+minus+over+x": {
+  "n": 3,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:plus+minus+point": {
+  "n": 2,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:plus+minus+x": {
+  "n": 6,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:plus+over": {
+  "n": 1,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:plus+over+x": {
+  "n": 2,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:plus+point": {
+  "n": 2,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:plus+times": {
+  "n": 3,
+  "exact": 0.333,
+  "gate_ok": 0.333
+ },
+ "trained check:plus+times+open": {
+  "n": 2,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:plus+times+open+x": {
+  "n": 6,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:plus+x": {
+  "n": 5,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:power": {
+  "n": 2,
+  "exact": 0.5,
+  "gate_ok": 0.5
+ },
+ "trained check:root": {
+  "n": 1,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:root+point": {
+  "n": 1,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:times": {
+  "n": 9,
+  "exact": 0.889,
+  "gate_ok": 0.889
+ },
+ "trained check:times+over": {
+  "n": 1,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained check:x": {
+  "n": 1,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained compare:": {
+  "n": 18,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained compare:minus": {
+  "n": 48,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained compare:minus+point": {
+  "n": 45,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained compare:point": {
+  "n": 20,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained solve:minus+over+x": {
+  "n": 15,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained solve:minus+times+open+x": {
+  "n": 15,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained solve:minus+x": {
+  "n": 59,
+  "exact": 0.983,
+  "gate_ok": 0.983
+ },
+ "trained solve:plus+minus+times+open+x": {
+  "n": 1,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained solve:plus+minus+x": {
+  "n": 33,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained solve:plus+over+x": {
+  "n": 11,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained solve:plus+times+open+x": {
+  "n": 18,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained solve:plus+x": {
+  "n": 20,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "trained solve:x": {
+  "n": 3,
+  "exact": 1.0,
+  "gate_ok": 1.0
+ },
+ "TOTAL": {
+  "heldout": {
+   "n": 3000,
+   "exact": 0.956,
+   "gate_ok": 0.956
+  },
+  "trained": {
+   "n": 1000,
+   "exact": 0.956,
+   "gate_ok": 0.956
+  }
+ }
+}

@@ -1,0 +1,606 @@
+{
+  "status": "complete",
+  "completed_utc": "2026-10-01T18:59:35Z",
+  "successful_pipeline_seconds": 2982,
+  "dataset_build_seconds": 271.11,
+  "models": {
+    "6x384": {
+      "selected_phase": "eval",
+      "sealed_source_sha256": "423d0f4c2feec664faf3a53ccb18d2654196fb992a5ba1178f295c85bcca35ab",
+      "sealed_questions_nonlegacy": 2816,
+      "sealed_exact_macro": 0.3448153409090909,
+      "sealed_gate_macro": 0.39879261363636365,
+      "sealed_topics": {
+        "elements": {
+          "all": {
+            "n": 256,
+            "exact": 0.73046875,
+            "gate_ok": 0.73046875
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.73046875,
+            "gate_ok": 0.73046875
+          }
+        },
+        "forces": {
+          "all": {
+            "n": 256,
+            "exact": 0.25,
+            "gate_ok": 0.25
+          },
+          "worked": {
+            "n": 128,
+            "exact": 0.171875,
+            "gate_ok": 0.171875
+          },
+          "direct": {
+            "n": 128,
+            "exact": 0.328125,
+            "gate_ok": 0.328125
+          }
+        },
+        "legacy_chem": {
+          "all": {
+            "n": 256,
+            "exact": 0.42578125,
+            "gate_ok": 0.46875
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.42578125,
+            "gate_ok": 0.46875
+          }
+        },
+        "legacy_gravity": {
+          "all": {
+            "n": 256,
+            "exact": 0.23828125,
+            "gate_ok": 0.3515625
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.23828125,
+            "gate_ok": 0.3515625
+          }
+        },
+        "legacy_life": {
+          "all": {
+            "n": 256,
+            "exact": 0.15625,
+            "gate_ok": 0.19140625
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.15625,
+            "gate_ok": 0.19140625
+          }
+        },
+        "legacy_nucleo": {
+          "all": {
+            "n": 256,
+            "exact": 0.28515625,
+            "gate_ok": 0.3671875
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.28515625,
+            "gate_ok": 0.3671875
+          }
+        },
+        "legacy_planets": {
+          "all": {
+            "n": 256,
+            "exact": 0.4296875,
+            "gate_ok": 0.4296875
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.4296875,
+            "gate_ok": 0.4296875
+          }
+        },
+        "legacy_world": {
+          "all": {
+            "n": 256,
+            "exact": 0.2109375,
+            "gate_ok": 0.3046875
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.2109375,
+            "gate_ok": 0.3046875
+          }
+        },
+        "maths": {
+          "all": {
+            "n": 256,
+            "exact": 0.63671875,
+            "gate_ok": 0.63671875
+          },
+          "direct": {
+            "n": 220,
+            "exact": 0.5863636363636363,
+            "gate_ok": 0.5863636363636363
+          },
+          "worked": {
+            "n": 36,
+            "exact": 0.9444444444444444,
+            "gate_ok": 0.9444444444444444
+          }
+        },
+        "predict_chem": {
+          "all": {
+            "n": 256,
+            "exact": 0.12109375,
+            "gate_ok": 0.12109375
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.12109375,
+            "gate_ok": 0.12109375
+          }
+        },
+        "predict_gravity": {
+          "all": {
+            "n": 256,
+            "exact": 0.01171875,
+            "gate_ok": 0.01171875
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.01171875,
+            "gate_ok": 0.01171875
+          }
+        },
+        "predict_life": {
+          "all": {
+            "n": 256,
+            "exact": 0.60546875,
+            "gate_ok": 0.60546875
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.60546875,
+            "gate_ok": 0.60546875
+          }
+        },
+        "predict_nucleo": {
+          "all": {
+            "n": 256,
+            "exact": 0.0078125,
+            "gate_ok": 0.0078125
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.0078125,
+            "gate_ok": 0.0078125
+          }
+        },
+        "predict_planets": {
+          "all": {
+            "n": 256,
+            "exact": 0.0078125,
+            "gate_ok": 0.0078125
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.0078125,
+            "gate_ok": 0.0078125
+          }
+        },
+        "predict_world": {
+          "all": {
+            "n": 256,
+            "exact": 0.28125,
+            "gate_ok": 0.875
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.28125,
+            "gate_ok": 0.875
+          }
+        },
+        "reactions": {
+          "all": {
+            "n": 256,
+            "exact": 0.81640625,
+            "gate_ok": 0.81640625
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.81640625,
+            "gate_ok": 0.81640625
+          }
+        },
+        "substances": {
+          "all": {
+            "n": 256,
+            "exact": 0.32421875,
+            "gate_ok": 0.32421875
+          },
+          "direct": {
+            "n": 115,
+            "exact": 0.391304347826087,
+            "gate_ok": 0.391304347826087
+          },
+          "worked": {
+            "n": 141,
+            "exact": 0.2695035460992908,
+            "gate_ok": 0.2695035460992908
+          }
+        }
+      },
+      "old_recall": {
+        "n": 1000,
+        "exact": 0.929,
+        "gate_ok": 0.929
+      },
+      "old_heldout_pooled": {
+        "n": 5739,
+        "exact": 0.47569262937794043,
+        "gate_ok": 0.47569262937794043
+      },
+      "phases": {
+        "eval": {
+          "steps": 30000,
+          "parameters": 16248960,
+          "training_seconds": 766.65,
+          "dev_gate_macro": 0.4080255681818182,
+          "dev_exact_macro": 0.3522727272727273,
+          "old_recall": {
+            "n": 1000,
+            "exact": 0.929,
+            "gate_ok": 0.929
+          },
+          "checkpoint_sha256": "423d0f4c2feec664faf3a53ccb18d2654196fb992a5ba1178f295c85bcca35ab"
+        },
+        "feedback": {
+          "steps": 3000,
+          "parameters": 16250112,
+          "training_seconds": 77.92,
+          "dev_gate_macro": 0.40198863636363635,
+          "dev_exact_macro": 0.3515625,
+          "old_recall": {
+            "n": 1000,
+            "exact": 0.936,
+            "gate_ok": 0.936
+          },
+          "checkpoint_sha256": "d8d1c74638a454dd2141d59eb1f0743f1781cf90bf7a5f94cc0320e10d2075b7"
+        },
+        "full": {
+          "steps": 3000,
+          "parameters": 16503168,
+          "training_seconds": 78.41,
+          "dev_gate_macro": 0.4051846590909091,
+          "dev_exact_macro": 0.35298295454545453,
+          "old_recall": {
+            "n": 1000,
+            "exact": 0.907,
+            "gate_ok": 0.907
+          },
+          "checkpoint_sha256": "badf7ba34ec98a9acc6838c9691174b2afa631ca3ac21cde5a1cf75e4ed92b98"
+        }
+      },
+      "feedback": {
+        "questions": 2816,
+        "corrected": 1647,
+        "lines": 5632
+      },
+      "exports": {
+        "selected": {
+          "file": "haishool-v5-6x384-selected.pt",
+          "sha256": "634644c6e1380d7d1456d726b62a12c775cdf88c7504f6b419465ccbeeffb1b5"
+        },
+        "production": {
+          "file": "haishool-v5-6x384-production.pt",
+          "sha256": "6c2461dc79d9dd8b33357312885cd6f21ce2b63fde5cf6fb3310f17afe40b493"
+        }
+      }
+    },
+    "8x512": {
+      "selected_phase": "feedback",
+      "sealed_source_sha256": "d00f1d2b86d251be915ca0cc509ae4b85efbbcaabd1acba9ddc0281e57bc0145",
+      "sealed_questions_nonlegacy": 2816,
+      "sealed_exact_macro": 0.39417613636363635,
+      "sealed_gate_macro": 0.44779829545454547,
+      "sealed_topics": {
+        "elements": {
+          "all": {
+            "n": 256,
+            "exact": 0.75,
+            "gate_ok": 0.75
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.75,
+            "gate_ok": 0.75
+          }
+        },
+        "forces": {
+          "all": {
+            "n": 256,
+            "exact": 0.37109375,
+            "gate_ok": 0.37109375
+          },
+          "worked": {
+            "n": 128,
+            "exact": 0.2890625,
+            "gate_ok": 0.2890625
+          },
+          "direct": {
+            "n": 128,
+            "exact": 0.453125,
+            "gate_ok": 0.453125
+          }
+        },
+        "legacy_chem": {
+          "all": {
+            "n": 256,
+            "exact": 0.37890625,
+            "gate_ok": 0.421875
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.37890625,
+            "gate_ok": 0.421875
+          }
+        },
+        "legacy_gravity": {
+          "all": {
+            "n": 256,
+            "exact": 0.26953125,
+            "gate_ok": 0.3671875
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.26953125,
+            "gate_ok": 0.3671875
+          }
+        },
+        "legacy_life": {
+          "all": {
+            "n": 256,
+            "exact": 0.125,
+            "gate_ok": 0.171875
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.125,
+            "gate_ok": 0.171875
+          }
+        },
+        "legacy_nucleo": {
+          "all": {
+            "n": 256,
+            "exact": 0.28515625,
+            "gate_ok": 0.3671875
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.28515625,
+            "gate_ok": 0.3671875
+          }
+        },
+        "legacy_planets": {
+          "all": {
+            "n": 256,
+            "exact": 0.4296875,
+            "gate_ok": 0.4375
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.4296875,
+            "gate_ok": 0.4375
+          }
+        },
+        "legacy_world": {
+          "all": {
+            "n": 256,
+            "exact": 0.2265625,
+            "gate_ok": 0.3359375
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.2265625,
+            "gate_ok": 0.3359375
+          }
+        },
+        "maths": {
+          "all": {
+            "n": 256,
+            "exact": 0.74609375,
+            "gate_ok": 0.74609375
+          },
+          "direct": {
+            "n": 220,
+            "exact": 0.7045454545454546,
+            "gate_ok": 0.7045454545454546
+          },
+          "worked": {
+            "n": 36,
+            "exact": 1.0,
+            "gate_ok": 1.0
+          }
+        },
+        "predict_chem": {
+          "all": {
+            "n": 256,
+            "exact": 0.1171875,
+            "gate_ok": 0.1171875
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.1171875,
+            "gate_ok": 0.1171875
+          }
+        },
+        "predict_gravity": {
+          "all": {
+            "n": 256,
+            "exact": 0.015625,
+            "gate_ok": 0.015625
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.015625,
+            "gate_ok": 0.015625
+          }
+        },
+        "predict_life": {
+          "all": {
+            "n": 256,
+            "exact": 0.73046875,
+            "gate_ok": 0.73046875
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.73046875,
+            "gate_ok": 0.73046875
+          }
+        },
+        "predict_nucleo": {
+          "all": {
+            "n": 256,
+            "exact": 0.0,
+            "gate_ok": 0.0
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.0,
+            "gate_ok": 0.0
+          }
+        },
+        "predict_planets": {
+          "all": {
+            "n": 256,
+            "exact": 0.015625,
+            "gate_ok": 0.015625
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.015625,
+            "gate_ok": 0.015625
+          }
+        },
+        "predict_world": {
+          "all": {
+            "n": 256,
+            "exact": 0.38671875,
+            "gate_ok": 0.9765625
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.38671875,
+            "gate_ok": 0.9765625
+          }
+        },
+        "reactions": {
+          "all": {
+            "n": 256,
+            "exact": 0.80078125,
+            "gate_ok": 0.80078125
+          },
+          "direct": {
+            "n": 256,
+            "exact": 0.80078125,
+            "gate_ok": 0.80078125
+          }
+        },
+        "substances": {
+          "all": {
+            "n": 256,
+            "exact": 0.40234375,
+            "gate_ok": 0.40234375
+          },
+          "direct": {
+            "n": 115,
+            "exact": 0.46956521739130436,
+            "gate_ok": 0.46956521739130436
+          },
+          "worked": {
+            "n": 141,
+            "exact": 0.3475177304964539,
+            "gate_ok": 0.3475177304964539
+          }
+        }
+      },
+      "old_recall": {
+        "n": 1000,
+        "exact": 0.969,
+        "gate_ok": 0.969
+      },
+      "old_heldout_pooled": {
+        "n": 5739,
+        "exact": 0.5051402683394319,
+        "gate_ok": 0.5051402683394319
+      },
+      "phases": {
+        "eval": {
+          "steps": 30000,
+          "parameters": 32677376,
+          "training_seconds": 1208.79,
+          "dev_gate_macro": 0.43785511363636365,
+          "dev_exact_macro": 0.38636363636363635,
+          "old_recall": {
+            "n": 1000,
+            "exact": 0.971,
+            "gate_ok": 0.971
+          },
+          "checkpoint_sha256": "5294e87c19d1e43a039c3d98abb08934159cbe0c62360f2db0393cf950240fb1"
+        },
+        "feedback": {
+          "steps": 3000,
+          "parameters": 32678912,
+          "training_seconds": 122.6,
+          "dev_gate_macro": 0.4431818181818182,
+          "dev_exact_macro": 0.3977272727272727,
+          "old_recall": {
+            "n": 1000,
+            "exact": 0.969,
+            "gate_ok": 0.969
+          },
+          "checkpoint_sha256": "d00f1d2b86d251be915ca0cc509ae4b85efbbcaabd1acba9ddc0281e57bc0145"
+        },
+        "full": {
+          "steps": 3000,
+          "parameters": 33016320,
+          "training_seconds": 122.7,
+          "dev_gate_macro": 0.44673295454545453,
+          "dev_exact_macro": 0.4005681818181818,
+          "old_recall": {
+            "n": 1000,
+            "exact": 0.952,
+            "gate_ok": 0.952
+          },
+          "checkpoint_sha256": "322a8b4f913ec7d8b8a3b2b97cbebc4dfb1fdf5c76ce7aaf54f54c5a1cddbde5"
+        }
+      },
+      "feedback": {
+        "questions": 2816,
+        "corrected": 1542,
+        "lines": 5632
+      },
+      "exports": {
+        "selected": {
+          "file": "haishool-v5-8x512-selected.pt",
+          "sha256": "c1d591cdd92cee78731116e469bfc57e960a17a543fa6acf9bc2647768c70550"
+        },
+        "production": {
+          "file": "haishool-v5-8x512-production.pt",
+          "sha256": "20f836586646c342dc3ea1251bac8677e65c9f5c9d454bc645dc870b981d04b0"
+        }
+      }
+    }
+  },
+  "public_chat": "version 4b; not changed",
+  "recommendation": "The 8x512 selected evaluation checkpoint is strongest measured. Treat all new checkpoints as experimental; strengthen fact retention and worked numeric prediction lessons before replacement of the public model.",
+  "limitations": [
+    "Gate accuracy permits topic-specific tolerances: world handoff numbers allow 5% error, so report exact accuracy alongside gate acceptance.",
+    "Legacy seed questions are reported separately and do not measure physical generalization.",
+    "Old held-out score pools 1877 facts and 3862 hop questions; it is not comparable to historical fact-only inference.",
+    "Production models have development reports only, not the selected checkpoints sealed scores. Old recall samples differ after restoring withheld old material.",
+    "Small production used corrections even though its feedback evaluation checkpoint was rejected.",
+    "Earlier maths-only 93-95.6% experiments used a different dataset and objective; they are not a paired comparison with this combined run."
+  ]
+}

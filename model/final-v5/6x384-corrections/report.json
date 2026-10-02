@@ -1,0 +1,77 @@
+{
+  "fingerprint": {
+    "checkpoint": "423d0f4c2feec664faf3a53ccb18d2654196fb992a5ba1178f295c85bcca35ab",
+    "dataset": "d2f0c3b306f8cc32c52bba4f6e051860eb85bdb7901f726731a8ee59482203a3",
+    "prompts": "842c7ae8f041f31f00bf2cacdc598b85bdd7aee6a58c9bc34585c633906d6fd5",
+    "n": 256,
+    "seed": 20261001
+  },
+  "topics": {
+    "maths": {
+      "confirmed": 158,
+      "judge_right": 158,
+      "corrected": 98,
+      "judge_wrong": 98
+    },
+    "elements": {
+      "confirmed": 220,
+      "judge_right": 220,
+      "corrected": 36,
+      "judge_wrong": 36
+    },
+    "substances": {
+      "corrected": 158,
+      "judge_wrong": 158,
+      "confirmed": 98,
+      "judge_right": 98
+    },
+    "reactions": {
+      "confirmed": 226,
+      "judge_right": 226,
+      "corrected": 30,
+      "judge_wrong": 30
+    },
+    "forces": {
+      "corrected": 205,
+      "judge_wrong": 205,
+      "confirmed": 51,
+      "judge_right": 51
+    },
+    "predict_nucleo": {
+      "corrected": 256,
+      "judge_wrong": 256
+    },
+    "predict_gravity": {
+      "corrected": 254,
+      "judge_wrong": 254,
+      "confirmed": 2,
+      "judge_right": 2
+    },
+    "predict_planets": {
+      "corrected": 255,
+      "judge_wrong": 255,
+      "confirmed": 1,
+      "judge_right": 1
+    },
+    "predict_chem": {
+      "corrected": 223,
+      "judge_wrong": 223,
+      "confirmed": 33,
+      "judge_right": 33
+    },
+    "predict_life": {
+      "confirmed": 146,
+      "judge_right": 146,
+      "corrected": 110,
+      "judge_wrong": 110
+    },
+    "predict_world": {
+      "confirmed": 234,
+      "judge_right": 234,
+      "corrected": 22,
+      "judge_wrong": 22
+    }
+  },
+  "questions": 2816,
+  "reserved_questions": "excluded by the same semantic hash split as the dataset"
+}

@@ -1,0 +1,445 @@
+{
+ "round": 6,
+ "seed": 20261001,
+ "budget_tokens": 350000,
+ "max_tokens": 80,
+ "step_questions": 32,
+ "earlier_prompts": 84953,
+ "sims": {
+  "nucleo": {
+   "lines": 1520,
+   "tokens": 51519,
+   "by_kind": {
+    "calc": 525,
+    "fact": 375,
+    "record": 620
+   },
+   "budget": 52500,
+   "rollouts": 20,
+   "seeds": [
+    5440,
+    6892,
+    8574,
+    6256,
+    95,
+    5779,
+    9043,
+    6651,
+    6922,
+    9296,
+    3196,
+    488,
+    2087,
+    1186,
+    3891,
+    2849,
+    8541,
+    7040,
+    7958,
+    8354
+   ],
+   "sealed": {
+    "lines": 225,
+    "tokens": 4185,
+    "by_kind": {
+     "calc": 129,
+     "fact": 96
+    },
+    "rollouts": 5,
+    "seeds": [
+     3398,
+     8807,
+     2574,
+     8043,
+     8890
+    ]
+   },
+   "heldout": {
+    "lines": 640,
+    "tokens": 11924,
+    "by_kind": {
+     "calc": 292,
+     "fact": 348
+    }
+   },
+   "dropped": {
+    "long": 0,
+    "rejected": 0,
+    "conflict": 0,
+    "collision": 0,
+    "repeated": 0,
+    "gate_failed": 0,
+    "seen": 0
+   },
+   "seconds": 0.11
+  },
+  "gravity": {
+   "lines": 1501,
+   "tokens": 58619,
+   "by_kind": {
+    "calc": 400,
+    "fact": 322,
+    "record": 779
+   },
+   "budget": 59500,
+   "rollouts": 19,
+   "seeds": [
+    5440,
+    6892,
+    8574,
+    6256,
+    95,
+    5779,
+    9043,
+    6651,
+    6922,
+    9296,
+    3196,
+    488,
+    2087,
+    1186,
+    3891,
+    2849,
+    8541,
+    7040,
+    7958
+   ],
+   "sealed": {
+    "lines": 152,
+    "tokens": 2776,
+    "by_kind": {
+     "calc": 82,
+     "fact": 70
+    },
+    "rollouts": 4,
+    "seeds": [
+     3398,
+     8807,
+     2574,
+     8043
+    ]
+   },
+   "heldout": {
+    "lines": 608,
+    "tokens": 11224,
+    "by_kind": {
+     "calc": 294,
+     "fact": 314
+    }
+   },
+   "dropped": {
+    "long": 0,
+    "rejected": 0,
+    "conflict": 0,
+    "collision": 0,
+    "repeated": 0,
+    "gate_failed": 0,
+    "seen": 0
+   },
+   "seconds": 32.37
+  },
+  "planets": {
+   "lines": 1400,
+   "tokens": 47862,
+   "by_kind": {
+    "calc": 457,
+    "fact": 323,
+    "record": 620
+   },
+   "budget": 49000,
+   "rollouts": 20,
+   "seeds": [
+    5440,
+    6892,
+    8574,
+    6256,
+    95,
+    5779,
+    9043,
+    6651,
+    6922,
+    9296,
+    3196,
+    488,
+    2087,
+    1186,
+    3891,
+    2849,
+    8541,
+    7040,
+    7958,
+    8354
+   ],
+   "sealed": {
+    "lines": 195,
+    "tokens": 3310,
+    "by_kind": {
+     "calc": 107,
+     "fact": 88
+    },
+    "rollouts": 5,
+    "seeds": [
+     3398,
+     8807,
+     2574,
+     8043,
+     8890
+    ]
+   },
+   "heldout": {
+    "lines": 640,
+    "tokens": 11004,
+    "by_kind": {
+     "calc": 309,
+     "fact": 331
+    }
+   },
+   "dropped": {
+    "long": 0,
+    "rejected": 0,
+    "conflict": 0,
+    "collision": 0,
+    "repeated": 0,
+    "gate_failed": 0,
+    "seen": 0
+   },
+   "seconds": 0.26
+  },
+  "chem": {
+   "lines": 1646,
+   "tokens": 53507,
+   "by_kind": {
+    "calc": 531,
+    "fact": 474,
+    "record": 641
+   },
+   "budget": 52500,
+   "rollouts": 19,
+   "seeds": [
+    5440,
+    6892,
+    8574,
+    6256,
+    95,
+    5779,
+    9043,
+    6651,
+    6922,
+    9296,
+    3196,
+    488,
+    2087,
+    1186,
+    3891,
+    2849,
+    8541,
+    7040,
+    7958
+   ],
+   "sealed": {
+    "lines": 176,
+    "tokens": 2920,
+    "by_kind": {
+     "calc": 111,
+     "fact": 65
+    },
+    "rollouts": 4,
+    "seeds": [
+     3398,
+     8807,
+     2574,
+     8043
+    ]
+   },
+   "heldout": {
+    "lines": 608,
+    "tokens": 10312,
+    "by_kind": {
+     "calc": 297,
+     "fact": 311
+    }
+   },
+   "dropped": {
+    "long": 0,
+    "rejected": 0,
+    "conflict": 0,
+    "collision": 0,
+    "repeated": 0,
+    "gate_failed": 0,
+    "seen": 0
+   },
+   "seconds": 9.11
+  },
+  "life": {
+   "lines": 1462,
+   "tokens": 55193,
+   "by_kind": {
+    "calc": 381,
+    "fact": 367,
+    "record": 714
+   },
+   "budget": 56000,
+   "rollouts": 17,
+   "seeds": [
+    5440,
+    6892,
+    8574,
+    6256,
+    95,
+    5779,
+    9043,
+    6651,
+    6922,
+    9296,
+    3196,
+    488,
+    2087,
+    1186,
+    3891,
+    2849,
+    8541
+   ],
+   "sealed": {
+    "lines": 176,
+    "tokens": 3105,
+    "by_kind": {
+     "calc": 100,
+     "fact": 76
+    },
+    "rollouts": 4,
+    "seeds": [
+     3398,
+     8807,
+     2574,
+     8043
+    ]
+   },
+   "heldout": {
+    "lines": 544,
+    "tokens": 9756,
+    "by_kind": {
+     "calc": 266,
+     "fact": 278
+    }
+   },
+   "dropped": {
+    "long": 0,
+    "rejected": 0,
+    "conflict": 0,
+    "collision": 0,
+    "repeated": 0,
+    "gate_failed": 0,
+    "seen": 0
+   },
+   "seconds": 0.7
+  },
+  "world": {
+   "lines": 4221,
+   "tokens": 80781,
+   "by_kind": {
+    "calc": 1604,
+    "fact": 2177,
+    "record": 440
+   },
+   "budget": 80500,
+   "rollouts": 47,
+   "seeds": [
+    5440,
+    6892,
+    8574,
+    6256,
+    95,
+    5779,
+    9043,
+    6651,
+    6922,
+    9296,
+    3196,
+    488,
+    2087,
+    1186,
+    3891,
+    2849,
+    8541,
+    7040,
+    7958,
+    8354,
+    8048,
+    9727,
+    3961,
+    5867,
+    7628,
+    9340,
+    7291,
+    2367,
+    3727,
+    9619,
+    7755,
+    2985,
+    1291,
+    3084,
+    8040,
+    7064,
+    8855,
+    6045,
+    2606,
+    5086,
+    8644,
+    1334,
+    7830,
+    5106,
+    7364,
+    2760,
+    6791
+   ],
+   "sealed": {
+    "lines": 835,
+    "tokens": 14442,
+    "by_kind": {
+     "calc": 340,
+     "fact": 495
+    },
+    "rollouts": 11,
+    "seeds": [
+     3398,
+     8807,
+     2574,
+     8043,
+     8890,
+     9442,
+     3349,
+     5558,
+     5411,
+     7650,
+     7258
+    ]
+   },
+   "heldout": {
+    "lines": 0,
+    "tokens": 0,
+    "by_kind": {}
+   },
+   "dropped": {
+    "long": 0,
+    "rejected": 0,
+    "conflict": 0,
+    "collision": 0,
+    "repeated": 268,
+    "gate_failed": 0,
+    "seen": 95
+   },
+   "seconds": 98.02
+  }
+ },
+ "total": {
+  "lines": 11750,
+  "tokens": 347481,
+  "sealed_lines": 1759,
+  "sealed_tokens": 30738,
+  "dropped": 268,
+  "seconds": 140.57,
+  "rollouts": 142,
+  "sealed_rollouts": 33,
+  "heldout_lines": 3040
+ }
+}

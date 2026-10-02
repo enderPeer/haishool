@@ -1,0 +1,152 @@
+q gravity seed 3 3 9 8 step 1 radius. a 0 point 6 5 1.
+q gravity seed 3 3 9 8 step 1 spiral. a no.
+q gravity seed 3 3 9 8 step 1 next spiral. a no.
+q gravity seed 3 3 9 8 step 2 flattening. a 1 point 1 2.
+q gravity seed 3 3 9 8 step 2 stage. a cloud.
+q gravity seed 3 3 9 8 step 3 time. a 0 point 3.
+q gravity seed 3 3 9 8 step 3 stage. a cloud.
+q gravity seed 3 3 9 8 step 8 next radius. a 0 point 5 3 2.
+q gravity seed 3 3 9 8 step 1 0 stage. a cloud.
+q gravity seed 3 3 9 8 step 1 1 next spiral. a no.
+q gravity seed 3 3 9 8 step 1 3 flattening. a 0 point 5 2 4.
+q gravity seed 3 3 9 8 step 1 4 next spiral. a no.
+q gravity seed 3 3 9 8 step 1 5 next largest_clump. a 0 point 4 2 6.
+q gravity seed 3 3 9 8 step 1 7 next flattening. a 0 point 3 5 4.
+q gravity seed 3 3 9 8 step 1 8 time. a 1 point 8.
+q gravity seed 3 3 9 8 step 1 8 radius. a 0 point 2 3 5.
+q gravity seed 3 3 9 8 step 1 8 next time. a 1 point 9.
+q gravity seed 3 3 9 8 step 1 9 time. a 1 point 9.
+q gravity seed 3 3 9 8 step 1 9 energy. a minus 0 point 9 8 2.
+q gravity seed 3 3 9 8 step 2 0 time. a 2.
+q gravity seed 3 3 9 8 step 2 0 next largest_clump. a 0 point 3 9 8.
+q gravity seed 3 3 9 8 step 2 1 radius. a 0 point 2 4 9.
+q gravity seed 3 3 9 8 step 2 2 next spiral. a yes.
+q gravity seed 3 3 9 8 step 2 4 next clumps. a 4.
+q gravity seed 3 3 9 8 step 2 6 flattening. a 0 point 1 4 4.
+q gravity seed 3 3 9 8 step 2 6 next flattening. a 0 point 1 3 2.
+q gravity seed 3 3 9 8 step 2 7 next radius. a 0 point 1 7.
+q gravity seed 3 3 9 8 step 3 0 next energy. a minus 1 point 6 4.
+q gravity seed 3 3 9 8 step 3 2 next stage. a clumped.
+q gravity seed 3 3 9 8 step 3 5 next time. a 3 point 6.
+q gravity seed 3 3 9 8 step 3 9 flattening. a 0 point 0 7 0 8.
+q gravity seed 3 3 9 8 step 4 0 spiral. a no.
+q gravity seed 3 3 9 8 final clumps. a 4.
+q gravity seed 3 3 9 8 final largest_clump. a 0 point 5 3 9.
+q gravity seed 3 3 9 8 final flattening. a 0 point 0 7 1 4.
+q gravity seed 3 3 9 8 final min_flattening. a 0 point 0 7 0 8.
+q gravity seed 3 3 9 8 final spiral_ever. a yes.
+q gravity seed 3 3 9 8 final collapse_time. a 1 point 5.
+q gravity seed 8 8 0 7 step 0 next time. a 0 point 1.
+q gravity seed 8 8 0 7 step 1 flattening. a 1 point 0 4.
+q gravity seed 8 8 0 7 step 3 angular_momentum. a 0 point 3 3 1.
+q gravity seed 8 8 0 7 step 3 next largest_clump. a 0.
+q gravity seed 8 8 0 7 step 4 flattening. a 1 point 0 1.
+q gravity seed 8 8 0 7 step 5 next stage. a cloud.
+q gravity seed 8 8 0 7 step 8 clumps. a 1.
+q gravity seed 8 8 0 7 step 8 next time. a 0 point 9.
+q gravity seed 8 8 0 7 step 9 energy. a minus 0 point 4 8 9.
+q gravity seed 8 8 0 7 step 1 0 clumps. a 2.
+q gravity seed 8 8 0 7 step 1 1 radius. a 0 point 4 5 6.
+q gravity seed 8 8 0 7 step 1 1 spiral. a no.
+q gravity seed 8 8 0 7 step 1 2 next energy. a minus 0 point 6 1 7.
+q gravity seed 8 8 0 7 step 1 3 energy. a minus 0 point 6 1 7.
+q gravity seed 8 8 0 7 step 1 3 angular_momentum. a 0 point 3 3 1.
+q gravity seed 8 8 0 7 step 1 3 next clumps. a 7.
+q gravity seed 8 8 0 7 step 1 4 time. a 1 point 4.
+q gravity seed 8 8 0 7 step 1 7 next radius. a 0 point 2 4 1.
+q gravity seed 8 8 0 7 step 1 8 spiral. a no.
+q gravity seed 8 8 0 7 step 1 9 radius. a 0 point 2 5 5.
+q gravity seed 8 8 0 7 step 1 9 next energy. a minus 0 point 9 3 6.
+q gravity seed 8 8 0 7 step 2 0 next radius. a 0 point 2 4 6.
+q gravity seed 8 8 0 7 step 2 2 next clumps. a 2.
+q gravity seed 8 8 0 7 step 2 6 radius. a 0 point 1 9 9.
+q gravity seed 8 8 0 7 step 2 6 next angular_momentum. a 0 point 3 3 1.
+q gravity seed 8 8 0 7 step 2 7 largest_clump. a 0 point 5 1 6.
+q gravity seed 8 8 0 7 step 2 7 next angular_momentum. a 0 point 3 3 1.
+q gravity seed 8 8 0 7 step 2 9 radius. a 0 point 1 8 6.
+q gravity seed 8 8 0 7 step 2 9 spiral. a no.
+q gravity seed 8 8 0 7 step 3 2 stage. a clumped.
+q gravity seed 8 8 0 7 step 3 4 clumps. a 2.
+q gravity seed 8 8 0 7 step 3 6 next energy. a minus 1 point 9 1.
+q gravity seed 8 8 0 7 final clumps. a 2.
+q gravity seed 8 8 0 7 final largest_clump. a 0 point 6 3 7.
+q gravity seed 8 8 0 7 final flattening. a 0 point 1 2 6.
+q gravity seed 8 8 0 7 final min_flattening. a 0 point 1 2 6.
+q gravity seed 8 8 0 7 final spiral_ever. a yes.
+q gravity seed 8 8 0 7 final collapse_time. a 1 point 5.
+q gravity seed 2 5 7 4 step 0 next largest_clump. a 0.
+q gravity seed 2 5 7 4 step 2 next largest_clump. a 0.
+q gravity seed 2 5 7 4 step 4 radius. a 0 point 6 2.
+q gravity seed 2 5 7 4 step 5 flattening. a 0 point 9 4 1.
+q gravity seed 2 5 7 4 step 5 next stage. a cloud.
+q gravity seed 2 5 7 4 step 9 energy. a minus 0 point 7.
+q gravity seed 2 5 7 4 step 1 0 next largest_clump. a 0 point 3 2 8.
+q gravity seed 2 5 7 4 step 1 3 angular_momentum. a 0 point 1 6 4.
+q gravity seed 2 5 7 4 step 1 5 next angular_momentum. a 0 point 1 6 4.
+q gravity seed 2 5 7 4 step 1 6 energy. a minus 1 point 5 5.
+q gravity seed 2 5 7 4 step 1 8 angular_momentum. a 0 point 1 6 4.
+q gravity seed 2 5 7 4 step 1 8 next spiral. a no.
+q gravity seed 2 5 7 4 step 1 9 clumps. a 1.
+q gravity seed 2 5 7 4 step 2 0 angular_momentum. a 0 point 1 6 4.
+q gravity seed 2 5 7 4 step 2 0 stage. a clumped.
+q gravity seed 2 5 7 4 step 2 1 next flattening. a 0 point 2 9 9.
+q gravity seed 2 5 7 4 step 2 3 largest_clump. a 0 point 7 5.
+q gravity seed 2 5 7 4 step 2 3 energy. a minus 2 point 4.
+q gravity seed 2 5 7 4 step 2 5 time. a 2 point 5.
+q gravity seed 2 5 7 4 step 2 6 energy. a minus 2 point 6 4.
+q gravity seed 2 5 7 4 step 2 7 flattening. a 0 point 2 0 3.
+q gravity seed 2 5 7 4 step 2 7 clumps. a 3.
+q gravity seed 2 5 7 4 step 2 7 stage. a clumped.
+q gravity seed 2 5 7 4 step 3 0 next clumps. a 2.
+q gravity seed 2 5 7 4 step 3 0 next energy. a minus 2 point 9 9.
+q gravity seed 2 5 7 4 step 3 2 flattening. a 0 point 1 1 2.
+q gravity seed 2 5 7 4 step 3 3 next largest_clump. a 0 point 7 8 1.
+q gravity seed 2 5 7 4 step 3 4 next time. a 3 point 5.
+q gravity seed 2 5 7 4 step 3 5 radius. a 0 point 0 6 1.
+q gravity seed 2 5 7 4 step 3 7 flattening. a 0 point 0 9 0 9.
+q gravity seed 2 5 7 4 step 3 9 clumps. a 2.
+q gravity seed 2 5 7 4 step 4 0 largest_clump. a 0 point 7 8 9.
+q gravity seed 2 5 7 4 final clumps. a 1.
+q gravity seed 2 5 7 4 final largest_clump. a 0 point 7 8 9.
+q gravity seed 2 5 7 4 final flattening. a 0 point 0 5 6.
+q gravity seed 2 5 7 4 final min_flattening. a 0 point 0 5 6.
+q gravity seed 2 5 7 4 final spiral_ever. a no.
+q gravity seed 2 5 7 4 final collapse_time. a 1 point 1.
+q gravity seed 8 0 4 3 step 1 next angular_momentum. a 0 point 3 7 1.
+q gravity seed 8 0 4 3 step 3 next spiral. a no.
+q gravity seed 8 0 4 3 step 5 angular_momentum. a 0 point 3 7 1.
+q gravity seed 8 0 4 3 step 7 next radius. a 0 point 5 4 4.
+q gravity seed 8 0 4 3 step 8 next largest_clump. a 0 point 0 2 3 4.
+q gravity seed 8 0 4 3 step 8 next angular_momentum. a 0 point 3 7 1.
+q gravity seed 8 0 4 3 step 9 next largest_clump. a 0 point 0 1 9 5.
+q gravity seed 8 0 4 3 step 1 3 next flattening. a 0 point 5 0 9.
+q gravity seed 8 0 4 3 step 1 4 next stage. a collapsing.
+q gravity seed 8 0 4 3 step 1 5 clumps. a 5.
+q gravity seed 8 0 4 3 step 1 8 angular_momentum. a 0 point 3 7 1.
+q gravity seed 8 0 4 3 step 1 8 next spiral. a no.
+q gravity seed 8 0 4 3 step 1 9 clumps. a 5.
+q gravity seed 8 0 4 3 step 1 9 next spiral. a no.
+q gravity seed 8 0 4 3 step 2 0 next radius. a 0 point 2 9 2.
+q gravity seed 8 0 4 3 step 2 1 next largest_clump. a 0 point 3 1 6.
+q gravity seed 8 0 4 3 step 2 2 radius. a 0 point 2 9 1.
+q gravity seed 8 0 4 3 step 2 2 next stage. a disc.
+q gravity seed 8 0 4 3 step 2 3 spiral. a no.
+q gravity seed 8 0 4 3 step 2 8 next largest_clump. a 0 point 5 0 4.
+q gravity seed 8 0 4 3 step 2 9 next energy. a minus 1 point 0 4.
+q gravity seed 8 0 4 3 step 3 1 next stage. a fragmenting.
+q gravity seed 8 0 4 3 step 3 2 spiral. a no.
+q gravity seed 8 0 4 3 step 3 2 next clumps. a 2.
+q gravity seed 8 0 4 3 step 3 3 largest_clump. a 0 point 4 8 8.
+q gravity seed 8 0 4 3 step 3 5 radius. a 0 point 2 0 4.
+q gravity seed 8 0 4 3 step 3 5 next radius. a 0 point 2 0 3.
+q gravity seed 8 0 4 3 step 3 7 energy. a minus 1 point 3.
+q gravity seed 8 0 4 3 step 3 7 angular_momentum. a 0 point 3 7 1.
+q gravity seed 8 0 4 3 step 3 9 time. a 3 point 9.
+q gravity seed 8 0 4 3 step 3 9 clumps. a 3.
+q gravity seed 8 0 4 3 step 3 9 next time. a 4.
+q gravity seed 8 0 4 3 final clumps. a 2.
+q gravity seed 8 0 4 3 final largest_clump. a 0 point 5 2 7.
+q gravity seed 8 0 4 3 final flattening. a 0 point 2 1 8.
+q gravity seed 8 0 4 3 final min_flattening. a 0 point 2 1 8.
+q gravity seed 8 0 4 3 final spiral_ever. a yes.
+q gravity seed 8 0 4 3 final collapse_time. a 1 point 8.

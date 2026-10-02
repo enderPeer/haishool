@@ -1,0 +1,32 @@
+{
+  "url": "http://127.0.0.1:8653/",
+  "example_url": "http://127.0.0.1:8653/runs/world-85-render-v1/viewer.html",
+  "module": "haishool.inspect_world",
+  "launcher": "scripts/start-inhabitant-inspector.ps1",
+  "archives": [
+    {
+      "run": "20261002T081417660515Z-seed-86",
+      "seed": 86,
+      "status": "complete",
+      "source_sha256": "19bd5226ba78c7656dbeee8c715843aa3a48665b9570e627448bb66e0bab18fe"
+    },
+    {
+      "run": "20261002T081428023261Z-seed-295",
+      "seed": 295,
+      "status": "complete",
+      "source_sha256": "19bd5226ba78c7656dbeee8c715843aa3a48665b9570e627448bb66e0bab18fe"
+    },
+    {
+      "run": "world-85-render-v1",
+      "seed": 85,
+      "status": "complete",
+      "source_sha256": "156a0e0b5b88df4a916ff455bef3961b9637d7815888b4ea6e159abcd5bc547d"
+    }
+  ],
+  "tests": {
+    "adler_passed": 47,
+    "local_passed": 45,
+    "local_symlink_skips": 2
+  },
+  "scope": "Local trait-based inspection; geometry is a versioned display rule, not evolved anatomy. No simulation core or existing training data changed."
+}

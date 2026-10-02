@@ -1,0 +1,449 @@
+q check holmium lighter_than sodium. a no.
+q check chlorine number 1 7. a yes.
+q check praseodymium heavier_than ytterbium. a no.
+q check cesium lighter_than rubidium. a no.
+q oxygen valence. a minus 2.
+q element symbol fm. a fermium.
+q lutetium mass. a 1 7 4 point 9 7.
+q check copper lighter_than cesium. a yes.
+q heavier oxygen barium. a barium.
+q lower boiling_k rubidium gold. a rubidium.
+q polonium density_g_cm3. a 9 point 2.
+q niobium melting_k. a 2 7 5 0 point 2.
+q heavier mercury iodine. a mercury.
+q lower density_g_cm3 phosphorus vanadium. a phosphorus.
+q lighter barium xenon. a xenon.
+q check chromium lighter_than bromine. a yes.
+q iron discovered. a ancient.
+q check bohrium group 7. a yes.
+q neutrons mass_number 7 5 protons 7 1. a 4.
+q check ruthenium lighter_than zirconium. a no.
+q heavier magnesium neon. a magnesium.
+q check thorium lighter_than oxygen. a no.
+q check boron heavier_than fluorine. a no.
+q lower number europium molybdenum. a molybdenum.
+q check arsenic symbol as. a yes.
+q higher density_g_cm3 einsteinium cadmium. a einsteinium.
+q element before silver. a palladium.
+q radon period. a 6.
+q check hafnium melting_k 2 1 0 6 point 2. a no.
+q lighter argon protactinium. a argon.
+q check nickel number 2 8. a yes.
+q tungsten density_g_cm3. a 1 9 point 3.
+q bismuth protons. a 8 3.
+q lighter barium indium. a indium.
+q gold category. a transition_metal.
+q check barium electronegativity 0 point 8 9. a yes.
+q check silver lighter_than nitrogen. a no.
+q lower number argon silicon. a silicon.
+q nitrogen metal. a nonmetal.
+q element symbol ti. a titanium.
+q neutrons mass_number 2 2 7 protons 8 5. a 1 4 2.
+q osmium discovered. a 1 8 0 4.
+q check thulium mass_number 1 6 9. a yes.
+q check iodine lighter_than platinum. a yes.
+q element number 1 1 8. a oganesson.
+q element group 1 4 period 7. a flerovium.
+q neutrons mass_number 2 1 0 protons 1 0 5. a 1 0 5.
+q lighter fluorine gallium. a fluorine.
+q heavier aluminum platinum. a platinum.
+q lower electronegativity iodine platinum. a platinum.
+q arsenic metal. a metalloid.
+q check lutetium mass 1 7 4 point 9 7. a yes.
+q thorium electronegativity. a 1 point 3.
+q check ytterbium lighter_than strontium. a no.
+q lighter palladium carbon. a carbon.
+q check germanium heavier_than platinum. a no.
+q titanium block. a d.
+q neutrons mass_number 1 0 2 protons 4 8. a 5 4.
+q check xenon lighter_than chromium. a no.
+q check uranium lighter_than samarium. a no.
+q check cobalt group 1 8. a no.
+q element symbol be. a beryllium.
+q manganese density_g_cm3. a 7 point 3.
+q element after lanthanum. a cerium.
+q heavier aluminum silver. a silver.
+q lighter fluorine aluminum. a fluorine.
+q check palladium heavier_than barium. a no.
+q bohrium mass_number. a 2 7 4.
+q lighter rhodium gadolinium. a rhodium.
+q check roentgenium discovered 1 9 9 4. a yes.
+q element after lawrencium. a rutherfordium.
+q neutrons mass_number 9 2 protons 7 2. a 2 0.
+q check berkelium protons 9 4. a no.
+q lighter niobium lithium. a lithium.
+q thallium group. a 1 3.
+q element symbol rb. a rubidium.
+q heavier erbium cobalt. a erbium.
+q higher melting_k plutonium praseodymium. a praseodymium.
+q neutrons mass_number 1 6 6 protons 1 1 5. a 5 1.
+q thorium period. a 7.
+q lower boiling_k zirconium gadolinium. a gadolinium.
+q neutrons mass_number 5 6 protons 2 2. a 3 4.
+q promethium mass_number. a 1 4 5.
+q mercury density_g_cm3. a 1 3 point 5 3 4.
+q bromine mass. a 7 9 point 9 0 4.
+q nitrogen block. a p.
+q tungsten neutrons. a 1 1 0.
+q lower melting_k argon thulium. a argon.
+q element after gadolinium. a terbium.
+q check dysprosium lighter_than gold. a yes.
+q element after arsenic. a selenium.
+q check beryllium heavier_than holmium. a no.
+q higher density_g_cm3 aluminum erbium. a erbium.
+q lighter praseodymium vanadium. a vanadium.
+q element group 8 period 6. a osmium.
+q darmstadtium radioactive. a yes.
+q lighter bismuth arsenic. a arsenic.
+q berkelium protons. a 9 7.
+q higher number antimony arsenic. a antimony.
+q check calcium heavier_than tin. a no.
+q neutrons mass_number 1 5 5 protons 5 7. a 9 8.
+q tantalum number. a 7 3.
+q neutrons mass_number 1 0 9 protons 1 0 9. a 0.
+q element number 6 2. a samarium.
+q higher number titanium molybdenum. a molybdenum.
+q element group 5 period 4. a vanadium.
+q check barium block f. a no.
+q element group 1 period 2. a lithium.
+q neutrons mass_number 2 2 2 protons 7 9. a 1 4 3.
+q selenium electrons. a 3 4.
+q lighter cerium zinc. a zinc.
+q element group 1 8 period 7. a oganesson.
+q lower number potassium nihonium. a potassium.
+q holmium mass. a 1 6 4 point 9 3.
+q elements period 6. a cesium barium lanthanum cerium praseodymium neodymium promethium samarium europium gadolinium terbium dysprosium holmium erbium thulium ytterbium lutetium hafnium tantalum tungsten rhenium osmium iridium platinum gold mercury thallium lead bismuth polonium astatine radon.
+q heavier tellurium boron. a tellurium.
+q technetium mass_number. a 9 8.
+q check darmstadtium electrons 1 8 0. a no.
+q sodium mass_number. a 2 3.
+q bromine radioactive. a no.
+q lighter chlorine manganese. a chlorine.
+q check gallium lighter_than gadolinium. a yes.
+q check xenon mass_number 3 3 2. a no.
+q lead metal. a metal.
+q element symbol s. a sulfur.
+q check bismuth heavier_than terbium. a yes.
+q ruthenium metal. a metal.
+q check uranium heavier_than palladium. a yes.
+q element group 9 period 4. a cobalt.
+q check tungsten lighter_than molybdenum. a no.
+q check xenon density_g_cm3 0 point 0 0 5 3 6 6. a yes.
+q check radium discovered 1 8 9 8. a yes.
+q beryllium group. a 2.
+q element number 1 0 6. a seaborgium.
+q heavier rhenium mercury. a mercury.
+q neutrons mass_number 1 1 2 protons 4 1. a 7 1.
+q heavier germanium nickel. a germanium.
+q check aluminum heavier_than dysprosium. a no.
+q lighter samarium titanium. a titanium.
+q erbium state. a solid.
+q check moscovium block d. a no.
+q neutrons mass_number 1 9 8 protons 1 0 9. a 8 9.
+q higher number ruthenium europium. a europium.
+q gold neutrons. a 1 1 8.
+q check tin period 5. a yes.
+q check antimony lighter_than yttrium. a no.
+q neutrons mass_number 3 3 protons 2 6. a 7.
+q element after darmstadtium. a roentgenium.
+q lighter iron dysprosium. a iron.
+q lighter tungsten barium. a barium.
+q praseodymium metal. a metal.
+q darmstadtium discovered. a 1 9 9 4.
+q heavier aluminum tin. a tin.
+q lighter lead vanadium. a vanadium.
+q lighter hydrogen oxygen. a hydrogen.
+q lighter gold tantalum. a tantalum.
+q check cerium heavier_than carbon. a yes.
+q lighter rhenium cesium. a cesium.
+q uranium symbol. a u.
+q neutrons mass_number 1 0 8 protons 3 6. a 7 2.
+q lighter rhenium selenium. a selenium.
+q check terbium lighter_than scandium. a no.
+q lower melting_k einsteinium protactinium. a einsteinium.
+q element number 4 4. a ruthenium.
+q iron valence. a plus 2 plus 3.
+q heavier tin barium. a barium.
+q element before einsteinium. a californium.
+q americium number. a 9 5.
+q heavier arsenic thallium. a thallium.
+q heavier bromine silicon. a bromine.
+q plutonium mass_number. a 2 4 4.
+q check lead lighter_than erbium. a no.
+q heavier tellurium carbon. a tellurium.
+q heavier lead magnesium. a lead.
+q neutrons mass_number 1 5 9 protons 1 0 4. a 5 5.
+q check germanium heavier_than yttrium. a no.
+q heavier neodymium thulium. a thulium.
+q check phosphorus mass_number 3 1. a yes.
+q neon protons. a 1 0.
+q neutrons mass_number 1 8 5 protons 8 3. a 1 0 2.
+q higher boiling_k phosphorus sodium. a sodium.
+q lighter lanthanum tin. a tin.
+q tin neutrons. a 7 0.
+q lower boiling_k holmium krypton. a krypton.
+q heavier nitrogen iron. a iron.
+q heavier helium hafnium. a hafnium.
+q check tin heavier_than hafnium. a no.
+q neutrons mass_number 1 8 5 protons 1 0 6. a 7 9.
+q neutrons mass_number 2 5 8 protons 1 0 2. a 1 5 6.
+q cadmium block. a d.
+q check antimony lighter_than helium. a no.
+q lighter erbium chromium. a chromium.
+q check hafnium symbol hf. a yes.
+q element number 4 5. a rhodium.
+q lighter sodium zinc. a sodium.
+q check europium heavier_than lithium. a yes.
+q neutrons mass_number 7 3 protons 5 0. a 2 3.
+q neutrons mass_number 4 5 protons 2 1. a 2 4.
+q check manganese melting_k 1 5 1 9 point 2. a yes.
+q lower number californium dubnium. a californium.
+q check thulium lighter_than titanium. a no.
+q lighter niobium rhenium. a niobium.
+q check erbium melting_k 1 8 0 2 point 2. a yes.
+q check darmstadtium number 1 1 5. a no.
+q element after phosphorus. a sulfur.
+q heavier chromium germanium. a germanium.
+q higher density_g_cm3 copper radium. a copper.
+q check nickel heavier_than nitrogen. a yes.
+q lighter dysprosium fluorine. a fluorine.
+q element after lutetium. a hafnium.
+q francium symbol. a fr.
+q rhodium mass_number. a 1 0 3.
+q antimony melting_k. a 9 0 3 point 7 8.
+q tin melting_k. a 5 0 5 point 0 8.
+q check cobalt lighter_than zinc. a yes.
+q element group 2 period 2. a beryllium.
+q heavier xenon chromium. a xenon.
+q lower density_g_cm3 terbium niobium. a terbium.
+q check dysprosium heavier_than europium. a yes.
+q higher density_g_cm3 nickel uranium. a uranium.
+q lower electronegativity phosphorus antimony. a antimony.
+q heavier gold thulium. a gold.
+q neutrons mass_number 1 1 protons 9. a 2.
+q heavier scandium ytterbium. a ytterbium.
+q manganese discovered. a 1 7 7 4.
+q higher density_g_cm3 hafnium sulfur. a hafnium.
+q indium valence. a plus 3.
+q check germanium heavier_than tin. a no.
+q lutetium melting_k. a 1 9 3 6 point 2.
+q higher melting_k phosphorus beryllium. a beryllium.
+q element symbol fl. a flerovium.
+q heavier ytterbium xenon. a ytterbium.
+q check helium heavier_than rhenium. a no.
+q neutrons mass_number 4 8 protons 3 4. a 1 4.
+q check nickel lighter_than barium. a yes.
+q check hydrogen lighter_than niobium. a yes.
+q check tin neutrons 1 5 7. a no.
+q radon mass_number. a 2 2 2.
+q element number 4 2. a molybdenum.
+q check francium category alkali_metal. a yes.
+q carbon econf. a he 2s2 2p2.
+q hydrogen protons. a 1.
+q check protactinium electronegativity 6 point 5. a no.
+q tin protons. a 5 0.
+q check moscovium mass_number 2 9 0. a yes.
+q technetium symbol. a tc.
+q check plutonium mass_number 2 5 4. a no.
+q radium density_g_cm3. a 5.
+q check silver lighter_than gadolinium. a yes.
+q lighter zinc sodium. a sodium.
+q indium radioactive. a no.
+q check nitrogen lighter_than potassium. a yes.
+q check tungsten heavier_than calcium. a yes.
+q copernicium econf. a rn 5f14 6d10 7s2.
+q element symbol o. a oxygen.
+q heavier magnesium mercury. a mercury.
+q check rhenium lighter_than palladium. a no.
+q magnesium group. a 2.
+q check cobalt period 4. a yes.
+q check ruthenium lighter_than titanium. a no.
+q check plutonium mass_number 2 9 4. a no.
+q check neptunium density_g_cm3 2 0 point 2. a yes.
+q check calcium radioactive yes. a no.
+q check fluorine group 1 7. a yes.
+q fluorine mass. a 1 8 point 9 9 8.
+q iron density_g_cm3. a 7 point 8 7.
+q lower melting_k lutetium cobalt. a cobalt.
+q neutrons mass_number 2 4 protons 1 1. a 1 3.
+q bromine protons. a 3 5.
+q xenon density_g_cm3. a 0 point 0 0 5 3 6 6.
+q gallium electrons. a 3 1.
+q check silicon lighter_than selenium. a yes.
+q flerovium block. a p.
+q heavier bismuth iron. a bismuth.
+q lighter krypton neon. a neon.
+q neutrons mass_number 8 3 protons 3 2. a 5 1.
+q neutrons mass_number 4 3 protons 1 8. a 2 5.
+q check uranium symbol pu. a no.
+q heavier tungsten praseodymium. a tungsten.
+q neutrons mass_number 6 0 protons 2 8. a 3 2.
+q cadmium number. a 4 8.
+q neutrons mass_number 9 1 protons 3 8. a 5 3.
+q element after praseodymium. a neodymium.
+q higher electronegativity zinc zirconium. a zinc.
+q lower boiling_k beryllium iron. a beryllium.
+q lower density_g_cm3 gallium bismuth. a gallium.
+q check zinc heavier_than cadmium. a no.
+q check mercury density_g_cm3 1 3 point 5 3 4. a yes.
+q check rhodium lighter_than phosphorus. a no.
+q check barium state solid. a yes.
+q higher density_g_cm3 sodium antimony. a antimony.
+q check gold lighter_than ruthenium. a no.
+q lower number cerium einsteinium. a cerium.
+q heavier niobium tungsten. a tungsten.
+q neodymium symbol. a nd.
+q rutherfordium valence. a plus 4.
+q check erbium mass 1 9 0 point 2 3. a no.
+q higher number neptunium cesium. a neptunium.
+q lighter cobalt yttrium. a cobalt.
+q neutrons mass_number 1 1 3 protons 1 0 0. a 1 3.
+q lower melting_k terbium ytterbium. a ytterbium.
+q check oxygen lighter_than magnesium. a yes.
+q higher electronegativity rhodium chlorine. a chlorine.
+q check nitrogen metal metalloid. a no.
+q higher number nobelium flerovium. a flerovium.
+q element after tin. a antimony.
+q check rhenium lighter_than indium. a no.
+q check iodine valence minus 1 plus 1 plus 3 plus 5 plus 7. a yes.
+q germanium protons. a 3 2.
+q lighter nitrogen platinum. a nitrogen.
+q check neodymium heavier_than cerium. a yes.
+q check manganese density_g_cm3 7 point 3. a yes.
+q neutrons mass_number 2 7 8 protons 1 1 2. a 1 6 6.
+q higher number vanadium zirconium. a zirconium.
+q lighter ruthenium rhenium. a ruthenium.
+q heavier holmium argon. a holmium.
+q neutrons mass_number 8 4 protons 6 9. a 1 5.
+q carbon radioactive. a no.
+q check chromium lighter_than iridium. a yes.
+q check neodymium heavier_than thulium. a no.
+q lighter strontium silicon. a silicon.
+q check strontium lighter_than cesium. a yes.
+q nickel radioactive. a no.
+q platinum group. a 1 0.
+q check arsenic heavier_than lithium. a yes.
+q check erbium heavier_than manganese. a yes.
+q neutrons mass_number 1 1 4 protons 6 1. a 5 3.
+q check argon heavier_than fluorine. a yes.
+q check potassium electronegativity 1. a no.
+q higher melting_k potassium protactinium. a protactinium.
+q argon radioactive. a no.
+q lower boiling_k gold oxygen. a oxygen.
+q hydrogen block. a s.
+q lower number meitnerium aluminum. a aluminum.
+q element before lutetium. a ytterbium.
+q hydrogen state. a gas.
+q einsteinium econf. a rn 5f11 7s2.
+q neon state. a gas.
+q check thorium lighter_than erbium. a no.
+q element group 1 3 period 6. a thallium.
+q check polonium melting_k 5 2 7 point 1 5. a yes.
+q check beryllium state gas. a no.
+q potassium mass_number. a 3 9.
+q lighter bismuth samarium. a samarium.
+q heavier xenon barium. a barium.
+q lanthanum category. a lanthanide.
+q check thulium boiling_k 2 3 2 3 point 2. a no.
+q lighter lithium protactinium. a lithium.
+q check zinc lighter_than indium. a yes.
+q higher number actinium erbium. a actinium.
+q cadmium group. a 1 2.
+q lighter holmium protactinium. a holmium.
+q element number 7 7. a iridium.
+q cadmium econf. a kr 4d10 5s2.
+q heavier titanium chromium. a chromium.
+q lower electronegativity nickel manganese. a manganese.
+q check copper category transition_metal. a yes.
+q element number 1 8. a argon.
+q higher number bromine molybdenum. a molybdenum.
+q element group 1 8 period 2. a neon.
+q check iodine valence minus 1 plus 1 plus 5 plus 7 plus 8. a no.
+q lower number lanthanum protactinium. a lanthanum.
+q check hydrogen block d. a no.
+q zinc category. a transition_metal.
+q check argon neutrons 2 2. a yes.
+q polonium mass. a 2 0 9.
+q check americium number 9 5. a yes.
+q check lead metal metalloid. a no.
+q heavier iridium silicon. a iridium.
+q heavier dysprosium zirconium. a dysprosium.
+q check indium heavier_than rubidium. a yes.
+q higher number hafnium zinc. a hafnium.
+q check cesium lighter_than magnesium. a no.
+q check terbium category lanthanide. a yes.
+q aluminum period. a 3.
+q check zirconium boiling_k 4 6 7 9 point 2. a yes.
+q radon metal. a nonmetal.
+q neutrons mass_number 2 9 2 protons 1 0 0. a 1 9 2.
+q heavier yttrium vanadium. a yttrium.
+q lighter yttrium potassium. a potassium.
+q check terbium lighter_than cobalt. a no.
+q check krypton heavier_than bismuth. a no.
+q tungsten metal. a metal.
+q neutrons mass_number 1 3 2 protons 1 1 5. a 1 7.
+q lighter oxygen thulium. a oxygen.
+q heavier aluminum hafnium. a hafnium.
+q beryllium mass_number. a 9.
+q lead valence. a plus 2 plus 4.
+q tin mass. a 1 1 8 point 7 1.
+q check californium period 5. a no.
+q lighter tungsten bromine. a bromine.
+q check dysprosium lighter_than chlorine. a no.
+q heavier aluminum gadolinium. a gadolinium.
+q check barium heavier_than neon. a yes.
+q heavier antimony sodium. a antimony.
+q neutrons mass_number 8 7 protons 6 0. a 2 7.
+q heavier ytterbium oxygen. a ytterbium.
+q lower number xenon carbon. a carbon.
+q check thallium electrons 8 1. a yes.
+q higher electronegativity platinum copper. a platinum.
+q neon symbol. a ne.
+q bismuth melting_k. a 5 4 4 point 5 5.
+q neutrons mass_number 5 3 protons 3 4. a 1 9.
+q niobium density_g_cm3. a 8 point 5 7.
+q element number 2 1. a scandium.
+q check tellurium heavier_than oxygen. a yes.
+q check lithium lighter_than sulfur. a yes.
+q check bromine lighter_than rhenium. a yes.
+q europium protons. a 6 3.
+q manganese number. a 2 5.
+q check hydrogen symbol h. a yes.
+q heavier oxygen vanadium. a vanadium.
+q heavier niobium ruthenium. a ruthenium.
+q chromium melting_k. a 2 1 8 0 point 2.
+q check chromium block p. a no.
+q lighter samarium nitrogen. a nitrogen.
+q lower boiling_k technetium indium. a indium.
+q check tin mass 1 1 8 point 7 1. a yes.
+q higher electronegativity cerium phosphorus. a phosphorus.
+q heavier silver thulium. a thulium.
+q neutrons mass_number 1 1 0 protons 1 1 0. a 0.
+q check sulfur lighter_than iron. a yes.
+q check neon lighter_than holmium. a yes.
+q lower boiling_k polonium actinium. a polonium.
+q neutrons mass_number 8 protons 7. a 1.
+q check helium heavier_than strontium. a no.
+q germanium mass_number. a 7 4.
+q check manganese heavier_than bromine. a no.
+q lighter oxygen tantalum. a oxygen.
+q tungsten electrons. a 7 4.
+q check rhenium melting_k 2 0 2 point 1 5. a no.
+q check helium heavier_than titanium. a no.
+q uranium melting_k. a 1 4 0 8 point 2.
+q neutrons mass_number 1 1 7 protons 7 9. a 3 8.
+q check vanadium group 1 5. a no.
+q lighter lutetium bismuth. a lutetium.
+q check ruthenium electrons 6 4. a no.
+q check gold group 8. a no.
+q check erbium group lanthanide. a yes.
+q lower electronegativity strontium gold. a strontium.
+q check palladium lighter_than cerium. a yes.
+q check strontium symbol sr. a yes.
+q lead mass_number. a 2 0 8.
+q lighter samarium thorium. a samarium.
+q check beryllium heavier_than vanadium. a no.
+q check hafnium heavier_than titanium. a yes.
+q check cobalt density_g_cm3 7 point 1 5. a no.
+q check neon lighter_than iron. a yes.
+q check chlorine lighter_than nickel. a yes.
