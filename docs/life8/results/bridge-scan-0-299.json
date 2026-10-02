@@ -1,0 +1,2382 @@
+{
+ "what": "world7 seeds 0-299 scanned by haishool.life8.bridge.candidate_worlds (fast path: each planet's climb stops after senses); the eras of the planet the bridge uses",
+ "command": "bridge.candidate_worlds(10**6, 0, workers=16, max_seeds=300)",
+ "seconds_wall_16_workers_machine_loaded": 116.1,
+ "seeds_scanned": 300,
+ "qualifying": 49,
+ "seeds": [
+  6,
+  7,
+  9,
+  10,
+  29,
+  35,
+  40,
+  54,
+  56,
+  63,
+  65,
+  66,
+  74,
+  76,
+  77,
+  79,
+  85,
+  88,
+  90,
+  100,
+  101,
+  102,
+  110,
+  111,
+  120,
+  152,
+  160,
+  167,
+  171,
+  172,
+  178,
+  182,
+  197,
+  207,
+  213,
+  221,
+  223,
+  225,
+  230,
+  232,
+  242,
+  253,
+  254,
+  260,
+  265,
+  278,
+  286,
+  290,
+  295
+ ],
+ "links": {
+  "6": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "7": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "9": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "10": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "29": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "35": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "40": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies"
+  ],
+  "54": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "56": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "63": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "65": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "66": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "74": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "76": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "77": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "79": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "85": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "88": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "90": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "100": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "101": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "102": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "110": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "111": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "120": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "152": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "160": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "167": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "171": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "172": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "178": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "182": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "197": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "207": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "213": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "221": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "223": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "225": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "230": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "232": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "242": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "253": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "254": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "260": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "265": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "278": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "286": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ],
+  "290": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses",
+   "groups"
+  ],
+  "295": [
+   "replicators",
+   "cells",
+   "complex_cells",
+   "bodies",
+   "senses"
+  ]
+ },
+ "eras": {
+  "6": {
+   "surface": {
+    "mass": 4.59,
+    "flux": 0.382,
+    "temperature": 275,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 66,
+    "h2o": 5072,
+    "precursors": 66
+   },
+   "bodies": {
+    "light": 76.0,
+    "transfer": 0.18,
+    "species": 25,
+    "max_size": 128,
+    "cell_types": 4,
+    "consumer_size": 64,
+    "consumer_types": 4,
+    "trophic_levels": 3,
+    "air": 0.0766,
+    "predator_share": 0.0299,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 64,
+    "eyes": 0.025,
+    "ears": 1.79,
+    "neurons": 15.6,
+    "talkers": 0.275,
+    "predator_pressure": 0.361,
+    "agents": 200,
+    "group": "yes",
+    "result": "sensing"
+   }
+  },
+  "7": {
+   "surface": {
+    "mass": 1.13,
+    "flux": 0.411,
+    "temperature": 276,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 59,
+    "h2o": 5187,
+    "precursors": 58
+   },
+   "bodies": {
+    "light": 82.0,
+    "transfer": 0.18,
+    "species": 27,
+    "max_size": 128,
+    "cell_types": 5,
+    "consumer_size": 128,
+    "consumer_types": 5,
+    "trophic_levels": 4,
+    "air": 0.152,
+    "predator_share": 0.123,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 128,
+    "eyes": 0.005,
+    "ears": 0.99,
+    "neurons": 31.7,
+    "talkers": 0.13,
+    "predator_pressure": 0.593,
+    "agents": 200,
+    "group": "yes",
+    "result": "sensing"
+   }
+  },
+  "9": {
+   "surface": {
+    "mass": 3.26,
+    "flux": 0.411,
+    "temperature": 276,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 80,
+    "h2o": 5046,
+    "precursors": 79
+   },
+   "bodies": {
+    "light": 82.0,
+    "transfer": 0.19,
+    "species": 37,
+    "max_size": 512,
+    "cell_types": 7,
+    "consumer_size": 128,
+    "consumer_types": 6,
+    "trophic_levels": 3,
+    "air": 0.0563,
+    "predator_share": 0.0559,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 128,
+    "eyes": 2.35,
+    "ears": 2.13,
+    "neurons": 26.6,
+    "talkers": 0.785,
+    "predator_pressure": 0.842,
+    "agents": 200,
+    "group": "yes",
+    "result": "seeing"
+   }
+  },
+  "10": {
+   "surface": {
+    "mass": 1.97,
+    "flux": 0.411,
+    "temperature": 276,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 26,
+    "h2o": 5358,
+    "precursors": 25
+   },
+   "bodies": {
+    "light": 82.0,
+    "transfer": 0.19,
+    "species": 40,
+    "max_size": 128,
+    "cell_types": 6,
+    "consumer_size": 128,
+    "consumer_types": 5,
+    "trophic_levels": 3,
+    "air": 0.08,
+    "predator_share": 0.0219,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 128,
+    "eyes": 0.06,
+    "ears": 4.07,
+    "neurons": 31.9,
+    "talkers": 0.88,
+    "predator_pressure": 0.515,
+    "agents": 200,
+    "group": "yes",
+    "result": "sensing"
+   }
+  },
+  "29": {
+   "surface": {
+    "mass": 1.86,
+    "flux": 0.482,
+    "temperature": 280,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 81,
+    "h2o": 5033,
+    "precursors": 81
+   },
+   "bodies": {
+    "light": 96.0,
+    "transfer": 0.17,
+    "species": 40,
+    "max_size": 256,
+    "cell_types": 6,
+    "consumer_size": 256,
+    "consumer_types": 5,
+    "trophic_levels": 3,
+    "air": 0.078,
+    "predator_share": 0.0589,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 1.13,
+    "ears": 1.97,
+    "neurons": 62.2,
+    "talkers": 0.15,
+    "predator_pressure": 0.797,
+    "agents": 200,
+    "group": "yes",
+    "result": "brained"
+   }
+  },
+  "35": {
+   "surface": {
+    "mass": 0.547,
+    "flux": 0.41,
+    "temperature": 276,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 70,
+    "h2o": 5088,
+    "precursors": 70
+   },
+   "bodies": {
+    "light": 82.0,
+    "transfer": 0.18,
+    "species": 38,
+    "max_size": 256,
+    "cell_types": 7,
+    "consumer_size": 256,
+    "consumer_types": 6,
+    "trophic_levels": 3,
+    "air": 0.0647,
+    "predator_share": 0.0533,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 1.34,
+    "ears": 1.23,
+    "neurons": 58.2,
+    "talkers": 0.045,
+    "predator_pressure": 0.551,
+    "agents": 200,
+    "group": "yes",
+    "result": "brained"
+   }
+  },
+  "40": {
+   "surface": {
+    "mass": 9.52,
+    "flux": 0.707,
+    "temperature": 286,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 59,
+    "h2o": 5069,
+    "precursors": 59
+   },
+   "bodies": {
+    "light": 141.0,
+    "transfer": 0.2,
+    "species": 60,
+    "max_size": 512,
+    "cell_types": 8,
+    "consumer_size": 512,
+    "consumer_types": 8,
+    "trophic_levels": 3,
+    "air": 0.106,
+    "predator_share": 0.12,
+    "result": "animals_like"
+   }
+  },
+  "54": {
+   "surface": {
+    "mass": 3.16,
+    "flux": 0.557,
+    "temperature": 283,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 61,
+    "h2o": 5131,
+    "precursors": 61
+   },
+   "bodies": {
+    "light": 111.0,
+    "transfer": 0.2,
+    "species": 46,
+    "max_size": 256,
+    "cell_types": 6,
+    "consumer_size": 256,
+    "consumer_types": 6,
+    "trophic_levels": 4,
+    "air": 0.205,
+    "predator_share": 0.165,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 2.96,
+    "ears": 4.16,
+    "neurons": 36.4,
+    "talkers": 0.83,
+    "predator_pressure": 0.963,
+    "agents": 200,
+    "group": "yes",
+    "result": "brained"
+   }
+  },
+  "56": {
+   "surface": {
+    "mass": 4.02,
+    "flux": 0.382,
+    "temperature": 275,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 69,
+    "h2o": 5092,
+    "precursors": 69
+   },
+   "bodies": {
+    "light": 76.0,
+    "transfer": 0.19,
+    "species": 32,
+    "max_size": 128,
+    "cell_types": 5,
+    "consumer_size": 64,
+    "consumer_types": 4,
+    "trophic_levels": 3,
+    "air": 0.0789,
+    "predator_share": 0.0387,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 64,
+    "eyes": 0.03,
+    "ears": 1.58,
+    "neurons": 15.8,
+    "talkers": 0.09,
+    "predator_pressure": 0.44,
+    "agents": 200,
+    "group": "yes",
+    "result": "sensing"
+   }
+  },
+  "63": {
+   "surface": {
+    "mass": 1.21,
+    "flux": 0.822,
+    "temperature": 287,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 72,
+    "h2o": 5040,
+    "precursors": 72
+   },
+   "bodies": {
+    "light": 164.0,
+    "transfer": 0.19,
+    "species": 44,
+    "max_size": 256,
+    "cell_types": 7,
+    "consumer_size": 256,
+    "consumer_types": 6,
+    "trophic_levels": 3,
+    "air": 0.12,
+    "predator_share": 0.0701,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 0.015,
+    "ears": 2.03,
+    "neurons": 32.9,
+    "talkers": 0.61,
+    "predator_pressure": 0.901,
+    "agents": 200,
+    "group": "yes",
+    "result": "brained"
+   }
+  },
+  "65": {
+   "surface": {
+    "mass": 0.823,
+    "flux": 0.75,
+    "temperature": 287,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 38,
+    "h2o": 5260,
+    "precursors": 38
+   },
+   "bodies": {
+    "light": 150.0,
+    "transfer": 0.13,
+    "species": 35,
+    "max_size": 512,
+    "cell_types": 7,
+    "consumer_size": 256,
+    "consumer_types": 7,
+    "trophic_levels": 3,
+    "air": 0.0754,
+    "predator_share": 0.0359,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 2.79,
+    "ears": 0.07,
+    "neurons": 20.1,
+    "talkers": 0.0,
+    "predator_pressure": 0.277,
+    "agents": 200,
+    "group": "no",
+    "result": "seeing"
+   }
+  },
+  "66": {
+   "surface": {
+    "mass": 0.304,
+    "flux": 1.04,
+    "temperature": 290,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 91,
+    "h2o": 5022,
+    "precursors": 91
+   },
+   "bodies": {
+    "light": 208.0,
+    "transfer": 0.16,
+    "species": 60,
+    "max_size": 256,
+    "cell_types": 7,
+    "consumer_size": 256,
+    "consumer_types": 7,
+    "trophic_levels": 3,
+    "air": 0.175,
+    "predator_share": 0.0253,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 2.08,
+    "ears": 0.175,
+    "neurons": 58.2,
+    "talkers": 0.02,
+    "predator_pressure": 0.204,
+    "agents": 200,
+    "group": "no",
+    "result": "brained"
+   }
+  },
+  "74": {
+   "surface": {
+    "mass": 0.943,
+    "flux": 0.411,
+    "temperature": 276,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 79,
+    "h2o": 5036,
+    "precursors": 79
+   },
+   "bodies": {
+    "light": 82.0,
+    "transfer": 0.19,
+    "species": 30,
+    "max_size": 256,
+    "cell_types": 6,
+    "consumer_size": 128,
+    "consumer_types": 6,
+    "trophic_levels": 3,
+    "air": 0.0606,
+    "predator_share": 0.0797,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 128,
+    "eyes": 0.015,
+    "ears": 2.1,
+    "neurons": 31.7,
+    "talkers": 0.51,
+    "predator_pressure": 0.928,
+    "agents": 200,
+    "group": "yes",
+    "result": "sensing"
+   }
+  },
+  "76": {
+   "surface": {
+    "mass": 3.61,
+    "flux": 0.823,
+    "temperature": 287,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 80,
+    "h2o": 5046,
+    "precursors": 80
+   },
+   "bodies": {
+    "light": 165.0,
+    "transfer": 0.17,
+    "species": 60,
+    "max_size": 512,
+    "cell_types": 7,
+    "consumer_size": 512,
+    "consumer_types": 7,
+    "trophic_levels": 4,
+    "air": 0.106,
+    "predator_share": 0.0882,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 512,
+    "eyes": 1.08,
+    "ears": 2.03,
+    "neurons": 97.0,
+    "talkers": 0.515,
+    "predator_pressure": 0.946,
+    "agents": 200,
+    "group": "yes",
+    "result": "brained"
+   }
+  },
+  "77": {
+   "surface": {
+    "mass": 0.558,
+    "flux": 0.482,
+    "temperature": 280,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 42,
+    "h2o": 5304,
+    "precursors": 42
+   },
+   "bodies": {
+    "light": 96.0,
+    "transfer": 0.18,
+    "species": 38,
+    "max_size": 256,
+    "cell_types": 7,
+    "consumer_size": 256,
+    "consumer_types": 7,
+    "trophic_levels": 3,
+    "air": 0.0714,
+    "predator_share": 0.0621,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 0.02,
+    "ears": 2.02,
+    "neurons": 33.7,
+    "talkers": 0.575,
+    "predator_pressure": 0.871,
+    "agents": 200,
+    "group": "yes",
+    "result": "brained"
+   }
+  },
+  "79": {
+   "surface": {
+    "mass": 0.811,
+    "flux": 0.41,
+    "temperature": 276,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 67,
+    "h2o": 5152,
+    "precursors": 66
+   },
+   "bodies": {
+    "light": 82.0,
+    "transfer": 0.19,
+    "species": 49,
+    "max_size": 256,
+    "cell_types": 6,
+    "consumer_size": 256,
+    "consumer_types": 5,
+    "trophic_levels": 3,
+    "air": 0.0805,
+    "predator_share": 0.0313,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 0.045,
+    "ears": 2.04,
+    "neurons": 25.3,
+    "talkers": 0.465,
+    "predator_pressure": 0.644,
+    "agents": 200,
+    "group": "yes",
+    "result": "sensing"
+   }
+  },
+  "85": {
+   "surface": {
+    "mass": 0.539,
+    "flux": 0.559,
+    "temperature": 283,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 80,
+    "h2o": 5016,
+    "precursors": 80
+   },
+   "bodies": {
+    "light": 112.0,
+    "transfer": 0.2,
+    "species": 48,
+    "max_size": 256,
+    "cell_types": 7,
+    "consumer_size": 256,
+    "consumer_types": 7,
+    "trophic_levels": 3,
+    "air": 0.0927,
+    "predator_share": 0.115,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 0.015,
+    "ears": 1.99,
+    "neurons": 63.7,
+    "talkers": 0.945,
+    "predator_pressure": 0.963,
+    "agents": 200,
+    "group": "yes",
+    "result": "brained"
+   }
+  },
+  "88": {
+   "surface": {
+    "mass": 0.534,
+    "flux": 0.743,
+    "temperature": 287,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 76,
+    "h2o": 5046,
+    "precursors": 76
+   },
+   "bodies": {
+    "light": 149.0,
+    "transfer": 0.19,
+    "species": 36,
+    "max_size": 64,
+    "cell_types": 4,
+    "consumer_size": 64,
+    "consumer_types": 4,
+    "trophic_levels": 3,
+    "air": 0.182,
+    "predator_share": 0.00926,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 64,
+    "eyes": 1.42,
+    "ears": 0.145,
+    "neurons": 15.8,
+    "talkers": 0.0,
+    "predator_pressure": 0.08,
+    "agents": 200,
+    "group": "no",
+    "result": "seeing"
+   }
+  },
+  "90": {
+   "surface": {
+    "mass": 0.709,
+    "flux": 0.602,
+    "temperature": 284,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 49,
+    "h2o": 5181,
+    "precursors": 49
+   },
+   "bodies": {
+    "light": 120.0,
+    "transfer": 0.18,
+    "species": 52,
+    "max_size": 256,
+    "cell_types": 6,
+    "consumer_size": 256,
+    "consumer_types": 6,
+    "trophic_levels": 3,
+    "air": 0.0978,
+    "predator_share": 0.0143,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 2.04,
+    "ears": 0.12,
+    "neurons": 60.2,
+    "talkers": 0.005,
+    "predator_pressure": 0.121,
+    "agents": 200,
+    "group": "no",
+    "result": "brained"
+   }
+  },
+  "100": {
+   "surface": {
+    "mass": 1.84,
+    "flux": 0.483,
+    "temperature": 280,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 81,
+    "h2o": 5037,
+    "precursors": 79
+   },
+   "bodies": {
+    "light": 97.0,
+    "transfer": 0.15,
+    "species": 25,
+    "max_size": 64,
+    "cell_types": 4,
+    "consumer_size": 64,
+    "consumer_types": 4,
+    "trophic_levels": 3,
+    "air": 0.0889,
+    "predator_share": 0.0398,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 64,
+    "eyes": 1.2,
+    "ears": 0.02,
+    "neurons": 15.6,
+    "talkers": 0.0,
+    "predator_pressure": 0.3,
+    "agents": 200,
+    "group": "no",
+    "result": "seeing"
+   }
+  },
+  "101": {
+   "surface": {
+    "mass": 3.73,
+    "flux": 0.886,
+    "temperature": 288,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 68,
+    "h2o": 5080,
+    "precursors": 67
+   },
+   "bodies": {
+    "light": 177.0,
+    "transfer": 0.18,
+    "species": 59,
+    "max_size": 512,
+    "cell_types": 9,
+    "consumer_size": 512,
+    "consumer_types": 8,
+    "trophic_levels": 3,
+    "air": 0.112,
+    "predator_share": 0.0719,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 512,
+    "eyes": 2.08,
+    "ears": 0.08,
+    "neurons": 13.5,
+    "talkers": 0.015,
+    "predator_pressure": 0.907,
+    "agents": 200,
+    "group": "no",
+    "result": "seeing"
+   }
+  },
+  "102": {
+   "surface": {
+    "mass": 1.32,
+    "flux": 0.481,
+    "temperature": 280,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 76,
+    "h2o": 5037,
+    "precursors": 75
+   },
+   "bodies": {
+    "light": 96.0,
+    "transfer": 0.19,
+    "species": 36,
+    "max_size": 256,
+    "cell_types": 7,
+    "consumer_size": 256,
+    "consumer_types": 6,
+    "trophic_levels": 4,
+    "air": 0.0752,
+    "predator_share": 0.0817,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 0.005,
+    "ears": 2.01,
+    "neurons": 62.7,
+    "talkers": 0.655,
+    "predator_pressure": 0.932,
+    "agents": 200,
+    "group": "yes",
+    "result": "brained"
+   }
+  },
+  "110": {
+   "surface": {
+    "mass": 1.2,
+    "flux": 1.04,
+    "temperature": 290,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 65,
+    "h2o": 5155,
+    "precursors": 65
+   },
+   "bodies": {
+    "light": 208.0,
+    "transfer": 0.14,
+    "species": 40,
+    "max_size": 256,
+    "cell_types": 7,
+    "consumer_size": 256,
+    "consumer_types": 7,
+    "trophic_levels": 3,
+    "air": 0.138,
+    "predator_share": 0.043,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 2.44,
+    "ears": 0.34,
+    "neurons": 62.7,
+    "talkers": 0.0,
+    "predator_pressure": 0.321,
+    "agents": 200,
+    "group": "no",
+    "result": "brained"
+   }
+  },
+  "111": {
+   "surface": {
+    "mass": 1.07,
+    "flux": 0.505,
+    "temperature": 281,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 89,
+    "h2o": 5062,
+    "precursors": 88
+   },
+   "bodies": {
+    "light": 101.0,
+    "transfer": 0.19,
+    "species": 28,
+    "max_size": 128,
+    "cell_types": 5,
+    "consumer_size": 128,
+    "consumer_types": 5,
+    "trophic_levels": 4,
+    "air": 0.172,
+    "predator_share": 0.13,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 128,
+    "eyes": 2.08,
+    "ears": 2.08,
+    "neurons": 19.0,
+    "talkers": 0.205,
+    "predator_pressure": 0.963,
+    "agents": 200,
+    "group": "yes",
+    "result": "seeing"
+   }
+  },
+  "120": {
+   "surface": {
+    "mass": 0.561,
+    "flux": 0.602,
+    "temperature": 284,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "reducing",
+    "organic": 343,
+    "h2o": 4686,
+    "precursors": 185
+   },
+   "bodies": {
+    "light": 120.0,
+    "transfer": 0.15,
+    "species": 34,
+    "max_size": 256,
+    "cell_types": 6,
+    "consumer_size": 256,
+    "consumer_types": 5,
+    "trophic_levels": 3,
+    "air": 0.0946,
+    "predator_share": 0.0335,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 0.03,
+    "ears": 0.175,
+    "neurons": 17.3,
+    "talkers": 0.025,
+    "predator_pressure": 0.261,
+    "agents": 200,
+    "group": "no",
+    "result": "sensing"
+   }
+  },
+  "152": {
+   "surface": {
+    "mass": 0.976,
+    "flux": 0.881,
+    "temperature": 288,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 54,
+    "h2o": 5193,
+    "precursors": 54
+   },
+   "bodies": {
+    "light": 176.0,
+    "transfer": 0.17,
+    "species": 43,
+    "max_size": 256,
+    "cell_types": 6,
+    "consumer_size": 256,
+    "consumer_types": 5,
+    "trophic_levels": 4,
+    "air": 0.147,
+    "predator_share": 0.0498,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 2.1,
+    "ears": 0.695,
+    "neurons": 59.3,
+    "talkers": 0.115,
+    "predator_pressure": 0.525,
+    "agents": 200,
+    "group": "yes",
+    "result": "brained"
+   }
+  },
+  "160": {
+   "surface": {
+    "mass": 1.23,
+    "flux": 0.483,
+    "temperature": 280,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 53,
+    "h2o": 5166,
+    "precursors": 52
+   },
+   "bodies": {
+    "light": 97.0,
+    "transfer": 0.18,
+    "species": 40,
+    "max_size": 128,
+    "cell_types": 5,
+    "consumer_size": 64,
+    "consumer_types": 4,
+    "trophic_levels": 3,
+    "air": 0.0974,
+    "predator_share": 0.0178,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 64,
+    "eyes": 1.24,
+    "ears": 0.005,
+    "neurons": 16.0,
+    "talkers": 0.0,
+    "predator_pressure": 0.148,
+    "agents": 200,
+    "group": "no",
+    "result": "seeing"
+   }
+  },
+  "167": {
+   "surface": {
+    "mass": 0.382,
+    "flux": 0.883,
+    "temperature": 288,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 87,
+    "h2o": 5059,
+    "precursors": 86
+   },
+   "bodies": {
+    "light": 177.0,
+    "transfer": 0.2,
+    "species": 43,
+    "max_size": 128,
+    "cell_types": 5,
+    "consumer_size": 128,
+    "consumer_types": 5,
+    "trophic_levels": 4,
+    "air": 0.19,
+    "predator_share": 0.123,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 128,
+    "eyes": 1.04,
+    "ears": 0.965,
+    "neurons": 31.4,
+    "talkers": 0.14,
+    "predator_pressure": 0.963,
+    "agents": 200,
+    "group": "no",
+    "result": "seeing"
+   }
+  },
+  "171": {
+   "surface": {
+    "mass": 6.45,
+    "flux": 0.382,
+    "temperature": 275,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 75,
+    "h2o": 5041,
+    "precursors": 75
+   },
+   "bodies": {
+    "light": 76.0,
+    "transfer": 0.18,
+    "species": 43,
+    "max_size": 256,
+    "cell_types": 6,
+    "consumer_size": 256,
+    "consumer_types": 5,
+    "trophic_levels": 3,
+    "air": 0.0706,
+    "predator_share": 0.0358,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 0.015,
+    "ears": 0.0,
+    "neurons": 0.53,
+    "talkers": 0.0,
+    "predator_pressure": 0.275,
+    "agents": 200,
+    "group": "no",
+    "result": "sensing"
+   }
+  },
+  "172": {
+   "surface": {
+    "mass": 0.406,
+    "flux": 0.707,
+    "temperature": 286,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 72,
+    "h2o": 5014,
+    "precursors": 71
+   },
+   "bodies": {
+    "light": 141.0,
+    "transfer": 0.15,
+    "species": 32,
+    "max_size": 256,
+    "cell_types": 6,
+    "consumer_size": 128,
+    "consumer_types": 6,
+    "trophic_levels": 3,
+    "air": 0.0882,
+    "predator_share": 0.0477,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 128,
+    "eyes": 3.56,
+    "ears": 3.69,
+    "neurons": 31.4,
+    "talkers": 0.82,
+    "predator_pressure": 0.793,
+    "agents": 200,
+    "group": "yes",
+    "result": "seeing"
+   }
+  },
+  "178": {
+   "surface": {
+    "mass": 2.12,
+    "flux": 0.41,
+    "temperature": 276,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 82,
+    "h2o": 5041,
+    "precursors": 82
+   },
+   "bodies": {
+    "light": 82.0,
+    "transfer": 0.15,
+    "species": 38,
+    "max_size": 512,
+    "cell_types": 7,
+    "consumer_size": 256,
+    "consumer_types": 7,
+    "trophic_levels": 3,
+    "air": 0.0653,
+    "predator_share": 0.0402,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 0.03,
+    "ears": 2.02,
+    "neurons": 31.7,
+    "talkers": 0.565,
+    "predator_pressure": 0.736,
+    "agents": 200,
+    "group": "yes",
+    "result": "sensing"
+   }
+  },
+  "182": {
+   "surface": {
+    "mass": 0.491,
+    "flux": 0.508,
+    "temperature": 281,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 72,
+    "h2o": 5022,
+    "precursors": 72
+   },
+   "bodies": {
+    "light": 102.0,
+    "transfer": 0.19,
+    "species": 24,
+    "max_size": 128,
+    "cell_types": 5,
+    "consumer_size": 128,
+    "consumer_types": 5,
+    "trophic_levels": 3,
+    "air": 0.0798,
+    "predator_share": 0.0974,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 128,
+    "eyes": 2.88,
+    "ears": 3.11,
+    "neurons": 29.1,
+    "talkers": 0.68,
+    "predator_pressure": 0.96,
+    "agents": 200,
+    "group": "yes",
+    "result": "seeing"
+   }
+  },
+  "197": {
+   "surface": {
+    "mass": 0.584,
+    "flux": 1.09,
+    "temperature": 293,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "reducing",
+    "organic": 347,
+    "h2o": 4704,
+    "precursors": 164
+   },
+   "bodies": {
+    "light": 218.0,
+    "transfer": 0.13,
+    "species": 49,
+    "max_size": 512,
+    "cell_types": 7,
+    "consumer_size": 256,
+    "consumer_types": 6,
+    "trophic_levels": 3,
+    "air": 0.144,
+    "predator_share": 0.0323,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 1.94,
+    "ears": 2.28,
+    "neurons": 19.1,
+    "talkers": 0.42,
+    "predator_pressure": 0.656,
+    "agents": 200,
+    "group": "yes",
+    "result": "seeing"
+   }
+  },
+  "207": {
+   "surface": {
+    "mass": 1.37,
+    "flux": 1.04,
+    "temperature": 290,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "reducing",
+    "organic": 339,
+    "h2o": 4691,
+    "precursors": 174
+   },
+   "bodies": {
+    "light": 208.0,
+    "transfer": 0.17,
+    "species": 41,
+    "max_size": 256,
+    "cell_types": 6,
+    "consumer_size": 256,
+    "consumer_types": 6,
+    "trophic_levels": 4,
+    "air": 0.135,
+    "predator_share": 0.0708,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 0.975,
+    "ears": 2.0,
+    "neurons": 63.5,
+    "talkers": 0.685,
+    "predator_pressure": 0.903,
+    "agents": 200,
+    "group": "yes",
+    "result": "brained"
+   }
+  },
+  "213": {
+   "surface": {
+    "mass": 0.387,
+    "flux": 0.706,
+    "temperature": 286,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 71,
+    "h2o": 5038,
+    "precursors": 71
+   },
+   "bodies": {
+    "light": 141.0,
+    "transfer": 0.19,
+    "species": 39,
+    "max_size": 64,
+    "cell_types": 4,
+    "consumer_size": 64,
+    "consumer_types": 4,
+    "trophic_levels": 3,
+    "air": 0.171,
+    "predator_share": 0.0277,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 64,
+    "eyes": 1.29,
+    "ears": 0.035,
+    "neurons": 15.9,
+    "talkers": 0.0,
+    "predator_pressure": 0.221,
+    "agents": 200,
+    "group": "no",
+    "result": "seeing"
+   }
+  },
+  "221": {
+   "surface": {
+    "mass": 0.474,
+    "flux": 0.822,
+    "temperature": 287,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 77,
+    "h2o": 5064,
+    "precursors": 76
+   },
+   "bodies": {
+    "light": 164.0,
+    "transfer": 0.15,
+    "species": 26,
+    "max_size": 64,
+    "cell_types": 4,
+    "consumer_size": 64,
+    "consumer_types": 4,
+    "trophic_levels": 4,
+    "air": 0.267,
+    "predator_share": 0.0835,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 64,
+    "eyes": 2.0,
+    "ears": 0.005,
+    "neurons": 9.64,
+    "talkers": 0.0,
+    "predator_pressure": 0.937,
+    "agents": 200,
+    "group": "no",
+    "result": "seeing"
+   }
+  },
+  "223": {
+   "surface": {
+    "mass": 3.89,
+    "flux": 0.382,
+    "temperature": 275,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 70,
+    "h2o": 5066,
+    "precursors": 70
+   },
+   "bodies": {
+    "light": 76.0,
+    "transfer": 0.2,
+    "species": 42,
+    "max_size": 256,
+    "cell_types": 7,
+    "consumer_size": 256,
+    "consumer_types": 6,
+    "trophic_levels": 4,
+    "air": 0.0777,
+    "predator_share": 0.0833,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 0.075,
+    "ears": 0.91,
+    "neurons": 61.4,
+    "talkers": 0.085,
+    "predator_pressure": 0.528,
+    "agents": 200,
+    "group": "yes",
+    "result": "brained"
+   }
+  },
+  "225": {
+   "surface": {
+    "mass": 0.549,
+    "flux": 1.03,
+    "temperature": 289,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 80,
+    "h2o": 5053,
+    "precursors": 80
+   },
+   "bodies": {
+    "light": 206.0,
+    "transfer": 0.19,
+    "species": 34,
+    "max_size": 256,
+    "cell_types": 5,
+    "consumer_size": 256,
+    "consumer_types": 5,
+    "trophic_levels": 4,
+    "air": 0.308,
+    "predator_share": 0.134,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 0.975,
+    "ears": 2.01,
+    "neurons": 62.7,
+    "talkers": 0.695,
+    "predator_pressure": 0.963,
+    "agents": 200,
+    "group": "yes",
+    "result": "brained"
+   }
+  },
+  "230": {
+   "surface": {
+    "mass": 2.87,
+    "flux": 0.384,
+    "temperature": 275,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 64,
+    "h2o": 5058,
+    "precursors": 63
+   },
+   "bodies": {
+    "light": 77.0,
+    "transfer": 0.14,
+    "species": 37,
+    "max_size": 512,
+    "cell_types": 7,
+    "consumer_size": 256,
+    "consumer_types": 7,
+    "trophic_levels": 3,
+    "air": 0.0634,
+    "predator_share": 0.0324,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 0.095,
+    "ears": 2.69,
+    "neurons": 37.5,
+    "talkers": 0.41,
+    "predator_pressure": 0.657,
+    "agents": 200,
+    "group": "yes",
+    "result": "brained"
+   }
+  },
+  "232": {
+   "surface": {
+    "mass": 0.365,
+    "flux": 0.382,
+    "temperature": 275,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 76,
+    "h2o": 5087,
+    "precursors": 76
+   },
+   "bodies": {
+    "light": 76.0,
+    "transfer": 0.16,
+    "species": 47,
+    "max_size": 128,
+    "cell_types": 5,
+    "consumer_size": 64,
+    "consumer_types": 4,
+    "trophic_levels": 3,
+    "air": 0.0771,
+    "predator_share": 0.00723,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 64,
+    "eyes": 0.005,
+    "ears": 0.045,
+    "neurons": 15.5,
+    "talkers": 0.0,
+    "predator_pressure": 0.063,
+    "agents": 200,
+    "group": "no",
+    "result": "sensing"
+   }
+  },
+  "242": {
+   "surface": {
+    "mass": 1.68,
+    "flux": 0.706,
+    "temperature": 286,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 61,
+    "h2o": 5070,
+    "precursors": 60
+   },
+   "bodies": {
+    "light": 141.0,
+    "transfer": 0.18,
+    "species": 43,
+    "max_size": 128,
+    "cell_types": 6,
+    "consumer_size": 128,
+    "consumer_types": 6,
+    "trophic_levels": 3,
+    "air": 0.128,
+    "predator_share": 0.0578,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 128,
+    "eyes": 2.88,
+    "ears": 2.6,
+    "neurons": 29.4,
+    "talkers": 0.625,
+    "predator_pressure": 0.851,
+    "agents": 200,
+    "group": "yes",
+    "result": "seeing"
+   }
+  },
+  "253": {
+   "surface": {
+    "mass": 3.64,
+    "flux": 0.881,
+    "temperature": 288,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 89,
+    "h2o": 5023,
+    "precursors": 88
+   },
+   "bodies": {
+    "light": 176.0,
+    "transfer": 0.17,
+    "species": 57,
+    "max_size": 256,
+    "cell_types": 6,
+    "consumer_size": 256,
+    "consumer_types": 6,
+    "trophic_levels": 3,
+    "air": 0.151,
+    "predator_share": 0.0249,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 3.68,
+    "ears": 0.07,
+    "neurons": 20.9,
+    "talkers": 0.0,
+    "predator_pressure": 0.312,
+    "agents": 200,
+    "group": "no",
+    "result": "seeing"
+   }
+  },
+  "254": {
+   "surface": {
+    "mass": 3.35,
+    "flux": 0.38,
+    "temperature": 275,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 91,
+    "h2o": 5034,
+    "precursors": 91
+   },
+   "bodies": {
+    "light": 76.0,
+    "transfer": 0.19,
+    "species": 26,
+    "max_size": 64,
+    "cell_types": 4,
+    "consumer_size": 64,
+    "consumer_types": 4,
+    "trophic_levels": 3,
+    "air": 0.0696,
+    "predator_share": 0.0692,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 64,
+    "eyes": 0.005,
+    "ears": 2.04,
+    "neurons": 16.0,
+    "talkers": 0.415,
+    "predator_pressure": 0.899,
+    "agents": 200,
+    "group": "yes",
+    "result": "sensing"
+   }
+  },
+  "260": {
+   "surface": {
+    "mass": 0.693,
+    "flux": 0.56,
+    "temperature": 283,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 81,
+    "h2o": 5054,
+    "precursors": 81
+   },
+   "bodies": {
+    "light": 112.0,
+    "transfer": 0.19,
+    "species": 39,
+    "max_size": 256,
+    "cell_types": 7,
+    "consumer_size": 256,
+    "consumer_types": 6,
+    "trophic_levels": 4,
+    "air": 0.0842,
+    "predator_share": 0.0652,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 0.005,
+    "ears": 0.025,
+    "neurons": 8.38,
+    "talkers": 0.0,
+    "predator_pressure": 0.445,
+    "agents": 200,
+    "group": "no",
+    "result": "sensing"
+   }
+  },
+  "265": {
+   "surface": {
+    "mass": 4.27,
+    "flux": 0.563,
+    "temperature": 283,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 74,
+    "h2o": 5040,
+    "precursors": 73
+   },
+   "bodies": {
+    "light": 113.0,
+    "transfer": 0.15,
+    "species": 40,
+    "max_size": 512,
+    "cell_types": 7,
+    "consumer_size": 256,
+    "consumer_types": 7,
+    "trophic_levels": 3,
+    "air": 0.078,
+    "predator_share": 0.0491,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 2.93,
+    "ears": 2.1,
+    "neurons": 35.2,
+    "talkers": 0.62,
+    "predator_pressure": 0.802,
+    "agents": 200,
+    "group": "yes",
+    "result": "brained"
+   }
+  },
+  "278": {
+   "surface": {
+    "mass": 1.2,
+    "flux": 0.381,
+    "temperature": 275,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 73,
+    "h2o": 5040,
+    "precursors": 73
+   },
+   "bodies": {
+    "light": 76.0,
+    "transfer": 0.17,
+    "species": 31,
+    "max_size": 128,
+    "cell_types": 5,
+    "consumer_size": 128,
+    "consumer_types": 5,
+    "trophic_levels": 3,
+    "air": 0.0768,
+    "predator_share": 0.0446,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 128,
+    "eyes": 0.0,
+    "ears": 0.995,
+    "neurons": 17.4,
+    "talkers": 0.0,
+    "predator_pressure": 0.331,
+    "agents": 200,
+    "group": "no",
+    "result": "sensing"
+   }
+  },
+  "286": {
+   "surface": {
+    "mass": 0.559,
+    "flux": 0.712,
+    "temperature": 286,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 81,
+    "h2o": 5072,
+    "precursors": 80
+   },
+   "bodies": {
+    "light": 142.0,
+    "transfer": 0.17,
+    "species": 41,
+    "max_size": 256,
+    "cell_types": 6,
+    "consumer_size": 256,
+    "consumer_types": 5,
+    "trophic_levels": 3,
+    "air": 0.13,
+    "predator_share": 0.0191,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 2.0,
+    "ears": 0.02,
+    "neurons": 57.6,
+    "talkers": 0.0,
+    "predator_pressure": 0.158,
+    "agents": 200,
+    "group": "no",
+    "result": "brained"
+   }
+  },
+  "290": {
+   "surface": {
+    "mass": 8.13,
+    "flux": 0.56,
+    "temperature": 283,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 72,
+    "h2o": 5065,
+    "precursors": 72
+   },
+   "bodies": {
+    "light": 112.0,
+    "transfer": 0.2,
+    "species": 29,
+    "max_size": 256,
+    "cell_types": 5,
+    "consumer_size": 256,
+    "consumer_types": 5,
+    "trophic_levels": 3,
+    "air": 0.0708,
+    "predator_share": 0.102,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 256,
+    "eyes": 3.35,
+    "ears": 4.2,
+    "neurons": 41.8,
+    "talkers": 0.935,
+    "predator_pressure": 0.963,
+    "agents": 200,
+    "group": "yes",
+    "result": "brained"
+   }
+  },
+  "295": {
+   "surface": {
+    "mass": 1.59,
+    "flux": 0.885,
+    "temperature": 288,
+    "gas": 0.0,
+    "surface": "terran",
+    "water": "liquid"
+   },
+   "chemistry": {
+    "mix": "ocean",
+    "organic": 83,
+    "h2o": 5017,
+    "precursors": 82
+   },
+   "bodies": {
+    "light": 177.0,
+    "transfer": 0.18,
+    "species": 37,
+    "max_size": 128,
+    "cell_types": 5,
+    "consumer_size": 128,
+    "consumer_types": 5,
+    "trophic_levels": 3,
+    "air": 0.173,
+    "predator_share": 0.0391,
+    "result": "animals_like"
+   },
+   "senses": {
+    "body_size": 128,
+    "eyes": 1.93,
+    "ears": 0.135,
+    "neurons": 30.1,
+    "talkers": 0.015,
+    "predator_pressure": 0.296,
+    "agents": 200,
+    "group": "no",
+    "result": "seeing"
+   }
+  }
+ }
+}

@@ -1,0 +1,1530 @@
+{
+ "config": {
+  "log": "compact",
+  "population_limit": 256
+ },
+ "probe": "default",
+ "runs": [
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 4657,
+     "n_near": 7991,
+     "p_eat_given_in_reach": 0.4543861844575147,
+     "p_toward_given_visible_out_of_reach": 0.03371269057333047
+    },
+    "100-200": {
+     "n_far": 2532,
+     "n_near": 11183,
+     "p_eat_given_in_reach": 0.54269873915765,
+     "p_toward_given_visible_out_of_reach": 0.040679304897314375
+    },
+    "200-400": {
+     "n_far": 2495,
+     "n_near": 13164,
+     "p_eat_given_in_reach": 0.48571862655727743,
+     "p_toward_given_visible_out_of_reach": 0.08176352705410822
+    },
+    "400-800": {
+     "n_far": 419,
+     "n_near": 2920,
+     "p_eat_given_in_reach": 0.41335616438356165,
+     "p_toward_given_visible_out_of_reach": 0.11455847255369929
+    },
+    "50-100": {
+     "n_far": 2043,
+     "n_near": 6066,
+     "p_eat_given_in_reach": 0.6282558522914606,
+     "p_toward_given_visible_out_of_reach": 0.02692119432207538
+    }
+   },
+   "births": 251,
+   "final_population": 94,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 725,
+     "n_near": 475,
+     "p_eat_given_in_reach": 0.391578947368421,
+     "p_toward_given_visible_out_of_reach": 0.030344827586206897
+    },
+    "100-200": {
+     "n_far": 545,
+     "n_near": 1784,
+     "p_eat_given_in_reach": 0.5179372197309418,
+     "p_toward_given_visible_out_of_reach": 0.029357798165137616
+    },
+    "200-400": {
+     "n_far": 673,
+     "n_near": 3063,
+     "p_eat_given_in_reach": 0.4789422135161606,
+     "p_toward_given_visible_out_of_reach": 0.09955423476968796
+    },
+    "400-800": {
+     "n_far": 225,
+     "n_near": 1857,
+     "p_eat_given_in_reach": 0.41626278944534195,
+     "p_toward_given_visible_out_of_reach": 0.1688888888888889
+    },
+    "50-100": {
+     "n_far": 508,
+     "n_near": 692,
+     "p_eat_given_in_reach": 0.5101156069364162,
+     "p_toward_given_visible_out_of_reach": 0.027559055118110236
+    }
+   },
+   "founders": 24,
+   "founders_died": 22,
+   "founders_starved": 14,
+   "median_founder_death_tick": 489,
+   "seconds": 43.9,
+   "seed": 1,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "multistep"
+  },
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 3899,
+     "n_near": 7596,
+     "p_eat_given_in_reach": 0.4457609268035808,
+     "p_toward_given_visible_out_of_reach": 0.03667607078738138
+    },
+    "100-200": {
+     "n_far": 2300,
+     "n_near": 8471,
+     "p_eat_given_in_reach": 0.556486837445402,
+     "p_toward_given_visible_out_of_reach": 0.05608695652173913
+    },
+    "200-400": {
+     "n_far": 1731,
+     "n_near": 9711,
+     "p_eat_given_in_reach": 0.5052002883328185,
+     "p_toward_given_visible_out_of_reach": 0.09012131715771231
+    },
+    "400-800": {
+     "n_far": 407,
+     "n_near": 2788,
+     "p_eat_given_in_reach": 0.5215208034433285,
+     "p_toward_given_visible_out_of_reach": 0.10073710073710074
+    },
+    "50-100": {
+     "n_far": 1900,
+     "n_near": 5545,
+     "p_eat_given_in_reach": 0.6165915238954013,
+     "p_toward_given_visible_out_of_reach": 0.030526315789473683
+    }
+   },
+   "births": 226,
+   "final_population": 100,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 422,
+     "n_near": 778,
+     "p_eat_given_in_reach": 0.4922879177377892,
+     "p_toward_given_visible_out_of_reach": 0.04265402843601896
+    },
+    "100-200": {
+     "n_far": 510,
+     "n_near": 1866,
+     "p_eat_given_in_reach": 0.5257234726688103,
+     "p_toward_given_visible_out_of_reach": 0.07254901960784314
+    },
+    "200-400": {
+     "n_far": 616,
+     "n_near": 3188,
+     "p_eat_given_in_reach": 0.49027603513174406,
+     "p_toward_given_visible_out_of_reach": 0.11201298701298701
+    },
+    "400-800": {
+     "n_far": 229,
+     "n_near": 1746,
+     "p_eat_given_in_reach": 0.4770904925544101,
+     "p_toward_given_visible_out_of_reach": 0.13100436681222707
+    },
+    "50-100": {
+     "n_far": 382,
+     "n_near": 818,
+     "p_eat_given_in_reach": 0.5501222493887531,
+     "p_toward_given_visible_out_of_reach": 0.031413612565445025
+    }
+   },
+   "founders": 24,
+   "founders_died": 20,
+   "founders_starved": 15,
+   "median_founder_death_tick": 421,
+   "seconds": 37.3,
+   "seed": 2,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "multistep"
+  },
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 4217,
+     "n_near": 9222,
+     "p_eat_given_in_reach": 0.4461071351116894,
+     "p_toward_given_visible_out_of_reach": 0.03533317524306379
+    },
+    "100-200": {
+     "n_far": 2727,
+     "n_near": 11967,
+     "p_eat_given_in_reach": 0.5536893122754241,
+     "p_toward_given_visible_out_of_reach": 0.053171983865053174
+    },
+    "200-400": {
+     "n_far": 2610,
+     "n_near": 14941,
+     "p_eat_given_in_reach": 0.45264707850880126,
+     "p_toward_given_visible_out_of_reach": 0.10689655172413794
+    },
+    "400-800": {
+     "n_far": 301,
+     "n_near": 3065,
+     "p_eat_given_in_reach": 0.5164763458401305,
+     "p_toward_given_visible_out_of_reach": 0.14950166112956811
+    },
+    "50-100": {
+     "n_far": 2539,
+     "n_near": 7004,
+     "p_eat_given_in_reach": 0.642204454597373,
+     "p_toward_given_visible_out_of_reach": 0.03741630563213864
+    }
+   },
+   "births": 265,
+   "final_population": 112,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 693,
+     "n_near": 507,
+     "p_eat_given_in_reach": 0.41222879684418146,
+     "p_toward_given_visible_out_of_reach": 0.03896103896103896
+    },
+    "100-200": {
+     "n_far": 312,
+     "n_near": 1897,
+     "p_eat_given_in_reach": 0.5276752767527675,
+     "p_toward_given_visible_out_of_reach": 0.08012820512820513
+    },
+    "200-400": {
+     "n_far": 541,
+     "n_near": 3246,
+     "p_eat_given_in_reach": 0.359211337030191,
+     "p_toward_given_visible_out_of_reach": 0.14972273567467653
+    },
+    "400-800": {
+     "n_far": 144,
+     "n_near": 1553,
+     "p_eat_given_in_reach": 0.5189954925949775,
+     "p_toward_given_visible_out_of_reach": 0.16666666666666666
+    },
+    "50-100": {
+     "n_far": 481,
+     "n_near": 713,
+     "p_eat_given_in_reach": 0.6297335203366059,
+     "p_toward_given_visible_out_of_reach": 0.04573804573804574
+    }
+   },
+   "founders": 24,
+   "founders_died": 19,
+   "founders_starved": 16,
+   "median_founder_death_tick": 367,
+   "seconds": 48.2,
+   "seed": 3,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "multistep"
+  },
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 3525,
+     "n_near": 9811,
+     "p_eat_given_in_reach": 0.47324431760269087,
+     "p_toward_given_visible_out_of_reach": 0.03234042553191489
+    },
+    "100-200": {
+     "n_far": 2882,
+     "n_near": 14149,
+     "p_eat_given_in_reach": 0.519259311612128,
+     "p_toward_given_visible_out_of_reach": 0.046495489243580844
+    },
+    "200-400": {
+     "n_far": 1861,
+     "n_near": 17296,
+     "p_eat_given_in_reach": 0.46987742830712304,
+     "p_toward_given_visible_out_of_reach": 0.09564750134336378
+    },
+    "400-800": {
+     "n_far": 329,
+     "n_near": 2499,
+     "p_eat_given_in_reach": 0.4781912765106042,
+     "p_toward_given_visible_out_of_reach": 0.12158054711246201
+    },
+    "50-100": {
+     "n_far": 2138,
+     "n_near": 8088,
+     "p_eat_given_in_reach": 0.6238872403560831,
+     "p_toward_given_visible_out_of_reach": 0.025724976613657625
+    }
+   },
+   "births": 263,
+   "final_population": 108,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 596,
+     "n_near": 604,
+     "p_eat_given_in_reach": 0.48509933774834435,
+     "p_toward_given_visible_out_of_reach": 0.03691275167785235
+    },
+    "100-200": {
+     "n_far": 703,
+     "n_near": 1588,
+     "p_eat_given_in_reach": 0.5157430730478589,
+     "p_toward_given_visible_out_of_reach": 0.03982930298719772
+    },
+    "200-400": {
+     "n_far": 417,
+     "n_near": 2742,
+     "p_eat_given_in_reach": 0.3825674690007294,
+     "p_toward_given_visible_out_of_reach": 0.047961630695443645
+    },
+    "400-800": {
+     "n_far": 150,
+     "n_near": 873,
+     "p_eat_given_in_reach": 0.4742268041237113,
+     "p_toward_given_visible_out_of_reach": 0.05333333333333334
+    },
+    "50-100": {
+     "n_far": 510,
+     "n_near": 690,
+     "p_eat_given_in_reach": 0.6420289855072464,
+     "p_toward_given_visible_out_of_reach": 0.027450980392156862
+    }
+   },
+   "founders": 24,
+   "founders_died": 22,
+   "founders_starved": 18,
+   "median_founder_death_tick": 377,
+   "seconds": 51.1,
+   "seed": 4,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "multistep"
+  },
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 3909,
+     "n_near": 9554,
+     "p_eat_given_in_reach": 0.5144442118484405,
+     "p_toward_given_visible_out_of_reach": 0.035558966487592734
+    },
+    "100-200": {
+     "n_far": 4433,
+     "n_near": 9536,
+     "p_eat_given_in_reach": 0.8238255033557047,
+     "p_toward_given_visible_out_of_reach": 0.017369727047146403
+    },
+    "200-400": {
+     "n_far": 4851,
+     "n_near": 11924,
+     "p_eat_given_in_reach": 0.7744884267024489,
+     "p_toward_given_visible_out_of_reach": 0.022675736961451247
+    },
+    "400-800": {
+     "n_far": 1008,
+     "n_near": 3118,
+     "p_eat_given_in_reach": 0.7075048107761386,
+     "p_toward_given_visible_out_of_reach": 0.02976190476190476
+    },
+    "50-100": {
+     "n_far": 2177,
+     "n_near": 6311,
+     "p_eat_given_in_reach": 0.8207890983996197,
+     "p_toward_given_visible_out_of_reach": 0.01929260450160772
+    }
+   },
+   "births": 270,
+   "final_population": 118,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 795,
+     "n_near": 405,
+     "p_eat_given_in_reach": 0.4765432098765432,
+     "p_toward_given_visible_out_of_reach": 0.027672955974842768
+    },
+    "100-200": {
+     "n_far": 1146,
+     "n_near": 1047,
+     "p_eat_given_in_reach": 0.8032473734479465,
+     "p_toward_given_visible_out_of_reach": 0.017452006980802792
+    },
+    "200-400": {
+     "n_far": 1134,
+     "n_near": 2046,
+     "p_eat_given_in_reach": 0.7878787878787878,
+     "p_toward_given_visible_out_of_reach": 0.014109347442680775
+    },
+    "400-800": {
+     "n_far": 576,
+     "n_near": 1391,
+     "p_eat_given_in_reach": 0.6858375269590223,
+     "p_toward_given_visible_out_of_reach": 0.024305555555555556
+    },
+    "50-100": {
+     "n_far": 694,
+     "n_near": 506,
+     "p_eat_given_in_reach": 0.6996047430830039,
+     "p_toward_given_visible_out_of_reach": 0.024495677233429394
+    }
+   },
+   "founders": 24,
+   "founders_died": 22,
+   "founders_starved": 15,
+   "median_founder_death_tick": 492,
+   "seconds": 23.1,
+   "seed": 1,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "one_step"
+  },
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 3670,
+     "n_near": 9063,
+     "p_eat_given_in_reach": 0.5188127551583361,
+     "p_toward_given_visible_out_of_reach": 0.03760217983651226
+    },
+    "100-200": {
+     "n_far": 2932,
+     "n_near": 9968,
+     "p_eat_given_in_reach": 0.8407905296950241,
+     "p_toward_given_visible_out_of_reach": 0.022510231923601638
+    },
+    "200-400": {
+     "n_far": 4225,
+     "n_near": 11655,
+     "p_eat_given_in_reach": 0.7907335907335907,
+     "p_toward_given_visible_out_of_reach": 0.02437869822485207
+    },
+    "400-800": {
+     "n_far": 1403,
+     "n_near": 3553,
+     "p_eat_given_in_reach": 0.7393751759076836,
+     "p_toward_given_visible_out_of_reach": 0.03991446899501069
+    },
+    "50-100": {
+     "n_far": 2025,
+     "n_near": 6421,
+     "p_eat_given_in_reach": 0.8369412864039869,
+     "p_toward_given_visible_out_of_reach": 0.02123456790123457
+    }
+   },
+   "births": 255,
+   "final_population": 111,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 403,
+     "n_near": 797,
+     "p_eat_given_in_reach": 0.5759096612296111,
+     "p_toward_given_visible_out_of_reach": 0.034739454094292806
+    },
+    "100-200": {
+     "n_far": 689,
+     "n_near": 1680,
+     "p_eat_given_in_reach": 0.8363095238095238,
+     "p_toward_given_visible_out_of_reach": 0.02902757619738752
+    },
+    "200-400": {
+     "n_far": 1373,
+     "n_near": 2965,
+     "p_eat_given_in_reach": 0.8138279932546374,
+     "p_toward_given_visible_out_of_reach": 0.023306627822286964
+    },
+    "400-800": {
+     "n_far": 785,
+     "n_near": 1740,
+     "p_eat_given_in_reach": 0.7304597701149426,
+     "p_toward_given_visible_out_of_reach": 0.035668789808917196
+    },
+    "50-100": {
+     "n_far": 465,
+     "n_near": 735,
+     "p_eat_given_in_reach": 0.7795918367346939,
+     "p_toward_given_visible_out_of_reach": 0.01935483870967742
+    }
+   },
+   "founders": 24,
+   "founders_died": 20,
+   "founders_starved": 14,
+   "median_founder_death_tick": 502,
+   "seconds": 22.0,
+   "seed": 2,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "one_step"
+  },
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 3525,
+     "n_near": 7437,
+     "p_eat_given_in_reach": 0.4963022724216754,
+     "p_toward_given_visible_out_of_reach": 0.04056737588652482
+    },
+    "100-200": {
+     "n_far": 3710,
+     "n_near": 7336,
+     "p_eat_given_in_reach": 0.8208833151581243,
+     "p_toward_given_visible_out_of_reach": 0.01940700808625337
+    },
+    "200-400": {
+     "n_far": 3487,
+     "n_near": 9422,
+     "p_eat_given_in_reach": 0.8147951602632137,
+     "p_toward_given_visible_out_of_reach": 0.020648121594493835
+    },
+    "400-800": {
+     "n_far": 1316,
+     "n_near": 3403,
+     "p_eat_given_in_reach": 0.7469879518072289,
+     "p_toward_given_visible_out_of_reach": 0.0364741641337386
+    },
+    "50-100": {
+     "n_far": 2022,
+     "n_near": 5310,
+     "p_eat_given_in_reach": 0.8128060263653484,
+     "p_toward_given_visible_out_of_reach": 0.019782393669634024
+    }
+   },
+   "births": 215,
+   "final_population": 94,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 707,
+     "n_near": 493,
+     "p_eat_given_in_reach": 0.5780933062880325,
+     "p_toward_given_visible_out_of_reach": 0.03818953323903819
+    },
+    "100-200": {
+     "n_far": 1048,
+     "n_near": 1194,
+     "p_eat_given_in_reach": 0.7747068676716918,
+     "p_toward_given_visible_out_of_reach": 0.025763358778625955
+    },
+    "200-400": {
+     "n_far": 1058,
+     "n_near": 2444,
+     "p_eat_given_in_reach": 0.8179214402618658,
+     "p_toward_given_visible_out_of_reach": 0.022684310018903593
+    },
+    "400-800": {
+     "n_far": 520,
+     "n_near": 1848,
+     "p_eat_given_in_reach": 0.7624458874458875,
+     "p_toward_given_visible_out_of_reach": 0.038461538461538464
+    },
+    "50-100": {
+     "n_far": 731,
+     "n_near": 469,
+     "p_eat_given_in_reach": 0.6460554371002132,
+     "p_toward_given_visible_out_of_reach": 0.024623803009575923
+    }
+   },
+   "founders": 24,
+   "founders_died": 20,
+   "founders_starved": 14,
+   "median_founder_death_tick": 479,
+   "seconds": 19.3,
+   "seed": 3,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "one_step"
+  },
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 3697,
+     "n_near": 10604,
+     "p_eat_given_in_reach": 0.5145228215767634,
+     "p_toward_given_visible_out_of_reach": 0.039220989991885315
+    },
+    "100-200": {
+     "n_far": 3779,
+     "n_near": 11355,
+     "p_eat_given_in_reach": 0.8295904887714664,
+     "p_toward_given_visible_out_of_reach": 0.0224927229425774
+    },
+    "200-400": {
+     "n_far": 5401,
+     "n_near": 13595,
+     "p_eat_given_in_reach": 0.766752482530342,
+     "p_toward_given_visible_out_of_reach": 0.023699314941677468
+    },
+    "400-800": {
+     "n_far": 1263,
+     "n_near": 3341,
+     "p_eat_given_in_reach": 0.7578569290631547,
+     "p_toward_given_visible_out_of_reach": 0.03483768804433888
+    },
+    "50-100": {
+     "n_far": 1816,
+     "n_near": 7549,
+     "p_eat_given_in_reach": 0.8315008610411975,
+     "p_toward_given_visible_out_of_reach": 0.0236784140969163
+    }
+   },
+   "births": 288,
+   "final_population": 131,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 647,
+     "n_near": 553,
+     "p_eat_given_in_reach": 0.5280289330922242,
+     "p_toward_given_visible_out_of_reach": 0.030911901081916538
+    },
+    "100-200": {
+     "n_far": 948,
+     "n_near": 1372,
+     "p_eat_given_in_reach": 0.8432944606413995,
+     "p_toward_given_visible_out_of_reach": 0.024261603375527425
+    },
+    "200-400": {
+     "n_far": 1353,
+     "n_near": 2099,
+     "p_eat_given_in_reach": 0.7041448308718438,
+     "p_toward_given_visible_out_of_reach": 0.030303030303030304
+    },
+    "400-800": {
+     "n_far": 399,
+     "n_near": 1096,
+     "p_eat_given_in_reach": 0.7773722627737226,
+     "p_toward_given_visible_out_of_reach": 0.03508771929824561
+    },
+    "50-100": {
+     "n_far": 510,
+     "n_near": 690,
+     "p_eat_given_in_reach": 0.8188405797101449,
+     "p_toward_given_visible_out_of_reach": 0.027450980392156862
+    }
+   },
+   "founders": 24,
+   "founders_died": 20,
+   "founders_starved": 16,
+   "median_founder_death_tick": 396,
+   "seconds": 25.3,
+   "seed": 4,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "one_step"
+  },
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 5188,
+     "n_near": 8634,
+     "p_eat_given_in_reach": 0.3899698864952513,
+     "p_toward_given_visible_out_of_reach": 0.03777949113338473
+    },
+    "100-200": {
+     "n_far": 4173,
+     "n_near": 7472,
+     "p_eat_given_in_reach": 0.8096895074946466,
+     "p_toward_given_visible_out_of_reach": 0.011742151929067817
+    },
+    "200-400": {
+     "n_far": 3761,
+     "n_near": 10687,
+     "p_eat_given_in_reach": 0.7882474033872929,
+     "p_toward_given_visible_out_of_reach": 0.022334485509173094
+    },
+    "400-800": {
+     "n_far": 948,
+     "n_near": 3528,
+     "p_eat_given_in_reach": 0.6400226757369615,
+     "p_toward_given_visible_out_of_reach": 0.06118143459915612
+    },
+    "50-100": {
+     "n_far": 2727,
+     "n_near": 4696,
+     "p_eat_given_in_reach": 0.7576660988074957,
+     "p_toward_given_visible_out_of_reach": 0.013934726806013934
+    }
+   },
+   "births": 289,
+   "final_population": 107,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 684,
+     "n_near": 516,
+     "p_eat_given_in_reach": 0.44573643410852715,
+     "p_toward_given_visible_out_of_reach": 0.04239766081871345
+    },
+    "100-200": {
+     "n_far": 923,
+     "n_near": 1477,
+     "p_eat_given_in_reach": 0.7860528097494922,
+     "p_toward_given_visible_out_of_reach": 0.016251354279523293
+    },
+    "200-400": {
+     "n_far": 1154,
+     "n_near": 3252,
+     "p_eat_given_in_reach": 0.8065805658056581,
+     "p_toward_given_visible_out_of_reach": 0.022530329289428077
+    },
+    "400-800": {
+     "n_far": 475,
+     "n_near": 1947,
+     "p_eat_given_in_reach": 0.6579352850539292,
+     "p_toward_given_visible_out_of_reach": 0.04842105263157895
+    },
+    "50-100": {
+     "n_far": 526,
+     "n_near": 674,
+     "p_eat_given_in_reach": 0.6706231454005934,
+     "p_toward_given_visible_out_of_reach": 0.024714828897338403
+    }
+   },
+   "founders": 24,
+   "founders_died": 21,
+   "founders_starved": 11,
+   "median_founder_death_tick": 486,
+   "seconds": 27.7,
+   "seed": 1,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "no_replay"
+  },
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 3861,
+     "n_near": 8490,
+     "p_eat_given_in_reach": 0.4049469964664311,
+     "p_toward_given_visible_out_of_reach": 0.042994042994043
+    },
+    "100-200": {
+     "n_far": 3772,
+     "n_near": 7174,
+     "p_eat_given_in_reach": 0.79969333705046,
+     "p_toward_given_visible_out_of_reach": 0.013255567338282079
+    },
+    "200-400": {
+     "n_far": 3769,
+     "n_near": 10831,
+     "p_eat_given_in_reach": 0.7680731234419721,
+     "p_toward_given_visible_out_of_reach": 0.0222870788007429
+    },
+    "400-800": {
+     "n_far": 572,
+     "n_near": 3909,
+     "p_eat_given_in_reach": 0.5881299565106165,
+     "p_toward_given_visible_out_of_reach": 0.09265734265734266
+    },
+    "50-100": {
+     "n_far": 2356,
+     "n_near": 4919,
+     "p_eat_given_in_reach": 0.7607237243342143,
+     "p_toward_given_visible_out_of_reach": 0.019524617996604415
+    }
+   },
+   "births": 249,
+   "final_population": 91,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 457,
+     "n_near": 743,
+     "p_eat_given_in_reach": 0.48855989232839836,
+     "p_toward_given_visible_out_of_reach": 0.045951859956236324
+    },
+    "100-200": {
+     "n_far": 834,
+     "n_near": 1441,
+     "p_eat_given_in_reach": 0.7480916030534351,
+     "p_toward_given_visible_out_of_reach": 0.022781774580335732
+    },
+    "200-400": {
+     "n_far": 681,
+     "n_near": 3595,
+     "p_eat_given_in_reach": 0.7429763560500695,
+     "p_toward_given_visible_out_of_reach": 0.04552129221732746
+    },
+    "400-800": {
+     "n_far": 337,
+     "n_near": 2222,
+     "p_eat_given_in_reach": 0.5760576057605761,
+     "p_toward_given_visible_out_of_reach": 0.11572700296735905
+    },
+    "50-100": {
+     "n_far": 474,
+     "n_near": 726,
+     "p_eat_given_in_reach": 0.7396694214876033,
+     "p_toward_given_visible_out_of_reach": 0.02531645569620253
+    }
+   },
+   "founders": 24,
+   "founders_died": 19,
+   "founders_starved": 13,
+   "median_founder_death_tick": 487,
+   "seconds": 27.0,
+   "seed": 2,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "no_replay"
+  },
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 5296,
+     "n_near": 7743,
+     "p_eat_given_in_reach": 0.4079814025571484,
+     "p_toward_given_visible_out_of_reach": 0.03625377643504532
+    },
+    "100-200": {
+     "n_far": 4287,
+     "n_near": 6032,
+     "p_eat_given_in_reach": 0.8013925729442971,
+     "p_toward_given_visible_out_of_reach": 0.010496850944716585
+    },
+    "200-400": {
+     "n_far": 3787,
+     "n_near": 8644,
+     "p_eat_given_in_reach": 0.769898195279963,
+     "p_toward_given_visible_out_of_reach": 0.01241087932400317
+    },
+    "400-800": {
+     "n_far": 620,
+     "n_near": 3259,
+     "p_eat_given_in_reach": 0.5771709113224915,
+     "p_toward_given_visible_out_of_reach": 0.04032258064516129
+    },
+    "50-100": {
+     "n_far": 2597,
+     "n_near": 4448,
+     "p_eat_given_in_reach": 0.7389838129496403,
+     "p_toward_given_visible_out_of_reach": 0.018482864844050827
+    }
+   },
+   "births": 267,
+   "final_population": 99,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 736,
+     "n_near": 514,
+     "p_eat_given_in_reach": 0.4046692607003891,
+     "p_toward_given_visible_out_of_reach": 0.042119565217391304
+    },
+    "100-200": {
+     "n_far": 1094,
+     "n_near": 1099,
+     "p_eat_given_in_reach": 0.7597816196542311,
+     "p_toward_given_visible_out_of_reach": 0.01736745886654479
+    },
+    "200-400": {
+     "n_far": 1171,
+     "n_near": 2382,
+     "p_eat_given_in_reach": 0.7955499580184718,
+     "p_toward_given_visible_out_of_reach": 0.011955593509820665
+    },
+    "400-800": {
+     "n_far": 386,
+     "n_near": 2002,
+     "p_eat_given_in_reach": 0.6113886113886113,
+     "p_toward_given_visible_out_of_reach": 0.05181347150259067
+    },
+    "50-100": {
+     "n_far": 606,
+     "n_near": 633,
+     "p_eat_given_in_reach": 0.6587677725118484,
+     "p_toward_given_visible_out_of_reach": 0.0297029702970297
+    }
+   },
+   "founders": 24,
+   "founders_died": 18,
+   "founders_starved": 13,
+   "median_founder_death_tick": 405,
+   "seconds": 26.3,
+   "seed": 3,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "no_replay"
+  },
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 4118,
+     "n_near": 9246,
+     "p_eat_given_in_reach": 0.41228639411637463,
+     "p_toward_given_visible_out_of_reach": 0.033754249635745505
+    },
+    "100-200": {
+     "n_far": 4788,
+     "n_near": 8215,
+     "p_eat_given_in_reach": 0.7998782714546561,
+     "p_toward_given_visible_out_of_reach": 0.01086048454469507
+    },
+    "200-400": {
+     "n_far": 4484,
+     "n_near": 9598,
+     "p_eat_given_in_reach": 0.7564075849135237,
+     "p_toward_given_visible_out_of_reach": 0.011819803746654773
+    },
+    "400-800": {
+     "n_far": 723,
+     "n_near": 2484,
+     "p_eat_given_in_reach": 0.57085346215781,
+     "p_toward_given_visible_out_of_reach": 0.030428769017980636
+    },
+    "50-100": {
+     "n_far": 2570,
+     "n_near": 5528,
+     "p_eat_given_in_reach": 0.7554269175108539,
+     "p_toward_given_visible_out_of_reach": 0.02178988326848249
+    }
+   },
+   "births": 276,
+   "final_population": 113,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 621,
+     "n_near": 579,
+     "p_eat_given_in_reach": 0.4438687392055268,
+     "p_toward_given_visible_out_of_reach": 0.04669887278582931
+    },
+    "100-200": {
+     "n_far": 926,
+     "n_near": 1104,
+     "p_eat_given_in_reach": 0.7780797101449275,
+     "p_toward_given_visible_out_of_reach": 0.026997840172786176
+    },
+    "200-400": {
+     "n_far": 735,
+     "n_near": 1680,
+     "p_eat_given_in_reach": 0.7261904761904762,
+     "p_toward_given_visible_out_of_reach": 0.0163265306122449
+    },
+    "400-800": {
+     "n_far": 67,
+     "n_near": 1014,
+     "p_eat_given_in_reach": 0.5749506903353058,
+     "p_toward_given_visible_out_of_reach": 0.04477611940298507
+    },
+    "50-100": {
+     "n_far": 669,
+     "n_near": 531,
+     "p_eat_given_in_reach": 0.7250470809792844,
+     "p_toward_given_visible_out_of_reach": 0.03736920777279522
+    }
+   },
+   "founders": 24,
+   "founders_died": 21,
+   "founders_starved": 19,
+   "median_founder_death_tick": 224,
+   "seconds": 28.3,
+   "seed": 4,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "no_replay"
+  },
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 4437,
+     "n_near": 8602,
+     "p_eat_given_in_reach": 0.4515229016507789,
+     "p_toward_given_visible_out_of_reach": 0.032679738562091505
+    },
+    "100-200": {
+     "n_far": 4144,
+     "n_near": 10532,
+     "p_eat_given_in_reach": 0.6055829851879985,
+     "p_toward_given_visible_out_of_reach": 0.03812741312741313
+    },
+    "200-400": {
+     "n_far": 4236,
+     "n_near": 11769,
+     "p_eat_given_in_reach": 0.5128728014274789,
+     "p_toward_given_visible_out_of_reach": 0.056657223796033995
+    },
+    "400-800": {
+     "n_far": 805,
+     "n_near": 2818,
+     "p_eat_given_in_reach": 0.492902767920511,
+     "p_toward_given_visible_out_of_reach": 0.0670807453416149
+    },
+    "50-100": {
+     "n_far": 2614,
+     "n_near": 6419,
+     "p_eat_given_in_reach": 0.6765851378719426,
+     "p_toward_given_visible_out_of_reach": 0.027161438408569244
+    }
+   },
+   "births": 258,
+   "final_population": 101,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 665,
+     "n_near": 535,
+     "p_eat_given_in_reach": 0.42429906542056073,
+     "p_toward_given_visible_out_of_reach": 0.039097744360902256
+    },
+    "100-200": {
+     "n_far": 968,
+     "n_near": 1286,
+     "p_eat_given_in_reach": 0.531104199066874,
+     "p_toward_given_visible_out_of_reach": 0.03409090909090909
+    },
+    "200-400": {
+     "n_far": 820,
+     "n_near": 2149,
+     "p_eat_given_in_reach": 0.4699860400186133,
+     "p_toward_given_visible_out_of_reach": 0.05365853658536585
+    },
+    "400-800": {
+     "n_far": 368,
+     "n_near": 1336,
+     "p_eat_given_in_reach": 0.46706586826347307,
+     "p_toward_given_visible_out_of_reach": 0.06521739130434782
+    },
+    "50-100": {
+     "n_far": 529,
+     "n_near": 671,
+     "p_eat_given_in_reach": 0.5886736214605067,
+     "p_toward_given_visible_out_of_reach": 0.030245746691871456
+    }
+   },
+   "founders": 24,
+   "founders_died": 22,
+   "founders_starved": 17,
+   "median_founder_death_tick": 402,
+   "seconds": 45.0,
+   "seed": 1,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "no_egocentric"
+  },
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 3822,
+     "n_near": 8592,
+     "p_eat_given_in_reach": 0.4442504655493482,
+     "p_toward_given_visible_out_of_reach": 0.03322867608581894
+    },
+    "100-200": {
+     "n_far": 4192,
+     "n_near": 9429,
+     "p_eat_given_in_reach": 0.5775798069784707,
+     "p_toward_given_visible_out_of_reach": 0.03769083969465649
+    },
+    "200-400": {
+     "n_far": 4105,
+     "n_near": 10336,
+     "p_eat_given_in_reach": 0.4973877708978328,
+     "p_toward_given_visible_out_of_reach": 0.046041412911084045
+    },
+    "400-800": {
+     "n_far": 623,
+     "n_near": 1895,
+     "p_eat_given_in_reach": 0.47810026385224275,
+     "p_toward_given_visible_out_of_reach": 0.056179775280898875
+    },
+    "50-100": {
+     "n_far": 2509,
+     "n_near": 6115,
+     "p_eat_given_in_reach": 0.6814390842191332,
+     "p_toward_given_visible_out_of_reach": 0.027899561578318056
+    }
+   },
+   "births": 246,
+   "final_population": 97,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 466,
+     "n_near": 734,
+     "p_eat_given_in_reach": 0.4087193460490463,
+     "p_toward_given_visible_out_of_reach": 0.034334763948497854
+    },
+    "100-200": {
+     "n_far": 762,
+     "n_near": 1557,
+     "p_eat_given_in_reach": 0.5375722543352601,
+     "p_toward_given_visible_out_of_reach": 0.04068241469816273
+    },
+    "200-400": {
+     "n_far": 1093,
+     "n_near": 2522,
+     "p_eat_given_in_reach": 0.4754163362410785,
+     "p_toward_given_visible_out_of_reach": 0.04574565416285453
+    },
+    "400-800": {
+     "n_far": 338,
+     "n_near": 1225,
+     "p_eat_given_in_reach": 0.4514285714285714,
+     "p_toward_given_visible_out_of_reach": 0.047337278106508875
+    },
+    "50-100": {
+     "n_far": 469,
+     "n_near": 731,
+     "p_eat_given_in_reach": 0.6224350205198358,
+     "p_toward_given_visible_out_of_reach": 0.0255863539445629
+    }
+   },
+   "founders": 24,
+   "founders_died": 21,
+   "founders_starved": 17,
+   "median_founder_death_tick": 390,
+   "seconds": 41.3,
+   "seed": 2,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "no_egocentric"
+  },
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 4479,
+     "n_near": 8302,
+     "p_eat_given_in_reach": 0.44675981691158756,
+     "p_toward_given_visible_out_of_reach": 0.03706184416164322
+    },
+    "100-200": {
+     "n_far": 3660,
+     "n_near": 10155,
+     "p_eat_given_in_reach": 0.6286558345642541,
+     "p_toward_given_visible_out_of_reach": 0.04180327868852459
+    },
+    "200-400": {
+     "n_far": 4170,
+     "n_near": 11175,
+     "p_eat_given_in_reach": 0.5247427293064877,
+     "p_toward_given_visible_out_of_reach": 0.05683453237410072
+    },
+    "400-800": {
+     "n_far": 1301,
+     "n_near": 2924,
+     "p_eat_given_in_reach": 0.4740082079343365,
+     "p_toward_given_visible_out_of_reach": 0.053036126056879324
+    },
+    "50-100": {
+     "n_far": 2515,
+     "n_near": 6269,
+     "p_eat_given_in_reach": 0.6827245174669007,
+     "p_toward_given_visible_out_of_reach": 0.029423459244532803
+    }
+   },
+   "births": 252,
+   "final_population": 113,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 535,
+     "n_near": 665,
+     "p_eat_given_in_reach": 0.47969924812030074,
+     "p_toward_given_visible_out_of_reach": 0.03364485981308411
+    },
+    "100-200": {
+     "n_far": 772,
+     "n_near": 1545,
+     "p_eat_given_in_reach": 0.654368932038835,
+     "p_toward_given_visible_out_of_reach": 0.04792746113989637
+    },
+    "200-400": {
+     "n_far": 1130,
+     "n_near": 2892,
+     "p_eat_given_in_reach": 0.5840248962655602,
+     "p_toward_given_visible_out_of_reach": 0.04513274336283186
+    },
+    "400-800": {
+     "n_far": 836,
+     "n_near": 1604,
+     "p_eat_given_in_reach": 0.44139650872817954,
+     "p_toward_given_visible_out_of_reach": 0.045454545454545456
+    },
+    "50-100": {
+     "n_far": 466,
+     "n_near": 734,
+     "p_eat_given_in_reach": 0.6280653950953679,
+     "p_toward_given_visible_out_of_reach": 0.032188841201716736
+    }
+   },
+   "founders": 24,
+   "founders_died": 19,
+   "founders_starved": 15,
+   "median_founder_death_tick": 477,
+   "seconds": 43.8,
+   "seed": 3,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "no_egocentric"
+  },
+  {
+   "all_rates": {
+    "0-50": {
+     "n_far": 4391,
+     "n_near": 8880,
+     "p_eat_given_in_reach": 0.4608108108108108,
+     "p_toward_given_visible_out_of_reach": 0.031883397859257576
+    },
+    "100-200": {
+     "n_far": 3895,
+     "n_near": 10611,
+     "p_eat_given_in_reach": 0.6123833757421544,
+     "p_toward_given_visible_out_of_reach": 0.03697047496790758
+    },
+    "200-400": {
+     "n_far": 4526,
+     "n_near": 11515,
+     "p_eat_given_in_reach": 0.5282674772036474,
+     "p_toward_given_visible_out_of_reach": 0.05103844454264251
+    },
+    "400-800": {
+     "n_far": 1038,
+     "n_near": 2342,
+     "p_eat_given_in_reach": 0.42783945345858243,
+     "p_toward_given_visible_out_of_reach": 0.05394990366088632
+    },
+    "50-100": {
+     "n_far": 2293,
+     "n_near": 6761,
+     "p_eat_given_in_reach": 0.6851057535867475,
+     "p_toward_given_visible_out_of_reach": 0.028347143480157
+    }
+   },
+   "births": 267,
+   "final_population": 116,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 641,
+     "n_near": 559,
+     "p_eat_given_in_reach": 0.3828264758497317,
+     "p_toward_given_visible_out_of_reach": 0.0452418096723869
+    },
+    "100-200": {
+     "n_far": 826,
+     "n_near": 1462,
+     "p_eat_given_in_reach": 0.5752393980848153,
+     "p_toward_given_visible_out_of_reach": 0.04963680387409201
+    },
+    "200-400": {
+     "n_far": 927,
+     "n_near": 2173,
+     "p_eat_given_in_reach": 0.5154164749194662,
+     "p_toward_given_visible_out_of_reach": 0.05285868392664509
+    },
+    "400-800": {
+     "n_far": 469,
+     "n_near": 1123,
+     "p_eat_given_in_reach": 0.390026714158504,
+     "p_toward_given_visible_out_of_reach": 0.05543710021321962
+    },
+    "50-100": {
+     "n_far": 516,
+     "n_near": 684,
+     "p_eat_given_in_reach": 0.6418128654970761,
+     "p_toward_given_visible_out_of_reach": 0.025193798449612403
+    }
+   },
+   "founders": 24,
+   "founders_died": 20,
+   "founders_starved": 17,
+   "median_founder_death_tick": 367,
+   "seconds": 44.8,
+   "seed": 4,
+   "stop_reason": "step_budget",
+   "ticks_run": 600,
+   "variant": "no_egocentric"
+  }
+ ],
+ "seeds": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "size": 600,
+ "totals": {
+  "multistep": {
+   "all_rates": {
+    "0-50": {
+     "n_far": 16298,
+     "n_near": 34620,
+     "p_eat_near": 0.4556,
+     "p_toward": 0.0345
+    },
+    "100-200": {
+     "n_far": 10441,
+     "n_near": 45770,
+     "p_eat_near": 0.5409,
+     "p_toward": 0.0489
+    },
+    "200-400": {
+     "n_far": 8697,
+     "n_near": 55112,
+     "p_eat_near": 0.4752,
+     "p_toward": 0.0939
+    },
+    "400-800": {
+     "n_far": 1456,
+     "n_near": 11272,
+     "p_eat_near": 0.4825,
+     "p_toward": 0.1195
+    },
+    "50-100": {
+     "n_far": 8620,
+     "n_near": 26703,
+     "p_eat_near": 0.6282,
+     "p_toward": 0.0305
+    }
+   },
+   "births": 1005,
+   "final_population": 414,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 2436,
+     "n_near": 2364,
+     "p_eat_near": 0.453,
+     "p_toward": 0.0365
+    },
+    "100-200": {
+     "n_far": 2070,
+     "n_near": 7135,
+     "p_eat_near": 0.5221,
+     "p_toward": 0.0512
+    },
+    "200-400": {
+     "n_far": 2247,
+     "n_near": 12239,
+     "p_eat_near": 0.4285,
+     "p_toward": 0.1055
+    },
+    "400-800": {
+     "n_far": 748,
+     "n_near": 6029,
+     "p_eat_near": 0.4687,
+     "p_toward": 0.1337
+    },
+    "50-100": {
+     "n_far": 1881,
+     "n_near": 2913,
+     "p_eat_near": 0.5819,
+     "p_toward": 0.033
+    }
+   },
+   "founders": 96,
+   "founders_starved": 63
+  },
+  "no_egocentric": {
+   "all_rates": {
+    "0-50": {
+     "n_far": 17129,
+     "n_near": 34376,
+     "p_eat_near": 0.451,
+     "p_toward": 0.0337
+    },
+    "100-200": {
+     "n_far": 15891,
+     "n_near": 40727,
+     "p_eat_near": 0.6066,
+     "p_toward": 0.0386
+    },
+    "200-400": {
+     "n_far": 17037,
+     "n_near": 44795,
+     "p_eat_near": 0.5162,
+     "p_toward": 0.0527
+    },
+    "400-800": {
+     "n_far": 3767,
+     "n_near": 9979,
+     "p_eat_near": 0.4693,
+     "p_toward": 0.0568
+    },
+    "50-100": {
+     "n_far": 9931,
+     "n_near": 25564,
+     "p_eat_near": 0.6815,
+     "p_toward": 0.0282
+    }
+   },
+   "births": 1023,
+   "final_population": 427,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 2307,
+     "n_near": 2493,
+     "p_eat_near": 0.4252,
+     "p_toward": 0.0386
+    },
+    "100-200": {
+     "n_far": 3328,
+     "n_near": 5850,
+     "p_eat_near": 0.5764,
+     "p_toward": 0.0427
+    },
+    "200-400": {
+     "n_far": 3970,
+     "n_near": 9736,
+     "p_eat_near": 0.5154,
+     "p_toward": 0.0489
+    },
+    "400-800": {
+     "n_far": 2011,
+     "n_near": 5288,
+     "p_eat_near": 0.4393,
+     "p_toward": 0.0517
+    },
+    "50-100": {
+     "n_far": 1980,
+     "n_near": 2820,
+     "p_eat_near": 0.6206,
+     "p_toward": 0.0283
+    }
+   },
+   "founders": 96,
+   "founders_starved": 66
+  },
+  "no_replay": {
+   "all_rates": {
+    "0-50": {
+     "n_far": 18463,
+     "n_near": 34113,
+     "p_eat_near": 0.4038,
+     "p_toward": 0.0375
+    },
+    "100-200": {
+     "n_far": 17020,
+     "n_near": 28893,
+     "p_eat_near": 0.8027,
+     "p_toward": 0.0115
+    },
+    "200-400": {
+     "n_far": 15801,
+     "n_near": 39760,
+     "p_eat_near": 0.7711,
+     "p_toward": 0.017
+    },
+    "400-800": {
+     "n_far": 2863,
+     "n_near": 13180,
+     "p_eat_near": 0.5961,
+     "p_toward": 0.0552
+    },
+    "50-100": {
+     "n_far": 10250,
+     "n_near": 19591,
+     "p_eat_near": 0.7536,
+     "p_toward": 0.0183
+    }
+   },
+   "births": 1081,
+   "final_population": 410,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 2498,
+     "n_near": 2352,
+     "p_eat_near": 0.4498,
+     "p_toward": 0.044
+    },
+    "100-200": {
+     "n_far": 3777,
+     "n_near": 5121,
+     "p_eat_near": 0.768,
+     "p_toward": 0.0207
+    },
+    "200-400": {
+     "n_far": 3741,
+     "n_near": 10909,
+     "p_eat_near": 0.7708,
+     "p_toward": 0.0222
+    },
+    "400-800": {
+     "n_far": 1265,
+     "n_near": 7185,
+     "p_eat_near": 0.6079,
+     "p_toward": 0.0672
+    },
+    "50-100": {
+     "n_far": 2275,
+     "n_near": 2564,
+     "p_eat_near": 0.6985,
+     "p_toward": 0.0299
+    }
+   },
+   "founders": 96,
+   "founders_starved": 56
+  },
+  "one_step": {
+   "all_rates": {
+    "0-50": {
+     "n_far": 14801,
+     "n_near": 36658,
+     "p_eat_near": 0.5119,
+     "p_toward": 0.0382
+    },
+    "100-200": {
+     "n_far": 14854,
+     "n_near": 38195,
+     "p_eat_near": 0.8294,
+     "p_toward": 0.0202
+    },
+    "200-400": {
+     "n_far": 17964,
+     "n_near": 46596,
+     "p_eat_near": 0.7844,
+     "p_toward": 0.023
+    },
+    "400-800": {
+     "n_far": 4990,
+     "n_near": 13415,
+     "p_eat_near": 0.7385,
+     "p_toward": 0.0357
+    },
+    "50-100": {
+     "n_far": 8040,
+     "n_near": 25591,
+     "p_eat_near": 0.8263,
+     "p_toward": 0.0209
+    }
+   },
+   "births": 1028,
+   "final_population": 454,
+   "founder_rates": {
+    "0-50": {
+     "n_far": 2552,
+     "n_near": 2248,
+     "p_eat_near": 0.5467,
+     "p_toward": 0.0325
+    },
+    "100-200": {
+     "n_far": 3831,
+     "n_near": 5293,
+     "p_eat_near": 0.8177,
+     "p_toward": 0.0235
+    },
+    "200-400": {
+     "n_far": 4918,
+     "n_near": 9554,
+     "p_eat_near": 0.7852,
+     "p_toward": 0.023
+    },
+    "400-800": {
+     "n_far": 2280,
+     "n_near": 6075,
+     "p_eat_near": 0.7384,
+     "p_toward": 0.0333
+    },
+    "50-100": {
+     "n_far": 2400,
+     "n_near": 2400,
+     "p_eat_near": 0.7479,
+     "p_toward": 0.0242
+    }
+   },
+   "founders": 96,
+   "founders_starved": 59
+  }
+ }
+}

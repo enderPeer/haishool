@@ -1,0 +1,201 @@
+{
+ "what": "life8 round-8 many-world search r8a, launched with the fixed code (critic B1, B2, F1, F2; see docs/life8/README.md 'Critic fixes before the cluster search').",
+ "status_at_handoff": "running on all 4 hosts in tmux session life8-search. Every host was writing results.jsonl rows (17:02 UTC: adler40 1103, knecht24 637, specht32 359, falke64 683 round-0 rows). knecht24 finished round 0 in 28.6 min, kept 230 of 920 and started round 1 (1000 ticks) at 17:10 UTC; the others were due to finish round 0 at about 17:15-17:17 UTC.",
+ "tag": "r8a",
+ "launched_utc": "2026-10-02T16:41:45Z",
+ "launched_berlin": "2026-10-02 18:41 CEST",
+ "launch_command": "bash scripts/life8_search.sh start r8a 0 \"--preset living --source bridged --rounds 4 --ticks 500 --growth 2 --keep 0.25 --reps 6 --branch-ticks 200 --perm-reps 100\" adler40:22:1800:4000 knecht24:22:920:1500 specht32:10:620:3000 falke64:10:1100:3000",
+ "launch_environment": "LIFE8_PLAN_WORKERS=24 (local world7 scan for the plan: 70 min on the shared Windows machine, seeds 0-12121 scanned)",
+ "plan": {
+  "source": "bridged: world7 worlds that reach bodies (bridge.candidate_worlds from seed 0) and synthetic planets (bridge.synthetic_world), alternating",
+  "preset": "living (config.LIVING: blooms, 0-3 predators from the planet via bridge.connect_ecology, calls beyond sight with their own gene, kin credit 1.0 attributed to the call (F1), receiver and reciprocity features, evolving genome); population_limit 256, compact log",
+  "worlds": 4440,
+  "world7": 2220,
+  "synthetic": 2220,
+  "predators_per_world": {
+   "0": 1042,
+   "1": 1471,
+   "2": 970,
+   "3": 957
+  },
+  "staged_locally": "runs/life8-search/r8a/stage/plan.json and <host>.plan.json (git-ignored; split with python -m haishool.life8.search split)"
+ },
+ "shape": {
+  "rounds": 4,
+  "segment_ticks_per_round": [
+   500,
+   1000,
+   2000,
+   4000
+  ],
+  "world_tick_at_end": 7500,
+  "keep": 0.25,
+  "paired_branches": "rounds 1-3, kept worlds only: 6 replicates x 200 ticks in 4 arms (normal, masked, scrambled, tools_off), world RNG reseeded identically per replicate",
+  "perm_reps": 100,
+  "measurement_window": "last half of each round's segment",
+  "criteria": "search.CRITERIA; sender = within-sender excess >= 0.05 bits, p <= 0.01, and in paired rounds normal minus masked within-sender excess >= 0.02 bits; convention = situation-specific difference (F2)"
+ },
+ "hosts": [
+  {
+   "host": "adler40",
+   "cpu": "i9-12900K, 24 threads",
+   "folder": "~/life8-search/r8a",
+   "code": "~/life8-search/r8a/code",
+   "out": "~/life8-search/r8a/out",
+   "log": "~/life8-search/r8a/search.log",
+   "launcher": "~/life8-search/r8a/run.sh",
+   "tmux_session": "life8-search",
+   "workers": 22,
+   "nice": 10,
+   "cap_mb": 4000,
+   "gpu": "not used",
+   "worlds": 1800,
+   "world7_seeds": "6-4931",
+   "synthetic_seeds": "1-1799",
+   "worlds_per_round_approx": [
+    1800,
+    450,
+    113,
+    29
+   ],
+   "bench_s_per_1000_ticks_full_load": 39,
+   "round0_measured_s_per_1000_ticks_full_load": 50,
+   "expected_hours": 3.7,
+   "expected_finish_utc": "2026-10-02T20:25Z"
+  },
+  {
+   "host": "knecht24",
+   "cpu": "Threadripper 1920X, 24 threads",
+   "folder": "~/life8-search/r8a",
+   "code": "~/life8-search/r8a/code",
+   "out": "~/life8-search/r8a/out",
+   "log": "~/life8-search/r8a/search.log",
+   "launcher": "~/life8-search/r8a/run.sh",
+   "tmux_session": "life8-search",
+   "workers": 22,
+   "nice": 10,
+   "cap_mb": 1500,
+   "cap_note": "hard cap for the small disk; peak use expected about 0.6 GB in round 0 (0.6 MB per pending end state)",
+   "worlds": 920,
+   "world7_seeds": "4944-7542",
+   "synthetic_seeds": "1801-2719",
+   "worlds_per_round_approx": [
+    920,
+    230,
+    58,
+    15
+   ],
+   "bench_s_per_1000_ticks_full_load": 77,
+   "round0_measured_s_per_1000_ticks_full_load": 85,
+   "expected_hours": 3.3,
+   "expected_finish_utc": "2026-10-02T20:00Z"
+  },
+  {
+   "host": "specht32",
+   "cpu": "i7-8700K, 12 threads",
+   "folder": "~/life8-search/r8a",
+   "code": "~/life8-search/r8a/code",
+   "out": "~/life8-search/r8a/out",
+   "log": "~/life8-search/r8a/search.log",
+   "launcher": "~/life8-search/r8a/run.sh",
+   "tmux_session": "life8-search",
+   "workers": 10,
+   "nice": 10,
+   "cap_mb": 3000,
+   "worlds": 620,
+   "world7_seeds": "7560-9037",
+   "synthetic_seeds": "2721-3339",
+   "worlds_per_round_approx": [
+    620,
+    155,
+    39,
+    10
+   ],
+   "bench_s_per_1000_ticks_full_load": 52,
+   "round0_measured_s_per_1000_ticks_full_load": 72,
+   "expected_hours": 4.1,
+   "expected_finish_utc": "2026-10-02T20:50Z"
+  },
+  {
+   "host": "falke64",
+   "cpu": "Ryzen 5 7600X, 12 threads",
+   "folder": "~/life8-search/r8a",
+   "code": "~/life8-search/r8a/code",
+   "out": "~/life8-search/r8a/out",
+   "log": "~/life8-search/r8a/search.log",
+   "launcher": "~/life8-search/r8a/run.sh",
+   "tmux_session": "life8-search",
+   "workers": 10,
+   "nice": 10,
+   "cap_mb": 3000,
+   "worlds": 1100,
+   "world7_seeds": "9048-12121",
+   "synthetic_seeds": "3341-4439",
+   "worlds_per_round_approx": [
+    1100,
+    275,
+    69,
+    18
+   ],
+   "bench_s_per_1000_ticks_full_load": 29,
+   "round0_measured_s_per_1000_ticks_full_load": 36,
+   "expected_hours": 3.65,
+   "expected_finish_utc": "2026-10-02T20:20Z"
+  }
+ ],
+ "cost_measurement": {
+  "bench_tag": "r8-bench (tmux session life8-bench, finished; folder ~/life8-search/r8-bench kept, about 4 MB per host)",
+  "bench_command": "LIFE8_SESSION=life8-bench bash scripts/life8_search.sh start r8-bench 50000 \"--preset living --source bridged --rounds 2 --ticks 300 --keep 0.5 --reps 2 --branch-ticks 100 --perm-reps 100\" adler40:22:22:3000 knecht24:22:22:1500 specht32:10:10:3000 falke64:10:10:3000",
+  "bench_result_s_per_world_per_1000_ticks_all_workers_busy": {
+   "adler40": 38.8,
+   "knecht24": 77.0,
+   "specht32": 52.4,
+   "falke64": 29.3
+  },
+  "bench_branch_wall": {
+   "adler40": "72 branch tasks of 100 ticks in 15 s",
+   "knecht24": "88 in 36 s",
+   "specht32": "40 in 20 s",
+   "falke64": "40 in 16 s"
+  },
+  "round0_r8a_rate_first_10_5_min": {
+   "adler40": "0.88 worlds/s",
+   "knecht24": "0.52 worlds/s",
+   "specht32": "0.28 worlds/s",
+   "falke64": "0.55 worlds/s"
+  },
+  "model": "hours = round 0 (measured) + 1.3 x round-0 cost per tick x (segments of rounds 1-3 + 4 arms x 6 reps x 200 branch ticks per kept world) / workers, + about 0.2 h for tails and the main process"
+ },
+ "expected_finish": {
+  "all_hosts_utc": "2026-10-02T20:50Z",
+  "all_hosts_berlin": "2026-10-02 22:50 CEST",
+  "first_host_utc": "2026-10-02T20:00Z (knecht24)",
+  "range_utc": "19:45-21:30 UTC (21:45-23:30 Berlin); populations of kept worlds set the later rounds' cost",
+  "wall_hours_after_launch": "3.3-4.1"
+ },
+ "commands": {
+  "status": "bash scripts/life8_search.sh status r8a adler40 knecht24 specht32 falke64",
+  "watch_one_host": "ssh -t adler40 tmux attach -t life8-search   (detach with Ctrl-b d; never Ctrl-c)",
+  "log_tail": "ssh adler40 tail -n 5 ~/life8-search/r8a/search.log",
+  "collect": "bash scripts/life8_search.sh collect r8a adler40 knecht24 specht32 falke64",
+  "report_one_host": "python -m haishool.life8.search report --out runs/life8-search/r8a/adler40 --top 20",
+  "stop": "bash scripts/life8_search.sh stop r8a HOST   (kills only the life8-search tmux session; the folder stays)",
+  "resume": "bash scripts/life8_search.sh resume r8a \"--preset living --rounds 4 --ticks 500 --growth 2 --keep 0.25 --reps 6 --branch-ticks 200 --perm-reps 100\" HOST:WORKERS:0:CAP_MB   (skips finished rounds and worlds; a new CAP_MB replaces the saved cap)"
+ },
+ "done_when": "status shows 'tmux life8-search: none', 'complete rounds_done' from out/search.json and an 'exit 0' line at the end of search.log on every host",
+ "collect_and_report": [
+  "1. Run status; when a host shows stopped output_cap (only plausible on knecht24), resume it with a larger cap, e.g. knecht24:22:0:2500.",
+  "2. Run collect: it copies results.jsonl, search.json and search.log of each host to runs/life8-search/r8a/HOST/ and writes runs/life8-search/r8a/merged/report.json (per round: worlds, errors, stops, score median and max, passed criteria, language verdicts, kept; best final-round worlds) and summary.txt.",
+  "3. Report per round the counts of passed criteria next to the number of worlds x alpha (F3 is still open: there is no multiple-comparison guard). Chance passes to expect: the sender criterion needs p <= 0.01 (at most 1 in 100 worlds per round by chance), the fitness criterion needs 6 of 6 positive replicates (1 in 64 paired worlds by chance).",
+  "4. For the best final-round worlds (merged report 'best'), copy their checkpoints (~/life8-search/r8a/out/checkpoints/<id>.r3.json.gz on the host in the row's 'host' field) with scp and confirm locally on fresh replicate salts and held-out seeds before any claim; lineage.mapping_persistence needs numpy (local or knecht24) and a lineage table, which the bundle does not carry (critic F7).",
+  "5. Toy-world numbers: a passed criterion is a measured dependency or paired effect in this simulation, not language, technology or institutions.",
+  "6. After collecting, the host folders can be removed (ssh HOST rm -rf ~/life8-search/r8a ~/life8-search/r8-bench); nothing else was created on the hosts."
+ ],
+ "notes": [
+  "Each host is exact with itself (resume on the same host); hosts are independent samples, not bit-identical reruns (critic F4: libm differences).",
+  "Disk at 16:52 UTC: adler40 42 GB free, knecht24 31 GB, specht32 222 GB, falke64 823 GB; round-0 pending end states take about 0.6 MB per world until selection.",
+  "No GPU, service, other folder or other tmux session on the hosts was touched; the searches run under nice 10 with 22/22/10/10 workers (2 hardware threads left free per host).",
+  "Tests at launch: python -m pytest tests/life8 -q gave 268 passed, 7 skipped; the slow founder test (test_experiments, -m slow) fails only its P(eat) margin, 0.5921 vs 0.5945 needed (unchanged, as instructed)."
+ ],
+ "known_issue": "24 of the 4440 planned worlds (synthetic planets at exactly 273 K: adler40 9, knecht24 4, specht32 5, falke64 6) end with an error row 'temperature outside allowed range' in round 0: bridge.connect_ecology sets ambient_temperature = -0.15 C, objects cool below the thermal model's zero (0 C) and materials validation refuses them. Pre-existing ecology-stage bug, not in the critic's list; the rows are kept as errors and those worlds cannot continue (0.5% of the plan). Not fixed in the running code; fix: clip the connected ambient temperature (or the cooling target) at 0 C."
+}

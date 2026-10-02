@@ -1,0 +1,1187 @@
+{
+ "what": "200 ticks of life8 (Config(log='compact'), population 24) for the 49 world7 seeds 0-299 that reach bodies, bridged (bridge.world_config + create_world, life8 seed = world7 seed) and the same life8 seeds with the default Config (bridge off); plus 20 synthetic planets (synthetic_worlds(20, 1000))",
+ "script": "scratchpad bridge_runs.py (16 processes); wall seconds on a loaded machine",
+ "wall_seconds": 101.4,
+ "runs": [
+  {
+   "kind": "world7",
+   "seed": 6,
+   "tick": 200,
+   "stop": null,
+   "alive": 56,
+   "founders_alive": 19,
+   "births": 58,
+   "seconds": 8.42
+  },
+  {
+   "kind": "default",
+   "seed": 6,
+   "tick": 200,
+   "stop": null,
+   "alive": 79,
+   "founders_alive": 20,
+   "births": 86,
+   "seconds": 9.76
+  },
+  {
+   "kind": "world7",
+   "seed": 7,
+   "tick": 200,
+   "stop": null,
+   "alive": 96,
+   "founders_alive": 23,
+   "births": 99,
+   "seconds": 14.63
+  },
+  {
+   "kind": "default",
+   "seed": 7,
+   "tick": 200,
+   "stop": null,
+   "alive": 66,
+   "founders_alive": 20,
+   "births": 73,
+   "seconds": 8.59
+  },
+  {
+   "kind": "world7",
+   "seed": 9,
+   "tick": 200,
+   "stop": null,
+   "alive": 72,
+   "founders_alive": 19,
+   "births": 75,
+   "seconds": 9.92
+  },
+  {
+   "kind": "default",
+   "seed": 9,
+   "tick": 200,
+   "stop": null,
+   "alive": 86,
+   "founders_alive": 23,
+   "births": 80,
+   "seconds": 9.89
+  },
+  {
+   "kind": "world7",
+   "seed": 10,
+   "tick": 200,
+   "stop": null,
+   "alive": 73,
+   "founders_alive": 18,
+   "births": 82,
+   "seconds": 14.37
+  },
+  {
+   "kind": "default",
+   "seed": 10,
+   "tick": 200,
+   "stop": null,
+   "alive": 102,
+   "founders_alive": 22,
+   "births": 95,
+   "seconds": 12.51
+  },
+  {
+   "kind": "world7",
+   "seed": 29,
+   "tick": 200,
+   "stop": null,
+   "alive": 56,
+   "founders_alive": 23,
+   "births": 62,
+   "seconds": 9.33
+  },
+  {
+   "kind": "default",
+   "seed": 29,
+   "tick": 200,
+   "stop": null,
+   "alive": 72,
+   "founders_alive": 20,
+   "births": 65,
+   "seconds": 9.93
+  },
+  {
+   "kind": "world7",
+   "seed": 35,
+   "tick": 200,
+   "stop": null,
+   "alive": 97,
+   "founders_alive": 20,
+   "births": 110,
+   "seconds": 12.65
+  },
+  {
+   "kind": "default",
+   "seed": 35,
+   "tick": 200,
+   "stop": null,
+   "alive": 86,
+   "founders_alive": 24,
+   "births": 90,
+   "seconds": 10.45
+  },
+  {
+   "kind": "world7",
+   "seed": 40,
+   "tick": 200,
+   "stop": null,
+   "alive": 74,
+   "founders_alive": 22,
+   "births": 81,
+   "seconds": 10.7
+  },
+  {
+   "kind": "default",
+   "seed": 40,
+   "tick": 200,
+   "stop": null,
+   "alive": 82,
+   "founders_alive": 24,
+   "births": 80,
+   "seconds": 9.88
+  },
+  {
+   "kind": "world7",
+   "seed": 54,
+   "tick": 200,
+   "stop": null,
+   "alive": 67,
+   "founders_alive": 19,
+   "births": 81,
+   "seconds": 10.64
+  },
+  {
+   "kind": "default",
+   "seed": 54,
+   "tick": 200,
+   "stop": null,
+   "alive": 75,
+   "founders_alive": 20,
+   "births": 71,
+   "seconds": 9.51
+  },
+  {
+   "kind": "world7",
+   "seed": 56,
+   "tick": 200,
+   "stop": null,
+   "alive": 54,
+   "founders_alive": 20,
+   "births": 53,
+   "seconds": 8.02
+  },
+  {
+   "kind": "default",
+   "seed": 56,
+   "tick": 200,
+   "stop": null,
+   "alive": 88,
+   "founders_alive": 24,
+   "births": 91,
+   "seconds": 11.88
+  },
+  {
+   "kind": "world7",
+   "seed": 63,
+   "tick": 200,
+   "stop": null,
+   "alive": 92,
+   "founders_alive": 21,
+   "births": 91,
+   "seconds": 11.93
+  },
+  {
+   "kind": "default",
+   "seed": 63,
+   "tick": 200,
+   "stop": null,
+   "alive": 100,
+   "founders_alive": 22,
+   "births": 103,
+   "seconds": 13.5
+  },
+  {
+   "kind": "world7",
+   "seed": 65,
+   "tick": 200,
+   "stop": null,
+   "alive": 78,
+   "founders_alive": 21,
+   "births": 76,
+   "seconds": 22.12
+  },
+  {
+   "kind": "default",
+   "seed": 65,
+   "tick": 200,
+   "stop": null,
+   "alive": 77,
+   "founders_alive": 23,
+   "births": 74,
+   "seconds": 12.25
+  },
+  {
+   "kind": "world7",
+   "seed": 66,
+   "tick": 198,
+   "stop": "population_capacity",
+   "alive": 128,
+   "founders_alive": 24,
+   "births": 111,
+   "seconds": 13.61
+  },
+  {
+   "kind": "default",
+   "seed": 66,
+   "tick": 200,
+   "stop": null,
+   "alive": 90,
+   "founders_alive": 22,
+   "births": 86,
+   "seconds": 11.8
+  },
+  {
+   "kind": "world7",
+   "seed": 74,
+   "tick": 200,
+   "stop": null,
+   "alive": 90,
+   "founders_alive": 23,
+   "births": 87,
+   "seconds": 21.44
+  },
+  {
+   "kind": "default",
+   "seed": 74,
+   "tick": 200,
+   "stop": null,
+   "alive": 80,
+   "founders_alive": 22,
+   "births": 89,
+   "seconds": 11.3
+  },
+  {
+   "kind": "world7",
+   "seed": 76,
+   "tick": 200,
+   "stop": null,
+   "alive": 85,
+   "founders_alive": 20,
+   "births": 83,
+   "seconds": 10.69
+  },
+  {
+   "kind": "default",
+   "seed": 76,
+   "tick": 200,
+   "stop": null,
+   "alive": 69,
+   "founders_alive": 20,
+   "births": 73,
+   "seconds": 16.58
+  },
+  {
+   "kind": "world7",
+   "seed": 77,
+   "tick": 200,
+   "stop": null,
+   "alive": 88,
+   "founders_alive": 20,
+   "births": 95,
+   "seconds": 19.85
+  },
+  {
+   "kind": "default",
+   "seed": 77,
+   "tick": 200,
+   "stop": null,
+   "alive": 103,
+   "founders_alive": 23,
+   "births": 98,
+   "seconds": 15.62
+  },
+  {
+   "kind": "world7",
+   "seed": 79,
+   "tick": 200,
+   "stop": null,
+   "alive": 91,
+   "founders_alive": 22,
+   "births": 84,
+   "seconds": 21.45
+  },
+  {
+   "kind": "default",
+   "seed": 79,
+   "tick": 200,
+   "stop": null,
+   "alive": 94,
+   "founders_alive": 20,
+   "births": 91,
+   "seconds": 22.54
+  },
+  {
+   "kind": "world7",
+   "seed": 85,
+   "tick": 200,
+   "stop": null,
+   "alive": 90,
+   "founders_alive": 23,
+   "births": 99,
+   "seconds": 15.42
+  },
+  {
+   "kind": "default",
+   "seed": 85,
+   "tick": 200,
+   "stop": null,
+   "alive": 83,
+   "founders_alive": 21,
+   "births": 80,
+   "seconds": 12.3
+  },
+  {
+   "kind": "world7",
+   "seed": 88,
+   "tick": 200,
+   "stop": null,
+   "alive": 98,
+   "founders_alive": 22,
+   "births": 99,
+   "seconds": 12.47
+  },
+  {
+   "kind": "default",
+   "seed": 88,
+   "tick": 200,
+   "stop": null,
+   "alive": 90,
+   "founders_alive": 23,
+   "births": 92,
+   "seconds": 11.77
+  },
+  {
+   "kind": "world7",
+   "seed": 90,
+   "tick": 200,
+   "stop": null,
+   "alive": 90,
+   "founders_alive": 21,
+   "births": 88,
+   "seconds": 30.05
+  },
+  {
+   "kind": "default",
+   "seed": 90,
+   "tick": 200,
+   "stop": null,
+   "alive": 76,
+   "founders_alive": 23,
+   "births": 77,
+   "seconds": 11.06
+  },
+  {
+   "kind": "world7",
+   "seed": 100,
+   "tick": 200,
+   "stop": null,
+   "alive": 76,
+   "founders_alive": 21,
+   "births": 72,
+   "seconds": 24.31
+  },
+  {
+   "kind": "default",
+   "seed": 100,
+   "tick": 200,
+   "stop": null,
+   "alive": 91,
+   "founders_alive": 21,
+   "births": 85,
+   "seconds": 11.47
+  },
+  {
+   "kind": "world7",
+   "seed": 101,
+   "tick": 200,
+   "stop": null,
+   "alive": 89,
+   "founders_alive": 22,
+   "births": 91,
+   "seconds": 11.07
+  },
+  {
+   "kind": "default",
+   "seed": 101,
+   "tick": 200,
+   "stop": null,
+   "alive": 81,
+   "founders_alive": 23,
+   "births": 80,
+   "seconds": 21.58
+  },
+  {
+   "kind": "world7",
+   "seed": 102,
+   "tick": 200,
+   "stop": null,
+   "alive": 95,
+   "founders_alive": 23,
+   "births": 89,
+   "seconds": 20.03
+  },
+  {
+   "kind": "default",
+   "seed": 102,
+   "tick": 200,
+   "stop": null,
+   "alive": 87,
+   "founders_alive": 23,
+   "births": 83,
+   "seconds": 11.7
+  },
+  {
+   "kind": "world7",
+   "seed": 110,
+   "tick": 200,
+   "stop": null,
+   "alive": 87,
+   "founders_alive": 20,
+   "births": 78,
+   "seconds": 10.21
+  },
+  {
+   "kind": "default",
+   "seed": 110,
+   "tick": 200,
+   "stop": null,
+   "alive": 93,
+   "founders_alive": 23,
+   "births": 94,
+   "seconds": 21.65
+  },
+  {
+   "kind": "world7",
+   "seed": 111,
+   "tick": 200,
+   "stop": null,
+   "alive": 90,
+   "founders_alive": 20,
+   "births": 92,
+   "seconds": 11.78
+  },
+  {
+   "kind": "default",
+   "seed": 111,
+   "tick": 200,
+   "stop": null,
+   "alive": 78,
+   "founders_alive": 19,
+   "births": 81,
+   "seconds": 11.1
+  },
+  {
+   "kind": "world7",
+   "seed": 120,
+   "tick": 200,
+   "stop": null,
+   "alive": 69,
+   "founders_alive": 21,
+   "births": 65,
+   "seconds": 20.3
+  },
+  {
+   "kind": "default",
+   "seed": 120,
+   "tick": 200,
+   "stop": null,
+   "alive": 91,
+   "founders_alive": 24,
+   "births": 91,
+   "seconds": 12.49
+  },
+  {
+   "kind": "world7",
+   "seed": 152,
+   "tick": 200,
+   "stop": null,
+   "alive": 88,
+   "founders_alive": 23,
+   "births": 79,
+   "seconds": 10.3
+  },
+  {
+   "kind": "default",
+   "seed": 152,
+   "tick": 200,
+   "stop": null,
+   "alive": 77,
+   "founders_alive": 23,
+   "births": 72,
+   "seconds": 15.21
+  },
+  {
+   "kind": "world7",
+   "seed": 160,
+   "tick": 200,
+   "stop": null,
+   "alive": 96,
+   "founders_alive": 24,
+   "births": 93,
+   "seconds": 11.54
+  },
+  {
+   "kind": "default",
+   "seed": 160,
+   "tick": 200,
+   "stop": null,
+   "alive": 96,
+   "founders_alive": 21,
+   "births": 98,
+   "seconds": 12.39
+  },
+  {
+   "kind": "world7",
+   "seed": 167,
+   "tick": 200,
+   "stop": null,
+   "alive": 95,
+   "founders_alive": 22,
+   "births": 91,
+   "seconds": 19.88
+  },
+  {
+   "kind": "default",
+   "seed": 167,
+   "tick": 200,
+   "stop": null,
+   "alive": 82,
+   "founders_alive": 19,
+   "births": 79,
+   "seconds": 11.22
+  },
+  {
+   "kind": "world7",
+   "seed": 171,
+   "tick": 200,
+   "stop": null,
+   "alive": 54,
+   "founders_alive": 18,
+   "births": 62,
+   "seconds": 8.28
+  },
+  {
+   "kind": "default",
+   "seed": 171,
+   "tick": 200,
+   "stop": null,
+   "alive": 80,
+   "founders_alive": 22,
+   "births": 86,
+   "seconds": 11.11
+  },
+  {
+   "kind": "world7",
+   "seed": 172,
+   "tick": 200,
+   "stop": null,
+   "alive": 88,
+   "founders_alive": 20,
+   "births": 91,
+   "seconds": 11.71
+  },
+  {
+   "kind": "default",
+   "seed": 172,
+   "tick": 200,
+   "stop": null,
+   "alive": 84,
+   "founders_alive": 22,
+   "births": 84,
+   "seconds": 19.95
+  },
+  {
+   "kind": "world7",
+   "seed": 178,
+   "tick": 200,
+   "stop": null,
+   "alive": 56,
+   "founders_alive": 17,
+   "births": 56,
+   "seconds": 9.1
+  },
+  {
+   "kind": "default",
+   "seed": 178,
+   "tick": 200,
+   "stop": null,
+   "alive": 76,
+   "founders_alive": 23,
+   "births": 73,
+   "seconds": 10.82
+  },
+  {
+   "kind": "world7",
+   "seed": 182,
+   "tick": 200,
+   "stop": null,
+   "alive": 84,
+   "founders_alive": 20,
+   "births": 84,
+   "seconds": 19.44
+  },
+  {
+   "kind": "default",
+   "seed": 182,
+   "tick": 200,
+   "stop": null,
+   "alive": 90,
+   "founders_alive": 23,
+   "births": 90,
+   "seconds": 14.33
+  },
+  {
+   "kind": "world7",
+   "seed": 197,
+   "tick": 200,
+   "stop": null,
+   "alive": 96,
+   "founders_alive": 22,
+   "births": 93,
+   "seconds": 16.99
+  },
+  {
+   "kind": "default",
+   "seed": 197,
+   "tick": 200,
+   "stop": null,
+   "alive": 68,
+   "founders_alive": 23,
+   "births": 66,
+   "seconds": 15.35
+  },
+  {
+   "kind": "world7",
+   "seed": 207,
+   "tick": 200,
+   "stop": null,
+   "alive": 62,
+   "founders_alive": 21,
+   "births": 57,
+   "seconds": 22.58
+  },
+  {
+   "kind": "default",
+   "seed": 207,
+   "tick": 200,
+   "stop": null,
+   "alive": 84,
+   "founders_alive": 19,
+   "births": 84,
+   "seconds": 12.06
+  },
+  {
+   "kind": "world7",
+   "seed": 213,
+   "tick": 200,
+   "stop": null,
+   "alive": 98,
+   "founders_alive": 22,
+   "births": 94,
+   "seconds": 12.24
+  },
+  {
+   "kind": "default",
+   "seed": 213,
+   "tick": 200,
+   "stop": null,
+   "alive": 112,
+   "founders_alive": 24,
+   "births": 113,
+   "seconds": 14.36
+  },
+  {
+   "kind": "world7",
+   "seed": 221,
+   "tick": 200,
+   "stop": null,
+   "alive": 95,
+   "founders_alive": 19,
+   "births": 87,
+   "seconds": 11.33
+  },
+  {
+   "kind": "default",
+   "seed": 221,
+   "tick": 200,
+   "stop": null,
+   "alive": 83,
+   "founders_alive": 22,
+   "births": 82,
+   "seconds": 11.84
+  },
+  {
+   "kind": "world7",
+   "seed": 223,
+   "tick": 200,
+   "stop": null,
+   "alive": 83,
+   "founders_alive": 21,
+   "births": 81,
+   "seconds": 10.05
+  },
+  {
+   "kind": "default",
+   "seed": 223,
+   "tick": 200,
+   "stop": null,
+   "alive": 43,
+   "founders_alive": 20,
+   "births": 34,
+   "seconds": 7.89
+  },
+  {
+   "kind": "world7",
+   "seed": 225,
+   "tick": 200,
+   "stop": null,
+   "alive": 91,
+   "founders_alive": 23,
+   "births": 89,
+   "seconds": 12.14
+  },
+  {
+   "kind": "default",
+   "seed": 225,
+   "tick": 200,
+   "stop": null,
+   "alive": 85,
+   "founders_alive": 20,
+   "births": 87,
+   "seconds": 11.32
+  },
+  {
+   "kind": "world7",
+   "seed": 230,
+   "tick": 200,
+   "stop": null,
+   "alive": 84,
+   "founders_alive": 22,
+   "births": 91,
+   "seconds": 10.93
+  },
+  {
+   "kind": "default",
+   "seed": 230,
+   "tick": 200,
+   "stop": null,
+   "alive": 76,
+   "founders_alive": 20,
+   "births": 70,
+   "seconds": 10.32
+  },
+  {
+   "kind": "world7",
+   "seed": 232,
+   "tick": 200,
+   "stop": null,
+   "alive": 90,
+   "founders_alive": 22,
+   "births": 85,
+   "seconds": 25.08
+  },
+  {
+   "kind": "default",
+   "seed": 232,
+   "tick": 200,
+   "stop": null,
+   "alive": 94,
+   "founders_alive": 24,
+   "births": 91,
+   "seconds": 12.66
+  },
+  {
+   "kind": "world7",
+   "seed": 242,
+   "tick": 200,
+   "stop": null,
+   "alive": 71,
+   "founders_alive": 21,
+   "births": 76,
+   "seconds": 14.83
+  },
+  {
+   "kind": "default",
+   "seed": 242,
+   "tick": 200,
+   "stop": null,
+   "alive": 74,
+   "founders_alive": 21,
+   "births": 77,
+   "seconds": 16.85
+  },
+  {
+   "kind": "world7",
+   "seed": 253,
+   "tick": 200,
+   "stop": null,
+   "alive": 82,
+   "founders_alive": 21,
+   "births": 80,
+   "seconds": 14.79
+  },
+  {
+   "kind": "default",
+   "seed": 253,
+   "tick": 200,
+   "stop": null,
+   "alive": 73,
+   "founders_alive": 22,
+   "births": 73,
+   "seconds": 10.64
+  },
+  {
+   "kind": "world7",
+   "seed": 254,
+   "tick": 200,
+   "stop": null,
+   "alive": 55,
+   "founders_alive": 17,
+   "births": 63,
+   "seconds": 8.98
+  },
+  {
+   "kind": "default",
+   "seed": 254,
+   "tick": 200,
+   "stop": null,
+   "alive": 65,
+   "founders_alive": 21,
+   "births": 68,
+   "seconds": 12.31
+  },
+  {
+   "kind": "world7",
+   "seed": 260,
+   "tick": 200,
+   "stop": null,
+   "alive": 105,
+   "founders_alive": 23,
+   "births": 99,
+   "seconds": 16.28
+  },
+  {
+   "kind": "default",
+   "seed": 260,
+   "tick": 200,
+   "stop": null,
+   "alive": 82,
+   "founders_alive": 23,
+   "births": 83,
+   "seconds": 14.31
+  },
+  {
+   "kind": "world7",
+   "seed": 265,
+   "tick": 200,
+   "stop": null,
+   "alive": 97,
+   "founders_alive": 21,
+   "births": 103,
+   "seconds": 16.58
+  },
+  {
+   "kind": "default",
+   "seed": 265,
+   "tick": 200,
+   "stop": null,
+   "alive": 78,
+   "founders_alive": 20,
+   "births": 89,
+   "seconds": 13.6
+  },
+  {
+   "kind": "world7",
+   "seed": 278,
+   "tick": 200,
+   "stop": null,
+   "alive": 85,
+   "founders_alive": 21,
+   "births": 87,
+   "seconds": 10.68
+  },
+  {
+   "kind": "default",
+   "seed": 278,
+   "tick": 200,
+   "stop": null,
+   "alive": 89,
+   "founders_alive": 20,
+   "births": 82,
+   "seconds": 12.01
+  },
+  {
+   "kind": "world7",
+   "seed": 286,
+   "tick": 200,
+   "stop": null,
+   "alive": 84,
+   "founders_alive": 18,
+   "births": 85,
+   "seconds": 11.0
+  },
+  {
+   "kind": "default",
+   "seed": 286,
+   "tick": 200,
+   "stop": null,
+   "alive": 101,
+   "founders_alive": 22,
+   "births": 96,
+   "seconds": 13.28
+  },
+  {
+   "kind": "world7",
+   "seed": 290,
+   "tick": 200,
+   "stop": null,
+   "alive": 76,
+   "founders_alive": 22,
+   "births": 86,
+   "seconds": 11.37
+  },
+  {
+   "kind": "default",
+   "seed": 290,
+   "tick": 200,
+   "stop": null,
+   "alive": 111,
+   "founders_alive": 21,
+   "births": 110,
+   "seconds": 15.33
+  },
+  {
+   "kind": "world7",
+   "seed": 295,
+   "tick": 200,
+   "stop": null,
+   "alive": 78,
+   "founders_alive": 22,
+   "births": 73,
+   "seconds": 11.42
+  },
+  {
+   "kind": "default",
+   "seed": 295,
+   "tick": 200,
+   "stop": null,
+   "alive": 95,
+   "founders_alive": 23,
+   "births": 97,
+   "seconds": 13.69
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1000,
+   "tick": 200,
+   "stop": null,
+   "alive": 63,
+   "founders_alive": 21,
+   "births": 74,
+   "seconds": 10.23
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1001,
+   "tick": 200,
+   "stop": null,
+   "alive": 73,
+   "founders_alive": 21,
+   "births": 69,
+   "seconds": 9.99
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1002,
+   "tick": 200,
+   "stop": null,
+   "alive": 86,
+   "founders_alive": 21,
+   "births": 87,
+   "seconds": 11.84
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1003,
+   "tick": 200,
+   "stop": null,
+   "alive": 74,
+   "founders_alive": 19,
+   "births": 83,
+   "seconds": 11.82
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1004,
+   "tick": 200,
+   "stop": null,
+   "alive": 53,
+   "founders_alive": 17,
+   "births": 61,
+   "seconds": 9.11
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1005,
+   "tick": 200,
+   "stop": null,
+   "alive": 62,
+   "founders_alive": 21,
+   "births": 63,
+   "seconds": 10.71
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1006,
+   "tick": 200,
+   "stop": null,
+   "alive": 89,
+   "founders_alive": 19,
+   "births": 88,
+   "seconds": 12.3
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1007,
+   "tick": 200,
+   "stop": null,
+   "alive": 100,
+   "founders_alive": 23,
+   "births": 90,
+   "seconds": 12.49
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1008,
+   "tick": 200,
+   "stop": null,
+   "alive": 61,
+   "founders_alive": 21,
+   "births": 65,
+   "seconds": 9.28
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1009,
+   "tick": 200,
+   "stop": null,
+   "alive": 87,
+   "founders_alive": 22,
+   "births": 92,
+   "seconds": 11.24
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1010,
+   "tick": 200,
+   "stop": null,
+   "alive": 103,
+   "founders_alive": 22,
+   "births": 105,
+   "seconds": 11.79
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1011,
+   "tick": 200,
+   "stop": null,
+   "alive": 90,
+   "founders_alive": 22,
+   "births": 93,
+   "seconds": 11.11
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1012,
+   "tick": 200,
+   "stop": null,
+   "alive": 54,
+   "founders_alive": 22,
+   "births": 49,
+   "seconds": 8.72
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1013,
+   "tick": 200,
+   "stop": null,
+   "alive": 69,
+   "founders_alive": 21,
+   "births": 70,
+   "seconds": 9.86
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1014,
+   "tick": 200,
+   "stop": null,
+   "alive": 119,
+   "founders_alive": 23,
+   "births": 122,
+   "seconds": 11.94
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1015,
+   "tick": 200,
+   "stop": null,
+   "alive": 67,
+   "founders_alive": 19,
+   "births": 71,
+   "seconds": 9.43
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1016,
+   "tick": 200,
+   "stop": null,
+   "alive": 97,
+   "founders_alive": 23,
+   "births": 94,
+   "seconds": 10.62
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1017,
+   "tick": 200,
+   "stop": null,
+   "alive": 117,
+   "founders_alive": 22,
+   "births": 109,
+   "seconds": 10.0
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1018,
+   "tick": 200,
+   "stop": null,
+   "alive": 87,
+   "founders_alive": 20,
+   "births": 90,
+   "seconds": 10.0
+  },
+  {
+   "kind": "synthetic",
+   "seed": 1019,
+   "tick": 200,
+   "stop": null,
+   "alive": 55,
+   "founders_alive": 19,
+   "births": 62,
+   "seconds": 8.12
+  }
+ ]
+}

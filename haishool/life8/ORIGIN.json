@@ -1,0 +1,87 @@
+{
+  "source": "Matrix (C:/Users/end/Desktop/Matrix), branch codex/matrix-foundation",
+  "source_commit": "2cf045a419b871202de783f5da55807d27a77827",
+  "licence": "MIT, Copyright (c) 2026 enderPeer (haishool/life8/LICENSE-matrix.txt)",
+  "copied_on": "2026-10-02",
+  "hash_note": "sha256 of each file exactly as stored at the source commit (git show), before any life8 edit; the life8 copies have since been modified, see docs/life8/README.md",
+  "files": {
+    "matrix_sim/__init__.py": {
+      "sha256": "aaa3bbb1cef04e12b4b2e25126078de87b07c83c6779cd7104bd05ec84da4717",
+      "copied_to": "haishool/life8/__init__.py"
+    },
+    "matrix_sim/__main__.py": {
+      "sha256": "3129adff95e0f38b87ab34cddfc27082c7892bcaec267ff5d40f160fdf55b44a",
+      "copied_to": "haishool/life8/__main__.py"
+    },
+    "matrix_sim/checkpoint.py": {
+      "sha256": "a7255dec60947ab7c2d07d6f093b9d89c5bca90e289b7836eda453abc0393898",
+      "copied_to": "haishool/life8/checkpoint.py"
+    },
+    "matrix_sim/cli.py": {
+      "sha256": "14f7583e0b45713269a619563d0f5c1aedc93000be493b3a8c50f2aea1f5faaa",
+      "copied_to": "haishool/life8/cli.py"
+    },
+    "matrix_sim/config.py": {
+      "sha256": "10bf49d1d79575023db4632ef03c4adc41d65fe0c6cc690cec381058011d6e38",
+      "copied_to": "haishool/life8/config.py"
+    },
+    "matrix_sim/dataset.py": {
+      "sha256": "bf935177ae147f4ab55c8c2b3eb64c3b0bcc2481b83f469c13719d17b0da6bf5",
+      "copied_to": "haishool/life8/dataset.py"
+    },
+    "matrix_sim/entities.py": {
+      "sha256": "66dc973306c51e7e71d9111ddd3391fd8b340de65579f8b206b6ae2025e2f986",
+      "copied_to": "haishool/life8/entities.py"
+    },
+    "matrix_sim/learning.py": {
+      "sha256": "2bc1d521e0f41a88cb2d37de700d36f5e38624c237d96bfbd3fe1ed499e31427",
+      "copied_to": "haishool/life8/learning.py"
+    },
+    "matrix_sim/materials.py": {
+      "sha256": "8f39bc12e7e28c2ae9619661562a966c0a5813c43bc52e2075056f7e125473c5",
+      "copied_to": "haishool/life8/materials.py"
+    },
+    "matrix_sim/server.py": {
+      "sha256": "eb0968258edb295ce2b6f696d1de70b09c17cf05e6307c0ef869c2c05648b461",
+      "copied_to": "haishool/life8/server.py"
+    },
+    "matrix_sim/viewer.html": {
+      "sha256": "aa625e4f59f2f89782e4e83082ff66243ad442fe2dc1c8e03ef58210ba30dcc9",
+      "copied_to": "haishool/life8/viewer.html"
+    },
+    "matrix_sim/world.py": {
+      "sha256": "bbe4cea76d427f9f013732d110f7ec75a30a6fc9631d3e46d9a2ead1a32a95a1",
+      "copied_to": "haishool/life8/world.py"
+    },
+    "tests/test_archive_cli.py": {
+      "sha256": "a763c4fbad6a9d9dff65668bde6787051b7bbf5a2e9453a774afcea0d3e3fde1",
+      "copied_to": "tests/life8/test_archive_cli.py"
+    },
+    "tests/test_continuation.py": {
+      "sha256": "1eb1ab04fd7b12638b02c3b15a11a4fff2d9b2cbfb66ba7d345852b5169b197d",
+      "copied_to": "tests/life8/test_continuation.py"
+    },
+    "tests/test_learning.py": {
+      "sha256": "8926baef19664e0a0b73086f2269036c1a6b8bdcc2ae355ab6a98d09e4707bcf",
+      "copied_to": "tests/life8/test_learning.py"
+    },
+    "tests/test_materials.py": {
+      "sha256": "ea17924de03447be2c8bb80af0f3efcab3c9a11fe931b1173b918d9d7c9f13f4",
+      "copied_to": "tests/life8/test_materials.py"
+    },
+    "tests/test_mechanisms.py": {
+      "sha256": "9a59e9c16c8b180ff99c35d8e301cee848fd208cff306be214edc1197a5cf0f5",
+      "copied_to": "tests/life8/test_mechanisms.py"
+    },
+    "tests/test_world.py": {
+      "sha256": "f26120a9441ef491e4e6244a26650af97005601f6ad5259bdf54eff5fc78978a",
+      "copied_to": "tests/life8/test_world.py"
+    },
+    "LICENSE": {
+      "sha256": "5cdbc44e43c4d3cf4988d3154b0a7b0b9715ad33bb87fec5a9a87b958314055a",
+      "copied_to": "haishool/life8/LICENSE-matrix.txt"
+    }
+  },
+  "import_rewrite": "tests: 'matrix_sim' -> 'haishool.life8'; engine modules already used relative imports",
+  "tests_before_changes": "127 passed (python -m pytest tests/life8 -q, Python 3.11.9)"
+}

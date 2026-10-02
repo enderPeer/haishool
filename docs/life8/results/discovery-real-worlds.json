@@ -1,0 +1,3213 @@
+{
+ "measurement": "signalling discovery: sender information, receiver information vs scrambled, fitness cost of scrambling",
+ "seeds": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "ticks": 1500,
+ "config_overrides": {
+  "food_patches": 30
+ },
+ "verdicts": {
+  "null": 6
+ },
+ "seeds_passing": {
+  "sender_information": 0,
+  "receiver_information": 0,
+  "fitness_cost_of_scrambling": 0
+ },
+ "across_seeds": {
+  "sender_excess_bits": {
+   "n": 6,
+   "mean": 0.005084,
+   "sd": 0.008421,
+   "positive": 5,
+   "negative": 1,
+   "sign_p": 0.21875
+  },
+  "receiver_excess_over_scrambled_bits": {
+   "n": 6,
+   "mean": 0.001689,
+   "sd": 0.003122,
+   "positive": 4,
+   "negative": 2,
+   "sign_p": 0.6875
+  },
+  "fitness_food_energy_per_agent_tick": {
+   "n": 6,
+   "mean": -0.001883,
+   "sd": 0.003567,
+   "positive": 2,
+   "negative": 4,
+   "sign_p": 0.6875
+  },
+  "fitness_population": {
+   "n": 6,
+   "mean": 0.145833,
+   "sd": 1.443556,
+   "positive": 4,
+   "negative": 2,
+   "sign_p": 0.6875
+  }
+ },
+ "thresholds": {
+  "sender_excess_bits": 0.05,
+  "sender_p": 0.01,
+  "receiver_excess_bits": 0.02,
+  "receiver_p": 0.01,
+  "receiver_over_scrambled_bits": 0.02,
+  "fitness_min_reps": 6,
+  "fitness_sign_p": 0.05
+ },
+ "interpretation": "Toy-world measurement. 'all_three' means signals carry sender-state information, receivers act on their content and scrambling the content costs fitness here; it is not evidence of language.",
+ "runs": [
+  {
+   "seed": 1,
+   "config_overrides": {
+    "food_patches": 30
+   },
+   "ticks": 1500,
+   "window_start": 1000,
+   "normal": {
+    "ticks_run": 1500,
+    "stop_reason": "step_budget",
+    "population": 43,
+    "births": 278,
+    "signals_sent": 4376
+   },
+   "scrambled": {
+    "ticks_run": 1500,
+    "stop_reason": "step_budget",
+    "population": 35,
+    "births": 225
+   },
+   "sender": {
+    "state": [
+     "food_near",
+     "food_seen",
+     "energy_band",
+     "neighbor_near"
+    ],
+    "signals": 1448,
+    "senders": 126,
+    "symbol_entropy_bits": 1.9975,
+    "joint": {
+     "n": 1448,
+     "mi_bits": 0.018461,
+     "null_mean": 0.018759,
+     "null_p95": 0.025161,
+     "excess_bits": -0.000298,
+     "p_value": 0.532338
+    },
+    "within_sender": {
+     "n": 1448,
+     "mi_bits": 0.018461,
+     "null_mean": 0.019655,
+     "null_p95": 0.02802,
+     "excess_bits": -0.001194,
+     "p_value": 0.577114
+    },
+    "bands": {
+     "food_near": {
+      "n": 1448,
+      "mi_bits": 0.001366,
+      "null_mean": 0.001577,
+      "null_p95": 0.003991,
+      "excess_bits": -0.000211,
+      "p_value": 0.431373
+     },
+     "food_seen": {
+      "n": 1448,
+      "mi_bits": 7e-06,
+      "null_mean": 0.001927,
+      "null_p95": 0.003425,
+      "excess_bits": -0.00192,
+      "p_value": 1.0
+     },
+     "food_direction": {
+      "n": 1448,
+      "mi_bits": 0.006143,
+      "null_mean": 0.012424,
+      "null_p95": 0.017478,
+      "excess_bits": -0.006281,
+      "p_value": 1.0
+     },
+     "energy_band": {
+      "n": 1448,
+      "mi_bits": 0.00401,
+      "null_mean": 0.002716,
+      "null_p95": 0.005177,
+      "excess_bits": 0.001294,
+      "p_value": 0.196078
+     },
+     "health_band": {
+      "n": 1448,
+      "mi_bits": 0.0,
+      "null_mean": 0.0,
+      "null_p95": 0.0,
+      "excess_bits": 0.0,
+      "p_value": 1.0
+     },
+     "neighbor_near": {
+      "n": 1448,
+      "mi_bits": 0.002305,
+      "null_mean": 0.001213,
+      "null_p95": 0.002698,
+      "excess_bits": 0.001092,
+      "p_value": 0.156863
+     },
+     "object_near": {
+      "n": 1448,
+      "mi_bits": 0.003235,
+      "null_mean": 0.001549,
+      "null_p95": 0.003258,
+      "excess_bits": 0.001685,
+      "p_value": 0.117647
+     },
+     "tool_available": {
+      "n": 1448,
+      "mi_bits": 0.00256,
+      "null_mean": 0.001678,
+      "null_p95": 0.003703,
+      "excess_bits": 0.000882,
+      "p_value": 0.215686
+     }
+    }
+   },
+   "sender_scrambled_run": {
+    "state": [
+     "food_near",
+     "food_seen",
+     "energy_band",
+     "neighbor_near"
+    ],
+    "signals": 1009,
+    "senders": 103,
+    "symbol_entropy_bits": 1.9973,
+    "joint": {
+     "n": 1009,
+     "mi_bits": 0.019652,
+     "null_mean": 0.019391,
+     "null_p95": 0.028487,
+     "excess_bits": 0.000261,
+     "p_value": 0.442786
+    },
+    "within_sender": {
+     "n": 1009,
+     "mi_bits": 0.019652,
+     "null_mean": 0.023251,
+     "null_p95": 0.032768,
+     "excess_bits": -0.003599,
+     "p_value": 0.736318
+    },
+    "bands": {
+     "food_near": {
+      "n": 1009,
+      "mi_bits": 0.003609,
+      "null_mean": 0.00178,
+      "null_p95": 0.00457,
+      "excess_bits": 0.001829,
+      "p_value": 0.117647
+     },
+     "food_seen": {
+      "n": 1009,
+      "mi_bits": 0.0,
+      "null_mean": 0.0,
+      "null_p95": 0.0,
+      "excess_bits": 0.0,
+      "p_value": 1.0
+     },
+     "food_direction": {
+      "n": 1009,
+      "mi_bits": 0.01976,
+      "null_mean": 0.015434,
+      "null_p95": 0.024157,
+      "excess_bits": 0.004326,
+      "p_value": 0.235294
+     },
+     "energy_band": {
+      "n": 1009,
+      "mi_bits": 0.006817,
+      "null_mean": 0.004482,
+      "null_p95": 0.008446,
+      "excess_bits": 0.002335,
+      "p_value": 0.215686
+     },
+     "health_band": {
+      "n": 1009,
+      "mi_bits": 0.0,
+      "null_mean": 0.0,
+      "null_p95": 0.0,
+      "excess_bits": 0.0,
+      "p_value": 1.0
+     },
+     "neighbor_near": {
+      "n": 1009,
+      "mi_bits": 0.000756,
+      "null_mean": 0.002377,
+      "null_p95": 0.005777,
+      "excess_bits": -0.001621,
+      "p_value": 0.803922
+     },
+     "object_near": {
+      "n": 1009,
+      "mi_bits": 0.008361,
+      "null_mean": 0.002362,
+      "null_p95": 0.006058,
+      "excess_bits": 0.005999,
+      "p_value": 0.039216
+     },
+     "tool_available": {
+      "n": 1009,
+      "mi_bits": 0.003623,
+      "null_mean": 0.002266,
+      "null_p95": 0.006333,
+      "excess_bits": 0.001358,
+      "p_value": 0.196078
+     }
+    }
+   },
+   "receiver": {
+    "normal": {
+     "deliveries": 8189,
+     "receivers": 129,
+     "pooled": {
+      "n": 8189,
+      "mi_bits": 0.009896,
+      "null_mean": 0.00657,
+      "null_p95": 0.008272,
+      "excess_bits": 0.003326,
+      "p_value": 0.004975
+     },
+     "within_receiver": {
+      "n": 8189,
+      "mi_bits": 0.009896,
+      "null_mean": 0.006644,
+      "null_p95": 0.008497,
+      "excess_bits": 0.003252,
+      "p_value": 0.00995
+     }
+    },
+    "scrambled": {
+     "deliveries": 4972,
+     "receivers": 107,
+     "pooled": {
+      "n": 4972,
+      "mi_bits": 0.011702,
+      "null_mean": 0.011164,
+      "null_p95": 0.014655,
+      "excess_bits": 0.000539,
+      "p_value": 0.343284
+     },
+     "within_receiver": {
+      "n": 4972,
+      "mi_bits": 0.011702,
+      "null_mean": 0.011045,
+      "null_p95": 0.014064,
+      "excess_bits": 0.000657,
+      "p_value": 0.338308
+     }
+    },
+    "excess_over_scrambled_bits": 0.002787
+   },
+   "fitness": {
+    "branch_tick": 1000,
+    "ticks": 200,
+    "reps": 8,
+    "runs": [
+     {
+      "channel": "normal",
+      "rep": 0,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 51,
+      "births": 36,
+      "food_energy_per_agent_tick": 0.22118125412533737,
+      "survival": 0.5,
+      "signals_sent": 3583
+     },
+     {
+      "channel": "scrambled",
+      "rep": 0,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 40,
+      "births": 27,
+      "food_energy_per_agent_tick": 0.20729894085395645,
+      "survival": 0.44,
+      "signals_sent": 3498
+     },
+     {
+      "channel": "normal",
+      "rep": 1,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 43,
+      "births": 35,
+      "food_energy_per_agent_tick": 0.21185057419333647,
+      "survival": 0.48,
+      "signals_sent": 3487
+     },
+     {
+      "channel": "scrambled",
+      "rep": 1,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 41,
+      "births": 34,
+      "food_energy_per_agent_tick": 0.20612541157207173,
+      "survival": 0.48,
+      "signals_sent": 3518
+     },
+     {
+      "channel": "normal",
+      "rep": 2,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 50,
+      "births": 41,
+      "food_energy_per_agent_tick": 0.22050500793233055,
+      "survival": 0.5,
+      "signals_sent": 3527
+     },
+     {
+      "channel": "scrambled",
+      "rep": 2,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 42,
+      "births": 35,
+      "food_energy_per_agent_tick": 0.22453899603201247,
+      "survival": 0.52,
+      "signals_sent": 3506
+     },
+     {
+      "channel": "normal",
+      "rep": 3,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 39,
+      "births": 25,
+      "food_energy_per_agent_tick": 0.20563598043986042,
+      "survival": 0.44,
+      "signals_sent": 3446
+     },
+     {
+      "channel": "scrambled",
+      "rep": 3,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 41,
+      "births": 33,
+      "food_energy_per_agent_tick": 0.20049770543073783,
+      "survival": 0.42,
+      "signals_sent": 3483
+     },
+     {
+      "channel": "normal",
+      "rep": 4,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 41,
+      "births": 28,
+      "food_energy_per_agent_tick": 0.20598014728739553,
+      "survival": 0.52,
+      "signals_sent": 3523
+     },
+     {
+      "channel": "scrambled",
+      "rep": 4,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 44,
+      "births": 25,
+      "food_energy_per_agent_tick": 0.19277811117432744,
+      "survival": 0.48,
+      "signals_sent": 3529
+     },
+     {
+      "channel": "normal",
+      "rep": 5,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 44,
+      "births": 30,
+      "food_energy_per_agent_tick": 0.1995491411591523,
+      "survival": 0.52,
+      "signals_sent": 3527
+     },
+     {
+      "channel": "scrambled",
+      "rep": 5,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 49,
+      "births": 31,
+      "food_energy_per_agent_tick": 0.21866962754472852,
+      "survival": 0.54,
+      "signals_sent": 3530
+     },
+     {
+      "channel": "normal",
+      "rep": 6,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 44,
+      "births": 28,
+      "food_energy_per_agent_tick": 0.21804898495464473,
+      "survival": 0.52,
+      "signals_sent": 3512
+     },
+     {
+      "channel": "scrambled",
+      "rep": 6,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 47,
+      "births": 33,
+      "food_energy_per_agent_tick": 0.2016046743653376,
+      "survival": 0.48,
+      "signals_sent": 3547
+     },
+     {
+      "channel": "normal",
+      "rep": 7,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 47,
+      "births": 36,
+      "food_energy_per_agent_tick": 0.20191819156596058,
+      "survival": 0.5,
+      "signals_sent": 3525
+     },
+     {
+      "channel": "scrambled",
+      "rep": 7,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 50,
+      "population": 48,
+      "births": 30,
+      "food_energy_per_agent_tick": 0.2143462838831064,
+      "survival": 0.5,
+      "signals_sent": 3498
+     }
+    ],
+    "effects": {
+     "normal_minus_scrambled": {
+      "population": {
+       "n": 8,
+       "mean": 0.875,
+       "sd": 5.743008,
+       "positive": 3,
+       "negative": 5,
+       "sign_p": 0.726562
+      },
+      "food_energy_per_agent_tick": {
+       "n": 8,
+       "mean": 0.002351,
+       "sd": 0.013031,
+       "positive": 5,
+       "negative": 3,
+       "sign_p": 0.726562
+      },
+      "survival": {
+       "n": 8,
+       "mean": 0.015,
+       "sd": 0.029761,
+       "positive": 4,
+       "negative": 2,
+       "sign_p": 0.6875
+      },
+      "births": {
+       "n": 8,
+       "mean": 1.375,
+       "sd": 5.82942,
+       "positive": 5,
+       "negative": 3,
+       "sign_p": 0.726562
+      }
+     }
+    }
+   },
+   "verdict": "null",
+   "criteria": {
+    "sender_information": {
+     "passed": false,
+     "excess_bits": -0.000298,
+     "p_value": 0.532338,
+     "needs": "excess >= 0.05 bits and p <= 0.01"
+    },
+    "receiver_information": {
+     "passed": false,
+     "excess_bits": 0.003326,
+     "p_value": 0.004975,
+     "excess_over_scrambled_bits": 0.002787,
+     "needs": "excess >= 0.02 bits, p <= 0.01 and >= 0.02 bits above the scrambled run"
+    },
+    "fitness_cost_of_scrambling": {
+     "passed": false,
+     "food_energy_per_agent_tick": {
+      "n": 8,
+      "mean": 0.002351,
+      "sd": 0.013031,
+      "positive": 5,
+      "negative": 3,
+      "sign_p": 0.726562
+     },
+     "needs": "normal - scrambled food energy per agent-tick > 0 over >= 6 paired branches, sign test p <= 0.05"
+    }
+   },
+   "thresholds": {
+    "sender_excess_bits": 0.05,
+    "sender_p": 0.01,
+    "receiver_excess_bits": 0.02,
+    "receiver_p": 0.01,
+    "receiver_over_scrambled_bits": 0.02,
+    "fitness_min_reps": 6,
+    "fitness_sign_p": 0.05
+   },
+   "interpretation": "Toy-world measurement. 'all_three' means signals carry sender-state information, receivers act on their content and scrambling the content costs fitness here; it is not evidence of language.",
+   "seconds": 233.5
+  },
+  {
+   "seed": 2,
+   "config_overrides": {
+    "food_patches": 30
+   },
+   "ticks": 1500,
+   "window_start": 1000,
+   "normal": {
+    "ticks_run": 1500,
+    "stop_reason": "step_budget",
+    "population": 43,
+    "births": 245,
+    "signals_sent": 3833
+   },
+   "scrambled": {
+    "ticks_run": 1500,
+    "stop_reason": "step_budget",
+    "population": 41,
+    "births": 195
+   },
+   "sender": {
+    "state": [
+     "food_near",
+     "food_seen",
+     "energy_band",
+     "neighbor_near"
+    ],
+    "signals": 1041,
+    "senders": 113,
+    "symbol_entropy_bits": 1.9976,
+    "joint": {
+     "n": 1041,
+     "mi_bits": 0.029541,
+     "null_mean": 0.029255,
+     "null_p95": 0.038949,
+     "excess_bits": 0.000286,
+     "p_value": 0.507463
+    },
+    "within_sender": {
+     "n": 1041,
+     "mi_bits": 0.029541,
+     "null_mean": 0.029172,
+     "null_p95": 0.038807,
+     "excess_bits": 0.000369,
+     "p_value": 0.422886
+    },
+    "bands": {
+     "food_near": {
+      "n": 1041,
+      "mi_bits": 0.001691,
+      "null_mean": 0.001883,
+      "null_p95": 0.004263,
+      "excess_bits": -0.000192,
+      "p_value": 0.411765
+     },
+     "food_seen": {
+      "n": 1041,
+      "mi_bits": 0.00043,
+      "null_mean": 0.002453,
+      "null_p95": 0.005629,
+      "excess_bits": -0.002023,
+      "p_value": 0.960784
+     },
+     "food_direction": {
+      "n": 1041,
+      "mi_bits": 0.025267,
+      "null_mean": 0.019092,
+      "null_p95": 0.028534,
+      "excess_bits": 0.006174,
+      "p_value": 0.098039
+     },
+     "energy_band": {
+      "n": 1041,
+      "mi_bits": 0.005025,
+      "null_mean": 0.00402,
+      "null_p95": 0.008346,
+      "excess_bits": 0.001004,
+      "p_value": 0.215686
+     },
+     "health_band": {
+      "n": 1041,
+      "mi_bits": 0.0,
+      "null_mean": 0.0,
+      "null_p95": 0.0,
+      "excess_bits": 0.0,
+      "p_value": 1.0
+     },
+     "neighbor_near": {
+      "n": 1041,
+      "mi_bits": 0.003901,
+      "null_mean": 0.002118,
+      "null_p95": 0.005099,
+      "excess_bits": 0.001782,
+      "p_value": 0.215686
+     },
+     "object_near": {
+      "n": 1041,
+      "mi_bits": 0.001697,
+      "null_mean": 0.001898,
+      "null_p95": 0.003777,
+      "excess_bits": -0.000201,
+      "p_value": 0.509804
+     },
+     "tool_available": {
+      "n": 1041,
+      "mi_bits": 0.002177,
+      "null_mean": 0.002353,
+      "null_p95": 0.005,
+      "excess_bits": -0.000176,
+      "p_value": 0.411765
+     }
+    }
+   },
+   "sender_scrambled_run": {
+    "state": [
+     "food_near",
+     "food_seen",
+     "energy_band",
+     "neighbor_near"
+    ],
+    "signals": 883,
+    "senders": 86,
+    "symbol_entropy_bits": 1.9984,
+    "joint": {
+     "n": 883,
+     "mi_bits": 0.061282,
+     "null_mean": 0.029939,
+     "null_p95": 0.041228,
+     "excess_bits": 0.031343,
+     "p_value": 0.004975
+    },
+    "within_sender": {
+     "n": 883,
+     "mi_bits": 0.061282,
+     "null_mean": 0.041628,
+     "null_p95": 0.05387,
+     "excess_bits": 0.019654,
+     "p_value": 0.00995
+    },
+    "bands": {
+     "food_near": {
+      "n": 883,
+      "mi_bits": 0.004574,
+      "null_mean": 0.002235,
+      "null_p95": 0.00469,
+      "excess_bits": 0.002339,
+      "p_value": 0.098039
+     },
+     "food_seen": {
+      "n": 883,
+      "mi_bits": 0.002158,
+      "null_mean": 0.002265,
+      "null_p95": 0.002357,
+      "excess_bits": -0.000106,
+      "p_value": 1.0
+     },
+     "food_direction": {
+      "n": 883,
+      "mi_bits": 0.016151,
+      "null_mean": 0.021506,
+      "null_p95": 0.032792,
+      "excess_bits": -0.005356,
+      "p_value": 0.745098
+     },
+     "energy_band": {
+      "n": 883,
+      "mi_bits": 0.012989,
+      "null_mean": 0.003983,
+      "null_p95": 0.007634,
+      "excess_bits": 0.009006,
+      "p_value": 0.039216
+     },
+     "health_band": {
+      "n": 883,
+      "mi_bits": 0.0,
+      "null_mean": 0.0,
+      "null_p95": 0.0,
+      "excess_bits": 0.0,
+      "p_value": 1.0
+     },
+     "neighbor_near": {
+      "n": 883,
+      "mi_bits": 0.002768,
+      "null_mean": 0.001936,
+      "null_p95": 0.004698,
+      "excess_bits": 0.000832,
+      "p_value": 0.156863
+     },
+     "object_near": {
+      "n": 883,
+      "mi_bits": 0.005153,
+      "null_mean": 0.00236,
+      "null_p95": 0.004919,
+      "excess_bits": 0.002793,
+      "p_value": 0.078431
+     },
+     "tool_available": {
+      "n": 883,
+      "mi_bits": 0.002441,
+      "null_mean": 0.002435,
+      "null_p95": 0.006959,
+      "excess_bits": 6e-06,
+      "p_value": 0.431373
+     }
+    }
+   },
+   "receiver": {
+    "normal": {
+     "deliveries": 6397,
+     "receivers": 123,
+     "pooled": {
+      "n": 6397,
+      "mi_bits": 0.012994,
+      "null_mean": 0.008543,
+      "null_p95": 0.010748,
+      "excess_bits": 0.004451,
+      "p_value": 0.00995
+     },
+     "within_receiver": {
+      "n": 6397,
+      "mi_bits": 0.012994,
+      "null_mean": 0.008529,
+      "null_p95": 0.010813,
+      "excess_bits": 0.004465,
+      "p_value": 0.004975
+     }
+    },
+    "scrambled": {
+     "deliveries": 3468,
+     "receivers": 85,
+     "pooled": {
+      "n": 3468,
+      "mi_bits": 0.013549,
+      "null_mean": 0.015976,
+      "null_p95": 0.020486,
+      "excess_bits": -0.002428,
+      "p_value": 0.80597
+     },
+     "within_receiver": {
+      "n": 3468,
+      "mi_bits": 0.013549,
+      "null_mean": 0.016009,
+      "null_p95": 0.020229,
+      "excess_bits": -0.00246,
+      "p_value": 0.81592
+     }
+    },
+    "excess_over_scrambled_bits": 0.006879
+   },
+   "fitness": {
+    "branch_tick": 1000,
+    "ticks": 200,
+    "reps": 8,
+    "runs": [
+     {
+      "channel": "normal",
+      "rep": 0,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 32,
+      "births": 28,
+      "food_energy_per_agent_tick": 0.2229254157434276,
+      "survival": 0.3404255319148936,
+      "signals_sent": 3301
+     },
+     {
+      "channel": "scrambled",
+      "rep": 0,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 32,
+      "births": 18,
+      "food_energy_per_agent_tick": 0.21880537076846066,
+      "survival": 0.40425531914893614,
+      "signals_sent": 3210
+     },
+     {
+      "channel": "normal",
+      "rep": 1,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 44,
+      "births": 28,
+      "food_energy_per_agent_tick": 0.23451087166401094,
+      "survival": 0.46808510638297873,
+      "signals_sent": 3247
+     },
+     {
+      "channel": "scrambled",
+      "rep": 1,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 43,
+      "births": 34,
+      "food_energy_per_agent_tick": 0.24781161843598307,
+      "survival": 0.40425531914893614,
+      "signals_sent": 3251
+     },
+     {
+      "channel": "normal",
+      "rep": 2,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 34,
+      "births": 24,
+      "food_energy_per_agent_tick": 0.22520618617321841,
+      "survival": 0.44680851063829785,
+      "signals_sent": 3293
+     },
+     {
+      "channel": "scrambled",
+      "rep": 2,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 41,
+      "births": 31,
+      "food_energy_per_agent_tick": 0.2294993038769413,
+      "survival": 0.44680851063829785,
+      "signals_sent": 3297
+     },
+     {
+      "channel": "normal",
+      "rep": 3,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 34,
+      "births": 26,
+      "food_energy_per_agent_tick": 0.23135260264157215,
+      "survival": 0.3829787234042553,
+      "signals_sent": 3233
+     },
+     {
+      "channel": "scrambled",
+      "rep": 3,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 39,
+      "births": 30,
+      "food_energy_per_agent_tick": 0.23158069515362675,
+      "survival": 0.425531914893617,
+      "signals_sent": 3241
+     },
+     {
+      "channel": "normal",
+      "rep": 4,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 43,
+      "births": 26,
+      "food_energy_per_agent_tick": 0.22561472034732516,
+      "survival": 0.5319148936170213,
+      "signals_sent": 3269
+     },
+     {
+      "channel": "scrambled",
+      "rep": 4,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 43,
+      "births": 28,
+      "food_energy_per_agent_tick": 0.23249818742496228,
+      "survival": 0.48936170212765956,
+      "signals_sent": 3277
+     },
+     {
+      "channel": "normal",
+      "rep": 5,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 45,
+      "births": 33,
+      "food_energy_per_agent_tick": 0.2333641423054302,
+      "survival": 0.48936170212765956,
+      "signals_sent": 3292
+     },
+     {
+      "channel": "scrambled",
+      "rep": 5,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 36,
+      "births": 27,
+      "food_energy_per_agent_tick": 0.22348547400699703,
+      "survival": 0.40425531914893614,
+      "signals_sent": 3286
+     },
+     {
+      "channel": "normal",
+      "rep": 6,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 32,
+      "births": 18,
+      "food_energy_per_agent_tick": 0.2228097459659367,
+      "survival": 0.425531914893617,
+      "signals_sent": 3280
+     },
+     {
+      "channel": "scrambled",
+      "rep": 6,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 38,
+      "births": 29,
+      "food_energy_per_agent_tick": 0.22895796204454547,
+      "survival": 0.40425531914893614,
+      "signals_sent": 3269
+     },
+     {
+      "channel": "normal",
+      "rep": 7,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 37,
+      "births": 23,
+      "food_energy_per_agent_tick": 0.2253739369800268,
+      "survival": 0.44680851063829785,
+      "signals_sent": 3259
+     },
+     {
+      "channel": "scrambled",
+      "rep": 7,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 47,
+      "population": 40,
+      "births": 23,
+      "food_energy_per_agent_tick": 0.23066079419314894,
+      "survival": 0.48936170212765956,
+      "signals_sent": 3256
+     }
+    ],
+    "effects": {
+     "normal_minus_scrambled": {
+      "population": {
+       "n": 8,
+       "mean": -1.375,
+       "sd": 5.153016,
+       "positive": 2,
+       "negative": 4,
+       "sign_p": 0.6875
+      },
+      "food_energy_per_agent_tick": {
+       "n": 8,
+       "mean": -0.002768,
+       "sd": 0.007189,
+       "positive": 2,
+       "negative": 6,
+       "sign_p": 0.289062
+      },
+      "survival": {
+       "n": 8,
+       "mean": 0.007979,
+       "sd": 0.054468,
+       "positive": 4,
+       "negative": 3,
+       "sign_p": 1.0
+      },
+      "births": {
+       "n": 8,
+       "mean": -1.75,
+       "sd": 6.943651,
+       "positive": 2,
+       "negative": 5,
+       "sign_p": 0.453125
+      }
+     }
+    }
+   },
+   "verdict": "null",
+   "criteria": {
+    "sender_information": {
+     "passed": false,
+     "excess_bits": 0.000286,
+     "p_value": 0.507463,
+     "needs": "excess >= 0.05 bits and p <= 0.01"
+    },
+    "receiver_information": {
+     "passed": false,
+     "excess_bits": 0.004451,
+     "p_value": 0.00995,
+     "excess_over_scrambled_bits": 0.006879,
+     "needs": "excess >= 0.02 bits, p <= 0.01 and >= 0.02 bits above the scrambled run"
+    },
+    "fitness_cost_of_scrambling": {
+     "passed": false,
+     "food_energy_per_agent_tick": {
+      "n": 8,
+      "mean": -0.002768,
+      "sd": 0.007189,
+      "positive": 2,
+      "negative": 6,
+      "sign_p": 0.289062
+     },
+     "needs": "normal - scrambled food energy per agent-tick > 0 over >= 6 paired branches, sign test p <= 0.05"
+    }
+   },
+   "thresholds": {
+    "sender_excess_bits": 0.05,
+    "sender_p": 0.01,
+    "receiver_excess_bits": 0.02,
+    "receiver_p": 0.01,
+    "receiver_over_scrambled_bits": 0.02,
+    "fitness_min_reps": 6,
+    "fitness_sign_p": 0.05
+   },
+   "interpretation": "Toy-world measurement. 'all_three' means signals carry sender-state information, receivers act on their content and scrambling the content costs fitness here; it is not evidence of language.",
+   "seconds": 200.6
+  },
+  {
+   "seed": 3,
+   "config_overrides": {
+    "food_patches": 30
+   },
+   "ticks": 1500,
+   "window_start": 1000,
+   "normal": {
+    "ticks_run": 1500,
+    "stop_reason": "step_budget",
+    "population": 41,
+    "births": 270,
+    "signals_sent": 4207
+   },
+   "scrambled": {
+    "ticks_run": 1500,
+    "stop_reason": "step_budget",
+    "population": 50,
+    "births": 287
+   },
+   "sender": {
+    "state": [
+     "food_near",
+     "food_seen",
+     "energy_band",
+     "neighbor_near"
+    ],
+    "signals": 1171,
+    "senders": 118,
+    "symbol_entropy_bits": 1.997,
+    "joint": {
+     "n": 1171,
+     "mi_bits": 0.020292,
+     "null_mean": 0.019306,
+     "null_p95": 0.026563,
+     "excess_bits": 0.000986,
+     "p_value": 0.427861
+    },
+    "within_sender": {
+     "n": 1171,
+     "mi_bits": 0.020292,
+     "null_mean": 0.025035,
+     "null_p95": 0.033974,
+     "excess_bits": -0.004743,
+     "p_value": 0.81592
+    },
+    "bands": {
+     "food_near": {
+      "n": 1171,
+      "mi_bits": 0.00125,
+      "null_mean": 0.001306,
+      "null_p95": 0.003055,
+      "excess_bits": -5.6e-05,
+      "p_value": 0.411765
+     },
+     "food_seen": {
+      "n": 1171,
+      "mi_bits": 0.0,
+      "null_mean": 0.0,
+      "null_p95": 0.0,
+      "excess_bits": 0.0,
+      "p_value": 1.0
+     },
+     "food_direction": {
+      "n": 1171,
+      "mi_bits": 0.010011,
+      "null_mean": 0.012308,
+      "null_p95": 0.018026,
+      "excess_bits": -0.002297,
+      "p_value": 0.72549
+     },
+     "energy_band": {
+      "n": 1171,
+      "mi_bits": 0.00331,
+      "null_mean": 0.003479,
+      "null_p95": 0.006641,
+      "excess_bits": -0.000169,
+      "p_value": 0.45098
+     },
+     "health_band": {
+      "n": 1171,
+      "mi_bits": 0.0,
+      "null_mean": 0.0,
+      "null_p95": 0.0,
+      "excess_bits": 0.0,
+      "p_value": 1.0
+     },
+     "neighbor_near": {
+      "n": 1171,
+      "mi_bits": 0.000942,
+      "null_mean": 0.002267,
+      "null_p95": 0.004829,
+      "excess_bits": -0.001325,
+      "p_value": 0.764706
+     },
+     "object_near": {
+      "n": 1171,
+      "mi_bits": 0.001337,
+      "null_mean": 0.001943,
+      "null_p95": 0.003999,
+      "excess_bits": -0.000606,
+      "p_value": 0.607843
+     },
+     "tool_available": {
+      "n": 1171,
+      "mi_bits": 0.000909,
+      "null_mean": 0.001558,
+      "null_p95": 0.003584,
+      "excess_bits": -0.000648,
+      "p_value": 0.607843
+     }
+    }
+   },
+   "sender_scrambled_run": {
+    "state": [
+     "food_near",
+     "food_seen",
+     "energy_band",
+     "neighbor_near"
+    ],
+    "signals": 1141,
+    "senders": 114,
+    "symbol_entropy_bits": 1.997,
+    "joint": {
+     "n": 1141,
+     "mi_bits": 0.03105,
+     "null_mean": 0.022041,
+     "null_p95": 0.030738,
+     "excess_bits": 0.009009,
+     "p_value": 0.049751
+    },
+    "within_sender": {
+     "n": 1141,
+     "mi_bits": 0.03105,
+     "null_mean": 0.025249,
+     "null_p95": 0.034599,
+     "excess_bits": 0.005801,
+     "p_value": 0.149254
+    },
+    "bands": {
+     "food_near": {
+      "n": 1141,
+      "mi_bits": 0.003614,
+      "null_mean": 0.001811,
+      "null_p95": 0.004894,
+      "excess_bits": 0.001803,
+      "p_value": 0.156863
+     },
+     "food_seen": {
+      "n": 1141,
+      "mi_bits": 0.0,
+      "null_mean": 0.0,
+      "null_p95": 0.0,
+      "excess_bits": 0.0,
+      "p_value": 1.0
+     },
+     "food_direction": {
+      "n": 1141,
+      "mi_bits": 0.022234,
+      "null_mean": 0.012989,
+      "null_p95": 0.020629,
+      "excess_bits": 0.009245,
+      "p_value": 0.058824
+     },
+     "energy_band": {
+      "n": 1141,
+      "mi_bits": 0.004213,
+      "null_mean": 0.003878,
+      "null_p95": 0.007274,
+      "excess_bits": 0.000335,
+      "p_value": 0.45098
+     },
+     "health_band": {
+      "n": 1141,
+      "mi_bits": 0.0,
+      "null_mean": 0.0,
+      "null_p95": 0.0,
+      "excess_bits": 0.0,
+      "p_value": 1.0
+     },
+     "neighbor_near": {
+      "n": 1141,
+      "mi_bits": 0.000809,
+      "null_mean": 0.001848,
+      "null_p95": 0.004635,
+      "excess_bits": -0.001039,
+      "p_value": 0.627451
+     },
+     "object_near": {
+      "n": 1141,
+      "mi_bits": 0.007195,
+      "null_mean": 0.002041,
+      "null_p95": 0.005204,
+      "excess_bits": 0.005154,
+      "p_value": 0.039216
+     },
+     "tool_available": {
+      "n": 1141,
+      "mi_bits": 0.001188,
+      "null_mean": 0.002008,
+      "null_p95": 0.004835,
+      "excess_bits": -0.00082,
+      "p_value": 0.627451
+     }
+    }
+   },
+   "receiver": {
+    "normal": {
+     "deliveries": 7818,
+     "receivers": 121,
+     "pooled": {
+      "n": 7818,
+      "mi_bits": 0.007694,
+      "null_mean": 0.006881,
+      "null_p95": 0.008683,
+      "excess_bits": 0.000812,
+      "p_value": 0.233831
+     },
+     "within_receiver": {
+      "n": 7818,
+      "mi_bits": 0.007694,
+      "null_mean": 0.007008,
+      "null_p95": 0.008848,
+      "excess_bits": 0.000686,
+      "p_value": 0.248756
+     }
+    },
+    "scrambled": {
+     "deliveries": 6350,
+     "receivers": 122,
+     "pooled": {
+      "n": 6350,
+      "mi_bits": 0.011783,
+      "null_mean": 0.008622,
+      "null_p95": 0.01088,
+      "excess_bits": 0.003162,
+      "p_value": 0.0199
+     },
+     "within_receiver": {
+      "n": 6350,
+      "mi_bits": 0.011783,
+      "null_mean": 0.008479,
+      "null_p95": 0.011018,
+      "excess_bits": 0.003304,
+      "p_value": 0.024876
+     }
+    },
+    "excess_over_scrambled_bits": -0.00235
+   },
+   "fitness": {
+    "branch_tick": 1000,
+    "ticks": 200,
+    "reps": 8,
+    "runs": [
+     {
+      "channel": "normal",
+      "rep": 0,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 40,
+      "births": 30,
+      "food_energy_per_agent_tick": 0.21255093454511587,
+      "survival": 0.4883720930232558,
+      "signals_sent": 3527
+     },
+     {
+      "channel": "scrambled",
+      "rep": 0,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 44,
+      "births": 33,
+      "food_energy_per_agent_tick": 0.2245153057042867,
+      "survival": 0.5348837209302325,
+      "signals_sent": 3527
+     },
+     {
+      "channel": "normal",
+      "rep": 1,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 41,
+      "births": 21,
+      "food_energy_per_agent_tick": 0.21358496064431703,
+      "survival": 0.6744186046511628,
+      "signals_sent": 3489
+     },
+     {
+      "channel": "scrambled",
+      "rep": 1,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 43,
+      "births": 30,
+      "food_energy_per_agent_tick": 0.20895844285111392,
+      "survival": 0.5581395348837209,
+      "signals_sent": 3499
+     },
+     {
+      "channel": "normal",
+      "rep": 2,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 45,
+      "births": 33,
+      "food_energy_per_agent_tick": 0.21737722752893043,
+      "survival": 0.5581395348837209,
+      "signals_sent": 3598
+     },
+     {
+      "channel": "scrambled",
+      "rep": 2,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 43,
+      "births": 31,
+      "food_energy_per_agent_tick": 0.2121677563098607,
+      "survival": 0.5348837209302325,
+      "signals_sent": 3544
+     },
+     {
+      "channel": "normal",
+      "rep": 3,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 39,
+      "births": 31,
+      "food_energy_per_agent_tick": 0.22136107585287432,
+      "survival": 0.4883720930232558,
+      "signals_sent": 3476
+     },
+     {
+      "channel": "scrambled",
+      "rep": 3,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 42,
+      "births": 28,
+      "food_energy_per_agent_tick": 0.21780597408826885,
+      "survival": 0.6046511627906976,
+      "signals_sent": 3486
+     },
+     {
+      "channel": "normal",
+      "rep": 4,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 44,
+      "births": 29,
+      "food_energy_per_agent_tick": 0.22219006322343657,
+      "survival": 0.5581395348837209,
+      "signals_sent": 3527
+     },
+     {
+      "channel": "scrambled",
+      "rep": 4,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 41,
+      "births": 29,
+      "food_energy_per_agent_tick": 0.21086581172651134,
+      "survival": 0.5581395348837209,
+      "signals_sent": 3528
+     },
+     {
+      "channel": "normal",
+      "rep": 5,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 40,
+      "births": 23,
+      "food_energy_per_agent_tick": 0.21681697858504687,
+      "survival": 0.5581395348837209,
+      "signals_sent": 3487
+     },
+     {
+      "channel": "scrambled",
+      "rep": 5,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 45,
+      "births": 24,
+      "food_energy_per_agent_tick": 0.21668802377438284,
+      "survival": 0.6511627906976745,
+      "signals_sent": 3463
+     },
+     {
+      "channel": "normal",
+      "rep": 6,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 35,
+      "births": 24,
+      "food_energy_per_agent_tick": 0.1962516064030026,
+      "survival": 0.5348837209302325,
+      "signals_sent": 3474
+     },
+     {
+      "channel": "scrambled",
+      "rep": 6,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 41,
+      "births": 24,
+      "food_energy_per_agent_tick": 0.21782337544843494,
+      "survival": 0.5581395348837209,
+      "signals_sent": 3534
+     },
+     {
+      "channel": "normal",
+      "rep": 7,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 36,
+      "births": 21,
+      "food_energy_per_agent_tick": 0.2005218266303418,
+      "survival": 0.5348837209302325,
+      "signals_sent": 3447
+     },
+     {
+      "channel": "scrambled",
+      "rep": 7,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 43,
+      "population": 37,
+      "births": 24,
+      "food_energy_per_agent_tick": 0.21019348730833967,
+      "survival": 0.5581395348837209,
+      "signals_sent": 3465
+     }
+    ],
+    "effects": {
+     "normal_minus_scrambled": {
+      "population": {
+       "n": 8,
+       "mean": -2.0,
+       "sd": 3.207135,
+       "positive": 2,
+       "negative": 6,
+       "sign_p": 0.289062
+      },
+      "food_energy_per_agent_tick": {
+       "n": 8,
+       "mean": -0.002295,
+       "sd": 0.011015,
+       "positive": 5,
+       "negative": 3,
+       "sign_p": 0.726562
+      },
+      "survival": {
+       "n": 8,
+       "mean": -0.020349,
+       "sd": 0.071881,
+       "positive": 2,
+       "negative": 5,
+       "sign_p": 0.453125
+      },
+      "births": {
+       "n": 8,
+       "mean": -1.375,
+       "sd": 3.73927,
+       "positive": 2,
+       "negative": 4,
+       "sign_p": 0.6875
+      }
+     }
+    }
+   },
+   "verdict": "null",
+   "criteria": {
+    "sender_information": {
+     "passed": false,
+     "excess_bits": 0.000986,
+     "p_value": 0.427861,
+     "needs": "excess >= 0.05 bits and p <= 0.01"
+    },
+    "receiver_information": {
+     "passed": false,
+     "excess_bits": 0.000812,
+     "p_value": 0.233831,
+     "excess_over_scrambled_bits": -0.00235,
+     "needs": "excess >= 0.02 bits, p <= 0.01 and >= 0.02 bits above the scrambled run"
+    },
+    "fitness_cost_of_scrambling": {
+     "passed": false,
+     "food_energy_per_agent_tick": {
+      "n": 8,
+      "mean": -0.002295,
+      "sd": 0.011015,
+      "positive": 5,
+      "negative": 3,
+      "sign_p": 0.726562
+     },
+     "needs": "normal - scrambled food energy per agent-tick > 0 over >= 6 paired branches, sign test p <= 0.05"
+    }
+   },
+   "thresholds": {
+    "sender_excess_bits": 0.05,
+    "sender_p": 0.01,
+    "receiver_excess_bits": 0.02,
+    "receiver_p": 0.01,
+    "receiver_over_scrambled_bits": 0.02,
+    "fitness_min_reps": 6,
+    "fitness_sign_p": 0.05
+   },
+   "interpretation": "Toy-world measurement. 'all_three' means signals carry sender-state information, receivers act on their content and scrambling the content costs fitness here; it is not evidence of language.",
+   "seconds": 227.3
+  },
+  {
+   "seed": 4,
+   "config_overrides": {
+    "food_patches": 30
+   },
+   "ticks": 1500,
+   "window_start": 1000,
+   "normal": {
+    "ticks_run": 1500,
+    "stop_reason": "step_budget",
+    "population": 50,
+    "births": 282,
+    "signals_sent": 4989
+   },
+   "scrambled": {
+    "ticks_run": 1500,
+    "stop_reason": "step_budget",
+    "population": 40,
+    "births": 274
+   },
+   "sender": {
+    "state": [
+     "food_near",
+     "food_seen",
+     "energy_band",
+     "neighbor_near"
+    ],
+    "signals": 1480,
+    "senders": 125,
+    "symbol_entropy_bits": 1.9987,
+    "joint": {
+     "n": 1480,
+     "mi_bits": 0.02474,
+     "null_mean": 0.022494,
+     "null_p95": 0.030339,
+     "excess_bits": 0.002247,
+     "p_value": 0.298507
+    },
+    "within_sender": {
+     "n": 1480,
+     "mi_bits": 0.02474,
+     "null_mean": 0.024977,
+     "null_p95": 0.032658,
+     "excess_bits": -0.000236,
+     "p_value": 0.497512
+    },
+    "bands": {
+     "food_near": {
+      "n": 1480,
+      "mi_bits": 0.001444,
+      "null_mean": 0.001541,
+      "null_p95": 0.003357,
+      "excess_bits": -9.7e-05,
+      "p_value": 0.45098
+     },
+     "food_seen": {
+      "n": 1480,
+      "mi_bits": 0.003973,
+      "null_mean": 0.001991,
+      "null_p95": 0.004265,
+      "excess_bits": 0.001982,
+      "p_value": 0.098039
+     },
+     "food_direction": {
+      "n": 1480,
+      "mi_bits": 0.016039,
+      "null_mean": 0.012104,
+      "null_p95": 0.017918,
+      "excess_bits": 0.003935,
+      "p_value": 0.156863
+     },
+     "energy_band": {
+      "n": 1480,
+      "mi_bits": 0.000991,
+      "null_mean": 0.002882,
+      "null_p95": 0.005738,
+      "excess_bits": -0.001891,
+      "p_value": 0.921569
+     },
+     "health_band": {
+      "n": 1480,
+      "mi_bits": 0.0,
+      "null_mean": 0.0,
+      "null_p95": 0.0,
+      "excess_bits": 0.0,
+      "p_value": 1.0
+     },
+     "neighbor_near": {
+      "n": 1480,
+      "mi_bits": 0.004307,
+      "null_mean": 0.001509,
+      "null_p95": 0.003507,
+      "excess_bits": 0.002798,
+      "p_value": 0.058824
+     },
+     "object_near": {
+      "n": 1480,
+      "mi_bits": 0.003325,
+      "null_mean": 0.001095,
+      "null_p95": 0.002334,
+      "excess_bits": 0.00223,
+      "p_value": 0.019608
+     },
+     "tool_available": {
+      "n": 1480,
+      "mi_bits": 0.005149,
+      "null_mean": 0.00139,
+      "null_p95": 0.003101,
+      "excess_bits": 0.003759,
+      "p_value": 0.039216
+     }
+    }
+   },
+   "sender_scrambled_run": {
+    "state": [
+     "food_near",
+     "food_seen",
+     "energy_band",
+     "neighbor_near"
+    ],
+    "signals": 1136,
+    "senders": 101,
+    "symbol_entropy_bits": 1.9978,
+    "joint": {
+     "n": 1136,
+     "mi_bits": 0.024097,
+     "null_mean": 0.024629,
+     "null_p95": 0.034557,
+     "excess_bits": -0.000532,
+     "p_value": 0.507463
+    },
+    "within_sender": {
+     "n": 1136,
+     "mi_bits": 0.024097,
+     "null_mean": 0.024538,
+     "null_p95": 0.033813,
+     "excess_bits": -0.000441,
+     "p_value": 0.527363
+    },
+    "bands": {
+     "food_near": {
+      "n": 1136,
+      "mi_bits": 0.001489,
+      "null_mean": 0.001657,
+      "null_p95": 0.004478,
+      "excess_bits": -0.000168,
+      "p_value": 0.411765
+     },
+     "food_seen": {
+      "n": 1136,
+      "mi_bits": 0.000394,
+      "null_mean": 0.002482,
+      "null_p95": 0.005779,
+      "excess_bits": -0.002087,
+      "p_value": 0.862745
+     },
+     "food_direction": {
+      "n": 1136,
+      "mi_bits": 0.024087,
+      "null_mean": 0.016429,
+      "null_p95": 0.022227,
+      "excess_bits": 0.007659,
+      "p_value": 0.058824
+     },
+     "energy_band": {
+      "n": 1136,
+      "mi_bits": 0.002616,
+      "null_mean": 0.003969,
+      "null_p95": 0.008021,
+      "excess_bits": -0.001353,
+      "p_value": 0.666667
+     },
+     "health_band": {
+      "n": 1136,
+      "mi_bits": 0.0,
+      "null_mean": 0.0,
+      "null_p95": 0.0,
+      "excess_bits": 0.0,
+      "p_value": 1.0
+     },
+     "neighbor_near": {
+      "n": 1136,
+      "mi_bits": 0.004031,
+      "null_mean": 0.002241,
+      "null_p95": 0.004794,
+      "excess_bits": 0.00179,
+      "p_value": 0.137255
+     },
+     "object_near": {
+      "n": 1136,
+      "mi_bits": 0.002333,
+      "null_mean": 0.001872,
+      "null_p95": 0.004137,
+      "excess_bits": 0.000461,
+      "p_value": 0.313725
+     },
+     "tool_available": {
+      "n": 1136,
+      "mi_bits": 0.001617,
+      "null_mean": 0.002313,
+      "null_p95": 0.004844,
+      "excess_bits": -0.000696,
+      "p_value": 0.588235
+     }
+    }
+   },
+   "receiver": {
+    "normal": {
+     "deliveries": 9886,
+     "receivers": 129,
+     "pooled": {
+      "n": 9886,
+      "mi_bits": 0.005795,
+      "null_mean": 0.005514,
+      "null_p95": 0.007255,
+      "excess_bits": 0.00028,
+      "p_value": 0.358209
+     },
+     "within_receiver": {
+      "n": 9886,
+      "mi_bits": 0.005795,
+      "null_mean": 0.005628,
+      "null_p95": 0.007234,
+      "excess_bits": 0.000166,
+      "p_value": 0.412935
+     }
+    },
+    "scrambled": {
+     "deliveries": 8955,
+     "receivers": 119,
+     "pooled": {
+      "n": 8955,
+      "mi_bits": 0.006665,
+      "null_mean": 0.006045,
+      "null_p95": 0.007653,
+      "excess_bits": 0.00062,
+      "p_value": 0.248756
+     },
+     "within_receiver": {
+      "n": 8955,
+      "mi_bits": 0.006665,
+      "null_mean": 0.006,
+      "null_p95": 0.007698,
+      "excess_bits": 0.000665,
+      "p_value": 0.253731
+     }
+    },
+    "excess_over_scrambled_bits": -0.00034
+   },
+   "fitness": {
+    "branch_tick": 1000,
+    "ticks": 200,
+    "reps": 8,
+    "runs": [
+     {
+      "channel": "normal",
+      "rep": 0,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 55,
+      "births": 39,
+      "food_energy_per_agent_tick": 0.2423282237664322,
+      "survival": 0.5681818181818182,
+      "signals_sent": 4070
+     },
+     {
+      "channel": "scrambled",
+      "rep": 0,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 43,
+      "births": 36,
+      "food_energy_per_agent_tick": 0.235988535742145,
+      "survival": 0.5,
+      "signals_sent": 4050
+     },
+     {
+      "channel": "normal",
+      "rep": 1,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 43,
+      "births": 32,
+      "food_energy_per_agent_tick": 0.22314193236299432,
+      "survival": 0.5,
+      "signals_sent": 4048
+     },
+     {
+      "channel": "scrambled",
+      "rep": 1,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 52,
+      "births": 40,
+      "food_energy_per_agent_tick": 0.24255157614151365,
+      "survival": 0.5,
+      "signals_sent": 4152
+     },
+     {
+      "channel": "normal",
+      "rep": 2,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 48,
+      "births": 37,
+      "food_energy_per_agent_tick": 0.24764106974273192,
+      "survival": 0.5227272727272727,
+      "signals_sent": 4105
+     },
+     {
+      "channel": "scrambled",
+      "rep": 2,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 53,
+      "births": 40,
+      "food_energy_per_agent_tick": 0.24521265785209412,
+      "survival": 0.5227272727272727,
+      "signals_sent": 4116
+     },
+     {
+      "channel": "normal",
+      "rep": 3,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 39,
+      "births": 29,
+      "food_energy_per_agent_tick": 0.24281866910719804,
+      "survival": 0.4318181818181818,
+      "signals_sent": 3970
+     },
+     {
+      "channel": "scrambled",
+      "rep": 3,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 47,
+      "births": 38,
+      "food_energy_per_agent_tick": 0.23401603945365723,
+      "survival": 0.5227272727272727,
+      "signals_sent": 4018
+     },
+     {
+      "channel": "normal",
+      "rep": 4,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 47,
+      "births": 35,
+      "food_energy_per_agent_tick": 0.23297078745726083,
+      "survival": 0.5,
+      "signals_sent": 4062
+     },
+     {
+      "channel": "scrambled",
+      "rep": 4,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 48,
+      "births": 42,
+      "food_energy_per_agent_tick": 0.2416922285186225,
+      "survival": 0.5227272727272727,
+      "signals_sent": 4040
+     },
+     {
+      "channel": "normal",
+      "rep": 5,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 49,
+      "births": 47,
+      "food_energy_per_agent_tick": 0.23198200575046482,
+      "survival": 0.4318181818181818,
+      "signals_sent": 4143
+     },
+     {
+      "channel": "scrambled",
+      "rep": 5,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 43,
+      "births": 29,
+      "food_energy_per_agent_tick": 0.22512888353650026,
+      "survival": 0.4318181818181818,
+      "signals_sent": 4091
+     },
+     {
+      "channel": "normal",
+      "rep": 6,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 45,
+      "births": 42,
+      "food_energy_per_agent_tick": 0.241687604217231,
+      "survival": 0.4772727272727273,
+      "signals_sent": 4176
+     },
+     {
+      "channel": "scrambled",
+      "rep": 6,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 37,
+      "births": 30,
+      "food_energy_per_agent_tick": 0.23408628754446376,
+      "survival": 0.4772727272727273,
+      "signals_sent": 4067
+     },
+     {
+      "channel": "normal",
+      "rep": 7,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 52,
+      "births": 39,
+      "food_energy_per_agent_tick": 0.23430691776823084,
+      "survival": 0.5227272727272727,
+      "signals_sent": 4078
+     },
+     {
+      "channel": "scrambled",
+      "rep": 7,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 44,
+      "population": 45,
+      "births": 40,
+      "food_energy_per_agent_tick": 0.22885607742768083,
+      "survival": 0.4318181818181818,
+      "signals_sent": 3997
+     }
+    ],
+    "effects": {
+     "normal_minus_scrambled": {
+      "population": {
+       "n": 8,
+       "mean": 1.25,
+       "sd": 8.031189,
+       "positive": 4,
+       "negative": 4,
+       "sign_p": 1.0
+      },
+      "food_energy_per_agent_tick": {
+       "n": 8,
+       "mean": 0.001168,
+       "sd": 0.009999,
+       "positive": 6,
+       "negative": 2,
+       "sign_p": 0.289062
+      },
+      "survival": {
+       "n": 8,
+       "mean": 0.005682,
+       "sd": 0.055338,
+       "positive": 2,
+       "negative": 2,
+       "sign_p": 1.0
+      },
+      "births": {
+       "n": 8,
+       "mean": 0.625,
+       "sd": 9.840695,
+       "positive": 3,
+       "negative": 5,
+       "sign_p": 0.726562
+      }
+     }
+    }
+   },
+   "verdict": "null",
+   "criteria": {
+    "sender_information": {
+     "passed": false,
+     "excess_bits": 0.002247,
+     "p_value": 0.298507,
+     "needs": "excess >= 0.05 bits and p <= 0.01"
+    },
+    "receiver_information": {
+     "passed": false,
+     "excess_bits": 0.00028,
+     "p_value": 0.358209,
+     "excess_over_scrambled_bits": -0.00034,
+     "needs": "excess >= 0.02 bits, p <= 0.01 and >= 0.02 bits above the scrambled run"
+    },
+    "fitness_cost_of_scrambling": {
+     "passed": false,
+     "food_energy_per_agent_tick": {
+      "n": 8,
+      "mean": 0.001168,
+      "sd": 0.009999,
+      "positive": 6,
+      "negative": 2,
+      "sign_p": 0.289062
+     },
+     "needs": "normal - scrambled food energy per agent-tick > 0 over >= 6 paired branches, sign test p <= 0.05"
+    }
+   },
+   "thresholds": {
+    "sender_excess_bits": 0.05,
+    "sender_p": 0.01,
+    "receiver_excess_bits": 0.02,
+    "receiver_p": 0.01,
+    "receiver_over_scrambled_bits": 0.02,
+    "fitness_min_reps": 6,
+    "fitness_sign_p": 0.05
+   },
+   "interpretation": "Toy-world measurement. 'all_three' means signals carry sender-state information, receivers act on their content and scrambling the content costs fitness here; it is not evidence of language.",
+   "seconds": 234.7
+  },
+  {
+   "seed": 5,
+   "config_overrides": {
+    "food_patches": 30
+   },
+   "ticks": 1500,
+   "window_start": 1000,
+   "normal": {
+    "ticks_run": 1500,
+    "stop_reason": "step_budget",
+    "population": 35,
+    "births": 239,
+    "signals_sent": 3876
+   },
+   "scrambled": {
+    "ticks_run": 1500,
+    "stop_reason": "step_budget",
+    "population": 25,
+    "births": 190
+   },
+   "sender": {
+    "state": [
+     "food_near",
+     "food_seen",
+     "energy_band",
+     "neighbor_near"
+    ],
+    "signals": 1113,
+    "senders": 105,
+    "symbol_entropy_bits": 1.9987,
+    "joint": {
+     "n": 1113,
+     "mi_bits": 0.046376,
+     "null_mean": 0.024632,
+     "null_p95": 0.033469,
+     "excess_bits": 0.021744,
+     "p_value": 0.004975
+    },
+    "within_sender": {
+     "n": 1113,
+     "mi_bits": 0.046376,
+     "null_mean": 0.031745,
+     "null_p95": 0.042191,
+     "excess_bits": 0.014631,
+     "p_value": 0.0199
+    },
+    "bands": {
+     "food_near": {
+      "n": 1113,
+      "mi_bits": 0.003127,
+      "null_mean": 0.002131,
+      "null_p95": 0.006879,
+      "excess_bits": 0.000996,
+      "p_value": 0.215686
+     },
+     "food_seen": {
+      "n": 1113,
+      "mi_bits": 0.001219,
+      "null_mean": 0.002205,
+      "null_p95": 0.003025,
+      "excess_bits": -0.000986,
+      "p_value": 0.647059
+     },
+     "food_direction": {
+      "n": 1113,
+      "mi_bits": 0.015646,
+      "null_mean": 0.016152,
+      "null_p95": 0.02237,
+      "excess_bits": -0.000506,
+      "p_value": 0.607843
+     },
+     "energy_band": {
+      "n": 1113,
+      "mi_bits": 0.006555,
+      "null_mean": 0.003922,
+      "null_p95": 0.00772,
+      "excess_bits": 0.002633,
+      "p_value": 0.176471
+     },
+     "health_band": {
+      "n": 1113,
+      "mi_bits": 0.0,
+      "null_mean": 0.0,
+      "null_p95": 0.0,
+      "excess_bits": 0.0,
+      "p_value": 1.0
+     },
+     "neighbor_near": {
+      "n": 1113,
+      "mi_bits": 0.005191,
+      "null_mean": 0.002311,
+      "null_p95": 0.005382,
+      "excess_bits": 0.002881,
+      "p_value": 0.098039
+     },
+     "object_near": {
+      "n": 1113,
+      "mi_bits": 0.001422,
+      "null_mean": 0.001735,
+      "null_p95": 0.003755,
+      "excess_bits": -0.000313,
+      "p_value": 0.54902
+     },
+     "tool_available": {
+      "n": 1113,
+      "mi_bits": 0.001196,
+      "null_mean": 0.001808,
+      "null_p95": 0.004731,
+      "excess_bits": -0.000613,
+      "p_value": 0.588235
+     }
+    }
+   },
+   "sender_scrambled_run": {
+    "state": [
+     "food_near",
+     "food_seen",
+     "energy_band",
+     "neighbor_near"
+    ],
+    "signals": 647,
+    "senders": 67,
+    "symbol_entropy_bits": 1.9963,
+    "joint": {
+     "n": 647,
+     "mi_bits": 0.046116,
+     "null_mean": 0.045851,
+     "null_p95": 0.06243,
+     "excess_bits": 0.000265,
+     "p_value": 0.447761
+    },
+    "within_sender": {
+     "n": 647,
+     "mi_bits": 0.046116,
+     "null_mean": 0.054026,
+     "null_p95": 0.068712,
+     "excess_bits": -0.007909,
+     "p_value": 0.825871
+    },
+    "bands": {
+     "food_near": {
+      "n": 647,
+      "mi_bits": 0.001643,
+      "null_mean": 0.003038,
+      "null_p95": 0.00697,
+      "excess_bits": -0.001395,
+      "p_value": 0.705882
+     },
+     "food_seen": {
+      "n": 647,
+      "mi_bits": 0.007124,
+      "null_mean": 0.004048,
+      "null_p95": 0.00868,
+      "excess_bits": 0.003075,
+      "p_value": 0.196078
+     },
+     "food_direction": {
+      "n": 647,
+      "mi_bits": 0.046207,
+      "null_mean": 0.028692,
+      "null_p95": 0.040514,
+      "excess_bits": 0.017515,
+      "p_value": 0.039216
+     },
+     "energy_band": {
+      "n": 647,
+      "mi_bits": 0.012396,
+      "null_mean": 0.007011,
+      "null_p95": 0.014508,
+      "excess_bits": 0.005385,
+      "p_value": 0.137255
+     },
+     "health_band": {
+      "n": 647,
+      "mi_bits": 0.0,
+      "null_mean": 0.0,
+      "null_p95": 0.0,
+      "excess_bits": 0.0,
+      "p_value": 1.0
+     },
+     "neighbor_near": {
+      "n": 647,
+      "mi_bits": 0.003149,
+      "null_mean": 0.003413,
+      "null_p95": 0.009458,
+      "excess_bits": -0.000263,
+      "p_value": 0.431373
+     },
+     "object_near": {
+      "n": 647,
+      "mi_bits": 0.001387,
+      "null_mean": 0.003149,
+      "null_p95": 0.008149,
+      "excess_bits": -0.001762,
+      "p_value": 0.647059
+     },
+     "tool_available": {
+      "n": 647,
+      "mi_bits": 0.004598,
+      "null_mean": 0.003589,
+      "null_p95": 0.00854,
+      "excess_bits": 0.001009,
+      "p_value": 0.313725
+     }
+    }
+   },
+   "receiver": {
+    "normal": {
+     "deliveries": 7026,
+     "receivers": 108,
+     "pooled": {
+      "n": 7026,
+      "mi_bits": 0.009182,
+      "null_mean": 0.007705,
+      "null_p95": 0.00988,
+      "excess_bits": 0.001477,
+      "p_value": 0.149254
+     },
+     "within_receiver": {
+      "n": 7026,
+      "mi_bits": 0.009182,
+      "null_mean": 0.007889,
+      "null_p95": 0.009955,
+      "excess_bits": 0.001292,
+      "p_value": 0.139303
+     }
+    },
+    "scrambled": {
+     "deliveries": 2890,
+     "receivers": 72,
+     "pooled": {
+      "n": 2890,
+      "mi_bits": 0.019595,
+      "null_mean": 0.019428,
+      "null_p95": 0.025416,
+      "excess_bits": 0.000168,
+      "p_value": 0.437811
+     },
+     "within_receiver": {
+      "n": 2890,
+      "mi_bits": 0.019595,
+      "null_mean": 0.01861,
+      "null_p95": 0.023859,
+      "excess_bits": 0.000985,
+      "p_value": 0.348259
+     }
+    },
+    "excess_over_scrambled_bits": 0.001309
+   },
+   "fitness": {
+    "branch_tick": 1000,
+    "ticks": 200,
+    "reps": 8,
+    "runs": [
+     {
+      "channel": "normal",
+      "rep": 0,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 34,
+      "births": 31,
+      "food_energy_per_agent_tick": 0.23240152960319138,
+      "survival": 0.45,
+      "signals_sent": 3275
+     },
+     {
+      "channel": "scrambled",
+      "rep": 0,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 37,
+      "births": 33,
+      "food_energy_per_agent_tick": 0.23512129866811624,
+      "survival": 0.45,
+      "signals_sent": 3265
+     },
+     {
+      "channel": "normal",
+      "rep": 1,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 39,
+      "births": 35,
+      "food_energy_per_agent_tick": 0.23506220336303815,
+      "survival": 0.425,
+      "signals_sent": 3253
+     },
+     {
+      "channel": "scrambled",
+      "rep": 1,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 37,
+      "births": 28,
+      "food_energy_per_agent_tick": 0.23706512515881298,
+      "survival": 0.45,
+      "signals_sent": 3213
+     },
+     {
+      "channel": "normal",
+      "rep": 2,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 40,
+      "births": 32,
+      "food_energy_per_agent_tick": 0.21844254847340294,
+      "survival": 0.45,
+      "signals_sent": 3255
+     },
+     {
+      "channel": "scrambled",
+      "rep": 2,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 35,
+      "births": 27,
+      "food_energy_per_agent_tick": 0.23971011688598504,
+      "survival": 0.5,
+      "signals_sent": 3312
+     },
+     {
+      "channel": "normal",
+      "rep": 3,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 42,
+      "births": 32,
+      "food_energy_per_agent_tick": 0.22832014785946014,
+      "survival": 0.525,
+      "signals_sent": 3259
+     },
+     {
+      "channel": "scrambled",
+      "rep": 3,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 36,
+      "births": 32,
+      "food_energy_per_agent_tick": 0.23050096077748147,
+      "survival": 0.5,
+      "signals_sent": 3249
+     },
+     {
+      "channel": "normal",
+      "rep": 4,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 38,
+      "births": 26,
+      "food_energy_per_agent_tick": 0.2239021702912185,
+      "survival": 0.525,
+      "signals_sent": 3189
+     },
+     {
+      "channel": "scrambled",
+      "rep": 4,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 38,
+      "births": 33,
+      "food_energy_per_agent_tick": 0.24007789786885572,
+      "survival": 0.5,
+      "signals_sent": 3239
+     },
+     {
+      "channel": "normal",
+      "rep": 5,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 33,
+      "births": 27,
+      "food_energy_per_agent_tick": 0.21550699614012764,
+      "survival": 0.475,
+      "signals_sent": 3249
+     },
+     {
+      "channel": "scrambled",
+      "rep": 5,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 41,
+      "births": 34,
+      "food_energy_per_agent_tick": 0.22986177596921645,
+      "survival": 0.5,
+      "signals_sent": 3277
+     },
+     {
+      "channel": "normal",
+      "rep": 6,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 39,
+      "births": 31,
+      "food_energy_per_agent_tick": 0.2330121850496532,
+      "survival": 0.5,
+      "signals_sent": 3287
+     },
+     {
+      "channel": "scrambled",
+      "rep": 6,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 33,
+      "births": 30,
+      "food_energy_per_agent_tick": 0.23700969448592177,
+      "survival": 0.425,
+      "signals_sent": 3263
+     },
+     {
+      "channel": "normal",
+      "rep": 7,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 38,
+      "births": 25,
+      "food_energy_per_agent_tick": 0.2310995648887917,
+      "survival": 0.475,
+      "signals_sent": 3236
+     },
+     {
+      "channel": "scrambled",
+      "rep": 7,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 40,
+      "population": 39,
+      "births": 37,
+      "food_energy_per_agent_tick": 0.2310695111869894,
+      "survival": 0.45,
+      "signals_sent": 3278
+     }
+    ],
+    "effects": {
+     "normal_minus_scrambled": {
+      "population": {
+       "n": 8,
+       "mean": 0.875,
+       "sd": 4.911721,
+       "positive": 4,
+       "negative": 3,
+       "sign_p": 1.0
+      },
+      "food_energy_per_agent_tick": {
+       "n": 8,
+       "mean": -0.007834,
+       "sd": 0.008117,
+       "positive": 1,
+       "negative": 7,
+       "sign_p": 0.070312
+      },
+      "survival": {
+       "n": 8,
+       "mean": 0.00625,
+       "sd": 0.039528,
+       "positive": 4,
+       "negative": 3,
+       "sign_p": 1.0
+      },
+      "births": {
+       "n": 8,
+       "mean": -1.875,
+       "sd": 6.468329,
+       "positive": 3,
+       "negative": 4,
+       "sign_p": 1.0
+      }
+     }
+    }
+   },
+   "verdict": "null",
+   "criteria": {
+    "sender_information": {
+     "passed": false,
+     "excess_bits": 0.021744,
+     "p_value": 0.004975,
+     "needs": "excess >= 0.05 bits and p <= 0.01"
+    },
+    "receiver_information": {
+     "passed": false,
+     "excess_bits": 0.001477,
+     "p_value": 0.149254,
+     "excess_over_scrambled_bits": 0.001309,
+     "needs": "excess >= 0.02 bits, p <= 0.01 and >= 0.02 bits above the scrambled run"
+    },
+    "fitness_cost_of_scrambling": {
+     "passed": false,
+     "food_energy_per_agent_tick": {
+      "n": 8,
+      "mean": -0.007834,
+      "sd": 0.008117,
+      "positive": 1,
+      "negative": 7,
+      "sign_p": 0.070312
+     },
+     "needs": "normal - scrambled food energy per agent-tick > 0 over >= 6 paired branches, sign test p <= 0.05"
+    }
+   },
+   "thresholds": {
+    "sender_excess_bits": 0.05,
+    "sender_p": 0.01,
+    "receiver_excess_bits": 0.02,
+    "receiver_p": 0.01,
+    "receiver_over_scrambled_bits": 0.02,
+    "fitness_min_reps": 6,
+    "fitness_sign_p": 0.05
+   },
+   "interpretation": "Toy-world measurement. 'all_three' means signals carry sender-state information, receivers act on their content and scrambling the content costs fitness here; it is not evidence of language.",
+   "seconds": 212.4
+  },
+  {
+   "seed": 6,
+   "config_overrides": {
+    "food_patches": 30
+   },
+   "ticks": 1500,
+   "window_start": 1000,
+   "normal": {
+    "ticks_run": 1500,
+    "stop_reason": "step_budget",
+    "population": 46,
+    "births": 292,
+    "signals_sent": 4643
+   },
+   "scrambled": {
+    "ticks_run": 1500,
+    "stop_reason": "step_budget",
+    "population": 41,
+    "births": 281
+   },
+   "sender": {
+    "state": [
+     "food_near",
+     "food_seen",
+     "energy_band",
+     "neighbor_near"
+    ],
+    "signals": 1486,
+    "senders": 131,
+    "symbol_entropy_bits": 1.9952,
+    "joint": {
+     "n": 1486,
+     "mi_bits": 0.023998,
+     "null_mean": 0.018459,
+     "null_p95": 0.0245,
+     "excess_bits": 0.005538,
+     "p_value": 0.084577
+    },
+    "within_sender": {
+     "n": 1486,
+     "mi_bits": 0.023998,
+     "null_mean": 0.021225,
+     "null_p95": 0.029079,
+     "excess_bits": 0.002773,
+     "p_value": 0.243781
+    },
+    "bands": {
+     "food_near": {
+      "n": 1486,
+      "mi_bits": 0.001209,
+      "null_mean": 0.001616,
+      "null_p95": 0.004389,
+      "excess_bits": -0.000407,
+      "p_value": 0.509804
+     },
+     "food_seen": {
+      "n": 1486,
+      "mi_bits": 0.002677,
+      "null_mean": 0.001734,
+      "null_p95": 0.002863,
+      "excess_bits": 0.000943,
+      "p_value": 0.235294
+     },
+     "food_direction": {
+      "n": 1486,
+      "mi_bits": 0.017238,
+      "null_mean": 0.011739,
+      "null_p95": 0.015749,
+      "excess_bits": 0.005498,
+      "p_value": 0.039216
+     },
+     "energy_band": {
+      "n": 1486,
+      "mi_bits": 0.006509,
+      "null_mean": 0.002666,
+      "null_p95": 0.005108,
+      "excess_bits": 0.003843,
+      "p_value": 0.019608
+     },
+     "health_band": {
+      "n": 1486,
+      "mi_bits": 0.0,
+      "null_mean": 0.0,
+      "null_p95": 0.0,
+      "excess_bits": 0.0,
+      "p_value": 1.0
+     },
+     "neighbor_near": {
+      "n": 1486,
+      "mi_bits": 0.00114,
+      "null_mean": 0.00148,
+      "null_p95": 0.004071,
+      "excess_bits": -0.00034,
+      "p_value": 0.470588
+     },
+     "object_near": {
+      "n": 1486,
+      "mi_bits": 0.001237,
+      "null_mean": 0.001364,
+      "null_p95": 0.002992,
+      "excess_bits": -0.000127,
+      "p_value": 0.45098
+     },
+     "tool_available": {
+      "n": 1486,
+      "mi_bits": 0.000571,
+      "null_mean": 0.001429,
+      "null_p95": 0.003335,
+      "excess_bits": -0.000858,
+      "p_value": 0.607843
+     }
+    }
+   },
+   "sender_scrambled_run": {
+    "state": [
+     "food_near",
+     "food_seen",
+     "energy_band",
+     "neighbor_near"
+    ],
+    "signals": 964,
+    "senders": 101,
+    "symbol_entropy_bits": 1.9956,
+    "joint": {
+     "n": 964,
+     "mi_bits": 0.042187,
+     "null_mean": 0.032261,
+     "null_p95": 0.042932,
+     "excess_bits": 0.009926,
+     "p_value": 0.069652
+    },
+    "within_sender": {
+     "n": 964,
+     "mi_bits": 0.042187,
+     "null_mean": 0.037506,
+     "null_p95": 0.048619,
+     "excess_bits": 0.004681,
+     "p_value": 0.21393
+    },
+    "bands": {
+     "food_near": {
+      "n": 964,
+      "mi_bits": 0.002057,
+      "null_mean": 0.002222,
+      "null_p95": 0.005566,
+      "excess_bits": -0.000165,
+      "p_value": 0.411765
+     },
+     "food_seen": {
+      "n": 964,
+      "mi_bits": 0.00304,
+      "null_mean": 0.0027,
+      "null_p95": 0.003625,
+      "excess_bits": 0.00034,
+      "p_value": 0.588235
+     },
+     "food_direction": {
+      "n": 964,
+      "mi_bits": 0.017466,
+      "null_mean": 0.018429,
+      "null_p95": 0.027629,
+      "excess_bits": -0.000963,
+      "p_value": 0.490196
+     },
+     "energy_band": {
+      "n": 964,
+      "mi_bits": 0.015517,
+      "null_mean": 0.004765,
+      "null_p95": 0.008087,
+      "excess_bits": 0.010751,
+      "p_value": 0.019608
+     },
+     "health_band": {
+      "n": 964,
+      "mi_bits": 0.0,
+      "null_mean": 0.0,
+      "null_p95": 0.0,
+      "excess_bits": 0.0,
+      "p_value": 1.0
+     },
+     "neighbor_near": {
+      "n": 964,
+      "mi_bits": 0.002409,
+      "null_mean": 0.0023,
+      "null_p95": 0.006041,
+      "excess_bits": 0.000109,
+      "p_value": 0.333333
+     },
+     "object_near": {
+      "n": 964,
+      "mi_bits": 0.002382,
+      "null_mean": 0.002397,
+      "null_p95": 0.005712,
+      "excess_bits": -1.5e-05,
+      "p_value": 0.352941
+     },
+     "tool_available": {
+      "n": 964,
+      "mi_bits": 0.001018,
+      "null_mean": 0.002075,
+      "null_p95": 0.004904,
+      "excess_bits": -0.001056,
+      "p_value": 0.686275
+     }
+    }
+   },
+   "receiver": {
+    "normal": {
+     "deliveries": 9455,
+     "receivers": 136,
+     "pooled": {
+      "n": 9455,
+      "mi_bits": 0.007156,
+      "null_mean": 0.005671,
+      "null_p95": 0.007199,
+      "excess_bits": 0.001485,
+      "p_value": 0.064677
+     },
+     "within_receiver": {
+      "n": 9455,
+      "mi_bits": 0.007156,
+      "null_mean": 0.005867,
+      "null_p95": 0.007298,
+      "excess_bits": 0.001289,
+      "p_value": 0.069652
+     }
+    },
+    "scrambled": {
+     "deliveries": 6157,
+     "receivers": 106,
+     "pooled": {
+      "n": 6157,
+      "mi_bits": 0.008405,
+      "null_mean": 0.008768,
+      "null_p95": 0.011392,
+      "excess_bits": -0.000363,
+      "p_value": 0.557214
+     },
+     "within_receiver": {
+      "n": 6157,
+      "mi_bits": 0.008405,
+      "null_mean": 0.008844,
+      "null_p95": 0.011216,
+      "excess_bits": -0.000439,
+      "p_value": 0.597015
+     }
+    },
+    "excess_over_scrambled_bits": 0.001848
+   },
+   "fitness": {
+    "branch_tick": 1000,
+    "ticks": 200,
+    "reps": 8,
+    "runs": [
+     {
+      "channel": "normal",
+      "rep": 0,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 44,
+      "births": 43,
+      "food_energy_per_agent_tick": 0.22898753040309772,
+      "survival": 0.5333333333333333,
+      "signals_sent": 3705
+     },
+     {
+      "channel": "scrambled",
+      "rep": 0,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 46,
+      "births": 36,
+      "food_energy_per_agent_tick": 0.2318839174013657,
+      "survival": 0.5111111111111111,
+      "signals_sent": 3721
+     },
+     {
+      "channel": "normal",
+      "rep": 1,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 49,
+      "births": 34,
+      "food_energy_per_agent_tick": 0.20861036043221293,
+      "survival": 0.5555555555555556,
+      "signals_sent": 3732
+     },
+     {
+      "channel": "scrambled",
+      "rep": 1,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 39,
+      "births": 31,
+      "food_energy_per_agent_tick": 0.2153223154722826,
+      "survival": 0.4888888888888889,
+      "signals_sent": 3743
+     },
+     {
+      "channel": "normal",
+      "rep": 2,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 43,
+      "births": 28,
+      "food_energy_per_agent_tick": 0.21271906018237874,
+      "survival": 0.5777777777777777,
+      "signals_sent": 3749
+     },
+     {
+      "channel": "scrambled",
+      "rep": 2,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 46,
+      "births": 26,
+      "food_energy_per_agent_tick": 0.2130126704052535,
+      "survival": 0.6,
+      "signals_sent": 3673
+     },
+     {
+      "channel": "normal",
+      "rep": 3,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 51,
+      "births": 42,
+      "food_energy_per_agent_tick": 0.21368251820638773,
+      "survival": 0.5333333333333333,
+      "signals_sent": 3713
+     },
+     {
+      "channel": "scrambled",
+      "rep": 3,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 42,
+      "births": 31,
+      "food_energy_per_agent_tick": 0.2086832976171826,
+      "survival": 0.5555555555555556,
+      "signals_sent": 3661
+     },
+     {
+      "channel": "normal",
+      "rep": 4,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 45,
+      "births": 35,
+      "food_energy_per_agent_tick": 0.22250987075483314,
+      "survival": 0.4888888888888889,
+      "signals_sent": 3693
+     },
+     {
+      "channel": "scrambled",
+      "rep": 4,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 49,
+      "births": 42,
+      "food_energy_per_agent_tick": 0.23464318673624243,
+      "survival": 0.5555555555555556,
+      "signals_sent": 3749
+     },
+     {
+      "channel": "normal",
+      "rep": 5,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 43,
+      "births": 37,
+      "food_energy_per_agent_tick": 0.21627069110193,
+      "survival": 0.4666666666666667,
+      "signals_sent": 3728
+     },
+     {
+      "channel": "scrambled",
+      "rep": 5,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 47,
+      "births": 35,
+      "food_energy_per_agent_tick": 0.2196111029275245,
+      "survival": 0.5333333333333333,
+      "signals_sent": 3703
+     },
+     {
+      "channel": "normal",
+      "rep": 6,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 56,
+      "births": 48,
+      "food_energy_per_agent_tick": 0.22887505281061502,
+      "survival": 0.4888888888888889,
+      "signals_sent": 3774
+     },
+     {
+      "channel": "scrambled",
+      "rep": 6,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 46,
+      "births": 34,
+      "food_energy_per_agent_tick": 0.21086199601165517,
+      "survival": 0.4888888888888889,
+      "signals_sent": 3756
+     },
+     {
+      "channel": "normal",
+      "rep": 7,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 47,
+      "births": 38,
+      "food_energy_per_agent_tick": 0.21167169430536156,
+      "survival": 0.5111111111111111,
+      "signals_sent": 3737
+     },
+     {
+      "channel": "scrambled",
+      "rep": 7,
+      "ticks": 200,
+      "stop_reason": null,
+      "start_population": 45,
+      "population": 53,
+      "births": 43,
+      "food_energy_per_agent_tick": 0.2246418303949212,
+      "survival": 0.5555555555555556,
+      "signals_sent": 3760
+     }
+    ],
+    "effects": {
+     "normal_minus_scrambled": {
+      "population": {
+       "n": 8,
+       "mean": 1.25,
+       "sd": 7.066015,
+       "positive": 3,
+       "negative": 5,
+       "sign_p": 0.726562
+      },
+      "food_energy_per_agent_tick": {
+       "n": 8,
+       "mean": -0.001917,
+       "sd": 0.010001,
+       "positive": 2,
+       "negative": 6,
+       "sign_p": 0.289062
+      },
+      "survival": {
+       "n": 8,
+       "mean": -0.016667,
+       "sd": 0.045619,
+       "positive": 2,
+       "negative": 5,
+       "sign_p": 0.453125
+      },
+      "births": {
+       "n": 8,
+       "mean": 3.375,
+       "sd": 7.229651,
+       "positive": 6,
+       "negative": 2,
+       "sign_p": 0.289062
+      }
+     }
+    }
+   },
+   "verdict": "null",
+   "criteria": {
+    "sender_information": {
+     "passed": false,
+     "excess_bits": 0.005538,
+     "p_value": 0.084577,
+     "needs": "excess >= 0.05 bits and p <= 0.01"
+    },
+    "receiver_information": {
+     "passed": false,
+     "excess_bits": 0.001485,
+     "p_value": 0.064677,
+     "excess_over_scrambled_bits": 0.001848,
+     "needs": "excess >= 0.02 bits, p <= 0.01 and >= 0.02 bits above the scrambled run"
+    },
+    "fitness_cost_of_scrambling": {
+     "passed": false,
+     "food_energy_per_agent_tick": {
+      "n": 8,
+      "mean": -0.001917,
+      "sd": 0.010001,
+      "positive": 2,
+      "negative": 6,
+      "sign_p": 0.289062
+     },
+     "needs": "normal - scrambled food energy per agent-tick > 0 over >= 6 paired branches, sign test p <= 0.05"
+    }
+   },
+   "thresholds": {
+    "sender_excess_bits": 0.05,
+    "sender_p": 0.01,
+    "receiver_excess_bits": 0.02,
+    "receiver_p": 0.01,
+    "receiver_over_scrambled_bits": 0.02,
+    "fitness_min_reps": 6,
+    "fitness_sign_p": 0.05
+   },
+   "interpretation": "Toy-world measurement. 'all_three' means signals carry sender-state information, receivers act on their content and scrambling the content costs fitness here; it is not evidence of language.",
+   "seconds": 236.7
+  }
+ ]
+}

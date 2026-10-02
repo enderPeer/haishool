@@ -1,0 +1,157 @@
+{
+ "machine": "Windows 11, Python 3.11.9, 32 logical CPUs, measured 2026-10-02 with no other jobs running",
+ "method_speed": "World.create(seed=1..2, Config(population=N, automatic_reproduction=False, maturity_age=10**6, population_limit=256)) so the population stays N; 20 warm-up ticks, then wall time of 100 world.step() calls; best of 2 seeds. 'with_event_json' also serializes every returned event to JSON (what run_world writes).",
+ "before_matrix_2cf045a": [
+  {
+   "agents": 25,
+   "mean_pop": 25.0,
+   "seconds_per_100_ticks_engine": 1.342,
+   "seconds_per_100_ticks_with_event_json": 1.548,
+   "event_bytes_per_100_ticks": 17782329
+  },
+  {
+   "agents": 50,
+   "mean_pop": 50.0,
+   "seconds_per_100_ticks_engine": 3.025,
+   "seconds_per_100_ticks_with_event_json": 3.432,
+   "event_bytes_per_100_ticks": 39299302
+  },
+  {
+   "agents": 100,
+   "mean_pop": 100.0,
+   "seconds_per_100_ticks_engine": 6.809,
+   "seconds_per_100_ticks_with_event_json": 7.887,
+   "event_bytes_per_100_ticks": 93204631
+  },
+  {
+   "agents": 128,
+   "mean_pop": 128.0,
+   "seconds_per_100_ticks_engine": 9.145,
+   "seconds_per_100_ticks_with_event_json": 10.764,
+   "event_bytes_per_100_ticks": 134609721
+  }
+ ],
+ "after_life8_full_log": [
+  {
+   "agents": 25,
+   "mean_pop": 25.0,
+   "seconds_per_100_ticks_engine": 0.592,
+   "seconds_per_100_ticks_with_event_json": 0.773,
+   "event_bytes_per_100_ticks": 17986206
+  },
+  {
+   "agents": 50,
+   "mean_pop": 50.0,
+   "seconds_per_100_ticks_engine": 1.172,
+   "seconds_per_100_ticks_with_event_json": 1.676,
+   "event_bytes_per_100_ticks": 40822422
+  },
+  {
+   "agents": 100,
+   "mean_pop": 100.0,
+   "seconds_per_100_ticks_engine": 2.709,
+   "seconds_per_100_ticks_with_event_json": 3.839,
+   "event_bytes_per_100_ticks": 92225918
+  },
+  {
+   "agents": 128,
+   "mean_pop": 128.0,
+   "seconds_per_100_ticks_engine": 3.562,
+   "seconds_per_100_ticks_with_event_json": 5.131,
+   "event_bytes_per_100_ticks": 134732120
+  }
+ ],
+ "after_life8_compact_log": [
+  {
+   "agents": 25,
+   "mean_pop": 25.0,
+   "seconds_per_100_ticks_engine": 0.53,
+   "seconds_per_100_ticks_with_event_json": 0.535,
+   "event_bytes_per_100_ticks": 154912
+  },
+  {
+   "agents": 50,
+   "mean_pop": 50.0,
+   "seconds_per_100_ticks_engine": 1.135,
+   "seconds_per_100_ticks_with_event_json": 1.172,
+   "event_bytes_per_100_ticks": 569394
+  },
+  {
+   "agents": 100,
+   "mean_pop": 100.0,
+   "seconds_per_100_ticks_engine": 2.489,
+   "seconds_per_100_ticks_with_event_json": 2.546,
+   "event_bytes_per_100_ticks": 1640130
+  },
+  {
+   "agents": 128,
+   "mean_pop": 128.0,
+   "seconds_per_100_ticks_engine": 3.466,
+   "seconds_per_100_ticks_with_event_json": 3.565,
+   "event_bytes_per_100_ticks": 2832891
+  }
+ ],
+ "method_bytes": "run_world, Config(food_patches=30, log=...), 1000 ticks, snapshots every 20 ticks (K=20), checkpoint every 500; food_patches=30 keeps the population food-regulated (about 45-51) so 1000 ticks run without the capacity pause.",
+ "archive_bytes_per_1000_ticks": [
+  {
+   "log": "compact",
+   "seed": 1,
+   "ticks": 1000,
+   "stop": "step_budget",
+   "mean_population": 51.3,
+   "events_bytes": 5874535,
+   "snapshots_bytes": 4065157,
+   "checkpoint_bytes": 8725225,
+   "wall_seconds": 43.0,
+   "event_counts": {
+    "act": 9288,
+    "signal": 2232,
+    "heard": 14813,
+    "birth": 216,
+    "death": 188
+   }
+  },
+  {
+   "log": "compact",
+   "seed": 2,
+   "ticks": 1000,
+   "stop": "step_budget",
+   "mean_population": 45.6,
+   "events_bytes": 5045900,
+   "snapshots_bytes": 3771134,
+   "checkpoint_bytes": 7042749,
+   "wall_seconds": 33.3,
+   "event_counts": {
+    "act": 7993,
+    "signal": 2099,
+    "heard": 12554,
+    "birth": 191,
+    "death": 172
+   }
+  },
+  {
+   "log": "full",
+   "seed": 1,
+   "ticks": 1000,
+   "stop": "step_budget",
+   "mean_population": 51.3,
+   "events_bytes": 377249469,
+   "snapshots_bytes": 4065004,
+   "checkpoint_bytes": 8720628,
+   "wall_seconds": 50.0,
+   "event_counts": {}
+  },
+  {
+   "log": "full",
+   "seed": 2,
+   "ticks": 1000,
+   "stop": "step_budget",
+   "mean_population": 45.6,
+   "events_bytes": 333229557,
+   "snapshots_bytes": 3770981,
+   "checkpoint_bytes": 7040850,
+   "wall_seconds": 36.8,
+   "event_counts": {}
+  }
+ ]
+}

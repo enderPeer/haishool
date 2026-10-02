@@ -1,0 +1,1103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Haishool Living Worlds</title>
+<meta name="description" content="A recorded life8 world from Haishool round 8: individuals, food, objects, predators and calls, replayed in 3D from a run archive.">
+<style>
+:root{
+  color-scheme:light;
+  --page:#f3f4ef;--surface:#fcfcfb;--surface-2:#eceee7;--glass:rgba(252,252,251,.95);
+  --ink:#0b0b0b;--ink-2:#52514e;--muted:#64635e;--line:rgba(11,11,11,.14);--accent:#2a78d6;--focus:#1c5cab;
+  --scene-bg:#d9ded3;--ground:#eef0e8;--grid:#d3d7cb;--edge:#7f8779;
+  --lin1:#2a78d6;--lin2:#eb6834;--lin3:#1baf7a;--lin4:#eda100;--lin5:#e87ba4;--lin6:#008300;--lin7:#4a3aa7;--lin8:#e34948;--lin-other:#a9a79f;
+  --ramp0:#cde2fb;--ramp1:#86b6ef;--ramp2:#3987e5;--ramp3:#1c5cab;--ramp4:#0d366b;
+  --sym0:#2a78d6;--sym1:#eda100;--sym2:#e87ba4;--sym3:#008300;
+  --food-soft:#3c8d3a;--food-hard:#8c6a2c;--food-bloom:#c4387f;
+  --stone:#8a8b86;--wood:#8a5a2b;--fiber:#c4ad55;--clay:#b8623a;--metal:#5c84a3;--composite:#6f55c9;
+  --predator:#b3261e;--predator-sated:#c99a95;
+  --ring-energy:#c98500;--ring-health:#14966a;--ring-scar:#c0392b;--ring-track:#b8bcb1;
+  --birth:#14966a;--strike:#d97a00;--share:#0f8a8a;--learn:#6f55c9;
+  --death-starvation:#8c6a2c;--death-predation:#b3261e;--death-injury:#eb6834;--death-age:#7d7c76;--death-other:#7d7c76;
+  --select:#0b0b0b;--visitor:#d49a00;--nose:#2b2b29;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --page:#0d0e0d;--surface:#1a1a19;--surface-2:#252624;--glass:rgba(26,26,25,.95);
+    --ink:#ffffff;--ink-2:#c3c2b7;--muted:#a6a59c;--line:rgba(255,255,255,.13);--accent:#6da7ec;--focus:#86b6ef;
+    --scene-bg:#0e1210;--ground:#1c2220;--grid:#2a322e;--edge:#5b675f;
+    --lin1:#3987e5;--lin2:#d95926;--lin3:#199e70;--lin4:#c98500;--lin5:#d55181;--lin6:#008300;--lin7:#9085e9;--lin8:#e66767;--lin-other:#77766f;
+    --ramp0:#104281;--ramp1:#1c5cab;--ramp2:#2a78d6;--ramp3:#6da7ec;--ramp4:#b7d3f6;
+    --sym0:#3987e5;--sym1:#c98500;--sym2:#d55181;--sym3:#008300;
+    --food-soft:#4fae4c;--food-hard:#b38b47;--food-bloom:#e46aa8;
+    --stone:#a3a39c;--wood:#b07a45;--fiber:#d8c470;--clay:#cf7a52;--metal:#86a9c4;--composite:#9d86f0;
+    --predator:#ff6257;--predator-sated:#7a4440;
+    --ring-energy:#e0a21a;--ring-health:#2fbf8a;--ring-scar:#ff5a4a;--ring-track:#3d4440;
+    --birth:#2fbf8a;--strike:#f0a030;--share:#35b8b8;--learn:#a594f2;
+    --death-starvation:#b38b47;--death-predation:#ff6257;--death-injury:#f08a5a;--death-age:#9a998f;--death-other:#9a998f;
+    --select:#ffffff;--visitor:#f2c230;--nose:#e9e8e0;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --page:#0d0e0d;--surface:#1a1a19;--surface-2:#252624;--glass:rgba(26,26,25,.95);
+  --ink:#ffffff;--ink-2:#c3c2b7;--muted:#a6a59c;--line:rgba(255,255,255,.13);--accent:#6da7ec;--focus:#86b6ef;
+  --scene-bg:#0e1210;--ground:#1c2220;--grid:#2a322e;--edge:#5b675f;
+  --lin1:#3987e5;--lin2:#d95926;--lin3:#199e70;--lin4:#c98500;--lin5:#d55181;--lin6:#008300;--lin7:#9085e9;--lin8:#e66767;--lin-other:#77766f;
+  --ramp0:#104281;--ramp1:#1c5cab;--ramp2:#2a78d6;--ramp3:#6da7ec;--ramp4:#b7d3f6;
+  --sym0:#3987e5;--sym1:#c98500;--sym2:#d55181;--sym3:#008300;
+  --food-soft:#4fae4c;--food-hard:#b38b47;--food-bloom:#e46aa8;
+  --stone:#a3a39c;--wood:#b07a45;--fiber:#d8c470;--clay:#cf7a52;--metal:#86a9c4;--composite:#9d86f0;
+  --predator:#ff6257;--predator-sated:#7a4440;
+  --ring-energy:#e0a21a;--ring-health:#2fbf8a;--ring-scar:#ff5a4a;--ring-track:#3d4440;
+  --birth:#2fbf8a;--strike:#f0a030;--share:#35b8b8;--learn:#a594f2;
+  --death-starvation:#b38b47;--death-predation:#ff6257;--death-injury:#f08a5a;--death-age:#9a998f;--death-other:#9a998f;
+  --select:#ffffff;--visitor:#f2c230;--nose:#e9e8e0;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+.app{display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100dvh}
+.top{display:flex;flex-wrap:wrap;gap:6px 20px;align-items:center;justify-content:space-between;padding:8px 16px;background:var(--surface);border-bottom:1px solid var(--line)}
+h1{font-size:17px;line-height:1.2;margin:0}
+#subtitle{margin:2px 0 0;color:var(--ink-2);font-size:12.5px}
+.stats{display:flex;flex-wrap:wrap;gap:2px 16px;margin:0}
+.stats div{display:flex;flex-direction:column;min-width:44px}
+.stats dt{font-size:11px;color:var(--muted)}
+.stats dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums}
+.stage{position:relative;overflow:hidden;background:var(--scene-bg);min-height:220px}
+#scene{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:grab}
+.labels{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.tag{position:absolute;left:0;top:0;padding:1px 8px;border-radius:999px;background:var(--surface);color:var(--ink);border:1px solid var(--line);font-size:12px;white-space:nowrap;will-change:transform}
+.tag.visitor{border:2px solid var(--visitor);font-weight:600}
+.notice{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);max-width:min(520px,90%);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.legend{position:absolute;top:10px;left:10px;width:300px;max-height:calc(100% - 20px);overflow:auto;background:var(--glass);border:1px solid var(--line);border-radius:10px;font-size:12.5px}
+.legend summary{cursor:pointer;padding:8px 12px;font-weight:600;position:sticky;top:0;background:var(--glass)}
+.legend-body{padding:0 12px 12px}
+.legend h3{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:12px 0 4px}
+.legend ul{list-style:none;margin:0;padding:0}
+.legend li{display:flex;gap:8px;align-items:center;margin:3px 0}
+.legend p{margin:4px 0}
+.legend li>span .sw{margin:0 4px 0 6px;vertical-align:-2px}
+.space-note{background:var(--surface-2);border-radius:8px;padding:8px 10px}
+.sw{width:14px;height:14px;flex:none;display:inline-block;border-radius:50%;background:currentColor}
+.sw.sq{border-radius:3px}.sw.tri{border-radius:0;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.sw.ring{background:transparent;border:2.5px solid currentColor}.sw.line{height:3px;border-radius:2px;width:18px}
+.sw.dia{border-radius:2px;transform:rotate(45deg) scale(.8)}
+svg.sym{flex:none}
+.lineages{display:flex;flex-direction:column;gap:2px;margin-top:4px}
+.lin{display:flex;align-items:center;gap:8px;width:100%;text-align:left;padding:3px 8px;min-height:28px;border-radius:6px}
+.lin[aria-pressed="true"]{border-color:var(--ink);background:var(--surface)}
+.lin .n{margin-left:auto;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.ramp{height:10px;border-radius:5px;background:linear-gradient(90deg,var(--ramp0),var(--ramp1),var(--ramp2),var(--ramp3),var(--ramp4));margin:4px 0 2px}
+.ramp-scale{display:flex;justify-content:space-between;color:var(--ink-2)}
+kbd{font:11px ui-monospace,Consolas,monospace;border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:0 4px;background:var(--surface)}
+.panel{position:absolute;top:10px;right:10px;bottom:10px;width:350px;overflow:auto;background:var(--glass);border:1px solid var(--line);border-radius:10px;padding:0 14px 14px;font-size:13px}
+.panel-head{position:sticky;top:0;background:var(--glass);display:flex;align-items:center;gap:8px;padding:10px 0 8px;border-bottom:1px solid var(--line);z-index:1}
+.panel-head h2{font-size:16px;margin:0;flex:1;display:flex;align-items:center;gap:8px}
+.panel h3{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:14px 0 4px}
+.panel dl{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;margin:0}
+.panel dt{color:var(--ink-2)}
+.panel dd{margin:0;font-variant-numeric:tabular-nums}
+.panel ol,.panel ul{margin:0;padding-left:18px}
+.panel li{margin:1px 0}
+.status{margin:8px 0 0;color:var(--ink-2)}
+.bar{display:block;height:5px;border-radius:3px;background:var(--surface-2);margin-top:2px;overflow:hidden;max-width:180px}
+.bar i{display:block;height:100%;border-radius:3px}
+.link{padding:0 4px;min-height:0;border-radius:4px;background:transparent;border:1px solid transparent;color:var(--accent);text-decoration:underline;cursor:pointer;font:inherit}
+.link:hover{border-color:var(--line)}
+.chip{display:inline-flex;align-items:center;gap:3px;font-variant-numeric:tabular-nums}
+.controls{background:var(--surface);border-top:1px solid var(--line);padding:6px 12px 8px;display:flex;flex-direction:column;gap:4px}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+button,select{font:inherit;color:var(--ink);background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:5px 10px;min-height:34px;cursor:pointer}
+button:hover,select:hover{border-color:var(--edge)}
+button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+#scene:focus-visible,.legend summary:focus-visible,.legend .lin:focus-visible,.panel .link:focus-visible{outline-offset:-3px}
+.play{display:inline-flex;align-items:center;gap:6px;min-width:84px;font-weight:600}
+.play svg{width:14px;height:14px}
+input[type=range]{flex:1 1 200px;min-width:120px;accent-color:var(--accent);height:28px}
+#ticklabel{font-variant-numeric:tabular-nums;min-width:118px;color:var(--ink-2)}
+.sparkwrap{position:relative}
+#spark{width:100%;height:36px;display:block;cursor:pointer}
+#sparktip{position:absolute;top:-24px;transform:translateX(-50%);font-size:12px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:0 6px;pointer-events:none;white-space:nowrap}
+label{display:inline-flex;align-items:center;gap:6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:720px){
+  .top{padding:6px 10px}
+  h1{font-size:15px}
+  .stats{gap:0 12px;font-size:12.5px}
+  .legend{width:auto;right:10px;max-height:62%}
+  .panel{left:0;right:0;bottom:0;top:auto;width:auto;max-height:58%;border-radius:14px 14px 0 0;border-bottom:none;box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+  .controls{padding:6px 10px}
+  #ticklabel{min-width:0}
+  .hide-narrow{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div>
+      <h1>Haishool Living Worlds</h1>
+      <p id="subtitle">Loading the recorded world…</p>
+    </div>
+    <dl class="stats" aria-live="off">
+      <div><dt>Tick</dt><dd id="st-tick">–</dd></div>
+      <div><dt>Alive</dt><dd id="st-alive">–</dd></div>
+      <div><dt>Food units</dt><dd id="st-food">–</dd></div>
+      <div><dt>Blooms</dt><dd id="st-blooms">–</dd></div>
+      <div><dt>Live calls</dt><dd id="st-calls">–</dd></div>
+      <div><dt>Predators</dt><dd id="st-pred">–</dd></div>
+    </dl>
+  </header>
+  <main class="stage" id="stage">
+    <canvas id="scene" tabindex="0" role="img" aria-label="3D view of the recorded world. Drag to orbit, scroll or pinch to zoom, right-drag or two fingers to pan. Click an individual to inspect it."></canvas>
+    <div class="labels" id="labels" aria-hidden="true"></div>
+    <div class="notice" id="notice" role="alert" hidden></div>
+    <details class="legend" id="legend" open>
+      <summary>Legend</summary>
+      <div class="legend-body">
+        <p class="space-note"><strong>A 2D world, shown in 3D.</strong> <span id="space-size">The world is a flat plane</span> whose edges wrap around. It is drawn in perspective and heights are only there to make things visible: nothing in this world has a height. A real 3D world is the next round.</p>
+        <h3>Inhabitants</h3>
+        <ul>
+          <li><span class="sw" style="color:var(--lin1)"></span><span>A body; its size follows body mass (radius ∝ √mass). The small cone points where it last moved.</span></li>
+          <li><svg class="sym" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="var(--ring-energy)" stroke-width="2" stroke-dasharray="28 41"/><circle cx="8" cy="8" r="3.6" fill="none" stroke="var(--ring-health)" stroke-width="2" stroke-dasharray="16 23"/></svg><span>Ring on the ground: outer arc energy (share of <span id="max-energy">60</span>), inner arc health; <span style="color:var(--ring-scar)">red</span> is health lost for good to scars.</span></li>
+          <li><span class="sw ring" style="color:var(--visitor)"></span><span>Visitor: gold halo and a label. The field is reserved for a later round; nothing sets it yet.</span></li>
+        </ul>
+        <div id="lineage-block">
+          <h3>Colour: founder lineage</h3>
+          <p id="lineage-help">Each colour is one founder's descendants (the eight lineages with the most individual-frames); grey is every other lineage. Select a lineage to highlight it.</p>
+          <div class="lineages" id="lineages" role="group" aria-label="Founder lineages"></div>
+        </div>
+        <div id="energy-block" hidden>
+          <h3>Colour: energy</h3>
+          <div class="ramp" aria-hidden="true"></div>
+          <div class="ramp-scale"><span>0</span><span id="ramp-max">60</span></div>
+        </div>
+        <h3>Food</h3>
+        <ul>
+          <li><span class="sw tri" style="color:var(--food-soft)"></span><span>Soft food patch; size follows the food left</span></li>
+          <li><span class="sw" style="color:var(--food-hard)"></span><span>Hard food: a shell must be opened (struck) before eating pays</span></li>
+          <li><span class="sw" style="color:var(--food-bloom)"></span><span>Bloom: a short-lived rich patch (<span id="bloom-note">spoils after a few ticks</span>)</span></li>
+        </ul>
+        <h3>Objects (by material)</h3>
+        <ul>
+          <li><span class="sw dia" style="color:var(--stone)"></span><span>Stone <span class="sw sq" style="color:var(--wood);width:18px;height:6px"></span>Wood <span class="sw ring" style="color:var(--fiber)"></span>Fiber</span></li>
+          <li><span class="sw" style="color:var(--clay)"></span><span>Clay <span class="sw dia" style="color:var(--metal)"></span>Metal <span class="sw sq" style="color:var(--composite)"></span>Composite</span></li>
+          <li>Held objects ride beside their holder, smaller.</li>
+        </ul>
+        <h3>Predators</h3>
+        <ul>
+          <li><span class="sw tri" style="color:var(--predator)"></span><span><span id="predator-help">Predator; the faint circle is how far it sees. Pale when sated.</span></span></li>
+        </ul>
+        <h3>Calls</h3>
+        <ul id="symbols"></ul>
+        <p>Rings grow to the call's reach and fade over its life (<span id="ttl-note">8</span> ticks). Symbols are arbitrary: no meaning is assigned to any of them.</p>
+        <h3>Events</h3>
+        <ul>
+          <li><span class="sw dia" style="color:var(--birth)"></span><span>Birth (a rising spark)</span></li>
+          <li><span class="sw sq" style="color:var(--death-starvation)"></span><span>Death, a cross on the ground coloured by cause: <span style="color:var(--death-starvation)">starvation</span>, <span style="color:var(--death-predation)">predation</span>, <span style="color:var(--death-injury)">injury</span>, <span style="color:var(--death-age)">age</span></span></li>
+          <li><span class="sw line" style="color:var(--strike)"></span><span>Strike (on food, an object or another individual)</span></li>
+          <li><span class="sw line" style="color:var(--share)"></span><span>Energy shared</span></li>
+          <li><span class="sw line" style="color:var(--learn)"></span><span>Teaching or imitation</span></li>
+          <li><span class="sw ring" style="color:var(--predator)"></span><span>A predator's strike</span></li>
+        </ul>
+        <h3>Keys</h3>
+        <p><kbd>Space</kbd> play/pause · <kbd>←</kbd>/<kbd>→</kbd> step (<kbd>Shift</kbd> ×10) · <kbd>Home</kbd>/<kbd>End</kbd> · <kbd>F</kbd> follow · <kbd>C</kbd> calls · <kbd>E</kbd> events · <kbd>M</kbd> colour · <kbd>,</kbd>/<kbd>.</kbd> rotate · <kbd>+</kbd>/<kbd>-</kbd> zoom · <kbd>Esc</kbd> close</p>
+        <h3>Data</h3>
+        <p id="data-note"></p>
+      </div>
+    </details>
+    <aside class="panel" id="panel" aria-labelledby="panel-title" hidden>
+      <div class="panel-head">
+        <h2 id="panel-title">Individual</h2>
+        <button id="follow" type="button" aria-pressed="false">Follow</button>
+        <button id="close" type="button" aria-label="Close the individual panel">✕</button>
+      </div>
+      <div id="panel-body"></div>
+    </aside>
+  </main>
+  <footer class="controls">
+    <div class="row">
+      <button id="play" class="play" type="button" aria-label="Play"><svg viewBox="0 0 14 14" aria-hidden="true"><path id="play-icon" d="M3 1.5v11l9-5.5z" fill="currentColor"/></svg><span id="play-text">Play</span></button>
+      <button id="prev" type="button" aria-label="Previous frame">‹</button>
+      <button id="next" type="button" aria-label="Next frame">›</button>
+      <label><span class="hide-narrow">Speed</span>
+        <select id="speed" aria-label="Playback speed">
+          <option value="2">2 ticks/s</option><option value="5">5 ticks/s</option><option value="10" selected>10 ticks/s</option>
+          <option value="20">20 ticks/s</option><option value="40">40 ticks/s</option><option value="80">80 ticks/s</option>
+        </select></label>
+      <input id="scrub" type="range" min="0" max="0" step="1" value="0" aria-label="Tick">
+      <output id="ticklabel" for="scrub">tick –</output>
+    </div>
+    <div class="sparkwrap"><canvas id="spark" aria-hidden="true"></canvas><span id="sparktip" hidden></span></div>
+    <div class="row">
+      <label><input id="show-calls" type="checkbox" checked> Calls</label>
+      <label><input id="show-events" type="checkbox" checked> Events</label>
+      <label>Colour <select id="colour-mode"><option value="lineage">Founder lineage</option><option value="energy">Energy</option></select></label>
+      <label>Inspect <select id="pick" aria-label="Choose an individual alive at this tick"><option value="">individual…</option></select></label>
+      <button id="reset" type="button">Reset view</button>
+    </div>
+  </footer>
+</div>
+<script id="life8-data" type="application/json">__LIFE8_VIEW3D_DATA__</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+(function () {
+  'use strict';
+  var $ = function (id) { return document.getElementById(id); };
+  function notice(text) { var n = $('notice'); n.textContent = text; n.hidden = false; }
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]; }); }
+  function fmt(v, d) { return v === null || v === undefined ? '–' : Number(v).toFixed(d === undefined ? 2 : d); }
+
+  var D;
+  try { D = JSON.parse($('life8-data').textContent); } catch (err) { notice('The embedded world data could not be read: ' + err.message); return; }
+  var META = D.meta, CFG = META.config || {};
+  var W = +CFG.width || 32, H = +CFG.height || 24, MAXE = +CFG.max_energy || 60, TTL = +CFG.message_ttl || 8;
+  var CALL_REACH = +CFG.call_reach || 8, SIGHT = +CFG.predator_sight || 0;
+  var FR = D.frames, T = FR.t, NF = T.length, T0 = T[0], T1 = T[NF - 1];
+  var ACTS = D.actions, KINDS = D.kinds, REASONS = D.reasons, MATS = D.materials;
+  var KIND = {}; KINDS.forEach(function (k, i) { KIND[k] = i; });
+  var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var NARROW = window.matchMedia && matchMedia('(max-width: 720px)').matches;
+
+  // ---------------------------------------------------------------- tables
+  var COLS = {}; D.ind_columns.forEach(function (c, i) { COLS[c] = i; });
+  var IND = new Map();
+  D.ind.forEach(function (r) { var o = {}; for (var c in COLS) o[c] = r[COLS[c]]; IND.set(o.id, o); });
+  var CHILDREN = new Map();
+  IND.forEach(function (o) {
+    if (o.parent === null || o.parent === undefined) return;
+    if (!CHILDREN.has(o.parent)) CHILDREN.set(o.parent, []);
+    CHILDREN.get(o.parent).push(o);
+  });
+  CHILDREN.forEach(function (list) { list.sort(function (a, b) { return (a.born - b.born) || (a.id - b.id); }); });
+  var SLOTS = new Map(); (META.lineage_slots || []).forEach(function (f, i) { SLOTS.set(f, i); });
+  var FOOD = new Map(); D.foods.forEach(function (r) { FOOD.set(r[0], {x: r[1] / 100, y: r[2] / 100, cap: r[3] / 10, hard: r[4] / 100, start: r[5], spoil: r[6]}); });
+  var OBJ = new Map(); D.objects.forEach(function (r) { OBJ.set(r[0], {mat: r[1], mass: r[2] / 100, parts: r[3], maker: r[4], comp: r[5]}); });
+  var CALLS = D.calls;   // [message, tick, sender, symbol, range, x100, y100], sorted by tick
+  var EV = D.events;     // [tick, kind, a, b, ax, ay, bx, by, value, tool], sorted by tick
+  var CALLS_BY = new Map();
+  CALLS.forEach(function (c, i) { if (!CALLS_BY.has(c[2])) CALLS_BY.set(c[2], []); CALLS_BY.get(c[2]).push(i); });
+  var EV_BY = new Map();
+  function evAdd(id, i) { if (!EV_BY.has(id)) EV_BY.set(id, []); EV_BY.get(id).push(i); }
+  var AGENT_TARGET = {strike_agent: 1, share: 1, teach: 1, imitate: 1};
+  EV.forEach(function (e, i) { evAdd(e[2], i); if (AGENT_TARGET[KINDS[e[1]]] && e[3]) evAdd(e[3], i); });
+  var MAX_ALIVE = 0; FR.a.forEach(function (a) { MAX_ALIVE = Math.max(MAX_ALIVE, a.length / 6); });
+
+  function lower(arr, value, key) { // first index with arr[i][key] >= value
+    var lo = 0, hi = arr.length;
+    while (lo < hi) { var mid = (lo + hi) >> 1; if (arr[mid][key] < value) lo = mid + 1; else hi = mid; }
+    return lo;
+  }
+  function frameAt(t) {
+    if (t <= T0) return 0;
+    if (t >= T1) return NF - 1;
+    var lo = 0, hi = NF - 1;
+    while (hi - lo > 1) { var mid = (lo + hi) >> 1; if (T[mid] <= t) lo = mid; else hi = mid; }
+    return lo;
+  }
+  var idCache = new Map();
+  function agentIndex(k) {
+    var m = idCache.get(k);
+    if (m) return m;
+    m = new Map(); var a = FR.a[k];
+    for (var i = 0; i < a.length; i += 6) m.set(a[i], i);
+    idCache.set(k, m);
+    if (idCache.size > 12) idCache.delete(idCache.keys().next().value);
+    return m;
+  }
+  function wrapD(d, size) { return d > size / 2 ? d - size : d < -size / 2 ? d + size : d; }
+  function mod(v, size) { return ((v % size) + size) % size; }
+  function hash(id) { var x = Math.sin(id * 12.9898) * 43758.5453; return x - Math.floor(x); }
+  function scarAt(id, t) {
+    var s = D.scars[id]; if (!s) return 0;
+    var v = 0; for (var i = 0; i < s.length; i += 2) { if (s[i] <= t) v = s[i + 1] / 1000; else break; }
+    return v;
+  }
+
+  // ---------------------------------------------------------------- static text
+  var predatorText = META.predator_source === 'replay' ? 'replayed from the seed (exact)' :
+                     META.predator_source === 'events' ? 'shown only where they struck' : 'none';
+  $('subtitle').textContent = 'Seed ' + META.seed + ' · ticks ' + T0 + '–' + T1 + ' · ' + NF + ' frames' +
+    (META.every > 1 ? ' (every ' + META.every + ' ticks)' : '') + (META.living ? ' · living preset' : '') +
+    ' · run ' + (META.stop_reason || META.status || '');
+  $('space-size').textContent = 'The world is a flat ' + W + ' × ' + H + ' plane';
+  $('max-energy').textContent = MAXE; $('ramp-max').textContent = MAXE; $('ttl-note').textContent = TTL + 1;
+  if (CFG.bloom_ttl) $('bloom-note').textContent = (CFG.bloom_richness || 2) + '× energy per unit, spoils after ' + CFG.bloom_ttl + ' ticks';
+  if (META.predator_source === 'events') $('predator-help').textContent = 'Predator, shown only at the moment and place of a strike: this archive does not record where predators are between strikes.';
+  if (!CFG.predators) $('predator-help').textContent = 'No predators in this world.';
+  var symHtml = '';
+  for (var s = 0; s < 4; s++) {
+    var dash = s === 0 ? '' : ' stroke-dasharray="' + (37.7 / (s + 1) * 0.62).toFixed(2) + ' ' + (37.7 / (s + 1) * 0.38).toFixed(2) + '"';
+    symHtml += '<li><svg class="sym" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="var(--sym' + s + ')" stroke-width="2.4"' + dash + '/></svg><span>Symbol ' + s + (s === 0 ? ' (solid ring)' : ' (' + (s + 1) + ' dashes)') + '</span></li>';
+  }
+  $('symbols').innerHTML = symHtml;
+  $('data-note').textContent = 'Run ' + META.run + ', seed ' + META.seed + ', status ' + META.status +
+    (META.stop_reason ? ' (' + META.stop_reason + ')' : '') + '. ' + META.snapshots + ' snapshots, ' + NF + ' frames on this page; positions between frames are interpolated. Predators: ' +
+    META.predator_note + '. ' + META.limits + (META.heard_detail ? '' : ' Heard calls are counts only (page size bound).') +
+    ' Built ' + META.built_utc + '.';
+  if (NARROW) $('legend').open = false;
+
+  if (typeof THREE === 'undefined' || !THREE.OrbitControls) {
+    notice('Three.js could not be loaded. This page needs its two pinned scripts from cdnjs.cloudflare.com and cdn.jsdelivr.net (an internet connection); everything else is inside the file.');
+    return;
+  }
+
+  // ---------------------------------------------------------------- scene
+  var stage = $('stage'), canvas = $('scene');
+  var renderer;
+  try { renderer = new THREE.WebGLRenderer({canvas: canvas, antialias: true}); } catch (err) { notice('WebGL is not available in this browser, so the 3D view cannot be drawn.'); return; }
+  renderer.setPixelRatio(Math.min(2, window.devicePixelRatio || 1));
+  var scene = new THREE.Scene();
+  var camera = new THREE.PerspectiveCamera(45, 1, 0.1, 800);
+  var controls = new THREE.OrbitControls(camera, canvas);
+  controls.enableDamping = !REDUCED; controls.dampingFactor = 0.12; controls.screenSpacePanning = false;
+  controls.maxPolarAngle = Math.PI * 0.47; controls.minDistance = 2; controls.maxDistance = Math.max(W, H) * 4;
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x8a8a82, 0.72));
+  var sun = new THREE.DirectionalLight(0xffffff, 0.5); sun.position.set(-0.4 * W, 1.3 * W, 0.7 * H); scene.add(sun);
+  scene.fog = new THREE.Fog(0xdddddd, Math.max(W, H) * 2.5, Math.max(W, H) * 6);
+
+  var groundMat = new THREE.MeshBasicMaterial({color: 0xeeeeee});
+  var ground = new THREE.Mesh(new THREE.PlaneGeometry(W, H), groundMat);
+  ground.rotation.x = -Math.PI / 2; scene.add(ground);
+  var gp = [];
+  for (var gx = 2; gx < W; gx += 2) gp.push(gx - W / 2, 0.004, -H / 2, gx - W / 2, 0.004, H / 2);
+  for (var gy = 2; gy < H; gy += 2) gp.push(-W / 2, 0.004, gy - H / 2, W / 2, 0.004, gy - H / 2);
+  var gridGeo = new THREE.BufferGeometry(); gridGeo.setAttribute('position', new THREE.Float32BufferAttribute(gp, 3));
+  var gridMat = new THREE.LineBasicMaterial({color: 0xcccccc}); scene.add(new THREE.LineSegments(gridGeo, gridMat));
+  var bp = [-W / 2, 0.006, -H / 2, W / 2, 0.006, -H / 2, W / 2, 0.006, H / 2, -W / 2, 0.006, H / 2, -W / 2, 0.006, -H / 2];
+  var borderGeo = new THREE.BufferGeometry(); borderGeo.setAttribute('position', new THREE.Float32BufferAttribute(bp, 3));
+  var borderMat = new THREE.LineDashedMaterial({color: 0x888888, dashSize: 0.7, gapSize: 0.45});
+  var border = new THREE.Line(borderGeo, borderMat); border.computeLineDistances(); scene.add(border);
+
+  var dummy = new THREE.Object3D(), tmpColor = new THREE.Color(), tmpColor2 = new THREE.Color();
+  function inst(geo, mat, cap, colours) {
+    var m = new THREE.InstancedMesh(geo, mat, Math.max(1, cap));
+    m.instanceMatrix.setUsage(THREE.DynamicDrawUsage); m.frustumCulled = false;
+    // r128 sizes instanceColor from .count, so create it before hiding every instance
+    if (colours) { m.setColorAt(0, tmpColor.set(0xffffff)); m.instanceColor.setUsage(THREE.DynamicDrawUsage); }
+    m.count = 0; scene.add(m); return m;
+  }
+  function mergeGeos(parts) { // [[geometry, [r, g, b]]...] -> one non-indexed geometry with vertex colours
+    var pos = [], nor = [], col = [];
+    parts.forEach(function (p) {
+      var g = p[0].index ? p[0].toNonIndexed() : p[0];
+      var pa = g.attributes.position.array, na = g.attributes.normal.array;
+      for (var i = 0; i < pa.length; i++) { pos.push(pa[i]); nor.push(na[i]); }
+      for (var j = 0; j < pa.length / 3; j++) col.push(p[1][0], p[1][1], p[1][2]);
+    });
+    var out = new THREE.BufferGeometry();
+    out.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+    out.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
+    out.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
+    return out;
+  }
+  var STEM = [0.55, 0.45, 0.35], WHITE = [1, 1, 1];
+  function stem() { return new THREE.CylinderGeometry(0.035, 0.05, 0.36, 6).translate(0, 0.18, 0); }
+  var softGeo = mergeGeos([[stem(), STEM], [new THREE.ConeGeometry(0.32, 0.55, 7).translate(0, 0.62, 0), WHITE],
+                           [new THREE.ConeGeometry(0.23, 0.42, 7).translate(0, 0.93, 0), WHITE]]);
+  var hardGeo = mergeGeos([[stem(), STEM], [new THREE.DodecahedronGeometry(0.27, 0).translate(0, 0.6, 0), WHITE],
+                           [new THREE.ConeGeometry(0.1, 0.16, 5).translate(0, 0.9, 0), STEM]]);
+  var bloomParts = [[stem(), STEM], [new THREE.SphereGeometry(0.11, 10, 8).translate(0, 0.52, 0), [1, 0.92, 0.55]]];
+  for (var pi = 0; pi < 6; pi++) {
+    var a = pi / 6 * Math.PI * 2;
+    bloomParts.push([new THREE.SphereGeometry(0.13, 8, 6).scale(1.25, 0.32, 0.7).rotateY(-a).translate(Math.cos(a) * 0.2, 0.5, Math.sin(a) * 0.2), WHITE]);
+  }
+  var bloomGeo = mergeGeos(bloomParts);
+  function foodMat() { return new THREE.MeshLambertMaterial({color: 0xffffff, vertexColors: true}); }
+  var foodCap = [0, 0, 0];
+  FR.f.forEach(function (f) {
+    var c = [0, 0, 0];
+    for (var i = 0; i < f.length; i += 3) { var s = FOOD.get(f[i]); c[s.start >= 0 ? 2 : s.hard > 0 ? 1 : 0]++; }
+    for (var j = 0; j < 3; j++) foodCap[j] = Math.max(foodCap[j], c[j]);
+  });
+  var foodMesh = [inst(softGeo, foodMat(), foodCap[0], true), inst(hardGeo, foodMat(), foodCap[1], true), inst(bloomGeo, foodMat(), foodCap[2], true)];
+
+  var objGeo = [
+    new THREE.DodecahedronGeometry(0.2, 0).translate(0, 0.16, 0),                                  // stone
+    new THREE.CylinderGeometry(0.08, 0.08, 0.6, 7).rotateZ(Math.PI / 2).translate(0, 0.08, 0),    // wood
+    new THREE.TorusGeometry(0.15, 0.05, 6, 14).rotateX(Math.PI / 2).translate(0, 0.05, 0),        // fiber
+    new THREE.SphereGeometry(0.18, 10, 8).scale(1, 0.62, 1).translate(0, 0.11, 0),                // clay
+    new THREE.OctahedronGeometry(0.2, 0).translate(0, 0.2, 0),                                    // metal
+    new THREE.BoxGeometry(0.36, 0.28, 0.36).translate(0, 0.14, 0)                                 // composite
+  ];
+  var objCap = MATS.map(function () { return 0; });
+  FR.o.forEach(function (o) {
+    var c = MATS.map(function () { return 0; });
+    for (var i = 0; i < o.length; i += 4) { var s = OBJ.get(o[i]); c[s ? s.mat : 0]++; }
+    for (var j = 0; j < c.length; j++) objCap[j] = Math.max(objCap[j], c[j]);
+  });
+  var objMat = MATS.map(function () { return new THREE.MeshLambertMaterial({color: 0xffffff}); });
+  var objMesh = MATS.map(function (_, i) { return inst(objGeo[Math.min(i, objGeo.length - 1)], objMat[i], objCap[i], false); });
+
+  var bodyGeo = new THREE.SphereGeometry(1, 20, 14).translate(0, 1, 0);
+  var bodyMesh = inst(bodyGeo, new THREE.MeshLambertMaterial({color: 0xffffff}), MAX_ALIVE, true);
+  var noseMat = new THREE.MeshLambertMaterial({color: 0x333333});
+  var noseMesh = inst(new THREE.ConeGeometry(0.3, 0.7, 8).rotateX(Math.PI / 2), noseMat, MAX_ALIVE, false);
+  var haloMat = new THREE.MeshBasicMaterial({color: 0xd49a00});
+  var visitorIds = Object.keys(META.visitors || {}).map(Number);
+  var haloMesh = inst(new THREE.TorusGeometry(1, 0.07, 8, 40).rotateX(Math.PI / 2), haloMat, Math.max(1, visitorIds.length), false);
+
+  // energy / health ring: one instanced disc, arcs drawn in the fragment shader
+  var ringVert = [
+    'attribute float aE; attribute float aH; attribute float aC; attribute float aDim;',
+    'varying vec2 vP; varying float vE; varying float vH; varying float vC; varying float vDim;',
+    'void main(){ vP = position.xz; vE = aE; vH = aH; vC = aC; vDim = aDim; vec4 p = vec4(position, 1.0);',
+    '#ifdef USE_INSTANCING', ' p = instanceMatrix * p;', '#endif',
+    ' gl_Position = projectionMatrix * modelViewMatrix * p; }'].join('\n');
+  var ringFrag = [
+    'uniform vec3 uEnergy; uniform vec3 uHealth; uniform vec3 uScar; uniform vec3 uTrack;',
+    'varying vec2 vP; varying float vE; varying float vH; varying float vC; varying float vDim;',
+    'void main(){ float d = length(vP); float a = atan(vP.x, -vP.y) / 6.2831853; if (a < 0.0) a += 1.0;',
+    ' vec4 c;',
+    ' if (d <= 1.0 && d >= 0.84) { c = a <= vE ? vec4(uEnergy, 1.0) : vec4(uTrack, 0.55); }',
+    ' else if (d <= 0.78 && d >= 0.62) { c = a <= vH ? vec4(uHealth, 1.0) : (a <= vC ? vec4(uTrack, 0.55) : vec4(uScar, 0.95)); }',
+    ' else discard;',
+    ' c.a *= vDim; gl_FragColor = c; }'].join('\n');
+  var ringUniforms = {uEnergy: {value: new THREE.Color()}, uHealth: {value: new THREE.Color()}, uScar: {value: new THREE.Color()}, uTrack: {value: new THREE.Color()}};
+  var ringGeo = new THREE.CircleGeometry(1, 64).rotateX(-Math.PI / 2);
+  ['aE', 'aH', 'aC', 'aDim'].forEach(function (name) {
+    var attr = new THREE.InstancedBufferAttribute(new Float32Array(Math.max(1, MAX_ALIVE)), 1);
+    attr.setUsage(THREE.DynamicDrawUsage); ringGeo.setAttribute(name, attr);
+  });
+  var ringMesh = inst(ringGeo, new THREE.ShaderMaterial({uniforms: ringUniforms, vertexShader: ringVert, fragmentShader: ringFrag, transparent: true, depthWrite: false}), MAX_ALIVE, false);
+  ringMesh.renderOrder = 2;
+
+  // generic effects: per-instance colour and alpha; the ring variant draws a (dashed) circle clipped to the world
+  var fxVert = [
+    'attribute vec3 aColor; attribute float aAlpha; attribute float aWidth; attribute float aDash;',
+    'varying vec3 vColor; varying float vAlpha; varying float vWidth; varying float vDash; varying vec2 vP; varying vec2 vW;',
+    'void main(){ vColor = aColor; vAlpha = aAlpha; vWidth = aWidth; vDash = aDash; vP = position.xz; vec4 p = vec4(position, 1.0);',
+    '#ifdef USE_INSTANCING', ' p = instanceMatrix * p;', '#endif',
+    ' vec4 w = modelMatrix * p; vW = w.xz; gl_Position = projectionMatrix * modelViewMatrix * p; }'].join('\n');
+  var fxRingFrag = [
+    'uniform vec2 uHalf;',
+    'varying vec3 vColor; varying float vAlpha; varying float vWidth; varying float vDash; varying vec2 vP; varying vec2 vW;',
+    'void main(){ if (abs(vW.x) > uHalf.x || abs(vW.y) > uHalf.y) discard; float d = length(vP);',
+    ' if (d > 1.0 || d < 1.0 - vWidth) discard;',
+    ' if (vDash > 1.5) { float a = atan(vP.y, vP.x) / 6.2831853 + 0.5; if (fract(a * vDash) > 0.62) discard; }',
+    ' gl_FragColor = vec4(vColor, vAlpha); }'].join('\n');
+  var fxSolidFrag = 'varying vec3 vColor; varying float vAlpha; void main(){ gl_FragColor = vec4(vColor, vAlpha); }';
+  function fxMesh(geo, frag, cap) {
+    cap = Math.max(1, cap);
+    [['aColor', 3], ['aAlpha', 1], ['aWidth', 1], ['aDash', 1]].forEach(function (p) {
+      var attr = new THREE.InstancedBufferAttribute(new Float32Array(cap * p[1]), p[1]);
+      attr.setUsage(THREE.DynamicDrawUsage); geo.setAttribute(p[0], attr);
+    });
+    var mat = new THREE.ShaderMaterial({uniforms: {uHalf: {value: new THREE.Vector2(W / 2 + 1e-3, H / 2 + 1e-3)}}, vertexShader: fxVert,
+      fragmentShader: frag, transparent: true, depthWrite: false, side: THREE.DoubleSide});
+    var m = inst(geo, mat, cap, false); m.userData.cap = cap; m.renderOrder = 3; return m;
+  }
+  function ringGeometry() { return new THREE.CircleGeometry(1, 72).rotateX(-Math.PI / 2); }
+  var callMesh = fxMesh(ringGeometry(), fxRingFrag, 1200);
+  var burstMesh = fxMesh(ringGeometry(), fxRingFrag, 600);
+  var sightMesh = fxMesh(ringGeometry(), fxRingFrag, 4 * Math.max(1, CFG.predators || 1));
+  var sparkMesh = fxMesh(new THREE.OctahedronGeometry(1, 0), fxSolidFrag, 300);
+  var crossGeo = mergeGeos([[new THREE.BoxGeometry(1, 0.04, 0.16).rotateY(Math.PI / 4), WHITE], [new THREE.BoxGeometry(1, 0.04, 0.16).rotateY(-Math.PI / 4), WHITE]]);
+  var crossMesh = fxMesh(crossGeo, fxSolidFrag, 300);
+  var pulseMesh = fxMesh(new THREE.BoxGeometry(1, 1, 1), fxSolidFrag, 200);
+  var ghostMesh = fxMesh(new THREE.ConeGeometry(0.45, 1.2, 5).translate(0, 0.6, 0), fxSolidFrag, 64);
+  [sparkMesh, crossMesh, pulseMesh, ghostMesh].forEach(function (m) { m.renderOrder = 4; });
+
+  var predMat = new THREE.MeshLambertMaterial({color: 0xffffff});
+  var predMesh = inst(new THREE.ConeGeometry(0.45, 1.2, 5).translate(0, 0.6, 0), predMat, Math.max(1, CFG.predators || 0) * 4, true);
+
+  // lines between participants (strikes, shares, teaching, a predator to its victim)
+  var LINE_CAP = 1200;
+  var lineGeo = new THREE.BufferGeometry();
+  var linePos = new Float32Array(LINE_CAP * 6), lineCol = new Float32Array(LINE_CAP * 8);
+  lineGeo.setAttribute('position', new THREE.BufferAttribute(linePos, 3).setUsage(THREE.DynamicDrawUsage));
+  lineGeo.setAttribute('lineColor', new THREE.BufferAttribute(lineCol, 4).setUsage(THREE.DynamicDrawUsage));
+  var lineMat = new THREE.ShaderMaterial({
+    vertexShader: 'attribute vec4 lineColor; varying vec4 vC; void main(){ vC = lineColor; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }',
+    fragmentShader: 'varying vec4 vC; void main(){ gl_FragColor = vC; }', transparent: true, depthWrite: false});
+  var lines = new THREE.LineSegments(lineGeo, lineMat); lines.frustumCulled = false; lines.renderOrder = 5; scene.add(lines);
+  lineGeo.setDrawRange(0, 0);
+
+  var selRing = new THREE.Mesh(new THREE.RingGeometry(0.9, 1, 48).rotateX(-Math.PI / 2), new THREE.MeshBasicMaterial({color: 0x000000, transparent: true, opacity: 0.9, depthWrite: false}));
+  var selPin = new THREE.Mesh(new THREE.ConeGeometry(0.16, 0.42, 12).rotateX(Math.PI), new THREE.MeshBasicMaterial({color: 0x000000}));
+  selRing.visible = selPin.visible = false; selRing.renderOrder = 6; scene.add(selRing); scene.add(selPin);
+
+  // ---------------------------------------------------------------- colours
+  var COL = {};
+  function tok(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || '#888888'; }
+  function applyTheme() {
+    COL.lin = []; for (var i = 1; i <= 8; i++) COL.lin.push(new THREE.Color(tok('--lin' + i)));
+    COL.other = new THREE.Color(tok('--lin-other'));
+    COL.ramp = [0, 1, 2, 3, 4].map(function (i) { return new THREE.Color(tok('--ramp' + i)); });
+    COL.sym = [0, 1, 2, 3].map(function (i) { return new THREE.Color(tok('--sym' + i)); });
+    COL.food = [new THREE.Color(tok('--food-soft')), new THREE.Color(tok('--food-hard')), new THREE.Color(tok('--food-bloom'))];
+    COL.ground = new THREE.Color(tok('--ground'));
+    ['predator', 'predator-sated', 'birth', 'strike', 'share', 'learn', 'composite', 'visitor', 'select'].forEach(function (n) { COL[n] = new THREE.Color(tok('--' + n)); });
+    COL.death = REASONS.map(function (r) { return new THREE.Color(tok('--death-' + r)); }).concat([new THREE.Color(tok('--death-other'))]);
+    COL.css = {grid: tok('--grid'), line: tok('--lin1'), ink: tok('--ink'), ink2: tok('--ink-2')};
+    var bg = new THREE.Color(tok('--scene-bg'));
+    scene.background = bg; scene.fog.color.copy(bg);
+    groundMat.color.copy(COL.ground); gridMat.color.set(tok('--grid')); borderMat.color.set(tok('--edge'));
+    ['stone', 'wood', 'fiber', 'clay', 'metal', 'composite'].forEach(function (n, i) { if (objMat[i]) objMat[i].color.set(tok('--' + n)); });
+    noseMat.color.set(tok('--nose')); haloMat.color.copy(COL.visitor);
+    ringUniforms.uEnergy.value.set(tok('--ring-energy')); ringUniforms.uHealth.value.set(tok('--ring-health'));
+    ringUniforms.uScar.value.set(tok('--ring-scar')); ringUniforms.uTrack.value.set(tok('--ring-track'));
+    selRing.material.color.copy(COL.select); selPin.material.color.copy(COL.select);
+    dirty = true; sparkDirty = true;
+  }
+  function rampColour(f, out) {
+    f = Math.max(0, Math.min(1, f)) * 4; var i = Math.min(3, Math.floor(f));
+    return out.copy(COL.ramp[i]).lerp(COL.ramp[i + 1], f - i);
+  }
+
+  // ---------------------------------------------------------------- state
+  var t = T0, playing = false, speed = 10, selected = null, following = false, colourMode = 'lineage';
+  var showCalls = true, showEvents = true, highlight = null, dirty = true, sparkDirty = true;
+  var cur = [], curMap = new Map(), heading = new Map();
+  var frameK = 0, liveCalls = 0;
+
+  function setColourVisibility() { $('lineage-block').hidden = colourMode !== 'lineage'; $('energy-block').hidden = colourMode !== 'energy'; }
+  function sizeOf(o) { return 0.34 * Math.sqrt(Math.max(0.05, o && o.body_mass ? o.body_mass : 1)); }
+
+  function setFx(mesh, n, x, y, z, sx, sy, sz, rotY, colour, alpha, width, dashes) {
+    if (n >= mesh.userData.cap) return n;
+    dummy.position.set(x, y, z); dummy.rotation.set(0, rotY || 0, 0); dummy.scale.set(sx, sy, sz); dummy.updateMatrix();
+    mesh.setMatrixAt(n, dummy.matrix);
+    var g = mesh.geometry.attributes;
+    g.aColor.setXYZ(n, colour.r, colour.g, colour.b); g.aAlpha.setX(n, alpha); g.aWidth.setX(n, width || 1); g.aDash.setX(n, dashes || 1);
+    return n + 1;
+  }
+  function finishFx(mesh, n) {
+    mesh.count = n; mesh.instanceMatrix.needsUpdate = true;
+    var g = mesh.geometry.attributes; g.aColor.needsUpdate = g.aAlpha.needsUpdate = g.aWidth.needsUpdate = g.aDash.needsUpdate = true;
+  }
+  function sx(x) { return x - W / 2; }
+  function sz(y) { return y - H / 2; }
+  // a ring at (x, y) on the torus: drawn again across each edge it crosses (the shader clips to the world)
+  function ringCopies(mesh, n, x, y, radius, colour, alpha, width, dashes, lift) {
+    for (var ox = -1; ox <= 1; ox++) for (var oy = -1; oy <= 1; oy++) {
+      var cx = x + ox * W, cy = y + oy * H;
+      if (cx + radius < 0 || cx - radius > W || cy + radius < 0 || cy - radius > H) continue;
+      n = setFx(mesh, n, sx(cx), lift, sz(cy), radius, 1, radius, 0, colour, alpha, Math.min(1, width / Math.max(radius, 1e-3)), dashes);
+    }
+    return n;
+  }
+
+  function update() {
+    var k = frameAt(t), k2 = Math.min(NF - 1, k + 1);
+    var span = T[k2] - T[k], f = span > 0 ? Math.max(0, Math.min(1, (t - T[k]) / span)) : 0;
+    frameK = k;
+    var A = FR.a[k], B = FR.a[k2], bi = agentIndex(k2);
+    cur.length = 0; curMap.clear();
+    var n = 0, aE = ringGeo.attributes.aE, aH = ringGeo.attributes.aH, aC = ringGeo.attributes.aC, aDim = ringGeo.attributes.aDim;
+    var nh = 0;
+    for (var i = 0; i < A.length; i += 6) {
+      var id = A[i], x = A[i + 1] / 100, y = A[i + 2] / 100, e = A[i + 3] / 10, h = A[i + 4] / 100, act = A[i + 5];
+      var j = bi.get(id), dx = 0, dy = 0;
+      if (j !== undefined && k2 !== k) {
+        dx = wrapD(B[j + 1] / 100 - x, W); dy = wrapD(B[j + 2] / 100 - y, H);
+        x = mod(x + dx * f, W); y = mod(y + dy * f, H);
+        e += (B[j + 3] / 10 - e) * f; h += (B[j + 4] / 100 - h) * f;
+        if (f > 0.5 && B[j + 5] >= 0) act = B[j + 5];
+      }
+      if (dx * dx + dy * dy > 1e-6) heading.set(id, Math.atan2(dx, dy));
+      var o = IND.get(id) || {}, r = sizeOf(o), dim = highlight !== null && o.founder !== highlight;
+      var state = {id: id, x: x, y: y, e: e, h: h, act: act, r: r};
+      cur.push(state); curMap.set(id, state);
+      dummy.position.set(sx(x), 0, sz(y)); dummy.rotation.set(0, 0, 0); dummy.scale.set(r, r * 0.88, r); dummy.updateMatrix();
+      bodyMesh.setMatrixAt(n, dummy.matrix);
+      if (colourMode === 'energy') rampColour(e / MAXE, tmpColor);
+      else { var slot = SLOTS.get(o.founder); tmpColor.copy(slot === undefined ? COL.other : COL.lin[slot]); }
+      if (dim) tmpColor.lerp(COL.ground, 0.72);
+      bodyMesh.setColorAt(n, tmpColor);
+      var ang = heading.has(id) ? heading.get(id) : hash(id) * Math.PI * 2;
+      dummy.position.set(sx(x) + Math.sin(ang) * r * 0.92, r * 0.95, sz(y) + Math.cos(ang) * r * 0.92);
+      dummy.rotation.set(0, ang, 0); dummy.scale.set(r, r, r); dummy.updateMatrix();
+      noseMesh.setMatrixAt(n, dummy.matrix);
+      var R = r + 0.22;
+      dummy.position.set(sx(x), 0.02, sz(y)); dummy.rotation.set(0, 0, 0); dummy.scale.set(R, 1, R); dummy.updateMatrix();
+      ringMesh.setMatrixAt(n, dummy.matrix);
+      aE.setX(n, Math.max(0, Math.min(1, e / MAXE))); aH.setX(n, Math.max(0, Math.min(1, h)));
+      aC.setX(n, 1 - scarAt(id, t)); aDim.setX(n, dim ? 0.25 : 1);
+      if (o.visitor) {
+        dummy.position.set(sx(x), r * 1.95 + 0.25, sz(y)); dummy.rotation.set(0, 0, 0); dummy.scale.set(r * 0.9, r * 0.9, r * 0.9); dummy.updateMatrix();
+        haloMesh.setMatrixAt(nh++, dummy.matrix);
+      }
+      n++;
+    }
+    [bodyMesh, noseMesh, ringMesh].forEach(function (m) { m.count = n; m.instanceMatrix.needsUpdate = true; });
+    if (bodyMesh.instanceColor) bodyMesh.instanceColor.needsUpdate = true;
+    aE.needsUpdate = aH.needsUpdate = aC.needsUpdate = aDim.needsUpdate = true;
+    haloMesh.count = nh; haloMesh.instanceMatrix.needsUpdate = true;
+
+    // food
+    var Fd = FR.f[k], fc = [0, 0, 0], foodUnits = 0, blooms = 0;
+    for (var q = 0; q < Fd.length; q += 3) {
+      var fs = FOOD.get(Fd[q]), amount = Fd[q + 1] / 10, kind = fs.start >= 0 ? 2 : fs.hard > 0 ? 1 : 0;
+      foodUnits += amount; if (kind === 2 && amount > 0) blooms++;
+      var sc = 0.32 + 0.9 * Math.sqrt(Math.max(0, Math.min(1, amount / Math.max(fs.cap, 1e-6))));
+      dummy.position.set(sx(fs.x), 0, sz(fs.y)); dummy.rotation.set(0, hash(Fd[q]) * 6.283, 0); dummy.scale.set(sc, sc, sc); dummy.updateMatrix();
+      var fm = foodMesh[kind]; if (fc[kind] >= foodCap[kind]) continue;
+      fm.setMatrixAt(fc[kind], dummy.matrix);
+      tmpColor.copy(COL.food[kind]);
+      if (kind === 1) tmpColor.lerp(COL.food[0], 0.5 * Fd[q + 2] / 100);  // an opened shell turns toward soft
+      fm.setColorAt(fc[kind]++, tmpColor);
+    }
+    foodMesh.forEach(function (m, i) { m.count = fc[i]; m.instanceMatrix.needsUpdate = true; if (m.instanceColor) m.instanceColor.needsUpdate = true; });
+
+    // objects
+    var O = FR.o[k], oc = MATS.map(function () { return 0; }), held = new Map();
+    for (var u = 0; u < O.length; u += 4) {
+      var oid = O[u], os = OBJ.get(oid) || {mat: 0, mass: 1}, mi = os.mat, holder = O[u + 3], s3 = Math.cbrt(Math.max(0.2, os.mass));
+      var hx = O[u + 1] / 100, hy = O[u + 2] / 100, lift = 0;
+      if (holder && curMap.has(holder)) {
+        var hs = curMap.get(holder), slotN = held.get(holder) || 0; held.set(holder, slotN + 1);
+        var ha = (heading.has(holder) ? heading.get(holder) : 0) + Math.PI / 2 + slotN * 0.7;
+        hx = hs.x + Math.sin(ha) * (hs.r + 0.14); hy = hs.y + Math.cos(ha) * (hs.r + 0.14); lift = hs.r * 0.7; s3 *= 0.55;
+      }
+      if (oc[mi] >= objCap[mi]) continue;
+      dummy.position.set(sx(hx), lift, sz(hy)); dummy.rotation.set(0, hash(oid) * 6.283, 0); dummy.scale.set(s3, s3, s3); dummy.updateMatrix();
+      objMesh[mi].setMatrixAt(oc[mi]++, dummy.matrix);
+    }
+    objMesh.forEach(function (m, i) { m.count = oc[i]; m.instanceMatrix.needsUpdate = true; });
+
+    // predators
+    var np = 0, ns = 0, nGhost = 0, predCount = 0;
+    if (FR.p) {
+      var P = FR.p[k], P2 = FR.p[k2];
+      for (var w = 0; w < P.length; w += 4) {
+        var px = P[w + 1] / 100, py = P[w + 2] / 100, cd = P[w + 3];
+        if (k2 !== k && P2 && P2[w] === P[w]) { px = mod(px + wrapD(P2[w + 1] / 100 - px, W) * f, W); py = mod(py + wrapD(P2[w + 2] / 100 - py, H) * f, H); }
+        dummy.position.set(sx(px), 0, sz(py)); dummy.rotation.set(0, hash(P[w]) * 6.283, 0); dummy.scale.set(1, 1, 1); dummy.updateMatrix();
+        predMesh.setMatrixAt(np, dummy.matrix); predMesh.setColorAt(np++, cd > 0 ? COL['predator-sated'] : COL.predator);
+        if (SIGHT > 0) ns = ringCopies(sightMesh, ns, px, py, SIGHT, cd > 0 ? COL['predator-sated'] : COL.predator, 0.35, 0.05, 1, 0.012);
+        predCount++;
+      }
+    }
+    predMesh.count = np; predMesh.instanceMatrix.needsUpdate = true; if (predMesh.instanceColor) predMesh.instanceColor.needsUpdate = true;
+    finishFx(sightMesh, ns);
+
+    // calls
+    var nc = 0; liveCalls = 0;
+    if (showCalls) {
+      for (var ci = lower(CALLS, t - TTL - 1, 1); ci < CALLS.length && CALLS[ci][1] <= t; ci++) {
+        var call = CALLS[ci], age = t - call[1];
+        if (age < 0 || age >= TTL + 1) continue;
+        liveCalls++;
+        var life = 1 - age / (TTL + 1), radius = call[4] * Math.min(1, 0.15 + 0.85 * age), alpha = 0.85 * life * life;
+        nc = ringCopies(callMesh, nc, call[5] / 100, call[6] / 100, Math.max(0.05, radius), COL.sym[call[3] & 3], alpha, 0.075, (call[3] & 3) + 1, 0.03 + (ci % 7) * 0.002);
+      }
+    } else {
+      for (var cj = lower(CALLS, t - TTL - 1, 1); cj < CALLS.length && CALLS[cj][1] <= t; cj++) if (t - CALLS[cj][1] < TTL + 1) liveCalls++;
+    }
+    finishFx(callMesh, nc);
+
+    // events
+    var nb = 0, nsp = 0, nx = 0, npl = 0, nl = 0;
+    function line(ax, ay, bx, by, colour, alpha) {
+      if (ax < 0 || bx < 0 || nl >= LINE_CAP) return;
+      var x1 = ax / 100, y1 = ay / 100, x2 = x1 + wrapD(bx / 100 - x1, W), y2 = y1 + wrapD(by / 100 - y1, H);
+      linePos.set([sx(x1), 0.45, sz(y1), sx(x2), 0.45, sz(y2)], nl * 6);
+      lineCol.set([colour.r, colour.g, colour.b, alpha, colour.r, colour.g, colour.b, alpha], nl * 8);
+      nl++;
+    }
+    var horizon = 16;
+    for (var ei = lower(EV, t - horizon, 0); ei < EV.length && EV[ei][0] <= t; ei++) {
+      var ev = EV[ei], eAge = t - ev[0], kindName = KINDS[ev[1]];
+      if (eAge < 0) continue;
+      var ex = ev[4] / 100, ey = ev[5] / 100;
+      if (kindName === 'birth' && eAge < 8 && ev[4] >= 0) {
+        nsp = setFx(sparkMesh, nsp, sx(ex), 0.35 + eAge * 0.14, sz(ey), 0.16, 0.24, 0.16, eAge * 0.6, COL.birth, 1 - eAge / 8);
+      } else if (kindName === 'death' && eAge < 16 && ev[4] >= 0) {
+        nx = setFx(crossMesh, nx, sx(ex), 0.03, sz(ey), 0.75, 1, 0.75, 0, COL.death[Math.min(COL.death.length - 1, Math.max(0, ev[3]))], 1 - eAge / 16);
+      } else if (!showEvents) {
+        continue;
+      } else if (kindName === 'predation' && eAge < 8) {
+        if (ev[4] >= 0) nb = ringCopies(burstMesh, nb, ex, ey, 0.35 + eAge * 0.22, COL.predator, 1 - eAge / 8, 0.12, 1, 0.05);
+        if (ev[6] >= 0) line(ev[6], ev[7], ev[4], ev[5], COL.predator, 1 - eAge / 8);
+        if (!FR.p && META.predator_source === 'events' && eAge < 10) {
+          var gx2 = ev[6] >= 0 ? ev[6] / 100 : ex + 0.8, gy2 = ev[6] >= 0 ? ev[7] / 100 : ey;
+          nGhost = setFx(ghostMesh, nGhost, sx(gx2), 0, sz(gy2), 1, 1, 1, 0, COL.predator, 0.9 * (1 - eAge / 10));
+        }
+      } else if ((kindName === 'strike_agent' || kindName === 'strike_food' || kindName === 'strike_object') && eAge < 4) {
+        line(ev[4], ev[5], ev[6], ev[7], COL.strike, (ev[9] ? 1 : 0.7) * (1 - eAge / 4));
+        if (ev[6] >= 0) nb = ringCopies(burstMesh, nb, ev[6] / 100, ev[7] / 100, 0.18 + eAge * 0.12, COL.strike, 0.9 * (1 - eAge / 4), 0.08, 1, 0.06);
+      } else if (kindName === 'share' && eAge < 5) {
+        line(ev[4], ev[5], ev[6], ev[7], COL.share, 1 - eAge / 5);
+      } else if ((kindName === 'teach' || kindName === 'imitate') && eAge < 5) {
+        line(ev[4], ev[5], ev[6], ev[7], COL.learn, 1 - eAge / 5);
+      } else if ((kindName === 'combine' || kindName === 'dismantle') && eAge < 6 && ev[4] >= 0) {
+        var ps = 0.22 + eAge * 0.05;
+        npl = setFx(pulseMesh, npl, sx(ex), 0.9, sz(ey), ps, ps, ps, eAge, COL.composite, 0.85 * (1 - eAge / 6));
+      }
+    }
+    finishFx(burstMesh, nb); finishFx(sparkMesh, nsp); finishFx(crossMesh, nx); finishFx(pulseMesh, npl); finishFx(ghostMesh, nGhost);
+    lineGeo.attributes.position.needsUpdate = true; lineGeo.attributes.lineColor.needsUpdate = true; lineGeo.setDrawRange(0, nl * 2);
+
+    // selection
+    var sel = selected !== null ? curMap.get(selected) : null;
+    selRing.visible = selPin.visible = !!sel;
+    if (sel) {
+      var sr = sel.r + 0.42;
+      selRing.position.set(sx(sel.x), 0.025, sz(sel.y)); selRing.scale.set(sr, 1, sr);
+      selPin.position.set(sx(sel.x), sel.r * 1.9 + 0.55, sz(sel.y));
+    }
+
+    // header numbers
+    $('st-tick').textContent = Math.round(t); $('st-alive').textContent = A.length / 6;
+    $('st-food').textContent = Math.round(foodUnits); $('st-blooms').textContent = CFG.bloom_interval ? blooms : '–';
+    $('st-calls').textContent = liveCalls;
+    $('st-pred').textContent = FR.p ? predCount : (CFG.predators ? CFG.predators + ' (strikes only)' : '0');
+    $('ticklabel').textContent = 'tick ' + Math.round(t) + ' / ' + T1;
+    if (document.activeElement !== $('scrub')) $('scrub').value = Math.round(t);
+    sparkDirty = true;
+  }
+
+  // ---------------------------------------------------------------- labels (selected, visitors)
+  var labelLayer = $('labels'), labelEls = new Map(), proj = new THREE.Vector3();
+  function placeLabel(key, text, x, y, height, cls) {
+    var el = labelEls.get(key);
+    if (!el) { el = document.createElement('span'); el.className = 'tag ' + (cls || ''); labelLayer.appendChild(el); labelEls.set(key, el); }
+    if (el.textContent !== text) el.textContent = text;
+    proj.set(sx(x), height, sz(y)).project(camera);
+    var rect = canvas.getBoundingClientRect();
+    if (proj.z > 1) { el.style.display = 'none'; return; }
+    el.style.display = '';
+    el.style.transform = 'translate(' + ((proj.x + 1) / 2 * rect.width).toFixed(1) + 'px,' + ((1 - proj.y) / 2 * rect.height).toFixed(1) + 'px) translate(-50%,-115%)';
+    el._seen = true;
+  }
+  function updateLabels() {
+    labelEls.forEach(function (el) { el._seen = false; });
+    if (selected !== null && curMap.has(selected)) { var s = curMap.get(selected); placeLabel('sel', '#' + selected, s.x, s.y, s.r * 2 + 0.85, ''); }
+    visitorIds.forEach(function (id) {
+      var v = curMap.get(id); if (!v) return;
+      placeLabel('v' + id, (META.visitors[id] || 'visitor') + ' #' + id, v.x, v.y, v.r * 2 + 0.6, 'visitor');
+    });
+    labelEls.forEach(function (el, key) { if (!el._seen) { el.remove(); labelEls.delete(key); } });
+  }
+
+  // ---------------------------------------------------------------- panel
+  var panel = $('panel'), panelBody = $('panel-body'), lastPanel = '', lastPanelAt = 0;
+  function swatch(o) {
+    var slot = SLOTS.get(o.founder);
+    return '<span class="sw" style="color:' + (slot === undefined ? 'var(--lin-other)' : 'var(--lin' + (slot + 1) + ')') + '"></span>';
+  }
+  function idLink(id) { return id === null || id === undefined ? '–' : '<button type="button" class="link" data-select="' + id + '">#' + id + '</button>'; }
+  function bar(v, colour) { return '<span class="bar"><i style="width:' + Math.round(Math.max(0, Math.min(1, v)) * 100) + '%;background:' + colour + '"></i></span>'; }
+  function symChip(s) { return '<span class="chip"><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><circle cx="5" cy="5" r="4" fill="var(--sym' + (s & 3) + ')"/></svg>' + s + '</span>'; }
+  function phrase(e, mine) {
+    var kn = KINDS[e[1]], a = idLink(e[2]), b = idLink(e[3]), how = e[9] ? ' with a tool' : ' bare-handed';
+    switch (kn) {
+      case 'strike_agent': return mine ? 'struck ' + b + how : 'struck by ' + a;
+      case 'strike_food': return 'struck food' + how;
+      case 'strike_object': return 'struck an object' + how;
+      case 'share': return mine ? 'gave ' + fmt(e[8], 1) + ' energy to ' + b : 'got ' + fmt(e[8], 1) + ' energy from ' + a;
+      case 'teach': return mine ? 'taught ' + b : 'taught by ' + a;
+      case 'imitate': return mine ? 'imitated ' + b : 'imitated by ' + a;
+      case 'collect': return 'picked up an object';
+      case 'drop': return 'dropped an object';
+      case 'combine': return 'combined two objects into a composite';
+      case 'dismantle': return 'took a composite apart';
+      case 'heat': return 'heated its held object';
+      default: return esc(kn);
+    }
+  }
+  function panelHtml() {
+    var o = IND.get(selected); if (!o) return '<p>No record for this individual.</p>';
+    var tick = Math.round(t), st = curMap.get(selected), h = [];
+    var status;
+    if (st) status = 'Alive at tick ' + tick + ' · age ' + (tick - o.born) + ' · generation ' + o.generation;
+    else if (o.born !== null && tick < o.born) status = 'Not born yet at tick ' + tick + ' (born at tick ' + o.born + ')';
+    else if (o.died !== null && o.died !== undefined && tick >= o.died) status = 'Died at tick ' + o.died + ' (' + esc(REASONS[o.reason] || 'unknown') + ') at age ' + (o.died - o.born);
+    else status = 'Not in this frame';
+    h.push('<p class="status">' + status + '</p>');
+    var scar = scarAt(selected, t);
+    var wounds = 0, byPred = 0, byOthers = 0, kids = (CHILDREN.get(selected) || []).filter(function (c) { return c.born <= tick; });
+    var notable = [];
+    (EV_BY.get(selected) || []).forEach(function (i) {
+      var e = EV[i]; if (e[0] > tick) return;
+      var kn = KINDS[e[1]];
+      if (kn === 'predation' && e[2] === selected) { wounds++; byPred++; }
+      if (kn === 'strike_agent' && e[3] === selected) { wounds++; byOthers++; }
+      if (kn !== 'birth' && kn !== 'death' && kn !== 'predation') notable.push(e);
+    });
+    h.push('<dl>');
+    h.push('<dt>Parent</dt><dd>' + (o.parent === null || o.parent === undefined ? 'none (founder)' : idLink(o.parent)) + '</dd>');
+    var slot = SLOTS.get(o.founder);
+    h.push('<dt>Lineage</dt><dd>' + swatch(o) + ' founder ' + idLink(o.founder) + (slot === undefined ? ' (grey: other lineage)' : '') + '</dd>');
+    h.push('<dt>Born</dt><dd>tick ' + o.born + ' · lifespan ' + (o.lifespan || '–') + '</dd>');
+    if (st) {
+      h.push('<dt>Energy</dt><dd>' + st.e.toFixed(1) + ' / ' + MAXE + bar(st.e / MAXE, 'var(--ring-energy)') + '</dd>');
+      h.push('<dt>Health</dt><dd>' + st.h.toFixed(2) + (scar > 0 ? ' (ceiling ' + (1 - scar).toFixed(2) + ')' : '') + bar(st.h, 'var(--ring-health)') + '</dd>');
+      h.push('<dt>Doing</dt><dd>' + (st.act >= 0 ? esc(ACTS[st.act]) : '–') + '</dd>');
+    }
+    h.push('<dt>Scars</dt><dd>' + (scar > 0 ? scar.toFixed(3) + ' of health lost for good' : 'none') + '</dd>');
+    h.push('<dt>Wounds</dt><dd>' + wounds + (wounds ? ' (' + byPred + ' by predators, ' + byOthers + ' by others)' : '') + '</dd>');
+    h.push('<dt>Offspring</dt><dd>' + kids.length + (kids.length ? ': ' + kids.slice(0, 12).map(function (c) { return idLink(c.id); }).join(' ') + (kids.length > 12 ? ' …' : '') : '') + '</dd>');
+    h.push('</dl>');
+    var heldList = [], O = FR.o[frameK];
+    for (var u = 0; u < O.length; u += 4) if (O[u + 3] === selected) { var ob = OBJ.get(O[u]); heldList.push(ob ? MATS[ob.mat] + (ob.parts ? ' (composite of ' + ob.comp.map(function (c) { return MATS[c[0]]; }).join(' + ') + ')' : '') : 'object'); }
+    if (heldList.length) h.push('<h3>Holding</h3><p>' + esc(heldList.join(', ')) + '</p>');
+    h.push('<h3>Anatomy (inherited)</h3><dl>');
+    h.push('<dt>Body mass</dt><dd>' + fmt(o.body_mass) + '</dd><dt>Speed</dt><dd>' + fmt(o.speed) + '</dd>');
+    h.push('<dt>Sensing</dt><dd>' + fmt(o.sensing) + ' (sight ' + fmt(2.5 + 2.5 * (o.sensing || 0), 1) + ')</dd>');
+    h.push('<dt>Manipulation</dt><dd>' + fmt(o.manipulation) + '</dd><dt>Metabolism</dt><dd>' + fmt(o.metabolism) + '</dd>');
+    h.push('<dt>Voice / hearing</dt><dd>' + (o.voice ? 'voice' : 'mute') + ' · ' + (o.hearing ? 'hears' : 'deaf') + '</dd>');
+    h.push('<dt>Call power</dt><dd>' + (o.call_power === null || o.call_power === undefined ? (CFG.call_power ? 'not recorded' : 'off (reach from sensing)') : fmt(o.call_power) + ' (reach ' + fmt(o.call_power * CALL_REACH, 1) + ')') + '</dd>');
+    h.push('</dl><h3>Genome (innate)</h3><dl>');
+    h.push('<dt>Learning rate</dt><dd>' + fmt(o.alpha, 3) + '</dd><dt>Exploration</dt><dd>' + fmt(o.epsilon, 3) + '</dd>');
+    h.push('<dt>Innate biases</dt><dd>' + (o.bias_entries || 0) + ' weights</dd>');
+    if (o.innate_eat !== null && o.innate_eat !== undefined) h.push('<dt>Innate P(eat)</dt><dd>' + fmt(o.innate_eat, 3) + ' <span class="status">food in reach</span></dd><dt>Innate P(call)</dt><dd>' + fmt(o.innate_call, 3) + '</dd>');
+    h.push('</dl>');
+    var runs = D.acts[selected] || [], recent = [];
+    for (var r = runs.length - 3; r >= 0 && recent.length < 8; r -= 3) {
+      if (runs[r] > tick) continue;
+      var end = Math.min(runs[r + 2], tick);
+      recent.push('<li>' + (end > runs[r] ? 'ticks ' + runs[r] + '–' + end : 'tick ' + runs[r]) + ': ' + esc(ACTS[runs[r + 1]]) + '</li>');
+    }
+    h.push('<h3>Recent actions</h3>' + (recent.length ? '<ol>' + recent.join('') + '</ol>' : '<p>None recorded yet.</p>'));
+    if (notable.length) {
+      h.push('<h3>Interactions</h3><ul>' + notable.slice(-6).reverse().map(function (e) {
+        return '<li>tick ' + e[0] + ': ' + phrase(e, e[2] === selected) + '</li>';
+      }).join('') + '</ul>');
+    }
+    var sent = (CALLS_BY.get(selected) || []).filter(function (i) { return CALLS[i][1] <= tick; });
+    var bySym = [0, 0, 0, 0]; sent.forEach(function (i) { bySym[CALLS[i][3] & 3]++; });
+    h.push('<h3>Calls</h3><dl><dt>Sent</dt><dd>' + sent.length + (sent.length ? ' (' + bySym.map(function (c, s) { return symChip(s) + '×' + c; }).join(' ') + ')' : '') + '</dd>');
+    var heard = D.heard[selected] || [], heardCount = 0, heardRecent = [];
+    if (META.heard_detail) {
+      for (var hi = 0; hi < heard.length; hi += 4) if (heard[hi] <= tick) { heardCount++; heardRecent.push(hi); }
+    } else heardCount = heard[0] || 0;
+    h.push('<dt>Heard</dt><dd>' + heardCount + (META.heard_detail ? '' : ' (whole run)') + '</dd></dl>');
+    if (sent.length) h.push('<p>Last sent: ' + sent.slice(-4).reverse().map(function (i) { return 'tick ' + CALLS[i][1] + ' ' + symChip(CALLS[i][3]); }).join(', ') + '</p>');
+    if (heardRecent.length) h.push('<p>Last heard:</p><ul>' + heardRecent.slice(-5).reverse().map(function (hi2) {
+      var sym = heard[hi2 + 2], sentSym = heard[hi2 + 3];
+      return '<li>tick ' + heard[hi2] + ' from ' + idLink(heard[hi2 + 1]) + ' ' + symChip(sym) + (sentSym >= 0 && sentSym !== sym ? ' (sent ' + sentSym + ', changed by noise)' : '') + '</li>';
+    }).join('') + '</ul>');
+    h.push('<h3>Visitor</h3><p>' + (o.visitor ? 'Yes: ' + esc((META.visitors || {})[selected] || 'visitor') : 'No (no visitor is set in this round)') + '</p>');
+    return h.join('');
+  }
+  function refreshPanel(force) {
+    if (selected === null) return;
+    var now = performance.now();
+    if (!force && now - lastPanelAt < 180) return;
+    lastPanelAt = now;
+    var html = panelHtml();
+    if (html === lastPanel) return;
+    var focused = document.activeElement && panelBody.contains(document.activeElement) ? document.activeElement.getAttribute('data-select') : null;
+    panelBody.innerHTML = html; lastPanel = html;
+    if (focused !== null) { var again = panelBody.querySelector('[data-select="' + focused + '"]'); if (again) again.focus(); }
+  }
+  function select(id) {
+    if (!IND.has(id)) return;
+    selected = id; panel.hidden = false;
+    var o = IND.get(id);
+    $('panel-title').innerHTML = swatch(o) + 'Individual #' + id;
+    lastPanel = ''; refreshPanel(true); dirty = true;
+  }
+  function closePanel() {
+    selected = null; following = false; $('follow').setAttribute('aria-pressed', 'false'); panel.hidden = true; dirty = true;
+    canvas.focus({preventScroll: true});
+  }
+  panelBody.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-select]'); if (b) select(+b.getAttribute('data-select'));
+  });
+  $('close').addEventListener('click', closePanel);
+  function toggleFollow() {
+    if (selected === null) return;
+    following = !following; $('follow').setAttribute('aria-pressed', following ? 'true' : 'false');
+    if (following) {
+      var off = camera.position.clone().sub(controls.target), len = off.length();
+      if (len > 16) camera.position.copy(controls.target).add(off.multiplyScalar(16 / len));
+    }
+  }
+  $('follow').addEventListener('click', toggleFollow);
+
+  // ---------------------------------------------------------------- lineage legend
+  function lineageCounts() {
+    var counts = new Map(), A = FR.a[frameK];
+    for (var i = 0; i < A.length; i += 6) { var o = IND.get(A[i]); var key = o && SLOTS.has(o.founder) ? o.founder : -1; counts.set(key, (counts.get(key) || 0) + 1); }
+    return counts;
+  }
+  function buildLineages() {
+    var html = (META.lineage_slots || []).map(function (f, i) {
+      return '<button type="button" class="lin" data-founder="' + f + '" aria-pressed="false"><span class="sw" style="color:var(--lin' + (i + 1) + ')"></span>Founder #' + f + '<span class="n" data-count="' + f + '">0</span></button>';
+    }).join('');
+    html += '<div class="lin" style="border:none;background:none"><span class="sw" style="color:var(--lin-other)"></span>Other lineages (' + Math.max(0, (META.lineages || 0) - (META.lineage_slots || []).length) + ')<span class="n" data-count="-1">0</span></div>';
+    $('lineages').innerHTML = html;
+  }
+  var lastCountsAt = 0;
+  function refreshCounts() {
+    var now = performance.now(); if (now - lastCountsAt < 400) return; lastCountsAt = now;
+    var counts = lineageCounts();
+    $('lineages').querySelectorAll('[data-count]').forEach(function (el) { el.textContent = (counts.get(+el.getAttribute('data-count')) || 0) + ' alive'; });
+  }
+  $('lineages').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-founder]'); if (!b) return;
+    var f = +b.getAttribute('data-founder');
+    highlight = highlight === f ? null : f;
+    $('lineages').querySelectorAll('[data-founder]').forEach(function (el) { el.setAttribute('aria-pressed', +el.getAttribute('data-founder') === highlight ? 'true' : 'false'); });
+    dirty = true;
+  });
+
+  // ---------------------------------------------------------------- population sparkline
+  var spark = $('spark'), sctx = spark.getContext('2d'), tip = $('sparktip');
+  var POP = D.population || [T, FR.a.map(function (a) { return a.length / 6; })];
+  var POP_MAX = Math.max.apply(null, [1].concat(POP[1]));
+  function sparkX(tick, w) { return 4 + (tick - T0) / Math.max(1, T1 - T0) * (w - 8); }
+  function drawSpark() {
+    var dpr = Math.min(2, window.devicePixelRatio || 1), w = spark.clientWidth, h = spark.clientHeight;
+    if (spark.width !== Math.round(w * dpr)) { spark.width = Math.round(w * dpr); spark.height = Math.round(h * dpr); }
+    sctx.setTransform(dpr, 0, 0, dpr, 0, 0); sctx.clearRect(0, 0, w, h);
+    sctx.strokeStyle = COL.css.grid; sctx.lineWidth = 1; sctx.beginPath(); sctx.moveTo(0, h - 3.5); sctx.lineTo(w, h - 3.5); sctx.stroke();
+    sctx.strokeStyle = COL.css.line; sctx.lineWidth = 2; sctx.lineJoin = 'round'; sctx.beginPath();
+    for (var i = 0; i < POP[0].length; i++) { var x = sparkX(POP[0][i], w), y = h - 4 - POP[1][i] / POP_MAX * (h - 10); if (i) sctx.lineTo(x, y); else sctx.moveTo(x, y); }
+    sctx.stroke();
+    var cx = sparkX(t, w); sctx.strokeStyle = COL.css.ink; sctx.lineWidth = 1.5; sctx.beginPath(); sctx.moveTo(cx, 0); sctx.lineTo(cx, h); sctx.stroke();
+    sctx.fillStyle = COL.css.ink2; sctx.font = '11px system-ui,sans-serif'; sctx.textBaseline = 'top';
+    sctx.fillText('alive (max ' + POP_MAX + ')', 6, 1);
+    sparkDirty = false;
+  }
+  function sparkTick(clientX) { var rect = spark.getBoundingClientRect(); var f = (clientX - rect.left - 4) / Math.max(1, rect.width - 8); return Math.round(T0 + Math.max(0, Math.min(1, f)) * (T1 - T0)); }
+  var scrubbing = false;
+  spark.addEventListener('pointerdown', function (e) { scrubbing = true; spark.setPointerCapture(e.pointerId); setTick(sparkTick(e.clientX)); });
+  spark.addEventListener('pointermove', function (e) {
+    var tick = sparkTick(e.clientX), lo = 0, hi = POP[0].length - 1;
+    while (lo < hi) { var mid = (lo + hi) >> 1; if (POP[0][mid] < tick) lo = mid + 1; else hi = mid; }
+    var i = lo;
+    var rect = spark.getBoundingClientRect();
+    tip.hidden = false; tip.style.left = (e.clientX - rect.left) + 'px'; tip.textContent = 'tick ' + POP[0][i] + ': ' + POP[1][i] + ' alive';
+    if (scrubbing) setTick(tick);
+  });
+  spark.addEventListener('pointerup', function () { scrubbing = false; });
+  spark.addEventListener('pointerleave', function () { tip.hidden = true; });
+
+  // ---------------------------------------------------------------- controls
+  function setPlaying(on) {
+    playing = on;
+    $('play-text').textContent = on ? 'Pause' : 'Play'; $('play').setAttribute('aria-label', on ? 'Pause' : 'Play');
+    $('play-icon').setAttribute('d', on ? 'M3 1.5h3v11H3zM8 1.5h3v11H8z' : 'M3 1.5v11l9-5.5z');
+  }
+  function setTick(v) { t = Math.max(T0, Math.min(T1, v)); dirty = true; }
+  function step(n) { var k = frameAt(t); if (T[k] < t && n < 0) n += 1; setTick(T[Math.max(0, Math.min(NF - 1, k + n))]); }
+  $('play').addEventListener('click', function () { if (!playing && t >= T1) t = T0; setPlaying(!playing); });
+  $('prev').addEventListener('click', function () { setPlaying(false); step(-1); });
+  $('next').addEventListener('click', function () { setPlaying(false); step(1); });
+  $('speed').addEventListener('change', function (e) { speed = +e.target.value; });
+  var scrub = $('scrub'); scrub.min = T0; scrub.max = T1; scrub.value = T0;
+  scrub.addEventListener('input', function (e) { setTick(+e.target.value); });
+  $('show-calls').addEventListener('change', function (e) { showCalls = e.target.checked; dirty = true; });
+  $('show-events').addEventListener('change', function (e) { showEvents = e.target.checked; dirty = true; });
+  $('colour-mode').addEventListener('change', function (e) { colourMode = e.target.value; setColourVisibility(); dirty = true; });
+  var pick = $('pick');
+  function fillPick() {
+    var A = FR.a[frameK], ids = [];
+    for (var i = 0; i < A.length; i += 6) ids.push(A[i]);
+    ids.sort(function (a, b) { return a - b; });
+    pick.innerHTML = '<option value="">individual… (' + ids.length + ' alive)</option>' + ids.map(function (id) {
+      var o = IND.get(id) || {}; return '<option value="' + id + '"' + (id === selected ? ' selected' : '') + '>#' + id + ' · founder ' + o.founder + ' · gen ' + o.generation + '</option>';
+    }).join('');
+  }
+  pick.addEventListener('focus', fillPick); pick.addEventListener('mousedown', fillPick);
+  pick.addEventListener('change', function () { if (pick.value) select(+pick.value); });
+  $('reset').addEventListener('click', function () { following = false; $('follow').setAttribute('aria-pressed', 'false'); resetView(); });
+
+  function orbit(angle) {
+    var off = camera.position.clone().sub(controls.target);
+    off.applyAxisAngle(new THREE.Vector3(0, 1, 0), angle); camera.position.copy(controls.target).add(off);
+  }
+  function zoom(factor) {
+    var off = camera.position.clone().sub(controls.target), len = off.length() * factor;
+    len = Math.max(controls.minDistance, Math.min(controls.maxDistance, len));
+    camera.position.copy(controls.target).add(off.setLength(len));
+  }
+  document.addEventListener('keydown', function (e) {
+    var tag = (e.target.tagName || '').toLowerCase();
+    if (tag === 'input' || tag === 'select' || tag === 'textarea' || e.ctrlKey || e.metaKey || e.altKey) return;
+    var key = e.key, handled = true;
+    if (key === ' ' && tag === 'button') return;  // Space activates the focused button
+    if (key === ' ' || key === 'k' || key === 'K') { if (!playing && t >= T1) t = T0; setPlaying(!playing); }
+    else if (key === 'ArrowRight') { setPlaying(false); step(e.shiftKey ? 10 : 1); }
+    else if (key === 'ArrowLeft') { setPlaying(false); step(e.shiftKey ? -10 : -1); }
+    else if (key === 'Home') { setTick(T0); } else if (key === 'End') { setTick(T1); }
+    else if (key === 'f' || key === 'F') toggleFollow();
+    else if (key === 'c' || key === 'C') { $('show-calls').click(); }
+    else if (key === 'e' || key === 'E') { $('show-events').click(); }
+    else if (key === 'm' || key === 'M') { var cm = $('colour-mode'); cm.value = cm.value === 'lineage' ? 'energy' : 'lineage'; cm.dispatchEvent(new Event('change')); }
+    else if (key === ',') orbit(0.17); else if (key === '.') orbit(-0.17);
+    else if (key === '+' || key === '=') zoom(0.85); else if (key === '-' || key === '_') zoom(1 / 0.85);
+    else if (key === 'Escape') { if (selected !== null) closePanel(); else handled = false; }
+    else handled = false;
+    if (handled) e.preventDefault();
+  });
+
+  // picking: a click (not a drag) selects the individual nearest the pointer on screen
+  var down = null, pv = new THREE.Vector3(), hoverQueued = false, hoverEvent = null;
+  function pickAt(cx, cy, radius) {
+    var rect = canvas.getBoundingClientRect(), best = null, bd = radius;
+    for (var i = 0; i < cur.length; i++) {
+      var s = cur[i]; pv.set(sx(s.x), s.r, sz(s.y)).project(camera);
+      if (pv.z > 1) continue;
+      var px = rect.left + (pv.x + 1) / 2 * rect.width, py = rect.top + (1 - pv.y) / 2 * rect.height, d = Math.hypot(px - cx, py - cy);
+      if (d < bd) { bd = d; best = s.id; }
+    }
+    return best;
+  }
+  canvas.addEventListener('pointerdown', function (e) { down = {x: e.clientX, y: e.clientY}; });
+  canvas.addEventListener('pointerup', function (e) {
+    if (!down || Math.hypot(e.clientX - down.x, e.clientY - down.y) > 6) { down = null; return; }
+    down = null;
+    var id = pickAt(e.clientX, e.clientY, e.pointerType === 'touch' ? 34 : 22);
+    if (id !== null) select(id);
+  });
+  canvas.addEventListener('pointermove', function (e) {
+    if (e.buttons) return; hoverEvent = e;
+    if (hoverQueued) return; hoverQueued = true;
+    requestAnimationFrame(function () { hoverQueued = false; canvas.style.cursor = pickAt(hoverEvent.clientX, hoverEvent.clientY, 22) !== null ? 'pointer' : 'grab'; });
+  });
+
+  // ---------------------------------------------------------------- view
+  function resize() {
+    var w = stage.clientWidth, h = stage.clientHeight;
+    renderer.setSize(w, h, false); camera.aspect = w / Math.max(1, h); camera.updateProjectionMatrix();
+    sparkDirty = true;
+  }
+  function resetView() {
+    var vf = camera.fov * Math.PI / 180, hf = 2 * Math.atan(Math.tan(vf / 2) * camera.aspect);
+    var portrait = camera.aspect < 1;
+    var need = Math.max((W / 2) / Math.tan(hf / 2), (H / 2) / Math.tan(vf / 2)) * (portrait ? 1.02 : 1.15) + (portrait ? 0 : 2);
+    var el = (portrait ? 64 : 54) * Math.PI / 180;
+    controls.target.set(0, 0, 0); camera.position.set(0, need * Math.sin(el), need * Math.cos(el)); controls.update();
+  }
+  function followStep() {
+    if (!following || selected === null) return;
+    var s = curMap.get(selected); if (!s) return;
+    var dx = sx(s.x) - controls.target.x, dz = sz(s.y) - controls.target.z;
+    var jump = REDUCED || Math.abs(dx) > W / 3 || Math.abs(dz) > H / 3, kf = jump ? 1 : 0.12;
+    controls.target.x += dx * kf; controls.target.z += dz * kf; camera.position.x += dx * kf; camera.position.z += dz * kf;
+  }
+  if (window.ResizeObserver) new ResizeObserver(resize).observe(stage); else window.addEventListener('resize', resize);
+  if (window.matchMedia) {
+    var dm = matchMedia('(prefers-color-scheme: dark)');
+    if (dm.addEventListener) dm.addEventListener('change', applyTheme); else if (dm.addListener) dm.addListener(applyTheme);
+  }
+
+  var last = performance.now(), pinPhase = 0;
+  function loop(now) {
+    var dt = Math.min(0.1, (now - last) / 1000); last = now;
+    if (playing) { t += dt * speed; if (t >= T1) { t = T1; setPlaying(false); } dirty = true; }
+    if (dirty) { update(); dirty = false; refreshPanel(false); refreshCounts(); }
+    if (sparkDirty) drawSpark();
+    if (selPin.visible && !REDUCED) { pinPhase += dt * 3; selPin.position.y += Math.sin(pinPhase) * 0.004; }
+    followStep(); controls.update(); renderer.render(scene, camera); updateLabels();
+    requestAnimationFrame(loop);
+  }
+  buildLineages(); setColourVisibility(); applyTheme(); resize(); resetView(); update(); refreshCounts(); drawSpark();
+  if (!REDUCED && NF > 1) setPlaying(true);
+  requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>

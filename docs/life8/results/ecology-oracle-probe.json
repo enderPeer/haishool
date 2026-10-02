@@ -1,0 +1,259 @@
+{
+ "note": "diagnostic only: oracle senders use a supplied mapping",
+ "preset": {
+  "food_patches": 30,
+  "bloom_interval": 8,
+  "bloom_amount": 16.0,
+  "bloom_ttl": 25,
+  "bloom_richness": 2.0,
+  "predators": 2,
+  "predator_speed": 0.6,
+  "predator_mass": 1.5,
+  "predator_damage": 0.25,
+  "predator_sight": 5.0,
+  "predator_visibility": 0.6,
+  "predator_cooldown": 15,
+  "permanent_injury": 0.25,
+  "health_ability": true,
+  "strike_injury": 0.2,
+  "injury_mass_scaling": true,
+  "call_power": true,
+  "call_reach": 8.0,
+  "kin_credit": 1.0,
+  "kin_window": 8,
+  "receiver_features": true,
+  "reciprocity_features": true,
+  "genome": "evolving"
+ },
+ "ticks": 1200,
+ "per_seed": [
+  {
+   "seed": 1,
+   "normal": {
+    "seed": 1,
+    "channel": "normal",
+    "oracle": true,
+    "ticks_run": 1200,
+    "stop_reason": "step_budget",
+    "population": 25,
+    "births": 222,
+    "predator_strikes_per_1000_agent_ticks": 3.8596,
+    "bloom_meals_per_1000_agent_ticks": 11.9407,
+    "deaths_by_predation": 28
+   },
+   "scrambled": {
+    "seed": 1,
+    "channel": "scrambled",
+    "oracle": true,
+    "ticks_run": 1200,
+    "stop_reason": "step_budget",
+    "population": 10,
+    "births": 169,
+    "predator_strikes_per_1000_agent_ticks": 6.1845,
+    "bloom_meals_per_1000_agent_ticks": 8.5954,
+    "deaths_by_predation": 24
+   },
+   "receiver_normal_excess": 0.003517,
+   "receiver_scrambled_excess": 0.003011,
+   "receiver_over_scrambled": 0.000506,
+   "receiver_p": 0.004975
+  },
+  {
+   "seed": 2,
+   "normal": {
+    "seed": 2,
+    "channel": "normal",
+    "oracle": true,
+    "ticks_run": 1200,
+    "stop_reason": "step_budget",
+    "population": 18,
+    "births": 179,
+    "predator_strikes_per_1000_agent_ticks": 4.5394,
+    "bloom_meals_per_1000_agent_ticks": 11.393,
+    "deaths_by_predation": 27
+   },
+   "scrambled": {
+    "seed": 2,
+    "channel": "scrambled",
+    "oracle": true,
+    "ticks_run": 1200,
+    "stop_reason": "step_budget",
+    "population": 10,
+    "births": 123,
+    "predator_strikes_per_1000_agent_ticks": 7.2805,
+    "bloom_meals_per_1000_agent_ticks": 7.0565,
+    "deaths_by_predation": 21
+   },
+   "receiver_normal_excess": 0.005777,
+   "receiver_scrambled_excess": -0.002513,
+   "receiver_over_scrambled": 0.00829,
+   "receiver_p": 0.004975
+  },
+  {
+   "seed": 3,
+   "normal": {
+    "seed": 3,
+    "channel": "normal",
+    "oracle": true,
+    "ticks_run": 1200,
+    "stop_reason": "step_budget",
+    "population": 8,
+    "births": 139,
+    "predator_strikes_per_1000_agent_ticks": 7.2845,
+    "bloom_meals_per_1000_agent_ticks": 12.5455,
+    "deaths_by_predation": 29
+   },
+   "scrambled": {
+    "seed": 3,
+    "channel": "scrambled",
+    "oracle": true,
+    "ticks_run": 1200,
+    "stop_reason": "step_budget",
+    "population": 44,
+    "births": 208,
+    "predator_strikes_per_1000_agent_ticks": 2.4178,
+    "bloom_meals_per_1000_agent_ticks": 13.8224,
+    "deaths_by_predation": 24
+   },
+   "receiver_normal_excess": 0.006942,
+   "receiver_scrambled_excess": 0.001557,
+   "receiver_over_scrambled": 0.005385,
+   "receiver_p": 0.004975
+  },
+  {
+   "seed": 4,
+   "normal": {
+    "seed": 4,
+    "channel": "normal",
+    "oracle": true,
+    "ticks_run": 1200,
+    "stop_reason": "step_budget",
+    "population": 19,
+    "births": 275,
+    "predator_strikes_per_1000_agent_ticks": 4.0241,
+    "bloom_meals_per_1000_agent_ticks": 9.299,
+    "deaths_by_predation": 27
+   },
+   "scrambled": {
+    "seed": 4,
+    "channel": "scrambled",
+    "oracle": true,
+    "ticks_run": 1200,
+    "stop_reason": "step_budget",
+    "population": 23,
+    "births": 258,
+    "predator_strikes_per_1000_agent_ticks": 3.7013,
+    "bloom_meals_per_1000_agent_ticks": 6.9524,
+    "deaths_by_predation": 27
+   },
+   "receiver_normal_excess": 0.000658,
+   "receiver_scrambled_excess": 0.001258,
+   "receiver_over_scrambled": -0.0006,
+   "receiver_p": 0.00995
+  },
+  {
+   "seed": 5,
+   "normal": {
+    "seed": 5,
+    "channel": "normal",
+    "oracle": true,
+    "ticks_run": 1200,
+    "stop_reason": "step_budget",
+    "population": 16,
+    "births": 263,
+    "predator_strikes_per_1000_agent_ticks": 3.7161,
+    "bloom_meals_per_1000_agent_ticks": 11.4214,
+    "deaths_by_predation": 27
+   },
+   "scrambled": {
+    "seed": 5,
+    "channel": "scrambled",
+    "oracle": true,
+    "ticks_run": 1200,
+    "stop_reason": "step_budget",
+    "population": 2,
+    "births": 127,
+    "predator_strikes_per_1000_agent_ticks": 9.7711,
+    "bloom_meals_per_1000_agent_ticks": 13.1212,
+    "deaths_by_predation": 22
+   },
+   "receiver_normal_excess": 0.000908,
+   "receiver_scrambled_excess": 0.010107,
+   "receiver_over_scrambled": -0.009199,
+   "receiver_p": 0.014925
+  },
+  {
+   "seed": 6,
+   "normal": {
+    "seed": 6,
+    "channel": "normal",
+    "oracle": true,
+    "ticks_run": 1200,
+    "stop_reason": "step_budget",
+    "population": 39,
+    "births": 280,
+    "predator_strikes_per_1000_agent_ticks": 2.6626,
+    "bloom_meals_per_1000_agent_ticks": 11.0054,
+    "deaths_by_predation": 26
+   },
+   "scrambled": {
+    "seed": 6,
+    "channel": "scrambled",
+    "oracle": true,
+    "ticks_run": 1200,
+    "stop_reason": "step_budget",
+    "population": 17,
+    "births": 162,
+    "predator_strikes_per_1000_agent_ticks": 4.6761,
+    "bloom_meals_per_1000_agent_ticks": 7.1115,
+    "deaths_by_predation": 18
+   },
+   "receiver_normal_excess": 0.000882,
+   "receiver_scrambled_excess": 0.002198,
+   "receiver_over_scrambled": -0.001316,
+   "receiver_p": 0.004975
+  }
+ ],
+ "summary": {
+  "receiver_over_scrambled": [
+   0.000506,
+   0.00829,
+   0.005385,
+   -0.0006,
+   -0.009199,
+   -0.001316
+  ],
+  "receiver_p": [
+   0.004975,
+   0.004975,
+   0.004975,
+   0.00995,
+   0.014925,
+   0.004975
+  ],
+  "predator_strikes_per_1000_agent_ticks_normal_minus_scrambled": [
+   -2.3249,
+   -2.7411,
+   4.8667,
+   0.3228,
+   -6.055,
+   -2.0135
+  ],
+  "bloom_meals_per_1000_agent_ticks_normal_minus_scrambled": [
+   3.3453,
+   4.3365,
+   -1.2769,
+   2.3466,
+   -1.6998,
+   3.8939
+  ],
+  "population_normal_minus_scrambled": [
+   15,
+   8,
+   -36,
+   -4,
+   14,
+   22
+  ]
+ }
+}

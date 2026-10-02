@@ -1,0 +1,269 @@
+{
+ "measurement": "signalling-game controls (life8 learner)",
+ "runs": [
+  {
+   "payoff": "shared",
+   "seed": 1,
+   "profile": null,
+   "success_late": 0.918,
+   "success_late_scrambled": 0.528,
+   "sender_mi_bits": 0.776689,
+   "sender_excess_bits": 0.774443,
+   "receiver_mi_bits": 0.740533,
+   "receiver_excess_over_scrambled_bits": 0.737017
+  },
+  {
+   "payoff": "shared",
+   "seed": 2,
+   "profile": null,
+   "success_late": 0.917,
+   "success_late_scrambled": 0.497,
+   "sender_mi_bits": 0.765541,
+   "sender_excess_bits": 0.763727,
+   "receiver_mi_bits": 0.730531,
+   "receiver_excess_over_scrambled_bits": 0.729699
+  },
+  {
+   "payoff": "shared",
+   "seed": 3,
+   "profile": null,
+   "success_late": 0.912,
+   "success_late_scrambled": 0.496,
+   "sender_mi_bits": 0.750677,
+   "sender_excess_bits": 0.748425,
+   "receiver_mi_bits": 0.736244,
+   "receiver_excess_over_scrambled_bits": 0.72697
+  },
+  {
+   "payoff": "shared",
+   "seed": 4,
+   "profile": null,
+   "success_late": 0.915,
+   "success_late_scrambled": 0.473,
+   "sender_mi_bits": 0.771226,
+   "sender_excess_bits": 0.769132,
+   "receiver_mi_bits": 0.706088,
+   "receiver_excess_over_scrambled_bits": 0.705901
+  },
+  {
+   "payoff": "shared",
+   "seed": 5,
+   "profile": null,
+   "success_late": 0.919,
+   "success_late_scrambled": 0.51,
+   "sender_mi_bits": 0.777651,
+   "sender_excess_bits": 0.775447,
+   "receiver_mi_bits": 0.711288,
+   "receiver_excess_over_scrambled_bits": 0.707781
+  },
+  {
+   "payoff": "shared",
+   "seed": 6,
+   "profile": null,
+   "success_late": 0.909,
+   "success_late_scrambled": 0.533,
+   "sender_mi_bits": 0.785049,
+   "sender_excess_bits": 0.78286,
+   "receiver_mi_bits": 0.694299,
+   "receiver_excess_over_scrambled_bits": 0.68365
+  },
+  {
+   "payoff": "individual",
+   "seed": 1,
+   "profile": null,
+   "success_late": 0.587,
+   "success_late_scrambled": 0.528,
+   "sender_mi_bits": 0.058477,
+   "sender_excess_bits": 0.056305,
+   "receiver_mi_bits": 0.316789,
+   "receiver_excess_over_scrambled_bits": 0.31331
+  },
+  {
+   "payoff": "individual",
+   "seed": 2,
+   "profile": null,
+   "success_late": 0.585,
+   "success_late_scrambled": 0.491,
+   "sender_mi_bits": 0.050048,
+   "sender_excess_bits": 0.047808,
+   "receiver_mi_bits": 0.232325,
+   "receiver_excess_over_scrambled_bits": 0.231901
+  },
+  {
+   "payoff": "individual",
+   "seed": 3,
+   "profile": null,
+   "success_late": 0.635,
+   "success_late_scrambled": 0.503,
+   "sender_mi_bits": 0.099385,
+   "sender_excess_bits": 0.09712,
+   "receiver_mi_bits": 0.325789,
+   "receiver_excess_over_scrambled_bits": 0.314756
+  },
+  {
+   "payoff": "individual",
+   "seed": 4,
+   "profile": null,
+   "success_late": 0.659,
+   "success_late_scrambled": 0.473,
+   "sender_mi_bits": 0.156172,
+   "sender_excess_bits": 0.154076,
+   "receiver_mi_bits": 0.432777,
+   "receiver_excess_over_scrambled_bits": 0.432395
+  },
+  {
+   "payoff": "individual",
+   "seed": 5,
+   "profile": null,
+   "success_late": 0.659,
+   "success_late_scrambled": 0.51,
+   "sender_mi_bits": 0.192277,
+   "sender_excess_bits": 0.189914,
+   "receiver_mi_bits": 0.361272,
+   "receiver_excess_over_scrambled_bits": 0.357988
+  },
+  {
+   "payoff": "individual",
+   "seed": 6,
+   "profile": null,
+   "success_late": 0.643,
+   "success_late_scrambled": 0.536,
+   "sender_mi_bits": 0.128304,
+   "sender_excess_bits": 0.125934,
+   "receiver_mi_bits": 0.329733,
+   "receiver_excess_over_scrambled_bits": 0.319388
+  },
+  {
+   "payoff": "shared",
+   "seed": 1,
+   "profile": "one_step",
+   "success_late": 0.861,
+   "success_late_scrambled": 0.511,
+   "sender_mi_bits": 0.648678,
+   "sender_excess_bits": 0.646604,
+   "receiver_mi_bits": 0.631532,
+   "receiver_excess_over_scrambled_bits": 0.627301
+  },
+  {
+   "payoff": "shared",
+   "seed": 2,
+   "profile": "one_step",
+   "success_late": 0.846,
+   "success_late_scrambled": 0.506,
+   "sender_mi_bits": 0.599936,
+   "sender_excess_bits": 0.597838,
+   "receiver_mi_bits": 0.592854,
+   "receiver_excess_over_scrambled_bits": 0.58717
+  },
+  {
+   "payoff": "shared",
+   "seed": 3,
+   "profile": "one_step",
+   "success_late": 0.861,
+   "success_late_scrambled": 0.495,
+   "sender_mi_bits": 0.626255,
+   "sender_excess_bits": 0.624059,
+   "receiver_mi_bits": 0.605517,
+   "receiver_excess_over_scrambled_bits": 0.597203
+  },
+  {
+   "payoff": "shared",
+   "seed": 4,
+   "profile": "one_step",
+   "success_late": 0.857,
+   "success_late_scrambled": 0.475,
+   "sender_mi_bits": 0.654007,
+   "sender_excess_bits": 0.651848,
+   "receiver_mi_bits": 0.582184,
+   "receiver_excess_over_scrambled_bits": 0.577543
+  },
+  {
+   "payoff": "shared",
+   "seed": 5,
+   "profile": "one_step",
+   "success_late": 0.855,
+   "success_late_scrambled": 0.513,
+   "sender_mi_bits": 0.657578,
+   "sender_excess_bits": 0.655272,
+   "receiver_mi_bits": 0.549513,
+   "receiver_excess_over_scrambled_bits": 0.542121
+  },
+  {
+   "payoff": "shared",
+   "seed": 6,
+   "profile": "one_step",
+   "success_late": 0.847,
+   "success_late_scrambled": 0.508,
+   "sender_mi_bits": 0.639622,
+   "sender_excess_bits": 0.637329,
+   "receiver_mi_bits": 0.547268,
+   "receiver_excess_over_scrambled_bits": 0.542764
+  },
+  {
+   "payoff": "individual",
+   "seed": 1,
+   "profile": "one_step",
+   "success_late": 0.61,
+   "success_late_scrambled": 0.511,
+   "sender_mi_bits": 0.097613,
+   "sender_excess_bits": 0.09554,
+   "receiver_mi_bits": 0.267862,
+   "receiver_excess_over_scrambled_bits": 0.263916
+  },
+  {
+   "payoff": "individual",
+   "seed": 2,
+   "profile": "one_step",
+   "success_late": 0.564,
+   "success_late_scrambled": 0.506,
+   "sender_mi_bits": 0.049151,
+   "sender_excess_bits": 0.04714,
+   "receiver_mi_bits": 0.232013,
+   "receiver_excess_over_scrambled_bits": 0.226218
+  },
+  {
+   "payoff": "individual",
+   "seed": 3,
+   "profile": "one_step",
+   "success_late": 0.532,
+   "success_late_scrambled": 0.497,
+   "sender_mi_bits": 0.004536,
+   "sender_excess_bits": 0.002268,
+   "receiver_mi_bits": 0.03992,
+   "receiver_excess_over_scrambled_bits": 0.024798
+  },
+  {
+   "payoff": "individual",
+   "seed": 4,
+   "profile": "one_step",
+   "success_late": 0.504,
+   "success_late_scrambled": 0.475,
+   "sender_mi_bits": 0.013853,
+   "sender_excess_bits": 0.011571,
+   "receiver_mi_bits": 0.051273,
+   "receiver_excess_over_scrambled_bits": 0.04664
+  },
+  {
+   "payoff": "individual",
+   "seed": 5,
+   "profile": "one_step",
+   "success_late": 0.536,
+   "success_late_scrambled": 0.513,
+   "sender_mi_bits": 0.00534,
+   "sender_excess_bits": 0.003097,
+   "receiver_mi_bits": 0.024653,
+   "receiver_excess_over_scrambled_bits": 0.017239
+  },
+  {
+   "payoff": "individual",
+   "seed": 6,
+   "profile": "one_step",
+   "success_late": 0.571,
+   "success_late_scrambled": 0.499,
+   "sender_mi_bits": 0.043081,
+   "sender_excess_bits": 0.041012,
+   "receiver_mi_bits": 0.146963,
+   "receiver_excess_over_scrambled_bits": 0.131914
+  }
+ ]
+}

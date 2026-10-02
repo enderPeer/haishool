@@ -1,0 +1,1553 @@
+{
+ "measurement": "lineages: body-mass selection vs neutral markers, convention agreement within vs across founder lineages, mapping persistence after founder death",
+ "seeds": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+ ],
+ "ticks": 1500,
+ "config_overrides": {
+  "food_patches": 30
+ },
+ "runs": [
+  {
+   "seed": 1,
+   "config_overrides": {
+    "food_patches": 30
+   },
+   "ticks_run": 1500,
+   "stop_reason": "step_budget",
+   "lineage": {
+    "individuals": 304,
+    "alive": 35,
+    "founders": 24,
+    "surviving_lineages": 5,
+    "max_depth": 7,
+    "mean_depth_alive": 4.6
+   },
+   "selection_body_mass": {
+    "gene": "body_mass",
+    "n_founders": 24,
+    "n_later": 35,
+    "log_change": 0.01303,
+    "marker_changes": [
+     0.16176,
+     0.1145,
+     -0.01987,
+     -0.03755,
+     0.02648,
+     0.10277,
+     -0.16222,
+     -0.02165
+    ],
+    "marker_sd": 0.10403,
+    "z": -0.072,
+    "beyond_all_markers": false
+   },
+   "convention_late_window": {
+    "senders": 94,
+    "lineages": 6,
+    "situation": [
+     "food_seen",
+     "energy_band"
+    ],
+    "within": 0.25034,
+    "across": 0.25408,
+    "within_pairs": 1091,
+    "across_pairs": 3246,
+    "uniform_chance": 0.25,
+    "difference": -0.00373,
+    "null_mean": -0.0004,
+    "p_value": 0.77612
+   },
+   "persistence": {
+    "situation": [
+     "food_seen",
+     "energy_band"
+    ],
+    "lineages_measured": 6,
+    "lineages_persisting": 0,
+    "lineages": [
+     {
+      "founder": 7,
+      "founder_death_tick": 696,
+      "calls_before": 47,
+      "calls_after": 114,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.25,
+      "info_before": {
+       "n": 47,
+       "mi_bits": 0.102615,
+       "null_mean": 0.105982,
+       "null_p95": 0.1776,
+       "excess_bits": -0.003367,
+       "p_value": 0.497512
+      },
+      "info_after": {
+       "n": 114,
+       "mi_bits": 0.043698,
+       "null_mean": 0.068096,
+       "null_p95": 0.112,
+       "excess_bits": -0.024399,
+       "p_value": 0.825871
+      },
+      "persists": false
+     },
+     {
+      "founder": 9,
+      "founder_death_tick": 536,
+      "calls_before": 123,
+      "calls_after": 445,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.1333,
+      "info_before": {
+       "n": 123,
+       "mi_bits": 0.025531,
+       "null_mean": 0.036578,
+       "null_p95": 0.076586,
+       "excess_bits": -0.011047,
+       "p_value": 0.621891
+      },
+      "info_after": {
+       "n": 445,
+       "mi_bits": 0.031508,
+       "null_mean": 0.010102,
+       "null_p95": 0.020435,
+       "excess_bits": 0.021407,
+       "p_value": 0.004975
+      },
+      "persists": false
+     },
+     {
+      "founder": 10,
+      "founder_death_tick": 682,
+      "calls_before": 69,
+      "calls_after": 47,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.4,
+      "info_before": {
+       "n": 69,
+       "mi_bits": 0.089193,
+       "null_mean": 0.066771,
+       "null_p95": 0.136808,
+       "excess_bits": 0.022422,
+       "p_value": 0.208955
+      },
+      "info_after": {
+       "n": 47,
+       "mi_bits": 0.215725,
+       "null_mean": 0.107304,
+       "null_p95": 0.224188,
+       "excess_bits": 0.108421,
+       "p_value": 0.059701
+      },
+      "persists": false
+     },
+     {
+      "founder": 11,
+      "founder_death_tick": 512,
+      "calls_before": 133,
+      "calls_after": 569,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.4,
+      "info_before": {
+       "n": 133,
+       "mi_bits": 0.031411,
+       "null_mean": 0.035145,
+       "null_p95": 0.076739,
+       "excess_bits": -0.003734,
+       "p_value": 0.482587
+      },
+      "info_after": {
+       "n": 569,
+       "mi_bits": 0.011261,
+       "null_mean": 0.007492,
+       "null_p95": 0.016001,
+       "excess_bits": 0.003769,
+       "p_value": 0.19403
+      },
+      "persists": false
+     },
+     {
+      "founder": 15,
+      "founder_death_tick": 508,
+      "calls_before": 120,
+      "calls_after": 82,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.3333,
+      "info_before": {
+       "n": 120,
+       "mi_bits": 0.026375,
+       "null_mean": 0.038254,
+       "null_p95": 0.079369,
+       "excess_bits": -0.011879,
+       "p_value": 0.651741
+      },
+      "info_after": {
+       "n": 82,
+       "mi_bits": 0.214509,
+       "null_mean": 0.059594,
+       "null_p95": 0.109222,
+       "excess_bits": 0.154915,
+       "p_value": 0.004975
+      },
+      "persists": false
+     },
+     {
+      "founder": 18,
+      "founder_death_tick": 614,
+      "calls_before": 159,
+      "calls_after": 319,
+      "situations_shared": 4,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.2,
+      "info_before": {
+       "n": 159,
+       "mi_bits": 0.045669,
+       "null_mean": 0.054478,
+       "null_p95": 0.089371,
+       "excess_bits": -0.008809,
+       "p_value": 0.636816
+      },
+      "info_after": {
+       "n": 319,
+       "mi_bits": 0.030763,
+       "null_mean": 0.021297,
+       "null_p95": 0.035579,
+       "excess_bits": 0.009467,
+       "p_value": 0.129353
+      },
+      "persists": false
+     }
+    ]
+   }
+  },
+  {
+   "seed": 2,
+   "config_overrides": {
+    "food_patches": 30
+   },
+   "ticks_run": 1500,
+   "stop_reason": "step_budget",
+   "lineage": {
+    "individuals": 245,
+    "alive": 19,
+    "founders": 24,
+    "surviving_lineages": 6,
+    "max_depth": 9,
+    "mean_depth_alive": 4.947
+   },
+   "selection_body_mass": {
+    "gene": "body_mass",
+    "n_founders": 24,
+    "n_later": 19,
+    "log_change": -0.03586,
+    "marker_changes": [
+     -0.11533,
+     0.01028,
+     -0.04914,
+     0.09907,
+     0.07565,
+     0.01256,
+     -0.02091,
+     -0.00323
+    ],
+    "marker_sd": 0.06756,
+    "z": -0.547,
+    "beyond_all_markers": false
+   },
+   "convention_late_window": {
+    "senders": 62,
+    "lineages": 6,
+    "situation": [
+     "food_seen",
+     "energy_band"
+    ],
+    "within": 0.24598,
+    "across": 0.24896,
+    "within_pairs": 329,
+    "across_pairs": 1529,
+    "uniform_chance": 0.25,
+    "difference": -0.00298,
+    "null_mean": 0.00012,
+    "p_value": 0.71642
+   },
+   "persistence": {
+    "situation": [
+     "food_seen",
+     "energy_band"
+    ],
+    "lineages_measured": 8,
+    "lineages_persisting": 0,
+    "lineages": [
+     {
+      "founder": 5,
+      "founder_death_tick": 274,
+      "calls_before": 34,
+      "calls_after": 306,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.1905,
+      "info_before": {
+       "n": 34,
+       "mi_bits": 0.07234,
+       "null_mean": 0.153209,
+       "null_p95": 0.332014,
+       "excess_bits": -0.080869,
+       "p_value": 0.870647
+      },
+      "info_after": {
+       "n": 306,
+       "mi_bits": 0.008256,
+       "null_mean": 0.014016,
+       "null_p95": 0.027219,
+       "excess_bits": -0.00576,
+       "p_value": 0.726368
+      },
+      "persists": false
+     },
+     {
+      "founder": 7,
+      "founder_death_tick": 529,
+      "calls_before": 68,
+      "calls_after": 29,
+      "situations_shared": 3,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.1429,
+      "info_before": {
+       "n": 68,
+       "mi_bits": 0.080341,
+       "null_mean": 0.072627,
+       "null_p95": 0.159853,
+       "excess_bits": 0.007715,
+       "p_value": 0.363184
+      },
+      "info_after": {
+       "n": 29,
+       "mi_bits": 0.106628,
+       "null_mean": 0.15727,
+       "null_p95": 0.296621,
+       "excess_bits": -0.050642,
+       "p_value": 0.810945
+      },
+      "persists": false
+     },
+     {
+      "founder": 8,
+      "founder_death_tick": 484,
+      "calls_before": 86,
+      "calls_after": 54,
+      "situations_shared": 3,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.4286,
+      "info_before": {
+       "n": 86,
+       "mi_bits": 0.022736,
+       "null_mean": 0.053733,
+       "null_p95": 0.108631,
+       "excess_bits": -0.030996,
+       "p_value": 0.875622
+      },
+      "info_after": {
+       "n": 54,
+       "mi_bits": 0.222108,
+       "null_mean": 0.08657,
+       "null_p95": 0.164318,
+       "excess_bits": 0.135537,
+       "p_value": 0.00995
+      },
+      "persists": false
+     },
+     {
+      "founder": 15,
+      "founder_death_tick": 582,
+      "calls_before": 110,
+      "calls_after": 91,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.4762,
+      "info_before": {
+       "n": 110,
+       "mi_bits": 0.046324,
+       "null_mean": 0.03929,
+       "null_p95": 0.08782,
+       "excess_bits": 0.007034,
+       "p_value": 0.293532
+      },
+      "info_after": {
+       "n": 91,
+       "mi_bits": 0.049354,
+       "null_mean": 0.054396,
+       "null_p95": 0.106839,
+       "excess_bits": -0.005042,
+       "p_value": 0.517413
+      },
+      "persists": false
+     },
+     {
+      "founder": 18,
+      "founder_death_tick": 618,
+      "calls_before": 140,
+      "calls_after": 212,
+      "situations_shared": 3,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.4286,
+      "info_before": {
+       "n": 140,
+       "mi_bits": 0.022544,
+       "null_mean": 0.031148,
+       "null_p95": 0.064564,
+       "excess_bits": -0.008604,
+       "p_value": 0.666667
+      },
+      "info_after": {
+       "n": 212,
+       "mi_bits": 0.034057,
+       "null_mean": 0.043305,
+       "null_p95": 0.066781,
+       "excess_bits": -0.009248,
+       "p_value": 0.686567
+      },
+      "persists": false
+     },
+     {
+      "founder": 20,
+      "founder_death_tick": 659,
+      "calls_before": 129,
+      "calls_after": 182,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.4286,
+      "info_before": {
+       "n": 129,
+       "mi_bits": 0.021842,
+       "null_mean": 0.03421,
+       "null_p95": 0.072491,
+       "excess_bits": -0.012368,
+       "p_value": 0.681592
+      },
+      "info_after": {
+       "n": 182,
+       "mi_bits": 0.008047,
+       "null_mean": 0.02535,
+       "null_p95": 0.05076,
+       "excess_bits": -0.017303,
+       "p_value": 0.925373
+      },
+      "persists": false
+     },
+     {
+      "founder": 21,
+      "founder_death_tick": 555,
+      "calls_before": 87,
+      "calls_after": 127,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.2857,
+      "info_before": {
+       "n": 87,
+       "mi_bits": 0.072192,
+       "null_mean": 0.048165,
+       "null_p95": 0.102863,
+       "excess_bits": 0.024027,
+       "p_value": 0.18408
+      },
+      "info_after": {
+       "n": 127,
+       "mi_bits": 0.078003,
+       "null_mean": 0.035237,
+       "null_p95": 0.076332,
+       "excess_bits": 0.042766,
+       "p_value": 0.049751
+      },
+      "persists": false
+     },
+     {
+      "founder": 23,
+      "founder_death_tick": 442,
+      "calls_before": 103,
+      "calls_after": 245,
+      "situations_shared": 3,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.0952,
+      "info_before": {
+       "n": 103,
+       "mi_bits": 0.013001,
+       "null_mean": 0.048606,
+       "null_p95": 0.11272,
+       "excess_bits": -0.035606,
+       "p_value": 0.955224
+      },
+      "info_after": {
+       "n": 245,
+       "mi_bits": 0.008053,
+       "null_mean": 0.017919,
+       "null_p95": 0.037358,
+       "excess_bits": -0.009866,
+       "p_value": 0.835821
+      },
+      "persists": false
+     }
+    ]
+   }
+  },
+  {
+   "seed": 3,
+   "config_overrides": {
+    "food_patches": 30
+   },
+   "ticks_run": 1500,
+   "stop_reason": "step_budget",
+   "lineage": {
+    "individuals": 252,
+    "alive": 26,
+    "founders": 24,
+    "surviving_lineages": 4,
+    "max_depth": 7,
+    "mean_depth_alive": 4.423
+   },
+   "selection_body_mass": {
+    "gene": "body_mass",
+    "n_founders": 24,
+    "n_later": 26,
+    "log_change": -0.10234,
+    "marker_changes": [
+     0.05834,
+     0.03473,
+     0.02325,
+     0.02635,
+     -0.15427,
+     -0.10908,
+     0.10799,
+     0.04291
+    ],
+    "marker_sd": 0.08859,
+    "z": -1.198,
+    "beyond_all_markers": false
+   },
+   "convention_late_window": {
+    "senders": 60,
+    "lineages": 5,
+    "situation": [
+     "food_seen",
+     "energy_band"
+    ],
+    "within": 0.24639,
+    "across": 0.2521,
+    "within_pairs": 474,
+    "across_pairs": 1268,
+    "uniform_chance": 0.25,
+    "difference": -0.00571,
+    "null_mean": 0.00059,
+    "p_value": 0.78109
+   },
+   "persistence": {
+    "situation": [
+     "food_seen",
+     "energy_band"
+    ],
+    "lineages_measured": 7,
+    "lineages_persisting": 0,
+    "lineages": [
+     {
+      "founder": 1,
+      "founder_death_tick": 659,
+      "calls_before": 93,
+      "calls_after": 135,
+      "situations_shared": 3,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.1111,
+      "info_before": {
+       "n": 93,
+       "mi_bits": 0.030723,
+       "null_mean": 0.050685,
+       "null_p95": 0.108376,
+       "excess_bits": -0.019962,
+       "p_value": 0.706468
+      },
+      "info_after": {
+       "n": 135,
+       "mi_bits": 0.102257,
+       "null_mean": 0.035565,
+       "null_p95": 0.075574,
+       "excess_bits": 0.066693,
+       "p_value": 0.014925
+      },
+      "persists": false
+     },
+     {
+      "founder": 4,
+      "founder_death_tick": 460,
+      "calls_before": 80,
+      "calls_after": 203,
+      "situations_shared": 3,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.3889,
+      "info_before": {
+       "n": 80,
+       "mi_bits": 0.080417,
+       "null_mean": 0.056243,
+       "null_p95": 0.120461,
+       "excess_bits": 0.024174,
+       "p_value": 0.208955
+      },
+      "info_after": {
+       "n": 203,
+       "mi_bits": 0.02451,
+       "null_mean": 0.02206,
+       "null_p95": 0.044793,
+       "excess_bits": 0.00245,
+       "p_value": 0.353234
+      },
+      "persists": false
+     },
+     {
+      "founder": 6,
+      "founder_death_tick": 400,
+      "calls_before": 76,
+      "calls_after": 375,
+      "situations_shared": 3,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.1111,
+      "info_before": {
+       "n": 76,
+       "mi_bits": 0.018332,
+       "null_mean": 0.060997,
+       "null_p95": 0.136787,
+       "excess_bits": -0.042665,
+       "p_value": 0.950249
+      },
+      "info_after": {
+       "n": 375,
+       "mi_bits": 0.044932,
+       "null_mean": 0.011907,
+       "null_p95": 0.025247,
+       "excess_bits": 0.033025,
+       "p_value": 0.004975
+      },
+      "persists": false
+     },
+     {
+      "founder": 7,
+      "founder_death_tick": 674,
+      "calls_before": 141,
+      "calls_after": 90,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.4444,
+      "info_before": {
+       "n": 141,
+       "mi_bits": 0.038314,
+       "null_mean": 0.032475,
+       "null_p95": 0.06725,
+       "excess_bits": 0.00584,
+       "p_value": 0.323383
+      },
+      "info_after": {
+       "n": 90,
+       "mi_bits": 0.091474,
+       "null_mean": 0.046687,
+       "null_p95": 0.111303,
+       "excess_bits": 0.044788,
+       "p_value": 0.099502
+      },
+      "persists": false
+     },
+     {
+      "founder": 10,
+      "founder_death_tick": 333,
+      "calls_before": 30,
+      "calls_after": 66,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.6667,
+      "info_before": {
+       "n": 30,
+       "mi_bits": 0.130922,
+       "null_mean": 0.168764,
+       "null_p95": 0.309858,
+       "excess_bits": -0.037842,
+       "p_value": 0.60199
+      },
+      "info_after": {
+       "n": 66,
+       "mi_bits": 0.128701,
+       "null_mean": 0.074371,
+       "null_p95": 0.13549,
+       "excess_bits": 0.054331,
+       "p_value": 0.074627
+      },
+      "persists": false
+     },
+     {
+      "founder": 13,
+      "founder_death_tick": 501,
+      "calls_before": 162,
+      "calls_after": 700,
+      "situations_shared": 4,
+      "same_mode": 0.25,
+      "cross_same_mode": 0.1667,
+      "info_before": {
+       "n": 162,
+       "mi_bits": 0.026774,
+       "null_mean": 0.040714,
+       "null_p95": 0.070859,
+       "excess_bits": -0.01394,
+       "p_value": 0.845771
+      },
+      "info_after": {
+       "n": 700,
+       "mi_bits": 0.009626,
+       "null_mean": 0.010386,
+       "null_p95": 0.017021,
+       "excess_bits": -0.000761,
+       "p_value": 0.532338
+      },
+      "persists": false
+     },
+     {
+      "founder": 24,
+      "founder_death_tick": 417,
+      "calls_before": 67,
+      "calls_after": 58,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.4444,
+      "info_before": {
+       "n": 67,
+       "mi_bits": 0.065459,
+       "null_mean": 0.069777,
+       "null_p95": 0.153562,
+       "excess_bits": -0.004318,
+       "p_value": 0.477612
+      },
+      "info_after": {
+       "n": 58,
+       "mi_bits": 0.195919,
+       "null_mean": 0.081526,
+       "null_p95": 0.147494,
+       "excess_bits": 0.114393,
+       "p_value": 0.004975
+      },
+      "persists": false
+     }
+    ]
+   }
+  },
+  {
+   "seed": 4,
+   "config_overrides": {
+    "food_patches": 30
+   },
+   "ticks_run": 1500,
+   "stop_reason": "step_budget",
+   "lineage": {
+    "individuals": 345,
+    "alive": 29,
+    "founders": 24,
+    "surviving_lineages": 7,
+    "max_depth": 8,
+    "mean_depth_alive": 4.828
+   },
+   "selection_body_mass": {
+    "gene": "body_mass",
+    "n_founders": 24,
+    "n_later": 29,
+    "log_change": -0.07008,
+    "marker_changes": [
+     0.02437,
+     -0.02968,
+     -0.09823,
+     0.09193,
+     0.06364,
+     -0.00277,
+     -0.00746,
+     0.04738
+    ],
+    "marker_sd": 0.05969,
+    "z": -1.361,
+    "beyond_all_markers": false
+   },
+   "convention_late_window": {
+    "senders": 89,
+    "lineages": 7,
+    "situation": [
+     "food_seen",
+     "energy_band"
+    ],
+    "within": 0.24605,
+    "across": 0.25021,
+    "within_pairs": 560,
+    "across_pairs": 3261,
+    "uniform_chance": 0.25,
+    "difference": -0.00416,
+    "null_mean": 0.00042,
+    "p_value": 0.83085
+   },
+   "persistence": {
+    "situation": [
+     "food_seen",
+     "energy_band"
+    ],
+    "lineages_measured": 8,
+    "lineages_persisting": 0,
+    "lineages": [
+     {
+      "founder": 2,
+      "founder_death_tick": 713,
+      "calls_before": 240,
+      "calls_after": 223,
+      "situations_shared": 3,
+      "same_mode": 0.6667,
+      "cross_same_mode": 0.1429,
+      "info_before": {
+       "n": 240,
+       "mi_bits": 0.008089,
+       "null_mean": 0.017511,
+       "null_p95": 0.037014,
+       "excess_bits": -0.009422,
+       "p_value": 0.885572
+      },
+      "info_after": {
+       "n": 223,
+       "mi_bits": 0.011692,
+       "null_mean": 0.020796,
+       "null_p95": 0.046153,
+       "excess_bits": -0.009104,
+       "p_value": 0.761194
+      },
+      "persists": false
+     },
+     {
+      "founder": 4,
+      "founder_death_tick": 701,
+      "calls_before": 154,
+      "calls_after": 50,
+      "situations_shared": 3,
+      "same_mode": 0.6667,
+      "cross_same_mode": 0.4286,
+      "info_before": {
+       "n": 154,
+       "mi_bits": 0.030341,
+       "null_mean": 0.027945,
+       "null_p95": 0.058518,
+       "excess_bits": 0.002396,
+       "p_value": 0.368159
+      },
+      "info_after": {
+       "n": 50,
+       "mi_bits": 0.070997,
+       "null_mean": 0.095145,
+       "null_p95": 0.199965,
+       "excess_bits": -0.024147,
+       "p_value": 0.59204
+      },
+      "persists": false
+     },
+     {
+      "founder": 7,
+      "founder_death_tick": 664,
+      "calls_before": 125,
+      "calls_after": 110,
+      "situations_shared": 3,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.1429,
+      "info_before": {
+       "n": 125,
+       "mi_bits": 0.011587,
+       "null_mean": 0.035674,
+       "null_p95": 0.071337,
+       "excess_bits": -0.024087,
+       "p_value": 0.910448
+      },
+      "info_after": {
+       "n": 110,
+       "mi_bits": 0.061639,
+       "null_mean": 0.046138,
+       "null_p95": 0.091632,
+       "excess_bits": 0.015501,
+       "p_value": 0.228856
+      },
+      "persists": false
+     },
+     {
+      "founder": 8,
+      "founder_death_tick": 424,
+      "calls_before": 130,
+      "calls_after": 360,
+      "situations_shared": 3,
+      "same_mode": 0.6667,
+      "cross_same_mode": 0.2262,
+      "info_before": {
+       "n": 130,
+       "mi_bits": 0.035038,
+       "null_mean": 0.03655,
+       "null_p95": 0.07342,
+       "excess_bits": -0.001513,
+       "p_value": 0.442786
+      },
+      "info_after": {
+       "n": 360,
+       "mi_bits": 0.016994,
+       "null_mean": 0.0192,
+       "null_p95": 0.034035,
+       "excess_bits": -0.002206,
+       "p_value": 0.532338
+      },
+      "persists": false
+     },
+     {
+      "founder": 9,
+      "founder_death_tick": 692,
+      "calls_before": 150,
+      "calls_after": 240,
+      "situations_shared": 3,
+      "same_mode": 0.6667,
+      "cross_same_mode": 0.1429,
+      "info_before": {
+       "n": 150,
+       "mi_bits": 0.062146,
+       "null_mean": 0.044159,
+       "null_p95": 0.074875,
+       "excess_bits": 0.017987,
+       "p_value": 0.154229
+      },
+      "info_after": {
+       "n": 240,
+       "mi_bits": 0.016898,
+       "null_mean": 0.019741,
+       "null_p95": 0.042443,
+       "excess_bits": -0.002843,
+       "p_value": 0.507463
+      },
+      "persists": false
+     },
+     {
+      "founder": 12,
+      "founder_death_tick": 511,
+      "calls_before": 166,
+      "calls_after": 353,
+      "situations_shared": 3,
+      "same_mode": 1.0,
+      "cross_same_mode": 0.381,
+      "info_before": {
+       "n": 166,
+       "mi_bits": 0.038173,
+       "null_mean": 0.026489,
+       "null_p95": 0.062751,
+       "excess_bits": 0.011684,
+       "p_value": 0.21393
+      },
+      "info_after": {
+       "n": 353,
+       "mi_bits": 0.052267,
+       "null_mean": 0.013181,
+       "null_p95": 0.02711,
+       "excess_bits": 0.039087,
+       "p_value": 0.00995
+      },
+      "persists": false
+     },
+     {
+      "founder": 17,
+      "founder_death_tick": 401,
+      "calls_before": 43,
+      "calls_after": 135,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.1429,
+      "info_before": {
+       "n": 43,
+       "mi_bits": 0.061873,
+       "null_mean": 0.115386,
+       "null_p95": 0.235286,
+       "excess_bits": -0.053513,
+       "p_value": 0.771144
+      },
+      "info_after": {
+       "n": 135,
+       "mi_bits": 0.017633,
+       "null_mean": 0.034585,
+       "null_p95": 0.06839,
+       "excess_bits": -0.016953,
+       "p_value": 0.800995
+      },
+      "persists": false
+     },
+     {
+      "founder": 18,
+      "founder_death_tick": 593,
+      "calls_before": 247,
+      "calls_after": 315,
+      "situations_shared": 3,
+      "same_mode": 0.6667,
+      "cross_same_mode": 0.131,
+      "info_before": {
+       "n": 247,
+       "mi_bits": 0.05903,
+       "null_mean": 0.025442,
+       "null_p95": 0.045042,
+       "excess_bits": 0.033587,
+       "p_value": 0.014925
+      },
+      "info_after": {
+       "n": 315,
+       "mi_bits": 0.032628,
+       "null_mean": 0.022668,
+       "null_p95": 0.038598,
+       "excess_bits": 0.00996,
+       "p_value": 0.104478
+      },
+      "persists": false
+     }
+    ]
+   }
+  },
+  {
+   "seed": 5,
+   "config_overrides": {
+    "food_patches": 30
+   },
+   "ticks_run": 1500,
+   "stop_reason": "step_budget",
+   "lineage": {
+    "individuals": 239,
+    "alive": 33,
+    "founders": 24,
+    "surviving_lineages": 5,
+    "max_depth": 6,
+    "mean_depth_alive": 4.152
+   },
+   "selection_body_mass": {
+    "gene": "body_mass",
+    "n_founders": 24,
+    "n_later": 33,
+    "log_change": 0.03424,
+    "marker_changes": [
+     0.03853,
+     0.03375,
+     -0.07421,
+     -0.07088,
+     0.09088,
+     -0.19374,
+     0.01673,
+     -0.11606
+    ],
+    "marker_sd": 0.09506,
+    "z": 0.722,
+    "beyond_all_markers": false
+   },
+   "convention_late_window": {
+    "senders": 71,
+    "lineages": 6,
+    "situation": [
+     "food_seen",
+     "energy_band"
+    ],
+    "within": 0.25228,
+    "across": 0.25124,
+    "within_pairs": 843,
+    "across_pairs": 1598,
+    "uniform_chance": 0.25,
+    "difference": 0.00104,
+    "null_mean": 0.0001,
+    "p_value": 0.39303
+   },
+   "persistence": {
+    "situation": [
+     "food_seen",
+     "energy_band"
+    ],
+    "lineages_measured": 6,
+    "lineages_persisting": 0,
+    "lineages": [
+     {
+      "founder": 4,
+      "founder_death_tick": 604,
+      "calls_before": 65,
+      "calls_after": 277,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.2,
+      "info_before": {
+       "n": 65,
+       "mi_bits": 0.05874,
+       "null_mean": 0.068476,
+       "null_p95": 0.147448,
+       "excess_bits": -0.009735,
+       "p_value": 0.527363
+      },
+      "info_after": {
+       "n": 277,
+       "mi_bits": 0.013097,
+       "null_mean": 0.016879,
+       "null_p95": 0.036271,
+       "excess_bits": -0.003782,
+       "p_value": 0.552239
+      },
+      "persists": false
+     },
+     {
+      "founder": 8,
+      "founder_death_tick": 526,
+      "calls_before": 63,
+      "calls_after": 84,
+      "situations_shared": 3,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.3333,
+      "info_before": {
+       "n": 63,
+       "mi_bits": 0.028841,
+       "null_mean": 0.076268,
+       "null_p95": 0.162134,
+       "excess_bits": -0.047426,
+       "p_value": 0.870647
+      },
+      "info_after": {
+       "n": 84,
+       "mi_bits": 0.033197,
+       "null_mean": 0.060079,
+       "null_p95": 0.107196,
+       "excess_bits": -0.026882,
+       "p_value": 0.875622
+      },
+      "persists": false
+     },
+     {
+      "founder": 12,
+      "founder_death_tick": 522,
+      "calls_before": 186,
+      "calls_after": 704,
+      "situations_shared": 3,
+      "same_mode": 0.6667,
+      "cross_same_mode": 0.1333,
+      "info_before": {
+       "n": 186,
+       "mi_bits": 0.024703,
+       "null_mean": 0.022297,
+       "null_p95": 0.046055,
+       "excess_bits": 0.002406,
+       "p_value": 0.402985
+      },
+      "info_after": {
+       "n": 704,
+       "mi_bits": 0.009344,
+       "null_mean": 0.006355,
+       "null_p95": 0.013087,
+       "excess_bits": 0.002989,
+       "p_value": 0.18408
+      },
+      "persists": false
+     },
+     {
+      "founder": 16,
+      "founder_death_tick": 668,
+      "calls_before": 81,
+      "calls_after": 55,
+      "situations_shared": 3,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.3333,
+      "info_before": {
+       "n": 81,
+       "mi_bits": 0.03612,
+       "null_mean": 0.054198,
+       "null_p95": 0.109869,
+       "excess_bits": -0.018078,
+       "p_value": 0.691542
+      },
+      "info_after": {
+       "n": 55,
+       "mi_bits": 0.055796,
+       "null_mean": 0.111997,
+       "null_p95": 0.175989,
+       "excess_bits": -0.056201,
+       "p_value": 0.970149
+      },
+      "persists": false
+     },
+     {
+      "founder": 17,
+      "founder_death_tick": 367,
+      "calls_before": 67,
+      "calls_after": 88,
+      "situations_shared": 3,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.3333,
+      "info_before": {
+       "n": 67,
+       "mi_bits": 0.026084,
+       "null_mean": 0.069623,
+       "null_p95": 0.153325,
+       "excess_bits": -0.043539,
+       "p_value": 0.850746
+      },
+      "info_after": {
+       "n": 88,
+       "mi_bits": 0.152022,
+       "null_mean": 0.050483,
+       "null_p95": 0.099999,
+       "excess_bits": 0.101538,
+       "p_value": 0.00995
+      },
+      "persists": false
+     },
+     {
+      "founder": 24,
+      "founder_death_tick": 535,
+      "calls_before": 61,
+      "calls_after": 176,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.2667,
+      "info_before": {
+       "n": 61,
+       "mi_bits": 0.088395,
+       "null_mean": 0.074815,
+       "null_p95": 0.156956,
+       "excess_bits": 0.01358,
+       "p_value": 0.308458
+      },
+      "info_after": {
+       "n": 176,
+       "mi_bits": 0.009538,
+       "null_mean": 0.02478,
+       "null_p95": 0.052601,
+       "excess_bits": -0.015242,
+       "p_value": 0.915423
+      },
+      "persists": false
+     }
+    ]
+   }
+  },
+  {
+   "seed": 6,
+   "config_overrides": {
+    "food_patches": 30
+   },
+   "ticks_run": 1500,
+   "stop_reason": "step_budget",
+   "lineage": {
+    "individuals": 332,
+    "alive": 36,
+    "founders": 24,
+    "surviving_lineages": 7,
+    "max_depth": 8,
+    "mean_depth_alive": 4.306
+   },
+   "selection_body_mass": {
+    "gene": "body_mass",
+    "n_founders": 24,
+    "n_later": 36,
+    "log_change": 0.02699,
+    "marker_changes": [
+     -0.0504,
+     -0.01919,
+     0.01141,
+     -0.00661,
+     -0.04376,
+     0.00035,
+     -0.05321,
+     -0.04751
+    ],
+    "marker_sd": 0.02572,
+    "z": 2.065,
+    "beyond_all_markers": true
+   },
+   "convention_late_window": {
+    "senders": 89,
+    "lineages": 9,
+    "situation": [
+     "food_seen",
+     "energy_band"
+    ],
+    "within": 0.25519,
+    "across": 0.25253,
+    "within_pairs": 948,
+    "across_pairs": 2822,
+    "uniform_chance": 0.25,
+    "difference": 0.00266,
+    "null_mean": 0.00011,
+    "p_value": 0.30348
+   },
+   "persistence": {
+    "situation": [
+     "food_seen",
+     "energy_band"
+    ],
+    "lineages_measured": 10,
+    "lineages_persisting": 0,
+    "lineages": [
+     {
+      "founder": 6,
+      "founder_death_tick": 569,
+      "calls_before": 81,
+      "calls_after": 111,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.1852,
+      "info_before": {
+       "n": 81,
+       "mi_bits": 0.077549,
+       "null_mean": 0.060259,
+       "null_p95": 0.11758,
+       "excess_bits": 0.017289,
+       "p_value": 0.258706
+      },
+      "info_after": {
+       "n": 111,
+       "mi_bits": 0.008056,
+       "null_mean": 0.043685,
+       "null_p95": 0.084351,
+       "excess_bits": -0.03563,
+       "p_value": 0.975124
+      },
+      "persists": false
+     },
+     {
+      "founder": 7,
+      "founder_death_tick": 656,
+      "calls_before": 58,
+      "calls_after": 61,
+      "situations_shared": 3,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.2593,
+      "info_before": {
+       "n": 58,
+       "mi_bits": 0.038147,
+       "null_mean": 0.081094,
+       "null_p95": 0.168902,
+       "excess_bits": -0.042947,
+       "p_value": 0.800995
+      },
+      "info_after": {
+       "n": 61,
+       "mi_bits": 0.04341,
+       "null_mean": 0.08193,
+       "null_p95": 0.156427,
+       "excess_bits": -0.03852,
+       "p_value": 0.855721
+      },
+      "persists": false
+     },
+     {
+      "founder": 8,
+      "founder_death_tick": 487,
+      "calls_before": 64,
+      "calls_after": 90,
+      "situations_shared": 3,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.3704,
+      "info_before": {
+       "n": 64,
+       "mi_bits": 0.061733,
+       "null_mean": 0.071646,
+       "null_p95": 0.152438,
+       "excess_bits": -0.009913,
+       "p_value": 0.517413
+      },
+      "info_after": {
+       "n": 90,
+       "mi_bits": 0.035063,
+       "null_mean": 0.055836,
+       "null_p95": 0.103916,
+       "excess_bits": -0.020773,
+       "p_value": 0.756219
+      },
+      "persists": false
+     },
+     {
+      "founder": 10,
+      "founder_death_tick": 669,
+      "calls_before": 90,
+      "calls_after": 237,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.3333,
+      "info_before": {
+       "n": 90,
+       "mi_bits": 0.013973,
+       "null_mean": 0.051416,
+       "null_p95": 0.109051,
+       "excess_bits": -0.037443,
+       "p_value": 0.945274
+      },
+      "info_after": {
+       "n": 237,
+       "mi_bits": 0.011932,
+       "null_mean": 0.018087,
+       "null_p95": 0.036704,
+       "excess_bits": -0.006155,
+       "p_value": 0.646766
+      },
+      "persists": false
+     },
+     {
+      "founder": 12,
+      "founder_death_tick": 519,
+      "calls_before": 86,
+      "calls_after": 623,
+      "situations_shared": 3,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.1852,
+      "info_before": {
+       "n": 86,
+       "mi_bits": 0.046738,
+       "null_mean": 0.055599,
+       "null_p95": 0.121929,
+       "excess_bits": -0.008861,
+       "p_value": 0.527363
+      },
+      "info_after": {
+       "n": 623,
+       "mi_bits": 0.01768,
+       "null_mean": 0.007085,
+       "null_p95": 0.015399,
+       "excess_bits": 0.010595,
+       "p_value": 0.029851
+      },
+      "persists": false
+     },
+     {
+      "founder": 13,
+      "founder_death_tick": 504,
+      "calls_before": 140,
+      "calls_after": 211,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.1852,
+      "info_before": {
+       "n": 140,
+       "mi_bits": 0.036302,
+       "null_mean": 0.033525,
+       "null_p95": 0.06702,
+       "excess_bits": 0.002777,
+       "p_value": 0.373134
+      },
+      "info_after": {
+       "n": 211,
+       "mi_bits": 0.013465,
+       "null_mean": 0.022255,
+       "null_p95": 0.04768,
+       "excess_bits": -0.008789,
+       "p_value": 0.731343
+      },
+      "persists": false
+     },
+     {
+      "founder": 18,
+      "founder_death_tick": 488,
+      "calls_before": 90,
+      "calls_after": 88,
+      "situations_shared": 3,
+      "same_mode": 0.0,
+      "cross_same_mode": 0.2222,
+      "info_before": {
+       "n": 90,
+       "mi_bits": 0.081504,
+       "null_mean": 0.05218,
+       "null_p95": 0.123298,
+       "excess_bits": 0.029323,
+       "p_value": 0.154229
+      },
+      "info_after": {
+       "n": 88,
+       "mi_bits": 0.092646,
+       "null_mean": 0.051159,
+       "null_p95": 0.107294,
+       "excess_bits": 0.041487,
+       "p_value": 0.104478
+      },
+      "persists": false
+     },
+     {
+      "founder": 19,
+      "founder_death_tick": 680,
+      "calls_before": 142,
+      "calls_after": 151,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.1852,
+      "info_before": {
+       "n": 142,
+       "mi_bits": 0.065833,
+       "null_mean": 0.030599,
+       "null_p95": 0.068304,
+       "excess_bits": 0.035234,
+       "p_value": 0.069652
+      },
+      "info_after": {
+       "n": 151,
+       "mi_bits": 0.002502,
+       "null_mean": 0.031519,
+       "null_p95": 0.062787,
+       "excess_bits": -0.029017,
+       "p_value": 1.0
+      },
+      "persists": false
+     },
+     {
+      "founder": 22,
+      "founder_death_tick": 289,
+      "calls_before": 23,
+      "calls_after": 23,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.2963,
+      "info_before": {
+       "n": 23,
+       "mi_bits": 0.085746,
+       "null_mean": 0.244856,
+       "null_p95": 0.445079,
+       "excess_bits": -0.159109,
+       "p_value": 0.945274
+      },
+      "info_after": {
+       "n": 23,
+       "mi_bits": 0.160006,
+       "null_mean": 0.199869,
+       "null_p95": 0.371082,
+       "excess_bits": -0.039863,
+       "p_value": 0.606965
+      },
+      "persists": false
+     },
+     {
+      "founder": 23,
+      "founder_death_tick": 687,
+      "calls_before": 233,
+      "calls_after": 251,
+      "situations_shared": 3,
+      "same_mode": 0.3333,
+      "cross_same_mode": 0.1481,
+      "info_before": {
+       "n": 233,
+       "mi_bits": 0.016191,
+       "null_mean": 0.019121,
+       "null_p95": 0.040979,
+       "excess_bits": -0.00293,
+       "p_value": 0.477612
+      },
+      "info_after": {
+       "n": 251,
+       "mi_bits": 0.0479,
+       "null_mean": 0.017878,
+       "null_p95": 0.034698,
+       "excess_bits": 0.030022,
+       "p_value": 0.0199
+      },
+      "persists": false
+     }
+    ]
+   }
+  }
+ ]
+}

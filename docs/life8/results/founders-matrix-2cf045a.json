@@ -1,0 +1,58 @@
+{
+ "engine": "untouched Matrix 2cf045a (scratch copy), default Config, seeds 1-6, 600 ticks",
+ "metric": "founders not dead before tick 300 (all runs reached tick 300); P(eat | food in reach) for founders aged 50-99",
+ "runs": [
+  {
+   "seed": 1,
+   "ticks": 380,
+   "stop": "population_capacity",
+   "alive300": 9,
+   "eat_near": 0.5229759299781181,
+   "births": 184
+  },
+  {
+   "seed": 2,
+   "ticks": 600,
+   "stop": null,
+   "alive300": 7,
+   "eat_near": 0.3300970873786408,
+   "births": 248
+  },
+  {
+   "seed": 3,
+   "ticks": 426,
+   "stop": "population_capacity",
+   "alive300": 13,
+   "eat_near": 0.30256410256410254,
+   "births": 182
+  },
+  {
+   "seed": 4,
+   "ticks": 600,
+   "stop": null,
+   "alive300": 5,
+   "eat_near": 0.3142857142857143,
+   "births": 232
+  },
+  {
+   "seed": 5,
+   "ticks": 600,
+   "stop": null,
+   "alive300": 4,
+   "eat_near": 0.3274596182085169,
+   "births": 242
+  },
+  {
+   "seed": 6,
+   "ticks": 600,
+   "stop": null,
+   "alive300": 6,
+   "eat_near": 0.2892416225749559,
+   "births": 240
+  }
+ ],
+ "founders_alive_at_age_300": 44,
+ "founders": 144,
+ "mean_eat_when_food_in_reach": 0.3477706791650081,
+ "note": "reproduces the review's 44/144 exactly, seed by seed"
+}
