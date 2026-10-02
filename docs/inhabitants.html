@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f5f0">
+<title>Inhabitants · Haishool</title>
+<meta name="description" content="Inspect the actual saved biological traits in a Haishool world through deterministic, trait-based drawings.">
+<style>
+:root{color-scheme:light;--bg:#f6f5f0;--panel:#fffefa;--ink:#24352b;--muted:#69756d;--line:#d8ddd3;--green:#31674b;--soft:#e7eee5;--body:#d9e3c9;--eyes:#314d41;--hearing:#8c654b;--smell:#4e7c78;--touch:#8b7850;--calling:#9b5f4e;--neurons:#687796;--movement:#6e8751;--danger:#9b3932;--mono:ui-monospace,SFMono-Regular,Consolas,monospace}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#151b17;--panel:#1c241e;--ink:#e0e9dc;--muted:#a0aca2;--line:#364336;--green:#9accab;--soft:#283c2d;--body:#445b3b;--eyes:#c7e1d1;--hearing:#dbb38a;--smell:#8cc5bc;--touch:#d5c395;--calling:#db9c8b;--neurons:#a7b8df;--movement:#afc98e;--danger:#e7a59c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select{font:inherit}button,select,input[type=range],input[type=checkbox]{cursor:pointer}button:disabled,input:disabled,select:disabled{cursor:default;opacity:.55}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--green);outline-offset:3px}button{color:var(--ink)}[hidden]{display:none!important}
+.shell{max-width:1260px;margin:auto;padding:30px 30px 50px}header{display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line);padding-bottom:24px}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--green);font-weight:650}h1{font-size:clamp(30px,5vw,42px);letter-spacing:-.045em;font-weight:550;line-height:1.1;margin:7px 0}h2{font-size:18px;font-weight:600;letter-spacing:-.025em;margin:0}h3{font-size:14px;font-weight:600;margin:0}.subtitle,.subtle{color:var(--muted)}.subtitle{margin:0;font-size:13px;max-width:700px}.saved{font-size:12px;text-align:right;color:var(--muted)}.run-form{display:flex;gap:8px;align-items:end;flex:none}.field{display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--muted)}input[type=number],select{border:1px solid var(--line);background:var(--panel);border-radius:8px;color:var(--ink);padding:9px 10px;min-height:40px}input[type=number]{width:115px}.primary{border:1px solid var(--green);background:var(--green);color:var(--bg);border-radius:8px;min-height:40px;padding:9px 15px;font-weight:600;font-size:13px}.quiet{border:1px solid var(--line);background:var(--panel);border-radius:7px;padding:6px 10px;font-size:12px;min-height:34px}.quiet:hover{border-color:var(--green)}.run-status{font-size:12px;color:var(--muted);margin:12px 0 0}.error{color:var(--danger);margin:12px 0;font-size:13px;white-space:pre-wrap}.toolbar{display:grid;grid-template-columns:minmax(160px,1fr) minmax(170px,1fr) minmax(260px,2fr);gap:20px;align-items:end;padding:22px 0}.timeline-label{display:flex;justify-content:space-between;gap:8px}.timeline-label strong{font-weight:550;color:var(--ink)}.timeline{display:flex;align-items:center;gap:10px;min-height:40px}input[type=range]{flex:1;min-width:0;accent-color:var(--green)}.time-button{padding:4px 10px;min-height:34px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--ink)}.overview{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;padding:0 0 15px;border-bottom:1px solid var(--line);font-size:13px}.overview strong{font-weight:600}.overview .subtle{font-size:12px}.layout{display:grid;grid-template-columns:254px minmax(0,1fr);gap:26px;padding-top:24px}.gallery-header{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:12px}.gallery-header span{font-size:12px;color:var(--muted)}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px;max-height:640px;overflow-y:auto;padding:3px 4px 5px 3px;align-content:start;scrollbar-width:thin}.type-button{display:flex;flex-direction:column;align-items:stretch;padding:9px;border:1px solid var(--line);border-radius:9px;background:var(--panel);text-align:left;min-width:0;cursor:pointer}.type-button:hover{border-color:var(--green)}.type-button[aria-pressed=true]{border-color:var(--green);box-shadow:inset 0 0 0 1px var(--green);background:var(--soft)}.thumbnail{width:100%;height:80px;display:block}.type-name{font:11px/1.4 var(--mono);overflow-wrap:anywhere;margin-top:6px}.type-count{font-size:12px;color:var(--muted);margin-top:2px}.specimen{min-width:0}.specimen-header{display:flex;justify-content:space-between;align-items:start;gap:20px;margin-bottom:12px}.specimen-title{font-family:var(--mono);font-size:14px;font-weight:550;overflow-wrap:anywhere;margin-top:5px}.specimen-caption{font-size:12px;color:var(--muted);margin-top:5px}.agent-field{min-width:190px;max-width:45%}.stage{display:grid;grid-template-columns:minmax(0,1fr) 205px;gap:20px}.drawing-wrap{min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}.drawing-label{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:13px 16px 0;font-size:11px;letter-spacing:.03em;color:var(--muted)}.drawing-label strong{font-size:12px;font-weight:550;color:var(--ink)}.drawing{width:100%;height:370px;display:block}.view-note{margin:0;padding:0 16px 14px;color:var(--muted);font-size:11px}.trait-list{margin:10px 0 0}.trait-row{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:9px 0;border-bottom:1px solid var(--line);font-size:12px}.trait-row dt{color:var(--muted)}.trait-row dd{margin:0;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.trait-separator{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:20px 0 0}.swatch{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px}.marker-controls{display:flex;align-items:center;flex-wrap:wrap;gap:7px 14px;padding:12px 0;color:var(--muted);font-size:12px}.marker-controls>span{font-weight:550;color:var(--ink)}.marker-option{display:flex;align-items:center;gap:5px;cursor:pointer;min-height:30px}.marker-option input{accent-color:var(--green);margin:0}.notice{padding:12px 0;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}.notice p{margin:4px 0}.notice strong{font-weight:600;color:var(--ink)}details{margin-top:15px;border-top:1px solid var(--line);padding-top:13px}summary{font-size:12px;cursor:pointer;color:var(--muted)}pre{font:11px/1.6 var(--mono);white-space:pre-wrap;overflow-wrap:anywhere;background:var(--panel);padding:14px;border:1px solid var(--line);border-radius:8px;max-height:450px;overflow-y:auto}.empty{color:var(--muted);font-size:14px;text-align:center;padding:65px 24px;border:1px solid var(--line);border-radius:12px}.no-geometry{display:flex;align-items:center;justify-content:center;min-height:240px;color:var(--muted);font-size:13px;padding:24px;text-align:center}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.geometry-shape{vector-effect:non-scaling-stroke}
+@media(max-width:1000px){.shell{padding:24px 22px 40px}.layout{grid-template-columns:220px minmax(0,1fr);gap:20px}.stage{grid-template-columns:1fr}.traits{display:grid;grid-template-columns:1fr 1fr;gap:20px}.trait-separator{margin-top:0}.drawing{height:320px}.drawing-label{padding-top:12px}}
+@media(max-width:650px){.shell{padding:20px 16px 32px}header{align-items:start;flex-direction:column;gap:18px;padding-bottom:18px}.saved{text-align:left}.run-form{width:100%}.run-form .field{flex:1}.run-form input{width:100%}.toolbar{grid-template-columns:1fr 1fr;gap:16px 12px;padding:18px 0}.snapshot-field{grid-column:1/-1}.layout{display:flex;flex-direction:column;gap:20px;padding-top:18px}.gallery{grid-template-columns:repeat(auto-fill,minmax(104px,1fr));max-height:230px}.gallery-header{margin-bottom:8px}.thumbnail{height:60px}.type-button{padding:7px}.specimen-header{gap:12px;flex-wrap:wrap}.agent-field{max-width:100%;min-width:160px;flex:1}.drawing{height:300px}.overview{gap:6px 12px}.overview .subtle{width:100%}.traits{gap:18px}.marker-controls{gap:5px 10px}.marker-option{min-height:34px}.view-note{font-size:11px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <div>
+      <div class="eyebrow">Haishool · biological state inspector</div>
+      <h1>Inhabitants</h1>
+      <p class="subtitle">Inspect saved agents and their inherited traits. Every drawing follows the exported geometry rules.</p>
+    </div>
+    <form class="run-form" id="run-form" hidden>
+      <label class="field" for="world-seed">World seed<input type="number" min="0" step="1" value="85" id="world-seed" name="seed" required></label>
+      <button type="submit" class="primary" id="run-button">Run world</button>
+    </form>
+    <div class="saved" id="saved-mode">Saved run<br><span id="saved-seed"></span></div>
+  </header>
+  <p class="run-status" id="run-status" role="status" aria-live="polite"></p>
+  <p class="error" id="error" role="alert" hidden></p>
+  <div id="viewer" hidden>
+    <section class="toolbar" aria-label="Saved state selection">
+      <label class="field" for="planet-select">Planet<select id="planet-select"></select></label>
+      <label class="field" for="collection-select">Saved population<select id="collection-select"></select></label>
+      <div class="field snapshot-field">
+        <label class="timeline-label" for="snapshot-range"><span>Snapshot</span><strong id="snapshot-label"></strong></label>
+        <div class="timeline">
+          <button class="time-button" id="previous-snapshot" type="button" aria-label="Previous saved snapshot">←</button>
+          <input type="range" id="snapshot-range" min="0" max="0" value="0" step="1" aria-describedby="snapshot-position">
+          <button class="time-button" id="next-snapshot" type="button" aria-label="Next saved snapshot">→</button>
+        </div>
+      </div>
+    </section>
+    <div class="overview" aria-live="polite">
+      <strong id="population-count"></strong><span id="type-count"></span><span class="subtle" id="snapshot-position"></span>
+    </div>
+    <div class="layout" id="populated-view">
+      <aside aria-label="Saved types">
+        <div class="gallery-header"><h2 id="gallery-title">Genotypes</h2><span id="gallery-count"></span></div>
+        <div class="gallery" id="gallery"></div>
+      </aside>
+      <section class="specimen" aria-label="Selected specimen">
+        <div class="specimen-header">
+          <div><div class="eyebrow" id="selection-kind">Selected genotype</div><div class="specimen-title" id="selected-type"></div><div class="specimen-caption" id="selected-count"></div></div>
+          <label class="field agent-field" for="agent-select" id="agent-field"><span id="entity-select-label">Saved agent</span><select id="agent-select"></select></label>
+        </div>
+        <div class="stage">
+          <div>
+            <div class="drawing-wrap">
+              <div class="drawing-label"><strong>Trait-based rendering</strong><span id="geometry-version"></span></div>
+              <div id="drawing-host"></div>
+              <p class="view-note">Geometry is a display rule, not evolved anatomy. No physical scale is implied.</p>
+            </div>
+            <div class="marker-controls" id="marker-controls" aria-label="Visible trait markers"><span>Markers</span></div>
+          </div>
+          <div class="traits">
+            <section><h3>Source attributes</h3><dl class="trait-list" id="body-traits"></dl></section>
+            <section><h3 class="trait-separator">Senses &amp; signalling</h3><dl class="trait-list" id="sense-traits"></dl></section>
+          </div>
+        </div>
+        <div class="notice">
+          <p><strong>Levels are capacities, not organ counts.</strong> Eye, hearing, smell and call marks appear only when that trait is present in the saved phenotype.</p>
+          <p id="society-note">Society populations are aggregates. These biological agents are not individual simulated citizens.</p>
+          <p id="identity-note">Agent identifiers belong to one saved snapshot; they are not lifelong individual identities.</p>
+        </div>
+        <details><summary>Exact saved agent, genotype &amp; rendering data</summary><pre id="source-data"></pre></details>
+      </section>
+    </div>
+    <div class="empty" id="snapshot-empty" hidden></div>
+    <details><summary>Run source &amp; modelling limits</summary><pre id="run-source"></pre></details>
+  </div>
+  <div class="empty" id="empty-world">No world is loaded.</div>
+</div>
+<script id="inhabitant-data" type="application/json">{"schema_version":"inhabitants-v1","mapping_version":null,"source":{},"limitations":[],"genotypes":{},"phenotypes":{},"planets":[],"empty_reason":"No saved world is embedded in this viewer."}</script>
+<script id="inhabitant-config" type="application/json">{"live":false}</script>
+<script>
+(() => {
+  "use strict";
+  const $ = id => document.getElementById(id);
+  const svgNS = "http://www.w3.org/2000/svg";
+  const number = new Intl.NumberFormat("en");
+  const features = [["eyes","Eyes"],["hearing","Hearing"],["smell","Smell"],["touch","Touch"],["calling","Calling"],["neurons","Neurons"],["movement","Movement"]];
+  const visibleFeatures = new Set(features.map(item=>item[0]));
+  const tags = new Set(["ellipse","circle","path","line","polyline","polygon","rect"]);
+  const attributes = new Set(["cx","cy","r","rx","ry","x","y","x1","x2","y1","y2","width","height","points","d","transform"]);
+  const colorPattern = /^(?:none|transparent|currentColor|#[0-9a-f]{3,8}|(?:rgb|rgba|hsl|hsla)\([\d\s.,%+-]+\))$/i;
+  let dataset = null, planetIndex = 0, snapshotIndex = 0, selectedKey = null, memberIndex = 0;
+  let collection = "agents", busy = false;
+  let config = {};
+  try { config = JSON.parse($("inhabitant-config").textContent); } catch (_) {}
+
+  function text(value,fallback="Not saved") { return value === null || value === undefined ? fallback : String(value); }
+  function compactId(value) { const id=text(value); return id.length>22?id.slice(0,12)+"…"+id.slice(-5):id; }
+  function make(tag,className,content) {
+    const element = document.createElement(tag);
+    if (className) element.className=className;
+    if (content !== undefined) element.textContent=text(content,"");
+    return element;
+  }
+  function error(message) { $("error").textContent=message; $("error").hidden=!message; }
+  function worldSeed(data) { return data && (data.world_seed ?? data.source?.world_seed ?? data.source?.seed ?? data.world?.seed); }
+  function planet() { return dataset?.planets?.[planetIndex] || null; }
+  function sensesSnapshots() { return Array.isArray(planet()?.snapshots) ? planet().snapshots.filter(state=>state.kind!=="lineages") : []; }
+  function bodySnapshots() {
+    if (Array.isArray(planet()?.body_lineages) && planet().body_lineages.length) return planet().body_lineages;
+    return Array.isArray(planet()?.snapshots) ? planet().snapshots.filter(state=>state.kind==="lineages") : [];
+  }
+  function snapshots() { return collection==="bodies" ? bodySnapshots() : sensesSnapshots(); }
+  function snapshot() { return snapshots()[snapshotIndex] || null; }
+  function groupKey(group) { return text(group.phenotype_id,"") + "/" + text(group.genotype_id,group.id ?? ""); }
+  function groups() {
+    const saved=Array.isArray(snapshot()?.groups) ? snapshot().groups : [];
+    return saved.slice().sort((a,b)=>(b.count-a.count)||(groupKey(a)<groupKey(b)?-1:groupKey(a)>groupKey(b)?1:0));
+  }
+  function selectedGroup() { return groups().find(group=>groupKey(group)===selectedKey) || null; }
+  function phenotype(group) { return dataset?.phenotypes?.[group?.phenotype_id] || group?.phenotype || null; }
+  function genotype(group) { return dataset?.genotypes?.[group?.genotype_id] || null; }
+  function members(group) {
+    if (!group) return [];
+    const key=collection==="bodies"?"lineages":"agents";
+    const agents = Array.isArray(snapshot()?.[key]) ? snapshot()[key] : [];
+    if (Array.isArray(group.indices)) return group.indices.map(index=>agents[index]).filter(Boolean);
+    return agents.filter(agent=>agent.phenotype_id===group.phenotype_id && agent.genotype_id===group.genotype_id);
+  }
+  function normalizeFeature(feature) {
+    return ({ears:"hearing",voice:"calling",neuron:"neurons",speed:"movement"})[feature] || feature || "body";
+  }
+  function sensorLevel(traits,name) {
+    const sensor = traits.sensors?.[name];
+    if (typeof sensor === "number") return sensor;
+    return sensor?.level ?? traits.genes?.[name] ?? null;
+  }
+  function featurePresent(entry,feature) {
+    const traits=entry?.traits || {};
+    if (["eyes","smell","touch","hearing"].includes(feature)) {
+      const level=sensorLevel(traits,feature==="hearing"?"ears":feature);
+      return Number.isFinite(level) && level > 0;
+    }
+    if (feature==="calling") {
+      const level=traits.voice?.level ?? traits.genes?.voice;
+      return Number.isFinite(level) && level > 0;
+    }
+    if (feature==="neurons") return Number.isFinite(traits.neuron_count) && traits.neuron_count>0;
+    if (feature==="movement") return Number.isFinite(traits.speed) && traits.speed>0;
+    return true;
+  }
+
+  function renderGeometry(entry,large,label) {
+    const geometry=entry?.geometry;
+    if (!geometry || !Array.isArray(geometry.viewBox) || geometry.viewBox.length!==4 ||
+        !geometry.viewBox.every(Number.isFinite) || geometry.viewBox[2]<=0 || geometry.viewBox[3]<=0 || !Array.isArray(geometry.shapes)) {
+      return make("div",large?"no-geometry":"subtle",large?"No geometry was saved for this selection.":"No drawing");
+    }
+    const svg=document.createElementNS(svgNS,"svg");
+    svg.setAttribute("viewBox",geometry.viewBox.join(" "));
+    svg.setAttribute("class",large?"drawing":"thumbnail");
+    svg.setAttribute("role","img");
+    svg.setAttribute("aria-label",label);
+    const title=document.createElementNS(svgNS,"title");
+    title.textContent=label;
+    svg.append(title);
+    for (const shape of geometry.shapes) {
+      if (!tags.has(shape.tag) || !shape.attrs || typeof shape.attrs!=="object") continue;
+      const feature=normalizeFeature(shape.feature);
+      if (feature!=="body" && (!visibleFeatures.has(feature) || !featurePresent(entry,feature))) continue;
+      const node=document.createElementNS(svgNS,shape.tag);
+      const lineShape=["line","polyline"].includes(shape.tag)||shape.attrs.fill==="none";
+      node.setAttribute("fill",lineShape?"none":feature==="body"?"var(--body)":"var(--"+(visibleFeatures.has(feature)?feature:"green")+")");
+      node.setAttribute("stroke",feature==="body"?"var(--green)":"var(--"+(visibleFeatures.has(feature)?feature:"green")+")");
+      node.setAttribute("stroke-width","1.3");
+      for (const [key,value] of Object.entries(shape.attrs)) {
+        if (attributes.has(key) && (typeof value==="string" || (typeof value==="number" && Number.isFinite(value)))) node.setAttribute(key,String(value));
+        if ((key==="fill" || key==="stroke") && typeof value==="string" && colorPattern.test(value)) node.setAttribute(key,value);
+        if (["stroke-width","stroke-dasharray","opacity"].includes(key) && /^[\d.\s,-]+$/.test(String(value))) node.setAttribute(key,String(value));
+      }
+      node.setAttribute("class","geometry-shape");
+      node.setAttribute("data-feature",feature);
+      svg.append(node);
+    }
+    return svg;
+  }
+
+  function traitRow(list,label,value,feature) {
+    const row=make("div","trait-row"), term=make("dt","",label), definition=make("dd","",value);
+    if (feature) {
+      const swatch=make("span","swatch");
+      swatch.dataset.feature=feature;
+      swatch.style.background="var(--"+feature+")";
+      term.prepend(swatch);
+    }
+    row.append(term,definition); list.append(row);
+  }
+  function renderTraits(entry) {
+    const traits=entry?.traits || {};
+    const body=$("body-traits"), senses=$("sense-traits");
+    body.replaceChildren(); senses.replaceChildren();
+    traitRow(body,"Body size",traits.body_size==null?"Not saved":number.format(traits.body_size)+" cells");
+    traitRow(body,"Cell types",text(traits.cell_types));
+    if (entry?.kind==="body_lineage") {
+      traitRow(body,"Guild",text(traits.guild));
+      traitRow(body,"Adhesion",text(traits.adhesion));
+      traitRow(body,"Trophic level",text(traits.trophic_level));
+      const lineage=members(selectedGroup())[memberIndex];
+      if (lineage?.biomass!=null) traitRow(body,"Lineage biomass",number.format(lineage.biomass));
+      traitRow(senses,"Senses","Not modelled here");
+      $("marker-controls").hidden=true;
+      return;
+    }
+    $("marker-controls").hidden=false;
+    traitRow(body,"Neurons",text(traits.neuron_count),"neurons");
+    traitRow(body,"Speed",text(traits.speed),"movement");
+    for (const [key,label,color] of [["eyes","Eyes","eyes"],["ears","Hearing","hearing"],["smell","Smell","smell"],["touch","Touch","touch"]]) {
+      const level=sensorLevel(traits,key);
+      traitRow(senses,label,level===null?"Not saved":"level "+level+(level===0?" · absent":""),color);
+    }
+    const voice=traits.voice?.level ?? traits.genes?.voice;
+    traitRow(senses,"Calling",voice==null?"Not saved":"gene "+voice+(voice===0?" · absent":""),"calling");
+    for (const shape of entry?.geometry?.shapes || []) {
+      const feature=normalizeFeature(shape.feature);
+      if (!features.some(([name])=>name===feature)) continue;
+      const paint=shape.attrs?.stroke || shape.attrs?.fill;
+      if (typeof paint==="string" && colorPattern.test(paint) && paint!=="none") {
+        document.querySelectorAll('.swatch[data-feature="'+feature+'"]').forEach(swatch=>{swatch.style.background=paint;});
+      }
+    }
+  }
+  function countOf(group) { return Number.isFinite(group?.count) ? group.count : members(group).length; }
+  function typeName(group) { return text(group.genotype_id,group.id ?? group.phenotype_id ?? "Saved type"); }
+
+  function renderSelection() {
+    const group=selectedGroup();
+    if (!group) return;
+    const entry=phenotype(group), candidates=members(group);
+    memberIndex=Math.min(Math.max(memberIndex,0),Math.max(0,candidates.length-1));
+    const agent=candidates[memberIndex] || null;
+    $("selection-kind").textContent=collection==="bodies"?"Selected body phenotype":"Selected genotype";
+    $("selected-type").textContent=compactId(typeName(group));
+    $("selected-type").title=typeName(group);
+    $("selected-count").textContent=number.format(countOf(group))+(collection==="bodies"?" lineages with this phenotype in the snapshot":" agents with this genotype in the snapshot");
+    $("agent-field").hidden=!candidates.length;
+    $("entity-select-label").textContent=collection==="bodies"?"Saved lineage":"Saved agent";
+    const chooser=$("agent-select"); chooser.replaceChildren();
+    candidates.forEach((item,index)=>{
+      const label=collection==="bodies"?"Lineage "+text(item.source_lineage_id):"Agent "+text(item.source_index)+" · snapshot "+text(snapshot()?.step);
+      const option=make("option","",label); option.title=text(item.id);
+      option.value=String(index); chooser.append(option);
+    });
+    chooser.value=String(memberIndex);
+    $("drawing-host").replaceChildren(renderGeometry(entry,true,"Trait-based drawing of "+typeName(group)+(agent?", saved "+(collection==="bodies"?"lineage ":"agent ")+text(agent.id):"")));
+    $("geometry-version").textContent=entry?.geometry?.version?"Rule "+entry.geometry.version:"";
+    renderTraits(entry);
+    const context=planet()?.society_context;
+    $("society-note").textContent="Society populations are aggregates. These biological agents are not individual simulated citizens.";
+    $("identity-note").textContent=collection==="bodies"?"Body lineage IDs track aggregate lineages in this run, not individual organisms.":"Agent identifiers belong to one saved snapshot; they are not lifelong individual identities.";
+    $("source-data").textContent=JSON.stringify({[collection==="bodies"?"lineage":"agent"]:agent,group,genotype:genotype(group),phenotype:entry,snapshot:{kind:snapshot()?.kind,stage:snapshot()?.stage,step:snapshot()?.step,generation:snapshot()?.generation,tick:snapshot()?.tick,metrics:snapshot()?.metrics},planet_source:planet()?.source,society_context:context},null,2);
+    $("gallery").querySelectorAll("button").forEach(button=>button.setAttribute("aria-pressed",String(button.dataset.key===selectedKey)));
+  }
+
+  function renderGallery() {
+    const gallery=$("gallery"); gallery.replaceChildren();
+    for (const group of groups()) {
+      const button=make("button","type-button"); button.type="button";
+      button.dataset.key=groupKey(group);
+      button.setAttribute("aria-pressed",String(button.dataset.key===selectedKey));
+      button.setAttribute("aria-label","Select "+typeName(group)+", "+countOf(group)+(collection==="bodies"?" lineages":" agents"));
+      button.append(renderGeometry(phenotype(group),false,"Trait-based drawing of "+typeName(group)));
+      const name=make("span","type-name",compactId(typeName(group))); name.title=typeName(group);
+      button.append(name,make("span","type-count",number.format(countOf(group))+(collection==="bodies"?" lineages":" agents")));
+      button.addEventListener("click",()=>{selectedKey=groupKey(group);memberIndex=0;renderSelection();});
+      gallery.append(button);
+    }
+  }
+
+  function renderSnapshot() {
+    const list=snapshots();
+    const onAgents=collection==="agents";
+    snapshotIndex=Math.max(0,Math.min(snapshotIndex,list.length-1));
+    const state=snapshot(), savedGroups=groups();
+    const range=$("snapshot-range");
+    range.max=String(Math.max(0,list.length-1)); range.value=String(snapshotIndex);
+    range.disabled=list.length<2;
+    $("previous-snapshot").disabled=snapshotIndex<=0;
+    $("next-snapshot").disabled=snapshotIndex>=list.length-1;
+    const generation=state?.generation ?? state?.step;
+    $("snapshot-label").textContent=!state?"No snapshots":onAgents?"Generation "+number.format(generation):(state.tick!=null?"Tick "+number.format(state.tick):"Step "+number.format(state.step));
+    range.setAttribute("aria-valuetext",$("snapshot-label").textContent);
+    const entities=onAgents?state?.agents:state?.lineages;
+    const population=Array.isArray(entities)?entities.length:0;
+    $("population-count").textContent=number.format(population)+(onAgents?" saved agents":" saved lineages");
+    $("type-count").textContent=number.format(savedGroups.length)+(onAgents?" distinct genotypes":" body phenotypes");
+    $("snapshot-position").textContent=list.length?"Snapshot "+(snapshotIndex+1)+" of "+list.length+" · saved states only":"";
+    $("gallery-title").textContent=onAgents?"Genotypes":"Body phenotypes";
+    $("gallery-count").textContent=number.format(savedGroups.length);
+    if (!savedGroups.some(group=>groupKey(group)===selectedKey)) selectedKey=savedGroups.length?groupKey(savedGroups[0]):null;
+    $("populated-view").hidden=!savedGroups.length;
+    $("snapshot-empty").hidden=!!savedGroups.length;
+    $("snapshot-empty").textContent=onAgents?(state?"No living agents are saved at this snapshot. Select an earlier generation to inspect its population.":text(planet()?.reason,"No sensing-agent snapshots are saved for this planet.")):"No body lineages are saved at this snapshot.";
+    if (savedGroups.length) { renderGallery(); renderSelection(); }
+  }
+
+  function renderPlanet() {
+    const chooser=$("collection-select"); chooser.replaceChildren();
+    if (sensesSnapshots().length || !bodySnapshots().length) {
+      const option=make("option","","Sensing agents"); option.value="agents"; chooser.append(option);
+    }
+    if (bodySnapshots().length) {
+      const option=make("option","","Body lineages"); option.value="bodies"; chooser.append(option);
+    }
+    if (!Array.from(chooser.options).some(option=>option.value===collection)) collection=chooser.options[0]?.value || "agents";
+    chooser.value=collection; chooser.disabled=chooser.options.length<2;
+    snapshotIndex=Math.max(0,snapshots().length-1); selectedKey=null; memberIndex=0;
+    renderSnapshot();
+  }
+
+  function install(data) {
+    if (!data || typeof data!=="object" || !Array.isArray(data.planets) || !data.phenotypes || !data.genotypes) throw new Error("This export does not contain the expected inhabitants schema.");
+    dataset=data; planetIndex=0; collection="agents"; error("");
+    const seed=worldSeed(data);
+    if (seed!==undefined && seed!==null) {
+      $("world-seed").value=String(seed); $("saved-seed").textContent="World "+seed;
+      document.title="World "+seed+" · Inhabitants · Haishool";
+    }
+    const chooser=$("planet-select"); chooser.replaceChildren();
+    data.planets.forEach((item,index)=>{const option=make("option","",text(item.label,"Planet "+text(item.id)));option.value=String(index);chooser.append(option);});
+    chooser.value="0";
+    $("viewer").hidden=!data.planets.length;
+    $("empty-world").hidden=!!data.planets.length;
+    $("empty-world").textContent=text(data.empty_reason,"This world has no exported inhabited planets.");
+    $("run-source").textContent=JSON.stringify({schema_version:data.schema_version,mapping_version:data.mapping_version,source:data.source,limitations:data.limitations},null,2);
+    if (data.planets.length) renderPlanet();
+    $("run-status").textContent=(seed==null?"Saved world":"World "+seed)+" · "+data.planets.length+" planet"+(data.planets.length===1?"":"s")+" in this export";
+  }
+
+  async function runWorld(event) {
+    event.preventDefault();
+    if (busy || config.live!==true) return;
+    const seed=Number($("world-seed").value);
+    if (!Number.isSafeInteger(seed) || seed<0) { error("Enter a nonnegative whole-number seed."); return; }
+    busy=true; error(""); $("run-button").disabled=true; $("world-seed").disabled=true;
+    $("run-button").textContent="Running…"; $("run-status").textContent="Running world "+seed+" and exporting its saved biological state…";
+    try {
+      const response=await fetch("/api/run",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({seed})});
+      let result;
+      try { result=await response.json(); } catch (_) { throw new Error("HTTP "+response.status+": the server did not return a readable world export."); }
+      if (!response.ok) throw new Error("HTTP "+response.status+": "+text(result?.detail ?? result?.error,"The world run failed."));
+      install(result);
+      const url=new URL(window.location.href); url.searchParams.set("seed",String(seed)); history.replaceState(null,"",url);
+    } catch (cause) {
+      error(cause instanceof Error?cause.message:"The world run failed.");
+      $("run-status").textContent="Run failed. The previous saved world remains available.";
+    } finally {
+      busy=false; $("run-button").disabled=false; $("world-seed").disabled=false; $("run-button").textContent="Run world";
+    }
+  }
+
+  for (const [key,label] of features) {
+    const option=make("label","marker-option"), checkbox=make("input");
+    checkbox.type="checkbox"; checkbox.checked=true; checkbox.value=key;
+    const swatch=make("span","swatch"); swatch.dataset.feature=key; swatch.style.background="var(--"+key+")"; swatch.setAttribute("aria-hidden","true");
+    option.append(checkbox,swatch,make("span","",label));
+    checkbox.addEventListener("change",()=>{if(checkbox.checked)visibleFeatures.add(key);else visibleFeatures.delete(key);renderGallery();renderSelection();});
+    $("marker-controls").append(option);
+  }
+  $("planet-select").addEventListener("change",event=>{planetIndex=Number(event.target.value);renderPlanet();});
+  $("collection-select").addEventListener("change",event=>{collection=event.target.value;snapshotIndex=Math.max(0,snapshots().length-1);selectedKey=null;memberIndex=0;renderSnapshot();});
+  $("snapshot-range").addEventListener("input",event=>{snapshotIndex=Number(event.target.value);memberIndex=0;renderSnapshot();});
+  $("previous-snapshot").addEventListener("click",()=>{snapshotIndex--;memberIndex=0;renderSnapshot();});
+  $("next-snapshot").addEventListener("click",()=>{snapshotIndex++;memberIndex=0;renderSnapshot();});
+  $("agent-select").addEventListener("change",event=>{memberIndex=Number(event.target.value);renderSelection();});
+  $("run-form").addEventListener("submit",runWorld);
+  window.HaishoolInhabitants={setData:install};
+  window.addEventListener("inhabitants:data",event=>{try{install(event.detail);}catch(cause){error(cause.message);}});
+  $("run-form").hidden=config.live!==true; $("saved-mode").hidden=config.live===true;
+  try { install(JSON.parse($("inhabitant-data").textContent)); } catch (cause) { error("Could not load the embedded world: "+cause.message); }
+  const urlSeed=new URLSearchParams(window.location.search).get("seed");
+  if (urlSeed!==null && /^\d+$/.test(urlSeed)) $("world-seed").value=urlSeed;
+  if (config.live===true) {
+    fetch("/api/info").then(response=>{if(!response.ok)throw new Error("HTTP "+response.status);return response.json();}).then(info=>{
+      const identity=info.engine ?? info.name ?? info.version;
+      if (identity && !busy) $("run-status").textContent+=" · "+text(identity);
+    }).catch(()=>{if(!busy)$("run-status").textContent+=" · engine status unavailable";});
+  }
+})();
+</script>
+</body>
+</html>

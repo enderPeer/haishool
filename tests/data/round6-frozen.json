@@ -1,0 +1,229 @@
+{
+ "note": "sha256 of round-6 default rollouts and lines; default behaviour must never change",
+ "hashes": {
+  "nucleo:1": {
+   "rollout": "e3001bde601fa3124511ba4fbcbde794c56ef551938e531bc85cdbb9846ed582",
+   "lines": "00c864c12918971d1049c0b33387e4d0b01b594bc23e8d79a9a1b73c18384693"
+  },
+  "nucleo:2": {
+   "rollout": "bdf47e4e12cf801639cda1924a168f90ee80245e71a97b94d363b963dab1d359",
+   "lines": "2fbea78d5afd0fd9279d21c72db8c3d3c72e31f6aa46b1054b189f8ea9fa1dd3"
+  },
+  "nucleo:3": {
+   "rollout": "764feeb5179af8596278593572fc576d1035cd9c559549931c37611f49982906",
+   "lines": "5956214b47ab7e85d1d866f0719aacbad6af13f0826248bf71cd0281171b9bed"
+  },
+  "nucleo:4": {
+   "rollout": "e4feeb31f0baefd105170885231f0abe3683f12fffea50bcb92c4da1a0bc25db",
+   "lines": "974311ea784cdc67435e7d30db241a8e7e4ad26d8a9935d87b10a3fdabfc7271"
+  },
+  "nucleo:5": {
+   "rollout": "a08e9a0fa0e105ec2714c4713bd2254f7803f04170e626e351e240054771843d",
+   "lines": "0c845683e34f8dbe37146cd7684f3038fde6d879851acc265ad1dc77576180a8"
+  },
+  "nucleo:6": {
+   "rollout": "6c82662ec7a4f6e2d6b358baaff29669763dd0d0a46ce6abfe69132efe32ea4e",
+   "lines": "905fb62c396ffd0983b77d01928f12340d02beb713886f28462226d96f7e14b9"
+  },
+  "nucleo:7": {
+   "rollout": "17473dfca87caf1e968cbbb59713b1825b92989e530f8634849610c431b21218",
+   "lines": "c8a914cb30debfe3249843a0121bcb25876563915fa0de76205bfa2af3d84c45"
+  },
+  "nucleo:8": {
+   "rollout": "367e0462b7b6f03faa0a1ba2568b97444c0ce2d7942a9bf4c5c8a8b82f5161d3",
+   "lines": "c3fe6ea021baff6be10e371813790a9d0b9a176e6ad7d3bc641df2f9c810f87a"
+  },
+  "nucleo:9": {
+   "rollout": "eb350190897092f39739219f0b87aedc41cb5225654fbe3374636a3ad1b46db7",
+   "lines": "cdc1a33a4e20c236751fd989a8d3ab47351fc5024df6c73a0066b3691c06d27c"
+  },
+  "nucleo:10": {
+   "rollout": "575367987af1eb2fec2659b377d482d2a3a37c9ad3db9cd282fd78fb462c993b",
+   "lines": "08ee356b68d45eeaf37d67892faf48d4b43673c97124d1017d865620cd1849d5"
+  },
+  "nucleo:11": {
+   "rollout": "bf2cc1e0d2693100cff0f99cf9c1412937fe22b5c35770b6744340757f102067",
+   "lines": "a009904b803794fa07c5513e8d2d8e04b901bcc2c183a90b5b94ef1f7fcd1c45"
+  },
+  "nucleo:12": {
+   "rollout": "64e297f0a8d56e40ca97e77da1c1fb8a1d4107c31d2e5248aa6f8c77c7187026",
+   "lines": "ca10d98d9dbf6136adfd9aebd4953009e66e721dd5623c7b1cd657540c700797"
+  },
+  "gravity:1": {
+   "rollout": "7a1bebb3b8e15e720a5dd189159812ba8283df47ff42046f2e9da6c9e7120262",
+   "lines": "163d69f931892da778ecea2670ad989ec8b608c85fde35b96949af90206a360c"
+  },
+  "gravity:2": {
+   "rollout": "f6adc02a1720da2559eed5e9e729d7eb653cd1ab657449135c1ba025c2d94136",
+   "lines": "c99a563fa4365c250d5483d9f7fad6ce4fa7b36ab6d8192adaa59d8baf816a3c"
+  },
+  "gravity:3": {
+   "rollout": "18bf748f1f172a2f60888d66bc8b66a0f9c7ed0fbd543a9c06e4aafe720c4dc9",
+   "lines": "8e6013a6e98f83866d2735603bd6cea94853e9d1172886edd0aa07217af56db0"
+  },
+  "gravity:4": {
+   "rollout": "6d809846f4440d9b308dd3aedc4967ff090741e68c752bf9d5f86e584699f242",
+   "lines": "8e39b0fdd182d2f28d1c385ea0259e89ac6659db9d59bd59bcf45a1e1a44e3da"
+  },
+  "gravity:5": {
+   "rollout": "9cde1f90826ae32937c99efe3165f3f3ea041967071dc25b9c6a1841dc4d94b1",
+   "lines": "1f9a4bc0469521c4d220131079ef4541353b3fb45a8789ffe1d4d8a3ef5a835b"
+  },
+  "gravity:6": {
+   "rollout": "6dea38b9f70402bba7705605c79fa160657d2d30bded1b213026be1fc0d8aef8",
+   "lines": "b0fcb69e5145dc4a4e0da9d5e37b816fd05affdfac141ff77b1daf23849ec995"
+  },
+  "gravity:7": {
+   "rollout": "b6e77994debbf1119c27b66712c27060a3824dc8a4724039049f2eeee71e1a17",
+   "lines": "0d752cb7c37355ed9a464ab00e4c1a2d023f3a90735a9b6112f7ced010ef7ffc"
+  },
+  "gravity:8": {
+   "rollout": "821ce6922e379e392cc1a151c4f6a1fda2dfd3707ae88239960d3ccf2709e486",
+   "lines": "29025a8212143e0aa7fadc62226f66766c9e58ab2a306b16b348f0ce0cd432ca"
+  },
+  "planets:1": {
+   "rollout": "44a72ebdc7f099392178340f8fa4de7b54ae4f1edfa2ea0fae1b25be5f23608c",
+   "lines": "84f567df22b35a9167131e23e4f93e1cd18da1b649520309df6e8e46a01548e0"
+  },
+  "planets:2": {
+   "rollout": "630981ce406257dad4f695dbd879405ac3e21a4be6e3e14add0fbcfb7c5cba4b",
+   "lines": "229dc4827dd5753ab93b6393459e3849ca4ed68ca47ce4340d904d09d562b01d"
+  },
+  "planets:3": {
+   "rollout": "ca2d2283eba5937e539421999894731a330e07213a33286c0eba557539a9e4e1",
+   "lines": "ea15313e22d13220c8b4d2040f97d319e8b837f396103f90249bcdca6b4f1e68"
+  },
+  "planets:4": {
+   "rollout": "cf384e39e1cd649701ffec1a012838a9fd7d6827399c481de7eb6d64c9908ecf",
+   "lines": "a41a48c1322304084c7755e07dc44df9dbb1193b8d87dc9b7cab4853901339e4"
+  },
+  "planets:5": {
+   "rollout": "dc93e7b442a8b02e5ff46f57ec3fc152440be06a382332bbc31eb8d685a72e00",
+   "lines": "f95b72582e302838542498299c062158bf370f471d1eb7bc2a3dee239076bb8c"
+  },
+  "planets:6": {
+   "rollout": "1e024ce1552f127d5ee2bb286f43f39c3c34db11e454d5a07e6afbe23d784589",
+   "lines": "8e90d87b2b71494a19e006f8239e898e045adb55318916a6bcbd962e99398671"
+  },
+  "planets:7": {
+   "rollout": "bfe8523ae46c407bedbdaf7271f4b669afaa2ff8ab956528414cbb0988359476",
+   "lines": "e258c9ba7a2d37bffe06b4135c369a31d258a79358250d222f431c8f632a74d6"
+  },
+  "planets:8": {
+   "rollout": "102860d173942f066bc9fc91a0dbf703b96a27f94c5c7e90b61a5e6d05ec79bb",
+   "lines": "054b70d27c37b4978c73fda9db9225f9ce98ae034e22c0af2cc2d97c37ea8910"
+  },
+  "planets:9": {
+   "rollout": "0374293820fe21dacef09ecece44bd6c3d8929674739732f552364b1923ebc77",
+   "lines": "501d72d13b049ecdb310f5cf0ea831e136555b97ec449d03541ce123d65c5182"
+  },
+  "planets:10": {
+   "rollout": "87d2082b1903f35a963ac4809ccba67cfc0c4b9a6706603f2724d276eccec53f",
+   "lines": "115caa61f7393d1b72dcd9f9ff8af4cc3ea2ddb96a8a8f94240378fecb2c30f7"
+  },
+  "planets:11": {
+   "rollout": "7838653e54c282f36d78694f48fdb9080be335485f6208600ee472d51c0233d7",
+   "lines": "69b047355451b14a638a78aa3af664c208c3f3415fea1d70278b49d8efdcd343"
+  },
+  "planets:12": {
+   "rollout": "3e52c57b4d1b65d179bceb2b64b5fa374beb18ac0bf893e0bf3b87ce84f3fb92",
+   "lines": "9681ca212d9af6eb8dfc8a85872cafe6933723f9eff2cf35abf0847ed2695256"
+  },
+  "chem:1": {
+   "rollout": "ec80f2c330bb27b4b1c6101f2496b0458a0351a4052ed668fa2af487d9806bc6",
+   "lines": "ea674f95a2ea282d2e7d6e5f4709b7d85b8526d75c8ace9580914ac1cd3ebe0d"
+  },
+  "chem:2": {
+   "rollout": "1aa7b10802d0160ef3590778f0a569cb399ffac87907c7414a23c40d64a11ca9",
+   "lines": "a8232ac3d1891ff86825e8cb14983b11bd3a61fe40996e7e4160eb3d4e22292e"
+  },
+  "chem:3": {
+   "rollout": "7a67f767e74c31f2d30b75cfa9a7acfd21e09e764bdd7e48ae865a03f809a6cf",
+   "lines": "a135b437ba0d8cb8c15c5ddc39be6eb1da0b99c624de875e8bf5dc28912263b9"
+  },
+  "chem:4": {
+   "rollout": "6c425a4f945010081ead65f95820a94f2b8a2255154f693e568d103df6b4d668",
+   "lines": "f0dd74f41670df3f59df8b2878497cfee9dbe9c0a9bdb00457c5e8dedf1cf41c"
+  },
+  "chem:5": {
+   "rollout": "7fb935950f0d9e1743520e8d54ca1db73b57733ea94b9d71430bdf213478adac",
+   "lines": "e781194aff73ee54993456016a0763132fadca7ee3ef57d135a8d4dd2f0fe085"
+  },
+  "chem:6": {
+   "rollout": "37f7d4ee299928243dbd65a0b88e672c4aa4a9989393a761728157391ea313ff",
+   "lines": "f62566563cf802fa62dfd7f503073d3b70cee75ec7228e01cb4881327a8adb42"
+  },
+  "chem:7": {
+   "rollout": "1603d3740f71423322b30edf3506b61b1cb20c2e49ca98fcd2d196a7abd59282",
+   "lines": "553b778bc35beb322d264f7de1f61ca0047fae3e8cfceb3b8653581481ecbc5f"
+  },
+  "chem:8": {
+   "rollout": "73499cfd77a3cb26c0a8cfd85c61bb3dd6717a8d978f688cb07c216afdea5838",
+   "lines": "964ee589d58fe0acc498d9c39a77cdea025dfba0092a1ac3334751ea0811f0af"
+  },
+  "life:1": {
+   "rollout": "adb5acdd45499bb12f0b28ff9b475240a6d5cb5fc59dff39b20f1dc05f0fe7bc",
+   "lines": "b8eb2593ff1d9f1dbf6acd0ef7b19dc45c9021ecd74e03df1cfaea3d6c7c1b72"
+  },
+  "life:2": {
+   "rollout": "e25b8801739f8294021630a0e98e177876dc00217948867cb20a5e3e06ad8cf4",
+   "lines": "51b7ec119c3e37f1314b172a2f7dd79657fc2f0498aee44246ff8287b22f8ae2"
+  },
+  "life:3": {
+   "rollout": "e169491d9d510c9f9e5698fefa85f0aad07dd899fc7584074fef0ce1ffa0ca20",
+   "lines": "c3fa86b51edd5953ff28dc511f2c82ee436f8312a173828282e6491bec81f2a0"
+  },
+  "life:4": {
+   "rollout": "68b1db12b3f511b396e24ac3670ab489dde08391c058e57f871dc6a6e0fd2e25",
+   "lines": "cfc41c6e3d5b84013c44fa01f094cce00a67560990c1561f324a83cca9a9c86f"
+  },
+  "life:5": {
+   "rollout": "eb6e15f72ca674125995eb3a117795036134584ece4528020ba2b8faedd6ba19",
+   "lines": "a346b2c8cc73d00bebfdfde4c9d0b426d3548f86e3e784fdd0c1989c9607d088"
+  },
+  "life:6": {
+   "rollout": "b4ef69fc58e011e464714c883379ca82d44a8f67a6b61b6fcb2a5b11f8ebc036",
+   "lines": "1d0a83c3d11aa4578c45be022fc7ab73fa024821551710969a27bec0198aea2a"
+  },
+  "life:7": {
+   "rollout": "936210babc0720fd206eeb53eb9e6069127957bc3c2253e299b2434018385290",
+   "lines": "fa824995b054cbf9afd58d8292a07b87ec82ebb12320ddea1bb83c2a12e4118d"
+  },
+  "life:8": {
+   "rollout": "986664d31c310cf7ceead996ff2bbd19fe2e0b8b84cdfbe4149d3016a8c05529",
+   "lines": "06c56750a39c43e828b7bacc31622c1a3b6864cbb01605e9912aeb4f5cc81807"
+  },
+  "world:1": {
+   "rollout": "c46dec4d3eadb1d7ae47dcdf28f1049dbc035f03cc97936d5a9bb0e548c73364",
+   "lines": "8612af463db7a4f31c0ee93dbbf2d5e85b60976bea1a18fc50e417a62ef69c24"
+  },
+  "world:2": {
+   "rollout": "921aec402fe1c941f980bf62dfe1222a387428a0f5b65b96e55c940edaf062d3",
+   "lines": "2f24701a8f68a71b3608452e1b1e0333325015b66a043b7d30bb405c165b55cf"
+  },
+  "world:3": {
+   "rollout": "209e59a98ccde156968d15406196e67f8b19ddfc911017b43d8656442350497b",
+   "lines": "5241ac9e172053dbca99ea723ba0fc26f9c8b5eb044f4efc1965dabf61d0192d"
+  },
+  "world:4": {
+   "rollout": "0dc0e6a4aaf2081504dafce74c4f93417b8fbf38f675324fc3bb2da77468e0df",
+   "lines": "95c9ebbb3e0c80a9bb6832776b95cdb9c35bde1e07e99a73384dd2ffef2274f2"
+  },
+  "world:5": {
+   "rollout": "193ce8a5de4227ff10718e2b2bd5837acc73eb81262cc7c456b9104b30759f87",
+   "lines": "628ba7e95be587e9735d584e8930bcef983086639e7cd0cb55f1b7fbe6f62637"
+  },
+  "world:6": {
+   "rollout": "c13c582b21d7dc7a4283142c20fead715eb50be1af294f535c9a25ada95d94f0",
+   "lines": "27aa440c81042281610faf2157661c04c3025e476b0ab85bf7c3147a5e3d7300"
+  },
+  "world:7": {
+   "rollout": "934b8f79c0f886b824c47b777df05d77eb2112900f040e7bf4526e9cac299bd5",
+   "lines": "b14a91eccab78a60c3bb6be2bc072dd46e4f16dcb763ab95f963442242f88c76"
+  },
+  "world:8": {
+   "rollout": "f78682f1be44a73adbc50dcc263700633603d39a9a2ef2102e9a6e924676ba7d",
+   "lines": "6ce14a159b4c2135d18ae4bef8e7228d6361064ab0dfa57dc846ab900a841c38"
+  }
+ }
+}

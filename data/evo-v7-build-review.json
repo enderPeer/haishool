@@ -1,0 +1,339 @@
+{
+ "critic": {
+  "findings": [
+   {
+    "where": "haishool/evo/world7.py:1116 (kept_try) and :1368 (the tries loop in _climb)",
+    "problem": "Each level from 5 to 12 is re-run up to 6 times with fresh free parameters, and the era reports the first try that reached the next rung. The top of the ladder is picked by the harness, not reached by evolution. Measured: in seed 85 the six society tries ended villages, bands, tribes, bands, chiefdoms, states, and the world reports 'states'. In seed 207 signals gave 'lexicon' five times, then 'language' on try 6. The world7 docstring says all 5 society worlds use all 6 tries.",
+    "fix": "Make tries consecutive episodes on one planet that continue from the previous try's population and keep the planet's drawn parameters, reseeding only the noise. Print every try's result. Report the share of tries that reach a rung instead of best-of-6, or give levels 11 and 12 one try and get rare rungs from more worlds.",
+    "severity": "major"
+   },
+   {
+    "where": "haishool/evo/signals.py:256 (the 'Not modelled' paragraph) and the senses voice and mate-search rule",
+    "problem": "Language is not part of evolution. Signals agents have no genome and no fitness; the docstring says 'nothing here is inherited by genes'. Communication success never changes survival or reproduction in senses or bodies. The only heritable trait linked to speech is the senses voice gene, paid back by an invented mate-search term (0.06 and 0.4). This misses the user's request to 'make language and sensors part of their evolution'.",
+    "fix": "Couple the games to fitness. In senses (or a new combined level), an alarm call that is understood should raise escape in the dynamics. Make lexicon capacity, learning bias and voice heritable traits selected by the communication payoff, with births weighted by it.",
+    "severity": "major"
+   },
+   {
+    "where": "haishool/evo/senses.py:557-561 (kin_gain), :305 (GROUP_MIN), :1284 ('group'); world7 LINKS 'groups'",
+    "problem": "The 'groups' rung, which gates all language, is an index computed on the final summary. The code's own docstring calls it 'an index for the next level, not part of the dynamics', and it is 'yes' from 0.01. No agent ever groups, and grouping has no cost and no benefit while the agents live. In seed 223 a population with 8.5 % talkers is credited with groups.",
+    "fix": "Make grouping a heritable trait in senses: shared detection and alarm calls lower the attack risk, and competition for food is the cost. The groups link should read the evolved share of grouping agents.",
+    "severity": "major"
+   },
+   {
+    "where": "haishool/evo/signals.py:986-990 (advance); :903-930 (_start_grammar)",
+    "problem": "The three language stages are a script. Calls run until step 20, naming starts at step 21 whenever capacity is at least 5, and grammar starts at step 41, all by the clock. Thing-x-property meanings and the stock of holistic phrases are introduced by decree at step 41, and a settled call becoming a word is also decreed. The order calls, then words, then grammar is built in; only whether each stage succeeds varies.",
+    "fix": "Trigger each stage on the state: naming when settled calls fill the capacity and unnamed meanings carry payoff; pairs when at least two things have settled words and the payoff rewards telling properties apart. Otherwise drop the stage words as outcomes and say the dates are exogenous.",
+    "severity": "major"
+   },
+   {
+    "where": "haishool/evo/world7.py:1040-1094 (LEVELS hand-offs); haishool/evo/senses.py founders; signals.py; society.py start",
+    "problem": "No population is carried up the ladder, so it is a relay of separate experiments, not one lineage. Every level restarts from founders: senses agents start blind, deaf, mute and without neurons; signals agents start silent; society starts as bands at skill 0. The chain hands on fewer than about 10 summary means: ears_voice, mean neurons, pressure, band size.",
+    "fix": "Hand on populations. Senses founders draw their traits from the bodies lineages, signals agents inherit the per-agent senses genomes (ears, voice, neurons; not means), and society bands start from the signals group's lexicon and band size.",
+    "severity": "major"
+   },
+   {
+    "where": "haishool/evo/signals.py:312-314 (VOCABULARY, PROPERTIES)",
+    "problem": "Meanings are not grounded in what the organisms sense. Every world draws from the same 12 English meanings (predator, food, water, mate, sky_danger, shelter, young, rival, fire, path, storm, night) and the properties near, far, big, small, whatever senses it evolved. A world that smells but cannot see still has words for night and sky_danger, and 'fire' exists before any technology.",
+    "fix": "Derive the meanings from the senses summary: predator only with predators; food by smell or eyes; near and far only with sensor range above 1; big and small only with eyes; sky_danger only with eyes and light.",
+    "severity": "major"
+   },
+   {
+    "where": "haishool/evo/society.py:391-401 (teaching_fidelity, F_IMITATION 0.2) and :275-286 (TECHS)",
+    "problem": "Rule contradicts the archaeological record: without language no technology is reachable. The docstring's own target is 'no language: no technology, bands throughout, 40 of 40'. Real stone tools date to about 3.3 Myr ago and habitual fire to about 0.4 to 1 Myr ago, before any datable language; the docstring admits this but the rule stays. The tech tree is also one fixed linear Earth sequence ending in mathematics and printing, and writing requires 3 levels of hierarchy.",
+    "fix": "Let imitation alone hold low-skill technologies: lower the loss for skills below about 100, or set N* without language within the canonical population range. Make the technologies a prerequisite graph with alternatives instead of one ordered list.",
+    "severity": "major"
+   },
+   {
+    "where": "haishool/evo/signals.py:321 (NEURONS_PER_WORD = 8) with haishool/evo/senses.py:291 (NEURON_SHARE 0.25) and :274 (cap 1024)",
+    "problem": "Two arbitrary constants decide the language rung. Bodies of 64 to 512 cells allow at most 16 to 128 neurons, which is 2 to 16 words. The world7 docstring attributes '19 of 28 groups stop at calls' to this, and language occurs in 5 of 300 worlds. The outcome reflects the constants, not selection.",
+    "fix": "Make brain size a cost-benefit trait whose cap is not binding, or map neurons to lexicon capacity on a log scale. Then check that the share of worlds with language moves with selection pressures (predators, group living) rather than with these constants.",
+    "severity": "major"
+   },
+   {
+    "where": "haishool/evo/world7.py run(); the gravity collapse inside it",
+    "problem": "Breaks the '<2 s per run' rule. Measured world times were 0.95 to 6.03 s (seed 9: 6.03 s, seed 6: 5.03 s, seed 56: 5.26 s). The docstring itself reports 16 of 40 worlds above 2 s, and the collapse alone takes 1.2 s of every world.",
+    "fix": "Cache the level-2 collapse on a quantised (spin, cooling) grid or use fewer particles in the chain. Stop levels 11 and 12 after the first successful try, and memoise level runs that recur across tries.",
+    "severity": "major"
+   },
+   {
+    "where": "haishool/evo/world7.py CENSUS (:2433)",
+    "problem": "The upper rungs are too rare to teach. Of 300 worlds, 5 reach a language and 2 a society beyond bands. My scans of seeds 1-19, 50-69 and 200-224 found 1 society and no states. Almost all world7 lines are about stars, planets and early life, so a model will see very few speaking worlds or societies through world7.",
+    "fix": "Add a training sampler that uses the forced regimes (a 0.1 to 0.2 solar-mass red dwarf, metal-rich cloud, cloud 1.5) or keeps sampling planets until bodies is reached, and record the selection in the data documentation.",
+    "severity": "major"
+   },
+   {
+    "where": "haishool/evo/world7.py LEVELS signals.lower (:1078-1081)",
+    "problem": "The 'signals' rung is granted at chance-level communication. Seed 7: signals_1 ends 'calls' with success 0.0954 against a guess of 1/12 = 0.083 (talkers 0.13), and the world is reported as rung 'signals'. Seed 29 (docstring) has a 'language' with success 0.10.",
+    "fix": "Require success of at least about twice the guess (or a settled warning with alarm above 0.5) for the signals link, and success above 0.5 for the language link.",
+    "severity": "minor"
+   },
+   {
+    "where": "haishool/evo/signals.py:318 and :476-477 (stage 'language'); world7 'final sentence'",
+    "problem": "Overclaim: 'language' and 'sentence' name a two-word code (thing word plus property word, fixed order) over at most 12 things and 4 properties. The docstring is careful, but the outcome words in the training lines are not.",
+    "fix": "Rename the outcome to compositional_code or two_word_code and 'sentence' to phrase, or define the words in KEYS and the records.",
+    "severity": "minor"
+   },
+   {
+    "where": "haishool/evo/stars.py:373 (luminosity = M^3.5) vs haishool/evo/world7.py:756-773 and planets.luminosity7",
+    "problem": "One chain uses two mass-luminosity laws. In level 7 a 100 solar-mass star lives 0.1 Myr (real about 3 Myr) and stars of 2 to 5 solar masses live 1.5 to 2 times too long, while the host star uses the piecewise law. The planets docstring itself lists this as open.",
+    "fix": "Have stars.py call planets.luminosity7, or a tabulated main-sequence lifetime, and re-tune ia_fraction and the yields.",
+    "severity": "minor"
+   },
+   {
+    "where": "haishool/evo/world7.py:765 (lifetime_of = 1e10 M/L) and MAX_TRIES",
+    "problem": "Lifetimes are off at both ends: 1.1e12 years at 0.083 solar masses (real fully convective red dwarfs about 1e12 to 1e13) and 4.1e9 at 1.35 (real about 3e9). Because each retry costs one Earth-calibrated span, only long-lived stars leave room for 6 tries. The highest worlds therefore orbit red dwarfs (seed 85: 0.0827, seed 207: 0.123); this is arithmetic, not biology.",
+    "fix": "Use a proper main-sequence lifetime fit, and decouple retries from the star's clock (for example, tries share one span).",
+    "severity": "minor"
+   },
+   {
+    "where": "haishool/evo/signals.py:650 (split from the hand-off)",
+    "problem": "Dialects are guaranteed by construction in world7. Grouped senses populations end at the cap of 200, and population of 120 or more sets split = 1, so almost every speaking world7 world has two bands that never meet. dialects near 1 then measures that rule.",
+    "fix": "Draw the split from a band-fission model, or let the two bands exchange migrants at a rate.",
+    "severity": "minor"
+   },
+   {
+    "where": "haishool/evo/cells.py:67 and :505 (partner_gain = 1 + 15 fidelity^10000); haishool/evo/bodies.py:943-944 (guild += 1 only)",
+    "problem": "Ratchets are built in. Cell innovations are never lost; the partner comes after dna by construction; a bodies mutation moves a guild only upward. Complexity therefore cannot be lost by the same route it is gained.",
+    "fix": "Allow innovation loss at a rate (fitness then decides), allow guild moves down, and report the orders that emerge instead of building them in.",
+    "severity": "minor"
+   },
+   {
+    "where": "lessons: haishool/cosmos/planets.py (habitable, scatters, gas_share), chem.py (condensed, water_state), world7.py (fusion, surface), senses.py (max_level)",
+    "problem": "Some lesson answers are unbalanced (2000 lessons, random.Random(2)): planets7 habitable 'no' 0.87, scatters 'yes' 0.68, gas_share 0 0.55; chem condensed 'vapor' 0.62, water_state 'vapor' 0.60; world7 fusion 'yes' 0.63, surface 'terran' 0.59; senses max_level 5 0.59. A constant answer would score well on these.",
+    "fix": "Draw inputs by bracket per answer, as society's LADDERS and senses' SensesLessons already do.",
+    "severity": "minor"
+   },
+   {
+    "where": "haishool/evo/world7.py RULES (:1771-1866)",
+    "problem": "About 8 of the 37 world7 lessons only copy, clip or round an input: cooling returns 'drawn', band is min(agents, 60), neurons rounds, fidelity is 1 - mu, body_size picks one input, brightness is min(flux, 1), formation_year multiplies by 1e9. Years are printed as 10 to 13 digit tokens (era_end, in_time, star_end), which makes addition lessons long.",
+    "fix": "Merge or drop the copy rules, and print ages in Myr with 3 to 4 significant digits.",
+    "severity": "minor"
+   },
+   {
+    "where": "all round-7 lines (LessonGate.records descriptions, level keys, world7)",
+    "problem": "The vocabulary grows by about 58 %. Measured against the 1855 non-numeric word types in data/cosmos-v6 and data/truth-v5, round-7 lines add about 1085 new types: stars 112, cells 153, bodies 162, senses 164, signals 150, society 166, world7 325, rules-7 nucleo, gravity, planets, chem and life 93, 149, 164, 102, 86. Many come from the English descriptions in the records and occur once. Syllable tokens also clash with format words: the vowel 'a' in 'inventory ... vowels a' is the answer marker, and 'no', 'so', 'to', 'me', 'be' can be utterances (the signals docstring admits this).",
+    "fix": "Write records with key words only, or keep them out of the core set. Leave n+o out of the phoneme inventory, write vowels as syllables, or mark utterances with a prefix word.",
+    "severity": "minor"
+   },
+   {
+    "where": "lines() of each level (society 2912 lines per rollout, senses 2021, signals 1865, bodies 1531, stars 1416, cells 1223)",
+    "problem": "Learnability: per seed, recall lines about chaotic rollouts far outnumber the lessons, and those lines can only be memorised.",
+    "fix": "In curriculum7, sample state and next-step questions sparsely per seed and give the lessons a fixed share.",
+    "severity": "minor"
+   },
+   {
+    "where": "haishool/evo/world7.py:327 (T_FF_YEARS), :381 (disc_retained 0.08); haishool/cosmos/gravity.py Rules 7 item 7; haishool/cosmos/nucleo.py Rules 7 item 4; haishool/cosmos/planets.py 'still wrong'",
+    "problem": "Known toy values remain (all are acknowledged in the docstrings). Collapse is always 6 t_ff = 2.57 Myr for every cloud (real 0.1 to 1 Myr). Disc radii are about 100 times real ones. Discs hold 2 to 10 % of the star's mass (real about 1 %). Helium responds to the baryon density half as strongly as it should (0.0045 against 0.0096 per e-fold). About two thirds of the solids are ejected, and rocky planets have a median of 2.6 earth masses. Chem has no entropy, so its rock forms at about 2200 K where real condensation begins near 1680 K.",
+    "fix": "Scale the collapse clock with the cloud's density, lower DISC_RETAINED with a gas giant re-tune, and fix the helium dependence on eta in nucleo. The rest can stay as labelled toys.",
+    "severity": "minor"
+   }
+  ],
+  "missing": [
+   "Natural selection on communication: no level makes being understood change survival or births, and lexicon capacity and learning bias are not heritable.",
+   "Continuity of one population from cells to speakers: each level restarts from founders and receives only summary means.",
+   "Grouping as an evolved behaviour with costs and benefits; today it is a post-hoc index (kin_gain of 0.01 or more).",
+   "Meanings grounded in the evolved senses (e.g. no 'night' or 'sky_danger' for blind lineages, no 'fire' before fire).",
+   "Speech as events in a rollout (who said what to whom, dialogue turns); only lexicon, grammar and say/meaning questions exist, and syntax stops at two words.",
+   "Feedback down the ladder: society never changes biology or language (no lexicon growth with technologies, no language change from contact).",
+   "Branching or alternative routes: the chain is one prefix ladder fixed by LINKS (bodies need complex cells, signals need groups, society needs language), which the world7 docstring calls the chain's own rule.",
+   "Further complexity after society, and real development: anatomy.py and inhabitants.py are display encodings with invented tissue layout, not evolved body plans.",
+   "world7 under the 2 s contract.",
+   "A forced-regime sampler so that speaking and society worlds appear in world7 training data in useful numbers.",
+   "I did not run the round-7 test files (other agents are working in this checkout); only tests/test_round6_frozen.py was run (56 passed)."
+  ],
+  "summary": "Read-only critique of round 7. I read every haishool/evo module docstring, the Rules 7 sections of the five cosmos levels and world7.py, and ran worlds, lessons and languages.\n\n**Rules corrected (round 6 unchanged; tests/test_round6_frozen.py: 56 passed)**\n- **nucleo:** one universe instead of a box of them (helium 0.2473), photon heating by electron-positron annihilation, bottleneck at 9e8 K (208.7 s), neutron lifetime in the freeze-out (d ln Y / d ln tau_n 0.72), trace laws only where they hold.\n- **gravity:** inelastic pair drag instead of an axis reset, bound clumps of at least 14 particles, 'pattern' instead of spiral arms, star_time.\n- **planets:** habitable zone by flux (0.356 to 1.107), so liquid water exactly in the zone; ejection by the Safronov number; exponential disc lifetimes; piecewise luminosity; type II migration; angular-momentum-conserving mergers.\n- **chem:** Hess's-law bond enthalpies, one 4.8 K per kJ/mol rule, bond orders, heat-driven exchange, sparks, a C-H definition of organic.\n- **life:** spent monomers (no perpetual motion), hydrolysis per bond, copy time min(1, 4/l), complementary copies, concentration-squared polymerisation.\n- **world7 seams:** the stars level replaces '3 % per generation', 'cooling 0.1 + 20 Z' is gone, discs scale with the star, temperature and zone are one rule.\n\nThe remaining wrong or arbitrary rules are in the findings.\n\n**Worlds run (eras printed)**\n| Seed | Result |\n|---|---|\n| 4 | no_star (0.0627 solar masses) |\n| 1 | no_water (thin planet at 239 K) |\n| 3 | replicators, then out_of_time (1.36 solar-mass star; cells collapse) |\n| 219 | complex_cells, out_of_time |\n| 223 | groups, out_of_time (8.5 % talkers) |\n| 7 | signals (success 0.095) |\n| 207 | society: tribes at 17.4 Gyr, on try 6 of 6 |\n| 85 | states (0.0827 solar-mass red dwarf, society on try 6 of 6) |\n\nWorld run times were 0.95 to 6.03 s.\n\n**Language tests** (60 signals seeds, plus world7 seeds 85 and 207)\n- Lexicons differ: 44 distinct lexicons in 44 speaking worlds.\n- say and meaning round-trip: 0 failures over 1038 pair utterances; 7 utterance forms have more than one meaning.\n- 40 of 63 held-out pairs can be said by the induced rule. Examples: 'signals seed 2 say predator small' gives 'ne nu ne', never taught; world7 seed 85 'say predator small' gives 'me pa pa ma', and its meaning comes back as 'predator small'.\n- Changed answers are rejected.\n\n**Lessons**\n- 20 lessons per level were printed; each answer follows from its question.\n- Lines stay within limits: the longest lesson has 44 tokens and the longest world7 line 118.\n- Answer balance is fine except a few rules: planets7 'habitable' answers 'no' in 0.87 of lessons, chem 'condensed' 'vapor' in 0.62, world7 'fusion' 'yes' in 0.63.\n- Round-7 lines add about 1085 word types to the 1855 of the round-5/6 data.\n\n**Verdict**\nRound 7 does repair most of the named physics and chemistry errors, and the docstrings are unusually honest: each names its model, its invented constants and its open problems. The biology levels hold real evolutionary dynamics inside themselves: heritable variation, selection and costs in cells, bodies and senses, plus a real Lewis, naming-game and Kirby iterated-learning pipeline with compositional generalisation that round-trips. The ladder as a whole is still largely scripted. Each level restarts from founders and receives only summary means. 'groups' is an index, not a behaviour; the signals stages switch by the clock; technologies follow one fixed order; and world7 re-rolls each level up to six times and keeps the best try, which picks the upper rungs. Language is learned culture with no effect on fitness and meanings that do not come from the evolved senses, so the request to make language part of evolution is not yet met, and speaking or social worlds are too rare (5 and 2 in 300) to teach a model much. The most important fixes: carry populations between levels, make grouping and communication heritable and paid for in fitness, ground meanings in senses, replace best-of-six with continued history, and bring world7 under 2 s."
+ },
+ "integrate": {
+  "files": [
+   "C:/Users/end/Desktop/Haishool/haishool/curriculum7.py",
+   "C:/Users/end/Desktop/Haishool/tests/test_curriculum7.py",
+   "C:/Users/end/Desktop/Haishool/scripts/build_world7_page.py"
+  ],
+  "build_command": "python -m haishool.curriculum7 build --out data/evo-v7 --scale 1 --world-seeds 256 --workers 12   (optional: --eval-seeds N, --eval-limit 256, --seed 20261001, --with-truth)",
+  "report": {
+   "summary": "Round 7 is integrated into a dataset builder, and the whole repository test suite passes. I made 3 new files and edited no existing file. No bugs were found in haishool/evo/*.py or tests/test_evo_*.py, so none were edited. The builder reuses curriculum.Writer, partition, key, json_write and build_topic by import, so its layout and report format are the same as round 6. haishool.train_final.input_manifest accepts the output directory (checked on the small build: 24 topics, categories legacy and predict).",
+   "builder": {
+    "topics": "24 topics. (1) predict_<level> for the 7 levels in evo.LEVELS: stars, cells, bodies, senses, signals, society and world7. (2) predict_<old>_rules7 for the lesson gates of the corrected round-6 levels: nucleo7, gravity, planets7, chem and life7. This was added so their rules-7 lessons also reach training; the task only named predict_<level> for evo.LEVELS. (3) legacy_<level> for the 7 levels. (4) legacy_<old>_rules7 for nucleo, gravity, planets, chem and life.",
+    "lesson_split": "A lesson's split is curriculum.partition(gate.split_key(prompt), seed), so two spellings of one lesson land on the same side in every topic. key7(prompt) returns the split_key of a round-7 lesson, and curriculum.key for any other prompt. The rounds work like curriculum.build_topic (target 30000*scale training lines, stopping when the gate saturates). Every lesson is checked with LessonGate.check inside Writer.add. Records go to train.",
+    "stories": "Round 6 draws one set of seeds: random.Random(seed).sample(1..9998, world_seeds + max(8, world_seeds//8)). The first world_seeds are train, and the rest are split in half into dev and sealed. Each seed is on one side for all 12 story topics. Rollouts run in a ProcessPoolExecutor, world7 first because it is slowest. Each worker calls conserved(r) and lines(r), thins step questions to 32 kept and 32 held per rollout (a round-7-aware regex covering 'rules 7' and 'world7'), and judges every kept and held question with the level's own check, which replays the cached canonical run. As in round 6, records of train seeds go to train and records of held-out seeds are not written. Seeded questions take their seed's split. Seedless questions take the semantic split of key7, the same split the lesson topics give them; these are the chem rules-7 and world7 table questions and the world7 hand-off lessons. Seedless records and tables are added once per topic: nucleo.records(rules=7), chem records7 and table_lines7, and world7 records and table_lines, leaving out world7's lesson records because those belong in predict_world7. signals and world7 include their language lines (lexicon, grammar, phrases, word/meaning/say), and the thinning never removes word, meaning or say questions.",
+    "files_written": "<topic>-{train,dev,sealed}.txt, <topic>-report.json for each lesson topic, rollouts.jsonl (topic, seed, split, summary), prompts.txt (key7 of every question) and report.json. report.json has topics (splits with lines, tokens, kinds and sha256, plus dropped, and for lessons target, drawn, rounds, status and seconds), rollouts (seeds per split, total, seconds), totals and seconds.",
+    "with_truth": "--with-truth (off by default) also writes the five round-5 truth topics with curriculum.build_topic at the round-6 targets times scale. haishool.train_final.mixture raises an error unless all five truth topics are present. It was tested at scale 0.002, and train_final.category then gives the groups truth, predict and legacy."
+   },
+   "tiny_test_build": "tests/test_curriculum7.py builds twice into tmp_path with scale 0.01, world_seeds 4 and eval_seeds 4 (8 seeds: 4 train, 2 dev, 2 sealed), once with 6 workers and once with 3. A build takes about 14 s. The 11 tests check: all topics and files exist; every lesson topic reaches target; every line is dense and at most 256 tokens; every lesson in every split is accepted by its gate and rejected when altered ('9 ' prepended); the splits are disjoint by key7 across all topics; the splits are disjoint by seed, with records only in train and every seed present on its side in every legacy topic; report totals and per-split lines, tokens and sha256 match the files and prompts.txt; the second build is byte-identical (every .txt and .jsonl identical; JSON reports identical apart from wall-clock 'seconds'); a finished build is not overwritten; with_truth works; thin keeps language questions and records; seed_of parses seeds.",
+   "small_real_build": {
+    "command": "python -m haishool.curriculum7 build --out <scratchpad>/evo-v7-small --scale 0.05 --world-seeds 24 --workers 12 (32 seeds: 24 train, 4 dev, 4 sealed; 384 rollouts)",
+    "seconds_total": 38.62,
+    "seconds_rollout_phase": 36.86,
+    "disk": "11 MB",
+    "totals": {
+     "train": {
+      "lines": 57402,
+      "tokens": 2090067
+     },
+     "dev": {
+      "lines": 5201,
+      "tokens": 106715
+     },
+     "sealed": {
+      "lines": 5157,
+      "tokens": 106587
+     }
+    },
+    "per_topic_lines_tokens_train_dev_sealed": {
+     "predict_nucleo_rules7": "1862/48371, 255/6439, 244/6224",
+     "predict_gravity_rules7": "1842/54968, 223/6618, 229/6521",
+     "predict_planets_rules7": "2000/52968, 229/5758, 229/5725",
+     "predict_chem_rules7": "1661/33110, 213/4213, 173/3302",
+     "predict_life_rules7": "1548/34622, 213/4733, 186/4108",
+     "predict_stars": "1914/41363, 229/5006, 233/5018",
+     "predict_cells": "1857/42832, 195/4414, 228/5228",
+     "predict_bodies": "1666/39876, 224/5319, 208/4834",
+     "predict_senses": "1729/39934, 212/4834, 202/4632",
+     "predict_signals": "1610/26982, 214/3615, 183/3131",
+     "predict_society": "1945/47435, 237/5832, 251/6084",
+     "predict_world7": "1703/36749, 189/3879, 223/4759",
+     "legacy_world7": "3853/86947, 256/4824, 256/4731",
+     "legacy_stars": "2058/109279, 208/3967, 208/4044",
+     "legacy_cells": "2240/97484, 216/3623, 216/3754",
+     "legacy_bodies": "2952/144821, 168/2729, 168/2791",
+     "legacy_senses": "2544/133310, 180/3015, 180/3278",
+     "legacy_signals": "4552/132589, 256/4171, 256/4328",
+     "legacy_society": "3096/168133, 188/3102, 188/3192",
+     "legacy_nucleo_rules7": "1948/73644, 196/3939, 196/3984",
+     "legacy_gravity_rules7": "2640/177890, 192/3808, 192/3865",
+     "legacy_planets_rules7": "2798/92579, 256/4726, 256/4829",
+     "legacy_chem_rules7": "4240/181679, 256/4402, 256/4458",
+     "legacy_life_rules7": "3144/192502, 196/3749, 196/3767"
+    },
+    "longest_line_tokens_per_topic": "legacy_world7 119, legacy_gravity_rules7 112, legacy_stars 111, legacy_chem_rules7 108, legacy_society 101, predict_bodies 98; every other topic is under 100",
+    "measured_full_lesson_phase": "I ran all 12 lesson topics at target 30000 in a 12-worker pool: 14.7 s wall. Each topic took 1.95 to 3.3 s, except predict_signals at 13.4 s. 11 topics reached the target (30139 to 30497 train lines, 256 dev and 256 sealed each, 628800 to 916525 train tokens). predict_signals saturated at 19078 train lines and 345306 tokens after 50 rounds, with 595086 duplicates.",
+    "full_build_estimate_seconds": "about 350 s (about 6 min) with 12 workers. Method: the rollout phase scales linearly with the number of seeds. The full build has 256+32 = 288 seeds against 32 in the small build, so 36.86 s * 288/32 = 332 s. To that I added the measured full-size lesson phase (14.7 s) and a few seconds for table lines and prompts.txt. The estimate assumes this 32-thread machine and the same load. world7 dominates the rollout cost: 288 worlds at about 2.6 s median each under 12-way load.",
+    "full_build_size_estimate": "Train lines about 30k * 11 + 19k for the lesson topics (about 350k), plus about 9 times the small build's story lines (about 330k): about 680k train lines. Dev and sealed are capped at 256 lines per topic per split (round-6 eval_limit)."
+   },
+   "world7_page": {
+    "command": "python scripts/build_world7_page.py --out <path>.json [--worlds 36] [--census 200] [--workers 12]",
+    "seconds": 68,
+    "bytes": 168865,
+    "deterministic": "Runs with 12 workers and with 5 workers wrote identical bytes (sha256 identical).",
+    "content": "Each of seeds 1 to 36 has: params; eras, each with all its metrics; the clock (now, first_stars, star_end, age_at_end, and for each era its age, duration and end in years); the highest rung and its index on the ladder; outcome; by_now; why (the dense line and the list of links); the summary; and for speaking worlds the lexicon, grammar, irregular phrases and 3 example utterances with meanings, plus the summary sentence. Every 'why' and every utterance is accepted by world7.check, and each example is also checked in reverse with a 'meaning <utterance>' question: all understood. The census over seeds 1 to 200 gives rung, outcome and by_now counts in ladder order.",
+    "speaking_worlds_1_36": "6, 7, 9 and 10 (signals: holistic calls, e.g. seed 7 lexicon water ki, predator ke, fire ni, night tu) and 29 (language: order thing_first, compositional 1, examples 'pa ta ta sa' = predator far, 'pa ba sa ba' = predator big, 'pa ta' = predator near)",
+    "rung_distribution_seeds_1_200": {
+     "no_metals": 3,
+     "no_star": 25,
+     "no_planets": 1,
+     "no_temperate": 50,
+     "no_water": 15,
+     "no_organics": 0,
+     "sterile": 13,
+     "replicators": 21,
+     "cells": 39,
+     "complex_cells": 0,
+     "bodies": 1,
+     "senses": 11,
+     "groups": 1,
+     "signals": 16,
+     "language": 3,
+     "society": 0,
+     "states": 1
+    },
+    "note": "These counts agree exactly with the world7 reviewer's census of seeds 1-200. Nothing under docs/ was touched."
+   },
+   "verbatim_examples": {
+    "lesson_record": "stars predict alpha_over_iron. oxygen over iron in units of the solar ratio 4 point 4. zero while there is no iron. mass fractions of the gas.",
+    "lesson": "q stars predict remnant mass 1 3 point 9 9. a 1 point 4.",
+    "lesson_sealed": "q stars predict turnoff age 1 0 point 5 7. a 0 point 9 7 8 1.",
+    "lesson_world7": "q world7 predict hz_outer luminosity 0 point 0 0 3 3. a 0 point 0 9 6 3.",
+    "lesson_rules7": "q nucleo7 predict radiation_temperature time 1 6 2 2 point 6 expansion_factor 1 point 0 5 3. a 2 point 4 1 9 e 8.",
+    "story_params_record": "signals seed 3 8 9 2 params. meanings 4. consonants 6. vowels 4. population 1 5. predator_pressure 0 point 6 4. ears_voice 1. neurons 1 0 2 4. bottleneck 1 1 8. split 1. things 4. properties 4. syllables 2 4. ...",
+    "story_step_question": "q signals seed 3 8 9 2 step 3 synonyms. a 1.",
+    "story_dev_question": "q signals seed 7 4 1 6 step 5 9 meanings. a 2 0.",
+    "language_question": "q signals seed 3 8 9 2 say rival big. a be tu ti.",
+    "world7_seedless_record": "world7 ladder. links metals star planets temperate water organics replicators cells complex_cells bodies senses groups signals language society states. rungs no_metals ... states.",
+    "world7_table_question": "q world7 constant first_stars. a 2 5 0 0 0 0 0 0 0.",
+    "world7_era_question": "q world7 seed 7 4 1 6 era planets largest_mass. a 3 point 2 2.",
+    "world7_why": "q world7 seed 3 8 9 2 why no_star. a metals.",
+    "world7_handoff_lesson_in_story": "q world7 predict helium_share hydrogen 0 point 7 5 3 helium 0 point 2 4 7. a 0 point 2 4 7.",
+    "rules7_params_record": "gravity seed 3 8 9 2 rules 7 params. spin 0 point 0 7. cooling 0 point 4. cooling_time 0 point 2 5. bar_unstable no. particles 2 5 6. softening 0 point 0 5. t_ff 1 point 1 1. t_ff_myr 0 point 4 2 8. ...",
+    "rules7_param_question": "q gravity seed 3 8 9 2 rules 7 params spin. a 0 point 0 7.",
+    "rules7_step_question": "q gravity seed 4 0 7 1 rules 7 step 5 5 time. a 5 point 5.",
+    "rules7_final_question": "q chem seed 7 8 6 3 rules 7 final mg_o. a 2.",
+    "rules7_table_record": "chem rules 7 bonds. h 1. he 0. o 2. c 4. n 3. ne 0. mg 2. si 4. s 2. fe 2. al 3. ca 2. na 1. k 1. cl 1.",
+    "rules7_table_question": "q chem rules 7 bond c o highest_order. a 2.",
+    "prompts_txt_line": "bodies seed 5 1 2 2 final predator_share",
+    "rollouts_jsonl_line": "{\"topic\": \"legacy_world7\", \"seed\": 3892, \"split\": \"train\", \"summary\": {\"hydrogen\": 0.746, \"helium\": 0.251, ... \"rung\": \"no_star\", ...}}"
+   },
+   "per_level_probe_seed3": "Lines per canonical rollout, all accepted by their own check, conserved ok: nucleo7 638, gravity7 2014 (1.38 s), planets7 903, chem7 3012 (0.57 s), life7 2675, stars 819, cells 1658, bodies 1131, senses 1621, signals 1516, society 2512, world7 176 (2.03 s; 39 seedless hand-off lessons). In 3000 draws each lesson gate gave 0 rejections, 2285 to 2941 unique prompts, and at most 48 tokens."
+  },
+  "tests": "Full suite before the last test was added: python -m pytest tests -q -> 2422 passed, 10 skipped in 1363.66s (0:22:43), exit 0, no failures anywhere. After adding test_with_truth_writes_what_train_final_needs: python -m pytest tests/test_curriculum7.py tests/test_round6_frozen.py -q -> 67 passed in 73.87s (11 curriculum7 tests + 56 frozen).",
+  "tests_passed": true,
+  "open_issues": [
+   "predict_signals saturates: at target 30000 it stops at 19078 training lessons (about 23.7k distinct lessons in total, with 595k duplicate draws over 50 rounds), because its 10 rules have mostly integer inputs on small ranges. The report marks it status 'saturated', as round 6 did. Raising this would mean widening signals' lesson input ranges, which changes that level's lessons, so I left it alone.",
+   "haishool.train_final.mixture needs all five round-5 truth topics in the same data directory. The default round-7 build (the CLI as specified) has only predict_ and legacy_ topics, so train_final cannot train on it alone. --with-truth adds the truth topics at the round-6 targets (maths 1.5M lines at scale 1, which takes far longer than the round-7 part); alternatively the trainer needs a change, which is outside my files.",
+   "I added predict_<old>_rules7 lesson topics for nucleo7, gravity, planets7, chem and life7 beyond the task's list, so the corrected levels' lessons reach training. 'chem predict schedule_temperature' exists in both round-6 predict and chem.LESSONS; both give the same split_key and answer, so the split agrees across the two datasets.",
+   "Lesson topics overshoot the target slightly (for example 30480 against 30000), because whole generation rounds are written, as in curriculum.build_topic. At scale 0.01 the first round alone gives about 790 lines against a target of 300.",
+   "Dev and sealed files hold at most eval_limit=256 lines per topic per split (round-6 reservoir); the rest are counted as 'reserved_not_saved'. Records of held-out seeds are not written, as in round 6.",
+   "The full-build time (about 6 min with 12 workers) is extrapolated from a 32-seed build plus a measured full-size lesson phase, not measured. World7 per-world times depend on load: 2 to 13 s per world according to the level's own report.",
+   "Determinism was checked on this machine only (numpy 2.4.6, Python 3.11): two builds with different worker counts are byte-identical, and so are two page runs. numpy 2.5 was not available. The output also depends on data/records-r3-all.jsonl and data/hops-v4b/hops-train-r4.txt through the round-6 'earlier answers' filter, which never matched a round-7 lesson (0 earlier_collision drops).",
+   "The world7 page lists only 5 speaking worlds among seeds 1-36, and only one (29) with a compositional language. The higher rungs are rare by design of levels 8-12 (see the world7 report)."
+  ]
+ },
+ "review:world7": {
+  "bugs_fixed": [
+   "Lesson draws were lopsided: 'fusion' answered yes in 0.74 to 0.81 of lessons. The draw is now sig(U(0.02, 0.14)) 80 % of the time and a chain-like star 20 %, which gives 0.545 yes on 40000 lessons.",
+   "'in_time' answered yes in 0.67 of lessons. The draw now puts the star's death at age + span * (0.3, 0.6, 0.9, 0.99, 1.01, 1.5, 4, 40), plus the exact edge 10 % of the time, which gives 0.55 yes.",
+   "'band' answered '6 0' in 0.49 of lessons (agents were drawn from 0 to 120). They are now drawn from 0 to 90, which gives 0.36.",
+   "'surface' answered terran in 0.64 of lessons. The share of planets that kept gas went from 0.2 to 0.3, which gives terran 0.48, enveloped 0.31, thin 0.21. The same draw also balances 'water' (top answer 0.29) and 'greenhouse'.",
+   "Wrong numbers in the docstring's census table: it said '0 of 126 systems below 0.008'; the census gives 130. It said '48 of them before a first try at cells'; the census gives 43. It said '49 with animals'; that count is worlds with bodies, not animals.",
+   "Overclaim in the docstring: the ladder order was called 'the order things came in' on the earth. It is now qualified: bacteria made simple many-celled filaments before cells with a nucleus existed, and animals signal without living in groups.",
+   "Overclaim in the docstring: 'life by 3.7 to 4.0 Ga' now reads 'by 3.5 Ga for certain, 3.7 to 4.0 Ga on disputed evidence'. The signals span now says it is the time from the first eyes to speech, and that nobody knows when speech arose. The society span now names its earth dates.",
+   "The docstring now says plainly that the biological SPAN values are **toy rates**: one planet's dates used as the pace of every planet.",
+   "The clock paragraph now compares each physical era with real orders of magnitude: light elements in the first 3 to 20 minutes, first stars at 1e8 to 2e8 years, a collapse of 2.6 Myr against a real 0.1 to 1 Myr (a few times slow), planets in 50 Myr against a real 1 to 10 Myr for gas giants and 10 to 100 Myr for rocky planets. It also compares stellar lifetimes with real ones (4.1e9 against about 3e9 years at 1.35 solar masses; 1.3e8 against about 1e8 at 5).",
+   "Level 2's 'cooling' is now described as what it is: a drag that stands for radiative cooling and turbulent decay together, not a cooling rate.",
+   "Added a note that red-dwarf worlds climb highest only because of the toy's clock arithmetic. The chain ignores flares and planets that keep one face to their star.",
+   "The docstring's cost row (1.0 to 12.1 s, 13 s for seeds 74 and 77) was stale. It now gives re-measured numbers."
+  ],
+  "gates_pass": true,
+  "plausibility": {
+   "gate_and_determinism": "Seeds 1 to 40 with random_params(Random(10000+seed)): each world run twice gave identical steps, summary, level rollouts and attempts (40 of 40), and conserved() held on 40 of 40. Seeds 1 to 300 canonical: gate holds on 300 of 300. Only world7.py changed during the work; every other level file has the same md5 as at the start, so CENSUS and the canaries still hold. world7 calls no numpy. Its own arithmetic uses exact Decimal, Python round, sqrt, and sorts with an (orbit, id) tie-break. The one libm dependency is pow in level 3's luminosity law (documented); it can only matter at a 1-ulp rounding edge.",
+   "seconds_per_run": "Run alone, seeds 1 to 40: 0.95 to 5.92 s, median 1.48 s, mean 2.0 s, 16 of 40 over 2 s. The collapse (level 2, N=256) takes 1.2 s in every world; one try of level 11 takes 0.42 s. Twelve worlds in parallel on a shared 32-core machine, seeds 1 to 300: 1.11 to 11.59 s, median 2.58 s.",
+   "highest_rung_seeds_1_200": {
+    "no_metals": 3,
+    "no_star": 25,
+    "no_planets": 1,
+    "no_temperate": 50,
+    "no_water": 15,
+    "no_organics": 0,
+    "sterile": 13,
+    "replicators": 21,
+    "cells": 39,
+    "complex_cells": 0,
+    "bodies": 1,
+    "senses": 11,
+    "groups": 1,
+    "signals": 16,
+    "language": 3,
+    "society": 0,
+    "states": 1
+   },
+   "rung_reachability": "Every rung occurs in seeds 1 to 300. The three missing from seeds 1 to 200 are reached by seed 205 (no_organics; seed 239 also), seed 219 (complex_cells) and seed 207 (society). A new test runs one world for each rung not reached by seeds 1 to 40 and 85: no_planets 176, no_organics 205, complex_cells 219, senses 65, society 207.",
+   "outcomes_seeds_1_300": "out_of_time 69, 43 of them before a first try at cells. The heaviest star with a cells era is 1.52 solar masses, with a bodies era 1.36.",
+   "hand_off_recompute": "For seeds 1 to 20 and 85, every hand-off was recomputed with my own formulas from the numbers parsed out of the printed record lines: 744 checks plus 68 for seed 85, 0 disagreements. This covers the clock chain, ages, durations, in-time decisions and stops by the clock. The new test repeats the formula check on the hand-offs of all 40 worlds (more than 600 checks).",
+   "lessons": "LESSONS.generate(Random(s), 500) for s = 1, 2, 3, 4: 2000 of 2000 accepted. Every answer of every rule (37 rules) was recomputed with formulas written from the docstring, 0 disagreements. Each rule's compute function is the same object as the module function of that name, and the chain calls it by name (a source grep plus the existing monkeypatch test). Most common answer per rule on 40000 lessons after the fix: fusion 0.545, in_time 0.55, surface 0.48, zone 0.35, greenhouse 0.37, band 0.36, gene_length 0.30, water 0.29, all others at or below 0.27.",
+   "clock_vs_real": "Level 1: 3000 s, against the real 3 to 20 minutes of nucleosynthesis. First stars at 2.5e8 years, against a real 1e8 to 2e8. Collapse 2.568 Myr, against a real 0.1 to 1 Myr. Planets 50 Myr, against a real 1 to 10 Myr for gas giants and 10 to 100 Myr for rocky planets. Lifetimes from 1e10 * M / L: 1.0 solar mass 1e10 years, 1.35 4.1e9 (real about 3e9), 2.0 1.27e9, 5.0 1.3e8. The biological spans (chemistry 1e8, replicators 4e8, cells 2.16e9, bodies 1.2e9, senses 1.2e8, signals 4.8e8, society 2e4 years) are toy rates fitted to the earth's dates. With the collapse and planets they sum to 4.5126e9 years.",
+   "no_water": "Not an artefact. Level 3's own 'habitable' count equals world7's count of terran surfaces in 51 of 51 systems (seeds 1 to 60). Every surface lies within hz_inner and hz_outer, and a terran planet in the zone is always 273 to 294 K, so liquid. Every no_water world in seeds 1 to 300 has only thin planets (23 surfaces, 208 to 266 K, ice) or enveloped ones (1). Forced metal-poor clouds (1 Gyr, efficiency 0.15, Z 0.000494) end no_water in 16 of 20 worlds: their discs make planets of Mars's size.",
+   "regimes_seeds_1_20_each": "Gate holds in 160 of 160 worlds. Metal-free cloud (formation_time 0.25): one star of 5.22 to 379 solar masses, no planets, 20 of 20 no_metals. Cloud of 0.1 solar masses: 20 of 20 no_star (0.038 to 0.068). Cloud of 0.15: 12 no_star, 8 shine. Cloud of 8: stars of 3.03 to 5.44, nothing above sterile, 8 worlds out_of_time. Sun-like (9.25 Gyr, efficiency 0.3, cloud 1.5): Z 0.0136, gas giants around 6 of 20. Metal-rich (12 Gyr, 0.6): Z 0.0286, gas giants around 18 of 20. Metal-poor: no gas giants. Red dwarfs (cloud 0.3): 0.114 to 0.204 solar masses, no out_of_time, 5 worlds reach signals.",
+   "census_checks_seeds_1_300": "4 metal-free worlds; Z 0.000162 to 0.0286 otherwise. Stars 0.0398 to 82.3 solar masses, 41 dark. Shining stars: 109 below 0.5, 74 from 0.5 to 1.5, 74 from 1.5 to 8, 2 above (a flat sample, documented as not the Kroupa mass function). Gas giants around 0 of 130, 11 of 84 and 17 of 45 stars by metallicity (below 0.008, 0.008 to 0.016, above 0.016); 9 of 50 stars of 0.7 to 1.4 solar masses. Surfaces: 161 terran at 274 to 294 K, 23 thin at 208 to 266 K, 1 enveloped. Line counts: seed 85 has 321 lines, at most 117 tokens."
+  },
+  "seconds_per_run": 2,
+  "honesty": "I read the module docstring (C:\\Users\\end\\Desktop\\Haishool\\haishool\\evo\\world7.py) as a specialist would. The named models are described correctly: Kroupa 2001 broken power law (computed with kroupa_share, and explicitly not what the chain samples), Bromm and Loeb 2003 critical metallicity of about 10^-3.5 solar (rounded to 1e-5 as a toy), Abel, Bryan and Norman 2002 and Bromm, Coppi and Larson 2002 (the 200 K floor, Jeans mass scaling as T^1.5), Matzner and McKee 2000 (25 to 75 % core efficiency), Williams and Cieza 2011 (disc masses), Fischer and Valenti 2005 (giant planets and metallicity), Kopparapu (1.107 and 0.356, in level 3), Mac Low 1999 (turbulent decay).\n\nI rewrote what overclaimed:\n- Level 2's 'cooling' is now described as one toy drag that stands for radiative cooling and turbulent decay together.\n- The ladder order is no longer called the earth's order: bacteria made simple many-celled forms before cells with a nucleus, and animals signal without living in groups.\n- Early life is dated 3.5 Ga for certain and 3.7 to 4.0 Ga only on disputed evidence.\n- The signals and society spans now carry their earth dates, and the docstring says nobody knows when speech arose.\n- The biological spans are named **toy rates**: one planet's dates used as everyone's pace.\n- The clock paragraph now compares each physical era with real orders of magnitude, including the collapse being a few times slow.\n- A note says red-dwarf worlds climb highest only because of the toy's clock arithmetic; flares and planets that keep one face to their star are ignored.\n- Census numbers that did not match the code were corrected, and the stale cost row was replaced with measured times.\n- A paragraph shows that no_water is a consequence of small planets, not two rules disagreeing about the zone, and a forced-regime summary was added.\n\nNo model rule or world output changed; the four canary hashes are unchanged. The lesson draws (DRAWS) changed only to balance answers, which changes LESSONS.generate output but no world line.\n\nIn C:\\Users\\end\\Desktop\\Haishool\\tests\\test_evo_world7.py I added 8 tests:\n- every lesson rule rewritten independently (FORMULAS) and checked on 4 x 500 lessons and on all hand-offs of 40 worlds, plus a source grep that the chain calls each rule function;\n- yes/no lessons near balance, and no answer above 0.6 for any rule;\n- owns() and check() reject prompts from round-5 gates, round-6 predict lessons, the nucleo, gravity, chem, life, stars and bodies lessons, and stars story lines;\n- every rung is reached (RARE_RUNGS seeds);\n- no_water agrees with level 3's habitable count;\n- the clock is within real orders of magnitude;\n- worlds with non-canonical drawn parameters are deterministic.\nThe median timing bound was tightened from 6 s to 4 s.\n\nResult: python -m pytest tests/test_evo_world7.py tests/test_round6_frozen.py -q gives 100 passed in 247 s.",
+  "tests_passed": true,
+  "open_issues": [
+   "A world does not run in under 2 s. Run alone: median 1.5 s, mean 2.0 s, maximum 5.9 s, 16 of 40 over 2 s. A world chains up to 11 levels and tries levels 5 to 12 up to 6 times. Level 2's collapse at its own default of 256 particles takes 1.2 s in every world, and six tries of level 11 take about 2.5 s. Getting under 2 s would mean shrinking level 2's particle count or MAX_TRIES, which changes the model and its census. I did not do that.",
+   "The upper rungs are very rare. In seeds 1 to 300: language 3, society 1, states 1, complex_cells 1, bodies 1, no_planets 1. The causes are inside levels 8 to 12 (how hard fidelity makes complex cells, no kin gain without predators, 1 word per 8 neurons in level 11), which are not my files. Level 11 also calls a population with 15 % talkers and success 0.10 a 'language' (seeds 29 and 152), which is that level's own threshold.",
+   "Gas giants circle 6 of 20 sun-like stars (forced regime) and 9 of 50 stars of 0.7 to 1.4 solar masses in the census. The real rate is roughly 10 %. The trend with metallicity is right, but the absolute rate is high. It comes from the toy DISC_RETAINED = 8 % and level 3, and the docstring states this.",
+   "The collapse is a few times slower than real (2.6 Myr against 0.1 to 1 Myr) because it is level 2's 6 free-fall times. This is documented, not changed.",
+   "The lifetime law 1e10 * M / L overestimates at 1.35 solar masses (4.1e9 against about 3e9 years) and underestimates the smallest red dwarfs. This is documented.",
+   "World outputs depend on levels 1 to 12. No other level file changed during this review (md5 checked at the end). If another agent changes a level later, the canary hashes, RUNGS_OF_FORTY, CENSUS and RARE_RUNGS in tests/test_evo_world7.py will need re-measuring with the census: seeds 1 to 300."
+  ]
+ }
+}
