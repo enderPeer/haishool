@@ -1,0 +1,32 @@
+{
+ "what": "Long run of search world world7-781 (r8a, kept after round 3) in 14 futures to measure whether its calls become language (driver haishool/life8/analysis/longrun.py, driver 2).",
+ "status": "stopped 2026-10-02 about 21:05-21:10 UTC: the tmux sessions life8-long were ended from outside for the version-9 changeover; every future resumes from its last saved state",
+ "started_utc": "2026-10-02T19:38Z (driver 1), futures 1-13 restarted with driver 2 at about 20:05Z (driver 1 did not reseed world.seed; old folders f1-f13 carry SUPERSEDED.txt)",
+ "protocol": {
+  "start": "world7-781.r3.json.gz (search r8a, tick 7,500, population 99)",
+  "futures": "f0 = exact continuation (horizon 100,000); f1-f13 = same state, all RNGs and world.seed reseeded once (horizon 102,500)",
+  "every": 5000, "branches": "24 replicates x 300 ticks, arms normal / masked / scrambled",
+  "rule": "language emerged = calibrated all_three at two adjacent measurement points of one future, baseline not all_three; claimed only after the confirmation protocol in the longrun module docstring"
+ },
+ "baseline_tick_7500": {"screen": "null", "calibrated": "null", "sender_over_masked_bits": 0.019, "receiver_over_scrambled_bits": 0.010, "fitness_normal_minus_scrambled": "-0.0037 (11 up / 13 down)"},
+ "results_at_stop": {
+  "measured_points": 30, "calibrated": {"null": 29, "partial": 1}, "screen": {"null": 21, "partial": 9}, "emerged": [],
+  "partial_calibrated": "f8 at tick 12,500 (sender only)",
+  "report": "falke64:~/haishool-archive/2026-10-02/life8-long-w781/report-at-stop.json"
+ },
+ "saved_states": {
+  "adler40": {"f0": "seg-006 (tick 37,500, 2 measured)", "v2/f1-f4": "seg-005 (tick 32,500, 3 measured)"},
+  "knecht24": {"v2/f5-f9": "seg-003 (tick 22,500, 1 measured)"},
+  "falke64": {"v2/f10-f11": "seg-006 (tick 37,500, 4 measured)"},
+  "specht32": {"v2/f12": "seg-004 (tick 27,500, 2 measured)", "v2/f13": "seg-003 (tick 22,500, 1 measured)"}
+ },
+ "folders": "~/life8-long/w781 on each host (code copy in code/, launcher run2.sh); archived copy falke64:~/haishool-archive/2026-10-02/life8-long-w781/<host>/w781",
+ "resume": [
+  "adler40: bash ~/life8-long/w781/run2.sh 3 0 && bash ~/life8-long/w781/run2.sh 4 1 2 3 4",
+  "knecht24: bash ~/life8-long/w781/run2.sh 4 5 6 7 8 9",
+  "falke64: bash ~/life8-long/w781/run2.sh 4 10 11",
+  "specht32: bash ~/life8-long/w781/run2.sh 4 12 13",
+  "report: cd ~/life8-long/w781 && PYTHONPATH=code python3 -m haishool.life8.analysis.longrun report --baseline baseline-w781.json f0 v2/f*  (baseline file: falke archive)"
+ ],
+ "resume_note": "Saved segments without a row are measured first on resume (f0 has 4 such). Each driver refuses a second copy of itself in the same folder."
+}

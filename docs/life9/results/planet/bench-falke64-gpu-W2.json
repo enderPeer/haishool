@@ -1,0 +1,63 @@
+{
+ "environment": {
+  "python": "3.12.14",
+  "torch": "2.14.0+rocm7.2",
+  "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.43",
+  "device": "cuda",
+  "threads": 4,
+  "gpu": "AMD Radeon Graphics",
+  "hip": "7.2.53211",
+  "cuda": null,
+  "git": null
+ },
+ "worlds": 2,
+ "seeds": [
+  781,
+  85
+ ],
+ "G": 48,
+ "cells": 13824,
+ "capacity": 1024,
+ "founders": 1024,
+ "items": 4096,
+ "fires": 256,
+ "hidden": 128,
+ "quick_spin_up": true,
+ "build_seconds": 2.77,
+ "days": 10,
+ "seconds_per_day": [
+  1.359,
+  0.315,
+  0.071,
+  0.062,
+  0.072,
+  0.061,
+  0.063,
+  0.063,
+  0.063,
+  0.064
+ ],
+ "mean_seconds_per_day": 0.219,
+ "mean_seconds_per_day_after_first": 0.092,
+ "phase_seconds_per_day": {
+  "climate_biosphere": 0.006,
+  "senses_brain": 0.0977,
+  "craft": 0.0709,
+  "strikes": 0.0036,
+  "eat_drink": 0.0058,
+  "fires_decay": 0.0036,
+  "movement": 0.0023,
+  "physiology": 0.0021,
+  "deaths": 0.0032,
+  "plasticity": 0.0196,
+  "reproduction": 0.0032,
+  "settle": 0.0007
+ },
+ "population": [
+  988,
+  1024
+ ],
+ "state_tensor_mb": 502.9,
+ "peak_rss_mb": 2330.6,
+ "cuda_max_allocated_mb": 868.7
+}

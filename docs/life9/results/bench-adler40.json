@@ -1,0 +1,96 @@
+{
+ "schema": "life9-bench-v1",
+ "environment": {
+  "python": "3.12.14",
+  "torch": "2.14.0+cu130",
+  "device": "cuda",
+  "host": "adler40",
+  "cuda": "13.0",
+  "hip": null,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "memory_total_gb": 23.5
+ },
+ "rows": [
+  {
+   "worlds": 16,
+   "capacity": 128,
+   "hidden": 32,
+   "ticks": 200,
+   "ms_per_tick": 32.27,
+   "world_ticks_per_hour": 1785012,
+   "slot_ticks_per_second": 63467,
+   "alive": 961,
+   "peak_memory_gb": 0.07
+  },
+  {
+   "worlds": 64,
+   "capacity": 128,
+   "hidden": 32,
+   "ticks": 200,
+   "ms_per_tick": 33.38,
+   "world_ticks_per_hour": 6903287,
+   "slot_ticks_per_second": 245450,
+   "alive": 3746,
+   "peak_memory_gb": 0.26
+  },
+  {
+   "worlds": 64,
+   "capacity": 256,
+   "hidden": 32,
+   "ticks": 200,
+   "ms_per_tick": 32.74,
+   "world_ticks_per_hour": 7037030,
+   "slot_ticks_per_second": 500411,
+   "alive": 6976,
+   "peak_memory_gb": 0.75
+  },
+  {
+   "worlds": 256,
+   "capacity": 128,
+   "hidden": 32,
+   "ticks": 200,
+   "ms_per_tick": 33.33,
+   "world_ticks_per_hour": 27653640,
+   "slot_ticks_per_second": 983241,
+   "alive": 14462,
+   "peak_memory_gb": 1.02
+  },
+  {
+   "worlds": 256,
+   "capacity": 256,
+   "hidden": 32,
+   "ticks": 138,
+   "ms_per_tick": 110.59,
+   "world_ticks_per_hour": 8333844,
+   "slot_ticks_per_second": 592629,
+   "alive": 28263,
+   "peak_memory_gb": 2.99
+  },
+  {
+   "worlds": 64,
+   "capacity": 128,
+   "hidden": 128,
+   "ticks": 200,
+   "ms_per_tick": 36.61,
+   "world_ticks_per_hour": 6294031,
+   "slot_ticks_per_second": 223788,
+   "alive": 1039,
+   "peak_memory_gb": 1.81
+  }
+ ],
+ "check": {
+  "worlds": 32,
+  "capacity": 128,
+  "ticks": 500,
+  "seconds": 16.3,
+  "alive_mean": 54.0,
+  "alive_min": 19,
+  "alive_max": 75,
+  "births_mean": 49.219,
+  "starvation_mean": 30.719,
+  "predation_mean": 12.5,
+  "calls_mean": 24630.656,
+  "mean_hidden": 8.006,
+  "ledger_error_max": 0.0064001672244557994
+ }
+}

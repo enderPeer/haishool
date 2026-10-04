@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>life9 world replay</title>
+<style>
+:root{--bg:#f4f2ec;--panel:#ffffffd9;--ink:#1d1d1b;--muted:#5d5b55;--line:#d8d4c8;--accent:#2f6f5e}
+@media (prefers-color-scheme:dark){:root{--bg:#121412;--panel:#1c1f1cd9;--ink:#ecebe6;--muted:#a3a19a;--line:#33372f;--accent:#7fc8b0}}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:14px/1.4 system-ui,sans-serif}
+#view{position:fixed;inset:0}
+.panel{position:fixed;left:16px;right:16px;bottom:16px;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:10px 12px;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;backdrop-filter:blur(6px)}
+.panel input[type=range]{flex:1 1 200px}
+button{font:inherit;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:6px;padding:4px 10px;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#info{position:fixed;left:16px;top:16px;max-width:min(420px,calc(100% - 32px));background:var(--panel);border:1px solid var(--line);
+  border-radius:10px;padding:10px 12px;color:var(--muted)}
+#info b{color:var(--ink)}
+</style>
+</head>
+<body>
+<div id="view" aria-label="3D replay of one life9 world"></div>
+<div id="info"><b>life9 world replay</b><br><span id="stats"></span><br>
+<small>Ground heights are the simulated terrain at true scale: they block sight, damp sound and cost energy to climb.
+Spheres are individuals (colour = founder lineage), red cones predators, green columns food (height = amount).
+Rings are calls (radius = loudness, colour = strongest vector component). Call vectors carry no meaning given by the engine.</small></div>
+<div class="panel">
+  <button id="play" aria-label="Play or pause">Pause</button>
+  <input id="time" type="range" min="0" value="0" aria-label="Tick">
+  <span id="tick"></span>
+  <label>Speed <input id="speed" type="range" min="2" max="40" value="10" aria-label="Frames per second"></label>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+const DATA = /*LIFE9_DATA*/null;
+const S = DATA.size, G = DATA.terrain.length, H = DATA.terrain;
+const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+const renderer = new THREE.WebGLRenderer({antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+document.getElementById('view').appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(dark ? 0x121412 : 0xf4f2ec);
+const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 500);
+camera.position.set(S * 0.5, S * 0.75, S * 1.25);
+const controls = new THREE.OrbitControls(camera, renderer.domElement);
+controls.target.set(S / 2, 0, S / 2);
+scene.add(new THREE.HemisphereLight(0xffffff, 0x445544, 0.85));
+const sun = new THREE.DirectionalLight(0xffffff, 0.6); sun.position.set(30, 60, 10); scene.add(sun);
+
+// terrain: (G+1)^2 vertices so the torus seam closes; world (x, y, z) -> three (x, z, y)
+const geo = new THREE.BufferGeometry(), verts = [], cols = [], idx = [];
+for (let i = 0; i <= G; i++) for (let j = 0; j <= G; j++) {
+  const h = H[i % G][j % G], t = h / DATA.relief;
+  verts.push(i / G * S, h, j / G * S);
+  cols.push(0.35 + 0.35 * t, 0.5 + 0.2 * t, 0.3 + 0.3 * t);
+}
+for (let i = 0; i < G; i++) for (let j = 0; j < G; j++) {
+  const a = i * (G + 1) + j, b = a + G + 1;
+  idx.push(a, a + 1, b, b, a + 1, b + 1);
+}
+geo.setAttribute('position', new THREE.Float32BufferAttribute(verts, 3));
+geo.setAttribute('color', new THREE.Float32BufferAttribute(cols, 3));
+geo.setIndex(idx); geo.computeVertexNormals();
+scene.add(new THREE.Mesh(geo, new THREE.MeshLambertMaterial({vertexColors:true, side:THREE.DoubleSide})));
+
+const maxAgents = Math.max(1, ...DATA.frames.map(f => f.agents.length));
+const agents = new THREE.InstancedMesh(new THREE.SphereGeometry(0.45, 12, 8), new THREE.MeshLambertMaterial(), maxAgents);
+const rings = new THREE.InstancedMesh(new THREE.RingGeometry(0.92, 1, 40).rotateX(-Math.PI / 2),
+  new THREE.MeshBasicMaterial({transparent:true, opacity:0.45, side:THREE.DoubleSide}), maxAgents);
+const nPred = DATA.frames[0].predators.length, nFood = DATA.frames[0].food.length;
+const preds = new THREE.InstancedMesh(new THREE.ConeGeometry(0.5, 1.6, 6), new THREE.MeshLambertMaterial({color:0xc0392b}), Math.max(1, nPred));
+const food = new THREE.InstancedMesh(new THREE.CylinderGeometry(0.35, 0.35, 1, 8).translate(0, 0.5, 0),
+  new THREE.MeshLambertMaterial({color:0x3f9a4a}), Math.max(1, nFood));
+[agents, rings, preds, food].forEach(m => { m.instanceMatrix.setUsage(THREE.DynamicDrawUsage); scene.add(m); });
+const callColours = [0xe67e22, 0x2980b9, 0x8e44ad, 0x16a085].map(c => new THREE.Color(c));
+const m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), v = new THREE.Vector3(), sc = new THREE.Vector3(), col = new THREE.Color();
+const lineage = id => col.setHSL(((id * 0.618034) % 1), 0.6, dark ? 0.6 : 0.45);
+
+function show(k) {
+  const f = DATA.frames[k];
+  f.agents.forEach((a, n) => {   // uid, x, y, ground, heading, energy, founder, loudness, vocal argmax, hidden
+    m4.compose(v.set(a[1], a[3] + 0.45, a[2]), q.identity(), sc.setScalar(0.7 + 0.3 * Math.min(1, a[5] / 40)));
+    agents.setMatrixAt(n, m4); agents.setColorAt(n, lineage(a[6]));
+    const r = a[7] > 0 ? 1 + 6 * a[7] : 0.0001;
+    m4.compose(v.set(a[1], a[3] + 0.1, a[2]), q.identity(), sc.set(r, 1, r));
+    rings.setMatrixAt(n, m4); rings.setColorAt(n, callColours[a[8] | 0]);
+  });
+  agents.count = rings.count = f.agents.length;
+  f.predators.forEach((p, n) => { m4.compose(v.set(p[0], p[2] + 0.8, p[1]), q.identity(), sc.setScalar(1)); preds.setMatrixAt(n, m4); });
+  f.food.forEach((p, n) => { m4.compose(v.set(p[0], p[2], p[1]), q.identity(), sc.set(1, 0.05 + p[3] / 6, 1)); food.setMatrixAt(n, m4); });
+  [agents, rings, preds, food].forEach(m => { m.instanceMatrix.needsUpdate = true; if (m.instanceColor) m.instanceColor.needsUpdate = true; });
+  document.getElementById('tick').textContent = 'tick ' + f.tick;
+  document.getElementById('stats').textContent = f.agents.length + ' alive · ' + f.agents.filter(a => a[7] > 0).length +
+    ' calling · seed ' + DATA.seed;
+}
+const slider = document.getElementById('time'), playBtn = document.getElementById('play'), speed = document.getElementById('speed');
+slider.max = DATA.frames.length - 1;
+let frame = 0, playing = !matchMedia('(prefers-reduced-motion: reduce)').matches, last = 0;
+playBtn.textContent = playing ? 'Pause' : 'Play';
+slider.oninput = () => { frame = +slider.value; show(frame); };
+playBtn.onclick = () => { playing = !playing; playBtn.textContent = playing ? 'Pause' : 'Play'; };
+function resize() { renderer.setSize(innerWidth, innerHeight); camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); }
+addEventListener('resize', resize); resize(); show(0);
+renderer.setAnimationLoop(t => {
+  if (playing && t - last > 1000 / speed.value) { last = t; frame = (frame + 1) % DATA.frames.length; slider.value = frame; show(frame); }
+  controls.update(); renderer.render(scene, camera);
+});
+</script>
+</body>
+</html>

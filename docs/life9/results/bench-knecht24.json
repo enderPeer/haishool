@@ -1,0 +1,96 @@
+{
+ "schema": "life9-bench-v1",
+ "environment": {
+  "python": "3.12.14",
+  "torch": "2.14.0+cu130",
+  "device": "cuda",
+  "host": "knecht24",
+  "cuda": "13.0",
+  "hip": null,
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "memory_total_gb": 11.6
+ },
+ "rows": [
+  {
+   "worlds": 16,
+   "capacity": 128,
+   "hidden": 32,
+   "ticks": 200,
+   "ms_per_tick": 46.5,
+   "world_ticks_per_hour": 1238702,
+   "slot_ticks_per_second": 44043,
+   "alive": 924,
+   "peak_memory_gb": 0.07
+  },
+  {
+   "worlds": 64,
+   "capacity": 128,
+   "hidden": 32,
+   "ticks": 200,
+   "ms_per_tick": 47.06,
+   "world_ticks_per_hour": 4895866,
+   "slot_ticks_per_second": 174075,
+   "alive": 3726,
+   "peak_memory_gb": 0.26
+  },
+  {
+   "worlds": 64,
+   "capacity": 256,
+   "hidden": 32,
+   "ticks": 181,
+   "ms_per_tick": 85.82,
+   "world_ticks_per_hour": 2684572,
+   "slot_ticks_per_second": 190903,
+   "alive": 7262,
+   "peak_memory_gb": 0.75
+  },
+  {
+   "worlds": 256,
+   "capacity": 128,
+   "hidden": 32,
+   "ticks": 158,
+   "ms_per_tick": 97.48,
+   "world_ticks_per_hour": 9454169,
+   "slot_ticks_per_second": 336148,
+   "alive": 14552,
+   "peak_memory_gb": 1.02
+  },
+  {
+   "worlds": 256,
+   "capacity": 256,
+   "hidden": 32,
+   "ticks": 47,
+   "ms_per_tick": 317.65,
+   "world_ticks_per_hour": 2901316,
+   "slot_ticks_per_second": 206316,
+   "alive": 26060,
+   "peak_memory_gb": 2.99
+  },
+  {
+   "worlds": 64,
+   "capacity": 128,
+   "hidden": 128,
+   "ticks": 200,
+   "ms_per_tick": 56.45,
+   "world_ticks_per_hour": 4081566,
+   "slot_ticks_per_second": 145122,
+   "alive": 1058,
+   "peak_memory_gb": 1.81
+  }
+ ],
+ "check": {
+  "worlds": 32,
+  "capacity": 128,
+  "ticks": 500,
+  "seconds": 23.5,
+  "alive_mean": 49.906,
+  "alive_min": 28,
+  "alive_max": 69,
+  "births_mean": 46.969,
+  "starvation_mean": 33.438,
+  "predation_mean": 11.625,
+  "calls_mean": 23886.719,
+  "mean_hidden": 8.0,
+  "ledger_error_max": 0.005368416683268151
+ }
+}
