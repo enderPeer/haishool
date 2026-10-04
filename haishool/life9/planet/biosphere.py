@@ -343,7 +343,7 @@ def step(bio: BioState, clim, globe, P, B, cdiag):
     area64 = bio.area64
     a_w = r.wood_allocation
     par_mj = cdiag["surface_sw"] * B["par_fraction"][:, None] * MJ_PER_W_DAY
-    p_co2 = clim.gas[:, cl.I_CO2] * P["gravity64"] * cl.M_CO2
+    p_co2 = cl.gas_pressures(clim.gas, P)[:, cl.I_CO2]
     f_co2 = co2_factor(p_co2, r).float()[:, None]
     f_w = (soil / P["rules"].bucket_kg_m2).clamp(0, 1)
     f_t = temperature_factor(T, r)

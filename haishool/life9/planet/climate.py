@@ -452,9 +452,14 @@ def make_params(specs, globe, terrain, radius_m: float = 1.0e4, rules: ClimateRu
     for k in ("insolation", "outgas", "weathering0", "co2_ref", "tau_per_ln_co2", "t_target", "gravity",
               "air_column", "albedo_target", "ocean_layer"):
         P[k + "64"] = torch.tensor(rows[k], dtype=torch.float64, device=dev)
-    P["gas0"] = torch.tensor([[s.partial_pressure_pa[gas] / (s.gravity_m_s2 * m) for gas, m in zip(GASES, M_GAS)]
-                              for s in specs], dtype=torch.float64, device=dev)
+    # formation3's specs carry a well-mixed dry column (p_i = n_i g mu_dry): their moles are handed over as they
+    # are, and the partial pressures follow the same law (partial_pressures); version 2's specs keep p_i = n_i g M_i
+    well_mixed = bool(specs) and all(hasattr(s, "dry_air_molar_mass_kg_mol") for s in specs)
+    P["gas0"] = torch.tensor([[s.partial_pressure_pa[gas] / (s.gravity_m_s2 * (s.dry_air_molar_mass_kg_mol
+                                                                              if well_mixed else m))
+                               for gas, m in zip(GASES, M_GAS)] for s in specs], dtype=torch.float64, device=dev)
     P["m_gas"] = torch.tensor(M_GAS, dtype=torch.float64, device=dev)
+    P["well_mixed"] = well_mixed
     land = terrain["land"].to(dev)
     P["land"] = land
     P["height_m"] = torch.where(land, terrain["elevation_m"] - terrain["sea_level_m"][:, None], 0.0).clamp_min(0).float()
@@ -489,7 +494,11 @@ def make_params(specs, globe, terrain, radius_m: float = 1.0e4, rules: ClimateRu
                     "4 sigma T^3 / (1 + 0.75 tau), dln/dT from Magnus plus 1/T (the column scales as e_sat T)"),
         "co2_ref": ("derived+new_rule", "spec co2_ref_pa (a cap, not a calibration, when co2_capped)"),
         "tau_per_ln_co2": ("derived", "spec tau_per_ln_co2 (5.35 W/m^2 per e-fold at the calibration point)"),
-        "gas0": ("derived", "n_i = p_i / (g M_i) from spec partial_pressure_pa (mol per m^2 of column)"),
+        "gas0": ("derived", "n_i = p_i / (g M_i) from spec partial_pressure_pa (mol per m^2 of column); for "
+                 "formation3's specs (well_mixed) n_i = p_i / (g mu_dry), the moles formation3 calibrated"),
+        "well_mixed": ("derived", "True for formation3's specs: the dry column is well mixed, p_i = n_i g mu_dry with "
+                       "mu_dry = sum n_j M_j / sum n_j from the state (partial_pressures), so a change of n_i shifts "
+                       "every partial pressure through the column's weight; False keeps version 2's p_i = n_i g M_i"),
         "outgas": PROVENANCE["outgassing"],
         "weathering0": ("reference+derived", "Earth's outgassing per m^2 of land (land 29.1 %): weathering balances "
                         "it at 288 K and runoff0"),
@@ -581,9 +590,20 @@ def first_cloud_guess(globe, P, state, plant_cover=None):
 
 
 # ------------------------------------------------------------------------------------------- diagnostics
+def gas_pressures(gas, P) -> torch.Tensor:
+    """Partial pressures [W, 4] (Pa, float64) of the dry gases ``gas`` [W, 4] (mol/m^2): the well-mixed column p_i =
+    n_i g mu_dry (mu_dry = sum n_j M_j / sum n_j) when ``P['well_mixed']``, else version 2's p_i = n_i g M_i."""
+    gas = gas.double()
+    g = P["gravity64"][:, None]
+    if P.get("well_mixed"):
+        mu = (gas * P["m_gas"]).sum(-1, keepdim=True) / gas.sum(-1, keepdim=True).clamp_min(1e-300)
+        return gas * g * mu
+    return gas * g * P["m_gas"]
+
+
 def partial_pressures(state: ClimateState, P) -> torch.Tensor:
-    """Partial pressures [W, 4] (Pa, float64) of N2, O2, CO2, Ar: p_i = n_i g M_i."""
-    return state.gas * P["gravity64"][:, None] * P["m_gas"]
+    """Partial pressures [W, 4] (Pa, float64) of N2, O2, CO2, Ar (:func:`gas_pressures`)."""
+    return gas_pressures(state.gas, P)
 
 
 def vapour_pressure(state: ClimateState, P) -> torch.Tensor:
@@ -619,7 +639,7 @@ def surface_albedo(state: ClimateState, P, plant_cover=None, mu=None):
 
 def optical_depth(state: ClimateState, P):
     """Grey optical depth [W, C]: tau_rest + k ln(p_CO2 / p_ref) + max(-tau_w,ref, k_w ln(vapour / vapour_ref))."""
-    p_co2 = (state.gas[:, I_CO2] * P["gravity64"] * M_CO2).clamp_min(1e-12)
+    p_co2 = gas_pressures(state.gas, P)[:, I_CO2].clamp_min(1e-12)
     tau_co2 = (P["tau_per_ln_co2"].double() * torch.log(p_co2 / P["co2_ref64"])).float()
     tau = (P["tau_rest"] + tau_co2)[:, None].expand_as(state.T)
     if P["rules"].h2o_feedback:

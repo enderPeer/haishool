@@ -1,0 +1,1649 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Planet and Patch Viewer</title>
+<meta name="description" content="A recorded life9 v3 world: the planet at real size and a habitat patch at true scale, replayed bout by bout.">
+<style>
+:root{
+  color-scheme:light;
+  --page:#f3f4ef;--surface:#fcfcfb;--surface-2:#eceee7;--glass:rgba(252,252,251,.94);
+  --ink:#0b0b0b;--ink-2:#52514e;--muted:#64635e;--line:rgba(11,11,11,.14);--line-strong:rgba(11,11,11,.45);
+  --accent:#2a78d6;--focus:#1c5cab;
+  --space:#dfe4ea;--sky-day:#c9d8e6;--sky-night:#1d2533;--terminator:#38414d;--select:#0b0b0b;
+  --marker:#0b0b0b;--marker-ink:#ffffff;--marker-sel:#e34948;--outline:#e34948;--mouth:#17130f;--edge:#3a3a36;
+  --spark:#2a78d6;--spark-fill:rgba(42,120,214,.14);--spark-2:#64635e;
+  --lin1:#2a78d6;--lin2:#eb6834;--lin3:#1baf7a;--lin4:#eda100;--lin5:#e87ba4;--lin6:#008300;--lin7:#4a3aa7;--lin8:#e34948;--lin-other:#a9a79f;
+  --ch0:#0f8a8a;--ch1:#c4387f;--ch2:#d49a00;--ch3:#5b4bc4;--ch4:#d4561e;--ch5:#2f8f2f;--ch6:#1c5cab;--ch7:#8a5a2b;
+  --cls0:#8a8b86;--cls1:#a5482a;--cls2:#c8703f;--cls3:#7a4e24;--cls4:#7f8f2a;--cls5:#4f7fa6;--cls6:#7a52c9;--cls7:#2b8c8c;--cls-other:#a9a79f;
+  --ramp0:#cde2fb;--ramp1:#86b6ef;--ramp2:#3987e5;--ramp3:#1c5cab;--ramp4:#0d366b;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --page:#0d0e0d;--surface:#1a1a19;--surface-2:#252624;--glass:rgba(26,26,25,.94);
+    --ink:#ffffff;--ink-2:#c3c2b7;--muted:#a6a59c;--line:rgba(255,255,255,.13);--line-strong:rgba(255,255,255,.5);
+    --accent:#6da7ec;--focus:#86b6ef;
+    --space:#07090c;--sky-day:#24364a;--sky-night:#070a10;--terminator:#c9d2dd;--select:#ffffff;
+    --marker:#ffffff;--marker-ink:#0b0b0b;--marker-sel:#ff6257;--outline:#ff6257;--mouth:#0b0907;--edge:#d8d6cc;
+    --spark:#6da7ec;--spark-fill:rgba(109,167,236,.16);--spark-2:#a6a59c;
+    --lin1:#3987e5;--lin2:#d95926;--lin3:#199e70;--lin4:#c98500;--lin5:#d55181;--lin6:#2a9d2a;--lin7:#9085e9;--lin8:#e66767;--lin-other:#77766f;
+    --ch0:#35b8b8;--ch1:#e46aa8;--ch2:#f2c230;--ch3:#a594f2;--ch4:#f08a5a;--ch5:#5cc35c;--ch6:#6da7ec;--ch7:#c99a62;
+    --cls0:#a3a39c;--cls1:#d0704f;--cls2:#e08a5c;--cls3:#b07a45;--cls4:#a8b84a;--cls5:#86a9c4;--cls6:#a594f2;--cls7:#4fc0c0;--cls-other:#77766f;
+    --ramp0:#104281;--ramp1:#1c5cab;--ramp2:#2a78d6;--ramp3:#6da7ec;--ramp4:#b7d3f6;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --page:#0d0e0d;--surface:#1a1a19;--surface-2:#252624;--glass:rgba(26,26,25,.94);
+  --ink:#ffffff;--ink-2:#c3c2b7;--muted:#a6a59c;--line:rgba(255,255,255,.13);--line-strong:rgba(255,255,255,.5);
+  --accent:#6da7ec;--focus:#86b6ef;
+  --space:#07090c;--sky-day:#24364a;--sky-night:#070a10;--terminator:#c9d2dd;--select:#ffffff;
+  --marker:#ffffff;--marker-ink:#0b0b0b;--marker-sel:#ff6257;--outline:#ff6257;--mouth:#0b0907;--edge:#d8d6cc;
+  --spark:#6da7ec;--spark-fill:rgba(109,167,236,.16);--spark-2:#a6a59c;
+  --lin1:#3987e5;--lin2:#d95926;--lin3:#199e70;--lin4:#c98500;--lin5:#d55181;--lin6:#2a9d2a;--lin7:#9085e9;--lin8:#e66767;--lin-other:#77766f;
+  --ch0:#35b8b8;--ch1:#e46aa8;--ch2:#f2c230;--ch3:#a594f2;--ch4:#f08a5a;--ch5:#5cc35c;--ch6:#6da7ec;--ch7:#c99a62;
+  --cls0:#a3a39c;--cls1:#d0704f;--cls2:#e08a5c;--cls3:#b07a45;--cls4:#a8b84a;--cls5:#86a9c4;--cls6:#a594f2;--cls7:#4fc0c0;--cls-other:#77766f;
+  --ramp0:#104281;--ramp1:#1c5cab;--ramp2:#2a78d6;--ramp3:#6da7ec;--ramp4:#b7d3f6;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+.app{display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100dvh}
+.top{display:flex;flex-wrap:wrap;gap:6px 20px;align-items:center;justify-content:space-between;padding:8px 16px;background:var(--surface);border-bottom:1px solid var(--line)}
+h1{font-size:17px;line-height:1.2;margin:0}
+#subtitle{margin:2px 0 0;color:var(--ink-2);font-size:12.5px}
+.stats{display:flex;flex-wrap:wrap;gap:2px 16px;margin:0}
+.stats div{display:flex;flex-direction:column;min-width:44px}
+.stats dt{font-size:11px;color:var(--muted)}
+.stats dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums}
+.stage{display:grid;grid-template-columns:minmax(280px,1fr) minmax(0,1.75fr);gap:1px;background:var(--line);min-height:0}
+.left{display:flex;flex-direction:column;min-height:0;gap:1px}
+.view{display:flex;flex-direction:column;min-height:0;background:var(--surface)}
+#globe-view{flex:1 1 52%}
+.vhead{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;padding:5px 10px;border-bottom:1px solid var(--line);min-height:42px}
+.vhead h2{font-size:14px;margin:0 auto 0 0;display:flex;align-items:baseline;gap:6px}
+.vhead h2 .sub{font-weight:400;color:var(--ink-2);font-size:12px}
+.wrap{position:relative;flex:1 1 auto;min-height:0;overflow:hidden}
+#globe-view .wrap{background:var(--space)}
+#patch-view .wrap{background:var(--sky-night)}
+canvas.scene{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:grab}
+.badge{position:absolute;margin:0;padding:3px 8px;border-radius:6px;background:var(--glass);border:1px solid var(--line);font-size:12px;color:var(--ink);pointer-events:none;max-width:calc(100% - 20px)}
+.badge.tl{top:8px;left:8px}.badge.bl{bottom:8px;left:8px}.badge.br{bottom:8px;right:8px}
+#size-badge{max-width:calc(100% - 150px)}
+.scalebar{position:absolute;right:10px;bottom:10px;display:flex;flex-direction:column;align-items:flex-end;gap:2px;pointer-events:none;font-size:11.5px;font-variant-numeric:tabular-nums}
+.scalebar b{display:block;height:6px;border:2px solid var(--ink);border-top:none;background:transparent;width:100px}
+.scalebar span{background:var(--glass);border-radius:4px;padding:0 5px}
+.notice{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);max-width:min(520px,90%);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;z-index:9}
+.legend{flex:0 1 auto;max-height:48%;overflow:auto;background:var(--surface);font-size:12.5px}
+.legend[open]{flex:0 1 48%}
+.legend summary{cursor:pointer;padding:8px 12px;font-weight:600;position:sticky;top:0;background:var(--surface);z-index:1;border-bottom:1px solid var(--line)}
+.legend-body{padding:4px 12px 12px}
+.legend h3,.panel h3{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:12px 0 4px}
+.legend ul{list-style:none;margin:0;padding:0}
+.legend li{display:flex;gap:8px;align-items:center;margin:3px 0}
+.legend p{margin:4px 0}
+.note{background:var(--surface-2);border-radius:8px;padding:8px 10px}
+.note.key{border-left:3px solid var(--accent)}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:1px 12px;margin:0}
+.facts dt{color:var(--ink-2)}
+.facts dd{margin:0;font-variant-numeric:tabular-nums}
+.sw{width:14px;height:14px;flex:none;display:inline-block;border-radius:50%;background:currentColor}
+.sw.sq{border-radius:3px}.sw.ring{background:transparent;border:2.5px solid currentColor}
+.sw.dot{width:9px;height:9px;margin:2px;transform:rotate(45deg);border-radius:1px}
+.ramp{height:10px;border-radius:5px;margin:4px 0 2px}
+.ramp-scale{display:flex;justify-content:space-between;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.chips{display:flex;flex-wrap:wrap;gap:4px 10px}
+.chips span{display:inline-flex;align-items:center;gap:4px}
+.lineages{display:flex;flex-direction:column;gap:2px;margin-top:4px}
+.lin{display:flex;align-items:center;gap:8px;width:100%;text-align:left;padding:3px 8px;min-height:28px;border-radius:6px}
+.lin[aria-pressed="true"]{border-color:var(--ink);background:var(--surface)}
+.lin .n{margin-left:auto;font-variant-numeric:tabular-nums;color:var(--ink-2)}
+kbd{font:11px ui-monospace,Consolas,monospace;border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:0 4px;background:var(--surface)}
+.tabs{display:flex;flex-wrap:wrap;gap:4px}
+.tabs button{min-height:30px;padding:3px 9px;font-variant-numeric:tabular-nums}
+.panel{position:absolute;top:8px;right:8px;width:300px;max-height:calc(100% - 16px);overflow:auto;background:var(--glass);border:1px solid var(--line);border-radius:10px;padding:0 14px 12px;font-size:13px;z-index:4}
+.panel-head{position:sticky;top:0;background:var(--glass);display:flex;align-items:center;gap:8px;padding:10px 0 8px;border-bottom:1px solid var(--line);z-index:1}
+.panel-head h2{font-size:15px;margin:0;flex:1;display:flex;align-items:center;gap:8px}
+.panel dl{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;margin:0}
+.panel dt{color:var(--ink-2)}
+.panel dd{margin:0;font-variant-numeric:tabular-nums}
+.status{margin:8px 0 0;color:var(--ink-2)}
+.controls{background:var(--surface);border-top:1px solid var(--line);padding:6px 12px 8px;display:flex;flex-direction:column;gap:4px}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+button,select,input[type=number]{font:inherit;color:var(--ink);background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:5px 10px;min-height:34px}
+button,select{cursor:pointer}
+input[type=number]{width:96px}
+button:hover,select:hover{border-color:var(--muted)}
+button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+button:disabled{opacity:.55;cursor:default}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+canvas.scene:focus-visible,.legend summary:focus-visible,.lin:focus-visible{outline-offset:-3px}
+.play{display:inline-flex;align-items:center;gap:6px;min-width:84px;font-weight:600}
+.play svg{width:14px;height:14px}
+input[type=range]{flex:1 1 200px;min-width:120px;accent-color:var(--accent);height:28px}
+#timelabel{font-variant-numeric:tabular-nums;min-width:180px;color:var(--ink-2)}
+#spark{width:100%;height:34px;display:block;cursor:pointer}
+label{display:inline-flex;align-items:center;gap:6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.options summary{display:none}
+@media (max-width:760px){
+  .app{display:block;height:auto;min-height:100%}
+  .top{padding:6px 10px}
+  h1{font-size:15px}
+  .stats{gap:0 12px;font-size:12.5px}
+  .stage{display:flex;flex-direction:column}
+  .left{display:contents}
+  #globe-view{order:1;flex:none}
+  #patch-view{order:2;flex:none}
+  .legend{order:3;max-height:none;flex:none}
+  .legend[open]{flex:none}
+  #globe-view .wrap{flex:none;height:34vh;min-height:220px}
+  #patch-view .wrap{flex:none;height:56vh;min-height:300px}
+  .panel{position:fixed;left:0;right:0;bottom:0;top:auto;width:auto;max-height:58vh;border-radius:14px 14px 0 0;border-bottom:none;box-shadow:0 -6px 20px rgba(0,0,0,.18);z-index:20}
+  .controls{position:sticky;bottom:0;z-index:10;padding:4px 10px 6px;gap:2px;max-height:70vh;overflow:auto;box-shadow:0 -4px 14px rgba(0,0,0,.12)}
+  .controls .row{gap:4px 8px}
+  #scrub{order:9;flex:1 1 100%}
+  #timelabel{min-width:0;flex:1 1 auto;font-size:12.5px}
+  #spark{display:none}
+  .options summary{display:list-item;cursor:pointer;padding:4px 0;color:var(--ink-2);font-size:13px}
+  .hide-narrow{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div>
+      <h1 id="title">Planet and patch</h1>
+      <p id="subtitle">Loading the recorded world…</p>
+    </div>
+    <dl class="stats">
+      <div><dt>Day · bout</dt><dd id="st-time">–</dd></div>
+      <div><dt>Alive here</dt><dd id="st-alive">–</dd></div>
+      <div><dt>All patches</dt><dd id="st-total">–</dd></div>
+      <div><dt>Lineages here</dt><dd id="st-lin">–</dd></div>
+      <div><dt>Calling</dt><dd id="st-calls">–</dd></div>
+      <div><dt>Fires</dt><dd id="st-fires">–</dd></div>
+      <div><dt>Items</dt><dd id="st-items">–</dd></div>
+    </dl>
+  </header>
+  <main class="stage" id="stage">
+    <div class="left">
+      <section class="view" id="globe-view" aria-labelledby="globe-h">
+        <div class="vhead">
+          <h2 id="globe-h">Planet <span class="sub">real size</span></h2>
+          <label><span class="hide-narrow">Relief</span>
+            <select id="relief" aria-label="Vertical scale of the globe's relief">
+              <option value="1" selected>×1 true</option><option value="20">×20</option><option value="100">×100</option></select></label>
+          <label><input id="show-temp" type="checkbox"> Temperature</label>
+          <button id="globe-mode" type="button" aria-pressed="false">Go to patch</button>
+        </div>
+        <div class="wrap">
+          <canvas id="globe" class="scene" tabindex="0" role="img" aria-label="3D view of the planet at its real size. Drag to turn it, scroll or pinch to zoom. Click a patch marker to show that patch. Keyboard: see Keys in the legend."></canvas>
+          <p class="badge bl" id="globe-badge"></p>
+        </div>
+      </section>
+      <details class="legend" id="legend" open>
+        <summary>Legend and notes</summary>
+        <div class="legend-body">
+          <p class="note key" id="supplied-note"><strong>Nothing is pre-installed.</strong> <span id="supplied-text">The bodies begin with random brains and random body genes. Nothing tells them what to eat or drink, where to go, what a sound means or what is good; no score is handed out, and they have no built-in wiring and no named purposeful moves. Supplied are only physics and chemistry, the planet's chain, replication with heritable random variation, death by physics, and a body's physical abilities.</span></p>
+          <p class="note" id="display-note"><strong>Colours are display only.</strong> The colours of lineages and item classes (and of call channels) are chosen by this viewer. The bodies do not know them: their senses carry only physical channels such as light, sound, smell and touch.</p>
+          <h3>Planet</h3>
+          <dl class="facts" id="facts"></dl>
+          <h3>Globe</h3>
+          <ul>
+            <li><span class="sw sq" style="background:linear-gradient(90deg,#3d8fb8,#0b2f5a)"></span><span>Ocean below the sea level, darker where deeper</span></li>
+            <li><span class="sw sq" style="background:linear-gradient(90deg,#7f9a5e,#a39579,#d6d0c4)"></span><span>Land, low to high ground</span></li>
+            <li><span class="sw sq" style="background:#eef2f5;border:1px solid var(--line)"></span><span>Ice (recorded per cell)</span></li>
+            <li><span class="sw sq" style="background:var(--marker)"></span><span id="marker-note">Patch marker (not to scale): click it to show the patch. Zoom in with "Go to patch" to see the patch's true-size outline.</span></li>
+          </ul>
+          <div id="temp-block" hidden>
+            <p>Temperature overlay (recorded cell air temperature):</p>
+            <div class="ramp" style="background:linear-gradient(90deg,#2166ac,#67a9cf,#f7f7f7,#ef8a62,#b2182b)"></div>
+            <div class="ramp-scale"><span id="t-min">–</span><span>273 K (0 °C)</span><span id="t-max">–</span></div>
+          </div>
+          <p id="light-note">The globe is lit from the star's direction in each frame. The line is the terminator, where the star sits on the horizon.</p>
+          <h3>Patch ground</h3>
+          <ul>
+            <li><span class="sw sq" style="background:#b8a37f"></span><span>Bare ground (slightly lighter on higher ground)</span></li>
+            <li><span class="sw sq" style="background:linear-gradient(90deg,#8fad57,#2a6a26)"></span><span id="plants-note">Plants: green deepens with the recorded plant density (0–255)</span></li>
+            <li><span class="sw sq" style="background:linear-gradient(90deg,#5c9ecc,#1a5494)"></span><span id="water-note">Standing water: blue deepens with the recorded water (0–255)</span></li>
+            <li><span class="sw sq" style="background:#8cb3d1"></span><span>Lake basins from the terrain, shown while no water is recorded</span></li>
+            <li><span class="sw sq" style="background:#1d4e7e"></span><span>Sea: cells below the planet's sea level</span></li>
+            <li><span class="sw sq" style="background:transparent;border:2px solid var(--line-strong)"></span><span>Patch edge. The boundary is periodic: leaving one side enters the opposite side.</span></li>
+          </ul>
+          <p id="height-note">Heights are drawn at true scale (×1).</p>
+          <h3 id="colour-title">Bodies: lineage</h3>
+          <p id="colour-help"></p>
+          <div id="colour-legend"></div>
+          <ul>
+            <li><span class="sw" style="color:var(--lin1);border-radius:50% 50% 50% 50%/60% 60% 40% 40%;width:20px"></span><span>A body: an ellipsoid of its volume, pointing along its heading</span></li>
+            <li><span class="sw" style="color:var(--mouth);width:8px;height:8px"></span><span>Dark dot at the front: the mouth output, larger when more open</span></li>
+            <li><span class="sw sq" style="color:var(--lin1);height:4px;width:20px;opacity:.6"></span><span>Faint streak: the thrust output, behind for forward and ahead for backward thrust</span></li>
+          </ul>
+          <p id="size-note">Size follows mass: each body is drawn as an ellipsoid of its true volume at 1,050 kg/m³, enlarged by the factor shown on the patch view so it can be seen. While enlarged, no body is drawn smaller than 1.2 or larger than 12 pixels across its radius (items: 7), so a few large ones cannot hide the rest; "True size" draws everything at its real size. Click a body for its numbers.</p>
+          <h3>Calls</h3>
+          <div class="chips" id="channels"></div>
+          <p class="note" id="meaning-note"><strong>No meaning is supplied.</strong> A call is an 8-number vector the brain emits. A ring is drawn when loudness is at least the chosen level; its size follows loudness and its colour is only the index of the vector's largest component.</p>
+          <h3>Items and fires</h3>
+          <div class="chips" id="classes"></div>
+          <ul>
+            <li><span class="sw" style="background:radial-gradient(circle,#fff3c4,#ff8a1e 55%,transparent 70%)"></span><span>Fire: a glow, deep red to yellow-white as it gets hotter</span></li>
+          </ul>
+          <p>Items are drawn as small diamonds of the volume of their mass at 2,000 kg/m³ (their make-up is not in the record), enlarged like the bodies.</p>
+          <h3>Keys</h3>
+          <p><kbd>Space</kbd> play/pause · <kbd>←</kbd>/<kbd>→</kbd> step (<kbd>Shift</kbd> ×10) · <kbd>Home</kbd>/<kbd>End</kbd> · <kbd>1</kbd>–<kbd>9</kbd> patch · <kbd>[</kbd>/<kbd>]</kbd> body · <kbd>F</kbd> follow · <kbd>G</kbd> globe to patch · <kbd>P</kbd> plants · <kbd>W</kbd> water · <kbd>C</kbd> calls · <kbd>I</kbd> items · <kbd>X</kbd> fires · <kbd>O</kbd> mouth and thrust · <kbd>M</kbd> colour · <kbd>E</kbd> height scale · <kbd>T</kbd> temperature · <kbd>L</kbd> even light · <kbd>,</kbd>/<kbd>.</kbd> turn the patch view · <kbd>+</kbd>/<kbd>-</kbd> zoom it · <kbd>Esc</kbd> close the details</p>
+          <h3>Data</h3>
+          <p id="data-note"></p>
+        </div>
+      </details>
+    </div>
+    <section class="view" id="patch-view" aria-labelledby="patch-h">
+      <div class="vhead">
+        <h2 id="patch-h">Patch <span class="sub" id="patch-sub">true scale</span></h2>
+        <div class="tabs" id="tabs" role="group" aria-label="Choose a patch"></div>
+        <label><span class="hide-narrow">Height</span>
+          <select id="vex" aria-label="Vertical scale of the patch terrain">
+            <option value="1" selected>×1 true</option><option value="3">×3</option><option value="10">×10</option><option value="30">×30</option></select></label>
+      </div>
+      <div class="wrap">
+        <canvas id="patch" class="scene" tabindex="0" role="img" aria-label="3D view of the selected habitat patch at true scale. Drag to turn, right-drag or two fingers to move, scroll or pinch to zoom. Click a body, item or fire to see its numbers. Keyboard: see Keys in the legend."></canvas>
+        <p class="badge tl" id="sky-badge"></p>
+        <p class="badge bl" id="size-badge"></p>
+        <div class="scalebar" id="scalebar" aria-hidden="true"><b id="scale-bar"></b><span id="scale-text"></span></div>
+        <aside class="panel" id="panel" aria-labelledby="panel-title" hidden>
+          <div class="panel-head">
+            <h2 id="panel-title">Body</h2>
+            <button id="zoom-to" type="button">Zoom to</button>
+            <button id="follow" type="button" aria-pressed="false">Follow</button>
+            <button id="close" type="button" aria-label="Close the details panel">✕</button>
+          </div>
+          <div id="panel-body"></div>
+        </aside>
+      </div>
+    </section>
+    <div class="notice" id="notice" role="alert" hidden></div>
+    <p class="sr" id="live" aria-live="polite"></p>
+  </main>
+  <footer class="controls">
+    <div class="row">
+      <button id="play" class="play" type="button" aria-label="Play"><svg viewBox="0 0 14 14" aria-hidden="true"><path id="play-icon" d="M3 1.5v11l9-5.5z" fill="currentColor"/></svg><span id="play-text">Play</span></button>
+      <button id="prev" type="button" aria-label="Previous frame">‹</button>
+      <button id="next" type="button" aria-label="Next frame">›</button>
+      <label><span class="hide-narrow">Speed</span>
+        <select id="speed" aria-label="Playback speed">
+          <option value="1">1 frame/s</option><option value="2">2 frames/s</option><option value="4" selected>4 frames/s</option>
+          <option value="8">8 frames/s</option><option value="16">16 frames/s</option><option value="32">32 frames/s</option>
+        </select></label>
+      <input id="scrub" type="range" min="0" max="0" step="1" value="0" aria-label="Recorded frame (day and bout)">
+      <output id="timelabel" for="scrub">–</output>
+    </div>
+    <canvas id="spark" aria-hidden="true"></canvas>
+    <details class="options" id="options" open>
+    <summary>Display options</summary>
+    <div class="row">
+      <label>Colour <select id="colour-mode" aria-label="Colour bodies by">
+        <option value="lineage">Lineage</option><option value="mass">Body mass</option><option value="damage">Damage</option>
+        <option value="k">Active brain units</option><option value="call">Call channel</option></select></label>
+      <label><input id="show-plants" type="checkbox" checked> Plants</label>
+      <label><input id="show-water" type="checkbox" checked> Water</label>
+      <label><input id="show-calls" type="checkbox" checked> Calls ≥
+        <select id="call-level" aria-label="Loudness at which a call ring is drawn">
+          <option value="0.25">0.25</option><option value="0.5">0.5</option><option value="0.75" selected>0.75</option><option value="0.9">0.9</option></select></label>
+      <label><input id="show-items" type="checkbox" checked> Items</label>
+      <label><input id="show-fires" type="checkbox" checked> Fires</label>
+      <label><input id="show-motor" type="checkbox" checked> Mouth &amp; thrust</label>
+      <label><input id="true-size" type="checkbox"> True size</label>
+      <label><input id="smooth" type="checkbox" checked> Smooth</label>
+      <label><input id="even-light" type="checkbox"> Even light</label>
+      <label><span class="hide-narrow">Find</span><input id="find" type="number" min="0" step="1" placeholder="uid" aria-label="Find a body by uid"></label>
+      <button id="reset" type="button">Reset views</button>
+    </div>
+    </details>
+  </footer>
+</div>
+<script id="view3-data" type="application/json">__LIFE9_V3_VIEW_DATA__</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+/* codec:begin */
+var CODEC = (function () {
+  'use strict';
+  var CTORS = {i1: Int8Array, u1: Uint8Array, i2: Int16Array, u2: Uint16Array, i4: Int32Array, f4: Float32Array, f8: Float64Array};
+  // face frames (normal, u, v) of the life9 cube-sphere (globe._FACES)
+  var FACES = [[[1, 0, 0], [0, 1, 0], [0, 0, 1]], [[0, 1, 0], [-1, 0, 0], [0, 0, 1]], [[-1, 0, 0], [0, -1, 0], [0, 0, 1]],
+               [[0, -1, 0], [1, 0, 0], [0, 0, 1]], [[0, 0, 1], [0, 1, 0], [-1, 0, 0]], [[0, 0, -1], [0, 1, 0], [1, 0, 0]]];
+
+  // ------------------------------------------------------------------ inflate (RFC 1950 / 1951)
+  var LBASE = [3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 15, 17, 19, 23, 27, 31, 35, 43, 51, 59, 67, 83, 99, 115, 131, 163, 195, 227, 258];
+  var LEXT = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 0];
+  var DBASE = [1, 2, 3, 4, 5, 7, 9, 13, 17, 25, 33, 49, 65, 97, 129, 193, 257, 385, 513, 769, 1025, 1537, 2049, 3073,
+               4097, 6145, 8193, 12289, 16385, 24577];
+  var DEXT = [0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13];
+  var ORDER = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15];
+  function huffman(lengths, start, n) {  // canonical code: counts per length and symbols in code order
+    var count = new Uint16Array(16), offs = new Uint16Array(16), symbol = new Uint16Array(n), i;
+    for (i = 0; i < n; i++) count[lengths[start + i]]++;
+    count[0] = 0;
+    for (i = 1; i < 16; i++) offs[i] = offs[i - 1] + count[i - 1];
+    for (i = 0; i < n; i++) if (lengths[start + i]) symbol[offs[lengths[start + i]]++] = i;
+    return {count: count, symbol: symbol};
+  }
+  var FIXED = null;
+  function fixedCodes() {
+    if (FIXED) return FIXED;
+    var l = new Uint8Array(318), i;
+    for (i = 0; i < 144; i++) l[i] = 8;
+    for (; i < 256; i++) l[i] = 9;
+    for (; i < 280; i++) l[i] = 7;
+    for (; i < 288; i++) l[i] = 8;
+    for (; i < 318; i++) l[i] = 5;
+    FIXED = [huffman(l, 0, 288), huffman(l, 288, 30)];
+    return FIXED;
+  }
+  function inflate(src) {
+    if (src.length < 2 || (src[0] & 15) !== 8 || ((src[0] << 8) | src[1]) % 31 !== 0 || (src[1] & 32)) throw new Error('inflate: not a zlib stream');
+    var pos = 2, buf = 0, cnt = 0, out = new Uint8Array(Math.max(1024, src.length * 4)), op = 0;
+    function bits(n) {
+      while (cnt < n) {
+        if (pos >= src.length) throw new Error('inflate: the stream ends early');
+        buf |= src[pos++] << cnt; cnt += 8;
+      }
+      var v = buf & ((1 << n) - 1);
+      buf >>>= n; cnt -= n;
+      return v;
+    }
+    function room(n) {
+      if (op + n <= out.length) return;
+      var size = out.length * 2;
+      while (size < op + n) size *= 2;
+      var bigger = new Uint8Array(size);
+      bigger.set(out.subarray(0, op));
+      out = bigger;
+    }
+    function decode(h) {
+      var code = 0, first = 0, index = 0;
+      for (var len = 1; len < 16; len++) {
+        code |= bits(1);
+        var c = h.count[len];
+        if (code - c < first) return h.symbol[index + (code - first)];
+        index += c; first += c; first <<= 1; code <<= 1;
+      }
+      throw new Error('inflate: bad code');
+    }
+    function codes(lit, dist) {
+      for (;;) {
+        var sym = decode(lit);
+        if (sym < 256) { room(1); out[op++] = sym; continue; }
+        if (sym === 256) return;
+        sym -= 257;
+        if (sym >= 29) throw new Error('inflate: bad length symbol');
+        var len = LBASE[sym] + bits(LEXT[sym]);
+        var ds = decode(dist);
+        if (ds >= 30) throw new Error('inflate: bad distance symbol');
+        var d = DBASE[ds] + bits(DEXT[ds]);
+        if (d > op) throw new Error('inflate: distance too far back');
+        room(len);
+        for (var k = 0; k < len; k++) { out[op] = out[op - d]; op++; }
+      }
+    }
+    function dynamicCodes() {
+      var nlen = bits(5) + 257, ndist = bits(5) + 1, ncode = bits(4) + 4, l = new Uint8Array(19), i;
+      if (nlen > 286 || ndist > 30) throw new Error('inflate: bad counts');
+      for (i = 0; i < ncode; i++) l[ORDER[i]] = bits(3);
+      var lencode = huffman(l, 0, 19), lengths = new Uint8Array(nlen + ndist);
+      i = 0;
+      while (i < nlen + ndist) {
+        var sym = decode(lencode);
+        if (sym < 16) { lengths[i++] = sym; continue; }
+        var rep, val = 0;
+        if (sym === 16) {
+          if (i === 0) throw new Error('inflate: repeat with no length');
+          val = lengths[i - 1]; rep = 3 + bits(2);
+        } else if (sym === 17) rep = 3 + bits(3);
+        else rep = 11 + bits(7);
+        if (i + rep > nlen + ndist) throw new Error('inflate: too many lengths');
+        while (rep--) lengths[i++] = val;
+      }
+      return [huffman(lengths, 0, nlen), huffman(lengths, nlen, ndist)];
+    }
+    var last;
+    do {
+      last = bits(1);
+      var type = bits(2);
+      if (type === 0) {
+        buf = 0; cnt = 0;  // a stored block starts at the next byte
+        if (pos + 4 > src.length) throw new Error('inflate: the stream ends early');
+        var len = src[pos] | (src[pos + 1] << 8), nlen = src[pos + 2] | (src[pos + 3] << 8);
+        pos += 4;
+        if (len !== (~nlen & 0xffff)) throw new Error('inflate: bad stored length');
+        if (pos + len > src.length) throw new Error('inflate: the stream ends early');
+        room(len); out.set(src.subarray(pos, pos + len), op); op += len; pos += len;
+      } else if (type === 1) { var f = fixedCodes(); codes(f[0], f[1]); }
+      else if (type === 2) { var dy = dynamicCodes(); codes(dy[0], dy[1]); }
+      else throw new Error('inflate: bad block type');
+    } while (!last);
+    return out.slice(0, op);
+  }
+
+  // ------------------------------------------------------------------ columns
+  function bytes(s) {
+    var bin = atob(s), n = bin.length, u = new Uint8Array(n);
+    for (var i = 0; i < n; i++) u[i] = bin.charCodeAt(i);
+    return u;
+  }
+  function col(c) {
+    if (!c) return null;
+    var u = bytes(c.b), i, out;
+    if (c.z) u = inflate(u);
+    if (c.t === 'bit') {
+      out = new Uint8Array(c.n);
+      for (i = 0; i < c.n; i++) out[i] = (u[i >> 3] >> (i & 7)) & 1;
+      return out;
+    }
+    var Ctor = CTORS[c.t];
+    var arr = new Ctor(u.buffer, u.byteOffset, u.byteLength / Ctor.BYTES_PER_ELEMENT);
+    if (!c.d && c.s === undefined && c.o === undefined && !c.lg) return arr;
+    out = new Float64Array(arr.length);
+    var acc = 0, s = c.s === undefined ? 1 : c.s, o = c.o || 0;
+    for (i = 0; i < arr.length; i++) {
+      var v = arr[i];
+      if (c.d) { acc += v; v = acc; }
+      v = v / s + o;
+      out[i] = c.lg ? Math.pow(10, v) : v;
+    }
+    return out;
+  }
+  function unit(arr) {
+    for (var i = 0; i < arr.length; i += 3) {
+      var n = Math.hypot(arr[i], arr[i + 1], arr[i + 2]) || 1;
+      arr[i] /= n; arr[i + 1] /= n; arr[i + 2] /= n;
+    }
+    return arr;
+  }
+  // one patch entry of a frame: bodies (sorted by uid), items, fires
+  function patchFrame(pf) {
+    if (!pf) return null;
+    var out = {n: pf.n || 0, linCount: 0, items: {n: 0, total: 0}, fires: {n: 0}}, a = pf.a, i;
+    if (a && out.n) {
+      out.uid = col(a.uid); out.x = col(a.x); out.y = col(a.y); out.h = col(a.h); out.m = col(a.m);
+      var ids = col(a.lin.ids), idx = col(a.lin.idx);
+      out.lin = new Float64Array(out.n);
+      for (i = 0; i < out.n; i++) out.lin[i] = ids[idx[i]];
+      out.linCount = ids.length;
+      out.k = col(a.k); out.mo = col(a.mo); out.th = col(a.th); out.ld = col(a.ld); out.v = col(a.v); out.dm = col(a.dm);
+      out.genes = a.g ? a.g.map(col) : null;
+    } else out.n = 0;
+    if (pf.it) {
+      out.items = {n: pf.it.n, total: pf.it.total};
+      if (pf.it.n) { out.items.x = col(pf.it.x); out.items.y = col(pf.it.y); out.items.c = col(pf.it.c); out.items.m = col(pf.it.m); }
+    }
+    if (pf.f) out.fires = {n: pf.f.n, x: col(pf.f.x), y: col(pf.f.y), t: col(pf.f.t)};
+    return out;
+  }
+  // index of uid in a sorted array (or -1)
+  function find(sorted, uid) {
+    var lo = 0, hi = sorted ? sorted.length - 1 : -1;
+    while (lo <= hi) {
+      var mid = (lo + hi) >> 1, v = sorted[mid];
+      if (v === uid) return mid;
+      if (v < uid) lo = mid + 1; else hi = mid - 1;
+    }
+    return -1;
+  }
+  function cubeCell(G) {
+    var step = Math.PI / (2 * G), q = Math.PI / 4;
+    return function (x, y, z) {
+      var best = 0, bd = -Infinity;
+      for (var f = 0; f < 6; f++) {
+        var n = FACES[f][0], d = x * n[0] + y * n[1] + z * n[2];
+        if (d > bd) { bd = d; best = f; }
+      }
+      var u = FACES[best][1], v = FACES[best][2];
+      var i = Math.floor((Math.atan((x * u[0] + y * u[1] + z * u[2]) / bd) + q) / step);
+      var j = Math.floor((Math.atan((x * v[0] + y * v[1] + z * v[2]) / bd) + q) / step);
+      i = Math.min(G - 1, Math.max(0, i)); j = Math.min(G - 1, Math.max(0, j));
+      return best * G * G + i * G + j;
+    };
+  }
+  return {inflate: inflate, col: col, unit: unit, patchFrame: patchFrame, find: find, cubeCell: cubeCell, FACES: FACES};
+})();
+/* codec:end */
+
+(function () {
+  'use strict';
+  var $ = function (id) { return document.getElementById(id); };
+  var DATA = JSON.parse($('view3-data').textContent);
+  var META = DATA.meta, ST = DATA.static, PLANET = ST.planet || {}, GL = ST.globe, PATCHES = ST.patches || [];
+  var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var NARROW = window.matchMedia && matchMedia('(max-width: 760px)').matches;
+  var nf = function (x, d) { return (x === null || x === undefined || !isFinite(x)) ? '–' : Number(x).toLocaleString('en', {maximumFractionDigits: d === undefined ? 1 : d}); };
+  var sig = function (x, s) { return (x === null || x === undefined || !isFinite(x)) ? '–' : Number(Number(x).toPrecision(s || 4)).toLocaleString('en', {maximumFractionDigits: 12}); };
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]; }); };
+  function notice(text) { var n = $('notice'); n.textContent = text; n.hidden = false; }
+  function clamp01(x) { return x < 0 ? 0 : x > 1 ? 1 : x; }
+
+  var R = PLANET.radius_m || 6.371e6, SEA = GL.sea_level_m, NP = PATCHES.length, NF = DATA.frames.length;
+  var CLASSES = ST.item_classes || [], GENES = ST.gene_columns || [], TB = META.time_bouts || 4096;
+  var FIELDS = DATA.fields || {global: {}, patch: []};
+  function tkey(d, b) { return d * TB + b; }
+
+  // ------------------------------------------------------------------- text that needs no three.js
+  document.title = (META.title || 'Planet and patch') + ' · viewer';
+  $('title').textContent = META.title || 'Planet and patch';
+  $('subtitle').textContent = 'Seed ' + ST.seed + ' · ' + NP + ' patch' + (NP === 1 ? '' : 'es') + ' · ' +
+    (NF ? 'day ' + META.first[0] + ' bout ' + META.first[1] + ' to day ' + META.last[0] + ' bout ' + META.last[1] + ', ' + NF + ' frames' : 'no frames recorded');
+  var locked = PLANET.tidally_locked;
+  (function facts() {
+    var rows = [], known = {};
+    function add(k, v, key) { rows.push('<dt>' + esc(k) + '</dt><dd>' + v + '</dd>'); if (key) known[key] = 1; }
+    if (PLANET.radius_m != null) add('Radius', nf(PLANET.radius_m / 1000, 0) + ' km', 'radius_m');
+    if (PLANET.gravity_m_s2 != null) add('Surface gravity', nf(PLANET.gravity_m_s2, 2) + ' m/s²', 'gravity_m_s2');
+    if (PLANET.surface_pressure_pa != null) add('Surface pressure', nf(PLANET.surface_pressure_pa / 1000, 1) + ' kPa', 'surface_pressure_pa');
+    if (PLANET.star_teff_k != null) add('Star temperature', nf(PLANET.star_teff_k, 0) + ' K', 'star_teff_k');
+    if (PLANET.year_s != null) add('Year', nf(PLANET.year_s / 86400, 1) + ' days', 'year_s');
+    if (locked != null) add('Tidally locked', locked ? 'yes: a permanent day side and night side' : 'no', 'tidally_locked');
+    if (PLANET.t_surface_k != null) add('Mean surface temperature', nf(PLANET.t_surface_k, 1) + ' K (' + nf(PLANET.t_surface_k - 273.15, 1) + ' °C)', 't_surface_k');
+    if (PLANET.ocean_fraction != null) add('Ocean', nf(100 * PLANET.ocean_fraction, 1) + ' % of the surface', 'ocean_fraction');
+    if (PLANET.frozen_mean != null) add('Mean below freezing', PLANET.frozen_mean ? 'yes' : 'no', 'frozen_mean');
+    var LABELS = {p_co2_pa: ['CO₂ partial pressure', ' Pa'], p_n2_pa: ['N₂ partial pressure', ' Pa'], p_ar_pa: ['Ar partial pressure', ' Pa'],
+                  pressure_pa: ['Pressure', ' Pa'], chain_t_k: ['Chain surface temperature', ' K'], t_s_k: ['Derived surface temperature', ' K'],
+                  mismatch_k: ['Derived minus chain temperature', ' K'], water_mass_fraction: ['Water mass fraction', ''],
+                  flux: ['Starlight (Earth = 1)', ''], insolation_w_m2: ['Starlight', ' W/m²'], t_disc_k: ['Disc temperature at the orbit', ' K']};
+    Object.keys(PLANET).forEach(function (k) {
+      if (known[k]) return;
+      var v = PLANET[k];
+      if (LABELS[k] && typeof v === 'number') { add(LABELS[k][0], sig(v) + LABELS[k][1]); return; }
+      if (v !== null && typeof v === 'object') v = Object.keys(v).map(function (q) { return q + ' ' + sig(v[q]); }).join(', ');
+      else if (typeof v === 'number') v = sig(v);
+      add(k, esc(v === null ? '–' : v));
+    });
+    add('Sea level', nf(SEA, 0) + ' m');
+    add('Globe cells', nf(GL.C, 0) + (GL.grid === 'cube-sphere' ? ' (6 × ' + GL.G + ' × ' + GL.G + ')' : '') + ', mean cell area ' + nf(4 * Math.PI * R * R / GL.C / 1e6, 0) + ' km² (' + nf(Math.sqrt(4 * Math.PI / GL.C) * R / 1000, 0) + ' km on a side)');
+    PATCHES.forEach(function (ps) {
+      add('Patch ' + ps.index, nf(ps.L / 1000, 3) + ' km square, ' + ps.n + ' × ' + ps.n + ' cells of ' + nf(ps.L / ps.n, 1) + ' m' + (ps.cell != null ? ', globe cell ' + ps.cell : ''));
+    });
+    $('facts').innerHTML = rows.join('');
+  })();
+  if (META.notes) {
+    if (META.notes.supplied) $('supplied-text').textContent = META.notes.supplied.replace(/^Nothing is pre-installed \([^)]*\)\. /, '');
+  }
+  var SCALES = ST.scales || {};
+  if (SCALES.plants) $('plants-note').textContent = 'Plants: green deepens with the recorded plant density (255 = ' + sig(SCALES.plants[0], 3) + ' ' + SCALES.plants[1] + ')';
+  if (SCALES.water) $('water-note').textContent = 'Standing water: blue deepens with the recorded water (255 = ' + sig(SCALES.water[0], 3) + ' ' + SCALES.water[1] + ')';
+  $('light-note').textContent = locked
+    ? 'The planet is tidally locked: the star stands still over one point (the ring), one side has permanent day and the other permanent night. The line is the terminator, where the star sits on the horizon.'
+    : 'The globe is lit from the star\'s direction in each frame. The line is the terminator, where the star sits on the horizon.';
+  (function dataNote() {
+    var parts = ['Frames: ' + META.frames + ' of ' + META.frames_in + ' recorded' + (META.every > 1 ? ' (1 in ' + META.every + ' kept, the first and last always)' : '') + '.'];
+    parts.push('Field records (globe temperature and ice, patch plants and water): ' + META.field_records + ' of ' + META.field_records_in +
+      (META.field_every > 1 ? ' (1 in ' + META.field_every + ' kept)' : '') +
+      (META.field_factor > 1 ? ', patch fields averaged over ' + META.field_factor + ' × ' + META.field_factor + ' cells to fit the page' : '') +
+      '. A frame shows the latest record at or before its day and bout.');
+    if (META.items_dropped) parts.push('Items: at most ' + META.items_cap + ' drawn per patch and frame (' + nf(META.items_dropped, 0) + ' left out in all).');
+    parts.push('Bodies are never left out.');
+    if (META.notes && META.notes.display) parts.push(META.notes.display);
+    if (META.notes && META.notes.scale) parts.push(META.notes.scale);
+    parts.push('Page size bound ' + META.max_mb + ' MB' + (META.fits ? '' : ' (not reached: nothing more could be thinned)') + '.' + (META.built_utc ? ' Built ' + META.built_utc + '.' : ''));
+    $('data-note').textContent = parts.join(' ');
+  })();
+  if (META.notes && META.notes.meaning) $('meaning-note').lastChild.textContent = ' ' + META.notes.meaning.replace(/^No meaning is supplied\. /, '');
+
+  if (typeof THREE === 'undefined' || !THREE.OrbitControls) {
+    notice('three.js could not be loaded. This page needs its two pinned scripts from cdnjs.cloudflare.com and cdn.jsdelivr.net (an internet connection); everything else is inside the file.');
+    return;
+  }
+
+  // ----------------------------------------------------------------------------- theme colours
+  var css = {};
+  function readTheme() {
+    var s = getComputedStyle(document.documentElement), get = function (k) { return s.getPropertyValue('--' + k).trim(); };
+    ['space', 'sky-day', 'sky-night', 'terminator', 'select', 'marker', 'marker-ink', 'marker-sel', 'outline', 'mouth', 'edge',
+     'spark', 'spark-fill', 'spark-2', 'lin-other', 'cls-other', 'ink-2', 'line', 'line-strong'].forEach(function (k) { css[k] = get(k); });
+    css.lin = []; css.ch = []; css.ramp = []; css.cls = [];
+    for (var i = 1; i <= 8; i++) css.lin.push(new THREE.Color(get('lin' + i)));
+    for (i = 0; i < 8; i++) css.ch.push(new THREE.Color(get('ch' + i)));
+    for (i = 0; i < 5; i++) css.ramp.push(new THREE.Color(get('ramp' + i)));
+    for (i = 0; i < 8; i++) css.cls.push(new THREE.Color(get('cls' + i)));
+    css.linOther = new THREE.Color(css['lin-other']); css.clsOther = new THREE.Color(css['cls-other']);
+    css.mouthC = new THREE.Color(css.mouth); css.skyDay = new THREE.Color(css['sky-day']); css.skyNight = new THREE.Color(css['sky-night']);
+    css.dark = new THREE.Color(css.space).getHSL({}).l < 0.4;
+  }
+  readTheme();
+  function classColour(k) { return k >= 0 && k < css.cls.length ? css.cls[k] : css.clsOther; }
+
+  // ============================================================================== the globe
+  var C = GL.C, G = GL.G;
+  var CEN = CODEC.unit(CODEC.col(GL.centers)), ELEV = CODEC.col(GL.elevation_m), LAND = CODEC.col(GL.land);
+  var spacing = Math.sqrt(4 * Math.PI / C), KR = 1.5 * spacing, SIG = 0.6 * spacing;
+  var eMin = Infinity, eMax = -Infinity;
+  for (var c0 = 0; c0 < C; c0++) { eMin = Math.min(eMin, ELEV[c0]); eMax = Math.max(eMax, ELEV[c0]); }
+  var BIN = KR, OFF = Math.ceil(1 / BIN) + 2, SPAN = 2 * OFF + 1, HASH = new Map();
+  function binKey(ix, iy, iz) { return ((ix + OFF) * SPAN + (iy + OFF)) * SPAN + (iz + OFF); }
+  for (var c1 = 0; c1 < C; c1++) {
+    var hk = binKey(Math.floor(CEN[3 * c1] / BIN), Math.floor(CEN[3 * c1 + 1] / BIN), Math.floor(CEN[3 * c1 + 2] / BIN));
+    var hl = HASH.get(hk); if (!hl) HASH.set(hk, hl = []); hl.push(c1);
+  }
+  var CELL = GL.grid === 'cube-sphere' ? CODEC.cubeCell(G) : null;
+  function nearest(x, y, z) {
+    if (CELL) return CELL(x, y, z);
+    var best = 0, bd = -2;
+    for (var c = 0; c < C; c++) { var d = x * CEN[3 * c] + y * CEN[3 * c + 1] + z * CEN[3 * c + 2]; if (d > bd) { bd = d; best = c; } }
+    return best;
+  }
+  function weights(x, y, z, cells, ws) {  // Gaussian weights of the cells within KR of a point (normalised)
+    cells.length = 0; ws.length = 0;
+    var ix = Math.floor(x / BIN), iy = Math.floor(y / BIN), iz = Math.floor(z / BIN), sum = 0;
+    for (var a = -1; a <= 1; a++) for (var b = -1; b <= 1; b++) for (var d = -1; d <= 1; d++) {
+      var l = HASH.get(binKey(ix + a, iy + b, iz + d)); if (!l) continue;
+      for (var k = 0; k < l.length; k++) {
+        var c = l[k], dx = x - CEN[3 * c], dy = y - CEN[3 * c + 1], dz = z - CEN[3 * c + 2], r2 = dx * dx + dy * dy + dz * dz;
+        if (r2 > KR * KR) continue;
+        var w = Math.exp(-r2 / (SIG * SIG)); cells.push(c); ws.push(w); sum += w;
+      }
+    }
+    if (!cells.length) { cells.push(nearest(x, y, z)); ws.push(1); sum = 1; }
+    for (var i = 0; i < ws.length; i++) ws[i] /= sum;
+  }
+  var REX = 1;
+  function gRadius(e) { return 1 + REX * (Math.max(e, SEA) - SEA) / R; }
+  var M = Math.max(16, Math.min(96, 2 * G)), NV = 6 * (M + 1) * (M + 1);
+  var DIR = new Float32Array(3 * NV), GPOS = new Float32Array(3 * NV), GCOL = new Float32Array(3 * NV);
+  var GIDX = new (NV > 65535 ? Uint32Array : Uint16Array)(6 * M * M * 6);
+  var wStart = new Int32Array(NV + 1), wCell = [], wVal = [];
+  (function buildGlobe() {
+    var v = 0, t = 0, q = Math.PI / 4, tc = [], tw = [];
+    for (var f = 0; f < 6; f++) {
+      var n = CODEC.FACES[f][0], u = CODEC.FACES[f][1], w = CODEC.FACES[f][2], base = v;
+      for (var a = 0; a <= M; a++) {
+        var ta = Math.tan(-q + a * (2 * q) / M);
+        for (var b = 0; b <= M; b++) {
+          var tb = Math.tan(-q + b * (2 * q) / M);
+          var x = n[0] + ta * u[0] + tb * w[0], y = n[1] + ta * u[1] + tb * w[1], z = n[2] + ta * u[2] + tb * w[2];
+          var L = Math.hypot(x, y, z); DIR[3 * v] = x / L; DIR[3 * v + 1] = y / L; DIR[3 * v + 2] = z / L; v++;
+        }
+      }
+      for (a = 0; a < M; a++) for (b = 0; b < M; b++) {
+        var p00 = base + a * (M + 1) + b, p10 = p00 + M + 1, p01 = p00 + 1, p11 = p10 + 1;
+        GIDX[t++] = p00; GIDX[t++] = p10; GIDX[t++] = p11; GIDX[t++] = p00; GIDX[t++] = p11; GIDX[t++] = p01;
+      }
+    }
+    for (v = 0; v < NV; v++) {
+      weights(DIR[3 * v], DIR[3 * v + 1], DIR[3 * v + 2], tc, tw);
+      wStart[v] = wCell.length;
+      for (var k = 0; k < tc.length; k++) { wCell.push(tc[k]); wVal.push(tw[k]); }
+    }
+    wStart[NV] = wCell.length;
+    wCell = Int32Array.from(wCell); wVal = Float32Array.from(wVal);
+  })();
+  function toVertices(cellValues, out) {
+    for (var v = 0; v < NV; v++) {
+      var s = 0; for (var k = wStart[v]; k < wStart[v + 1]; k++) s += wVal[k] * cellValues[wCell[k]];
+      out[v] = s;
+    }
+    return out;
+  }
+  var vElev = toVertices(ELEV, new Float32Array(NV)), vLand = toVertices(LAND, new Float32Array(NV));
+  var tmpC = [], tmpW = [];
+  function groundAt(x, y, z) { weights(x, y, z, tmpC, tmpW); var e = 0; for (var i = 0; i < tmpC.length; i++) e += tmpW[i] * ELEV[tmpC[i]]; return e; }
+
+  var gCanvas = $('globe'), gWrap = gCanvas.parentNode, pCanvas = $('patch'), pWrap = pCanvas.parentNode;
+  var gRenderer, pRenderer;
+  try {
+    gRenderer = new THREE.WebGLRenderer({canvas: gCanvas, antialias: true, logarithmicDepthBuffer: true});
+    pRenderer = new THREE.WebGLRenderer({canvas: pCanvas, antialias: true, logarithmicDepthBuffer: true});
+  } catch (err) { notice('WebGL is not available in this browser, so the views cannot be drawn.'); return; }
+  [gRenderer, pRenderer].forEach(function (r) { r.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2)); });
+  var gScene = new THREE.Scene();
+  var gCamera = new THREE.PerspectiveCamera(40, 1, 1e-6, 100);
+  gCamera.up.set(0, 0, 1);  // before the controls: OrbitControls reads the up axis once
+  var gControls = new THREE.OrbitControls(gCamera, gCanvas);
+  gControls.enablePan = false; gControls.enableKeys = false; gControls.enableDamping = !REDUCED; gControls.dampingFactor = 0.08;
+  gControls.zoomSpeed = 2;  // from the whole planet down to a 2 km patch outline
+  var gGeo = new THREE.BufferGeometry();
+  gGeo.setAttribute('position', new THREE.BufferAttribute(GPOS, 3));
+  gGeo.setAttribute('color', new THREE.BufferAttribute(GCOL, 3));
+  gGeo.setIndex(new THREE.BufferAttribute(GIDX, 1));
+  var globe = new THREE.Mesh(gGeo, new THREE.MeshLambertMaterial({vertexColors: true}));
+  gScene.add(globe);
+  function seamNormals(geo) {  // face-edge vertices are duplicated: share their normals so no seam shows
+    var nrm = geo.attributes.normal.array, groups = new Map();
+    for (var f = 0; f < 6; f++) for (var a = 0; a <= M; a++) for (var b = 0; b <= M; b++) {
+      if (a !== 0 && a !== M && b !== 0 && b !== M) continue;
+      var v = f * (M + 1) * (M + 1) + a * (M + 1) + b;
+      var k = Math.round(DIR[3 * v] * 2e4) + ',' + Math.round(DIR[3 * v + 1] * 2e4) + ',' + Math.round(DIR[3 * v + 2] * 2e4);
+      var g = groups.get(k); if (!g) groups.set(k, g = []); g.push(v);
+    }
+    groups.forEach(function (g) {
+      if (g.length < 2) return;
+      var x = 0, y = 0, z = 0, i;
+      for (i = 0; i < g.length; i++) { x += nrm[3 * g[i]]; y += nrm[3 * g[i] + 1]; z += nrm[3 * g[i] + 2]; }
+      var L = Math.hypot(x, y, z) || 1;
+      for (i = 0; i < g.length; i++) { nrm[3 * g[i]] = x / L; nrm[3 * g[i] + 1] = y / L; nrm[3 * g[i] + 2] = z / L; }
+    });
+  }
+  var RMAX = 1;
+  function shapeGlobe() {
+    RMAX = gRadius(eMax);
+    for (var v = 0; v < NV; v++) {
+      var r = gRadius(vElev[v]);
+      GPOS[3 * v] = DIR[3 * v] * r; GPOS[3 * v + 1] = DIR[3 * v + 1] * r; GPOS[3 * v + 2] = DIR[3 * v + 2] * r;
+    }
+    gGeo.attributes.position.needsUpdate = true;
+    gGeo.computeVertexNormals(); seamNormals(gGeo); gGeo.computeBoundingSphere();
+  }
+  var gAmbient = new THREE.AmbientLight(0xffffff, 0.16), gSun = new THREE.DirectionalLight(starColour(PLANET.star_teff_k), 1.05);
+  gScene.add(gAmbient); gScene.add(gSun);
+  function starColour(T) {  // approximate blackbody colour of a star (display only)
+    T = (T || 5772) / 100;
+    var r = T <= 66 ? 255 : 329.7 * Math.pow(T - 60, -0.1332);
+    var g = T <= 66 ? 99.47 * Math.log(T) - 161.12 : 288.12 * Math.pow(T - 60, -0.0755);
+    var b = T >= 66 ? 255 : (T <= 19 ? 0 : 138.52 * Math.log(T - 10) - 305.04);
+    var cl = function (x) { return Math.min(255, Math.max(0, x)) / 255; };
+    return new THREE.Color(cl(r), cl(g), cl(b));
+  }
+  function glowTexture(inner, outer) {
+    var cv = document.createElement('canvas'); cv.width = cv.height = 64;
+    var g = cv.getContext('2d'), gr = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+    gr.addColorStop(0, inner); gr.addColorStop(0.35, outer); gr.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = gr; g.fillRect(0, 0, 64, 64);
+    return new THREE.CanvasTexture(cv);
+  }
+  var star = new THREE.Sprite(new THREE.SpriteMaterial({map: glowTexture('rgba(255,255,255,1)', 'rgba(255,255,255,.55)'), color: starColour(PLANET.star_teff_k), depthWrite: false}));
+  star.scale.set(0.7, 0.7, 1); gScene.add(star);
+  var termGeo = new THREE.BufferGeometry(), TERM_N = 256;
+  termGeo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(3 * TERM_N), 3));
+  var terminator = new THREE.LineLoop(termGeo, new THREE.LineBasicMaterial({color: css.terminator, transparent: true, opacity: 0.75}));
+  gScene.add(terminator);
+  var subMark = new THREE.Mesh(new THREE.RingGeometry(0.012, 0.02, 32), new THREE.MeshBasicMaterial({color: 0xfff1b0, side: THREE.DoubleSide, depthWrite: false}));
+  gScene.add(subMark);
+  var UP = new THREE.Vector3(0, 0, 1), SUN = new THREE.Vector3(1, 0, 0), currentSun = null;
+  function setGlobeSun(s) {
+    var key = s.join(',');
+    if (key === currentSun) return;
+    currentSun = key;
+    var d = SUN.set(s[0], s[1], s[2]).normalize();
+    gSun.position.copy(d).multiplyScalar(10);
+    star.position.copy(d).multiplyScalar(5.2);
+    var e1 = new THREE.Vector3().crossVectors(d, Math.abs(d.z) < 0.9 ? UP : new THREE.Vector3(1, 0, 0)).normalize();
+    var e2 = new THREE.Vector3().crossVectors(d, e1).normalize(), arr = termGeo.attributes.position.array, rr = RMAX + 0.004;
+    for (var i = 0; i < TERM_N; i++) {
+      var t = 2 * Math.PI * i / TERM_N, ct = Math.cos(t), st = Math.sin(t);
+      arr[3 * i] = rr * (ct * e1.x + st * e2.x); arr[3 * i + 1] = rr * (ct * e1.y + st * e2.y); arr[3 * i + 2] = rr * (ct * e1.z + st * e2.z);
+    }
+    termGeo.attributes.position.needsUpdate = true;
+    subMark.position.copy(d).multiplyScalar(gRadius(groundAt(d.x, d.y, d.z)) + 0.002);
+    subMark.quaternion.setFromUnitVectors(UP, d);
+  }
+
+  // global field records (temperature, ice): the latest at or before a frame
+  var GF = {T_k: FIELDS.global.T_k || [], ice: FIELDS.global.ice || []}, gfCache = new Map();
+  function latest(list, key) {
+    var lo = 0, hi = list.length - 1, best = -1;
+    while (lo <= hi) { var mid = (lo + hi) >> 1; if (tkey(list[mid].d, list[mid].b) <= key) { best = mid; lo = mid + 1; } else hi = mid - 1; }
+    return best;
+  }
+  function globalAt(name, i) {
+    var ck = name + i;
+    if (gfCache.has(ck)) return gfCache.get(ck);
+    var v = toVertices(CODEC.col(GF[name][i].v), new Float32Array(NV));
+    if (gfCache.size > 8) gfCache.delete(gfCache.keys().next().value);
+    gfCache.set(ck, v);
+    return v;
+  }
+  var T_LO = 273.15, T_HI = 273.15;
+  GF.T_k.forEach(function (r) { var t = CODEC.col(r.v); for (var c = 0; c < t.length; c++) { if (t[c] < T_LO) T_LO = t[c]; if (t[c] > T_HI) T_HI = t[c]; } });
+  var T_HALF = Math.max(5, T_HI - 273.15, 273.15 - T_LO);
+  $('t-min').textContent = nf(273.15 - T_HALF, 0) + ' K'; $('t-max').textContent = nf(273.15 + T_HALF, 0) + ' K';
+  if (!GF.T_k.length) { $('show-temp').disabled = true; $('show-temp').parentNode.title = 'No temperature recorded'; }
+
+  var GS = {shallow: [0.24, 0.56, 0.72], deep: [0.04, 0.18, 0.35], seaIce: [0.87, 0.91, 0.94], low: [0.5, 0.6, 0.37],
+            mid: [0.64, 0.58, 0.47], high: [0.84, 0.82, 0.77], snow: [0.95, 0.96, 0.97]};
+  var TSTOPS = [[0.13, 0.4, 0.67], [0.4, 0.66, 0.81], [0.97, 0.97, 0.97], [0.94, 0.54, 0.38], [0.7, 0.09, 0.17]];
+  function mix(a, b, t, out) { out[0] = a[0] + (b[0] - a[0]) * t; out[1] = a[1] + (b[1] - a[1]) * t; out[2] = a[2] + (b[2] - a[2]) * t; return out; }
+  function smooth(t) { t = clamp01(t); return t * t * (3 - 2 * t); }
+  var painted = '', cO = [0, 0, 0], cL = [0, 0, 0], cX = [0, 0, 0];
+  function paintGlobe(tIdx, iceIdx, overlay) {
+    var key = tIdx + '/' + iceIdx + '/' + overlay;
+    if (key === painted) return;
+    painted = key;
+    var T = overlay && tIdx >= 0 ? globalAt('T_k', tIdx) : null, ICE = iceIdx >= 0 ? globalAt('ice', iceIdx) : null;
+    var relief = Math.max(1, eMax - SEA), depthSpan = Math.max(1, SEA - eMin);
+    for (var v = 0; v < NV; v++) {
+      if (T) {
+        var x = clamp01(((T[v] - 273.15) / T_HALF + 1) / 2) * 4, i = Math.min(3, Math.floor(x));
+        mix(TSTOPS[i], TSTOPS[i + 1], x - i, cX);
+      } else {
+        var e = vElev[v], ice = ICE ? smooth((ICE[v] - 0.35) / 0.3) : 0;
+        mix(GS.shallow, GS.deep, Math.sqrt(clamp01((SEA - e) / depthSpan)), cO);
+        mix(cO, GS.seaIce, ice, cO);
+        var h = clamp01((e - SEA) / relief);
+        if (h < 0.5) mix(GS.low, GS.mid, h * 2, cL); else mix(GS.mid, GS.high, (h - 0.5) * 2, cL);
+        mix(cL, GS.snow, ice, cL);
+        mix(cO, cL, smooth((vLand[v] - 0.35) / 0.3), cX);
+      }
+      GCOL[3 * v] = cX[0]; GCOL[3 * v + 1] = cX[1]; GCOL[3 * v + 2] = cX[2];
+    }
+    gGeo.attributes.color.needsUpdate = true;
+  }
+
+  // patch markers (not to scale) and true-size outlines
+  function markerTexture(label, selected) {
+    var cv = document.createElement('canvas'); cv.width = cv.height = 64;
+    var g = cv.getContext('2d');
+    g.beginPath(); g.arc(32, 32, 26, 0, 2 * Math.PI);
+    g.fillStyle = selected ? css['marker-sel'] : css.marker; g.fill();
+    g.lineWidth = 5; g.strokeStyle = css['marker-ink']; g.stroke();
+    g.fillStyle = selected ? '#ffffff' : css['marker-ink']; g.font = 'bold 28px system-ui,sans-serif';
+    g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(String(label), 32, 34);
+    return new THREE.CanvasTexture(cv);
+  }
+  var markers = [], outlines = [];
+  PATCHES.forEach(function (ps, slot) {
+    var sp = new THREE.Sprite(new THREE.SpriteMaterial({depthTest: false, depthWrite: false, sizeAttenuation: false, transparent: true}));
+    sp.renderOrder = 10; gScene.add(sp); markers.push(sp);
+    var lg = new THREE.BufferGeometry(); lg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(3 * 4), 3));
+    var ol = new THREE.LineLoop(lg, new THREE.LineBasicMaterial({color: css.outline})); gScene.add(ol); outlines.push(ol);
+  });
+  function patchUnit(ps) { return new THREE.Vector3(ps.center[0], ps.center[1], ps.center[2]).normalize(); }
+  function placeMarkers() {
+    PATCHES.forEach(function (ps, slot) {
+      var up = patchUnit(ps), r = gRadius(ps.z_mean);
+      markers[slot].position.copy(up).multiplyScalar(r + 2e-6);
+      var e = ps.east, n = ps.north, h = ps.L / 2 / R, arr = outlines[slot].geometry.attributes.position.array;
+      [[-1, -1], [1, -1], [1, 1], [-1, 1]].forEach(function (s, k) {
+        var x = up.x + h * (s[0] * e[0] + s[1] * n[0]), y = up.y + h * (s[0] * e[1] + s[1] * n[1]), z = up.z + h * (s[0] * e[2] + s[1] * n[2]);
+        var L = Math.hypot(x, y, z), rr = r + 1e-7;
+        arr[3 * k] = x / L * rr; arr[3 * k + 1] = y / L * rr; arr[3 * k + 2] = z / L * rr;
+      });
+      outlines[slot].geometry.attributes.position.needsUpdate = true;
+      outlines[slot].geometry.computeBoundingSphere();
+    });
+  }
+  function markerTextures() {
+    PATCHES.forEach(function (ps, slot) {
+      var m = markers[slot].material;
+      if (m.map) m.map.dispose();
+      m.map = markerTexture(ps.index, slot === cur); m.needsUpdate = true;
+      outlines[slot].material.color.set(css.outline);
+    });
+  }
+  var MARKER_PX = 26;
+  function markerScale() {
+    var h = Math.max(1, gWrap.clientHeight), p11 = 1 / Math.tan(gCamera.fov * Math.PI / 360);
+    var s = MARKER_PX / h * 2 / p11;
+    markers.forEach(function (m) { m.scale.set(s, s, 1); });
+  }
+
+  // ============================================================================== patches
+  var PS = PATCHES.map(function (ps, slot) {
+    var n = ps.n, L = ps.L, dx = L / n, elev = CODEC.col(ps.elevation_m), pond = CODEC.col(ps.pond);
+    var sea = new Uint8Array(n * n), surf = new Float64Array(n * n), lo = Infinity, hi = -Infinity, sum = 0;
+    for (var c = 0; c < n * n; c++) {
+      sea[c] = elev[c] < SEA ? 1 : 0; surf[c] = sea[c] ? SEA : elev[c];
+      lo = Math.min(lo, surf[c]); hi = Math.max(hi, surf[c]); sum += surf[c];
+    }
+    var corner = new Float64Array((n + 1) * (n + 1));  // corner heights: mean of the four cells around (periodic)
+    for (var i = 0; i <= n; i++) for (var j = 0; j <= n; j++) {
+      var i0 = (i - 1 + n) % n, i1 = i % n, j0 = (j - 1 + n) % n, j1 = j % n;
+      corner[i * (n + 1) + j] = (surf[i0 * n + j0] + surf[i1 * n + j0] + surf[i0 * n + j1] + surf[i1 * n + j1]) / 4;
+    }
+    var hasSea = false; for (c = 0; c < n * n; c++) if (sea[c]) { hasSea = true; break; }
+    return {slot: slot, index: ps.index, n: n, L: L, dx: dx, elev: elev, pond: pond, sea: sea, surf: surf, corner: corner,
+            lo: lo, hi: hi, ref: sum / (n * n), hasSea: hasSea, east: ps.east, north: ps.north, center: ps.center,
+            plants: (FIELDS.patch[slot] || {}).plants || [], water: (FIELDS.patch[slot] || {}).water || [],
+            geo: null, tex: null, texData: null, painted: ''};
+  });
+  var cur = 0, VEX = 1;
+  var pScene = new THREE.Scene();
+  var pCamera = new THREE.PerspectiveCamera(45, 1, 0.005, 1e5);
+  pCamera.up.set(0, 0, 1);
+  var pControls = new THREE.OrbitControls(pCamera, pCanvas);
+  pControls.enableKeys = false; pControls.enableDamping = !REDUCED; pControls.dampingFactor = 0.1; pControls.screenSpacePanning = true;
+  pControls.zoomSpeed = 2.5;  // a patch spans 2 km down to centimetre bodies
+  pControls.maxPolarAngle = Math.PI / 2 - 0.02;
+  var hemi = new THREE.HemisphereLight(0xffffff, 0x595346, 0.5), pSun = new THREE.DirectionalLight(starColour(PLANET.star_teff_k), 0.9);
+  pScene.add(hemi); pScene.add(pSun); pScene.add(pSun.target);
+  var terrain = new THREE.Mesh(new THREE.BufferGeometry(), new THREE.MeshLambertMaterial({color: 0xffffff}));
+  pScene.add(terrain);
+  var edge = new THREE.Line(new THREE.BufferGeometry(), new THREE.LineBasicMaterial({color: 0x888888, transparent: true, opacity: 0.8}));
+  pScene.add(edge);
+
+  function heightAt(P, x, y) {  // drawn height (m, with the exaggeration) on the corner grid at patch position (x, y)
+    var n = P.n, fx = x / P.dx, fy = y / P.dx, i = Math.floor(fx), j = Math.floor(fy);
+    if (i < 0) i = 0; if (i > n - 1) i = n - 1; if (j < 0) j = 0; if (j > n - 1) j = n - 1;
+    var tx = clamp01(fx - i), ty = clamp01(fy - j), N1 = n + 1, k = i * N1 + j, cn = P.corner;
+    var h = (cn[k] * (1 - tx) + cn[k + N1] * tx) * (1 - ty) + (cn[k + 1] * (1 - tx) + cn[k + N1 + 1] * tx) * ty;
+    return (h - P.ref) * VEX;
+  }
+  function buildTerrain(P) {
+    var n = P.n, N1 = n + 1, L = P.L, pos = new Float32Array(3 * N1 * N1), uv = new Float32Array(2 * N1 * N1);
+    var idx = new (N1 * N1 > 65535 ? Uint32Array : Uint16Array)(6 * n * n), v = 0, t = 0;
+    for (var i = 0; i <= n; i++) for (var j = 0; j <= n; j++) {
+      pos[3 * v] = i * P.dx - L / 2; pos[3 * v + 1] = j * P.dx - L / 2; pos[3 * v + 2] = (P.corner[i * N1 + j] - P.ref) * VEX;
+      uv[2 * v] = i / n; uv[2 * v + 1] = j / n; v++;
+    }
+    for (i = 0; i < n; i++) for (j = 0; j < n; j++) {
+      var a = i * N1 + j, b = a + N1, c = b + 1, d = a + 1;
+      idx[t++] = a; idx[t++] = b; idx[t++] = c; idx[t++] = a; idx[t++] = c; idx[t++] = d;
+    }
+    var geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+    geo.setAttribute('uv', new THREE.BufferAttribute(uv, 2));
+    geo.setIndex(new THREE.BufferAttribute(idx, 1));
+    geo.computeVertexNormals(); geo.computeBoundingSphere();
+    var line = [], lift = 0.3;
+    function push(i, j) { line.push(i * P.dx - L / 2, j * P.dx - L / 2, (P.corner[i * N1 + j] - P.ref) * VEX + lift); }
+    for (i = 0; i <= n; i++) push(i, 0);
+    for (j = 1; j <= n; j++) push(n, j);
+    for (i = n - 1; i >= 0; i--) push(i, n);
+    for (j = n - 1; j >= 0; j--) push(0, j);
+    var eg = new THREE.BufferGeometry(); eg.setAttribute('position', new THREE.Float32BufferAttribute(line, 3));
+    return {geo: geo, edge: eg};
+  }
+  function showTerrain(P) {
+    if (!P.geo) { var b = buildTerrain(P); P.geo = b.geo; P.edgeGeo = b.edge; }
+    terrain.geometry = P.geo; edge.geometry = P.edgeGeo;
+    if (!P.tex) {
+      P.texData = new Uint8Array(4 * P.n * P.n);
+      P.tex = new THREE.DataTexture(P.texData, P.n, P.n, THREE.RGBAFormat);
+      P.tex.magFilter = THREE.NearestFilter; P.tex.minFilter = THREE.LinearFilter; P.tex.generateMipmaps = false;
+    }
+    terrain.material.map = P.tex; terrain.material.needsUpdate = true;
+  }
+  function reshapeAll() {  // the height exaggeration changed: rebuild every built terrain
+    PS.forEach(function (P) { if (P.geo) { P.geo.dispose(); P.edgeGeo.dispose(); P.geo = null; } });
+    showTerrain(PS[cur]);
+  }
+
+  // patch field records: the latest at or before a frame, decoded to fine cells
+  var pfCache = new Map();
+  function patchField(P, name, i) {
+    var ck = P.slot + name + i;
+    if (pfCache.has(ck)) return pfCache.get(ck);
+    var rec = P[name][i], v = CODEC.col(rec.v), f = rec.f || 1, n = P.n, out = v;
+    if (f > 1) {
+      var m = n / f; out = new Float32Array(n * n);
+      for (var ix = 0; ix < n; ix++) for (var iy = 0; iy < n; iy++) out[ix * n + iy] = v[Math.floor(ix / f) * m + Math.floor(iy / f)];
+    }
+    if (pfCache.size > 16) pfCache.delete(pfCache.keys().next().value);
+    pfCache.set(ck, out);
+    return out;
+  }
+  var PG = {soil: [0.72, 0.64, 0.5], soilHigh: [0.8, 0.74, 0.62], sparse: [0.56, 0.68, 0.34], dense: [0.16, 0.42, 0.15],
+            shallow: [0.36, 0.62, 0.8], deep: [0.1, 0.33, 0.58], basin: [0.55, 0.7, 0.82], sea: [0.15, 0.37, 0.58], seaDeep: [0.07, 0.2, 0.36]};
+  var showPlants = true, showWater = true;
+  function paintPatch(P, plantIdx, waterIdx) {
+    var key = plantIdx + '/' + waterIdx + '/' + showPlants + '/' + showWater;
+    if (key === P.painted) return;
+    P.painted = key;
+    var n = P.n, d = P.texData, plants = showPlants && plantIdx >= 0 ? patchField(P, 'plants', plantIdx) : null;
+    var water = showWater && waterIdx >= 0 ? patchField(P, 'water', waterIdx) : null, span = Math.max(1e-9, P.hi - P.lo);
+    var seaSpan = 1; for (var s = 0; s < n * n; s++) if (P.sea[s]) seaSpan = Math.max(seaSpan, SEA - P.elev[s]);
+    var c = [0, 0, 0], g = [0, 0, 0];
+    for (var ix = 0; ix < n; ix++) for (var iy = 0; iy < n; iy++) {
+      var k = ix * n + iy;
+      if (P.sea[k]) mix(PG.sea, PG.seaDeep, Math.sqrt(clamp01((SEA - P.elev[k]) / seaSpan)), c);
+      else {
+        mix(PG.soil, PG.soilHigh, (P.surf[k] - P.lo) / span, c);
+        if (plants) { var p = clamp01(plants[k] / 255); if (p > 0) mix(c, mix(PG.sparse, PG.dense, p, g), clamp01(0.25 + Math.sqrt(p)), c); }
+        if (water) { var w = clamp01(water[k] / 255); if (w > 0) mix(c, mix(PG.shallow, PG.deep, Math.sqrt(w), g), 0.55 + 0.45 * Math.sqrt(w), c); }
+        else if (showWater && P.pond[k]) mix(c, PG.basin, 0.75, c);
+      }
+      var o = 4 * (iy * n + ix);  // texture row iy (v), column ix (u)
+      d[o] = Math.round(255 * c[0]); d[o + 1] = Math.round(255 * c[1]); d[o + 2] = Math.round(255 * c[2]); d[o + 3] = 255;
+    }
+    P.tex.needsUpdate = true;
+  }
+
+  // ------------------------------------------------------------------------------- patch markers
+  function white(g) {  // r128 multiplies instance colours by the vertex colour attribute, so give one
+    g.setAttribute('color', new THREE.BufferAttribute(new Float32Array(g.attributes.position.count * 3).fill(1), 3));
+    return g;
+  }
+  function instanced(geo, mat, count) {
+    var m = new THREE.InstancedMesh(white(geo), mat, Math.max(1, count));
+    for (var i = 0; i < Math.max(1, count); i++) m.setColorAt(i, new THREE.Color(1, 1, 1));  // before count = 0
+    m.count = 0; m.frustumCulled = false; m.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
+    pScene.add(m);
+    return m;
+  }
+  var MAXB = META.max_bodies || 1, MAXI = META.max_items || 1, MAXF = META.max_fires || 1;
+  var bodyMesh = instanced(new THREE.SphereGeometry(1, 16, 12), new THREE.MeshLambertMaterial({color: 0xffffff}), MAXB);
+  var mouthMesh = instanced(new THREE.SphereGeometry(1, 10, 8), new THREE.MeshBasicMaterial({color: 0xffffff}), MAXB);
+  var thrustMesh = instanced(new THREE.BoxGeometry(1, 1, 1), new THREE.MeshBasicMaterial({color: 0xffffff, transparent: true, opacity: 0.5, depthWrite: false}), MAXB);
+  var ringMesh = instanced(new THREE.RingGeometry(0.88, 1, 48), new THREE.MeshBasicMaterial({color: 0xffffff, transparent: true, opacity: 0.85, side: THREE.DoubleSide, depthWrite: false, depthTest: false}), MAXB);
+  var itemMesh = instanced(new THREE.OctahedronGeometry(1, 0), new THREE.MeshLambertMaterial({color: 0xffffff}), MAXI);
+  ringMesh.renderOrder = 5;
+  var fireGeo = new THREE.BufferGeometry();
+  fireGeo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(3 * MAXF), 3));
+  fireGeo.setAttribute('color', new THREE.BufferAttribute(new Float32Array(3 * MAXF), 3));
+  var fires = new THREE.Points(fireGeo, new THREE.PointsMaterial({size: 30, sizeAttenuation: false, map: glowTexture('rgba(255,255,255,1)', 'rgba(255,255,255,.7)'), vertexColors: true, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending}));
+  fires.frustumCulled = false; fires.renderOrder = 6; pScene.add(fires);
+  var selRing = new THREE.Mesh(new THREE.RingGeometry(1.2, 1.5, 48), new THREE.MeshBasicMaterial({color: css.select, side: THREE.DoubleSide, depthTest: false, depthWrite: false, transparent: true}));
+  selRing.visible = false; selRing.renderOrder = 7; pScene.add(selRing);
+
+  // ---------------------------------------------------------------------------- frames
+  var cache = new Map(), ORDER = [];
+  function frameAt(i, slot) {
+    var key = i * 1024 + slot;
+    if (cache.has(key)) return cache.get(key);
+    var F = CODEC.patchFrame(DATA.frames[i].p[slot]);
+    cache.set(key, F); ORDER.push(key);
+    if (ORDER.length > 24) cache.delete(ORDER.shift());
+    return F;
+  }
+  function frameInfo(i) { var fr = DATA.frames[i]; return {day: fr.d, bout: fr.b, sun: fr.s, key: tkey(fr.d, fr.b)}; }
+  function count(i, slot) { var p = DATA.frames[i].p[slot]; return p ? p.n || 0 : 0; }
+
+  // ------------------------------------------------------------------------- body colours
+  var TOP = (META.top_lineages || []).map(function (e) { return e[0]; }), linSlot = new Map(TOP.map(function (id, i) { return [id, i]; }));
+  var MASS = META.mass_g || [1, 1, 1], mode = 'lineage', highlight = null, colTmp = new THREE.Color(), colTmp2 = new THREE.Color();
+  function ramp(t, out) { var x = clamp01(t) * 4, i = Math.min(3, Math.floor(x)); return out.copy(css.ramp[i]).lerp(css.ramp[i + 1], x - i); }
+  function linColour(id) { var s = linSlot.get(id); return s === undefined ? css.linOther : css.lin[s]; }
+  var K_MAX = 1;
+  function bodyColour(F, n, out) {
+    if (mode === 'mass') ramp(MASS[2] > MASS[0] ? Math.log(F.m[n] / MASS[0]) / Math.log(MASS[2] / MASS[0]) : 0.5, out);
+    else if (mode === 'damage') ramp(F.dm[n], out);
+    else if (mode === 'k') ramp(F.k[n] / K_MAX, out);
+    else if (mode === 'call') { var ch = F.v[n]; out.copy(F.ld[n] >= callLevel && ch >= 0 && ch < 8 ? css.ch[ch] : css.linOther); }
+    else out.copy(linColour(F.lin[n]));
+    if (highlight !== null && F.lin[n] !== highlight) out.lerp(css.linOther, 0.8);
+    return out;
+  }
+
+  // ---------------------------------------------------------------------------- state
+  var idx = 0, frac = 0, playing = false, fps = 4, acc = 0, gDirty = true, pDirty = true, tNow = 0;
+  var showCalls = true, callLevel = 0.75, showItems = true, showFires = true, showMotor = true, trueSize = false;
+  var smoothOn = !REDUCED, even = false, overlay = false, following = false, globeMode = 'planet';
+  var selected = null;  // {kind: 'body', uid} | {kind: 'item', i} | {kind: 'fire', i}
+  $('smooth').checked = smoothOn;
+  var ENLARGE = 1, ENL_SHOWN = -1;
+  function niceUp(x) { var p = Math.pow(10, Math.floor(Math.log10(x))), m = x / p; return (m <= 1 ? 1 : m <= 2 ? 2 : m <= 5 ? 5 : 10) * p; }
+  function trueRadius(mass_g, rho) { return Math.cbrt(3 * (mass_g / 1000) / (4 * Math.PI * rho)); }
+  var R_REF = trueRadius(MASS[1] || 1, 1050);
+  function metresPerPixel() {
+    var d = pCamera.position.distanceTo(pControls.target), h = Math.max(1, pWrap.clientHeight);
+    return 2 * d * Math.tan(pCamera.fov * Math.PI / 360) / h;
+  }
+  function updateEnlarge() {
+    var e = trueSize ? 1 : niceUp(Math.max(1, REF_PX * metresPerPixel() / R_REF));
+    if (e !== ENLARGE) { ENLARGE = e; pDirty = true; }
+  }
+  // drawn radius (m): true radius x ENLARGE; while enlarged, kept between MIN_PX and a maximum in pixels
+  var REF_PX = 3, MIN_PX = 1.2, BODY_MAX_PX = 12, ITEM_MAX_PX = 7, WPP = 1;
+  function drawnR(rTrue, maxPx) {
+    var r = rTrue * ENLARGE;
+    return ENLARGE > 1 ? Math.min(Math.max(r, MIN_PX * WPP), maxPx * WPP) : r;
+  }
+  function bodyR(mass_g) { return drawnR(trueRadius(mass_g > 0 ? mass_g : MASS[1], 1050), BODY_MAX_PX); }
+  function itemR(mass_kg) { return drawnR(trueRadius(1000 * mass_kg, 2000), ITEM_MAX_PX); }
+
+  var P3 = new THREE.Vector3(), Q = new THREE.Quaternion(), MAT = new THREE.Matrix4(), SCL = new THREE.Vector3(), EUL = new THREE.Euler();
+  var OFFV = new THREE.Vector3();
+  function bodyPlace(F, n, G2, out) {  // position (x, y in patch metres) and heading, interpolated while playing smoothly
+    var x = F.x[n], y = F.y[n], h = F.h[n], P = PS[cur], L = P.L;
+    if (G2 && frac > 0) {
+      var j = CODEC.find(G2.uid, F.uid[n]);
+      if (j >= 0) {
+        var dx = G2.x[j] - x, dy = G2.y[j] - y;
+        if (dx > L / 2) dx -= L; else if (dx < -L / 2) dx += L;
+        if (dy > L / 2) dy -= L; else if (dy < -L / 2) dy += L;
+        if (Math.abs(dx) < L / 8 && Math.abs(dy) < L / 8) {
+          x = (x + dx * frac + L) % L; y = (y + dy * frac + L) % L;
+          var dh = G2.h[j] - h; dh = Math.atan2(Math.sin(dh), Math.cos(dh)); h += dh * frac;
+        }
+      }
+    }
+    out.x = x; out.y = y; out.h = h;
+    return out;
+  }
+  var BP = {x: 0, y: 0, h: 0};
+  function drawPatch() {
+    var P = PS[cur], L = P.L;
+    if (!NF) { paintPatch(P, -1, -1); bodyMesh.count = mouthMesh.count = thrustMesh.count = ringMesh.count = itemMesh.count = 0; fireGeo.setDrawRange(0, 0); return; }
+    var info = frameInfo(idx), F = frameAt(idx, cur);
+    var G2 = (smoothOn && playing && idx + 1 < NF) ? frameAt(idx + 1, cur) : null;
+    paintPatch(P, latest(P.plants, info.key), latest(P.water, info.key));
+    setPatchSun(info.sun);
+    WPP = metresPerPixel();
+    var E = ENLARGE, nb = F ? F.n : 0, nm = 0, nt = 0, nr = 0, pulse = (!REDUCED && playing) ? 0.85 + 0.15 * Math.sin(tNow * 5) : 1;
+    var selFound = false;
+    for (var n = 0; n < nb; n++) {
+      bodyPlace(F, n, G2, BP);
+      var r = bodyR(F.m[n]), X = BP.x - L / 2, Y = BP.y - L / 2, Z = heightAt(P, BP.x, BP.y);
+      var ch = Math.cos(BP.h), sh = Math.sin(BP.h);
+      Q.setFromAxisAngle(UP, BP.h);
+      P3.set(X, Y, Z + 0.8 * r);
+      MAT.compose(P3, Q, SCL.set(1.45 * r, 0.85 * r, 0.8 * r)); bodyMesh.setMatrixAt(n, MAT);
+      bodyMesh.setColorAt(n, bodyColour(F, n, colTmp));
+      if (showMotor) {
+        var mo = F.mo[n];
+        if (mo >= 0.05) {
+          var mr = 0.42 * r * Math.sqrt(mo);
+          P3.set(X + ch * 1.35 * r, Y + sh * 1.35 * r, Z + 0.9 * r);
+          MAT.compose(P3, Q, SCL.set(mr, mr, mr)); mouthMesh.setMatrixAt(nm, MAT); mouthMesh.setColorAt(nm, css.mouthC); nm++;
+        }
+        var th = F.th[n];
+        if (Math.abs(th) >= 0.05) {
+          var len = 2.6 * r * Math.abs(th), sgn = th > 0 ? -1 : 1, off = 1.45 * r + len / 2;
+          P3.set(X + ch * off * sgn, Y + sh * off * sgn, Z + 0.8 * r);
+          MAT.compose(P3, Q, SCL.set(len, 0.22 * r, 0.12 * r)); thrustMesh.setMatrixAt(nt, MAT);
+          thrustMesh.setColorAt(nt, colTmp2.copy(colTmp).lerp(css.linOther, 0.25)); nt++;
+        }
+      }
+      if (showCalls && F.ld[n] >= callLevel) {
+        var rr = r * (1.5 + 2.5 * F.ld[n]) * pulse, cc = F.v[n];
+        P3.set(X, Y, Z + 0.15 * r);
+        MAT.compose(P3, Q.identity(), SCL.set(rr, rr, rr)); ringMesh.setMatrixAt(nr, MAT);
+        ringMesh.setColorAt(nr, cc >= 0 && cc < 8 ? css.ch[cc] : css.linOther); nr++;
+      }
+      if (selected && selected.kind === 'body' && F.uid[n] === selected.uid) {
+        selFound = true; selRing.position.set(X, Y, Z + 0.1 * r); selRing.scale.setScalar(Math.max(r * 1.6, 7 * metresPerPixel()));
+      }
+    }
+    bodyMesh.count = nb; mouthMesh.count = nm; thrustMesh.count = nt; ringMesh.count = nr;
+    [bodyMesh, mouthMesh, thrustMesh, ringMesh].forEach(function (m) { m.instanceMatrix.needsUpdate = true; if (m.instanceColor) m.instanceColor.needsUpdate = true; });
+    var it = F ? F.items : {n: 0}, ni = showItems ? it.n : 0;
+    for (n = 0; n < ni; n++) {
+      var ir = itemR(it.m[n]), ix = it.x[n], iy = it.y[n];
+      P3.set(ix - L / 2, iy - L / 2, heightAt(P, ix, iy) + ir);
+      MAT.compose(P3, Q.identity(), SCL.set(ir, ir, ir)); itemMesh.setMatrixAt(n, MAT);
+      itemMesh.setColorAt(n, classColour(it.c[n]));
+      if (selected && selected.kind === 'item' && selected.i === n) { selFound = true; selRing.position.set(P3.x, P3.y, P3.z - ir); selRing.scale.setScalar(Math.max(ir * 1.6, 7 * metresPerPixel())); }
+    }
+    itemMesh.count = ni; itemMesh.instanceMatrix.needsUpdate = true; if (itemMesh.instanceColor) itemMesh.instanceColor.needsUpdate = true;
+    var fr = F ? F.fires : {n: 0}, nfire = showFires ? fr.n : 0, fp = fireGeo.attributes.position.array, fc = fireGeo.attributes.color.array;
+    for (n = 0; n < nfire; n++) {
+      fp[3 * n] = fr.x[n] - L / 2; fp[3 * n + 1] = fr.y[n] - L / 2; fp[3 * n + 2] = heightAt(P, fr.x[n], fr.y[n]) + 0.5;
+      fireColour(fr.t[n], colTmp); fc[3 * n] = colTmp.r; fc[3 * n + 1] = colTmp.g; fc[3 * n + 2] = colTmp.b;
+      if (selected && selected.kind === 'fire' && selected.i === n) { selFound = true; selRing.position.set(fp[3 * n], fp[3 * n + 1], fp[3 * n + 2] - 0.4); selRing.scale.setScalar(9 * metresPerPixel()); }
+    }
+    fireGeo.setDrawRange(0, nfire); fireGeo.attributes.position.needsUpdate = true; fireGeo.attributes.color.needsUpdate = true;
+    fires.material.size = 34;
+    selRing.visible = selFound;
+    ENL_SHOWN = E;
+    $('size-badge').textContent = E === 1 ? 'Bodies and items at true size' : 'Bodies and items drawn ×' + nf(E, 0) + ' their true size (kept between ' + MIN_PX + ' and ' + BODY_MAX_PX + ' px)';
+  }
+  function fireColour(T, out) {  // display ramp: deep red at 600 K to yellow-white at 2000 K
+    var t = clamp01((T - 600) / 1400);
+    return out.setRGB(Math.min(1, 0.85 + 0.6 * t), 0.18 + 0.75 * t, 0.04 + 0.7 * t * t);
+  }
+  var skyNow = new THREE.Color();
+  function localSun(P, s) {
+    var e = P.east, n = P.north, u = P.center, l = Math.hypot(u[0], u[1], u[2]) || 1;
+    return [s[0] * e[0] + s[1] * e[1] + s[2] * e[2], s[0] * n[0] + s[1] * n[1] + s[2] * n[2], (s[0] * u[0] + s[1] * u[1] + s[2] * u[2]) / l];
+  }
+  function setPatchSun(s) {
+    var P = PS[cur], ls = localSun(P, s), up = ls[2], day = smooth((up + 0.02) / 0.1);
+    pSun.position.set(ls[0], ls[1], ls[2]).multiplyScalar(P.L); pSun.target.position.set(0, 0, 0);
+    pSun.intensity = even ? 0 : 0.95 * clamp01(up / 0.05);
+    hemi.intensity = even ? 1.0 : 0.42 + 0.18 * day;
+    skyNow.copy(css.skyNight).lerp(css.skyDay, day);
+    pScene.background = skyNow;
+    var alt = Math.asin(Math.max(-1, Math.min(1, up))) * 180 / Math.PI;
+    var az = (Math.atan2(ls[0], ls[1]) * 180 / Math.PI + 360) % 360, dirs = ['north', 'north-east', 'east', 'south-east', 'south', 'south-west', 'west', 'north-west'];
+    $('sky-badge').textContent = (up > 0 ? 'Day: the sun is ' + nf(alt, 0) + '° above the horizon, in the ' + dirs[Math.round(az / 45) % 8]
+      : 'Night: the sun is ' + nf(-alt, 0) + '° below the horizon (drawn dim, not black, to stay readable)') + (even ? ' · even light on' : '');
+  }
+
+  function drawGlobe() {
+    var info = NF ? frameInfo(idx) : null;
+    if (info) setGlobeSun(info.sun);
+    paintGlobe(info ? latest(GF.T_k, info.key) : (GF.T_k.length ? 0 : -1), info ? latest(GF.ice, info.key) : (GF.ice.length ? 0 : -1), overlay);
+    var cam = gCamera.position;
+    markers.forEach(function (m, slot) {
+      var p = m.position;
+      m.visible = (cam.x - p.x) * p.x + (cam.y - p.y) * p.y + (cam.z - p.z) * p.z > -1e-9;
+    });
+    var info2 = NF ? frameInfo(idx) : null, msg = 'Radius ' + nf(R / 1000, 0) + ' km · relief ' + (REX === 1 ? 'at true scale' : 'drawn ×' + REX + ' (display only)');
+    if (info2) { var ls = localSun(PS[cur] || {east: [1, 0, 0], north: [0, 1, 0], center: [0, 0, 1]}, info2.sun); if (NP) msg += ' · patch ' + PS[cur].index + ' ' + (ls[2] > 0 ? 'in daylight' : 'at night'); }
+    var alt = (gCamera.position.length() - 1) * R;
+    if (globeMode === 'patch' || alt < 0.2 * R) msg += ' · camera ' + (alt < 1e5 ? nf(alt / 1000, 1) : nf(alt / 1000, 0)) + ' km up';
+    $('globe-badge').textContent = msg;
+  }
+
+  // ---------------------------------------------------------------------------- text and stats
+  function updateText() {
+    var P = PS[cur];
+    if (!NF) { $('timelabel').textContent = 'no frames'; renderTabs(); return; }
+    var info = frameInfo(idx), F = NP ? frameAt(idx, cur) : null, calls = 0, total = 0;
+    if (F) for (var n = 0; n < F.n; n++) if (F.ld[n] >= callLevel) calls++;
+    for (var s = 0; s < NP; s++) total += count(idx, s);
+    $('st-time').textContent = nf(info.day, 0) + ' · ' + nf(info.bout, 0);
+    $('st-alive').textContent = F ? nf(F.n, 0) : 'not recorded';
+    $('st-total').textContent = nf(total, 0);
+    $('st-lin').textContent = F ? nf(F.linCount, 0) : '–';
+    $('st-calls').textContent = F ? nf(calls, 0) : '–';
+    $('st-fires').textContent = F ? nf(F.fires.n, 0) : '–';
+    $('st-items').textContent = F ? (F.items.total > F.items.n ? nf(F.items.n, 0) + ' of ' + nf(F.items.total, 0) : nf(F.items.n, 0)) : '–';
+    $('timelabel').textContent = 'day ' + nf(info.day, 0) + ' · bout ' + info.bout + ' · frame ' + (idx + 1) + '/' + NF;
+    $('scrub').value = idx;
+    renderTabs();
+    if (mode === 'call') renderColourLegend();
+    renderPanel();
+    drawSpark();
+  }
+  var tabButtons = PS.map(function (P, s) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.dataset.slot = String(s); b.title = 'Show patch ' + P.index;
+    $('tabs').appendChild(b);
+    return b;
+  });
+  function renderTabs() {
+    tabButtons.forEach(function (b, s) {
+      var text = 'Patch ' + PS[s].index + (NF ? ' · ' + nf(count(idx, s), 0) : '');
+      if (b.textContent !== text) b.textContent = text;
+      b.setAttribute('aria-pressed', String(s === cur));
+      b.setAttribute('aria-label', 'Patch ' + PS[s].index + (NF ? ', ' + count(idx, s) + ' bodies alive' : ''));
+    });
+    var P = PS[cur];
+    if (P) $('patch-sub').textContent = 'true scale · ' + nf(P.L / 1000, 3) + ' km side · ' + P.n + ' × ' + P.n + ' cells';
+  }
+  $('tabs').addEventListener('click', function (e) { var b = e.target.closest('button[data-slot]'); if (b) selectPatch(Number(b.dataset.slot), true); });
+
+  function renderColourLegend() {
+    var html = '', help = '', title = 'Bodies: ';
+    if (mode === 'lineage') {
+      title += 'lineage';
+      help = 'Each colour is one lineage (the eight with the most body-frames in the shown record); grey is every other lineage. Select one to pick it out.';
+      html = '<div class="lineages" role="group" aria-label="Lineages">' + (META.top_lineages || []).map(function (e, i) {
+        return '<button type="button" class="lin" data-lin="' + e[0] + '" aria-pressed="' + (highlight === e[0]) + '"><span class="sw" style="color:#' + css.lin[i].getHexString() + '"></span>lineage ' + e[0] + '<span class="n">' + nf(e[1], 0) + '</span></button>';
+      }).join('') + '<button type="button" class="lin" disabled><span class="sw" style="color:#' + css.linOther.getHexString() + '"></span>other lineages</button></div>';
+    } else if (mode === 'call') {
+      title += 'call channel'; help = 'Bodies calling at or above the chosen loudness, by the index of their call vector\'s largest component; grey is silent or quieter.';
+      html = '<div class="chips">' + css.ch.map(function (c, i) { return '<span><span class="sw" style="color:#' + c.getHexString() + '"></span>' + i + '</span>'; }).join('') + '</div>';
+    } else {
+      var lo = '0', hi = '1';
+      if (mode === 'mass') { title += 'body mass'; help = 'Body mass on a log scale.'; lo = sig(MASS[0], 3) + ' g'; hi = sig(MASS[2], 3) + ' g'; }
+      else if (mode === 'damage') { title += 'damage'; help = 'Damage from 0 (none) to 1 (death by physics).'; }
+      else { title += 'active brain units'; help = 'Active hidden units k, a heritable gene.'; hi = String(K_MAX); }
+      html = '<div class="ramp" style="background:linear-gradient(90deg,' + css.ramp.map(function (c) { return '#' + c.getHexString(); }).join(',') + ')"></div><div class="ramp-scale"><span>' + lo + '</span><span>' + hi + '</span></div>';
+    }
+    $('colour-title').textContent = title; $('colour-help').textContent = help; $('colour-legend').innerHTML = html;
+  }
+  $('colour-legend').addEventListener('click', function (ev) {
+    var b = ev.target.closest('button[data-lin]'); if (!b) return;
+    var id = Number(b.dataset.lin); highlight = highlight === id ? null : id; renderColourLegend(); pDirty = true;
+  });
+  function renderStaticLegends() {
+    $('channels').innerHTML = css.ch.map(function (c, i) { return '<span><span class="sw ring" style="color:#' + c.getHexString() + '"></span>' + i + '</span>'; }).join('') + '<span>channel index (largest component)</span>';
+    $('classes').innerHTML = CLASSES.map(function (name, i) {
+      return '<span><span class="sw dot" style="color:#' + classColour(i).getHexString() + '"></span>' + esc(name) + '</span>';
+    }).join('') + '<span>items, by recorded class</span>';
+  }
+
+  // ---------------------------------------------------------------------------------- the panel
+  function row(k, v) { return '<dt>' + esc(k) + '</dt><dd>' + v + '</dd>'; }
+  function cellAt(P, x, y) { var n = P.n; return Math.min(n - 1, Math.max(0, Math.floor(x / P.dx))) * n + Math.min(n - 1, Math.max(0, Math.floor(y / P.dx))); }
+  function groundRows(P, x, y, key) {
+    var c = cellAt(P, x, y), out = [row('Position', nf(x, 1) + ' m east, ' + nf(y, 1) + ' m north'),
+      row('Ground height', nf(P.elev[c], 1) + ' m' + (P.sea[c] ? ' (under the sea level ' + nf(SEA, 0) + ' m)' : ''))];
+    var pi = latest(P.plants, key), wi = latest(P.water, key);
+    if (pi >= 0) out.push(row('Plants in its cell', nf(patchField(P, 'plants', pi)[c], 0) + ' / 255'));
+    if (wi >= 0) out.push(row('Water in its cell', nf(patchField(P, 'water', wi)[c], 0) + ' / 255'));
+    return out;
+  }
+  function renderPanel() {
+    if (!selected) return;
+    var P = PS[cur], info = NF ? frameInfo(idx) : null, F = NF ? frameAt(idx, cur) : null, rows = [], title = '', html = '';
+    if (selected.kind === 'body') {
+      title = 'Body ' + selected.uid;
+      var n = F && F.n ? CODEC.find(F.uid, selected.uid) : -1;
+      if (n < 0) { $('zoom-to').hidden = true; $('panel-title').textContent = title; $('panel-body').innerHTML = '<p class="status">Not alive in patch ' + P.index + ' at day ' + (info ? info.day + ', bout ' + info.bout : '–') + '.</p>'; return; }
+      var lin = F.lin[n], mass = F.m[n];
+      rows.push(row('Day · bout', nf(info.day, 0) + ' · ' + info.bout), row('Lineage', '<span class="sw" style="color:#' + linColour(lin).getHexString() + '"></span> ' + lin),
+        row('Body mass', sig(mass, 4) + ' g' + (mass >= 1000 ? ' (' + sig(mass / 1000, 4) + ' kg)' : '')),
+        row('Damage', nf(F.dm[n], 3) + ' (death at 1)'),
+        row('Active brain units k', nf(F.k[n], 0) + ' (gene)'));
+      if (F.genes) GENES.forEach(function (g, j) { if (F.genes[j]) rows.push(row(g + ' (gene)', sig(F.genes[j][n], 4))); });
+      rows.push(row('Mouth output', nf(F.mo[n], 3) + ' (0 shut, 1 open)'), row('Thrust output', nf(F.th[n], 3) + ' (−1 back, 1 forward)'),
+        row('Loudness', nf(F.ld[n], 3)), row('Call channel', F.v[n] >= 0 ? 'index ' + F.v[n] + ' (largest component)' : 'none'),
+        row('Heading', nf(((F.h[n] * 180 / Math.PI) + 360) % 360, 0) + '° from east toward north'),
+        row('True radius', sig(trueRadius(mass, 1050), 3) + ' m (a sphere of its mass at 1,050 kg/m³)'));
+      rows = rows.concat(groundRows(P, F.x[n], F.y[n], info.key));
+      html = '<dl>' + rows.join('') + '</dl><p class="status">Recorded by the engine for this bout. The viewer only reads the cell under the body and the true radius of its mass at 1,050 kg/m³. The call channel is an output index, not a meaning.</p>' +
+        '<p><button type="button" id="lineage-btn">' + (highlight === lin ? 'Show all lineages' : 'Pick out this lineage') + '</button></p>';
+      $('panel-title').textContent = title; $('panel-body').innerHTML = html;
+      $('lineage-btn').onclick = function () { highlight = highlight === lin ? null : lin; if (mode !== 'lineage') { mode = 'lineage'; $('colour-mode').value = 'lineage'; } renderColourLegend(); renderPanel(); pDirty = true; };
+      $('follow').hidden = false; $('zoom-to').hidden = false;
+      return;
+    }
+    $('follow').hidden = true; $('zoom-to').hidden = selectedPoint() === null;
+    var list = selected.kind === 'item' ? (F ? F.items : {n: 0}) : (F ? F.fires : {n: 0}), i = selected.i;
+    if (!F || i >= list.n) { $('panel-title').textContent = selected.kind === 'item' ? 'Item' : 'Fire'; $('panel-body').innerHTML = '<p class="status">Not in this frame. Items and fires carry no id in the record, so they are not tracked between frames.</p>'; return; }
+    if (selected.kind === 'item') {
+      var k = list.c[i];
+      title = 'Item';
+      rows.push(row('Class', '<span class="sw dot" style="color:#' + classColour(k).getHexString() + '"></span> ' + esc(k >= 0 && k < CLASSES.length ? CLASSES[k] : 'class ' + k)),
+        row('Mass', sig(list.m[i], 4) + ' kg'));
+    } else {
+      title = 'Fire';
+      rows.push(row('Temperature', nf(list.t[i], 0) + ' K (' + nf(list.t[i] - 273.15, 0) + ' °C)'));
+    }
+    rows = rows.concat(groundRows(P, list.x[i], list.y[i], info.key));
+    $('panel-title').textContent = title;
+    $('panel-body').innerHTML = '<dl>' + rows.join('') + '</dl><p class="status">Recorded by the engine for this bout. Items and fires carry no id, so the selection is this frame only.</p>';
+  }
+  function select(sel, announce) {
+    selected = sel; $('panel').hidden = !sel;
+    if (!sel || sel.kind !== 'body') setFollow(false);
+    renderPanel(); pDirty = true;
+    if (announce && sel) $('live').textContent = sel.kind === 'body' ? 'Selected body ' + sel.uid : 'Selected ' + sel.kind;
+  }
+  $('close').onclick = function () { select(null); pCanvas.focus(); };
+  function selectedPoint() {  // [x, y, z (drawn), true radius] of the selection in the shown frame, or null
+    if (!selected || !NF) return null;
+    var P = PS[cur], F = frameAt(idx, cur); if (!F) return null;
+    if (selected.kind === 'body') {
+      var n = F.n ? CODEC.find(F.uid, selected.uid) : -1; if (n < 0) return null;
+      return [F.x[n], F.y[n], heightAt(P, F.x[n], F.y[n]), trueRadius(F.m[n], 1050)];
+    }
+    var list = selected.kind === 'item' ? F.items : F.fires, i = selected.i; if (i >= list.n) return null;
+    return [list.x[i], list.y[i], heightAt(P, list.x[i], list.y[i]), selected.kind === 'item' ? trueRadius(1000 * list.m[i], 2000) : 0.5];
+  }
+  $('zoom-to').onclick = function () {
+    var q = selectedPoint(); if (!q) return;
+    var P = PS[cur], dist = Math.max(0.12, 30 * q[3]), off = pCamera.position.clone().sub(pControls.target);  // close enough to see it at its true size
+    if (off.lengthSq() < 1e-12) off.set(0, -1, 0.7);
+    pControls.target.set(q[0] - P.L / 2, q[1] - P.L / 2, q[2]);
+    pCamera.position.copy(pControls.target).add(off.setLength(dist)); pControls.update(); pDirty = true;
+  };
+  $('follow').onclick = function () { setFollow(!following); };
+  function setFollow(on) { following = !!on && !!selected && selected.kind === 'body'; $('follow').setAttribute('aria-pressed', String(following)); pDirty = true; }
+  function cycle(dir) {
+    if (!NF) return;
+    var F = frameAt(idx, cur); if (!F || !F.n) return;
+    var at = selected && selected.kind === 'body' ? CODEC.find(F.uid, selected.uid) : -1;
+    var next = at < 0 ? (dir > 0 ? 0 : F.n - 1) : (at + dir + F.n) % F.n;
+    select({kind: 'body', uid: F.uid[next]}, true);
+  }
+  $('find').addEventListener('change', function () {
+    var v = Number(this.value); if (!isFinite(v) || this.value === '' || !NF) return;
+    for (var s = 0; s < NP; s++) {
+      var F = frameAt(idx, (cur + s) % NP);
+      if (F && F.n && CODEC.find(F.uid, v) >= 0) { if (s) selectPatch((cur + s) % NP, false); select({kind: 'body', uid: v}, true); setFollow(true); return; }
+    }
+    $('live').textContent = 'No body ' + v + ' alive in any patch at this bout';
+  });
+
+  // -------------------------------------------------------------------------------------- picking
+  function clickTracker(canvas, onClick) {
+    var down = null;
+    canvas.addEventListener('pointerdown', function (e) { down = {x: e.clientX, y: e.clientY}; canvas.style.cursor = 'grabbing'; });
+    canvas.addEventListener('pointerup', function (e) {
+      canvas.style.cursor = 'grab';
+      if (!down || Math.hypot(e.clientX - down.x, e.clientY - down.y) > 6) { down = null; return; }
+      down = null;
+      var rect = canvas.getBoundingClientRect();
+      onClick(e.clientX - rect.left, e.clientY - rect.top, rect);
+    });
+  }
+  var V1 = new THREE.Vector3();
+  function screenOf(camera, v, rect) { V1.copy(v).project(camera); return [(V1.x + 1) / 2 * rect.width, (1 - V1.y) / 2 * rect.height, V1.z]; }
+  clickTracker(gCanvas, function (x, y, rect) {
+    var best = -1, bd = 24 * 24;
+    markers.forEach(function (m, slot) {
+      if (!m.visible) return;
+      var s = screenOf(gCamera, m.position, rect), d2 = (s[0] - x) * (s[0] - x) + (s[1] - y) * (s[1] - y);
+      if (d2 < bd) { bd = d2; best = slot; }
+    });
+    if (best >= 0) selectPatch(best, true);
+  });
+  clickTracker(pCanvas, function (x, y, rect) {
+    if (!NF) return;
+    var P = PS[cur], F = frameAt(idx, cur); if (!F) return;
+    WPP = metresPerPixel();
+    var best = null, bd = Infinity, wpp = WPP, G2 = (smoothOn && playing && idx + 1 < NF) ? frameAt(idx + 1, cur) : null;
+    function consider(sel, px, py, pz, rPx) {
+      var s = screenOf(pCamera, P3.set(px, py, pz), rect);
+      if (s[2] > 1) return;
+      var d2 = (s[0] - x) * (s[0] - x) + (s[1] - y) * (s[1] - y), lim = Math.max(14, rPx + 6);
+      if (d2 <= lim * lim && d2 < bd) { bd = d2; best = sel; }
+    }
+    for (var n = 0; n < F.n; n++) {
+      bodyPlace(F, n, G2, BP);
+      var r = bodyR(F.m[n]);
+      consider({kind: 'body', uid: F.uid[n]}, BP.x - P.L / 2, BP.y - P.L / 2, heightAt(P, BP.x, BP.y) + 0.8 * r, 1.45 * r / wpp);
+    }
+    if (showItems) for (n = 0; n < F.items.n; n++) {
+      var ir = itemR(F.items.m[n]);
+      consider({kind: 'item', i: n}, F.items.x[n] - P.L / 2, F.items.y[n] - P.L / 2, heightAt(P, F.items.x[n], F.items.y[n]) + ir, ir / wpp);
+    }
+    if (showFires) for (n = 0; n < F.fires.n; n++) consider({kind: 'fire', i: n}, F.fires.x[n] - P.L / 2, F.fires.y[n] - P.L / 2, heightAt(P, F.fires.x[n], F.fires.y[n]) + 0.5, 12);
+    select(best, true);
+  });
+
+  // ------------------------------------------------------------------------------- patch choice
+  function selectPatch(slot, announce) {
+    if (slot < 0 || slot >= NP) return;
+    var changed = slot !== cur;
+    cur = slot;
+    if (changed) { select(null); highlight = null; renderColourLegend(); }
+    showTerrain(PS[cur]); PS[cur].painted = '';
+    markerTextures();
+    if (changed) resetPatchView();
+    if (globeMode === 'patch') flyGlobe(true);
+    gDirty = pDirty = true;
+    updateText();
+    if (announce) $('live').textContent = 'Showing patch ' + PS[cur].index;
+  }
+
+  // ------------------------------------------------------------------------------------ cameras
+  function resetPatchView() {
+    var P = PS[cur]; if (!P) return;
+    pControls.target.set(0, 0, 0);
+    pCamera.position.set(0, -0.95 * P.L, 0.7 * P.L);
+    pControls.minDistance = 0.05; pControls.maxDistance = 4 * P.L;
+    pControls.update(); pDirty = true;
+  }
+  function resetGlobeView() {
+    var s = NF ? frameInfo(idx).sun : [1, 0, 0], d = new THREE.Vector3(s[0], s[1], s[2]).normalize();
+    if (NP) d.copy(patchUnit(PATCHES[cur])).lerp(d, 0.35).normalize();
+    var e1 = new THREE.Vector3().crossVectors(UP, d); if (e1.lengthSq() < 1e-6) e1.set(0, 1, 0); e1.normalize();
+    gControls.target.set(0, 0, 0);
+    gCamera.position.copy(d).addScaledVector(e1, 0.25).addScaledVector(UP, 0.15).normalize().multiplyScalar(3.6);
+    gControls.minDistance = RMAX * 1.02; gControls.maxDistance = 9; gControls.rotateSpeed = 0.6;
+    gControls.update(); gDirty = true;
+  }
+  function flyGlobe(on) {  // look down on the selected patch from a few hundred km, zoomable to its true-size outline
+    globeMode = on && NP ? 'patch' : 'planet';
+    $('globe-mode').setAttribute('aria-pressed', String(globeMode === 'patch'));
+    $('globe-mode').textContent = globeMode === 'patch' ? 'Whole planet' : 'Go to patch';
+    if (globeMode === 'planet') { resetGlobeView(); return; }
+    var ps = PATCHES[cur], up = patchUnit(ps), r = gRadius(ps.z_mean), n = new THREE.Vector3(ps.north[0], ps.north[1], ps.north[2]);
+    gControls.target.copy(up).multiplyScalar(r);
+    gCamera.position.copy(up).multiplyScalar(r + 0.06).addScaledVector(n, -0.05);
+    gControls.minDistance = 4 * ps.L / R; gControls.maxDistance = 2.5; gControls.rotateSpeed = 0.4;
+    gControls.update(); gDirty = true;
+  }
+  $('globe-mode').onclick = function () { flyGlobe(globeMode !== 'patch'); };
+
+  // ------------------------------------------------------------------------------------- timeline
+  var scrub = $('scrub'); scrub.max = Math.max(0, NF - 1);
+  function seek(i) { idx = Math.max(0, Math.min(NF - 1, i)); frac = 0; acc = 0; gDirty = pDirty = true; updateText(); }
+  scrub.addEventListener('input', function () { setPlaying(false); seek(Number(scrub.value)); });
+  function setPlaying(on) {
+    playing = !!on && NF > 1; acc = 0; frac = 0;
+    $('play-text').textContent = playing ? 'Pause' : 'Play'; $('play').setAttribute('aria-label', playing ? 'Pause' : 'Play');
+    $('play-icon').setAttribute('d', playing ? 'M3 1.5h3v11H3zM8 1.5h3v11H8z' : 'M3 1.5v11l9-5.5z');
+    pDirty = true;
+  }
+  $('play').onclick = function () { if (!playing && idx >= NF - 1) seek(0); setPlaying(!playing); };
+  $('prev').onclick = function () { setPlaying(false); seek(idx - 1); };
+  $('next').onclick = function () { setPlaying(false); seek(idx + 1); };
+  $('speed').onchange = function () { fps = Number(this.value); };
+  $('colour-mode').onchange = function () { mode = this.value; renderColourLegend(); pDirty = true; };
+  $('show-plants').onchange = function () { showPlants = this.checked; pDirty = true; };
+  $('show-water').onchange = function () { showWater = this.checked; pDirty = true; };
+  $('show-calls').onchange = function () { showCalls = this.checked; pDirty = true; };
+  $('call-level').onchange = function () { callLevel = Number(this.value); pDirty = true; updateText(); };
+  $('show-items').onchange = function () { showItems = this.checked; pDirty = true; };
+  $('show-fires').onchange = function () { showFires = this.checked; pDirty = true; };
+  $('show-motor').onchange = function () { showMotor = this.checked; pDirty = true; };
+  $('true-size').onchange = function () { trueSize = this.checked; updateEnlarge(); pDirty = true; renderPanel(); };
+  $('smooth').onchange = function () { smoothOn = this.checked; pDirty = true; };
+  $('even-light').onchange = function () { even = this.checked; gAmbient.intensity = even ? 1 : overlay ? 0.6 : 0.16; gSun.intensity = even ? 0 : overlay ? 0.5 : 1.05; gDirty = pDirty = true; };
+  $('show-temp').onchange = function () { overlay = this.checked; $('temp-block').hidden = !overlay; $('even-light').dispatchEvent(new Event('change')); };
+  $('relief').onchange = function () { REX = Number(this.value); shapeGlobe(); placeMarkers(); currentSun = null; if (globeMode === 'patch') flyGlobe(true); gDirty = true; };
+  $('vex').onchange = function () { VEX = Number(this.value); reshapeAll(); $('height-note').textContent = VEX === 1 ? 'Heights are drawn at true scale (×1).' : 'Heights are drawn ×' + VEX + ' (display only); horizontal distances stay true.'; pDirty = true; };
+  $('reset').onclick = function () { resetPatchView(); flyGlobe(false); };
+  function toggle(id) { var el = $(id); if (el.disabled) return; el.checked = !el.checked; el.dispatchEvent(new Event('change')); }
+  function cycleSelect(id) { var sel = $(id), opts = Array.from(sel.options).filter(function (o) { return !o.disabled; }), at = opts.findIndex(function (o) { return o.value === sel.value; }); sel.value = opts[(at + 1) % opts.length].value; sel.dispatchEvent(new Event('change')); $('live').textContent = (sel.getAttribute('aria-label') || id) + ': ' + sel.options[sel.selectedIndex].text; }
+
+  // ---------------------------------------------------------------------------------- spark line
+  var spark = $('spark');
+  function drawSpark() {
+    var w = spark.clientWidth, h = spark.clientHeight, dpr = Math.min(window.devicePixelRatio || 1, 2);
+    if (!w || !h) return;
+    if (spark.width !== Math.round(w * dpr)) { spark.width = Math.round(w * dpr); spark.height = Math.round(h * dpr); }
+    var g = spark.getContext('2d'); g.setTransform(dpr, 0, 0, dpr, 0, 0); g.clearRect(0, 0, w, h);
+    if (NF < 2) return;
+    var here = [], all = [], top = 1;
+    for (var i = 0; i < NF; i++) { var t = 0; for (var s = 0; s < NP; s++) t += count(i, s); here.push(count(i, cur)); all.push(t); top = Math.max(top, t); }
+    var X = function (i) { return 2 + (w - 4) * i / (NF - 1); }, Y = function (v) { return h - 3 - (h - 16) * v / top; };
+    g.beginPath(); g.moveTo(X(0), h);
+    for (i = 0; i < NF; i++) g.lineTo(X(i), Y(here[i]));
+    g.lineTo(X(NF - 1), h); g.closePath(); g.fillStyle = css['spark-fill']; g.fill();
+    g.beginPath(); for (i = 0; i < NF; i++) { if (i) g.lineTo(X(i), Y(here[i])); else g.moveTo(X(i), Y(here[i])); }
+    g.strokeStyle = css.spark; g.lineWidth = 1.5; g.stroke();
+    if (NP > 1) { g.setLineDash([3, 3]); g.beginPath(); for (i = 0; i < NF; i++) { if (i) g.lineTo(X(i), Y(all[i])); else g.moveTo(X(i), Y(all[i])); } g.strokeStyle = css['spark-2']; g.lineWidth = 1; g.stroke(); g.setLineDash([]); }
+    g.fillStyle = css['ink-2']; g.fillRect(X(idx) - 1, 0, 2, h);
+    g.font = '11px system-ui,sans-serif';
+    g.fillText('alive in patch ' + (PS[cur] ? PS[cur].index : '–') + ' (filled)' + (NP > 1 ? ', all patches (dashed), max ' + nf(top, 0) : ', max ' + nf(top, 0)), 6, 11);
+  }
+  spark.addEventListener('click', function (e) {
+    var rect = spark.getBoundingClientRect(); setPlaying(false);
+    seek(Math.round((e.clientX - rect.left - 2) / Math.max(1, rect.width - 4) * (NF - 1)));
+  });
+
+  // ------------------------------------------------------------------------------------ keyboard
+  document.addEventListener('keydown', function (e) {
+    var tag = (e.target.tagName || '').toLowerCase();
+    if (e.key === 'Escape') { if (selected) { select(null); e.preventDefault(); } return; }
+    if ((tag === 'input' && e.target.type !== 'checkbox') || tag === 'select' || tag === 'textarea' || e.ctrlKey || e.metaKey || e.altKey) return;
+    var step = e.shiftKey ? 10 : 1, k = e.key, handled = true;
+    if (k === ' ') { if (tag === 'button' || tag === 'input' || tag === 'summary') return; $('play').click(); }
+    else if (k === 'ArrowRight') { setPlaying(false); seek(idx + step); $('live').textContent = $('timelabel').textContent; }
+    else if (k === 'ArrowLeft') { setPlaying(false); seek(idx - step); $('live').textContent = $('timelabel').textContent; }
+    else if (k === 'Home') { setPlaying(false); seek(0); }
+    else if (k === 'End') { setPlaying(false); seek(NF - 1); }
+    else if (/^[1-9]$/.test(k)) selectPatch(Number(k) - 1, true);
+    else if (k === ']') cycle(1);
+    else if (k === '[') cycle(-1);
+    else if (k === 'f' || k === 'F') setFollow(!following);
+    else if (k === 'g' || k === 'G') flyGlobe(globeMode !== 'patch');
+    else if (k === 'p' || k === 'P') toggle('show-plants');
+    else if (k === 'w' || k === 'W') toggle('show-water');
+    else if (k === 'c' || k === 'C') toggle('show-calls');
+    else if (k === 'i' || k === 'I') toggle('show-items');
+    else if (k === 'x' || k === 'X') toggle('show-fires');
+    else if (k === 'o' || k === 'O') toggle('show-motor');
+    else if (k === 't' || k === 'T') toggle('show-temp');
+    else if (k === 'l' || k === 'L') toggle('even-light');
+    else if (k === 'm' || k === 'M') cycleSelect('colour-mode');
+    else if (k === 'e' || k === 'E') cycleSelect('vex');
+    else if (k === ',' || k === '.') {
+      var ang = (k === ',' ? 1 : -1) * 0.12;
+      pCamera.position.sub(pControls.target).applyAxisAngle(UP, ang).add(pControls.target); pControls.update(); pDirty = true;
+    }
+    else if (k === '+' || k === '=' || k === '-' || k === '_') {
+      var f = (k === '-' || k === '_') ? 1.25 : 1 / 1.25, off = pCamera.position.clone().sub(pControls.target);
+      off.setLength(Math.max(pControls.minDistance, Math.min(pControls.maxDistance, off.length() * f)));
+      pCamera.position.copy(pControls.target).add(off); pControls.update(); pDirty = true;
+    }
+    else handled = false;
+    if (handled) e.preventDefault();
+  });
+
+  // ----------------------------------------------------------------------------------- the loop
+  function resize() {
+    [[gRenderer, gCamera, gWrap, 40], [pRenderer, pCamera, pWrap, 45]].forEach(function (v) {
+      var w = Math.max(1, v[2].clientWidth), h = Math.max(1, v[2].clientHeight);
+      v[0].setSize(w, h, false); v[1].aspect = w / h;
+      v[1].fov = v[1].aspect >= 1 ? v[3] : 2 * Math.atan(Math.tan(v[3] * Math.PI / 360) / v[1].aspect) * 180 / Math.PI;
+      v[1].updateProjectionMatrix();
+    });
+    markerScale(); gDirty = pDirty = true; drawSpark();
+  }
+  window.addEventListener('resize', resize);
+  if (window.ResizeObserver) { var ro = new ResizeObserver(function () { resize(); }); ro.observe(gWrap); ro.observe(pWrap); }
+  gControls.addEventListener('change', function () { gDirty = true; });
+  pControls.addEventListener('change', function () { pDirty = true; });
+  var themeQuery = window.matchMedia && matchMedia('(prefers-color-scheme: dark)');
+  function applyTheme() {
+    readTheme();
+    gScene.background = new THREE.Color(css.space);
+    terminator.material.color.set(css.terminator); selRing.material.color.set(css.select); edge.material.color.set(css.edge);
+    markerTextures(); PS.forEach(function (P) { P.painted = ''; });
+    renderStaticLegends(); renderColourLegend(); renderPanel(); drawSpark(); gDirty = pDirty = true;
+  }
+  if (themeQuery && themeQuery.addEventListener) themeQuery.addEventListener('change', applyTheme);
+  var scaleShown = '';
+  function updateScaleBar() {
+    var wpp = metresPerPixel(), len = niceUp(110 * wpp) / 2, px = len / wpp;
+    if (px < 50) { len *= 2; px *= 2; }
+    var text = len >= 1000 ? nf(len / 1000, 2) + ' km' : len >= 1 ? nf(len, 0) + ' m' : nf(len * 100, 0) + ' cm';
+    var key = Math.round(px) + text;
+    if (key === scaleShown) return;
+    scaleShown = key; $('scale-bar').style.width = Math.round(px) + 'px'; $('scale-text').textContent = text;
+  }
+  var last = performance.now(), followLast = null;
+  function loop(now) {
+    var dt = Math.min(0.25, (now - last) / 1000); last = now; tNow = now / 1000;
+    if (playing) {
+      acc += dt * fps;
+      if (acc >= 1) {
+        var steps = Math.floor(acc); acc -= steps;
+        if (idx + steps >= NF - 1) { idx = NF - 1; setPlaying(false); } else idx += steps;
+        gDirty = true; updateText();
+      }
+      frac = playing ? acc : 0; pDirty = true;
+    }
+    if (following && selected && selected.kind === 'body' && NF) {
+      var F = frameAt(idx, cur), n = F && F.n ? CODEC.find(F.uid, selected.uid) : -1;
+      if (n >= 0) {
+        var G2 = (smoothOn && playing && idx + 1 < NF) ? frameAt(idx + 1, cur) : null, P = PS[cur];
+        bodyPlace(F, n, G2, BP);
+        var want = OFFV.set(BP.x - P.L / 2, BP.y - P.L / 2, heightAt(P, BP.x, BP.y));
+        var jump = followLast === null || want.distanceTo(pControls.target) > P.L / 4;
+        var delta = new THREE.Vector3().copy(want).sub(pControls.target).multiplyScalar(jump || REDUCED ? 1 : 0.2);
+        pControls.target.add(delta); pCamera.position.add(delta); followLast = want.clone(); pDirty = true;
+      }
+    } else followLast = null;
+    if (gControls.update()) gDirty = true;
+    if (pControls.update()) pDirty = true;
+    updateEnlarge(); updateScaleBar();
+    if (gDirty) { drawGlobe(); gRenderer.render(gScene, gCamera); gDirty = false; }
+    if (pDirty) { if (NP) drawPatch(); pRenderer.render(pScene, pCamera); pDirty = false; }
+    requestAnimationFrame(loop);
+  }
+
+  // read-only handles for inspection from the console (no behaviour depends on them)
+  window.view3 = {data: DATA, codec: CODEC, globe: {scene: gScene, camera: gCamera}, patch: {scene: pScene, camera: pCamera, bodies: bodyMesh, rings: ringMesh, items: itemMesh},
+                  frame: function () { return NF && NP ? frameAt(idx, cur) : null; }, state: function () { return {frame: idx, patch: cur, selected: selected, enlarge: ENLARGE, globeMode: globeMode}; },
+                  seek: function (i) { setPlaying(false); seek(i); }, selectPatch: function (s) { selectPatch(s, true); }, selectBody: function (uid) { select({kind: 'body', uid: uid}, true); },
+                  timeDraw: function () {  // ms for one patch and one globe draw (inspection only)
+                    var t = performance.now(); if (NP) drawPatch(); pRenderer.render(pScene, pCamera); var tp = performance.now();
+                    drawGlobe(); gRenderer.render(gScene, gCamera); return {patch: tp - t, globe: performance.now() - tp};
+                  }};
+
+  K_MAX = Math.max(1, META.k_max || 1);
+  shapeGlobe(); placeMarkers();
+  if (!NF) { terminator.visible = false; subMark.visible = false; star.visible = false; }
+  if (!NP) { $('patch-sub').textContent = 'no patches recorded'; $('globe-mode').disabled = true; }
+  applyTheme();
+  resize();
+  if (NP) { showTerrain(PS[cur]); resetPatchView(); }
+  resetGlobeView();
+  if (NARROW) { $('legend').open = false; $('options').open = false; }
+  updateText();
+  if (!REDUCED && NF > 1) setPlaying(true);
+  requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>

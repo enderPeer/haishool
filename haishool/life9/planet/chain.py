@@ -15,9 +15,13 @@ planet engine needs:
   insolation);
 * ``r.levels['chemistry_k'].summary`` gives the molecule counts.
 
-The planet is the one the life8 bridge uses (``bridge.planet_of``: most links up to ``groups``);
-without any climb, the first temperate terran planet with liquid water. A seed with neither
-raises :class:`NoHabitablePlanet`.
+The planet is world7's physical habitable-zone pick: the innermost temperate rocky planet that is
+terran with liquid water (``world7.ocean``), whatever its chain made (rule 2 of the life9 protocol: a
+planet is never chosen by its biological outcome). Chain version 2 took the life8 bridge's planet
+(``bridge.planet_of``: the most links up to ``groups``), which depends on the chain's outcome; the
+bridge's pick is still recorded (``planet_index_bridge``, ``pick_agrees_with_bridge``) with the
+number of temperate ocean planets (``temperate_ocean_planets``). A seed without a temperate terran
+planet with liquid water raises :class:`NoHabitablePlanet`.
 
 The result is JSON-ready and cached under ``runs/life9/chain-cache/`` (git-ignored), so world7
 runs once per seed. :func:`synthetic_inputs` draws a planet of the same structure from documented
@@ -36,7 +40,9 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
 CACHE_DIR = REPO / "runs" / "life9" / "chain-cache"
-CHAIN_VERSION = "life9-chain-v2"          # v2: t_eq_k from the era flux, era_flux_earth, sky t_eq_k
+#: v2: t_eq_k from the era flux, era_flux_earth, sky t_eq_k; v3: the planet is world7's physical habitable-zone pick
+#: (the innermost temperate terran planet with liquid water), no longer the bridge's most-climbed planet
+CHAIN_VERSION = "life9-chain-v3"
 SYNTHETIC_VERSION = "life9-synthetic-v2"
 
 
@@ -136,19 +142,32 @@ def _surface_body(system, star: dict, k: int) -> dict:
     return temperate[k - 1]
 
 
+#: the planet rule of :func:`run_chain` (rule 2 of the life9 protocol)
+PICK_RULE = "innermost temperate rocky planet that is terran with liquid water (world7's habitable-zone rule)"
+
+
+def physical_pick(steps: list) -> tuple[int, list]:
+    """(k, ocean surface eras) of world7's eras: k the innermost temperate rocky planet that is terran with liquid
+    water (the surface eras are numbered in orbit order, ``_surface_body``), 0 when there is none. It does not look
+    at what the chain made on any planet."""
+    w7, _, _, _ = _modules()
+    oceans = sorted((s for s in steps if _era_base(s["era"])[0] == "surface" and w7.ocean(s)),
+                    key=lambda s: _era_base(s["era"])[1])
+    return (_era_base(oceans[0]["era"])[1] if oceans else 0), oceans
+
+
 def run_chain(seed: int) -> dict:
     """The chain inputs of world7 seed ``seed`` (no cache; about 3-4 s)."""
     w7, stars, planets, bridge = _modules()
     steps, source, p = _scan(seed)
     eras = {s["era"]: s for s in steps}
     star = eras["star"]
-    k, links, planet_eras = bridge.planet_of({"seed": seed, "steps": steps})
+    k, oceans = physical_pick(steps)
     if not k:
-        oceans = [s for s in steps if _era_base(s["era"])[0] == "surface" and w7.ocean(s)]
-        if not oceans:
-            raise NoHabitablePlanet(f"world7 seed {seed} has no temperate terran planet with liquid water")
-        k = _era_base(oceans[0]["era"])[1]
-        planet_eras = {_era_base(s["era"])[0]: s for s in steps if _era_base(s["era"])[1] == k}
+        raise NoHabitablePlanet(f"world7 seed {seed} has no temperate terran planet with liquid water")
+    planet_eras = {_era_base(s["era"])[0]: s for s in steps if _era_base(s["era"])[1] == k}
+    links = [x for x in w7.planet_links(steps, k) if x in bridge.CLIMB_LINKS] if "chemistry" in planet_eras else []
+    k_bridge, _, _ = bridge.planet_of({"seed": seed, "steps": steps})
     surface = planet_eras["surface"]
     system = source.levels["planets"]
     body = _surface_body(system, star, k)
@@ -162,11 +181,21 @@ def run_chain(seed: int) -> dict:
     prov: dict[str, str] = {}
     out = {"seed": seed, "source": "world7", "chain_version": CHAIN_VERSION,
            "reached": w7.rung_of(steps), "truncated_after": "senses", "planet_index": k,
+           "pick_rule": PICK_RULE, "temperate_ocean_planets": len(oceans), "planet_index_bridge": int(k_bridge),
+           "pick_agrees_with_bridge": int(k_bridge) in (0, k),
            "links": list(links), "params": {key: p[key] for key in w7.PARAM_KEYS}}
     prov["reached"] = (f"world7.rung_of over the eras cut after senses ({_where(w7.rung_of)}; "
-                       f"bridge.scan_world prefix {_where(bridge.scan_world)})")
+                       f"bridge.scan_world prefix {_where(bridge.scan_world)}): the furthest rung of any planet")
     prov["params"] = f"world7._params(seed) ({_where(w7._params)})"
-    prov["planet_index"] = f"bridge.planet_of: most links up to groups ({_where(bridge.planet_of)})"
+    prov["planet_index"] = (f"physical_pick: the innermost temperate rocky planet that is terran with liquid water "
+                            f"(world7.ocean, {_where(w7.ocean)}; surface eras in orbit order, "
+                            f"{_where(w7.surface_eras)})")
+    prov["pick_rule"] = "the rule behind planet_index (rule 2 of the life9 protocol: never by the biological outcome)"
+    prov["temperate_ocean_planets"] = "the number of temperate rocky planets that are terran with liquid water"
+    prov["planet_index_bridge"] = (f"bridge.planet_of's pick (most links up to groups, {_where(bridge.planet_of)}; "
+                                   f"0 without a climb), chain version 2's rule: recorded, not used")
+    prov["pick_agrees_with_bridge"] = "planet_index_bridge is 0 or planet_index"
+    prov["links"] = f"world7.planet_links of planet_index up to groups ({_where(w7.planet_links)})"
 
     out["star"] = {"mass_msun": star["star_mass"], "luminosity_lsun": float(system.params["luminosity"]),
                    "age_yr": star["age"], "lifetime_yr": star["lifetime"], "end_yr": star["star_end"],
@@ -263,17 +292,29 @@ def _cache_path(seed: int, cache_dir: Path | str | None) -> Path:
     return Path(cache_dir if cache_dir is not None else CACHE_DIR) / f"world7-{seed}.json"
 
 
+def cached_chain_inputs(seed: int, cache_dir: Path | str | None = None) -> dict | None:
+    """The chain inputs of world7 seed ``seed`` from the JSON cache when it holds this chain version, else None
+    (never runs world7: hosts without scipy read what the cache holds)."""
+    path = _cache_path(seed, cache_dir)
+    if not path.exists():
+        return None
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+    except (OSError, ValueError):
+        return None
+    if data.get("chain_version") == CHAIN_VERSION and data.get("seed") == seed:
+        return data
+    return None
+
+
 def chain_inputs(seed: int, cache_dir: Path | str | None = None, refresh: bool = False) -> dict:
     """The chain inputs of world7 seed ``seed``: read from the JSON cache, or run and cached."""
+    if not refresh:
+        data = cached_chain_inputs(seed, cache_dir)
+        if data is not None:
+            return data
     path = _cache_path(seed, cache_dir)
-    if not refresh and path.exists():
-        try:
-            with open(path, encoding="utf-8") as f:
-                data = json.load(f)
-            if data.get("chain_version") == CHAIN_VERSION and data.get("seed") == seed:
-                return data
-        except (OSError, ValueError):
-            pass
     data = run_chain(seed)
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(f".{os.getpid()}.tmp")
@@ -400,25 +441,11 @@ def synthetic_inputs(seed: int) -> dict:
 
 
 def earth_inputs(cache_dir: Path | str | None = None, refresh: bool = False) -> dict:
-    """:func:`earth_inputs_computed`, read from the JSON cache (``earth-reference.json`` next to the world7
-    caches) or computed and cached, so that hosts without scipy (world7's cosmos levels need it) can build the
-    Earth reference from the shared cache, as they do the world7 seeds."""
-    path = Path(cache_dir if cache_dir is not None else CACHE_DIR) / "earth-reference.json"
-    if not refresh and path.exists():
-        try:
-            with open(path, encoding="utf-8") as f:
-                data = json.load(f)
-            if data.get("chain_version") == CHAIN_VERSION and data.get("source") == "earth_reference":
-                return data
-        except (OSError, ValueError):
-            pass
-    data = earth_inputs_computed()
-    path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix(f".{os.getpid()}.tmp")
-    with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=1, sort_keys=True)
-    os.replace(tmp, path)
-    return data
+    """:func:`earth_inputs_computed`. It needs no scipy (only ``haishool.cosmos.planets`` and this package's
+    constants), so it is computed from the code every time: the Earth calibration of the formation rules is code,
+    covered by the rules hash, never a per-host cache file (an earlier ``earth-reference.json`` is not read).
+    ``cache_dir`` and ``refresh`` are accepted for call compatibility."""
+    return earth_inputs_computed()
 
 
 def earth_inputs_computed() -> dict:
@@ -427,8 +454,9 @@ def earth_inputs_computed() -> dict:
     cloud of Asplund et al. 2009 (X 0.7381, Y 0.2485, Z 0.0134, element shares from the
     photospheric log eps and the atomic weights), the sun's age 4.567 Gyr and world7's own Earth
     temperature (254.6 K + 33 K, haishool/cosmos/planets.py), oxygen 1 PAL."""
+    from haishool.cosmos import planets                # level 3 alone: no world7, so no scipy
+
     from . import constants as C
-    _, _, planets, _ = _modules()
     x, z = 0.7381, 0.0134
     named = {"carbon": "C", "nitrogen": "N", "oxygen": "O", "neon": "Ne", "magnesium": "Mg", "silicon": "Si",
              "iron": "Fe"}
